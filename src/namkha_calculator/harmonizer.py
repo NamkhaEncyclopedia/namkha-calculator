@@ -1,25 +1,11 @@
 """
-Harmonizer
+Module for the final stage of Namkha calculation: harmonization of aspects
 """
 
 from dataclasses import dataclass
 from enum import unique, Enum
-from typing import Optional
 
-
-@unique
-class Element(Enum, str):
-    WATER = "Water"
-    WOOD = "Wood"
-    FIRE = "Fire"
-    EARTH = "Earth"
-    METAL = "Metal"
-
-
-@dataclass
-class ElementItem:
-    mother: Element
-    son: Element
+from .astrology import Element
 
 
 @unique
@@ -40,7 +26,12 @@ class Aspect:
     center: Element
     harmonization_seq: tuple[Element, ...]
     is_conflicted: bool
-    has_deep_water: Optional[bool] = None
+
+
+@dataclass
+class ElementItem:
+    mother: Element
+    son: Element
 
 
 ELEMENTS_CIRCLE = {
@@ -52,43 +43,43 @@ ELEMENTS_CIRCLE = {
 }
 
 
-def __get_son(element: Element) -> Element:
+def _get_son(element: Element) -> Element:
     return ELEMENTS_CIRCLE[element].son
 
 
-def __get_mother(element: Element) -> Element:
+def _get_mother(element: Element) -> Element:
     return ELEMENTS_CIRCLE[element].mother
 
 
-def __circle_forwards(start_element: Element) -> list[Element]:
+def _full_circle_forwards(start_element: Element) -> list[Element]:
     result = [start_element]
     for _ in range(4):
-        result.append(__get_son(result[-1]))
+        result.append(_get_son(result[-1]))
     return result
 
 
-def __circle_backwards(start_element: Element) -> list[Element]:
+def _full_circle_backwards(start_element: Element) -> list[Element]:
     result = [start_element]
     for _ in range(4):
-        result.append(__get_mother(result[-1]))
+        result.append(_get_mother(result[-1]))
     return result
 
 
-def __shortest_path(first_element: Element, second_element: Element) -> list[Element]:
-    fwd = __circle_forwards(first_element)
+def _shortest_path(first_element: Element, second_element: Element) -> list[Element]:
+    fwd = _full_circle_forwards(first_element)
     fwd = fwd[: fwd.index(second_element) + 1]
-    rev = __circle_backwards(first_element)
+    rev = _full_circle_backwards(first_element)
     rev = rev[: rev.index(second_element) + 1]
     return fwd[1:] if len(fwd) < len(rev) else rev[1:]
 
 
-def __get_edge_element(center_element: Element) -> Element:
+def _get_edge_element(center_element: Element) -> Element:
     return ELEMENTS_CIRCLE[center_element].mother
 
 
-def __are_in_conflict(first_element: Element, second_element: Element) -> bool:
+def _are_in_conflict(first_element: Element, second_element: Element) -> bool:
     if (
-        first_element in [__get_son(second_element), __get_mother(second_element)]
+        first_element in [_get_son(second_element), _get_mother(second_element)]
         or first_element == second_element
     ):
         return False
@@ -107,28 +98,11 @@ def harmonize_aspects(
 ) -> tuple[Aspect, ...]:
     """
     Calculates the harmonization sequence for each aspect based on the given elements.
-
-    Args:
-        life (Element): The element representing life.
-        body (Element): The element representing body.
-        capacity (Element): The element representing capacity.
-        fortune (Element): The element representing fortune.
-        mewa_life (Element): The element representing mewa life.
-        mewa_body (Element): The element representing mewa body.
-        mewa_capacity (Element): The element representing mewa capacity.
-        mewa_fortune (Element): The element representing mewa fortune.
-
-    Returns:
-        tuple[Aspect, ...]: A tuple of Aspect objects representing the harmonization sequence for each aspect.
-
-    Raises:
-        None
-
     """
-    edge_element = __get_edge_element(life)
+    edge_element = _get_edge_element(life)
     result = []
 
-    life_seq = __circle_forwards(start_element=life)
+    life_seq = _full_circle_forwards(start_element=life)
     result.append(
         Aspect(name=AspectName.LIFE, center=life, harmonization_seq=tuple(life_seq[1:]))
     )
@@ -140,22 +114,22 @@ def harmonize_aspects(
     ):
         is_conflicted = False
 
-        if __are_in_conflict(element, harmonize_to):
+        if _are_in_conflict(element, harmonize_to):
             is_conflicted = True
-            stripes = __circle_backwards(element)
+            stripes = _full_circle_backwards(element)
             if stripes[-1] == edge_element:
-                stripes.extend([__get_mother(edge_element), edge_element])
+                stripes.extend([_get_mother(edge_element), edge_element])
             else:
                 stripes.extend(
-                    __shortest_path(
+                    _shortest_path(
                         first_element=stripes[-1], second_element=edge_element
                     )
                 )
         else:
-            stripes = __circle_forwards(element)
+            stripes = _full_circle_forwards(element)
             if stripes[-1] != edge_element:
                 stripes.extend(
-                    __shortest_path(
+                    _shortest_path(
                         first_element=stripes[-1], second_element=edge_element
                     )
                 )
