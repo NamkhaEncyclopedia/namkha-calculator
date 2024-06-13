@@ -12,15 +12,60 @@ from math import ceil, floor
 from .julian import from_jd
 
 
-def inverse_julian_day(jd):
-    return from_jd(jd)[0]
-
+M1 = 167025.0 / 5656  # the period of moon, 29.53
+M2 = M1 / 30
+M0 = 2015501.0 + 4783.0 / 5656
 
 MOON_TAB = (0, 5, 10, 15, 19, 22, 24, 25)
 SUN_TAB = (0, 6, 10, 11)
 
+YEAR_GENDER = ("Male", "Female")
 
-# moon_tab_int(i): moon_tab for integer values.
+WEEKDAYS = ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")
+# year elements & animals
+YEAR_ELEMENTS = ("Wood", "Fire", "Earth", "Iron", "Water")
+YEAR_ANIMALS = (
+    "Mouse",
+    "Ox",
+    "Tiger",
+    "Rabbit",
+    "Dragon",
+    "Snake",
+    "Horse",
+    "Sheep",
+    "Monkey",
+    "Bird",
+    "Dog",
+    "Pig",
+)
+
+S1 = 65.0 / 804  # 1/12.369 sun period in each moon period
+S0 = 743.0 / 804
+S2 = S1 / 30
+
+A1 = 253.0 / 3528
+A2 = 1.0 / 28
+# use constant A2    => 1/28 + 1/105840 # not used see Janson, p. 17, bottom.
+A0 = 475.0 / 3528
+
+Y0 = 806
+ALPHA = 1 + 827.0 / 1005
+BETA = 123
+
+SPECIAL_DAYS = {
+    8: "Medicine Buddha & Tara Day",
+    10: "Guru Rinpoche Day",
+    15: "Amitabha Buddha Day Full Moon",
+    25: "Dakini Day",
+    29: "Dharmapala Day",
+    30: "Shakyamuni Buddha Day New Moon",
+}
+
+
+def inverse_julian_day(jd):
+    return from_jd(jd)[0]
+
+
 def _moon_tab_int(i):
     """Moon tab for integer values."""
     i = i % 28
@@ -37,12 +82,6 @@ def _moon_tab(i):
     u = _moon_tab_int(int(ceil(i)))
     d = _moon_tab_int(int(floor(i)))
     return d + (i - floor(i)) * (u - d)
-
-
-A1 = 253.0 / 3528
-A2 = 1.0 / 28
-# use constant A2    => 1/28 + 1/105840 # not used see Janson, p. 17, bottom.
-A0 = 475.0 / 3528
 
 
 def _moon_anomaly(day, month_count):
@@ -73,11 +112,6 @@ def _sun_tab(i):
     return d + (i - floor(i)) * (u - d)
 
 
-S1 = 65.0 / 804  # 1/12.369 sun period in each moon period
-S0 = 743.0 / 804
-S2 = S1 / 30
-
-
 def _mean_sun(day, month_count):
     return month_count * S1 + day * S2 + S0
 
@@ -85,11 +119,6 @@ def _mean_sun(day, month_count):
 def _sun_equ(day, month_count):
     """Equation of the sun."""
     return _sun_tab(12.0 * (_mean_sun(day, month_count) - 1.0 / 4))
-
-
-M1 = 167025.0 / 5656  # the period of moon, 29.53
-M2 = M1 / 30
-M0 = 2015501.0 + 4783.0 / 5656
 
 
 def _mean_date(d, n):
@@ -106,26 +135,6 @@ def _day_before(d, n):
         return (30, n - 1)
     else:
         return (d - 1, n)
-
-
-WEEKDAYS = ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")
-# year elements & animals
-YEAR_ELEMENTS = ("Wood", "Fire", "Earth", "Iron", "Water")
-YEAR_ANIMALS = (
-    "Mouse",
-    "Ox",
-    "Tiger",
-    "Rabbit",
-    "Dragon",
-    "Snake",
-    "Horse",
-    "Sheep",
-    "Monkey",
-    "Bird",
-    "Dog",
-    "Pig",
-)
-YEAR_GENDER = ("Male", "Female")
 
 
 def weekday(jd):
@@ -190,19 +199,12 @@ def western_year(w_year):
     return year_attributes(year)
 
 
-# Figures out a year's info from a Tibetan calendar year number, ex. 2135.
-# Returns: same as rabjung_year().
 def tibetan_year(y):
     """
     Figures out a year's info from a Tibetan calendar year number, ex. 2135.
     Returns: same as rabjung_year().
     """
     return western_year(y - 127)
-
-
-Y0 = 806
-ALPHA = 1 + 827.0 / 1005
-BETA = 123
 
 
 def from_month_count(n):
@@ -446,16 +448,6 @@ def year_calendar(Y):
     months[0]["days"][0]["special_day"] = "Losar"
     year["months"] = months
     return year
-
-
-SPECIAL_DAYS = {
-    8: "Medicine Buddha & Tara Day",
-    10: "Guru Rinpoche Day",
-    15: "Amitabha Buddha Day Full Moon",
-    25: "Dakini Day",
-    29: "Dharmapala Day",
-    30: "Shakyamuni Buddha Day New Moon",
-}
 
 
 def special_day(no, day, carry_special):
