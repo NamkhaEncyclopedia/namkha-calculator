@@ -7,13 +7,13 @@ along with some cosmetic improvements.
 
 Some of original comments are saved. Our comments go with 'NE:' prefix.
 """
-
+from datetime import datetime
 import math
 
 # code copied from web...  , I did some modification because there is a bug in the package, see https://github.com/dannyzed/julian/issues/4
 
 
-def _to_format(jd, fmt):
+def _to_format(jd: float, fmt: str) -> float:
     """
     Converts a Julian Day object into a specific format.  For
     example, Modified Julian Day.
@@ -35,7 +35,7 @@ def _to_format(jd, fmt):
         raise ValueError("Invalid Format")
 
 
-def _from_format(jd, fmt):
+def _from_format(jd: float, fmt: str) -> tuple[int, float]:
     """
     Converts a Julian Day format into the "standard" Julian
     day format.
@@ -63,7 +63,7 @@ def _from_format(jd, fmt):
         raise ValueError("Invalid Format")
 
 
-def to_jd(dt, fmt="jd"):
+def to_jd(dt: datetime, fmt: str="jd") -> float:
     """
     Converts a given datetime object to Julian date.
     Algorithm is copied from https://en.wikipedia.org/wiki/Julian_day
@@ -102,7 +102,7 @@ def to_jd(dt, fmt="jd"):
     return _to_format(jd, fmt)
 
 
-def from_jd(jd, fmt="jd"):
+def from_jd(jd: float, fmt: str="jd") -> datetime:
     """
     Converts a Julian Date to a datetime object.
     Algorithm is from Fliegel and van Flandern (1968)
