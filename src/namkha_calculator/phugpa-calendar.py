@@ -175,14 +175,10 @@ def rabjung_year(cycle_no, year_no):
     return year_attributes(year)
 
 
-def mod(x, n):
-    return x % n
-
-
 def amod(x, n):
-    if mod(x, n) == 0:
-        return n
-    return mod(x, n)
+    if res := x % n:
+        return res
+    return n
 
 
 def western_year(w_year):
