@@ -7,10 +7,7 @@ along with some cosmetic ehancements.
 Some of original comments are saved. Our comments go with 'NE:' prefix.
 """
 
-import datetime
 from math import ceil, floor
-
-import numpy as np
 
 from .julian import from_jd
 
@@ -19,13 +16,13 @@ def inverse_julian_day(jd):
     return from_jd(jd)[0]
 
 
-# Moon Table
 MOON_TAB = (0, 5, 10, 15, 19, 22, 24, 25)
 SUN_TAB = (0, 6, 10, 11)
 
 
 # moon_tab_int(i): moon_tab for integer values.
 def _moon_tab_int(i):
+    """Moon tab for integer values."""
     i = i % 28
     if i <= 7:
         return MOON_TAB[i]
@@ -48,18 +45,17 @@ A2 = 1.0 / 28
 A0 = 475.0 / 3528
 
 
-# moon_anomaly(day, month_count)
 def _moon_anomaly(day, month_count):
     return month_count * A1 + day * A2 + A0
 
 
-# # moon_equ(day, month_count): Equation of the moon.
 def _moon_equ(day, month_count):
+    """Equation of the moon."""
     return _moon_tab(28 * _moon_anomaly(day, month_count))
 
 
-# sun_tab_int(i): Sun tab for integer values
 def _sun_tab_int(i):
+    """Sun tab for integer values."""
     i = i % 12
     if i <= 3:
         return SUN_TAB[i]
@@ -70,7 +66,8 @@ def _sun_tab_int(i):
     return -SUN_TAB[12 - i]
 
 
-def _sun_tab(i):  # sun tab, with linear interpolation.
+def _sun_tab(i):
+    """Sun tab, with linear interpolation."""
     u = _sun_tab_int(int(ceil(i)))
     d = _sun_tab_int(int(floor(i)))
     return d + (i - floor(i)) * (u - d)
@@ -81,13 +78,12 @@ S0 = 743.0 / 804
 S2 = S1 / 30
 
 
-# mean_sun(day, month_count)
 def _mean_sun(day, month_count):
     return month_count * S1 + day * S2 + S0
 
 
-# # sun_equ(day, month_count): Equation of the sun.
 def _sun_equ(day, month_count):
+    """Equation of the sun."""
     return _sun_tab(12.0 * (_mean_sun(day, month_count) - 1.0 / 4))
 
 
@@ -96,18 +92,16 @@ M2 = M1 / 30
 M0 = 2015501.0 + 4783.0 / 5656
 
 
-# mean_date(day, month_count)
 def _mean_date(d, n):
     return n * M1 + d * M2 + M0
 
 
-# true_date(day, month_count)
 def _true_date(d, n):
     return _mean_date(d, n) + _moon_equ(d, n) / 60 - _sun_equ(d, n) / 60
 
 
-# day_before(day, month_count): substract 1 day from a date
 def _day_before(d, n):
+    """Subtract 1 day from a date."""
     if d == 1:
         return (30, n - 1)
     else:
@@ -134,14 +128,13 @@ YEAR_ANIMALS = (
 YEAR_GENDER = ("Male", "Female")
 
 
-# print(type(SUN_TAB))
-# week day from julian day
 def weekday(jd):
+    """Week day from julian day."""
     return WEEKDAYS[int(floor((jd + 1) % 7))]
 
 
-# figure out the animal and element for a tibetan year
 def year_attributes(year):
+    """Figure out the animal and element for a tibetan year."""
     Y = int(year["tib_year"])
     year["animal"] = YEAR_ANIMALS[(Y + 1) % 12]
     year["element"] = YEAR_ELEMENTS[((Y - 1) / 2) % 5]
@@ -149,17 +142,19 @@ def year_attributes(year):
     return year
 
 
-#  Figures out a year's info based on the Tibetan calendar, ex. the 3rd year of
-# the 15th Rabjung calendrical cycle.
-# Inputs:
-#   cycle_no : number of the cycle
-#   year_no  : number of the year within the cycle, from 1 to 60.
-# Returns: a hashref with the following elements:
-#   cycle_no  : number of the cycle
-#   year_no   : number of the year within the cycle, from 1 to 60.
-#   western_year : western year during which most of the given tibetan year falls
-#   tib_year  : tibetan year number (i.e western year + 127)
 def rabjung_year(cycle_no, year_no):
+    """
+    Figures out a year's info based on the Tibetan calendar, ex. the 3rd year of
+    the 15th Rabjung calendrical cycle.
+    Inputs:
+        cycle_no : number of the cycle
+        year_no  : number of the year within the cycle, from 1 to 60.
+    Returns: a hashref with the following elements:
+        cycle_no  : number of the cycle
+        year_no   : number of the year within the cycle, from 1 to 60.
+        western_year : western year during which most of the given tibetan year falls
+        tib_year  : tibetan year number (i.e western year + 127)
+    """
     if year_no < 1 or year_no > 60:
         raise
     year = {
@@ -171,8 +166,6 @@ def rabjung_year(cycle_no, year_no):
     return year_attributes(year)
 
 
-# Figures out a year's info from a Western calendar year number, ex. 2008.
-# Returns: same as rabjung_year().
 def mod(x, n):
     return x % n
 
@@ -184,6 +177,10 @@ def amod(x, n):
 
 
 def western_year(w_year):
+    """
+    Figures out a year's info from a Western calendar year number, ex. 2008.
+    Returns: same as rabjung_year().
+    """
     year = {
         "cycle_no": int(ceil((w_year - 1026.0) / 60)),
         "year_no": amod(w_year - 6, 60),
@@ -196,6 +193,10 @@ def western_year(w_year):
 # Figures out a year's info from a Tibetan calendar year number, ex. 2135.
 # Returns: same as rabjung_year().
 def tibetan_year(y):
+    """
+    Figures out a year's info from a Tibetan calendar year number, ex. 2135.
+    Returns: same as rabjung_year().
+    """
     return western_year(y - 127)
 
 
@@ -204,14 +205,14 @@ ALPHA = 1 + 827.0 / 1005
 BETA = 123
 
 
-# from_month_count(n)
-#
-# Figures out the Tibetan year number, month number within the year, and whether
-# this is a leap month, from a "month count" number.  See Svante Janson,
-# "Tibetan Calendar Mathematics", p.8 ff.
-#
-# Returns: (year, month, is_leap_month)
 def from_month_count(n):
+    """
+    Figures out the Tibetan year number, month number within the year, and whether
+    this is a leap month, from a "month count" number.  See Svante Janson,
+    "Tibetan Calendar Mathematics", p.8 ff.
+
+    Returns: (year, month, is_leap_month)
+    """
     x = ceil(12 * S1 * n + ALPHA)
     M = amod(x, 12)
     Y = (x - M) / 12 + Y0 + 127
@@ -219,67 +220,66 @@ def from_month_count(n):
     return (Y, M, l)
 
 
-# to_month_count(year, month, is_leap_month)
-#
-# This is the reverse of from_month_count(): from a Tibetan year, month number
-# and leap month indicator, calculates the "month count" based on the epoch.
 def to_month_count(Y, M, l):
+    """
+    This is the reverse of from_month_count(): from a Tibetan year, month number
+    and leap month indicator, calculates the "month count" based on the epoch.
+    """
     Y -= 127  # the formulas on Svante's paper use western year numbers
     l = int(l)
     return floor((12 * (Y - Y0) + M - ALPHA - (1 - 12 * S1) * l) / (12 * S1))
 
 
-# =head2 has_leap_month(year, month)
-# Calculates whether a given Tibetan year and month number is duplicated, i.e
-# is preceded by a leap month.
-# =cut
 def _has_leap_month(Y, M):
+    """
+    Calculates whether a given Tibetan year and month number is duplicated, i.e
+    is preceded by a leap month.
+    """
     Mp = 12 * (Y - 127 - Y0) + M
     return ((2 * Mp) % 65 == BETA % 65) or ((2 * Mp) % 65 == (BETA + 1) % 65)
 
 
-# =head2 tib_to_julian(year, month, is_leap_month, day)
-# Gives the Julian date for a Tibetan year, month number (leap or not) and
-# Tibetan day.
-# Does not check that the tibetan day actually exists:
-#  - If given the date of a skipped day, will return the same Julian date as the
-#    day before.
-#  - If given the date of a duplicate day, returns the Julian date of the second
-#    of the two.
 def tib_to_julian(Y, M, l, d):
+    """
+    Gives the Julian date for a Tibetan year, month number (leap or not) and
+    Tibetan day.
+    Does not check that the tibetan day actually exists:
+    - If given the date of a skipped day, will return the same Julian date as the
+    day before.
+    - If given the date of a duplicate day, returns the Julian date of the second
+    of the two.
+    """
     n = to_month_count(Y, M, l)
     return floor(_true_date(d, n))
 
 
-# tib_to_western(year, month, leap_month, day, leap_day)
-# Calculates full information for a given Tibetan date, given by Tibetan
-# year number (ex. 2135), month number (1 to 12), leap month (boolean),
-# day number, and leap day (boolean).
-# For duplicated days, just as with duplicated months, the "main" day or month is
-# the second, and the "leap" day or month is the first.
-# Returns a hashref with the following fields:
-#   year           - a hashref as returned by rabjung_year and similar functions above
-
-#   month_no       - tibetan month number (as passed)
-#   is_leap_month  - boolean, whether this is a leap month (this is the same as the
-#            passed "leap month" boolean, except if you try to get dates
-#            within a non-existing leap month, in which case is_leap_month
-#            is returned as false
-#   has_leap_month - boolean, whether this year and month is duplicated (regardless
-#            of whether the date is calculated within the leap or the main month)
-
-
-#   day_no     - the day number within the Tibetan month, as passed
-#   skipped_day     - whether this is a skipped day, which does not figure in the
-#            Tibetan calendar
-#   is_leap_day    - boolean, whether this is a leap day (same as the passed leap_day
-#                    value, except if you request a leap day when there isn't one)
-#   has_leap_day   - whether this is a duplicated day (regardless of whether we are
-#                    calculating info about the main or the leap day)
-#   western_date     - the Western date ("YYYY-MM-DD") corresponding to the Tibetan day.
-#   weekday        - weekday ("Sun", "Mon", etc) of the western_date
-#   julian_date    - the Julian day number for this Western date
 def tib_to_western(Y, M, l, d, ld):
+    """
+    Calculates full information for a given Tibetan date, given by Tibetan
+    year number (ex. 2135), month number (1 to 12), leap month (boolean),
+    day number, and leap day (boolean).
+    For duplicated days, just as with duplicated months, the "main" day or month is
+    the second, and the "leap" day or month is the first.
+    Returns a hashref with the following fields:
+      year           - a hashref as returned by rabjung_year and similar functions above
+      month_no       - tibetan month number (as passed)
+      is_leap_month  - boolean, whether this is a leap month (this is the same as the
+               passed "leap month" boolean, except if you try to get dates
+               within a non-existing leap month, in which case is_leap_month
+               is returned as false
+      has_leap_month - boolean, whether this year and month is duplicated (regardless
+               of whether the date is calculated within the leap or the main month)
+      day_no     - the day number within the Tibetan month, as passed
+      skipped_day     - whether this is a skipped day, which does not figure in the
+               Tibetan calendar
+      is_leap_day    - boolean, whether this is a leap day (same as the passed leap_day
+                       value, except if you request a leap day when there isn't one)
+      has_leap_day   - whether this is a duplicated day (regardless of whether we are
+                       calculating info about the main or the leap day)
+      western_date     - the Western date ("YYYY-MM-DD") corresponding to the Tibetan day.
+      weekday        - weekday ("Sun", "Mon", etc) of the western_date
+      julian_date    - the Julian day number for this Western date
+    """
     jd = tib_to_julian(Y, M, l, d)
 
     # also calculate the Julian date of the previous Tib. day
@@ -313,10 +313,12 @@ def tib_to_western(Y, M, l, d, ld):
     return day
 
 
-# to calculate Tibetan dates from western ones, we use a binary search algorithm
-# within a span of 2 years.  for this we use a variant of true_date which takes
-# a linear "tibetan day number", defined as day_no + 30 * month_no.
 def tib_day_to_julian(d):
+    """
+    To calculate Tibetan dates from western ones, we use a binary search algorithm
+    within a span of 2 years.  for this we use a variant of true_date which takes
+    a linear "tibetan day number", defined as day_no + 30 * month_no.
+    """
     n = floor((d - 1) / 30)
     d = d % 30
     if d == 0:
@@ -324,14 +326,15 @@ def tib_day_to_julian(d):
     return floor(_true_date(d, n))
 
 
-# =head2 western_to_tib(western_year, month, day)
-# Calculates a Tibetan date for a given western date.  This does a binary search,
-# and is therefore much slower than tib_to_western().
-# Returns: (tib_year, tib_month, leap_month, tib_day, leap_day)
-# The algorithm could be much improved by using the reverse of mean_date()
-# to start with, and then using the fact that julian dates and "tibetan day
-# numbers" have a quasi-linear relation.
 def western_to_tib(w_y, w_m, w_d):
+    """
+    Calculates a Tibetan date for a given western date.  This does a binary search,
+    and is therefore much slower than tib_to_western().
+    Returns: (tib_year, tib_month, leap_month, tib_day, leap_day)
+    The algorithm could be much improved by using the reverse of mean_date()
+    to start with, and then using the fact that julian dates and "tibetan day
+    numbers" have a quasi-linear relation.
+    """
     jd = julian_day(w_y, w_m, w_d)
 
     tib_year1 = w_y + 126
@@ -375,36 +378,36 @@ def western_to_tib(w_y, w_m, w_d):
     return (Y, M, l, dn2, leap_day)
 
 
-# =head2 losar(tib_year)
-# Calculates the Western date for Losar (Tibetan new year) of a given Tibetan
-# year number (ex. 2137).
-# Returns: "YYYY-MM-DD" string.
 def losar(Y):
+    """
+    Calculates the Western date for Losar (Tibetan new year) of a given Tibetan
+    year number (ex. 2137).
+    Returns: "YYYY-MM-DD" string.
+    """
     jd = 1 + tib_to_julian(Y - 1, 12, 0, 30)
     (w_y, w_m, w_d) = inverse_julian_day(jd)
     return "%.4d-%.2d-%.2d" % (w_y, w_m, w_d)
 
 
-# =head2 tibetan_month(year, month, leap_month)
-# Calculates full information about a Tibetan month: whether it is
-# duplicated or not, and the western start and end date for it.
-# Returns a hashref with the following fields:
-#   year           - a hashref as returned by rabjung_year and similar functions above
-#   month_no       - tibetan month number (as passed)
-#   is_leap_month  - boolean, whether this is a leap month (this is the same as the
-#            passed "leap month" boolean, except if you try to get dates
-#            within a non-existing leap month, in which case is_leap_month
-#            is returned as false
-#   has_leap_month - boolean, whether this year and month is duplicated (regardless
-#            of whether the date is calculated within the leap or the main month)
-#   start_date     - Western date of the 1st of the month (or 2nd if the 1st is skipped),
-#            in "YYYY-MM-DD" format
-#   end_date       - Western date of the 30th of the Tib. month.
-
-
-# The start_date and end_date correspond to the leap month if leap_month is passed,
-# otherwise to the main month (i.e the second of the two).
 def tibetan_month(Y, M, l):
+    """
+    Calculates full information about a Tibetan month: whether it is
+    duplicated or not, and the western start and end date for it.
+    Returns a hashref with the following fields:
+      year           - a hashref as returned by rabjung_year and similar functions above
+      month_no       - tibetan month number (as passed)
+      is_leap_month  - boolean, whether this is a leap month (this is the same as the
+               passed "leap month" boolean, except if you try to get dates
+               within a non-existing leap month, in which case is_leap_month
+               is returned as false
+      has_leap_month - boolean, whether this year and month is duplicated (regardless
+               of whether the date is calculated within the leap or the main month)
+      start_date     - Western date of the 1st of the month (or 2nd if the 1st is skipped),
+               in "YYYY-MM-DD" format
+      end_date       - Western date of the 30th of the Tib. month.
+    The start_date and end_date correspond to the leap month if leap_month is passed,
+    otherwise to the main month (i.e the second of the two).
+    """
     has_leap = _has_leap_month(Y, M)
     l = l and has_leap
     # calculate the Julian date 1st and last of the month
@@ -423,12 +426,13 @@ def tibetan_month(Y, M, l):
     return month
 
 
-# =head2 year_calendar(tib_year)
-# Generate a calendar for a whole Tibetan year, given by Tib. year number.
-# Returns: a hashref containing the year's info, including each of the months
-# in succession within year->{months}.  Each month includes all the days in
-# succession within month->{days}.
 def year_calendar(Y):
+    """
+    Generate a calendar for a whole Tibetan year, given by Tib. year number.
+    Returns: a hashref containing the year's info, including each of the months
+    in succession within year->{months}.  Each month includes all the days in
+    succession within month->{days}.
+    """
     year = tibetan_year(Y)
 
     # loop over the months, inserting leap months before the main ones
@@ -454,9 +458,11 @@ SPECIAL_DAYS = {
 }
 
 
-# figure out if a day is special if it is skipped, return its speciality so it can be
-# applied to the next day.  on dup days, the special one is the 1st.
 def special_day(no, day, carry_special):
+    """
+    Figure out if a day is special if it is skipped, return its speciality so it can be
+    applied to the next day.  on dup days, the special one is the 1st.
+    """
     # if we are carrying over a special feature from the day before, apply it
     if carry_special:
         day["special_day"] = carry_special + " (carried over)"
@@ -475,8 +481,8 @@ def special_day(no, day, carry_special):
     return None
 
 
-# generate a month with all its days
 def generate_month(Y, M, l):
+    """Generate a month with all its days"""
     month = tibetan_month(Y, M, l)
     carry_special = False
 
