@@ -2,10 +2,7 @@
 This module was taken from https://github.com/forest-jiang/phugpa-cal, which in turn
 was copied from https://pypi.org/project/julian/ with some minor modifications.
 
-We're adding calculation of animal and elements for months and days as well as mewa
-along with some cosmetic improvements.
-
-Some of original comments are saved. Our comments go with 'NE:' prefix.
+Added some cosmetic enhancements.
 """
 from datetime import datetime
 import math
