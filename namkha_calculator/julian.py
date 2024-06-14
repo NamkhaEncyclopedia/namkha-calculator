@@ -142,4 +142,4 @@ def from_jd(jd: float, fmt: str="jd") -> datetime:
     frac_component -= seconds * 1e6
 
     frac_component = int(frac_component)
-    return (year, month, day), (hours, minutes, seconds, frac_component)
+    return datetime(year, month, day, hours, minutes, seconds, frac_component)
