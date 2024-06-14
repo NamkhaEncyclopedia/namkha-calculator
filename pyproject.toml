@@ -8,6 +8,7 @@ packages = [{include = "namkha_calculator", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+julianpy = "^1.0.1"
 
 
 [build-system]
