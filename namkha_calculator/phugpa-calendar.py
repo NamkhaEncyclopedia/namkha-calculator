@@ -1,5 +1,6 @@
 """
 This module was taken from https://github.com/forest-jiang/phugpa-cal
+with Julian date conversion taken from https://pypi.org/project/julian/
 
 We're adding calculation of animal and elements for months and days as well as mewa
 along with some cosmetic ehancements.
@@ -8,8 +9,6 @@ Some of original comments are saved. Our comments go with 'NE:' prefix.
 """
 
 from math import ceil, floor
-
-from .julian import from_jd
 
 
 M1 = 167025.0 / 5656  # the period of moon, 29.53
@@ -62,8 +61,26 @@ SPECIAL_DAYS = {
 }
 
 
-def inverse_julian_day(jd):
-    return from_jd(jd)[0]
+def inverse_julian_day(jd: float) -> tuple[int, int, int]:
+    jd = floor(jd + 0.5)
+
+    l = jd + 68569
+    n = 4 * l // 146097
+    l = l - (146097 * n + 3) // 4
+    i = 4000 * (l + 1) // 1461001
+    l = l - 1461 * i // 4 + 31
+    j = 80 * l // 2447
+    k = l - 2447 * j // 80
+    l = j // 11
+    j = j + 2 - 12 * l
+    i = 100 * (n - 49) + i + l
+
+    year = int(i)
+    month = int(j)
+    day = int(k)
+
+    return year, month, day
+
 
 
 def _moon_tab_int(i):
