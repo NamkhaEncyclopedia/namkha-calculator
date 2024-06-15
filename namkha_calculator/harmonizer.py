@@ -9,7 +9,7 @@ from .astrology import Element
 
 
 @unique
-class AspectName(Enum, str):
+class AspectName(str, Enum):
     LIFE = "life"
     BODY = "body"
     CAPACITY = "capacity"

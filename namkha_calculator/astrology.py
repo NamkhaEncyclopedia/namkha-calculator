@@ -2,7 +2,7 @@ from enum import Enum, unique
 
 
 @unique
-class Element(Enum, str):
+class Element(str, Enum):
     WATER = "Water"
     WOOD = "Wood"
     FIRE = "Fire"
@@ -11,7 +11,7 @@ class Element(Enum, str):
 
 
 @unique
-class Animal(Enum, str):
+class Animal(str, Enum):
     MOUSE = "Mouse"
     OX = "Ox"
     TIGER = "Tiger"
