@@ -3,11 +3,11 @@ from enum import Enum, unique
 
 @unique
 class Element(str, Enum):
-    WATER = "Water"
     WOOD = "Wood"
     FIRE = "Fire"
     EARTH = "Earth"
     METAL = "Metal"
+    WATER = "Water"
 
 
 @unique
