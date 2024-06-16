@@ -27,6 +27,20 @@ class TestPhugpaCalendar(unittest.TestCase):
             "Fire": "Fire",
             "Earth": "Earth",
         }
+        ANIMAL_NAMES_MAP = {
+            "Mouse": "Mouse",
+            "Ox": "Ox",
+            "Tiger": "Tiger",
+            "Rabbit": "Hare",
+            "Dragon": "Dragon",
+            "Snake": "Snake",
+            "Horse": "Horse",
+            "Sheep": "Sheep",
+            "Monkey": "Monkey",
+            "Bird": "Bird",
+            "Dog": "Dog",
+            "Pig": "Boar",
+        }
         for test_western_year in range(1800, 2801):
             with self.subTest(western_year=test_western_year):
                 test_date = datetime(year=test_western_year, month=6, day=1)
@@ -38,5 +52,5 @@ class TestPhugpaCalendar(unittest.TestCase):
                         test_year_characterisitcs.element, Element(ELEMENT_NAMES_MAP[match.group(1)])
                     )
                     self.assertEqual(
-                        test_year_characterisitcs.animal, Animal(match.group(2))
+                        test_year_characterisitcs.animal, Animal(ANIMAL_NAMES_MAP[match.group(2)])
                     )

@@ -34,10 +34,13 @@ class TibetanHour(_CalendarEntity):
 
 
 def year_characteristics(date: datetime) -> Year:
+    tibetan_year_number=date.year + 127
+    animal = ANIMAL_TABLE[(tibetan_year_number + 1) % 12]
+    element = ELEMENT_TABLE[int(((tibetan_year_number - 1) / 2) % 5)]
     return Year(
-            tibetan_year_number=127+2024,
-            animal=Animal.DRAGON,
-            element=Element.WOOD,
+            tibetan_year_number=tibetan_year_number,
+            animal=Animal(animal),
+            element=Element(element),
             mewa_number=3,
         )
 
