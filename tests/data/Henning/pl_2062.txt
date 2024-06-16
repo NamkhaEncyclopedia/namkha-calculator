@@ -1,0 +1,1590 @@
+
+New Year: 2062, Water-male-Horse
+
+Tibetan Lunar Month: 1 - Fire-male-Dragon
+
+1: Fri. gro zhin. Earth-Earth; 10 Feb 2062
+  phan tshun, gdab pa, Tiger, kham 7
+  6;19,47 21;48,29 21;14,16 16;2,45 9;12,36
+  Solar: Wood-Mouse. Gui 4
+  From 1st to 15th, Demonstration of Miracles.
+2: Sat. mon gre. Earth-Water; 11 Feb 2062
+  mchog can, rigs can, Rabbit, gin 8
+  0;21,59 22;44,51 21;18,50 17;3,41 9;13,34
+  Solar: Wood-Ox. Liu 5
+3: Sun. mon gru. Fire-Earth; 12 Feb 2062
+  yongs 'joms, khyim skyes, Dragon, zin 9
+  1;23,11 23;42,12 21;23,23 18;5,36 9;14,33
+  Solar: Fire-Tiger. Xing 6
+4: Mon. khrums stod. Water-Fire; 13 Feb 2062
+  zhi ba, vishti, Snake, zon 1
+  2;23,19 24;40,37 21;27,57 19;8,34 9;15,31
+  Solar: Fire-Rabbit. Zhang 7
+5: Tue. khrums smad. Fire-Water; 14 Feb 2062
+  grub pa, byis pa, Horse, li 2
+  3;21,31 25;40,59 21;32,30 20;13,30 9;16,29
+  Solar: Earth-Dragon. Yi 8
+6: Wed. nam gru. Water-Water; 15 Feb 2062
+  bsgrub bya, til rdung, Sheep, khon 3
+  4;18,43 26;42,21 21;37,4 21;19,25 9;17,27
+  Solar: Earth-Snake. Zhen 9
+7: Thu. tha skar. Wind-Wind; 16 Feb 2062
+  dge ba, tshong ba, Monkey, dwa 4
+  5;14,55 0;44,42 21;41,38 22;26,20 9;18,25
+  Solar: Iron-Horse. Jiao 1
+8: Fri. bra nye. Earth-Fire; 17 Feb 2062
+  dkar po, gdab pa, Bird, khen 5
+  6;10,6 1;48,4 21;46,11 23;34,16 9;19,24
+  Solar: Iron-Sheep. Kang 2
+9: Sat. smin drug. Earth-Fire; 18 Feb 2062
+  tshangs pa, rigs can, Dog, kham 6
+  0;4,22 2;52,23 21;50,45 24;43,8 9;20,22
+  Solar: Water-Monkey. Di 3
+10. Omitted: Pig gin 7
+11: Sun. mgo. Fire-Wind; 19 Feb 2062
+  'khon 'dzin, tshong ba, Mouse, zin 8
+  1;52,52 4;0,59 21;59,52 26;0,52 9;22,18
+  Solar: Water-Bird. Fang 4
+12: Mon. lag. Water-Water; 20 Feb 2062
+  rnam sel, gdab pa, Ox, zon 9
+  2;47,7 5;5,18 22;4,25 0;9,44 9;23,17
+  Solar: Wood-Dog. Xin 5
+13: Tue. nabs so. Fire-Wind; 21 Feb 2062
+  mdza' bo, rigs can, Tiger, li 1
+  3;41,23 6;9,36 22;8,59 1;18,35 9;24,15
+  Solar: Wood-Pig. Wei 6
+14: Wed. rgyal. Water-Fire; 22 Feb 2062
+  tshe dang ldan pa, khyim skyes, Rabbit, khon 2
+  4;35,41 7;13,51 22;13,33 2;27,24 9;25,13
+  Solar: Fire-Mouse. Ji 7
+15: Thu. skag. Wind-Water; 23 Feb 2062
+  skal bzang, vishti, Dragon, dwa 3
+  5;31,0 8;17,5 22;18,6 3;35,12 9;26,11
+  Solar: Fire-Ox. Dou 8
+16: Fri. mchu. Earth-Fire; 24 Feb 2062
+  dge byed, byis pa, Snake, khen 4
+  6;27,19 9;19,20 22;22,40 4;42,1 9;27,9
+  Solar: Earth-Tiger. Niu 9
+17: Sat. gre. Earth-Fire; 25 Feb 2062
+  shin tu 'grams, khyim skyes, Horse, kham 5
+  0;24,38 10;20,35 22;27,13 5;47,49 9;28,8
+  Solar: Earth-Rabbit. Nu 1
+18: Sun. dbo. Fire-Wind; 26 Feb 2062
+  las bzang, vishti, Sheep, gin 6
+  1;23,1 11;20,46 22;31,47 6;52,33 9;29,6
+  Solar: Iron-Dragon. Xu 2
+19: Mon. me bzhi. Water-Wind; 27 Feb 2062
+  'dzin byed, byis pa, Monkey, zin 7
+  2;23,19 12;19,1 22;36,20 7;55,21 10;0,4
+  Solar: Iron-Snake. Wei 3
+20: Tue. nag pa. Fire-Wind; 28 Feb 2062
+  zug rngu, til rdung, Bird, zon 8
+  3;24,34 13;16,15 22;40,50 8;57,6 10;1,2
+  Solar: Water-Horse. Shi 4
+21: Wed. sa ri. Water-Wind; 1 Mar 2062
+  'grams, tshong ba, Dog, li 9
+  4;26,49 14;12,30 22;45,20 9;57,50 10;2,0
+  Solar: Water-Sheep. Bi 5
+22: Thu. sa ga. Wind-Fire; 2 Mar 2062
+  'phel, vishti, Pig, khon 1
+  5;30,5 15;7,44 22;49,49 10;57,34 10;2,59
+  Solar: Wood-Monkey. Kui 6
+23: Fri. lha mtshams. Earth-Earth; 3 Mar 2062
+  brtan pa, byis pa, Mouse, dwa 2
+  6;34,16 16;2,2 22;54,19 11;56,22 10;3,57
+  Solar: Wood-Bird. Lou 7
+24: Sat. lha mtshams. Earth-Earth; 4 Mar 2062
+  yongs bsnun, til rdung, Ox, khen 3
+  0;38,28 16;56,21 22;58,49 12;55,10 10;4,55
+  Solar: Fire-Dog. Wei 8
+25: Sun. snron. Fire-Earth; 5 Mar 2062
+  dga' ba, tshong ba, Tiger, kham 4
+  1;42,39 17;50,39 23;3,18 13;53,58 10;5,53
+  Solar: Fire-Pig. Mao 9
+26: Mon. snrubs. Water-Water; 6 Mar 2062
+  rdo rje, gdab pa, Rabbit, gin 5
+  2;46,51 18;44,57 23;7,48 14;52,46 10;6,51
+  Solar: Earth-Mouse. Bi 1
+27: Tue. chu stod. Fire-Water; 7 Mar 2062
+  dngos grub, rigs can, Dragon, zin 6
+  3;51,2 19;39,15 23;12,18 15;51,34 10;7,50
+  Solar: Earth-Ox. Zui 2
+28: Wed. chu smad. Water-Earth; 8 Mar 2062
+  phan tshun, til rdung, Snake, zon 7
+  4;55,10 20;33,37 23;16,48 16;50,25 10;8,48
+  Solar: Iron-Tiger. Can 3
+29: Thu. gro zhin. Wind-Earth; 9 Mar 2062
+  mchog can, tshong ba, Horse, li 8
+  5;58,18 21;28,59 23;21,17 17;50,17 10;9,46
+  Solar: Iron-Rabbit. Jing 4
+30: Fri. mon gre. Earth-Water; 10 Mar 2062
+  6;60,0 22;25,47 23;25,47 18;51,34 10;10,44
+  Solar: Water-Dragon. Gui 5
+30: Sat. mon gru. Earth-Earth; 11 Mar 2062
+  zhi ba, klu, Sheep, khon 9
+  0;0,25 23;25,21 23;25,47 19;51,9 10;10,44
+  Solar: Water-Snake. Liu 6
+
+Tibetan Lunar Month: 2 - Fire-female-Snake
+
+1: Sun. khrums stod. Fire-Fire; 12 Mar 2062
+  grub pa, gdab pa, Monkey, dwa 1
+  1;1,33 24;22,43 23;30,17 20;53,0 10;11,42
+  Solar: Wood-Horse. Xing 7
+2: Mon. khrums smad. Water-Water; 13 Mar 2062
+  bsgrub bya, rigs can, Bird, khen 2
+  2;1,37 25;21,9 23;34,46 21;55,56 10;12,41
+  Solar: Wood-Sheep. Zhang 8
+3. Omitted: Dog kham 3
+4: Tue. nam gru. Fire-Water; 14 Mar 2062
+  dkar po, khyim skyes, Pig, gin 4
+  3;56,52 26;22,54 23;43,46 23;6,40 10;14,37
+  Solar: Fire-Monkey. Yi 9
+5: Wed. tha skar. Water-Wind; 15 Mar 2062
+  tshangs pa, gdab pa, Mouse, zin 5
+  4;52,59 0;25,16 23;48,15 24;13,32 10;15,35
+  Solar: Fire-Bird. Zhen 1
+6: Thu. bra nye. Wind-Fire; 16 Mar 2062
+  dbang po, rigs can, Ox, zon 6
+  5;48,7 1;28,38 23;52,45 25;21,24 10;16,34
+  Solar: Earth-Dog. Jiao 2
+7: Fri. smin drug. Earth-Fire; 17 Mar 2062
+  'khon 'dzin, khyim skyes, Tiger, li 7
+  6;42,18 2;32,56 23;57,15 26;30,12 10;17,32
+  Solar: Earth-Pig. Kang 3
+8: Sat. snar ma. Earth-Earth; 18 Mar 2062
+  rnam sel, vishti, Rabbit, khon 8
+  0;36,29 3;37,15 24;1,45 0;39,0 10;18,30
+  Solar: Iron-Mouse. Di 4
+9: Sun. mgo. Fire-Wind; 19 Mar 2062
+  mdza' bo, byis pa, Dragon, dwa 9
+  1;30,41 4;41,33 24;6,14 1;47,48 10;19,28
+  Solar: Iron-Ox. Fang 5
+10: Mon. lag. Water-Water; 20 Mar 2062
+  tshe dang ldan pa, khyim skyes, Snake, khen 1
+  2;24,52 5;45,51 24;10,44 2;56,36 10;20,26
+  Solar: Water-Tiger. Xin 6
+11: Tue. nabs so. Fire-Wind; 21 Mar 2062
+  dge byed, vishti, Horse, kham 2
+  3;19,3 6;50,10 24;15,14 4;5,24 10;21,25
+  Solar: Water-Rabbit. Wei 7
+12: Wed. rgyal. Water-Fire; 22 Mar 2062
+  shin tu 'grams, byis pa, Sheep, gin 3
+  4;13,19 7;54,24 24;19,43 5;14,8 10;22,23
+  Solar: Wood-Dragon. Ji 8
+13: Thu. skag. Wind-Water; 23 Mar 2062
+  las bzang, til rdung, Monkey, zin 4
+  5;8,34 8;57,38 24;24,13 6;21,52 10;23,21
+  Solar: Wood-Snake. Dou 9
+14: Fri. mchu. Earth-Fire; 24 Mar 2062
+  'dzin byed, tshong ba, Bird, zon 5
+  6;4,50 9;59,53 24;28,43 7;28,36 10;24,19
+  Solar: Fire-Horse. Niu 1
+15: Sat. dbo. Earth-Wind; 25 Mar 2062
+  zug rngu, gdab pa, Dog, li 6
+  0;2,5 11;1,7 24;33,12 8;34,20 10;25,17
+  Solar: Fire-Sheep. Nu 2
+16: Sun. me bzhi. Fire-Wind; 26 Mar 2062
+  'grams, rigs can, Pig, khon 7
+  1;0,25 12;1,17 24;37,42 9;39,0 10;26,16
+  Solar: Earth-Monkey. Xu 3
+17: Mon. me bzhi. Water-Wind; 27 Mar 2062
+  'phel, khyim skyes, Mouse, dwa 8
+  2;0,40 12;59,31 24;42,12 10;41,44 10;27,14
+  Solar: Earth-Bird. Wei 4
+18: Tue. nag pa. Fire-Wind; 28 Mar 2062
+  brtan pa, vishti, Ox, khen 9
+  3;1,56 13;56,45 24;46,42 11;43,27 10;28,12
+  Solar: Iron-Dog. Shi 5
+19: Wed. sa ri. Water-Wind; 29 Mar 2062
+  yongs bsnun, byis pa, Tiger, kham 1
+  4;4,11 14;52,59 24;51,11 12;44,11 10;29,10
+  Solar: Iron-Pig. Bi 6
+20: Thu. sa ga. Wind-Fire; 30 Mar 2062
+  dga' ba, til rdung, Rabbit, gin 2
+  5;7,26 15;48,14 24;55,40 13;43,54 11;0,8
+  Solar: Water-Mouse. Kui 7
+21: Fri. lha mtshams. Earth-Earth; 31 Mar 2062
+  rdo rje, tshong ba, Dragon, zin 3
+  6;11,32 16;42,32 25;0,4 14;42,36 11;1,7
+  Solar: Water-Ox. Lou 8
+22: Sat. snron. Earth-Earth; 1 Apr 2062
+  dngos grub, gdab pa, Snake, zon 4
+  0;15,37 17;36,50 25;4,28 15;41,18 11;2,5
+  Solar: Wood-Tiger. Wei 9
+23: Sun. snrubs. Fire-Water; 2 Apr 2062
+  phan tshun, rigs can, Horse, li 5
+  1;19,43 18;31,8 25;8,52 16;40,0 11;3,3
+  Solar: Wood-Rabbit. Mao 1
+24: Mon. chu stod. Water-Water; 3 Apr 2062
+  mchog can, khyim skyes, Sheep, khon 6
+  2;23,49 19;25,26 25;13,16 17;38,42 11;4,1
+  Solar: Fire-Dragon. Bi 2
+25: Tue. chu smad. Fire-Earth; 4 Apr 2062
+  yongs 'joms, tshong ba, Monkey, dwa 7
+  3;27,54 20;19,45 25;17,40 18;37,25 11;5,0
+  Solar: Fire-Snake. Zui 3
+26: Wed. gro zhin. Water-Earth; 5 Apr 2062
+  zhi ba, gdab pa, Bird, khen 8
+  4;31,56 21;14,7 25;22,3 19;36,11 11;5,58
+  Solar: Earth-Horse. Can 4
+27: Thu. mon gre. Wind-Water; 6 Apr 2062
+  grub pa, rigs can, Dog, kham 9
+  5;34,57 22;9,29 25;26,27 20;35,57 11;6,56
+  Solar: Earth-Sheep. Jing 5
+28: Fri. mon gru. Earth-Earth; 7 Apr 2062
+  bsgrub bya, khyim skyes, Pig, gin 1
+  6;36,59 23;5,52 25;30,51 21;36,43 11;7,54
+  Solar: Iron-Monkey. Gui 6
+29: Sat. khrums stod. Earth-Fire; 8 Apr 2062
+  dge ba, vishti, Mouse, zin 2
+  0;38,0 24;3,14 25;35,15 22;38,30 11;8,52
+  Solar: Iron-Bird. Liu 7
+30: Sun. khrums smad. Fire-Water; 9 Apr 2062
+  dkar po, rkang bzhi, Ox, zon 3
+  1;37,57 25;1,41 25;39,39 23;41,21 11;9,51
+  Solar: Water-Dog. Xing 8
+
+Tibetan Lunar Month: 3 - Earth-male-Horse
+
+1: Mon. nam gru. Water-Water; 10 Apr 2062
+  tshangs pa, mi sdug pa, Tiger, li 4
+  2;35,59 26;2,4 25;44,3 24;46,7 11;10,49
+  Solar: Water-Pig. Zhang 9
+2: Tue. tha skar. Fire-Wind; 11 Apr 2062
+  dbang po, byis pa, Rabbit, khon 5
+  3;33,0 0;3,26 25;48,27 25;51,54 11;11,47
+  Solar: Wood-Mouse. Yi 1
+3: Wed. bra nye. Water-Fire; 12 Apr 2062
+  'khon 'dzin, til rdung, Dragon, dwa 6
+  4;29,1 1;5,49 25;52,51 26;58,40 11;12,45
+  Solar: Wood-Ox. Zhen 2
+4: Thu. smin drug. Wind-Fire; 13 Apr 2062
+  mdza' bo, vishti, Snake, khen 7
+  5;24,2 2;9,12 25;57,14 1;6,27 11;13,43
+  Solar: Fire-Tiger. Jiao 3
+5: Fri. snar ma. Earth-Earth; 14 Apr 2062
+  tshe dang ldan pa, byis pa, Horse, kham 8
+  6;18,8 3;13,30 26;1,38 2;15,9 11;14,42
+  Solar: Fire-Rabbit. Kang 4
+6: Sat. mgo. Earth-Wind; 15 Apr 2062
+  skal bzang, til rdung, Sheep, gin 9
+  0;12,13 4;17,48 26;6,2 3;23,51 11;15,40
+  Solar: Earth-Dragon. Di 5
+7: Sun. lag. Fire-Water; 16 Apr 2062
+  dge byed, tshong ba, Monkey, zin 1
+  1;6,19 5;22,7 26;10,26 4;32,33 11;16,38
+  Solar: Earth-Snake. Fang 6
+8: Mon. nabs so. Water-Wind; 17 Apr 2062
+  shin tu 'grams, gdab pa, Bird, zon 2
+  2;0,24 6;26,25 26;14,50 5;41,16 11;17,36
+  Solar: Iron-Horse. Xin 7
+9. Omitted: Dog li 3
+10: Tue. rgyal. Fire-Fire; 18 Apr 2062
+  las bzang, til rdung, Pig, khon 4
+  3;48,40 7;34,57 26;23,38 6;58,36 11;19,33
+  Solar: Iron-Sheep. Wei 8
+11: Wed. skag. Water-Water; 19 Apr 2062
+  zug rngu, tshong ba, Mouse, dwa 5
+  4;43,50 8;38,11 26;28,2 8;6,13 11;20,31
+  Solar: Water-Monkey. Ji 9
+12: Thu. mchu. Wind-Fire; 20 Apr 2062
+  'grams, gdab pa, Ox, khen 6
+  5;40,0 9;40,25 26;32,25 9;12,51 11;21,29
+  Solar: Water-Bird. Dou 1
+13: Fri. gre. Earth-Fire; 21 Apr 2062
+  'phel, rigs can, Tiger, kham 7
+  6;37,10 10;41,39 26;36,49 10;18,29 11;22,27
+  Solar: Wood-Dog. Niu 2
+14: Sat. dbo. Earth-Wind; 22 Apr 2062
+  brtan pa, khyim skyes, Rabbit, gin 8
+  0;35,25 11;41,48 26;41,13 11;23,2 11;23,25
+  Solar: Wood-Pig. Nu 3
+15: Sun. me bzhi. Fire-Wind; 23 Apr 2062
+  yongs bsnun, vishti, Dragon, zin 9
+  1;35,35 12;40,2 26;45,37 12;25,40 11;24,24
+  Solar: Fire-Mouse. Xu 4
+  Revelation of the Kalacakra Tantra.
+16: Mon. nag pa. Water-Wind; 24 Apr 2062
+  dga' ba, byis pa, Snake, zon 1
+  2;36,45 13;37,16 26;50,1 13;27,17 11;25,22
+  Solar: Fire-Ox. Wei 5
+17: Tue. sa ri. Fire-Wind; 25 Apr 2062
+  rdo rje, til rdung, Horse, li 2
+  3;38,55 14;33,29 26;54,25 14;27,55 11;26,20
+  Solar: Earth-Tiger. Shi 6
+18: Wed. sa ga. Water-Fire; 26 Apr 2062
+  dngos grub, tshong ba, Sheep, khon 3
+  4;42,5 15;28,43 26;58,49 15;27,32 11;27,18
+  Solar: Earth-Rabbit. Bi 7
+19: Thu. lha mtshams. Wind-Earth; 27 Apr 2062
+  phan tshun, gdab pa, Monkey, dwa 4
+  5;46,11 16;23,1 0;3,13 16;26,14 11;28,17
+  Solar: Iron-Dragon. Kui 8
+20: Fri. snron. Earth-Earth; 28 Apr 2062
+  mchog can, rigs can, Bird, khen 5
+  6;50,17 17;17,19 0;7,37 17;24,56 11;29,15
+  Solar: Iron-Snake. Lou 9
+21: Sat. snrubs. Earth-Water; 29 Apr 2062
+  yongs 'joms, til rdung, Dog, kham 6
+  0;54,22 18;11,37 0;12,0 18;23,37 0;0,13
+  Solar: Water-Horse. Wei 1
+22: Sun. chu stod. Fire-Water; 30 Apr 2062
+  zhi ba, tshong ba, Pig, gin 7
+  1;58,23 19;5,56 0;16,20 19;22,16 0;1,11
+  Solar: Water-Sheep. Mao 2
+23: Mon. chu smad. Water-Earth; 1 May 2062
+  2;60,0 20;2,40 0;20,40 20;23,20 0;2,9
+  Solar: Wood-Monkey. Bi 3
+23: Tue. gro zhin. Fire-Earth; 2 May 2062
+  bsgrub bya, rigs can, Mouse, zin 8
+  3;2,25 21;0,14 0;20,40 21;20,54 0;2,9
+  Solar: Wood-Bird. Zui 4
+24: Wed. gro zhin. Water-Earth; 3 May 2062
+  dge ba, khyim skyes, Ox, zon 9
+  4;6,22 21;54,37 0;25,0 22;19,37 0;3,8
+  Solar: Fire-Dog. Can 5
+25: Thu. mon gre. Wind-Water; 4 May 2062
+  dkar po, vishti, Tiger, li 1
+  5;9,19 22;50,0 0;29,20 23;19,20 0;4,6
+  Solar: Fire-Pig. Jing 6
+26: Fri. mon gru. Earth-Earth; 5 May 2062
+  tshangs pa, byis pa, Rabbit, khon 2
+  6;11,16 23;46,23 0;33,40 24;20,3 0;5,4
+  Solar: Earth-Mouse. Gui 7
+27: Sat. khrums stod. Earth-Fire; 6 May 2062
+  dbang po, til rdung, Dragon, dwa 3
+  0;12,14 24;43,45 0;38,0 25;21,45 0;6,2
+  Solar: Earth-Ox. Liu 8
+28: Sun. khrums smad. Fire-Water; 7 May 2062
+  'khon 'dzin, tshong ba, Snake, khen 4
+  1;12,6 25;42,13 0;42,20 26;24,33 0;7,0
+  Solar: Iron-Tiger. Xing 9
+29: Mon. nam gru. Water-Water; 8 May 2062
+  rnam sel, bkra shis, Horse, kham 5
+  2;10,3 26;42,36 0;46,40 0;29,16 0;7,59
+  Solar: Iron-Rabbit. Zhang 1
+30: Tue. tha skar. Fire-Wind; 9 May 2062
+  mdza' bo, klu, Sheep, gin 6
+  3;7,0 0;43,59 0;51,0 1;34,59 0;8,57
+  Solar: Water-Dragon. Yi 2
+
+Tibetan Lunar Month: 4 - Earth-female-Sheep
+
+1: Wed. bra nye. Water-Fire; 10 May 2062
+  tshe dang ldan pa, gdab pa, Monkey, zin 7
+  4;2,57 1;46,22 0;55,20 2;41,42 0;9,55
+  Solar: Water-Snake. Zhen 3
+2. Omitted: Bird zon 8
+3: Thu. smin drug. Wind-Fire; 11 May 2062
+  skal bzang, til rdung, Dog, li 9
+  5;51,55 2;54,4 1;4,0 3;58,4 0;11,51
+  Solar: Wood-Horse. Jiao 4
+4: Fri. snar ma. Earth-Earth; 12 May 2062
+  shin tu 'grams, tshong ba, Pig, khon 1
+  6;45,57 3;58,22 1;8,20 5;6,42 0;12,50
+  Solar: Wood-Sheep. Kang 5
+5: Sat. lag. Earth-Water; 13 May 2062
+  las bzang, gdab pa, Mouse, dwa 2
+  0;39,58 5;2,41 1;12,40 6;15,21 0;13,48
+  Solar: Fire-Monkey. Di 6
+6: Sun. nabs so. Fire-Wind; 14 May 2062
+  'dzin byed, rigs can, Ox, khen 3
+  1;34,0 6;6,59 1;17,0 7;23,59 0;14,46
+  Solar: Fire-Bird. Fang 7
+7: Mon. rgyal. Water-Fire; 15 May 2062
+  zug rngu, khyim skyes, Tiger, kham 4
+  2;28,2 7;11,17 1;21,20 8;32,37 0;15,44
+  Solar: Earth-Dog. Xin 8
+  Birth of the Buddha.
+8: Tue. skag. Fire-Water; 16 May 2062
+  'grams, gdab pa, Rabbit, gin 5
+  3;22,8 8;15,31 1;25,40 9;41,11 0;16,42
+  Solar: Earth-Pig. Wei 9
+9: Wed. mchu. Water-Fire; 17 May 2062
+  'phel, rigs can, Dragon, zin 6
+  4;17,15 9;18,44 1;30,0 10;48,44 0;17,41
+  Solar: Iron-Mouse. Ji 1
+10: Thu. gre. Wind-Fire; 18 May 2062
+  brtan pa, khyim skyes, Snake, zon 7
+  5;13,21 10;20,58 1;34,20 11;55,18 0;18,39
+  Solar: Iron-Ox. Dou 2
+11: Fri. dbo. Earth-Wind; 19 May 2062
+  dga' ba, vishti, Horse, li 8
+  6;10,28 11;22,11 1;38,40 13;0,51 0;19,37
+  Solar: Water-Tiger. Niu 3
+12: Sat. me bzhi. Earth-Wind; 20 May 2062
+  rdo rje, byis pa, Sheep, khon 9
+  0;8,40 12;22,19 1;43,0 14;5,19 0;20,35
+  Solar: Water-Rabbit. Nu 4
+13: Sun. nag pa. Fire-Wind; 21 May 2062
+  dngos grub, til rdung, Monkey, dwa 1
+  1;8,46 13;20,33 1;47,20 15;7,53 0;21,34
+  Solar: Wood-Dragon. Xu 5
+14: Mon. sa ri. Water-Wind; 22 May 2062
+  phan tshun, tshong ba, Bird, khen 2
+  2;9,53 14;17,46 1;51,40 16;9,26 0;22,32
+  Solar: Wood-Snake. Wei 6
+15: Tue. sa ga. Fire-Fire; 23 May 2062
+  mchog can, gdab pa, Dog, kham 3
+  3;12,0 15;13,59 1;56,0 17;9,59 0;23,30
+  Solar: Fire-Horse. Shi 7
+  Enlightenment and Parinirvana of the Buddha.
+16: Wed. lha mtshams. Water-Earth; 24 May 2062
+  yongs 'joms, rigs can, Pig, gin 4
+  4;15,7 16;9,12 2;0,20 18;9,32 0;24,28
+  Solar: Fire-Sheep. Bi 8
+17: Thu. snron. Wind-Earth; 25 May 2062
+  zhi ba, khyim skyes, Mouse, zin 5
+  5;19,9 17;3,30 2;4,40 19;8,10 0;25,26
+  Solar: Earth-Monkey. Kui 9
+18: Fri. snron. Earth-Earth; 26 May 2062
+  grub pa, vishti, Ox, zon 6
+  6;23,10 17;57,49 2;9,0 20;6,49 0;26,25
+  Solar: Earth-Bird. Lou 1
+19: Sat. snrubs. Earth-Water; 27 May 2062
+  bsgrub bya, gdab pa, Tiger, li 7
+  0;27,12 18;52,7 2;13,20 21;5,27 0;27,23
+  Solar: Iron-Dog. Wei 2
+20: Sun. chu stod. Fire-Water; 28 May 2062
+  dge ba, rigs can, Rabbit, khon 8
+  1;31,14 19;46,25 2;17,40 22;4,5 0;28,21
+  Solar: Iron-Pig. Mao 3
+21: Mon. chu smad. Water-Earth; 29 May 2062
+  dkar po, khyim skyes, Dragon, dwa 9
+  2;35,16 20;40,43 2;22,0 23;2,43 0;29,19
+  Solar: Water-Mouse. Bi 4
+22: Tue. gro zhin. Fire-Earth; 30 May 2062
+  tshangs pa, vishti, Snake, khen 1
+  3;39,11 21;35,6 2;26,18 24;1,25 1;0,17
+  Solar: Water-Ox. Zui 5
+23: Wed. mon gre. Water-Water; 31 May 2062
+  dbang po, byis pa, Horse, kham 2
+  4;42,2 22;30,30 2;30,32 25;1,2 1;1,16
+  Solar: Wood-Tiger. Can 6
+24: Thu. mon gru. Wind-Earth; 1 Jun 2062
+  'khon 'dzin, til rdung, Sheep, gin 3
+  5;43,52 23;26,53 2;34,46 26;1,40 1;2,14
+  Solar: Wood-Rabbit. Jing 7
+25: Fri. khrums stod. Earth-Fire; 2 Jun 2062
+  rnam sel, tshong ba, Monkey, zin 4
+  6;44,43 24;24,17 2;39,0 0;3,17 1;3,12
+  Solar: Fire-Dragon. Gui 8
+26: Sat. khrums smad. Earth-Water; 3 Jun 2062
+  mdza' bo, gdab pa, Bird, zon 5
+  0;44,29 25;22,45 2;43,14 1;6,0 1;4,10
+  Solar: Fire-Snake. Liu 9
+27: Sun. nam gru. Fire-Water; 4 Jun 2062
+  tshe dang ldan pa, rigs can, Dog, li 6
+  1;42,19 26;23,9 2;47,29 2;10,38 1;5,8
+  Solar: Earth-Horse. Xing 1
+28: Mon. tha skar. Water-Wind; 5 Jun 2062
+  skal bzang, khyim skyes, Pig, khon 7
+  2;39,10 0;24,32 2;51,43 3;16,15 1;6,7
+  Solar: Earth-Sheep. Zhang 2
+29: Tue. bra nye. Fire-Fire; 6 Jun 2062
+  dge byed, vishti, Mouse, dwa 8
+  3;35,1 1;26,56 2;55,57 4;22,53 1;7,5
+  Solar: Iron-Monkey. Yi 3
+30: Wed. smin drug. Water-Fire; 7 Jun 2062
+  shin tu 'grams, rkang bzhi, Ox, khen 9
+  4;29,51 2;30,19 3;0,11 5;30,31 1;8,3
+  Solar: Iron-Bird. Zhen 4
+
+Tibetan Lunar Month: 5 (Intercalary) - Iron-male-Monkey
+
+1: Thu. snar ma. Wind-Earth; 8 Jun 2062
+  las bzang, gdab pa, Tiger, kham 1
+  5;23,47 3;34,38 3;4,25 6;39,3 1;9,1
+  Solar: Water-Dog. Jiao 5
+2: Fri. mgo. Earth-Wind; 9 Jun 2062
+  'dzin byed, rigs can, Rabbit, gin 2
+  6;17,43 4;38,56 3;8,40 7;47,36 1;10,0
+  Solar: Water-Pig. Kang 6
+3: Sat. lag. Earth-Water; 10 Jun 2062
+  zug rngu, khyim skyes, Dragon, zin 3
+  0;11,39 5;43,14 3;12,54 8;56,9 1;10,58
+  Solar: Wood-Mouse. Di 7
+4: Sun. nabs so. Fire-Wind; 11 Jun 2062
+  'phel, vishti, Snake, zon 4
+  1;5,35 6;47,33 3;17,8 10;4,41 1;11,56
+  Solar: Wood-Ox. Fang 8
+5. Omitted: Horse li 5
+6: Mon. rgyal. Water-Fire; 12 Jun 2062
+  brtan pa, rigs can, Sheep, khon 6
+  2;53,32 7;56,4 3;25,36 11;21,41 1;13,52
+  Solar: Fire-Tiger. Xin 9
+7: Tue. skag. Fire-Water; 13 Jun 2062
+  yongs bsnun, khyim skyes, Monkey, dwa 7
+  3;48,33 8;59,17 3;29,50 12;29,8 1;14,51
+  Solar: Fire-Rabbit. Wei 1
+8: Wed. gre. Water-Fire; 14 Jun 2062
+  dga' ba, vishti, Bird, khen 8
+  4;44,34 10;1,30 3;34,5 13;35,35 1;15,49
+  Solar: Earth-Dragon. Ji 2
+9: Thu. dbo. Wind-Wind; 15 Jun 2062
+  rdo rje, byis pa, Dog, kham 9
+  5;41,35 11;2,43 3;38,19 14;41,2 1;16,47
+  Solar: Earth-Snake. Dou 3
+10: Fri. me bzhi. Earth-Wind; 16 Jun 2062
+  dngos grub, til rdung, Pig, gin 1
+  6;39,42 12;2,50 3;42,33 15;45,24 1;17,45
+  Solar: Iron-Horse. Niu 4
+11: Sat. nag pa. Earth-Wind; 17 Jun 2062
+  phan tshun, tshong ba, Mouse, zin 2
+  0;39,43 13;1,3 3;46,47 16;47,51 1;18,43
+  Solar: Iron-Sheep. Nu 5
+12: Sun. nag pa. Fire-Wind; 18 Jun 2062
+  mchog can, gdab pa, Ox, zon 3
+  1;40,45 13;58,16 3;51,1 17;49,18 1;19,42
+  Solar: Water-Monkey. Xu 6
+13: Mon. sa ri. Water-Wind; 19 Jun 2062
+  yongs 'joms, rigs can, Tiger, li 4
+  2;42,46 14;54,29 3;55,15 18;49,45 1;20,40
+  Solar: Water-Bird. Wei 7
+14: Tue. sa ga. Fire-Fire; 20 Jun 2062
+  zhi ba, khyim skyes, Rabbit, khon 5
+  3;45,48 15;49,42 3;59,30 19;49,12 1;21,38
+  Solar: Wood-Dog. Shi 8
+15: Wed. lha mtshams. Water-Earth; 21 Jun 2062
+  grub pa, vishti, Dragon, dwa 6
+  4;49,44 16;44,0 4;3,44 20;47,44 1;22,36
+  Solar: Wood-Pig. Bi 9
+16: Thu. snron. Wind-Earth; 22 Jun 2062
+  bsgrub bya, byis pa, Snake, khen 7
+  5;53,40 17;38,18 4;7,58 21;46,16 1;23,34
+  Solar: Fire-Mouse. Kui 1
+17: Fri. snrubs. Earth-Water; 23 Jun 2062
+  dge ba, rigs can, Horse, kham 8
+  6;57,36 18;32,36 4;12,12 22;44,49 1;24,33
+  Solar: Fire-Ox. Lou 2
+18: Sat. chu stod. Earth-Water; 24 Jun 2062
+  0;60,0 19;28,26 4;16,26 23;44,53 1;25,31
+  Solar: Earth-Tiger. Wei 3
+18: Sun. chu smad. Fire-Earth; 25 Jun 2062
+  tshangs pa, vishti, Sheep, gin 9
+  1;1,32 20;26,54 4;16,26 24;43,21 1;25,31
+  Solar: Earth-Rabbit. Mao 4
+19: Mon. gro zhin. Water-Earth; 26 Jun 2062
+  dbang po, byis pa, Monkey, zin 1
+  2;5,28 21;21,13 4;20,41 25;41,54 1;26,29
+  Solar: Iron-Dragon. Bi 5
+20: Tue. mon gre. Fire-Water; 27 Jun 2062
+  'khon 'dzin, til rdung, Bird, zon 2
+  3;9,18 22;15,36 4;24,55 26;40,31 1;27,27
+  Solar: Iron-Snake. Zui 6
+21: Wed. mon gru. Water-Earth; 28 Jun 2062
+  rnam sel, tshong ba, Dog, li 3
+  4;12,8 23;11,0 4;29,9 0;40,9 1;28,25
+  Solar: Water-Horse. Can 7
+22: Thu. khrums stod. Wind-Fire; 29 Jun 2062
+  mdza' bo, gdab pa, Pig, khon 4
+  5;13,59 24;7,24 4;33,23 1;40,47 1;29,24
+  Solar: Water-Sheep. Jing 8
+23: Fri. khrums smad. Earth-Water; 30 Jun 2062
+  tshe dang ldan pa, rigs can, Mouse, dwa 5
+  6;14,48 25;4,48 4;37,36 2;42,24 2;0,22
+  Solar: Wood-Monkey. Gui 9
+24: Sat. nam gru. Earth-Water; 1 Jul 2062
+  skal bzang, khyim skyes, Ox, khen 6
+  0;14,28 26;3,17 4;41,46 3;45,4 2;1,20
+  Solar: Wood-Bird. Liu 1
+25: Sun. tha skar. Fire-Wind; 2 Jul 2062
+  dge byed, vishti, Tiger, kham 7
+  1;12,15 0;3,41 4;45,56 4;49,38 2;2,18
+  Solar: Fire-Dog. Xing 2
+26: Mon. bra nye. Water-Fire; 3 Jul 2062
+  shin tu 'grams, byis pa, Rabbit, gin 8
+  2;9,1 1;5,5 4;50,7 5;55,12 2;3,17
+  Solar: Fire-Pig. Zhang 3
+27: Tue. smin drug. Fire-Fire; 4 Jul 2062
+  'dzin byed, til rdung, Dragon, zin 9
+  3;4,47 2;7,29 4;54,17 7;1,47 2;4,15
+  Solar: Earth-Mouse. Yi 4
+28. Omitted: Snake zon 1
+29: Wed. snar ma. Water-Earth; 5 Jul 2062
+  zug rngu, vishti, Horse, li 2
+  4;53,26 3;15,11 5;2,38 8;17,49 2;6,11
+  Solar: Earth-Ox. Zhen 5
+30: Thu. mgo. Wind-Wind; 6 Jul 2062
+  'grams, rkang bzhi, Sheep, khon 3
+  5;47,18 4;19,30 5;6,48 9;26,18 2;7,9
+  Solar: Iron-Tiger. Jiao 6
+
+Tibetan Lunar Month: 5 (Delayed) - Iron-male-Monkey
+
+1: Fri. lag. Earth-Water; 7 Jul 2062
+  'phel, mi sdug pa, Tiger, kham 1
+  6;41,10 5;23,48 5;10,58 10;34,47 2;8,8
+  Solar: Iron-Rabbit. Kang 7
+2: Sat. nabs so. Earth-Wind; 8 Jul 2062
+  brtan pa, byis pa, Rabbit, gin 2
+  0;35,2 6;28,6 5;15,8 11;43,15 2;9,6
+  Solar: Water-Dragon. Di 8
+3: Sun. rgyal. Fire-Fire; 9 Jul 2062
+  yongs bsnun, til rdung, Dragon, zin 3
+  1;28,53 7;32,25 5;19,19 12;51,44 2;10,4
+  Solar: Water-Snake. Fang 9
+4: Mon. skag. Water-Water; 10 Jul 2062
+  rdo rje, vishti, Snake, zon 4
+  2;22,51 8;36,37 5;23,29 14;0,7 2;11,2
+  Solar: Wood-Horse. Xin 1
+5: Tue. mchu. Fire-Fire; 11 Jul 2062
+  dngos grub, byis pa, Horse, li 5
+  3;17,49 9;39,50 5;27,39 15;7,30 2;12,0
+  Solar: Wood-Sheep. Wei 2
+6: Wed. gre. Water-Fire; 12 Jul 2062
+  phan tshun, til rdung, Sheep, khon 6
+  4;13,47 10;42,2 5;31,50 16;13,53 2;12,59
+  Solar: Fire-Monkey. Ji 3
+7: Thu. dbo. Wind-Wind; 13 Jul 2062
+  mchog can, tshong ba, Monkey, dwa 7
+  5;10,45 11;43,15 5;36,0 17;19,15 2;13,57
+  Solar: Fire-Bird. Dou 4
+8: Fri. me bzhi. Earth-Wind; 14 Jul 2062
+  yongs 'joms, gdab pa, Bird, khen 8
+  6;8,48 12;43,22 5;40,10 18;23,32 2;14,55
+  Solar: Earth-Dog. Niu 5
+9: Sat. nag pa. Earth-Wind; 15 Jul 2062
+  zhi ba, rigs can, Dog, kham 9
+  0;8,46 13;41,34 5;44,21 19;25,55 2;15,53
+  Solar: Earth-Pig. Nu 6
+10: Sun. sa ri. Fire-Wind; 16 Jul 2062
+  grub pa, khyim skyes, Pig, gin 1
+  1;9,44 14;38,46 5;48,31 20;27,18 2;16,51
+  Solar: Iron-Mouse. Xu 7
+11: Mon. sa ga. Water-Fire; 17 Jul 2062
+  bsgrub bya, vishti, Mouse, zin 2
+  2;11,42 15;34,59 5;52,41 21;27,40 2;17,50
+  Solar: Iron-Ox. Wei 8
+12: Tue. lha mtshams. Fire-Earth; 18 Jul 2062
+  dge ba, byis pa, Ox, zon 3
+  3;14,40 16;30,11 5;56,51 22;27,3 2;18,48
+  Solar: Water-Tiger. Shi 9
+13: Wed. snron. Water-Earth; 19 Jul 2062
+  dkar po, til rdung, Tiger, li 4
+  4;18,32 17;24,29 6;1,2 23;25,31 2;19,46
+  Solar: Water-Rabbit. Bi 1
+14: Thu. snrubs. Wind-Water; 20 Jul 2062
+  tshangs pa, tshong ba, Rabbit, khon 5
+  5;22,24 18;18,47 6;5,12 24;24,0 2;20,44
+  Solar: Wood-Dragon. Kui 2
+15: Fri. chu stod. Earth-Water; 21 Jul 2062
+  dbang po, gdab pa, Dragon, dwa 6
+  6;26,16 19;13,5 6;9,22 25;22,28 2;21,42
+  Solar: Wood-Snake. Lou 3
+16: Sat. chu smad. Earth-Earth; 22 Jul 2062
+  'khon 'dzin, byis pa, Snake, khen 7
+  0;30,8 20;7,24 6;13,33 26;20,57 2;22,41
+  Solar: Fire-Horse. Wei 4
+17: Sun. gro zhin. Fire-Earth; 23 Jul 2062
+  rnam sel, til rdung, Horse, kham 8
+  1;34,1 21;1,42 6;17,43 0;19,25 2;23,39
+  Solar: Fire-Sheep. Mao 5
+18: Mon. gro zhin. Water-Earth; 24 Jul 2062
+  mdza' bo, tshong ba, Sheep, gin 9
+  2;37,47 21;56,6 6;21,53 1;18,0 2;24,37
+  Solar: Earth-Monkey. Bi 6
+19: Tue. mon gre. Fire-Water; 25 Jul 2062
+  tshe dang ldan pa, gdab pa, Monkey, zin 1
+  3;40,33 22;51,30 6;26,4 2;17,34 2;25,35
+  Solar: Earth-Bird. Zui 7
+20: Wed. mon gru. Water-Earth; 26 Jul 2062
+  skal bzang, rigs can, Bird, zon 2
+  4;42,19 23;47,55 6;30,14 3;18,9 2;26,34
+  Solar: Iron-Dog. Can 8
+21: Thu. khrums stod. Wind-Fire; 27 Jul 2062
+  dge byed, khyim skyes, Dog, li 3
+  5;43,5 24;45,19 6;34,24 4;19,43 2;27,32
+  Solar: Iron-Pig. Jing 9
+22: Fri. khrums smad. Earth-Water; 28 Jul 2062
+  shin tu 'grams, vishti, Pig, khon 4
+  6;42,45 25;43,49 6;38,34 5;22,24 2;28,30
+  Solar: Water-Mouse. Gui 1
+23: Sat. nam gru. Earth-Water; 29 Jul 2062
+  las bzang, byis pa, Mouse, dwa 5
+  0;40,31 26;44,14 6;42,45 6;26,59 2;29,28
+  Solar: Water-Ox. Liu 2
+24: Sun. tha skar. Fire-Wind; 30 Jul 2062
+  'dzin byed, til rdung, Ox, khen 6
+  1;37,17 0;45,38 6;46,55 7;32,33 3;0,26
+  Solar: Wood-Tiger. Xing 3
+25: Mon. bra nye. Water-Fire; 31 Jul 2062
+  zug rngu, tshong ba, Tiger, kham 7
+  2;33,2 1;48,2 6;51,5 8;39,8 3;1,25
+  Solar: Wood-Rabbit. Zhang 4
+26: Tue. smin drug. Fire-Fire; 1 Aug 2062
+  'grams, gdab pa, Rabbit, gin 8
+  3;27,48 2;51,27 6;55,16 9;46,43 3;2,23
+  Solar: Fire-Dragon. Yi 5
+27: Wed. snar ma. Water-Earth; 2 Aug 2062
+  'phel, til rdung, Dragon, zin 9
+  4;21,40 3;55,45 6;59,26 10;55,12 3;3,21
+  Solar: Fire-Snake. Zhen 6
+28: Thu. lag. Wind-Water; 3 Aug 2062
+  yongs bsnun, tshong ba, Snake, zon 1
+  5;15,32 5;0,4 7;3,36 12;3,40 3;4,19
+  Solar: Earth-Horse. Jiao 7
+29: Fri. nabs so. Earth-Wind; 4 Aug 2062
+  dga' ba, bkra shis, Horse, li 2
+  6;9,24 6;4,22 7;7,47 13;12,9 3;5,17
+  Solar: Earth-Sheep. Kang 8
+30: Sat. rgyal. Earth-Fire; 5 Aug 2062
+  rdo rje, klu, Sheep, khon 3
+  0;3,16 7;8,40 7;11,57 14;20,38 3;6,16
+  Solar: Iron-Monkey. Di 9
+
+Tibetan Lunar Month: 6 - Iron-female-Bird
+
+1. Omitted: Monkey dwa 4
+2: Sun. skag. Fire-Water; 6 Aug 2062
+  dngos grub, byis pa, Bird, khen 5
+  1;51,6 8;17,11 7;20,17 15;37,29 3;8,12
+  Solar: Iron-Bird. Fang 1
+3: Mon. mchu. Water-Fire; 7 Aug 2062
+  phan tshun, til rdung, Dog, kham 6
+  2;46,4 9;20,23 7;24,28 16;44,51 3;9,10
+  Solar: Water-Dog. Xin 2
+4: Tue. gre. Fire-Fire; 8 Aug 2062
+  mchog can, tshong ba, Pig, gin 7
+  3;42,3 10;22,35 7;28,38 17;51,13 3;10,8
+  Solar: Water-Pig. Wei 3
+  Turning of the Wheel of the Dharma.
+5: Wed. dbo. Water-Wind; 9 Aug 2062
+  yongs 'joms, gdab pa, Mouse, zin 8
+  4;39,1 11;23,47 7;32,48 18;56,36 3;11,7
+  Solar: Wood-Mouse. Ji 4
+6: Thu. me bzhi. Wind-Wind; 10 Aug 2062
+  grub pa, rigs can, Ox, zon 9
+  5;37,5 12;23,53 7;36,59 20;0,52 3;12,5
+  Solar: Wood-Ox. Dou 5
+7: Fri. nag pa. Earth-Wind; 11 Aug 2062
+  bsgrub bya, khyim skyes, Tiger, li 1
+  6;37,4 13;22,5 7;41,9 21;3,14 3;13,3
+  Solar: Fire-Tiger. Niu 6
+8: Sat. sa ri. Earth-Wind; 12 Aug 2062
+  dge ba, vishti, Rabbit, khon 2
+  0;38,2 14;19,16 7;45,19 22;4,36 3;14,1
+  Solar: Fire-Rabbit. Nu 7
+9: Sun. sa ga. Fire-Fire; 13 Aug 2062
+  dkar po, byis pa, Dragon, dwa 3
+  1;40,1 15;15,28 7;49,30 23;4,58 3;15,0
+  Solar: Earth-Dragon. Xu 8
+10: Mon. lha mtshams. Water-Earth; 14 Aug 2062
+  tshangs pa, til rdung, Snake, khen 4
+  2;42,59 16;10,40 7;53,40 24;4,21 3;15,58
+  Solar: Earth-Snake. Wei 9
+11: Tue. snron. Fire-Earth; 15 Aug 2062
+  dbang po, tshong ba, Horse, kham 5
+  3;46,51 17;4,58 7;57,50 25;2,49 3;16,56
+  Solar: Iron-Horse. Shi 1
+12: Wed. snron. Water-Earth; 16 Aug 2062
+  'khon 'dzin, gdab pa, Sheep, gin 6
+  4;50,43 17;59,17 8;2,0 26;1,18 3;17,54
+  Solar: Iron-Sheep. Bi 2
+13: Thu. snrubs. Wind-Water; 17 Aug 2062
+  'khon 'dzin, byis pa, Monkey, zin 7
+  5;54,35 18;53,35 8;6,11 26;59,46 3;18,52
+  Solar: Water-Monkey. Kui 3
+14: Fri. chu stod. Earth-Water; 18 Aug 2062
+  rnam sel, til rdung, Bird, zon 8
+  6;58,27 19;47,53 8;10,21 0;58,14 3;19,51
+  Solar: Water-Bird. Lou 4
+15: Sat. chu smad. Earth-Earth; 19 Aug 2062
+  0;60,0 20;44,31 8;14,31 1;59,3 3;20,49
+  Solar: Wood-Dog. Wei 5
+15: Sun. gro zhin. Fire-Earth; 20 Aug 2062
+  tshe dang ldan pa, gdab pa, Dog, li 9
+  1;2,20 21;42,11 8;14,31 2;56,43 3;20,49
+  Solar: Wood-Pig. Mao 6
+  The Buddha's entry into the womb of his mother.
+16: Mon. mon gre. Water-Water; 21 Aug 2062
+  skal bzang, rigs can, Pig, khon 1
+  2;6,5 22;36,36 8;18,42 3;55,18 3;21,47
+  Solar: Fire-Mouse. Bi 7
+17: Tue. mon gru. Fire-Earth; 22 Aug 2062
+  dge byed, khyim skyes, Mouse, dwa 2
+  3;8,51 23;32,0 8;22,52 4;54,53 3;22,45
+  Solar: Fire-Ox. Zui 8
+18: Wed. khrums stod. Water-Fire; 23 Aug 2062
+  shin tu 'grams, vishti, Ox, khen 3
+  4;10,37 24;28,25 8;27,2 5;55,28 3;23,43
+  Solar: Earth-Tiger. Can 9
+19: Thu. khrums smad. Wind-Water; 24 Aug 2062
+  las bzang, byis pa, Tiger, kham 4
+  5;11,22 25;25,50 8;31,12 6;57,3 3;24,42
+  Solar: Earth-Rabbit. Jing 1
+20: Fri. nam gru. Earth-Water; 25 Aug 2062
+  'dzin byed, til rdung, Rabbit, gin 5
+  6;11,1 26;24,21 8;35,23 7;59,44 3;25,40
+  Solar: Iron-Dragon. Gui 2
+21: Sat. tha skar. Earth-Wind; 26 Aug 2062
+  'grams, tshong ba, Dragon, zin 6
+  0;8,47 0;24,46 8;39,33 9;4,20 3;26,38
+  Solar: Iron-Snake. Liu 3
+22: Sun. bra nye. Fire-Fire; 27 Aug 2062
+  'phel, gdab pa, Snake, zon 7
+  1;5,32 1;26,11 8;43,43 10;9,55 3;27,36
+  Solar: Water-Horse. Xing 4
+23: Mon. smin drug. Water-Fire; 28 Aug 2062
+  brtan pa, rigs can, Horse, li 8
+  2;1,17 2;28,36 8;47,54 11;16,30 3;28,34
+  Solar: Water-Sheep. Zhang 5
+24. Omitted: Sheep khon 9
+25: Tue. snar ma. Fire-Earth; 29 Aug 2062
+  yongs bsnun, tshong ba, Monkey, dwa 1
+  3;49,57 3;36,19 8;56,16 12;32,36 4;0,31
+  Solar: Wood-Monkey. Yi 6
+26: Wed. mgo. Water-Wind; 30 Aug 2062
+  dga' ba, gdab pa, Bird, khen 2
+  4;43,53 4;40,37 9;0,31 13;41,8 4;1,29
+  Solar: Wood-Bird. Zhen 7
+27: Thu. lag. Wind-Water; 31 Aug 2062
+  rdo rje, rigs can, Dog, kham 3
+  5;37,49 5;44,56 9;4,45 14;49,41 4;2,27
+  Solar: Fire-Dog. Jiao 8
+28: Fri. nabs so. Earth-Wind; 1 Sep 2062
+  dngos grub, khyim skyes, Pig, gin 4
+  6;31,44 6;49,14 9;8,59 15;58,13 4;3,25
+  Solar: Fire-Pig. Kang 9
+29: Sat. rgyal. Earth-Fire; 2 Sep 2062
+  mchog can, bkra shis, Mouse, zin 5
+  0;25,40 7;53,32 9;13,13 17;6,46 4;4,24
+  Solar: Earth-Mouse. Di 1
+30: Sun. skag. Fire-Water; 3 Sep 2062
+  yongs 'joms, klu, Ox, zon 6
+  1;19,43 8;57,44 9;17,27 18;15,12 4;5,22
+  Solar: Earth-Ox. Fang 2
+
+Tibetan Lunar Month: 7 - Water-male-Dog
+
+1: Mon. gre. Water-Fire; 4 Sep 2062
+  zhi ba, gdab pa, Tiger, li 7
+  2;14,45 10;0,56 9;21,41 19;22,38 4;6,20
+  Solar: Iron-Tiger. Xin 3
+2: Tue. dbo. Fire-Wind; 5 Sep 2062
+  grub pa, rigs can, Rabbit, khon 8
+  3;10,48 11;3,7 9;25,56 20;29,3 4;7,18
+  Solar: Iron-Rabbit. Wei 4
+3: Wed. me bzhi. Water-Wind; 6 Sep 2062
+  bsgrub bya, khyim skyes, Dragon, dwa 9
+  4;7,50 12;4,19 9;30,10 21;34,29 4;8,17
+  Solar: Water-Dragon. Ji 5
+4: Thu. nag pa. Wind-Wind; 7 Sep 2062
+  dge ba, vishti, Snake, khen 1
+  5;6,0 13;4,24 9;34,24 22;38,48 4;9,15
+  Solar: Water-Snake. Dou 6
+5: Fri. sa ri. Earth-Wind; 8 Sep 2062
+  dkar po, byis pa, Horse, kham 2
+  6;6,2 14;2,35 9;38,38 23;41,14 4;10,13
+  Solar: Wood-Horse. Niu 7
+6: Sat. sa ri. Earth-Wind; 9 Sep 2062
+  tshangs pa, til rdung, Sheep, gin 3
+  0;7,5 14;59,47 9;42,52 24;42,40 4;11,11
+  Solar: Wood-Sheep. Nu 8
+7: Sun. sa ga. Fire-Fire; 10 Sep 2062
+  dbang po, tshong ba, Monkey, zin 4
+  1;9,8 15;55,58 9;47,7 25;43,5 4;12,9
+  Solar: Fire-Monkey. Xu 9
+8: Mon. lha mtshams. Water-Earth; 11 Sep 2062
+  'khon 'dzin, gdab pa, Bird, zon 5
+  2;12,11 16;51,10 9;51,21 26;42,31 4;13,8
+  Solar: Fire-Bird. Wei 1
+9: Tue. snron. Fire-Earth; 12 Sep 2062
+  rnam sel, rigs can, Dog, li 6
+  3;16,7 17;45,28 9;55,35 0;41,3 4;14,6
+  Solar: Earth-Dog. Shi 2
+10: Wed. snrubs. Water-Water; 13 Sep 2062
+  mdza' bo, khyim skyes, Pig, khon 7
+  4;20,3 18;39,46 9;59,49 1;39,36 4;15,4
+  Solar: Earth-Pig. Bi 3
+11: Thu. chu stod. Wind-Water; 14 Sep 2062
+  tshe dang ldan pa, vishti, Mouse, dwa 8
+  5;23,59 19;34,4 10;4,3 2;38,8 4;16,2
+  Solar: Iron-Mouse. Kui 4
+12: Fri. chu smad. Earth-Earth; 15 Sep 2062
+  skal bzang, gdab pa, Ox, khen 9
+  6;27,55 20;28,22 10;8,17 3;36,40 4;17,0
+  Solar: Iron-Ox. Lou 5
+13: Sat. gro zhin. Earth-Earth; 16 Sep 2062
+  dge byed, rigs can, Tiger, kham 1
+  0;31,51 21;22,41 10;12,32 4;35,13 4;17,59
+  Solar: Water-Tiger. Wei 6
+14: Sun. mon gre. Fire-Water; 17 Sep 2062
+  shin tu 'grams, khyim skyes, Rabbit, gin 2
+  1;35,40 22;17,6 10;16,46 5;33,52 4;18,57
+  Solar: Water-Rabbit. Mao 7
+15: Mon. mon gru. Water-Earth; 18 Sep 2062
+  las bzang, vishti, Dragon, zin 3
+  2;38,29 23;12,31 10;21,0 6;33,31 4;19,55
+  Solar: Wood-Dragon. Bi 8
+16: Tue. khrums stod. Fire-Fire; 19 Sep 2062
+  'dzin byed, byis pa, Snake, zon 4
+  3;40,18 24;8,56 10;25,14 7;34,10 4;20,53
+  Solar: Wood-Snake. Zui 9
+17: Wed. khrums smad. Water-Water; 20 Sep 2062
+  zug rngu, til rdung, Horse, li 5
+  4;41,7 25;6,21 10;29,28 8;35,50 4;21,51
+  Solar: Fire-Horse. Can 1
+18: Thu. nam gru. Wind-Water; 21 Sep 2062
+  'grams, tshong ba, Sheep, khon 6
+  5;40,49 26;4,53 10;33,42 9;38,36 4;22,50
+  Solar: Fire-Sheep. Jing 2
+19: Fri. tha skar. Earth-Wind; 22 Sep 2062
+  'phel, gdab pa, Monkey, dwa 7
+  6;38,38 0;5,18 10;37,57 10;43,16 4;23,48
+  Solar: Earth-Monkey. Gui 3
+20: Sat. bra nye. Earth-Fire; 23 Sep 2062
+  brtan pa, rigs can, Bird, khen 8
+  0;35,27 1;6,44 10;42,11 11;48,55 4;24,46
+  Solar: Earth-Bird. Liu 4
+21: Sun. smin drug. Fire-Fire; 24 Sep 2062
+  yongs bsnun, khyim skyes, Dog, kham 9
+  1;31,15 2;9,9 10;46,25 12;55,35 4;25,44
+  Solar: Iron-Dog. Xing 5
+22: Mon. snar ma. Water-Earth; 25 Sep 2062
+  rdo rje, gdab pa, Pig, gin 1
+  2;26,4 3;12,34 10;50,39 14;3,14 4;26,42
+  Solar: Iron-Pig. Zhang 6
+23: Tue. mgo. Fire-Wind; 26 Sep 2062
+  dngos grub, rigs can, Mouse, zin 2
+  3;20,0 4;16,53 10;54,53 15;11,47 4;27,41
+  Solar: Water-Mouse. Yi 7
+24: Wed. lag. Water-Water; 27 Sep 2062
+  phan tshun, khyim skyes, Ox, zon 3
+  4;13,56 5;21,11 10;59,8 16;20,19 4;28,39
+  Solar: Water-Ox. Zhen 8
+25: Thu. nabs so. Wind-Wind; 28 Sep 2062
+  mchog can, vishti, Tiger, li 4
+  5;7,52 6;25,29 11;3,22 17;28,52 4;29,37
+  Solar: Wood-Tiger. Jiao 9
+26: Fri. rgyal. Earth-Fire; 29 Sep 2062
+  yongs 'joms, byis pa, Rabbit, khon 5
+  6;1,51 7;29,48 11;7,40 18;37,28 5;0,35
+  Solar: Wood-Rabbit. Kang 1
+27. Omitted: Dragon dwa 6
+28: Sat. skag. Earth-Water; 30 Sep 2062
+  zhi ba, khyim skyes, Snake, khen 7
+  0;50,2 8;38,17 11;16,20 19;54,37 5;2,32
+  Solar: Fire-Dragon. Di 2
+29: Sun. mchu. Fire-Fire; 1 Oct 2062
+  bsgrub bya, vishti, Horse, kham 8
+  1;45,10 9;41,29 11;20,40 21;2,9 5;3,30
+  Solar: Fire-Snake. Fang 3
+30: Mon. gre. Water-Fire; 2 Oct 2062
+  dge ba, rkang bzhi, Sheep, gin 9
+  2;41,19 10;43,40 11;25,0 22;8,40 5;4,28
+  Solar: Earth-Horse. Xin 4
+
+Tibetan Lunar Month: 8 - Water-female-Pig
+
+1: Tue. dbo. Fire-Wind; 3 Oct 2062
+  dkar po, mi sdug pa, Monkey, zin 1
+  3;38,28 11;44,51 11;29,20 23;14,11 5;5,26
+  Solar: Earth-Sheep. Wei 5
+2: Wed. me bzhi. Water-Wind; 4 Oct 2062
+  tshangs pa, byis pa, Bird, zon 2
+  4;36,44 12;44,55 11;33,40 24;18,35 5;6,25
+  Solar: Iron-Monkey. Ji 6
+3: Thu. nag pa. Wind-Wind; 5 Oct 2062
+  dbang po, til rdung, Dog, li 3
+  5;36,53 13;43,6 11;38,0 25;21,6 5;7,23
+  Solar: Iron-Bird. Dou 7
+4: Fri. sa ri. Earth-Wind; 6 Oct 2062
+  'khon 'dzin, tshong ba, Pig, khon 4
+  6;38,2 14;40,17 11;42,20 26;22,37 5;8,21
+  Solar: Water-Dog. Niu 8
+5: Sat. sa ga. Earth-Fire; 7 Oct 2062
+  rnam sel, gdab pa, Mouse, dwa 5
+  0;40,11 15;36,28 11;46,40 0;23,8 5;9,19
+  Solar: Water-Pig. Nu 9
+6: Sun. lha mtshams. Fire-Earth; 8 Oct 2062
+  mdza' bo, rigs can, Ox, khen 6
+  1;43,20 16;31,39 11;51,0 1;22,39 5;10,17
+  Solar: Wood-Mouse. Xu 1
+7: Mon. snron. Water-Earth; 9 Oct 2062
+  tshe dang ldan pa, khyim skyes, Tiger, kham 7
+  2;47,22 17;25,57 11;55,20 2;21,17 5;11,16
+  Solar: Wood-Ox. Wei 2
+8: Tue. snrubs. Fire-Water; 10 Oct 2062
+  skal bzang, vishti, Rabbit, gin 8
+  3;51,24 18;20,15 11;59,40 3;19,55 5;12,14
+  Solar: Fire-Tiger. Shi 3
+9: Wed. chu stod. Water-Water; 11 Oct 2062
+  dge byed, gdab pa, Dragon, zin 9
+  4;55,26 19;14,33 12;4,0 4;18,33 5;13,12
+  Solar: Fire-Rabbit. Bi 4
+10: Thu. chu smad. Wind-Earth; 12 Oct 2062
+  shin tu 'grams, rigs can, Snake, zon 1
+  5;59,27 20;8,52 12;8,20 5;17,12 5;14,10
+  Solar: Earth-Dragon. Kui 5
+11: Fri. gro zhin. Earth-Earth; 13 Oct 2062
+  6;60,0 21;6,40 12;12,40 6;19,20 5;15,8
+  Solar: Earth-Snake. Lou 6
+11: Sat. mon gre. Earth-Water; 14 Oct 2062
+  'dzin byed, vishti, Horse, li 2
+  0;3,29 22;3,10 12;12,40 7;15,50 5;15,8
+  Solar: Iron-Horse. Wei 7
+12: Sun. mon gre. Fire-Water; 15 Oct 2062
+  zug rngu, byis pa, Sheep, khon 3
+  1;7,24 22;57,35 12;17,0 8;14,35 5;16,7
+  Solar: Iron-Sheep. Mao 8
+13: Mon. mon gru. Water-Earth; 16 Oct 2062
+  'grams, til rdung, Monkey, dwa 4
+  2;10,18 23;53,1 12;21,20 9;14,21 5;17,5
+  Solar: Water-Monkey. Bi 9
+14: Tue. khrums stod. Fire-Fire; 17 Oct 2062
+  'phel, tshong ba, Bird, khen 5
+  3;12,12 24;49,27 12;25,40 10;15,7 5;18,3
+  Solar: Water-Bird. Zui 1
+15: Wed. khrums smad. Water-Water; 18 Oct 2062
+  brtan pa, gdab pa, Dog, kham 6
+  4;13,7 25;46,52 12;30,0 11;16,52 5;19,1
+  Solar: Wood-Dog. Can 2
+16: Thu. nam gru. Wind-Water; 19 Oct 2062
+  yongs bsnun, rigs can, Pig, gin 7
+  5;12,54 26;45,25 12;34,20 12;19,45 5;20,0
+  Solar: Wood-Pig. Jing 3
+17: Fri. tha skar. Earth-Wind; 20 Oct 2062
+  dga' ba, khyim skyes, Mouse, zin 8
+  6;10,48 0;45,51 12;38,40 13;24,31 5;20,58
+  Solar: Fire-Mouse. Gui 4
+18: Sat. bra nye. Earth-Fire; 21 Oct 2062
+  rdo rje, vishti, Ox, zon 9
+  0;7,42 1;47,17 12;43,0 14;30,17 5;21,56
+  Solar: Fire-Ox. Liu 5
+19: Sun. smin drug. Fire-Fire; 22 Oct 2062
+  dngos grub, byis pa, Tiger, li 1
+  1;3,37 2;49,42 12;47,20 15;37,2 5;22,54
+  Solar: Earth-Tiger. Xing 6
+20. Omitted: Rabbit khon 2
+21: Mon. snar ma. Water-Earth; 23 Oct 2062
+  phan tshun, khyim skyes, Dragon, dwa 3
+  2;52,32 3;57,27 12;56,0 16;53,27 5;24,51
+  Solar: Earth-Rabbit. Zhang 7
+22: Tue. lag. Fire-Water; 24 Oct 2062
+  yongs 'joms, vishti, Snake, khen 4
+  3;46,34 5;1,45 13;0,20 18;2,5 5;25,49
+  Solar: Iron-Dragon. Yi 8
+23: Wed. nabs so. Water-Wind; 25 Oct 2062
+  zhi ba, byis pa, Horse, kham 5
+  4;40,36 6;6,3 13;4,40 19;10,43 5;26,47
+  Solar: Iron-Snake. Zhen 9
+24: Thu. rgyal. Wind-Fire; 26 Oct 2062
+  grub pa, til rdung, Sheep, gin 6
+  5;34,37 7;10,22 13;9,0 20;19,22 5;27,45
+  Solar: Water-Horse. Jiao 1
+25: Fri. skag. Earth-Water; 27 Oct 2062
+  bsgrub bya, tshong ba, Monkey, zin 7
+  6;28,39 8;14,40 13;13,20 21;28,0 5;28,43
+  Solar: Water-Sheep. Kang 2
+26: Sat. mchu. Earth-Fire; 28 Oct 2062
+  dge ba, byis pa, Bird, zon 8
+  0;22,48 9;18,51 13;17,40 22;36,31 5;29,42
+  Solar: Wood-Monkey. Di 3
+27: Sun. gre. Fire-Fire; 29 Oct 2062
+  dkar po, til rdung, Dog, li 9
+  1;18,0 10;22,1 13;22,2 23;44,4 6;0,40
+  Solar: Wood-Bird. Fang 4
+28: Mon. dbo. Water-Wind; 30 Oct 2062
+  tshangs pa, tshong ba, Pig, khon 1
+  2;14,13 11;24,12 13;26,26 24;50,39 6;1,38
+  Solar: Fire-Dog. Xin 5
+29: Tue. me bzhi. Fire-Wind; 31 Oct 2062
+  dbang po, bkra shis, Mouse, dwa 2
+  3;11,27 12;25,23 13;30,50 25;56,13 6;2,36
+  Solar: Fire-Pig. Wei 6
+30: Wed. nag pa. Water-Wind; 1 Nov 2062
+  rnam sel, klu, Ox, khen 3
+  4;9,47 13;25,26 13;35,14 0;0,40 6;3,34
+  Solar: Earth-Mouse. Ji 7
+
+Tibetan Lunar Month: 9 - Wood-male-Mouse
+
+1: Thu. sa ri. Wind-Wind; 2 Nov 2062
+  mdza' bo, gdab pa, Tiger, kham 4
+  5;10,1 14;23,37 13;39,38 1;3,15 6;4,33
+  Solar: Earth-Ox. Dou 8
+2: Fri. sa ga. Earth-Fire; 3 Nov 2062
+  tshe dang ldan pa, rigs can, Rabbit, gin 5
+  6;11,14 15;20,47 13;44,2 2;4,49 6;5,31
+  Solar: Iron-Tiger. Niu 9
+3: Sat. lha mtshams. Earth-Earth; 4 Nov 2062
+  skal bzang, khyim skyes, Dragon, zin 6
+  0;13,27 16;16,58 13;48,25 3;5,24 6;6,29
+  Solar: Iron-Rabbit. Nu 1
+4: Sun. snron. Fire-Earth; 5 Nov 2062
+  dge byed, vishti, Snake, zon 7
+  1;16,41 17;12,8 13;52,49 4;4,58 6;7,27
+  Solar: Water-Dragon. Xu 2
+5: Mon. snrubs. Water-Water; 6 Nov 2062
+  shin tu 'grams, byis pa, Horse, li 8
+  2;20,46 18;6,26 13;57,13 5;3,40 6;8,25
+  Solar: Water-Snake. Wei 3
+6: Tue. chu stod. Fire-Water; 7 Nov 2062
+  las bzang, til rdung, Sheep, khon 9
+  3;24,52 19;0,45 14;1,37 6;2,22 6;9,24
+  Solar: Wood-Horse. Shi 4
+7: Wed. chu stod. Water-Water; 8 Nov 2062
+  'dzin byed, khyim skyes, Monkey, dwa 1
+  4;28,58 19;55,3 14;6,1 7;1,4 6;10,22
+  Solar: Wood-Sheep. Bi 5
+8: Thu. chu smad. Wind-Earth; 9 Nov 2062
+  'dzin byed, vishti, Bird, khen 2
+  5;33,3 20;49,21 14;10,25 7;59,46 6;11,20
+  Solar: Fire-Monkey. Kui 6
+9: Fri. gro zhin. Earth-Earth; 10 Nov 2062
+  zug rngu, byis pa, Dog, kham 3
+  6;37,9 21;43,39 14;14,49 8;58,28 6;12,18
+  Solar: Fire-Bird. Lou 7
+10: Sat. mon gre. Earth-Water; 11 Nov 2062
+  'grams, til rdung, Pig, gin 4
+  0;41,7 22;38,5 14;19,13 9;57,18 6;13,17
+  Solar: Earth-Dog. Wei 8
+11: Sun. mon gru. Fire-Earth; 12 Nov 2062
+  'phel, tshong ba, Mouse, zin 5
+  1;44,5 23;33,31 14;23,37 10;57,8 6;14,15
+  Solar: Earth-Pig. Mao 9
+12: Mon. khrums stod. Water-Fire; 13 Nov 2062
+  brtan pa, gdab pa, Ox, zon 6
+  2;46,3 24;29,57 14;28,0 11;57,58 6;15,13
+  Solar: Iron-Mouse. Bi 1
+13: Tue. khrums smad. Fire-Water; 14 Nov 2062
+  yongs bsnun, rigs can, Tiger, li 7
+  3;47,1 25;27,23 14;32,24 12;59,48 6;16,11
+  Solar: Iron-Ox. Zui 2
+14: Wed. nam gru. Water-Water; 15 Nov 2062
+  rdo rje, khyim skyes, Rabbit, khon 8
+  4;46,50 26;25,57 14;36,48 14;2,46 6;17,9
+  Solar: Water-Tiger. Can 3
+15: Thu. tha skar. Wind-Wind; 16 Nov 2062
+  dngos grub, vishti, Dragon, dwa 9
+  5;44,48 0;26,23 14;41,12 15;7,36 6;18,8
+  Solar: Water-Rabbit. Jing 4
+16: Fri. bra nye. Earth-Fire; 17 Nov 2062
+  phan tshun, byis pa, Snake, khen 1
+  6;41,46 1;27,50 14;45,36 16;13,26 6;19,6
+  Solar: Wood-Dragon. Gui 5
+17: Sat. smin drug. Earth-Fire; 18 Nov 2062
+  mchog can, til rdung, Horse, kham 2
+  0;37,44 2;30,16 14;50,0 17;20,16 6;20,4
+  Solar: Wood-Snake. Liu 6
+18: Sun. snar ma. Fire-Earth; 19 Nov 2062
+  yongs 'joms, tshong ba, Sheep, gin 3
+  1;32,41 3;33,42 14;54,24 18;28,6 6;21,2
+  Solar: Fire-Horse. Xing 7
+19: Mon. mgo. Water-Wind; 20 Nov 2062
+  zhi ba, byis pa, Monkey, zin 4
+  2;26,47 4;38,0 14;58,48 19;36,48 6;22,0
+  Solar: Fire-Sheep. Zhang 8
+20: Tue. lag. Fire-Water; 21 Nov 2062
+  grub pa, til rdung, Bird, zon 5
+  3;20,52 5;42,19 15;3,11 20;45,31 6;22,59
+  Solar: Earth-Monkey. Yi 9
+21: Wed. nabs so. Water-Wind; 22 Nov 2062
+  bsgrub bya, tshong ba, Dog, li 6
+  4;14,58 6;46,37 15;7,35 21;54,13 6;23,57
+  Solar: Earth-Bird. Zhen 1
+22: Thu. rgyal. Wind-Fire; 23 Nov 2062
+  dkar po, gdab pa, Pig, khon 7
+  5;9,3 7;50,55 15;11,59 23;2,55 6;24,55
+  Solar: Iron-Dog. Jiao 2
+  Descent of the Buddha from the realm of the gods.
+23: Fri. skag. Earth-Water; 24 Nov 2062
+  tshangs pa, rigs can, Mouse, dwa 8
+  6;3,9 8;55,14 15;16,23 24;11,37 6;25,53
+  Solar: Iron-Pig. Kang 3
+24. Omitted: Ox khen 9
+25: Sat. gre. Earth-Fire; 25 Nov 2062
+  dbang po, tshong ba, Tiger, kham 1
+  0;52,36 10;2,34 15;25,11 25;27,46 6;27,50
+  Solar: Water-Mouse. Di 4
+26: Sun. dbo. Fire-Wind; 26 Nov 2062
+  'khon 'dzin, gdab pa, Rabbit, gin 2
+  1;48,50 11;4,45 15;29,35 26;34,20 6;28,48
+  Solar: Water-Ox. Fang 5
+27: Mon. me bzhi. Water-Wind; 27 Nov 2062
+  rnam sel, rigs can, Dragon, zin 3
+  2;46,3 12;5,55 15;33,59 0;39,54 6;29,46
+  Solar: Wood-Tiger. Xin 6
+28: Tue. nag pa. Fire-Wind; 28 Nov 2062
+  mdza' bo, khyim skyes, Snake, zon 4
+  3;44,29 13;5,57 15;38,27 1;44,25 7;0,44
+  Solar: Wood-Rabbit. Wei 7
+29: Wed. sa ri. Water-Wind; 29 Nov 2062
+  tshe dang ldan pa, vishti, Horse, li 5
+  4;44,49 14;4,7 15;42,57 2;47,4 7;1,42
+  Solar: Fire-Dragon. Ji 8
+30: Thu. sa ga. Wind-Fire; 30 Nov 2062
+  skal bzang, rkang bzhi, Sheep, khon 6
+  5;46,8 15;1,17 15;47,26 3;48,44 7;2,41
+  Solar: Fire-Snake. Dou 9
+
+Tibetan Lunar Month: 10 - Wood-female-Ox
+
+1: Fri. sa ga. Earth-Fire; 1 Dec 2062
+  dge byed, mi sdug pa, Monkey, dwa 7
+  6;48,28 15;57,27 15;51,56 4;49,24 7;3,39
+  Solar: Earth-Horse. Niu 1
+2: Sat. lha mtshams. Earth-Earth; 2 Dec 2062
+  shin tu 'grams, byis pa, Bird, khen 8
+  0;51,48 16;52,38 15;56,26 5;49,4 7;4,37
+  Solar: Earth-Sheep. Nu 2
+3: Sun. snron. Fire-Earth; 3 Dec 2062
+  las bzang, rigs can, Dog, kham 9
+  1;55,59 17;46,56 16;0,55 6;47,52 7;5,35
+  Solar: Iron-Monkey. Xu 3
+4: Mon. snrubs. Water-Water; 4 Dec 2062
+  2;60,0 18;41,25 16;5,25 7;46,51 7;6,34
+  Solar: Iron-Bird. Wei 4
+4: Tue. chu stod. Fire-Water; 5 Dec 2062
+  zug rngu, vishti, Pig, gin 1
+  3;0,11 19;41,14 16;5,25 8;46,40 7;6,34
+  Solar: Water-Dog. Shi 5
+5: Wed. chu smad. Water-Earth; 6 Dec 2062
+  'grams, byis pa, Mouse, zin 2
+  4;4,22 20;35,32 16;9,55 9;45,28 7;7,32
+  Solar: Water-Pig. Bi 6
+6: Thu. gro zhin. Wind-Earth; 7 Dec 2062
+  'phel, til rdung, Ox, zon 3
+  5;8,34 21;29,50 16;14,25 10;44,15 7;8,30
+  Solar: Wood-Mouse. Kui 7
+7: Fri. mon gre. Earth-Water; 8 Dec 2062
+  brtan pa, tshong ba, Tiger, li 4
+  6;12,45 22;24,9 16;18,54 11;43,3 7;9,28
+  Solar: Wood-Ox. Lou 8
+8: Sat. mon gru. Earth-Earth; 9 Dec 2062
+  yongs bsnun, gdab pa, Rabbit, khon 5
+  0;16,49 23;18,35 16;23,24 12;41,59 7;10,26
+  Solar: Fire-Tiger. Wei 9
+9: Sun. khrums stod. Fire-Fire; 10 Dec 2062
+  dga' ba, rigs can, Dragon, dwa 6
+  1;19,52 24;14,1 16;27,54 13;41,56 7;11,25
+  Solar: Fire-Rabbit. Mao 1
+10: Mon. khrums smad. Water-Water; 11 Dec 2062
+  rdo rje, khyim skyes, Snake, khen 7
+  2;21,55 25;10,28 16;32,23 14;42,52 7;12,23
+  Solar: Earth-Dragon. Bi 2
+11: Tue. nam gru. Fire-Water; 12 Dec 2062
+  dngos grub, vishti, Horse, kham 8
+  3;22,58 26;7,54 16;36,53 15;44,48 7;13,21
+  Solar: Earth-Snake. Zui 3
+12: Wed. tha skar. Water-Wind; 13 Dec 2062
+  phan tshun, byis pa, Sheep, gin 9
+  4;22,53 0;6,29 16;41,23 16;47,52 7;14,19
+  Solar: Iron-Horse. Can 4
+13: Thu. bra nye. Wind-Fire; 14 Dec 2062
+  mchog can, til rdung, Monkey, zin 1
+  5;20,56 1;6,56 16;45,52 17;52,49 7;15,17
+  Solar: Iron-Sheep. Jing 5
+14: Fri. smin drug. Earth-Fire; 15 Dec 2062
+  yongs 'joms, tshong ba, Bird, zon 2
+  6;17,59 2;8,22 16;50,22 18;58,45 7;16,16
+  Solar: Water-Monkey. Gui 6
+15: Sat. snar ma. Earth-Earth; 16 Dec 2062
+  grub pa, gdab pa, Dog, li 3
+  0;14,2 3;10,49 16;54,52 20;5,41 7;17,14
+  Solar: Water-Bird. Liu 7
+16: Sun. mgo. Fire-Wind; 17 Dec 2062
+  bsgrub bya, rigs can, Pig, khon 4
+  1;9,5 4;14,16 16;59,22 21;13,38 7;18,12
+  Solar: Wood-Dog. Xing 8
+17: Mon. lag. Water-Water; 18 Dec 2062
+  dge ba, khyim skyes, Mouse, dwa 5
+  2;3,17 5;18,34 17;3,51 22;22,26 7;19,10
+  Solar: Wood-Pig. Zhang 9
+18. Omitted: Ox khen 6
+19: Tue. nabs so. Fire-Wind; 19 Dec 2062
+  dkar po, gdab pa, Tiger, kham 7
+  3;51,39 6;27,11 17;12,51 23;40,2 7;21,7
+  Solar: Fire-Mouse. Yi 1
+20: Wed. rgyal. Water-Fire; 20 Dec 2062
+  tshangs pa, rigs can, Rabbit, gin 8
+  4;45,51 7;31,29 17;17,20 24;48,50 7;22,5
+  Solar: Fire-Ox. Zhen 2
+21: Thu. skag. Wind-Water; 21 Dec 2062
+  dbang po, khyim skyes, Dragon, zin 9
+  5;40,2 8;35,47 17;21,50 25;57,38 7;23,3
+  Solar: Earth-Tiger. Jiao 3
+22: Fri. mchu. Earth-Fire; 22 Dec 2062
+  rnam sel, vishti, Snake, zon 1
+  6;34,22 9;39,57 17;26,20 0;6,18 7;24,1
+  Solar: Earth-Rabbit. Kang 4
+23: Sat. gre. Earth-Fire; 23 Dec 2062
+  mdza' bo, byis pa, Horse, li 2
+  0;29,42 10;43,7 17;30,50 1;13,57 7;25,0
+  Solar: Iron-Dragon. Di 5
+24: Sun. dbo. Fire-Wind; 24 Dec 2062
+  tshe dang ldan pa, khyim skyes, Sheep, khon 3
+  1;26,2 11;45,17 17;35,19 2;20,37 7;25,58
+  Solar: Iron-Snake. Fang 6
+25: Mon. me bzhi. Water-Wind; 25 Dec 2062
+  skal bzang, vishti, Monkey, dwa 4
+  2;23,22 12;46,27 17;39,49 3;26,16 7;26,56
+  Solar: Water-Horse. Xin 7
+26: Tue. nag pa. Fire-Wind; 26 Dec 2062
+  dge byed, byis pa, Bird, khen 5
+  3;21,50 13;46,28 17;44,19 4;30,47 7;27,54
+  Solar: Water-Sheep. Wei 8
+27: Wed. sa ri. Water-Wind; 27 Dec 2062
+  shin tu 'grams, til rdung, Dog, kham 6
+  4;22,10 14;44,38 17;48,48 5;33,27 7;28,52
+  Solar: Wood-Monkey. Ji 9
+28: Thu. sa ga. Wind-Fire; 28 Dec 2062
+  las bzang, tshong ba, Pig, gin 7
+  5;23,30 15;41,48 17;53,18 6;35,6 7;29,51
+  Solar: Wood-Bird. Dou 1
+29: Fri. lha mtshams. Earth-Earth; 29 Dec 2062
+  'dzin byed, bkra shis, Mouse, zin 8
+  6;25,53 16;37,57 17;57,51 7;35,49 8;0,49
+  Solar: Fire-Dog. Niu 2
+30: Sat. snron. Earth-Earth; 30 Dec 2062
+  zug rngu, rkang bzhi, Ox, zon 9
+  0;29,17 17;33,7 18;2,25 8;35,32 8;1,47
+  Solar: Fire-Pig. Nu 3
+
+Tibetan Lunar Month: 11 - Wood-male-Tiger
+
+1: Sun. snrubs. Fire-Water; 31 Dec 2062
+  'grams, mi sdug pa, Tiger, li 1
+  1;33,33 18;27,25 18;6,58 9;34,24 8;2,45
+  Solar: Earth-Mouse. Xu 4
+2: Mon. chu stod. Water-Water; 1 Jan 2063
+  'phel, byis pa, Rabbit, khon 2
+  2;37,48 19;21,43 18;11,32 10;33,16 8;3,43
+  Solar: Earth-Ox. Wei 5
+3: Tue. chu smad. Fire-Earth; 2 Jan 2063
+  brtan pa, til rdung, Dragon, dwa 3
+  3;42,3 20;16,1 18;16,5 11;32,7 8;4,42
+  Solar: Iron-Tiger. Shi 6
+4: Wed. gro zhin. Water-Earth; 3 Jan 2063
+  yongs bsnun, tshong ba, Snake, khen 4
+  4;46,19 21;10,20 18;20,39 12;30,59 8;5,40
+  Solar: Iron-Rabbit. Bi 7
+5: Thu. mon gre. Wind-Water; 4 Jan 2063
+  dga' ba, gdab pa, Horse, kham 5
+  5;50,34 22;4,38 18;25,12 13;29,51 8;6,38
+  Solar: Water-Dragon. Kui 8
+6: Fri. mon gre. Earth-Water; 5 Jan 2063
+  rdo rje, byis pa, Sheep, gin 6
+  6;54,41 22;59,5 18;29,46 14;28,51 8;7,36
+  Solar: Water-Snake. Lou 9
+7: Sat. mon gru. Earth-Earth; 6 Jan 2063
+  dngos grub, til rdung, Monkey, zin 7
+  0;57,48 23;54,32 18;34,20 15;28,52 8;8,34
+  Solar: Wood-Horse. Wei 1
+8: Sun. khrums stod. Fire-Fire; 7 Jan 2063
+  phan tshun, tshong ba, Bird, zon 8
+  1;59,54 24;50,59 18;38,53 16;29,52 8;9,33
+  Solar: Wood-Sheep. Mao 2
+9: Mon. khrums smad. Water-Water; 8 Jan 2063
+  2;60,0 25;49,27 18;43,27 17;32,54 8;10,31
+  Solar: Fire-Monkey. Bi 3
+9: Tue. nam gru. Fire-Water; 9 Jan 2063
+  yongs 'joms, rigs can, Dog, li 9
+  3;1,1 26;48,25 18;43,27 18;31,53 8;10,31
+  Solar: Fire-Bird. Zui 4
+10: Wed. tha skar. Water-Wind; 10 Jan 2063
+  zhi ba, khyim skyes, Pig, khon 1
+  4;0,59 0;47,1 18;48,0 19;35,2 8;11,29
+  Solar: Earth-Dog. Can 5
+11. Omitted: Mouse dwa 2
+12: Thu. bra nye. Wind-Fire; 11 Jan 2063
+  grub pa, vishti, Ox, khen 3
+  5;56,12 1;48,55 18;57,8 20;46,3 8;13,25
+  Solar: Earth-Pig. Jing 6
+13: Fri. smin drug. Earth-Fire; 12 Jan 2063
+  bsgrub bya, rigs can, Tiger, kham 4
+  6;52,18 2;51,22 19;1,41 21;53,4 8;14,24
+  Solar: Iron-Mouse. Gui 7
+14: Sat. snar ma. Earth-Earth; 13 Jan 2063
+  dkar po, khyim skyes, Rabbit, gin 5
+  0;47,25 3;54,50 19;6,15 23;1,5 8;15,22
+  Solar: Iron-Ox. Liu 8
+15: Sun. mgo. Fire-Wind; 14 Jan 2063
+  tshangs pa, vishti, Dragon, zin 6
+  1;41,40 4;59,8 19;10,48 24;9,57 8;16,20
+  Solar: Water-Tiger. Xing 9
+16: Mon. nabs so. Water-Wind; 15 Jan 2063
+  dbang po, byis pa, Snake, zon 7
+  2;35,55 6;3,26 19;15,22 25;18,49 8;17,18
+  Solar: Water-Rabbit. Zhang 1
+17: Tue. rgyal. Fire-Fire; 16 Jan 2063
+  'khon 'dzin, til rdung, Horse, li 8
+  3;30,10 7;7,45 19;19,55 26;27,41 8;18,17
+  Solar: Wood-Dragon. Yi 2
+18: Wed. skag. Water-Water; 17 Jan 2063
+  rnam sel, vishti, Sheep, khon 9
+  4;24,26 8;12,3 19;24,29 0;36,32 8;19,15
+  Solar: Wood-Snake. Zhen 3
+19: Thu. mchu. Wind-Fire; 18 Jan 2063
+  mdza' bo, byis pa, Monkey, dwa 1
+  5;18,41 9;16,21 19;29,3 1;45,24 8;20,13
+  Solar: Fire-Horse. Jiao 4
+20: Fri. gre. Earth-Fire; 19 Jan 2063
+  tshe dang ldan pa, til rdung, Bird, khen 2
+  6;13,5 10;20,31 19;33,36 2;54,7 8;21,11
+  Solar: Fire-Sheep. Kang 5
+21: Sat. dbo. Earth-Wind; 20 Jan 2063
+  dge byed, tshong ba, Dog, kham 3
+  0;8,29 11;23,40 19;38,10 4;1,50 8;22,9
+  Solar: Earth-Monkey. Di 6
+22: Sun. me bzhi. Fire-Wind; 21 Jan 2063
+  shin tu 'grams, gdab pa, Pig, gin 4
+  1;4,53 12;25,50 19;42,43 5;8,33 8;23,8
+  Solar: Earth-Bird. Fang 7
+23: Mon. nag pa. Water-Wind; 22 Jan 2063
+  las bzang, rigs can, Mouse, zin 5
+  2;2,18 13;26,59 19;47,17 6;14,16 8;24,6
+  Solar: Iron-Dog. Xin 8
+24: Tue. sa ri. Fire-Wind; 23 Jan 2063
+  'dzin byed, khyim skyes, Ox, zon 6
+  3;0,51 14;26,59 19;51,51 7;18,50 8;25,4
+  Solar: Iron-Pig. Wei 9
+25: Wed. sa ga. Water-Fire; 24 Jan 2063
+  zug rngu, vishti, Tiger, li 7
+  4;1,15 15;25,9 19;56,24 8;21,33 8;26,2
+  Solar: Water-Mouse. Ji 1
+26: Thu. lha mtshams. Wind-Earth; 25 Jan 2063
+  'grams, byis pa, Rabbit, khon 8
+  5;2,39 16;22,18 20;0,58 9;23,16 8;27,0
+  Solar: Water-Ox. Dou 2
+27: Fri. snron. Earth-Earth; 26 Jan 2063
+  'phel, til rdung, Dragon, dwa 9
+  6;5,4 17;18,27 20;5,31 10;23,59 8;27,59
+  Solar: Wood-Tiger. Niu 3
+28: Sat. snrubs. Earth-Water; 27 Jan 2063
+  brtan pa, tshong ba, Snake, khen 1
+  0;8,28 18;13,36 20;10,5 11;23,42 8;28,57
+  Solar: Wood-Rabbit. Nu 4
+29: Sun. chu stod. Fire-Water; 28 Jan 2063
+  yongs bsnun, bkra shis, Horse, kham 2
+  1;12,44 19;7,54 20;14,38 12;22,33 8;29,55
+  Solar: Fire-Dragon. Xu 5
+30: Mon. chu smad. Water-Earth; 29 Jan 2063
+  dga' ba, klu, Sheep, gin 3
+  2;16,59 20;2,13 20;19,12 13;21,25 9;0,53
+  Solar: Fire-Snake. Wei 6
+
+Tibetan Lunar Month: 12 - Wood-female-Rabbit
+
+1: Tue. chu smad. Fire-Earth; 30 Jan 2063
+  rdo rje, gdab pa, Monkey, zin 4
+  3;21,14 20;56,31 20;23,46 14;20,17 9;1,51
+  Solar: Earth-Horse. Shi 7
+2: Wed. gro zhin. Water-Earth; 31 Jan 2063
+  dngos grub, rigs can, Bird, zon 5
+  4;25,30 21;50,49 20;28,19 15;19,9 9;2,50
+  Solar: Earth-Sheep. Bi 8
+3: Thu. mon gre. Wind-Water; 1 Feb 2063
+  phan tshun, til rdung, Dog, li 6
+  5;29,45 22;45,7 20;32,53 16;18,0 9;3,48
+  Solar: Iron-Monkey. Kui 9
+4: Fri. mon gru. Earth-Earth; 2 Feb 2063
+  mchog can, tshong ba, Pig, khon 7
+  6;33,51 23;39,34 20;37,26 17;17,1 9;4,46
+  Solar: Iron-Bird. Lou 1
+5: Sat. khrums stod. Earth-Fire; 3 Feb 2063
+  yongs 'joms, gdab pa, Mouse, dwa 8
+  0;36,58 24;35,2 20;42,0 18;17,2 9;5,44
+  Solar: Water-Dog. Wei 2
+6: Sun. khrums smad. Fire-Water; 4 Feb 2063
+  zhi ba, rigs can, Ox, khen 9
+  1;39,4 25;31,29 20;46,34 19;18,3 9;6,42
+  Solar: Water-Pig. Mao 3
+7: Mon. nam gru. Water-Water; 5 Feb 2063
+  grub pa, khyim skyes, Tiger, kham 1
+  2;40,10 26;28,57 20;51,7 20;20,4 9;7,41
+  Solar: Wood-Mouse. Bi 4
+8: Tue. tha skar. Fire-Wind; 6 Feb 2063
+  bsgrub bya, vishti, Rabbit, gin 2
+  3;40,7 0;27,33 20;55,41 21;23,14 9;8,39
+  Solar: Wood-Ox. Zui 5
+9: Wed. bra nye. Water-Fire; 7 Feb 2063
+  dge ba, byis pa, Dragon, zin 3
+  4;38,13 1;28,1 21;0,14 22;28,15 9;9,37
+  Solar: Fire-Tiger. Can 6
+10: Thu. smin drug. Wind-Fire; 8 Feb 2063
+  dkar po, til rdung, Snake, zon 4
+  5;35,19 2;29,28 21;4,48 23;34,17 9;10,35
+  Solar: Fire-Rabbit. Jing 7
+11: Fri. snar ma. Earth-Earth; 9 Feb 2063
+  tshangs pa, tshong ba, Horse, li 5
+  6;31,25 3;31,56 21;9,21 24;41,18 9;11,34
+  Solar: Earth-Dragon. Gui 8
+12: Sat. mgo. Earth-Wind; 10 Feb 2063
+  dbang po, byis pa, Sheep, khon 6
+  0;26,31 4;35,23 21;13,55 25;49,19 9;12,32
+  Solar: Earth-Snake. Liu 9
+13: Sun. lag. Fire-Water; 11 Feb 2063
+  'khon 'dzin, til rdung, Monkey, dwa 7
+  1;20,46 5;39,42 21;18,29 26;58,11 9;13,30
+  Solar: Iron-Horse. Xing 1
+14: Mon. nabs so. Water-Wind; 12 Feb 2063
+  mdza' bo, tshong ba, Bird, khen 8
+  2;15,2 6;44,0 21;23,2 1;7,3 9;14,28
+  Solar: Iron-Sheep. Zhang 2
+15: Tue. rgyal. Fire-Fire; 13 Feb 2063
+  tshe dang ldan pa, gdab pa, Dog, kham 9
+  3;9,17 7;48,18 21;27,36 2;15,55 9;15,26
+  Solar: Water-Monkey. Yi 3
+16: Wed. skag. Water-Water; 14 Feb 2063
+  skal bzang, rigs can, Pig, gin 1
+  4;3,32 8;52,37 21;32,9 3;24,47 9;16,25
+  Solar: Water-Bird. Zhen 4
+17. Omitted: Mouse zin 2
+18: Thu. gre. Wind-Fire; 15 Feb 2063
+  dge byed, tshong ba, Ox, zon 3
+  5;52,12 10;1,4 21;41,17 4;42,21 9;18,21
+  Solar: Wood-Dog. Jiao 5
+19: Fri. dbo. Earth-Wind; 16 Feb 2063
+  shin tu 'grams, gdab pa, Tiger, li 4
+  6;47,37 11;4,13 21;45,50 5;50,4 9;19,19
+  Solar: Wood-Pig. Kang 6
+20: Sat. me bzhi. Earth-Wind; 17 Feb 2063
+  las bzang, rigs can, Rabbit, khon 5
+  0;44,1 12;6,22 21;50,24 6;56,46 9;20,17
+  Solar: Fire-Mouse. Di 7
+21: Sun. nag pa. Fire-Wind; 18 Feb 2063
+  zug rngu, khyim skyes, Dragon, dwa 6
+  1;41,26 13;7,31 21;54,57 8;2,29 9;21,16
+  Solar: Fire-Ox. Fang 8
+22: Mon. sa ri. Water-Wind; 19 Feb 2063
+  'grams, vishti, Snake, khen 7
+  2;40,0 14;7,30 21;59,31 9;7,2 9;22,14
+  Solar: Earth-Tiger. Xin 9
+23: Tue. sa ga. Fire-Fire; 20 Feb 2063
+  'phel, byis pa, Horse, kham 8
+  3;40,25 15;5,39 22;4,4 10;9,44 9;23,12
+  Solar: Earth-Rabbit. Wei 1
+24: Wed. lha mtshams. Water-Earth; 21 Feb 2063
+  brtan pa, til rdung, Sheep, gin 9
+  4;41,49 16;2,48 22;8,38 11;11,27 9;24,10
+  Solar: Iron-Dragon. Ji 2
+25: Thu. lha mtshams. Wind-Earth; 22 Feb 2063
+  yongs bsnun, tshong ba, Monkey, zin 1
+  5;44,14 16;58,57 22;13,12 12;12,9 9;25,8
+  Solar: Iron-Snake. Dou 3
+26: Fri. snron. Earth-Earth; 23 Feb 2063
+  dga' ba, gdab pa, Bird, zon 2
+  6;47,39 17;54,6 22;17,45 13;11,51 9;26,7
+  Solar: Water-Horse. Niu 4
+27: Sat. snrubs. Earth-Water; 24 Feb 2063
+  rdo rje, rigs can, Dog, li 3
+  0;51,54 18;48,24 22;22,19 14;10,43 9;27,5
+  Solar: Water-Sheep. Nu 5
+28: Sun. chu stod. Fire-Water; 25 Feb 2063
+  dngos grub, til rdung, Pig, khon 4
+  1;56,10 19;42,42 22;26,52 15;9,35 9;28,3
+  Solar: Wood-Monkey. Xu 6
+29: Mon. chu smad. Water-Earth; 26 Feb 2063
+  2;60,0 20;37,26 22;31,26 16;8,52 9;29,1
+  Solar: Wood-Bird. Wei 7
+29: Tue. gro zhin. Fire-Earth; 27 Feb 2063
+  mchog can, bkra shis, Mouse, dwa 5
+  3;0,25 21;37,0 22;31,26 17;8,27 9;29,1
+  Solar: Fire-Dog. Shi 8
+30: Wed. mon gre. Water-Water; 28 Feb 2063
+  yongs 'joms, klu, Ox, khen 6
+  4;4,41 22;31,18 22;36,0 18;7,18 10;0,0
+  Solar: Fire-Pig. Bi 9

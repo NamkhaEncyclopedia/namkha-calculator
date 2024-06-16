@@ -1,0 +1,1590 @@
+
+New Year: 1929, Earth-female-Snake
+
+Tibetan Lunar Month: 1 - Water-male-Dragon
+
+1: Sun. gro zhin. Fire-Earth; 10 Feb 1929
+  phan tshun, mi sdug pa, Tiger, kham 7
+  1;34,18 21;48,41 21;29,0 16;17,42 9;15,44
+  Solar: Fire-Dog. Xing 8
+  From 1st to 15th, Demonstration of Miracles.
+2: Mon. mon gre. Water-Water; 11 Feb 1929
+  mchog can, byis pa, Rabbit, gin 8
+  2;35,33 22;46,0 21;33,34 17;19,34 9;16,42
+  Solar: Fire-Pig. Zhang 9
+3: Tue. mon gru. Fire-Earth; 12 Feb 1929
+  yongs 'joms, til rdung, Dragon, zin 9
+  3;35,49 23;44,18 21;38,7 18;22,26 9;17,41
+  Solar: Earth-Mouse. Yi 1
+4: Wed. khrums stod. Water-Fire; 13 Feb 1929
+  zhi ba, tshong ba, Snake, zon 1
+  4;34,4 24;44,36 21;42,41 19;27,18 9;18,39
+  Solar: Earth-Ox. Zhen 2
+5: Thu. khrums smad. Wind-Water; 14 Feb 1929
+  grub pa, gdab pa, Horse, li 2
+  5;31,19 25;45,55 21;47,14 20;33,9 9;19,37
+  Solar: Iron-Tiger. Jiao 3
+6: Fri. nam gru. Earth-Water; 15 Feb 1929
+  bsgrub bya, rigs can, Sheep, khon 3
+  6;27,34 26;48,13 21;51,48 21;40,1 9;20,35
+  Solar: Iron-Rabbit. Kang 4
+7: Sat. tha skar. Earth-Wind; 16 Feb 1929
+  dge ba, tshong ba, Monkey, dwa 4
+  0;22,49 0;51,32 21;56,21 22;47,54 9;21,34
+  Solar: Water-Dragon. Di 5
+8: Sun. bra nye. Fire-Fire; 17 Feb 1929
+  dkar po, gdab pa, Bird, khen 5
+  1;17,5 1;55,50 22;0,55 23;56,45 9;22,32
+  Solar: Water-Snake. Fang 6
+9: Mon. snar ma. Water-Earth; 18 Feb 1929
+  dbang po, rigs can, Dog, kham 6
+  2;11,20 3;0,8 22;5,29 25;5,37 9;23,30
+  Solar: Wood-Horse. Xin 7
+10: Tue. mgo. Fire-Wind; 19 Feb 1929
+  'khon 'dzin, khyim skyes, Pig, gin 7
+  3;5,35 4;4,27 22;10,2 26;14,29 9;24,28
+  Solar: Wood-Sheep. Wei 8
+11. Omitted: Mouse zin 8
+12: Wed. lag. Water-Water; 20 Feb 1929
+  rnam sel, vishti, Ox, zon 9
+  4;54,6 5;13,3 22;19,9 0;32,13 9;26,25
+  Solar: Fire-Monkey. Ji 9
+13: Thu. nabs so. Wind-Wind; 21 Feb 1929
+  mdza' bo, rigs can, Tiger, li 1
+  5;48,21 6;17,21 22;23,43 1;41,5 9;27,23
+  Solar: Fire-Bird. Dou 1
+14: Fri. rgyal. Earth-Fire; 22 Feb 1929
+  tshe dang ldan pa, khyim skyes, Rabbit, khon 2
+  6;43,36 7;20,40 22;28,17 2;48,57 9;28,21
+  Solar: Earth-Dog. Niu 2
+15: Sat. skag. Earth-Water; 23 Feb 1929
+  skal bzang, vishti, Dragon, dwa 3
+  0;39,52 8;22,58 22;32,50 3;55,48 9;29,19
+  Solar: Earth-Pig. Nu 3
+16: Sun. mchu. Fire-Fire; 24 Feb 1929
+  shin tu 'grams, byis pa, Snake, khen 4
+  1;37,6 9;24,16 22;37,22 5;1,39 10;0,17
+  Solar: Iron-Mouse. Xu 4
+17: Mon. gre. Water-Fire; 25 Feb 1929
+  las bzang, til rdung, Horse, kham 5
+  2;35,18 10;24,33 22;41,52 6;6,26 10;1,16
+  Solar: Iron-Ox. Wei 5
+18: Tue. dbo. Fire-Wind; 26 Feb 1929
+  'dzin byed, tshong ba, Sheep, gin 6
+  3;35,30 11;22,51 22;46,22 7;9,14 10;2,14
+  Solar: Water-Tiger. Shi 6
+19: Wed. me bzhi. Water-Wind; 27 Feb 1929
+  zug rngu, gdab pa, Monkey, zin 7
+  4;36,42 12;20,9 22;50,52 8;11,1 10;3,12
+  Solar: Water-Rabbit. Bi 7
+20: Thu. nag pa. Wind-Wind; 28 Feb 1929
+  'grams, rigs can, Bird, zon 8
+  5;38,54 13;16,27 22;55,21 9;11,49 10;4,10
+  Solar: Wood-Dragon. Kui 8
+21: Fri. sa ri. Earth-Wind; 1 Mar 1929
+  'phel, khyim skyes, Dog, li 9
+  6;42,5 14;11,45 22;59,51 10;11,37 10;5,8
+  Solar: Wood-Snake. Lou 9
+22: Sat. sa ga. Earth-Fire; 2 Mar 1929
+  brtan pa, vishti, Pig, khon 1
+  0;46,17 15;6,3 23;4,21 11;10,25 10;6,7
+  Solar: Fire-Horse. Wei 1
+23: Sun. lha mtshams. Fire-Earth; 3 Mar 1929
+  yongs bsnun, byis pa, Mouse, dwa 2
+  1;50,28 16;0,21 23;8,50 12;9,12 10;7,5
+  Solar: Fire-Sheep. Mao 2
+24: Mon. lha mtshams. Water-Earth; 4 Mar 1929
+  dga' ba, rigs can, Ox, khen 3
+  2;54,40 16;54,40 23;13,20 13;8,0 10;8,3
+  Solar: Earth-Monkey. Bi 3
+25: Tue. snron. Fire-Earth; 5 Mar 1929
+  rdo rje, khyim skyes, Tiger, kham 4
+  3;58,51 17;48,58 23;17,50 14;6,48 10;9,1
+  Solar: Earth-Bird. Zui 4
+26: Wed. snrubs. Water-Water; 6 Mar 1929
+  4;60,0 18;46,20 23;22,20 15;8,40 10;10,0
+  Solar: Iron-Dog. Can 5
+26: Thu. chu stod. Wind-Water; 7 Mar 1929
+  phan tshun, byis pa, Rabbit, gin 5
+  5;3,3 19;43,16 23;22,20 16;5,36 10;10,0
+  Solar: Iron-Pig. Jing 6
+27: Fri. chu smad. Earth-Earth; 8 Mar 1929
+  mchog can, til rdung, Dragon, zin 6
+  6;7,14 20;37,35 23;26,49 17;4,24 10;10,58
+  Solar: Water-Mouse. Gui 7
+28: Sat. gro zhin. Earth-Earth; 9 Mar 1929
+  yongs 'joms, tshong ba, Snake, zon 7
+  0;10,25 21;32,53 23;31,19 18;4,13 10;11,56
+  Solar: Water-Ox. Liu 8
+29: Sun. mon gre. Fire-Water; 10 Mar 1929
+  zhi ba, bkra shis, Horse, li 8
+  1;12,36 22;29,12 23;35,49 19;5,1 10;12,54
+  Solar: Wood-Tiger. Xing 9
+30: Mon. mon gru. Water-Earth; 11 Mar 1929
+  grub pa, klu, Sheep, khon 9
+  2;13,47 23;26,31 23;40,18 20;6,50 10;13,52
+  Solar: Wood-Rabbit. Zhang 1
+
+Tibetan Lunar Month: 2 - Water-female-Snake
+
+1: Tue. khrums stod. Fire-Fire; 12 Mar 1929
+  bsgrub bya, gdab pa, Monkey, dwa 1
+  3;13,58 24;24,50 23;44,48 21;9,38 10;14,51
+  Solar: Fire-Dragon. Yi 2
+2: Wed. khrums smad. Water-Water; 13 Mar 1929
+  dge ba, rigs can, Bird, khen 2
+  4;12,8 25;25,9 23;49,18 22;14,27 10;15,49
+  Solar: Fire-Snake. Zhen 3
+3: Thu. nam gru. Wind-Water; 14 Mar 1929
+  dkar po, khyim skyes, Dog, kham 3
+  5;9,19 26;26,28 23;53,47 23;20,16 10;16,47
+  Solar: Earth-Horse. Jiao 4
+4: Fri. tha skar. Earth-Wind; 15 Mar 1929
+  tshangs pa, vishti, Pig, gin 4
+  6;5,30 0;28,46 23;58,17 24;27,4 10;17,45
+  Solar: Earth-Sheep. Kang 5
+5: Sat. bra nye. Earth-Fire; 16 Mar 1929
+  dbang po, byis pa, Mouse, zin 5
+  0;0,41 1;32,5 24;2,47 25;34,53 10;18,43
+  Solar: Iron-Monkey. Di 6
+6. Omitted: Ox zon 6
+7: Sun. smin drug. Fire-Fire; 17 Mar 1929
+  'khon 'dzin, khyim skyes, Tiger, li 7
+  1;49,4 2;40,42 24;11,46 26;52,29 10;20,40
+  Solar: Iron-Bird. Fang 7
+8: Mon. snar ma. Water-Earth; 18 Mar 1929
+  mdza' bo, vishti, Rabbit, khon 8
+  2;43,15 3;45,0 24;16,16 1;1,17 10;21,38
+  Solar: Water-Dog. Xin 8
+9: Tue. mgo. Fire-Wind; 19 Mar 1929
+  tshe dang ldan pa, byis pa, Dragon, dwa 9
+  3;37,26 4;49,19 24;20,46 2;10,5 10;22,36
+  Solar: Water-Pig. Wei 9
+10: Wed. lag. Water-Water; 20 Mar 1929
+  skal bzang, til rdung, Snake, khen 1
+  4;31,38 5;53,37 24;25,15 3;18,53 10;23,34
+  Solar: Wood-Mouse. Ji 1
+11: Thu. nabs so. Wind-Wind; 21 Mar 1929
+  dge byed, vishti, Horse, kham 2
+  5;25,50 6;57,55 24;29,45 4;27,40 10;24,33
+  Solar: Wood-Ox. Dou 2
+12: Fri. skag. Earth-Water; 22 Mar 1929
+  shin tu 'grams, byis pa, Sheep, gin 3
+  6;21,2 8;1,12 24;34,15 5;35,28 10;25,31
+  Solar: Fire-Tiger. Niu 3
+13: Sat. mchu. Earth-Fire; 23 Mar 1929
+  las bzang, til rdung, Monkey, zin 4
+  0;17,14 9;3,30 24;38,44 6;42,15 10;26,29
+  Solar: Fire-Rabbit. Nu 4
+14: Sun. gre. Fire-Fire; 24 Mar 1929
+  'dzin byed, tshong ba, Bird, zon 5
+  1;14,26 10;4,48 24;43,14 7;48,2 10;27,27
+  Solar: Earth-Dragon. Xu 5
+15: Mon. dbo. Water-Wind; 25 Mar 1929
+  zug rngu, gdab pa, Dog, li 6
+  2;12,39 11;5,5 24;47,44 8;52,49 10;28,25
+  Solar: Earth-Snake. Wei 6
+16: Tue. me bzhi. Fire-Wind; 26 Mar 1929
+  'grams, rigs can, Pig, khon 7
+  3;12,51 12;3,22 24;52,14 9;55,36 10;29,24
+  Solar: Iron-Horse. Shi 7
+17: Wed. nag pa. Water-Wind; 27 Mar 1929
+  'phel, khyim skyes, Mouse, dwa 8
+  4;14,1 13;0,40 24;56,41 10;57,21 11;0,22
+  Solar: Iron-Sheep. Bi 8
+18: Thu. nag pa. Wind-Wind; 28 Mar 1929
+  brtan pa, vishti, Ox, khen 9
+  5;16,7 13;56,57 25;1,5 11;58,2 11;1,20
+  Solar: Water-Monkey. Kui 9
+19: Fri. sa ri. Earth-Wind; 29 Mar 1929
+  yongs bsnun, byis pa, Tiger, kham 1
+  6;19,14 14;52,14 25;5,29 12;57,44 11;2,18
+  Solar: Water-Bird. Lou 1
+20: Sat. sa ga. Earth-Fire; 30 Mar 1929
+  dga' ba, til rdung, Rabbit, gin 2
+  0;23,19 15;46,33 25;9,53 13;56,26 11;3,17
+  Solar: Wood-Dog. Wei 2
+21: Sun. lha mtshams. Fire-Earth; 31 Mar 1929
+  rdo rje, khyim skyes, Dragon, zin 3
+  1;27,25 16;40,51 25;14,17 14;55,8 11;4,15
+  Solar: Wood-Pig. Mao 3
+22: Mon. snron. Water-Earth; 1 Apr 1929
+  dngos grub, vishti, Snake, zon 4
+  2;31,31 17;35,9 25;18,40 15;53,50 11;5,13
+  Solar: Fire-Mouse. Bi 4
+23: Tue. snrubs. Fire-Water; 2 Apr 1929
+  phan tshun, byis pa, Horse, li 5
+  3;35,37 18;29,27 25;23,4 16;52,32 11;6,11
+  Solar: Fire-Ox. Zui 5
+24: Wed. chu stod. Water-Water; 3 Apr 1929
+  mchog can, til rdung, Sheep, khon 6
+  4;39,42 19;23,45 25;27,28 17;51,14 11;7,9
+  Solar: Earth-Tiger. Can 6
+25: Thu. chu smad. Wind-Earth; 4 Apr 1929
+  yongs 'joms, tshong ba, Monkey, dwa 7
+  5;43,47 20;18,4 25;31,52 18;49,57 11;8,8
+  Solar: Earth-Rabbit. Jing 7
+26: Fri. gro zhin. Earth-Earth; 5 Apr 1929
+  zhi ba, gdab pa, Bird, khen 8
+  6;46,52 21;13,24 25;36,16 19;49,40 11;9,6
+  Solar: Iron-Dragon. Gui 8
+27: Sat. mon gre. Earth-Water; 6 Apr 1929
+  grub pa, rigs can, Dog, kham 9
+  0;48,57 22;9,43 25;40,40 20;50,23 11;10,4
+  Solar: Iron-Snake. Liu 9
+28: Sun. mon gru. Fire-Earth; 7 Apr 1929
+  bsgrub bya, khyim skyes, Pig, gin 1
+  1;50,1 23;7,2 25;45,4 21;52,6 11;11,2
+  Solar: Water-Horse. Xing 1
+29: Mon. khrums stod. Water-Fire; 8 Apr 1929
+  dge ba, vishti, Mouse, zin 2
+  2;50,5 24;5,22 25;49,28 22;54,50 11;12,0
+  Solar: Water-Sheep. Zhang 2
+30: Tue. khrums smad. Fire-Water; 9 Apr 1929
+  dkar po, rkang bzhi, Ox, zon 3
+  3;48,10 25;5,41 25;53,51 23;59,33 11;12,59
+  Solar: Wood-Monkey. Yi 3
+
+Tibetan Lunar Month: 3 - Wood-male-Horse
+
+1: Wed. nam gru. Water-Water; 10 Apr 1929
+  dbang po, mi sdug pa, Tiger, li 4
+  4;45,14 26;7,0 25;58,15 25;5,16 11;13,57
+  Solar: Wood-Bird. Zhen 4
+2: Thu. tha skar. Wind-Wind; 11 Apr 1929
+  'khon 'dzin, byis pa, Rabbit, khon 5
+  5;41,19 0;9,20 26;2,39 26;11,59 11;14,55
+  Solar: Fire-Dog. Jiao 5
+3: Fri. bra nye. Earth-Fire; 12 Apr 1929
+  rnam sel, til rdung, Dragon, dwa 6
+  6;36,23 1;12,39 26;7,3 0;19,43 11;15,53
+  Solar: Fire-Pig. Kang 6
+4: Sat. smin drug. Earth-Fire; 13 Apr 1929
+  mdza' bo, tshong ba, Snake, khen 7
+  0;30,29 2;16,57 26;11,27 1;28,25 11;16,51
+  Solar: Earth-Mouse. Di 7
+5: Sun. snar ma. Fire-Earth; 14 Apr 1929
+  tshe dang ldan pa, byis pa, Horse, kham 8
+  1;24,35 3;21,16 26;15,51 2;37,7 11;17,50
+  Solar: Earth-Ox. Fang 8
+6: Mon. mgo. Water-Wind; 15 Apr 1929
+  skal bzang, til rdung, Sheep, gin 9
+  2;18,40 4;25,34 26;20,15 3;45,49 11;18,48
+  Solar: Iron-Tiger. Xin 9
+7: Tue. lag. Fire-Water; 16 Apr 1929
+  dge byed, tshong ba, Monkey, zin 1
+  3;12,46 5;29,53 26;24,39 4;54,32 11;19,46
+  Solar: Iron-Rabbit. Wei 1
+8: Wed. nabs so. Water-Wind; 17 Apr 1929
+  las bzang, gdab pa, Bird, zon 2
+  4;6,51 6;34,11 26;29,2 6;3,14 11;20,44
+  Solar: Water-Dragon. Ji 2
+9: Thu. rgyal. Wind-Fire; 18 Apr 1929
+  'dzin byed, rigs can, Dog, li 3
+  5;0,58 7;38,28 26;33,26 7;11,55 11;21,42
+  Solar: Water-Snake. Dou 3
+10. Omitted: Pig khon 4
+11: Fri. skag. Earth-Water; 19 Apr 1929
+  zug rngu, tshong ba, Mouse, dwa 5
+  6;52,11 8;44,3 26;42,14 8;26,17 11;23,39
+  Solar: Wood-Horse. Niu 4
+12: Sat. mchu. Earth-Fire; 20 Apr 1929
+  'grams, gdab pa, Ox, khen 6
+  0;49,18 9;45,20 26;46,38 9;31,58 11;24,37
+  Solar: Wood-Sheep. Nu 5
+13: Sun. gre. Fire-Fire; 21 Apr 1929
+  'phel, rigs can, Tiger, kham 7
+  1;47,26 10;45,36 26;51,2 10;36,38 11;25,35
+  Solar: Fire-Monkey. Xu 6
+14: Mon. dbo. Water-Wind; 22 Apr 1929
+  brtan pa, khyim skyes, Rabbit, gin 8
+  2;47,33 11;43,53 26;55,26 11;39,19 11;26,34
+  Solar: Fire-Bird. Wei 7
+15: Tue. me bzhi. Fire-Wind; 23 Apr 1929
+  yongs bsnun, vishti, Dragon, zin 9
+  3;48,39 12;41,10 26;59,50 12;41,0 11;27,32
+  Solar: Earth-Dog. Shi 8
+  Revelation of the Kalacakra Tantra.
+16: Wed. nag pa. Water-Wind; 24 Apr 1929
+  dga' ba, byis pa, Snake, zon 1
+  4;50,46 13;37,27 0;4,14 13;41,41 11;28,30
+  Solar: Earth-Pig. Bi 9
+17: Thu. sa ri. Wind-Wind; 25 Apr 1929
+  rdo rje, til rdung, Horse, li 2
+  5;53,53 14;32,44 0;8,37 14;41,22 11;29,28
+  Solar: Iron-Mouse. Kui 1
+18: Fri. sa ga. Earth-Fire; 26 Apr 1929
+  dngos grub, khyim skyes, Sheep, khon 3
+  6;57,57 15;27,2 0;13,0 15;40,2 0;0,26
+  Solar: Iron-Ox. Lou 2
+19: Sat. lha mtshams. Earth-Earth; 27 Apr 1929
+  0;60,0 16;23,20 0;17,20 16;40,40 0;1,25
+  Solar: Water-Tiger. Wei 3
+19: Sun. snron. Fire-Earth; 28 Apr 1929
+  mchog can, byis pa, Monkey, dwa 4
+  1;1,59 17;21,20 0;17,20 17;38,40 0;1,25
+  Solar: Water-Rabbit. Mao 4
+20: Mon. snrubs. Water-Water; 29 Apr 1929
+  yongs 'joms, til rdung, Bird, khen 5
+  2;6,1 18;15,38 0;21,40 18;37,18 0;2,23
+  Solar: Wood-Dragon. Bi 5
+21: Tue. chu stod. Fire-Water; 30 Apr 1929
+  zhi ba, tshong ba, Dog, kham 6
+  3;10,2 19;9,57 0;26,0 19;35,57 0;3,21
+  Solar: Wood-Snake. Zui 6
+22: Wed. chu smad. Water-Earth; 1 May 1929
+  grub pa, gdab pa, Pig, gin 7
+  4;14,4 20;4,15 0;30,20 20;34,35 0;4,19
+  Solar: Fire-Horse. Can 7
+23: Thu. chu smad. Wind-Earth; 2 May 1929
+  bsgrub bya, rigs can, Mouse, zin 8
+  5;18,5 20;58,34 0;34,40 21;33,14 0;5,17
+  Solar: Fire-Sheep. Jing 8
+24: Fri. gro zhin. Earth-Earth; 3 May 1929
+  dge ba, khyim skyes, Ox, zon 9
+  6;21,5 21;53,54 0;39,0 22;32,54 0;6,16
+  Solar: Earth-Monkey. Gui 9
+25: Sat. mon gre. Earth-Water; 4 May 1929
+  dkar po, vishti, Tiger, li 1
+  0;23,6 22;50,13 0;43,20 23;33,33 0;7,14
+  Solar: Earth-Bird. Liu 1
+26: Sun. mon gru. Fire-Earth; 5 May 1929
+  tshangs pa, byis pa, Rabbit, khon 2
+  1;24,6 23;47,33 0;47,40 24;35,13 0;8,12
+  Solar: Iron-Dog. Xing 2
+27: Mon. khrums stod. Water-Fire; 6 May 1929
+  dbang po, til rdung, Dragon, dwa 3
+  2;24,5 24;45,54 0;52,0 25;37,54 0;9,10
+  Solar: Iron-Pig. Zhang 3
+28: Tue. khrums smad. Fire-Water; 7 May 1929
+  'khon 'dzin, tshong ba, Snake, khen 4
+  3;22,5 25;46,14 0;56,20 26;42,34 0;10,8
+  Solar: Water-Mouse. Yi 4
+29: Wed. nam gru. Water-Water; 8 May 1929
+  rnam sel, bkra shis, Horse, kham 5
+  4;19,6 26;47,33 1;0,40 0;48,13 0;11,7
+  Solar: Water-Ox. Zhen 5
+30: Thu. tha skar. Wind-Wind; 9 May 1929
+  mdza' bo, klu, Sheep, gin 6
+  5;15,6 0;49,53 1;5,0 1;54,53 0;12,5
+  Solar: Wood-Tiger. Jiao 6
+
+Tibetan Lunar Month: 4 - Wood-female-Sheep
+
+1: Fri. bra nye. Earth-Fire; 10 May 1929
+  skal bzang, gdab pa, Monkey, zin 7
+  6;10,6 1;53,13 1;9,20 3;2,33 0;13,3
+  Solar: Wood-Rabbit. Kang 7
+2: Sat. smin drug. Earth-Fire; 11 May 1929
+  dge byed, rigs can, Bird, zon 8
+  0;4,8 2;57,31 1;13,40 4;11,11 0;14,1
+  Solar: Fire-Dragon. Di 8
+3. Omitted: Dog li 9
+4: Sun. mgo. Fire-Wind; 12 May 1929
+  shin tu 'grams, tshong ba, Pig, khon 1
+  1;52,11 4;6,8 1;22,20 5;28,28 0;15,58
+  Solar: Fire-Snake. Fang 9
+5: Mon. lag. Water-Water; 13 May 1929
+  las bzang, gdab pa, Mouse, dwa 2
+  2;46,13 5;10,26 1;26,40 6;37,6 0;16,56
+  Solar: Earth-Horse. Xin 1
+6: Tue. nabs so. Fire-Wind; 14 May 1929
+  'dzin byed, rigs can, Ox, khen 3
+  3;40,14 6;14,45 1;31,0 7;45,45 0;17,54
+  Solar: Earth-Sheep. Wei 2
+7: Wed. rgyal. Water-Fire; 15 May 1929
+  zug rngu, khyim skyes, Tiger, kham 4
+  4;34,18 7;19,1 1;35,20 8;54,21 0;18,52
+  Solar: Iron-Monkey. Ji 3
+  Birth of the Buddha.
+8: Thu. skag. Wind-Water; 16 May 1929
+  'phel, vishti, Rabbit, gin 5
+  5;29,21 8;22,18 1;39,40 10;1,58 0;19,51
+  Solar: Iron-Bird. Dou 4
+9: Fri. mchu. Earth-Fire; 17 May 1929
+  brtan pa, rigs can, Dragon, zin 6
+  6;25,24 9;24,35 1;44,0 11;8,35 0;20,49
+  Solar: Water-Dog. Niu 5
+10: Sat. gre. Earth-Fire; 18 May 1929
+  yongs bsnun, khyim skyes, Snake, zon 7
+  0;22,27 10;25,52 1;48,20 12;14,12 0;21,47
+  Solar: Water-Pig. Nu 6
+11: Sun. dbo. Fire-Wind; 19 May 1929
+  dga' ba, vishti, Horse, li 8
+  1;20,32 11;26,7 1;52,40 13;18,47 0;22,45
+  Solar: Wood-Mouse. Xu 7
+12: Mon. me bzhi. Water-Wind; 20 May 1929
+  rdo rje, byis pa, Sheep, khon 9
+  2;20,36 12;24,23 1;57,0 14;21,23 0;23,43
+  Solar: Wood-Ox. Wei 8
+13: Tue. nag pa. Fire-Wind; 21 May 1929
+  dngos grub, til rdung, Monkey, dwa 1
+  3;21,39 13;21,40 2;1,20 15;23,0 0;24,42
+  Solar: Fire-Tiger. Shi 9
+14: Wed. sa ri. Water-Wind; 22 May 1929
+  phan tshun, tshong ba, Bird, khen 2
+  4;23,42 14;17,57 2;5,40 16;23,37 0;25,40
+  Solar: Fire-Rabbit. Bi 1
+15: Thu. sa ga. Wind-Fire; 23 May 1929
+  mchog can, gdab pa, Dog, kham 3
+  5;26,46 15;13,13 2;10,0 17;23,13 0;26,38
+  Solar: Earth-Dragon. Kui 2
+  Enlightenment and Parinirvana of the Buddha.
+16: Fri. lha mtshams. Earth-Earth; 24 May 1929
+  yongs 'joms, byis pa, Pig, gin 4
+  6;30,48 16;7,31 2;14,20 18;21,51 0;27,36
+  Solar: Earth-Snake. Lou 3
+17: Sat. snron. Earth-Earth; 25 May 1929
+  zhi ba, til rdung, Mouse, zin 5
+  0;34,50 17;1,49 2;18,40 19;20,29 0;28,34
+  Solar: Iron-Horse. Wei 4
+18: Sun. snron. Fire-Earth; 26 May 1929
+  grub pa, tshong ba, Ox, zon 6
+  1;38,51 17;56,8 2;23,0 20;19,8 0;29,33
+  Solar: Iron-Sheep. Mao 5
+19: Mon. snrubs. Water-Water; 27 May 1929
+  bsgrub bya, gdab pa, Tiger, li 7
+  2;42,50 18;50,26 2;27,16 21;17,43 1;0,31
+  Solar: Water-Monkey. Bi 6
+20: Tue. chu stod. Fire-Water; 28 May 1929
+  dge ba, rigs can, Rabbit, khon 8
+  3;46,46 19;44,44 2;31,31 22;16,15 1;1,29
+  Solar: Water-Bird. Zui 7
+21: Wed. chu smad. Water-Earth; 29 May 1929
+  dkar po, khyim skyes, Dragon, dwa 9
+  4;50,40 20;39,4 2;35,45 23;14,49 1;2,27
+  Solar: Wood-Dog. Can 8
+22: Thu. gro zhin. Wind-Earth; 30 May 1929
+  tshangs pa, vishti, Snake, khen 1
+  5;53,34 21;34,24 2;39,59 24;14,23 1;3,25
+  Solar: Wood-Pig. Jing 9
+23: Fri. mon gre. Earth-Water; 31 May 1929
+  dbang po, gdab pa, Horse, kham 2
+  6;55,29 22;30,44 2;44,13 25;14,58 1;4,24
+  Solar: Fire-Mouse. Gui 1
+24: Sat. mon gru. Earth-Earth; 1 Jun 1929
+  'khon 'dzin, rigs can, Sheep, gin 3
+  0;56,23 23;28,4 2;48,27 26;16,32 1;5,22
+  Solar: Fire-Ox. Liu 2
+25: Sun. khrums stod. Fire-Fire; 2 Jun 1929
+  rnam sel, khyim skyes, Monkey, zin 4
+  1;56,15 24;26,26 2;52,41 0;19,8 1;6,20
+  Solar: Earth-Tiger. Xing 3
+26: Mon. khrums smad. Water-Water; 3 Jun 1929
+  mdza' bo, vishti, Bird, zon 5
+  2;54,9 25;26,46 2;56,56 1;23,42 1;7,18
+  Solar: Earth-Rabbit. Zhang 4
+27: Tue. nam gru. Fire-Water; 4 Jun 1929
+  tshe dang ldan pa, rigs can, Dog, li 6
+  3;51,3 26;28,6 3;1,10 2;29,17 1;8,17
+  Solar: Iron-Dragon. Yi 5
+28: Wed. tha skar. Water-Wind; 5 Jun 1929
+  skal bzang, khyim skyes, Pig, khon 7
+  4;46,57 0;30,26 3;5,24 3;35,51 1;9,15
+  Solar: Iron-Snake. Zhen 6
+29: Thu. bra nye. Wind-Fire; 6 Jun 1929
+  dge byed, vishti, Mouse, dwa 8
+  5;41,51 1;33,47 3;9,38 4;43,25 1;10,13
+  Solar: Water-Horse. Jiao 7
+30: Fri. smin drug. Earth-Fire; 7 Jun 1929
+  shin tu 'grams, rkang bzhi, Ox, khen 9
+  6;35,47 2;38,5 3;13,52 5;51,58 1;11,11
+  Solar: Water-Sheep. Kang 8
+
+Tibetan Lunar Month: 5 - Fire-male-Monkey
+
+1: Sat. snar ma. Earth-Earth; 8 Jun 1929
+  'dzin byed, mi sdug pa, Tiger, kham 1
+  0;29,43 3;42,23 3;18,7 7;0,30 1;12,9
+  Solar: Wood-Monkey. Di 9
+2: Sun. mgo. Fire-Wind; 9 Jun 1929
+  zug rngu, rigs can, Rabbit, gin 2
+  1;23,38 4;46,42 3;22,21 8;9,3 1;13,8
+  Solar: Wood-Bird. Fang 1
+3: Mon. lag. Water-Water; 10 Jun 1929
+  'grams, khyim skyes, Dragon, zin 3
+  2;17,34 5;51,0 3;26,35 9;17,35 1;14,6
+  Solar: Fire-Dog. Xin 2
+4: Tue. nabs so. Fire-Wind; 11 Jun 1929
+  'phel, vishti, Snake, zon 4
+  3;11,30 6;55,18 3;30,49 10;26,8 1;15,4
+  Solar: Fire-Pig. Wei 3
+5: Wed. rgyal. Water-Fire; 12 Jun 1929
+  brtan pa, byis pa, Horse, li 5
+  4;5,28 7;59,35 3;35,3 11;34,39 1;16,2
+  Solar: Earth-Mouse. Ji 4
+6: Thu. mchu. Wind-Fire; 13 Jun 1929
+  yongs bsnun, til rdung, Sheep, khon 6
+  5;0,26 9;2,51 3;39,17 12;42,9 1;17,0
+  Solar: Earth-Ox. Dou 5
+7. Omitted: Monkey dwa 7
+8: Fri. gre. Earth-Fire; 14 Jun 1929
+  dga' ba, vishti, Bird, khen 8
+  6;53,22 10;6,24 3;47,46 13;54,10 1;18,57
+  Solar: Iron-Tiger. Niu 6
+9: Sat. dbo. Earth-Wind; 15 Jun 1929
+  rdo rje, byis pa, Dog, kham 9
+  0;51,22 11;6,38 3;52,0 14;58,38 1;19,55
+  Solar: Iron-Rabbit. Nu 7
+10: Sun. me bzhi. Fire-Wind; 16 Jun 1929
+  phan tshun, til rdung, Pig, gin 1
+  1;51,20 12;4,54 3;56,14 16;1,9 1;20,53
+  Solar: Water-Dragon. Xu 8
+11: Mon. nag pa. Water-Wind; 17 Jun 1929
+  mchog can, tshong ba, Mouse, zin 2
+  2;52,18 13;2,10 4;0,28 17;2,39 1;21,51
+  Solar: Water-Snake. Wei 9
+12: Tue. nag pa. Fire-Wind; 18 Jun 1929
+  yongs 'joms, vishti, Ox, zon 3
+  3;54,16 13;58,26 4;4,42 18;3,9 1;22,50
+  Solar: Wood-Horse. Shi 1
+13: Wed. sa ri. Water-Wind; 19 Jun 1929
+  zhi ba, byis pa, Tiger, li 4
+  4;57,14 14;53,42 4;8,57 19;2,40 1;23,48
+  Solar: Wood-Sheep. Bi 2
+14: Thu. sa ga. Wind-Fire; 20 Jun 1929
+  5;60,0 15;49,11 4;13,11 20;2,22 1;24,46
+  Solar: Fire-Monkey. Kui 3
+14: Fri. lha mtshams. Earth-Earth; 21 Jun 1929
+  bsgrub bya, tshong ba, Rabbit, khon 5
+  6;1,10 16;48,1 4;13,11 21;1,12 1;24,46
+  Solar: Fire-Bird. Lou 4
+15: Sat. snron. Earth-Earth; 22 Jun 1929
+  bsgrub bya, gdab pa, Dragon, dwa 6
+  0;5,6 17;42,19 4;17,25 21;59,44 1;25,44
+  Solar: Earth-Dog. Wei 5
+16: Sun. snrubs. Fire-Water; 23 Jun 1929
+  dge ba, rigs can, Snake, khen 7
+  1;9,2 18;36,37 4;21,39 22;58,17 1;26,42
+  Solar: Earth-Pig. Mao 6
+17: Mon. chu stod. Water-Water; 24 Jun 1929
+  dkar po, khyim skyes, Horse, kham 8
+  2;12,58 19;30,55 4;25,53 23;56,49 1;27,41
+  Solar: Iron-Mouse. Bi 7
+18: Tue. chu smad. Fire-Earth; 25 Jun 1929
+  tshangs pa, vishti, Sheep, gin 9
+  3;16,54 20;25,13 4;30,8 24;55,21 1;28,39
+  Solar: Iron-Ox. Zui 8
+19: Wed. gro zhin. Water-Earth; 26 Jun 1929
+  dbang po, byis pa, Monkey, zin 1
+  4;20,47 21;19,34 4;34,22 25;53,56 1;29,37
+  Solar: Water-Tiger. Can 9
+20: Thu. mon gre. Wind-Water; 27 Jun 1929
+  'khon 'dzin, til rdung, Bird, zon 2
+  5;23,39 22;14,54 4;38,34 26;53,28 2;0,35
+  Solar: Water-Rabbit. Jing 1
+21: Fri. mon gru. Earth-Earth; 28 Jun 1929
+  rnam sel, tshong ba, Dog, li 3
+  6;25,29 23;11,15 4;42,44 0;53,59 2;1,34
+  Solar: Wood-Dragon. Gui 2
+22: Sat. khrums stod. Earth-Fire; 29 Jun 1929
+  mdza' bo, gdab pa, Pig, khon 4
+  0;26,18 24;8,35 4;46,54 1;55,30 2;2,32
+  Solar: Wood-Snake. Liu 3
+23: Sun. khrums smad. Fire-Water; 30 Jun 1929
+  tshe dang ldan pa, rigs can, Mouse, dwa 5
+  1;26,6 25;6,58 4;51,4 2;58,3 2;3,30
+  Solar: Fire-Horse. Xing 4
+24: Mon. nam gru. Water-Water; 1 Jul 1929
+  dge byed, khyim skyes, Ox, khen 6
+  2;23,56 26;7,19 4;55,15 4;2,34 2;4,28
+  Solar: Fire-Sheep. Zhang 5
+25: Tue. tha skar. Fire-Wind; 2 Jul 1929
+  shin tu 'grams, vishti, Tiger, kham 7
+  3;20,45 0;8,39 4;59,25 5;8,5 2;5,26
+  Solar: Earth-Monkey. Yi 6
+26: Wed. bra nye. Water-Fire; 3 Jul 1929
+  las bzang, byis pa, Rabbit, gin 8
+  4;16,35 1;11,0 5;3,35 6;14,36 2;6,25
+  Solar: Earth-Bird. Zhen 7
+27: Thu. smin drug. Wind-Fire; 4 Jul 1929
+  'dzin byed, til rdung, Dragon, zin 9
+  5;11,25 2;14,20 5;7,46 7;22,7 2;7,23
+  Solar: Iron-Dog. Jiao 8
+28: Fri. snar ma. Earth-Earth; 5 Jul 1929
+  zug rngu, tshong ba, Snake, zon 1
+  6;5,17 3;18,39 5;11,56 8;30,35 2;8,21
+  Solar: Iron-Pig. Kang 9
+29. Omitted: Horse li 2
+30: Sat. mgo. Earth-Wind; 6 Jul 1929
+  'grams, rkang bzhi, Sheep, khon 3
+  0;53,1 4;27,16 5;20,17 9;47,33 2;10,17
+  Solar: Water-Mouse. Di 1
+
+Tibetan Lunar Month: 6 - Fire-female-Bird
+
+1: Sun. lag. Fire-Water; 7 Jul 1929
+  'phel, mi sdug pa, Monkey, dwa 4
+  1;46,52 5;31,34 5;24,27 10;56,1 2;11,16
+  Solar: Water-Ox. Fang 2
+2: Mon. nabs so. Water-Wind; 8 Jul 1929
+  yongs bsnun, byis pa, Bird, khen 5
+  2;40,44 6;35,52 5;28,37 12;4,30 2;12,14
+  Solar: Wood-Tiger. Xin 3
+3: Tue. rgyal. Fire-Fire; 9 Jul 1929
+  dga' ba, til rdung, Dog, kham 6
+  3;34,39 7;40,8 5;32,47 13;12,56 2;13,12
+  Solar: Wood-Rabbit. Wei 4
+4: Wed. skag. Water-Water; 10 Jul 1929
+  rdo rje, tshong ba, Pig, gin 7
+  4;29,33 8;43,24 5;36,58 14;20,22 2;14,10
+  Solar: Fire-Dragon. Ji 5
+  Turning of the Wheel of the Dharma.
+5: Thu. mchu. Wind-Fire; 11 Jul 1929
+  dngos grub, byis pa, Mouse, zin 8
+  5;25,28 9;45,40 5;41,8 15;26,48 2;15,8
+  Solar: Fire-Snake. Dou 6
+6: Fri. gre. Earth-Fire; 12 Jul 1929
+  phan tshun, til rdung, Ox, zon 9
+  6;22,22 10;46,56 5;45,18 16;32,14 2;16,7
+  Solar: Earth-Horse. Niu 7
+7: Sat. dbo. Earth-Wind; 13 Jul 1929
+  mchog can, tshong ba, Tiger, li 1
+  0;20,19 11;47,9 5;49,29 17;36,38 2;17,5
+  Solar: Earth-Sheep. Nu 8
+8: Sun. me bzhi. Fire-Wind; 14 Jul 1929
+  yongs 'joms, gdab pa, Rabbit, khon 2
+  1;20,14 12;45,25 5;53,39 18;39,4 2;18,3
+  Solar: Iron-Monkey. Xu 9
+9: Mon. nag pa. Water-Wind; 15 Jul 1929
+  zhi ba, rigs can, Dragon, dwa 3
+  2;21,8 13;42,40 5;57,49 19;40,30 2;19,1
+  Solar: Iron-Bird. Wei 1
+10: Tue. sa ri. Fire-Wind; 16 Jul 1929
+  grub pa, khyim skyes, Snake, khen 4
+  3;23,3 14;38,56 6;2,0 20;40,56 2;20,0
+  Solar: Water-Dog. Shi 2
+11: Wed. sa ga. Water-Fire; 17 Jul 1929
+  bsgrub bya, vishti, Horse, kham 5
+  4;25,58 15;34,12 6;6,10 21;40,22 2;20,58
+  Solar: Water-Pig. Bi 3
+12: Thu. lha mtshams. Wind-Earth; 18 Jul 1929
+  dge ba, gdab pa, Sheep, gin 6
+  5;29,50 16;28,30 6;10,20 22;38,51 2;21,56
+  Solar: Wood-Mouse. Kui 4
+13: Fri. snron. Earth-Earth; 19 Jul 1929
+  dkar po, rigs can, Monkey, zin 7
+  6;33,42 17;22,48 6;14,30 23;37,19 2;22,54
+  Solar: Wood-Ox. Lou 5
+14: Sat. snrubs. Earth-Water; 20 Jul 1929
+  tshangs pa, khyim skyes, Bird, zon 8
+  0;37,34 18;17,6 6;18,41 24;35,48 2;23,52
+  Solar: Fire-Tiger. Wei 6
+15: Sun. chu stod. Fire-Water; 21 Jul 1929
+  dbang po, vishti, Dog, li 9
+  1;41,26 19;11,25 6;22,51 25;34,16 2;24,51
+  Solar: Fire-Rabbit. Mao 7
+  The Buddha's entry into the womb of his mother.
+16: Mon. chu smad. Water-Earth; 22 Jul 1929
+  'khon 'dzin, byis pa, Pig, khon 1
+  2;45,18 20;5,43 6;27,1 26;32,45 2;25,49
+  Solar: Earth-Dragon. Bi 8
+17: Tue. gro zhin. Fire-Earth; 23 Jul 1929
+  rnam sel, til rdung, Mouse, dwa 2
+  3;49,8 21;0,4 6;31,12 0;31,16 2;26,47
+  Solar: Earth-Snake. Zui 9
+18: Wed. gro zhin. Water-Earth; 24 Jul 1929
+  mdza' bo, tshong ba, Ox, khen 3
+  4;51,57 21;55,24 6;35,22 1;30,47 2;27,45
+  Solar: Iron-Horse. Can 1
+19: Thu. mon gre. Wind-Water; 25 Jul 1929
+  tshe dang ldan pa, gdab pa, Tiger, kham 4
+  5;53,46 22;51,45 6;39,32 2;31,18 2;28,43
+  Solar: Iron-Sheep. Jing 2
+20: Fri. mon gru. Earth-Earth; 26 Jul 1929
+  skal bzang, byis pa, Rabbit, gin 5
+  6;54,36 23;49,6 6;43,42 3;32,49 2;29,42
+  Solar: Water-Monkey. Gui 3
+21: Sat. khrums stod. Earth-Fire; 27 Jul 1929
+  dge byed, til rdung, Dragon, zin 6
+  0;54,22 24;47,30 6;47,53 4;35,23 3;0,40
+  Solar: Water-Bird. Liu 4
+22: Sun. khrums smad. Fire-Water; 28 Jul 1929
+  shin tu 'grams, vishti, Snake, zon 7
+  1;52,12 25;47,51 6;52,3 5;39,55 3;1,38
+  Solar: Wood-Dog. Xing 5
+23: Mon. nam gru. Water-Water; 29 Jul 1929
+  las bzang, byis pa, Horse, li 8
+  2;49,1 26;49,12 6;56,13 6;45,26 3;2,36
+  Solar: Wood-Pig. Zhang 6
+24: Tue. tha skar. Fire-Wind; 30 Jul 1929
+  'dzin byed, til rdung, Sheep, khon 9
+  3;44,50 0;51,33 7;0,24 7;51,57 3;3,34
+  Solar: Fire-Mouse. Yi 7
+25: Wed. bra nye. Water-Fire; 31 Jul 1929
+  zug rngu, tshong ba, Monkey, dwa 1
+  4;39,39 1;54,54 7;4,34 8;59,29 3;4,33
+  Solar: Fire-Ox. Zhen 8
+26: Thu. smin drug. Wind-Fire; 1 Aug 1929
+  'phel, gdab pa, Bird, khen 2
+  5;33,31 2;59,13 7;8,44 10;7,57 3;5,31
+  Solar: Earth-Tiger. Jiao 9
+27: Fri. mgo. Earth-Wind; 2 Aug 1929
+  brtan pa, rigs can, Dog, kham 3
+  6;27,23 4;3,31 7;12,55 11;16,26 3;6,29
+  Solar: Earth-Rabbit. Kang 1
+28: Sat. lag. Earth-Water; 3 Aug 1929
+  yongs bsnun, tshong ba, Pig, gin 4
+  0;21,15 5;7,49 7;17,5 12;24,55 3;7,27
+  Solar: Iron-Dragon. Di 2
+29: Sun. nabs so. Fire-Wind; 4 Aug 1929
+  dga' ba, bkra shis, Mouse, zin 5
+  1;15,7 6;12,8 7;21,15 13;33,23 3;8,25
+  Solar: Iron-Snake. Fang 3
+30: Mon. rgyal. Water-Fire; 5 Aug 1929
+  rdo rje, klu, Ox, zon 6
+  2;8,59 7;16,26 7;25,25 14;41,52 3;9,24
+  Solar: Water-Horse. Xin 4
+
+Tibetan Lunar Month: 7 - Earth-male-Dog
+
+1: Tue. skag. Fire-Water; 6 Aug 1929
+  dngos grub, gdab pa, Tiger, li 7
+  3;2,54 8;20,41 7;29,36 15;50,18 3;10,22
+  Solar: Water-Sheep. Wei 5
+2. Omitted: Rabbit khon 8
+3: Wed. mchu. Water-Fire; 7 Aug 1929
+  mchog can, til rdung, Dragon, dwa 9
+  4;53,44 9;26,12 7;37,56 17;4,9 3;12,18
+  Solar: Wood-Monkey. Ji 6
+4: Thu. gre. Wind-Fire; 8 Aug 1929
+  yongs 'joms, tshong ba, Snake, khen 1
+  5;50,38 10;27,28 7;42,7 18;9,35 3;13,17
+  Solar: Wood-Bird. Dou 7
+5: Fri. dbo. Earth-Wind; 9 Aug 1929
+  zhi ba, gdab pa, Horse, kham 2
+  6;48,36 11;27,40 7;46,17 19;13,58 3;14,15
+  Solar: Fire-Dog. Niu 8
+6: Sat. me bzhi. Earth-Wind; 10 Aug 1929
+  grub pa, rigs can, Sheep, gin 3
+  0;48,31 12;25,55 7;50,27 20;16,23 3;15,13
+  Solar: Fire-Pig. Nu 9
+7: Sun. nag pa. Fire-Wind; 11 Aug 1929
+  bsgrub bya, khyim skyes, Monkey, zin 4
+  1;49,26 13;23,11 7;54,38 21;17,49 3;16,11
+  Solar: Earth-Mouse. Xu 1
+8: Mon. sa ri. Water-Wind; 12 Aug 1929
+  dge ba, vishti, Bird, zon 5
+  2;51,21 14;19,26 7;58,48 22;18,14 3;17,9
+  Solar: Earth-Ox. Wei 2
+9: Tue. sa ga. Fire-Fire; 13 Aug 1929
+  dkar po, gdab pa, Dog, li 6
+  3;54,17 15;14,41 8;2,58 23;17,40 3;18,8
+  Solar: Iron-Tiger. Shi 3
+10: Wed. lha mtshams. Water-Earth; 14 Aug 1929
+  tshangs pa, rigs can, Pig, khon 7
+  4;58,9 16;8,59 8;7,8 24;16,8 3;19,6
+  Solar: Iron-Rabbit. Bi 4
+11: Thu. snron. Wind-Earth; 15 Aug 1929
+  5;60,0 17;5,19 8;11,19 25;16,38 3;20,4
+  Solar: Water-Dragon. Kui 5
+11: Fri. snrubs. Earth-Water; 16 Aug 1929
+  'khon 'dzin, vishti, Mouse, dwa 8
+  6;2,1 18;3,18 8;11,19 26;14,37 3;20,4
+  Solar: Water-Snake. Lou 6
+12: Sat. snrubs. Earth-Water; 17 Aug 1929
+  rnam sel, byis pa, Ox, khen 9
+  0;5,53 18;57,36 8;15,29 0;13,5 3;21,2
+  Solar: Wood-Horse. Wei 7
+13: Sun. chu stod. Fire-Water; 18 Aug 1929
+  mdza' bo, til rdung, Tiger, kham 1
+  1;9,45 19;51,54 8;19,39 1;11,34 3;22,0
+  Solar: Wood-Sheep. Mao 8
+14: Mon. chu smad. Water-Earth; 19 Aug 1929
+  tshe dang ldan pa, tshong ba, Rabbit, gin 2
+  2;13,37 20;46,12 8;23,50 2;10,2 3;22,59
+  Solar: Fire-Monkey. Bi 9
+15: Tue. gro zhin. Fire-Earth; 20 Aug 1929
+  skal bzang, gdab pa, Dragon, zin 3
+  3;17,26 21;40,33 8;28,0 3;8,34 3;23,57
+  Solar: Fire-Bird. Zui 1
+16: Wed. mon gre. Water-Water; 21 Aug 1929
+  dge byed, rigs can, Snake, zon 4
+  4;20,15 22;35,55 8;32,10 4;8,5 3;24,55
+  Solar: Earth-Dog. Can 2
+17: Thu. mon gru. Wind-Earth; 22 Aug 1929
+  shin tu 'grams, khyim skyes, Horse, li 5
+  5;22,4 23;32,16 8;36,21 5;8,37 3;25,53
+  Solar: Earth-Pig. Jing 3
+18: Fri. khrums stod. Earth-Fire; 23 Aug 1929
+  las bzang, vishti, Sheep, khon 6
+  6;22,53 24;29,37 8;40,31 6;10,9 3;26,51
+  Solar: Iron-Mouse. Gui 4
+19: Sat. khrums smad. Earth-Water; 24 Aug 1929
+  'dzin byed, byis pa, Monkey, dwa 7
+  0;22,39 25;28,2 8;44,41 7;12,44 3;27,50
+  Solar: Iron-Ox. Liu 5
+20: Sun. nam gru. Fire-Water; 25 Aug 1929
+  zug rngu, til rdung, Bird, khen 8
+  1;20,28 26;28,23 8;48,51 8;17,15 3;28,48
+  Solar: Water-Tiger. Xing 6
+21: Mon. tha skar. Water-Wind; 26 Aug 1929
+  'grams, tshong ba, Dog, kham 9
+  2;17,16 0;29,45 8;53,2 9;22,47 3;29,46
+  Solar: Water-Rabbit. Zhang 7
+22: Tue. bra nye. Fire-Fire; 27 Aug 1929
+  'phel, gdab pa, Pig, gin 1
+  3;13,8 1;32,6 8;57,15 10;29,22 4;0,44
+  Solar: Wood-Dragon. Yi 8
+23: Wed. smin drug. Water-Fire; 28 Aug 1929
+  brtan pa, rigs can, Mouse, zin 2
+  4;8,1 2;35,28 9;1,29 11;36,58 4;1,42
+  Solar: Wood-Snake. Zhen 9
+24: Thu. snar ma. Wind-Earth; 29 Aug 1929
+  yongs bsnun, khyim skyes, Ox, zon 3
+  5;1,57 3;39,46 9;5,43 12;45,30 4;2,41
+  Solar: Fire-Horse. Jiao 1
+25. Omitted: Tiger li 4
+26: Fri. mgo. Earth-Wind; 30 Aug 1929
+  rdo rje, gdab pa, Rabbit, khon 5
+  6;49,48 4;48,23 9;14,12 14;2,35 4;4,37
+  Solar: Fire-Sheep. Kang 2
+27: Sat. lag. Earth-Water; 31 Aug 1929
+  dngos grub, rigs can, Dragon, dwa 6
+  0;43,44 5;52,41 9;18,26 15;11,8 4;5,35
+  Solar: Earth-Monkey. Di 3
+28: Sun. nabs so. Fire-Wind; 1 Sep 1929
+  phan tshun, khyim skyes, Snake, khen 7
+  1;37,40 6;57,0 9;22,40 16;19,40 4;6,34
+  Solar: Earth-Bird. Fang 4
+29: Mon. skag. Water-Water; 2 Sep 1929
+  mchog can, vishti, Horse, kham 8
+  2;31,39 8;1,15 9;26,54 17;28,10 4;7,32
+  Solar: Iron-Dog. Xin 5
+30: Tue. mchu. Fire-Fire; 3 Sep 1929
+  yongs 'joms, klu, Sheep, gin 9
+  3;26,38 9;4,30 9;31,8 18;35,39 4;8,30
+  Solar: Iron-Pig. Wei 6
+
+Tibetan Lunar Month: 8 (Intercalary) - Earth-female-Pig
+
+1: Wed. gre. Water-Fire; 4 Sep 1929
+  zhi ba, gdab pa, Monkey, zin 1
+  4;22,37 10;6,45 9;35,23 19;42,8 4;9,28
+  Solar: Water-Mouse. Ji 7
+2: Thu. dbo. Wind-Wind; 5 Sep 1929
+  grub pa, rigs can, Bird, zon 2
+  5;19,37 11;8,0 9;39,37 20;47,37 4;10,26
+  Solar: Water-Ox. Dou 8
+3: Fri. me bzhi. Earth-Wind; 6 Sep 1929
+  bsgrub bya, khyim skyes, Dog, li 3
+  6;17,39 12;8,11 9;43,51 21;52,3 4;11,25
+  Solar: Wood-Tiger. Niu 9
+4: Sat. nag pa. Earth-Wind; 7 Sep 1929
+  dge ba, vishti, Pig, khon 4
+  0;17,39 13;6,26 9;48,5 22;54,32 4;12,23
+  Solar: Wood-Rabbit. Nu 1
+5: Sun. sa ri. Fire-Wind; 8 Sep 1929
+  dkar po, byis pa, Mouse, dwa 5
+  1;18,38 14;3,41 9;52,19 23;56,1 4;13,21
+  Solar: Fire-Dragon. Xu 2
+6: Mon. sa ri. Water-Wind; 9 Sep 1929
+  tshangs pa, til rdung, Ox, khen 6
+  2;20,37 14;59,56 9;56,34 24;56,30 4;14,19
+  Solar: Fire-Snake. Wei 3
+7: Tue. sa ga. Fire-Fire; 10 Sep 1929
+  dbang po, tshong ba, Tiger, kham 7
+  3;23,37 15;55,10 10;0,48 25;55,59 4;15,17
+  Solar: Earth-Horse. Shi 4
+8: Wed. lha mtshams. Water-Earth; 11 Sep 1929
+  'khon 'dzin, vishti, Rabbit, gin 8
+  4;27,33 16;49,29 10;5,2 26;54,31 4;16,16
+  Solar: Earth-Sheep. Bi 5
+9: Thu. snron. Wind-Earth; 12 Sep 1929
+  rnam sel, byis pa, Dragon, zin 9
+  5;31,29 17;43,47 10;9,16 0;53,3 4;17,14
+  Solar: Iron-Monkey. Kui 6
+10: Fri. snrubs. Earth-Water; 13 Sep 1929
+  mdza' bo, til rdung, Snake, zon 1
+  6;35,25 18;38,5 10;13,30 1;51,36 4;18,12
+  Solar: Iron-Bird. Lou 7
+11: Sat. chu stod. Earth-Water; 14 Sep 1929
+  tshe dang ldan pa, tshong ba, Horse, li 2
+  0;39,21 19;32,23 10;17,44 2;50,8 4;19,10
+  Solar: Water-Dog. Wei 8
+12: Sun. chu smad. Fire-Earth; 15 Sep 1929
+  skal bzang, gdab pa, Sheep, khon 3
+  1;43,17 20;26,41 10;21,59 3;48,41 4;20,8
+  Solar: Water-Pig. Mao 9
+13: Mon. gro zhin. Water-Earth; 16 Sep 1929
+  dge byed, rigs can, Monkey, dwa 4
+  2;47,9 21;21,3 10;26,13 4;47,16 4;21,7
+  Solar: Wood-Mouse. Bi 1
+14: Tue. mon gre. Fire-Water; 17 Sep 1929
+  shin tu 'grams, khyim skyes, Bird, khen 5
+  3;50,2 22;16,25 10;30,27 5;46,52 4;22,5
+  Solar: Wood-Ox. Zui 2
+15: Wed. mon gru. Water-Earth; 18 Sep 1929
+  las bzang, vishti, Dog, kham 6
+  4;51,54 23;12,47 10;34,41 6;47,28 4;23,3
+  Solar: Fire-Tiger. Can 3
+16: Thu. khrums stod. Wind-Fire; 19 Sep 1929
+  'dzin byed, byis pa, Pig, gin 7
+  5;52,46 24;10,9 10;38,55 7;49,4 4;24,1
+  Solar: Fire-Rabbit. Jing 4
+17: Fri. khrums smad. Earth-Water; 20 Sep 1929
+  zug rngu, til rdung, Mouse, zin 8
+  6;52,35 25;8,34 10;43,10 8;51,44 4;25,0
+  Solar: Earth-Dragon. Gui 5
+18: Sat. nam gru. Earth-Water; 21 Sep 1929
+  'grams, tshong ba, Ox, zon 9
+  0;50,27 26;8,56 10;47,24 9;56,20 4;25,58
+  Solar: Earth-Snake. Liu 6
+19: Sun. tha skar. Fire-Wind; 22 Sep 1929
+  brtan pa, gdab pa, Tiger, li 1
+  1;47,20 0;10,18 10;51,38 11;1,56 4;26,56
+  Solar: Iron-Horse. Xing 7
+20: Mon. bra nye. Water-Fire; 23 Sep 1929
+  yongs bsnun, rigs can, Rabbit, khon 2
+  2;43,12 1;12,40 10;55,52 12;8,32 4;27,54
+  Solar: Iron-Sheep. Zhang 8
+21: Tue. smin drug. Fire-Fire; 24 Sep 1929
+  dga' ba, khyim skyes, Dragon, dwa 3
+  3;38,4 2;16,2 11;0,6 13;16,9 4;28,52
+  Solar: Water-Monkey. Yi 9
+22: Wed. snar ma. Water-Earth; 25 Sep 1929
+  rdo rje, vishti, Snake, khen 4
+  4;32,0 3;20,20 11;4,20 14;24,41 4;29,51
+  Solar: Water-Bird. Zhen 1
+23: Thu. mgo. Wind-Wind; 26 Sep 1929
+  dngos grub, rigs can, Horse, kham 5
+  5;26,1 4;24,38 11;8,40 15;33,18 5;0,49
+  Solar: Wood-Dog. Jiao 2
+24: Fri. lag. Earth-Water; 27 Sep 1929
+  phan tshun, khyim skyes, Sheep, gin 6
+  6;20,2 5;28,57 11;13,0 16;41,57 5;1,47
+  Solar: Wood-Pig. Kang 3
+25: Sat. nabs so. Earth-Wind; 28 Sep 1929
+  mchog can, vishti, Monkey, zin 7
+  0;14,4 6;33,15 11;17,20 17;50,35 5;2,45
+  Solar: Fire-Mouse. Di 4
+26: Sun. rgyal. Fire-Fire; 29 Sep 1929
+  yongs 'joms, byis pa, Bird, zon 8
+  1;8,5 7;37,34 11;21,40 18;59,14 5;3,43
+  Solar: Fire-Ox. Fang 5
+27: Mon. skag. Water-Water; 30 Sep 1929
+  grub pa, til rdung, Dog, li 9
+  2;2,11 8;41,48 11;26,0 20;7,48 5;4,42
+  Solar: Earth-Tiger. Xin 6
+28. Omitted: Pig khon 1
+29: Tue. mchu. Fire-Fire; 1 Oct 1929
+  bsgrub bya, vishti, Mouse, dwa 2
+  3;53,22 9;47,17 11;34,40 21;21,57 5;6,38
+  Solar: Earth-Rabbit. Wei 7
+30: Wed. gre. Water-Fire; 2 Oct 1929
+  dge ba, rkang bzhi, Ox, khen 3
+  4;50,27 10;48,32 11;39,0 22;27,32 5;7,36
+  Solar: Iron-Dragon. Ji 8
+
+Tibetan Lunar Month: 8 (Delayed) - Earth-female-Pig
+
+1: Thu. dbo. Wind-Wind; 3 Oct 1929
+  dkar po, mi sdug pa, Monkey, zin 1
+  5;48,37 11;48,42 11;43,20 23;32,2 5;8,34
+  Solar: Iron-Snake. Dou 9
+2: Fri. me bzhi. Earth-Wind; 4 Oct 1929
+  tshangs pa, byis pa, Bird, zon 2
+  6;48,42 12;46,57 11;47,40 24;34,37 5;9,33
+  Solar: Water-Horse. Niu 1
+3: Sat. nag pa. Earth-Wind; 5 Oct 1929
+  dbang po, til rdung, Dog, li 3
+  0;49,48 13;44,11 11;52,0 25;36,11 5;10,31
+  Solar: Water-Sheep. Nu 2
+4: Sun. sa ri. Fire-Wind; 6 Oct 1929
+  'khon 'dzin, tshong ba, Pig, khon 4
+  1;51,54 14;40,25 11;56,20 26;36,45 5;11,29
+  Solar: Wood-Monkey. Xu 3
+5: Mon. sa ga. Water-Fire; 7 Oct 1929
+  rnam sel, vishti, Mouse, dwa 5
+  2;54,59 15;35,40 12;0,40 0;36,20 5;12,27
+  Solar: Wood-Bird. Wei 4
+6: Tue. lha mtshams. Fire-Earth; 8 Oct 1929
+  mdza' bo, byis pa, Ox, khen 6
+  3;59,1 16;29,58 12;5,0 1;34,58 5;13,25
+  Solar: Fire-Dog. Shi 5
+7: Wed. snron. Water-Earth; 9 Oct 1929
+  4;60,0 17;27,20 12;9,20 2;36,40 5;14,24
+  Solar: Fire-Pig. Bi 6
+7: Thu. snrubs. Wind-Water; 10 Oct 1929
+  skal bzang, tshong ba, Tiger, kham 7
+  5;3,3 18;24,16 12;9,20 3;33,36 5;14,24
+  Solar: Earth-Mouse. Kui 7
+8: Fri. chu stod. Earth-Water; 11 Oct 1929
+  dge byed, gdab pa, Rabbit, gin 8
+  6;7,5 19;18,34 12;13,40 4;32,14 5;15,22
+  Solar: Earth-Ox. Lou 8
+9: Sat. chu smad. Earth-Earth; 12 Oct 1929
+  shin tu 'grams, rigs can, Dragon, zin 9
+  0;11,6 20;12,53 12;18,0 5;30,53 5;16,20
+  Solar: Iron-Tiger. Wei 9
+10: Sun. gro zhin. Fire-Earth; 13 Oct 1929
+  las bzang, khyim skyes, Snake, zon 1
+  1;15,8 21;7,11 12;22,20 6;29,31 5;17,18
+  Solar: Iron-Rabbit. Mao 1
+11: Mon. mon gre. Water-Water; 14 Oct 1929
+  'dzin byed, vishti, Horse, li 2
+  2;19,6 22;1,33 12;26,40 7;28,13 5;18,17
+  Solar: Water-Dragon. Bi 2
+12: Tue. mon gre. Fire-Water; 15 Oct 1929
+  zug rngu, byis pa, Sheep, khon 3
+  3;22,4 22;56,55 12;31,0 8;27,55 5;19,15
+  Solar: Water-Snake. Zui 3
+13: Wed. mon gru. Water-Earth; 16 Oct 1929
+  'grams, til rdung, Monkey, dwa 4
+  4;24,2 23;53,17 12;35,20 9;28,37 5;20,13
+  Solar: Wood-Horse. Can 4
+14: Thu. khrums stod. Wind-Fire; 17 Oct 1929
+  'phel, tshong ba, Bird, khen 5
+  5;24,59 24;50,40 12;39,40 10;30,20 5;21,11
+  Solar: Wood-Sheep. Jing 5
+15: Fri. khrums smad. Earth-Water; 18 Oct 1929
+  brtan pa, gdab pa, Dog, kham 6
+  6;24,53 25;49,6 12;44,0 11;33,6 5;22,9
+  Solar: Fire-Monkey. Gui 6
+16: Sat. nam gru. Earth-Water; 19 Oct 1929
+  yongs bsnun, rigs can, Pig, gin 7
+  0;22,51 26;49,28 12;48,20 12;37,48 5;23,8
+  Solar: Fire-Bird. Liu 7
+17: Sun. tha skar. Fire-Wind; 20 Oct 1929
+  dga' ba, khyim skyes, Mouse, zin 8
+  1;19,48 0;50,51 12;52,40 13;43,31 5;24,6
+  Solar: Earth-Dog. Xing 8
+18: Mon. bra nye. Water-Fire; 21 Oct 1929
+  rdo rje, vishti, Ox, zon 9
+  2;15,46 1;53,13 12;57,0 14;50,13 5;25,4
+  Solar: Earth-Pig. Zhang 9
+19: Tue. smin drug. Fire-Fire; 22 Oct 1929
+  dngos grub, byis pa, Tiger, li 1
+  3;10,43 2;56,36 13;1,20 15;57,56 5;26,2
+  Solar: Iron-Mouse. Yi 1
+20: Wed. mgo. Water-Wind; 23 Oct 1929
+  mchog can, til rdung, Rabbit, khon 2
+  4;4,45 4;0,54 13;5,40 17;6,34 5;27,0
+  Solar: Iron-Ox. Zhen 2
+21. Omitted: Dragon dwa 3
+22: Thu. lag. Wind-Water; 24 Oct 1929
+  yongs 'joms, vishti, Snake, khen 4
+  5;52,48 5;9,31 13;14,20 18;23,51 5;28,57
+  Solar: Water-Tiger. Jiao 3
+23: Fri. nabs so. Earth-Wind; 25 Oct 1929
+  zhi ba, byis pa, Horse, kham 5
+  6;46,50 6;13,49 13;18,40 19;32,29 5;29,55
+  Solar: Water-Rabbit. Kang 4
+24: Sat. rgyal. Earth-Fire; 26 Oct 1929
+  grub pa, til rdung, Sheep, gin 6
+  0;40,55 7;18,7 13;23,3 20;41,11 6;0,53
+  Solar: Wood-Dragon. Di 5
+25: Sun. skag. Fire-Water; 27 Oct 1929
+  bsgrub bya, tshong ba, Monkey, zin 7
+  1;35,5 8;22,21 13;27,27 21;49,49 6;1,51
+  Solar: Wood-Snake. Fang 6
+26: Mon. mchu. Water-Fire; 28 Oct 1929
+  dge ba, gdab pa, Bird, zon 8
+  2;30,15 9;25,36 13;31,51 22;57,27 6;2,50
+  Solar: Fire-Horse. Xin 7
+27: Tue. gre. Fire-Fire; 29 Oct 1929
+  tshangs pa, til rdung, Dog, li 9
+  3;26,25 10;27,50 13;36,15 24;4,5 6;3,48
+  Solar: Fire-Sheep. Wei 8
+28: Wed. dbo. Water-Wind; 30 Oct 1929
+  dbang po, tshong ba, Pig, khon 1
+  4;23,34 11;29,4 13;40,39 25;9,43 6;4,46
+  Solar: Earth-Monkey. Ji 9
+29: Thu. me bzhi. Wind-Wind; 31 Oct 1929
+  'khon 'dzin, bkra shis, Mouse, dwa 2
+  5;21,49 12;29,13 13;45,2 26;14,16 6;5,44
+  Solar: Earth-Bird. Dou 1
+30: Fri. nag pa. Earth-Wind; 1 Nov 1929
+  rnam sel, klu, Ox, khen 3
+  6;21,58 13;27,27 13;49,26 0;16,54 6;6,42
+  Solar: Iron-Dog. Niu 2
+
+Tibetan Lunar Month: 9 - Iron-male-Mouse
+
+1: Sat. sa ri. Earth-Wind; 2 Nov 1929
+  mdza' bo, gdab pa, Tiger, kham 4
+  0;23,8 14;24,41 13;53,50 1;18,32 6;7,41
+  Solar: Iron-Pig. Nu 3
+2: Sun. sa ga. Fire-Fire; 3 Nov 1929
+  tshe dang ldan pa, rigs can, Rabbit, gin 5
+  1;25,18 15;20,55 13;58,14 2;19,10 6;8,39
+  Solar: Water-Mouse. Xu 4
+3: Mon. lha mtshams. Water-Earth; 4 Nov 1929
+  skal bzang, til rdung, Dragon, zin 6
+  2;28,28 16;16,9 14;2,38 3;18,48 6;9,37
+  Solar: Water-Ox. Wei 5
+4: Tue. snron. Fire-Earth; 5 Nov 1929
+  dge byed, tshong ba, Snake, zon 7
+  3;32,34 17;10,27 14;7,2 4;17,30 6;10,35
+  Solar: Wood-Tiger. Shi 6
+5: Wed. snrubs. Water-Water; 6 Nov 1929
+  shin tu 'grams, gdab pa, Horse, li 8
+  4;36,40 18;4,46 14;11,26 5;16,12 6;11,34
+  Solar: Wood-Rabbit. Bi 7
+6: Thu. snrubs. Wind-Water; 7 Nov 1929
+  las bzang, rigs can, Sheep, khon 9
+  5;40,45 18;59,4 14;15,50 6;14,54 6;12,32
+  Solar: Fire-Dragon. Kui 8
+7: Fri. chu stod. Earth-Water; 8 Nov 1929
+  'dzin byed, khyim skyes, Monkey, dwa 1
+  6;44,51 19;53,22 14;20,14 7;13,36 6;13,30
+  Solar: Fire-Snake. Lou 9
+8: Sat. chu smad. Earth-Earth; 9 Nov 1929
+  zug rngu, vishti, Bird, khen 2
+  0;48,57 20;47,40 14;24,37 8;12,18 6;14,28
+  Solar: Earth-Horse. Wei 1
+9: Sun. gro zhin. Fire-Earth; 10 Nov 1929
+  'grams, byis pa, Dog, kham 3
+  1;52,58 21;42,3 14;29,1 9;11,4 6;15,26
+  Solar: Earth-Sheep. Mao 2
+10: Mon. mon gre. Water-Water; 11 Nov 1929
+  'phel, rigs can, Pig, gin 4
+  2;55,59 22;37,25 14;33,25 10;10,51 6;16,25
+  Solar: Iron-Monkey. Bi 3
+11: Tue. mon gru. Fire-Earth; 12 Nov 1929
+  brtan pa, khyim skyes, Mouse, zin 5
+  3;58,1 23;33,48 14;37,49 11;11,38 6;17,23
+  Solar: Iron-Bird. Zui 4
+12: Wed. khrums stod. Water-Fire; 13 Nov 1929
+  yongs bsnun, vishti, Ox, zon 6
+  4;59,2 24;31,11 14;42,13 12;13,24 6;18,21
+  Solar: Water-Dog. Can 5
+13: Thu. khrums smad. Wind-Water; 14 Nov 1929
+  dga' ba, byis pa, Tiger, li 7
+  5;58,58 25;29,38 14;46,37 13;16,15 6;19,19
+  Solar: Water-Pig. Jing 6
+14: Fri. nam gru. Earth-Water; 15 Nov 1929
+  rdo rje, til rdung, Rabbit, khon 8
+  6;56,59 26;30,1 14;51,1 14;21,2 6;20,17
+  Solar: Wood-Mouse. Gui 7
+15: Sat. tha skar. Earth-Wind; 16 Nov 1929
+  dngos grub, tshong ba, Dragon, dwa 9
+  0;54,0 0;31,24 14;55,25 15;26,49 6;21,16
+  Solar: Wood-Ox. Liu 8
+16: Sun. bra nye. Fire-Fire; 17 Nov 1929
+  phan tshun, byis pa, Snake, khen 1
+  1;50,2 1;33,46 14;59,48 16;33,35 6;22,14
+  Solar: Fire-Tiger. Xing 9
+17: Mon. smin drug. Water-Fire; 18 Nov 1929
+  mchog can, til rdung, Horse, kham 2
+  2;45,2 2;37,9 15;4,12 17;41,22 6;23,12
+  Solar: Fire-Rabbit. Zhang 1
+18: Tue. snar ma. Fire-Earth; 19 Nov 1929
+  yongs 'joms, tshong ba, Sheep, gin 3
+  3;39,8 3;41,28 15;8,36 18;50,4 6;24,10
+  Solar: Earth-Dragon. Yi 2
+19: Wed. mgo. Water-Wind; 20 Nov 1929
+  zhi ba, gdab pa, Monkey, zin 4
+  4;33,14 4;45,46 15;13,0 19;58,47 6;25,8
+  Solar: Earth-Snake. Zhen 3
+20: Thu. lag. Wind-Water; 21 Nov 1929
+  bsgrub bya, rigs can, Bird, zon 5
+  5;27,19 5;50,4 15;17,24 21;7,29 6;26,7
+  Solar: Iron-Horse. Jiao 4
+21: Fri. nabs so. Earth-Wind; 22 Nov 1929
+  dge ba, tshong ba, Dog, li 6
+  6;21,25 6;54,23 15;21,48 22;16,11 6;27,5
+  Solar: Iron-Sheep. Kang 5
+22: Sat. rgyal. Earth-Fire; 23 Nov 1929
+  dkar po, gdab pa, Pig, khon 7
+  0;15,30 7;58,41 15;26,12 23;24,53 6;28,3
+  Solar: Water-Monkey. Di 6
+  Descent of the Buddha from the realm of the gods.
+23: Sun. mchu. Fire-Fire; 24 Nov 1929
+  tshangs pa, rigs can, Mouse, dwa 8
+  1;9,40 9;2,55 15;30,36 24;33,31 6;29,1
+  Solar: Water-Bird. Fang 7
+24: Mon. gre. Water-Fire; 25 Nov 1929
+  dbang po, khyim skyes, Ox, khen 9
+  2;4,51 10;6,8 15;35,0 25;41,8 7;0,0
+  Solar: Wood-Dog. Xin 8
+25: Tue. dbo. Fire-Wind; 26 Nov 1929
+  'khon 'dzin, vishti, Tiger, kham 1
+  3;1,7 11;8,22 15;39,29 26;47,52 7;0,58
+  Solar: Wood-Pig. Wei 9
+26. Omitted: Rabbit gin 2
+27: Wed. me bzhi. Water-Wind; 27 Nov 1929
+  rnam sel, byis pa, Dragon, zin 3
+  4;56,44 12;9,45 15;48,29 0;58,14 7;2,54
+  Solar: Fire-Mouse. Ji 1
+28: Thu. nag pa. Wind-Wind; 28 Nov 1929
+  tshe dang ldan pa, til rdung, Snake, zon 4
+  5;57,0 13;7,58 15;52,58 2;0,57 7;3,52
+  Solar: Fire-Ox. Dou 2
+29: Fri. sa ri. Earth-Wind; 29 Nov 1929
+  skal bzang, tshong ba, Horse, li 5
+  6;58,16 14;5,12 15;57,28 3;2,40 7;4,51
+  Solar: Earth-Tiger. Niu 3
+30: Sat. sa ga. Earth-Fire; 30 Nov 1929
+  0;60,0 15;1,58 16;1,58 4;3,56 7;5,49
+  Solar: Earth-Rabbit. Nu 4
+30: Sun. lha mtshams. Fire-Earth; 1 Dec 1929
+  shin tu 'grams, klu, Sheep, khon 6
+  1;0,32 16;1,25 16;1,58 5;3,23 7;5,49
+  Solar: Iron-Dragon. Xu 5
+
+Tibetan Lunar Month: 10 - Iron-female-Ox
+
+1: Mon. lha mtshams. Water-Earth; 2 Dec 1929
+  las bzang, gdab pa, Monkey, dwa 7
+  2;3,48 16;56,38 16;6,27 6;3,6 7;6,47
+  Solar: Iron-Snake. Wei 6
+2: Tue. snron. Fire-Earth; 3 Dec 1929
+  'dzin byed, rigs can, Bird, khen 8
+  3;8,0 17;50,57 16;10,57 7;1,54 7;7,45
+  Solar: Water-Horse. Shi 7
+3: Wed. snrubs. Water-Water; 4 Dec 1929
+  zug rngu, khyim skyes, Dog, kham 9
+  4;12,11 18;45,15 16;15,27 8;0,42 7;8,43
+  Solar: Water-Sheep. Bi 8
+4: Thu. chu stod. Wind-Water; 5 Dec 1929
+  zug rngu, vishti, Pig, gin 1
+  5;16,23 19;39,33 16;19,57 8;59,30 7;9,42
+  Solar: Wood-Monkey. Kui 9
+5: Fri. chu smad. Earth-Earth; 6 Dec 1929
+  'grams, byis pa, Mouse, zin 2
+  6;20,35 20;33,51 16;24,26 9;58,18 7;10,40
+  Solar: Wood-Bird. Lou 1
+6: Sat. gro zhin. Earth-Earth; 7 Dec 1929
+  'phel, til rdung, Ox, zon 3
+  0;24,46 21;28,9 16;28,56 10;57,6 7;11,38
+  Solar: Fire-Dog. Wei 2
+7: Sun. mon gre. Fire-Water; 8 Dec 1929
+  brtan pa, khyim skyes, Tiger, li 4
+  1;28,53 22;22,32 16;33,26 11;55,59 7;12,36
+  Solar: Fire-Pig. Mao 3
+8: Mon. mon gru. Water-Earth; 9 Dec 1929
+  yongs bsnun, vishti, Rabbit, khon 5
+  2;31,59 23;17,56 16;37,55 12;55,51 7;13,34
+  Solar: Earth-Mouse. Bi 4
+9: Tue. khrums stod. Fire-Fire; 10 Dec 1929
+  dga' ba, byis pa, Dragon, dwa 6
+  3;34,6 24;14,19 16;42,25 13;56,44 7;14,33
+  Solar: Earth-Ox. Zui 5
+10: Wed. khrums smad. Water-Water; 11 Dec 1929
+  rdo rje, til rdung, Snake, khen 7
+  4;35,12 25;11,42 16;46,55 14;58,37 7;15,31
+  Solar: Iron-Tiger. Can 6
+11: Thu. nam gru. Wind-Water; 12 Dec 1929
+  phan tshun, tshong ba, Horse, kham 8
+  5;35,14 26;10,10 16;51,24 16;1,35 7;16,29
+  Solar: Iron-Rabbit. Jing 7
+12: Fri. tha skar. Earth-Wind; 13 Dec 1929
+  mchog can, gdab pa, Sheep, gin 9
+  6;33,20 0;10,33 16;55,54 17;6,28 7;17,27
+  Solar: Water-Dragon. Gui 8
+13: Sat. bra nye. Earth-Fire; 14 Dec 1929
+  yongs 'joms, rigs can, Monkey, zin 1
+  0;30,27 1;11,56 17;0,24 18;12,21 7;18,25
+  Solar: Water-Snake. Liu 9
+14: Sun. smin drug. Fire-Fire; 15 Dec 1929
+  zhi ba, tshong ba, Bird, zon 2
+  1;26,33 2;14,20 17;4,54 19;19,14 7;19,24
+  Solar: Wood-Horse. Xing 1
+15: Mon. snar ma. Water-Earth; 16 Dec 1929
+  grub pa, gdab pa, Dog, li 3
+  2;21,40 3;17,43 17;9,23 20;27,7 7;20,22
+  Solar: Wood-Sheep. Zhang 2
+16: Tue. mgo. Fire-Wind; 17 Dec 1929
+  bsgrub bya, rigs can, Pig, khon 4
+  3;15,51 4;22,1 17;13,53 21;35,55 7;21,20
+  Solar: Fire-Monkey. Yi 3
+17: Wed. lag. Water-Water; 18 Dec 1929
+  dge ba, khyim skyes, Mouse, dwa 5
+  4;10,2 5;26,20 17;18,23 22;44,43 7;22,18
+  Solar: Fire-Bird. Zhen 4
+18: Thu. nabs so. Wind-Wind; 19 Dec 1929
+  dkar po, vishti, Ox, khen 6
+  5;4,14 6;30,38 17;22,52 23;53,31 7;23,17
+  Solar: Earth-Dog. Jiao 5
+19. Omitted: Tiger kham 7
+20: Fri. rgyal. Earth-Fire; 20 Dec 1929
+  dbang po, rigs can, Rabbit, gin 8
+  6;52,36 7;39,15 17;31,52 25;11,7 7;25,13
+  Solar: Earth-Pig. Kang 6
+21: Sat. skag. Earth-Water; 21 Dec 1929
+  'khon 'dzin, khyim skyes, Dragon, zin 9
+  0;46,53 8;43,28 17;36,21 26;19,50 7;26,11
+  Solar: Iron-Mouse. Di 7
+22: Sun. mchu. Fire-Fire; 22 Dec 1929
+  rnam sel, vishti, Snake, zon 1
+  1;42,9 9;46,41 17;40,51 0;27,33 7;27,9
+  Solar: Iron-Ox. Fang 8
+23: Mon. gre. Water-Fire; 23 Dec 1929
+  mdza' bo, byis pa, Horse, li 2
+  2;38,26 10;48,55 17;45,21 1;34,16 7;28,8
+  Solar: Water-Tiger. Xin 9
+24: Tue. dbo. Fire-Wind; 24 Dec 1929
+  tshe dang ldan pa, til rdung, Sheep, khon 3
+  3;35,42 11;50,8 17;49,51 2;39,59 7;29,6
+  Solar: Water-Rabbit. Wei 1
+25: Wed. me bzhi. Water-Wind; 25 Dec 1929
+  skal bzang, tshong ba, Monkey, dwa 4
+  4;34,4 12;50,16 17;54,21 3;44,37 8;0,4
+  Solar: Wood-Dragon. Ji 2
+26: Thu. nag pa. Wind-Wind; 26 Dec 1929
+  dge byed, gdab pa, Bird, khen 5
+  5;34,25 13;48,29 17;58,54 4;47,23 8;1,2
+  Solar: Wood-Snake. Dou 3
+27: Fri. sa ri. Earth-Wind; 27 Dec 1929
+  shin tu 'grams, rigs can, Dog, kham 6
+  6;35,45 14;45,42 18;3,28 5;49,10 8;2,0
+  Solar: Fire-Horse. Niu 4
+28: Sat. sa ga. Earth-Fire; 28 Dec 1929
+  las bzang, khyim skyes, Pig, gin 7
+  0;38,6 15;41,55 18;8,1 6;49,57 8;2,59
+  Solar: Fire-Sheep. Nu 5
+29: Sun. lha mtshams. Fire-Earth; 29 Dec 1929
+  'dzin byed, vishti, Mouse, zin 8
+  1;41,27 16;37,8 18;12,35 7;49,43 8;3,57
+  Solar: Earth-Monkey. Xu 6
+30: Mon. snron. Water-Earth; 30 Dec 1929
+  zug rngu, rkang bzhi, Ox, zon 9
+  2;45,42 17;31,26 18;17,8 8;48,35 8;4,55
+  Solar: Earth-Bird. Wei 7
+
+Tibetan Lunar Month: 11 - Water-male-Tiger
+
+1: Tue. snrubs. Fire-Water; 31 Dec 1929
+  'grams, mi sdug pa, Tiger, li 1
+  3;49,57 18;25,44 18;21,42 9;47,27 8;5,53
+  Solar: Iron-Dog. Shi 8
+2: Wed. chu stod. Water-Water; 1 Jan 1930
+  'phel, gdab pa, Rabbit, khon 2
+  4;54,13 19;20,2 18;26,16 10;46,18 8;6,51
+  Solar: Iron-Pig. Bi 9
+3: Thu. chu smad. Wind-Earth; 2 Jan 1930
+  brtan pa, rigs can, Dragon, dwa 3
+  5;58,28 20;14,21 18;30,49 11;45,10 8;7,50
+  Solar: Water-Mouse. Kui 1
+4: Fri. gro zhin. Earth-Earth; 3 Jan 1930
+  6;60,0 21;11,23 18;35,23 12;46,46 8;8,48
+  Solar: Water-Ox. Lou 2
+4: Sat. mon gre. Earth-Water; 4 Jan 1930
+  dga' ba, vishti, Snake, khen 4
+  0;2,44 22;8,39 18;35,23 13;44,2 8;8,48
+  Solar: Wood-Tiger. Wei 3
+5: Sun. mon gru. Fire-Earth; 5 Jan 1930
+  rdo rje, byis pa, Horse, kham 5
+  1;6,54 23;3,2 18;39,56 14;42,59 8;9,46
+  Solar: Wood-Rabbit. Mao 4
+6: Mon. mon gru. Water-Earth; 6 Jan 1930
+  dngos grub, til rdung, Sheep, gin 6
+  2;10,4 23;58,26 18;44,30 15;42,56 8;10,44
+  Solar: Fire-Dragon. Bi 5
+7: Tue. khrums stod. Fire-Fire; 7 Jan 1930
+  phan tshun, tshong ba, Monkey, zin 7
+  3;12,14 24;54,49 18;49,4 16;43,53 8;11,42
+  Solar: Fire-Snake. Zui 6
+8: Wed. khrums smad. Water-Water; 8 Jan 1930
+  mchog can, gdab pa, Bird, zon 8
+  4;13,24 25;52,13 18;53,37 17;45,51 8;12,41
+  Solar: Earth-Horse. Can 7
+9: Thu. nam gru. Wind-Water; 9 Jan 1930
+  yongs 'joms, rigs can, Dog, li 9
+  5;13,28 26;50,42 18;58,11 18;48,53 8;13,39
+  Solar: Earth-Sheep. Jing 8
+10: Fri. tha skar. Earth-Wind; 10 Jan 1930
+  zhi ba, khyim skyes, Pig, khon 1
+  6;11,38 0;51,6 19;2,44 19;53,50 8;14,37
+  Solar: Iron-Monkey. Gui 9
+11: Sat. bra nye. Earth-Fire; 11 Jan 1930
+  grub pa, vishti, Mouse, dwa 2
+  0;8,48 1;52,29 19;7,18 20;59,48 8;15,35
+  Solar: Iron-Bird. Liu 1
+12: Sun. smin drug. Fire-Fire; 12 Jan 1930
+  dge ba, byis pa, Ox, khen 3
+  1;4,58 2;54,53 19;11,51 22;6,45 8;16,34
+  Solar: Water-Dog. Xing 2
+13: Mon. snar ma. Water-Earth; 13 Jan 1930
+  dkar po, til rdung, Tiger, kham 4
+  2;0,8 3;58,17 19;16,25 23;14,42 8;17,32
+  Solar: Water-Pig. Zhang 3
+14. Omitted: Rabbit gin 5
+15: Tue. lag. Fire-Water; 14 Jan 1930
+  tshangs pa, vishti, Dragon, zin 6
+  3;48,38 5;6,54 19;25,32 24;32,26 8;19,28
+  Solar: Wood-Mouse. Yi 4
+16: Wed. nabs so. Water-Wind; 15 Jan 1930
+  dbang po, byis pa, Snake, zon 7
+  4;42,53 6;11,12 19;30,6 25;41,18 8;20,26
+  Solar: Wood-Ox. Zhen 5
+17: Thu. rgyal. Wind-Fire; 16 Jan 1930
+  'khon 'dzin, til rdung, Horse, li 8
+  5;37,9 7;15,30 19;34,39 26;50,10 8;21,25
+  Solar: Fire-Tiger. Jiao 6
+18: Fri. skag. Earth-Water; 17 Jan 1930
+  rnam sel, tshong ba, Sheep, khon 9
+  6;31,24 8;19,49 19;39,13 0;59,2 8;22,23
+  Solar: Fire-Rabbit. Kang 7
+19: Sat. mchu. Earth-Fire; 18 Jan 1930
+  tshe dang ldan pa, byis pa, Monkey, dwa 1
+  0;25,45 9;24,1 19;43,47 2;7,48 8;23,21
+  Solar: Earth-Dragon. Di 8
+20: Sun. gre. Fire-Fire; 19 Jan 1930
+  skal bzang, til rdung, Bird, khen 2
+  1;21,5 10;27,14 19;48,20 3;15,35 8;24,19
+  Solar: Earth-Snake. Fang 9
+21: Mon. dbo. Water-Wind; 20 Jan 1930
+  dge byed, tshong ba, Dog, kham 3
+  2;17,26 11;29,27 19;52,54 4;22,21 8;25,17
+  Solar: Iron-Horse. Xin 1
+22: Tue. me bzhi. Fire-Wind; 21 Jan 1930
+  shin tu 'grams, gdab pa, Pig, gin 4
+  3;14,47 12;30,40 19;57,27 5;28,7 8;26,16
+  Solar: Iron-Sheep. Wei 2
+23: Wed. nag pa. Water-Wind; 22 Jan 1930
+  las bzang, rigs can, Mouse, zin 5
+  4;13,14 13;30,47 20;2,1 6;32,48 8;27,14
+  Solar: Water-Monkey. Ji 3
+24: Thu. sa ri. Wind-Wind; 23 Jan 1930
+  'dzin byed, khyim skyes, Ox, zon 6
+  5;13,35 14;28,59 20;6,34 7;35,34 8;28,12
+  Solar: Water-Bird. Dou 4
+25: Fri. sa ga. Earth-Fire; 24 Jan 1930
+  zug rngu, vishti, Tiger, li 7
+  6;14,56 15;26,12 20;11,8 8;37,21 8;29,10
+  Solar: Wood-Dog. Niu 5
+26: Sat. lha mtshams. Earth-Earth; 25 Jan 1930
+  'grams, byis pa, Rabbit, khon 8
+  0;17,17 16;22,25 20;15,42 9;38,7 9;0,8
+  Solar: Wood-Pig. Nu 6
+27: Sun. snron. Fire-Earth; 26 Jan 1930
+  'phel, til rdung, Dragon, dwa 9
+  1;20,38 17;17,37 20;20,15 10;37,53 9;1,7
+  Solar: Fire-Mouse. Xu 7
+28: Mon. snrubs. Water-Water; 27 Jan 1930
+  brtan pa, tshong ba, Snake, khen 1
+  2;24,53 18;11,55 20;24,49 11;36,45 9;2,5
+  Solar: Fire-Ox. Wei 8
+29: Tue. chu stod. Fire-Water; 28 Jan 1930
+  yongs bsnun, vishti, Horse, kham 2
+  3;29,8 19;6,14 20;29,22 12;35,36 9;3,3
+  Solar: Earth-Tiger. Shi 9
+30: Wed. chu smad. Water-Earth; 29 Jan 1930
+  dga' ba, rkang bzhi, Sheep, gin 3
+  4;33,24 20;0,32 20;33,56 13;34,28 9;4,1
+  Solar: Earth-Rabbit. Bi 1
+
+Tibetan Lunar Month: 12 - Water-female-Rabbit
+
+1: Thu. chu smad. Wind-Earth; 30 Jan 1930
+  rdo rje, mi sdug pa, Monkey, zin 4
+  5;37,39 20;54,50 20;38,30 14;33,20 9;5,0
+  Solar: Iron-Dragon. Kui 2
+2: Fri. gro zhin. Earth-Earth; 31 Jan 1930
+  dngos grub, byis pa, Bird, zon 5
+  6;41,55 21;49,8 20;43,3 15;32,12 9;5,58
+  Solar: Iron-Snake. Lou 3
+3: Sat. mon gre. Earth-Water; 1 Feb 1930
+  phan tshun, til rdung, Dog, li 6
+  0;46,4 22;43,32 20;47,37 16;31,9 9;6,56
+  Solar: Water-Horse. Wei 4
+4: Sun. mon gru. Fire-Earth; 2 Feb 1930
+  mchog can, tshong ba, Pig, khon 7
+  1;49,14 23;38,56 20;52,10 17;31,7 9;7,54
+  Solar: Water-Sheep. Mao 5
+5: Mon. khrums stod. Water-Fire; 3 Feb 1930
+  yongs 'joms, gdab pa, Mouse, dwa 8
+  2;51,23 24;35,20 20;56,44 18;32,4 9;8,52
+  Solar: Wood-Monkey. Bi 6
+6: Tue. khrums smad. Fire-Water; 4 Feb 1930
+  zhi ba, rigs can, Ox, khen 9
+  3;52,33 25;32,44 21;1,17 19;34,2 9;9,51
+  Solar: Wood-Bird. Zui 7
+7: Wed. nam gru. Water-Water; 5 Feb 1930
+  grub pa, khyim skyes, Tiger, kham 1
+  4;52,37 26;31,14 21;5,51 20;37,5 9;10,49
+  Solar: Fire-Dog. Can 8
+8: Thu. tha skar. Wind-Wind; 6 Feb 1930
+  bsgrub bya, vishti, Rabbit, gin 2
+  5;50,46 0;31,38 21;10,25 21;42,3 9;11,47
+  Solar: Fire-Pig. Jing 9
+9: Fri. bra nye. Earth-Fire; 7 Feb 1930
+  dge ba, byis pa, Dragon, zin 3
+  6;47,55 1;33,2 21;14,58 22;48,1 9;12,45
+  Solar: Earth-Mouse. Gui 1
+10: Sat. smin drug. Earth-Fire; 8 Feb 1930
+  dkar po, til rdung, Snake, zon 4
+  0;44,5 2;35,26 21;19,32 23;54,59 9;13,43
+  Solar: Earth-Ox. Liu 2
+11: Sun. snar ma. Fire-Earth; 9 Feb 1930
+  dbang po, tshong ba, Horse, li 5
+  1;39,14 3;38,51 21;24,5 25;2,56 9;14,42
+  Solar: Iron-Tiger. Xing 3
+12: Mon. mgo. Water-Wind; 10 Feb 1930
+  'khon 'dzin, gdab pa, Sheep, khon 6
+  2;33,29 4;43,9 21;28,39 26;11,48 9;15,40
+  Solar: Iron-Rabbit. Zhang 4
+13: Tue. lag. Fire-Water; 11 Feb 1930
+  rnam sel, rigs can, Monkey, dwa 7
+  3;27,45 5;47,27 21;33,12 0;20,40 9;16,38
+  Solar: Water-Dragon. Yi 5
+14: Wed. nabs so. Water-Wind; 12 Feb 1930
+  mdza' bo, tshong ba, Bird, khen 8
+  4;22,0 6;51,46 21;37,46 1;29,32 9;17,36
+  Solar: Water-Snake. Zhen 6
+15: Thu. rgyal. Wind-Fire; 13 Feb 1930
+  tshe dang ldan pa, gdab pa, Dog, kham 9
+  5;16,15 7;56,4 21;42,20 2;38,24 9;18,34
+  Solar: Wood-Horse. Jiao 7
+16: Fri. mchu. Earth-Fire; 14 Feb 1930
+  skal bzang, rigs can, Pig, gin 1
+  6;10,30 9;0,22 21;46,53 3;47,16 9;19,33
+  Solar: Wood-Sheep. Kang 8
+17: Sat. gre. Earth-Fire; 15 Feb 1930
+  dge byed, khyim skyes, Mouse, zin 2
+  0;4,52 10;4,35 21;51,27 4;56,2 9;20,31
+  Solar: Fire-Monkey. Di 9
+18: Sun. dbo. Fire-Wind; 16 Feb 1930
+  las bzang, vishti, Ox, zon 3
+  1;0,13 11;7,47 21;56,0 6;3,48 9;21,29
+  Solar: Fire-Bird. Fang 1
+19. Omitted: Tiger li 4
+20: Mon. me bzhi. Water-Wind; 17 Feb 1930
+  'dzin byed, rigs can, Rabbit, khon 5
+  2;53,55 12;11,12 22;5,8 7;16,20 9;23,25
+  Solar: Earth-Dog. Xin 2
+21: Tue. nag pa. Fire-Wind; 18 Feb 1930
+  zug rngu, khyim skyes, Dragon, dwa 6
+  3;52,23 13;11,18 22;9,41 8;21,0 9;24,24
+  Solar: Earth-Pig. Wei 3
+22: Wed. sa ri. Water-Wind; 19 Feb 1930
+  'grams, vishti, Snake, khen 7
+  4;52,44 14;9,30 22;14,15 9;23,45 9;25,22
+  Solar: Iron-Mouse. Ji 4
+23: Thu. sa ga. Wind-Fire; 20 Feb 1930
+  'phel, gdab pa, Horse, kham 8
+  5;54,6 15;6,42 22;18,48 10;25,31 9;26,20
+  Solar: Iron-Ox. Dou 5
+24: Fri. lha mtshams. Earth-Earth; 21 Feb 1930
+  brtan pa, rigs can, Sheep, gin 9
+  6;56,27 16;2,54 22;23,22 11;26,17 9;27,18
+  Solar: Water-Tiger. Niu 6
+25: Sat. lha mtshams. Earth-Earth; 22 Feb 1930
+  yongs bsnun, khyim skyes, Monkey, zin 1
+  0;59,49 16;58,6 22;27,55 12;26,2 9;28,17
+  Solar: Water-Rabbit. Nu 7
+26: Sun. snron. Fire-Earth; 23 Feb 1930
+  1;60,0 17;56,29 22;32,29 13;28,59 9;29,15
+  Solar: Wood-Dragon. Xu 8
+26: Mon. snrubs. Water-Water; 24 Feb 1930
+  rdo rje, byis pa, Bird, zon 2
+  2;4,4 18;52,25 22;32,29 14;24,54 9;29,15
+  Solar: Wood-Snake. Wei 9
+27: Tue. chu stod. Fire-Water; 25 Feb 1930
+  dngos grub, til rdung, Dog, li 3
+  3;8,18 19;46,43 22;37,2 15;23,45 10;0,13
+  Solar: Fire-Horse. Shi 1
+28: Wed. chu smad. Water-Earth; 26 Feb 1930
+  phan tshun, tshong ba, Pig, khon 4
+  4;12,30 20;41,1 22;41,31 16;22,33 10;1,11
+  Solar: Fire-Sheep. Bi 2
+29: Thu. gro zhin. Wind-Earth; 27 Feb 1930
+  mchog can, bkra shis, Mouse, dwa 5
+  5;16,41 21;35,19 22;46,1 17;21,21 10;2,9
+  Solar: Earth-Monkey. Kui 3
+30: Fri. mon gre. Earth-Water; 28 Feb 1930
+  yongs 'joms, klu, Ox, khen 6
+  6;20,53 22;29,37 22;50,31 18;20,9 10;3,8
+  Solar: Earth-Bird. Lou 4
