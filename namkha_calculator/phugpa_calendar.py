@@ -41,7 +41,6 @@ def year_characteristics(date: datetime) -> Year:
             mewa_number=3,
         )
 
-
 # calendrical constants: month calculations
 S1 = 65 / 804
 Y0 = 806
