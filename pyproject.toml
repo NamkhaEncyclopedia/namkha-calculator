@@ -8,6 +8,7 @@ packages = [{include = "namkha_calculator", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+astropy = "^6.1.0"
 
 
 [build-system]

@@ -6,13 +6,13 @@ from namkha_calculator import phugpa_calendar as pc
 from namkha_calculator.astrology import Animal, Element
 
 
-class TestPhugpaCalendar(unittest.TestCase):
+class TestPhugpaCalendarBasic(unittest.TestCase):
     def test_year_characteristics(self):
         test_year = pc.Year(
             tibetan_year_number=127 + 2024,
             animal=Animal.DRAGON,
             element=Element.WOOD,
-            mewa_number=3,
+            mewa_number=0,
         )
         test_date = datetime(year=2024, month=6, day=1)
 
@@ -54,3 +54,10 @@ class TestPhugpaCalendar(unittest.TestCase):
                     self.assertEqual(
                         test_year_characterisitcs.animal, Animal(ANIMAL_NAMES_MAP[match.group(2)])
                     )
+
+class TestPhugpaCalendarCornerCases(unittest.TestCase):
+    def test_year_element_animal_on_day_before_losar(self):
+        test_date = datetime(year=2025, month=2, day=27, hour=12, minute=0, second=0)
+        test_year_characterisitcs = pc.year_characteristics(test_date)
+        self.assertEqual( test_year_characterisitcs.element, Element.WOOD)
+        self.assertEqual( test_year_characterisitcs.animal, Animal.DRAGON)
