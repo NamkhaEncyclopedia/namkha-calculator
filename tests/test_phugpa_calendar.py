@@ -7,7 +7,7 @@ from namkha_calculator.astrology import Animal, Element
 
 
 class TestPhugpaCalendarBasic(unittest.TestCase):
-    def test_year_characteristics(self):
+    def test_year_attributes(self):
         test_year = pc.Year(
             tibetan_year_number=127 + 2024,
             animal=Animal.DRAGON,
@@ -16,7 +16,7 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
         )
         test_date = datetime(year=2024, month=6, day=1)
 
-        self.assertEqual(test_year, pc.year_characteristics(test_date))
+        self.assertEqual(test_year, pc.year_attributes(test_date))
 
     def test_year_element_animal_against_henning(self):
         RE_HENNING_YEAR = r"New Year: \d*, ([A-Z][a-z]*)-[a-z]*-([A-Z][a-z]*)"
@@ -44,7 +44,7 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
         for test_western_year in range(1800, 2801):
             with self.subTest(western_year=test_western_year):
                 test_date = datetime(year=test_western_year, month=6, day=1)
-                test_year_characterisitcs = pc.year_characteristics(test_date)
+                test_year_characterisitcs = pc.year_attributes(test_date)
                 with open(f"tests/data/Henning/pl_{test_western_year}.txt") as file:
                     file.readline()
                     match = re.match(RE_HENNING_YEAR, file.readline())
@@ -58,6 +58,6 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
 class TestPhugpaCalendarCornerCases(unittest.TestCase):
     def test_year_element_animal_on_day_before_losar(self):
         test_date = datetime(year=2025, month=2, day=27, hour=12, minute=0, second=0)
-        test_year_characterisitcs = pc.year_characteristics(test_date)
+        test_year_characterisitcs = pc.year_attributes(test_date)
         self.assertEqual( test_year_characterisitcs.element, Element.WOOD)
         self.assertEqual( test_year_characterisitcs.animal, Animal.DRAGON)

@@ -165,7 +165,7 @@ def losar(year_number: int) -> datetime:
     return APTime(jd, format="jd").to_datetime()
 
 
-def year_characteristics(date_time: datetime) -> Year:
+def year_attributes(date_time: datetime) -> Year:
     tibetan_year_number = date_time.year + 127
     if losar(tibetan_year_number) > date_time:
         tibetan_year_number -= 1
