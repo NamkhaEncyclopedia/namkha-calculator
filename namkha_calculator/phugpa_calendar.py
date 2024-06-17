@@ -4,7 +4,7 @@ import math
 from dataclasses import dataclass
 from datetime import datetime
 
-from astropy.time import Time as APTime
+from skyfield.api import load
 
 from .astrology import Animal, Element
 
@@ -34,6 +34,8 @@ SUN_TAB = (0, 6, 10, 11)
 
 ELEMENT_TABLE = list(Element)
 ANIMAL_TABLE = list(Animal)
+
+ts = load.timescale()
 
 
 @dataclass(kw_only=True)
@@ -162,7 +164,7 @@ def losar(year_number: int) -> datetime:
     year number (ex. 2137).
     """
     jd = 1 + tibetan_to_julian(year_number - 1, 12, 0, 30)
-    return APTime(jd, format="jd").to_datetime()
+    return ts.tt_jd(jd).utc_datetime()
 
 
 def year_attributes(date_time: datetime) -> TibetanYear:

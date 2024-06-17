@@ -1,6 +1,6 @@
 import re
 import unittest
-from datetime import datetime
+from datetime import datetime, timezone
 
 from namkha_calculator import phugpa_calendar as pc
 from namkha_calculator.astrology import Animal, Element
@@ -14,7 +14,7 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
             element=Element.WOOD,
             mewa_number=0,
         )
-        test_date = datetime(year=2024, month=6, day=1)
+        test_date = datetime(year=2024, month=6, day=1, tzinfo=timezone.utc)
 
         self.assertEqual(test_year, pc.year_attributes(test_date))
 
@@ -43,7 +43,7 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
         }
         for test_western_year in range(1800, 2801):
             with self.subTest(western_year=test_western_year):
-                test_date = datetime(year=test_western_year, month=6, day=1)
+                test_date = datetime(year=test_western_year, month=6, day=1, tzinfo=timezone.utc)
                 test_year_characterisitcs = pc.year_attributes(test_date)
                 with open(f"tests/data/Henning/pl_{test_western_year}.txt") as file:
                     file.readline()
@@ -57,7 +57,7 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
 
 class TestPhugpaCalendarCornerCases(unittest.TestCase):
     def test_year_element_animal_on_day_before_losar(self):
-        test_date = datetime(year=2025, month=2, day=27, hour=12, minute=0, second=0)
+        test_date = datetime(year=2025, month=2, day=27, hour=12, minute=0, second=0, tzinfo=timezone.utc)
         test_year_characterisitcs = pc.year_attributes(test_date)
         self.assertEqual( test_year_characterisitcs.element, Element.WOOD)
         self.assertEqual( test_year_characterisitcs.animal, Animal.DRAGON)
