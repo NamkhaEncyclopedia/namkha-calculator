@@ -44,12 +44,12 @@ class _CalendarEntity:
 
 
 @dataclass(kw_only=True)
-class Year(_CalendarEntity):
+class TibetanYear(_CalendarEntity):
     tibetan_year_number: int
 
 
 @dataclass(kw_only=True)
-class Month(_CalendarEntity):
+class TibetanMonth(_CalendarEntity):
     tibetan_month_number: int
 
 
@@ -165,13 +165,13 @@ def losar(year_number: int) -> datetime:
     return APTime(jd, format="jd").to_datetime()
 
 
-def year_attributes(date_time: datetime) -> Year:
+def year_attributes(date_time: datetime) -> TibetanYear:
     tibetan_year_number = date_time.year + 127
     if losar(tibetan_year_number) > date_time:
         tibetan_year_number -= 1
     animal = ANIMAL_TABLE[(tibetan_year_number + 1) % 12]
     element = ELEMENT_TABLE[int(((tibetan_year_number - 1) / 2) % 5)]
-    return Year(
+    return TibetanYear(
         tibetan_year_number=tibetan_year_number,
         animal=Animal(animal),
         element=Element(element),

@@ -8,7 +8,7 @@ from namkha_calculator.astrology import Animal, Element
 
 class TestPhugpaCalendarBasic(unittest.TestCase):
     def test_year_attributes(self):
-        test_year = pc.Year(
+        test_year = pc.TibetanYear(
             tibetan_year_number=127 + 2024,
             animal=Animal.DRAGON,
             element=Element.WOOD,
