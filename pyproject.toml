@@ -8,7 +8,7 @@ packages = [{include = "namkha_calculator", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
-skyfield = "^1.49"
+astral = "^3.2"
 
 
 [build-system]
