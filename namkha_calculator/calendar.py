@@ -1,13 +1,14 @@
 """ """
 
 import math
+from collections import namedtuple
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timedelta
 
-from skyfield.api import load
+from skyfield import almanac
+from skyfield.api import load, wgs84
 
 from .astrology import Animal, Element
-
 
 # calendrical constants: month calculations
 S1 = 65 / 804
@@ -36,32 +37,36 @@ ELEMENT_TABLE = list(Element)
 ANIMAL_TABLE = list(Animal)
 
 ts = load.timescale()
+ephemeris = load("de440.bsp")
+
+
+Location = namedtuple("Location", ["latitude_degrees", "longitude_degrees"])
 
 
 @dataclass(kw_only=True)
-class _CalendarEntity:
+class _CalendarEntityAttributes:
     element: Element
     animal: Animal
     mewa_number: int
 
 
 @dataclass(kw_only=True)
-class TibetanYear(_CalendarEntity):
+class TibetanYearAttributes(_CalendarEntityAttributes):
     tibetan_year_number: int
 
 
 @dataclass(kw_only=True)
-class TibetanMonth(_CalendarEntity):
+class TibetanMonthAttributes(_CalendarEntityAttributes):
     tibetan_month_number: int
 
 
 @dataclass(kw_only=True)
-class LunarDay(_CalendarEntity):
+class LunarDayAttributes(_CalendarEntityAttributes):
     lunar_day_number: int
 
 
 @dataclass(kw_only=True)
-class TibetanHour(_CalendarEntity):
+class TibetanHourAttributes(_CalendarEntityAttributes):
     start: datetime
     end: datetime
 
@@ -158,22 +163,31 @@ def tibetan_to_julian(
     return math.floor(true_date(tibetan_day, n))
 
 
-def losar(year_number: int) -> datetime:
+def official_losar(year_number: int, location: Location) -> datetime:
     """
-    Calculates the Western date for Losar (Tibetan new year) of a given Tibetan
-    year number (ex. 2137).
+    Calculates the Western date for official Losar (Tibetan New Year)
+    which starts on the first day of the month of Dragon
+    for a given Tibetan year number (e.g. 2137) at a given location.
+    Considers the start of civil twilight at the location to be the start of the day.
     """
-    jd = 1 + tibetan_to_julian(year_number - 1, 12, 0, 30)
-    return ts.tt_jd(jd).utc_datetime()
+    jd = 1 + tibetan_to_julian(
+        year_number=year_number - 1,
+        month_number=12,
+        is_leap_month=False,
+        tibetan_day=30,
+    )
+    loasar_date = ts.tt_jd(jd).utc_datetime()
+    midnight = loasar_date.replace(hour=0, minute=0, second=0, microsecond=0)
+    noon = midnight + timedelta(days=0.5)
 
 
-def year_attributes(date_time: datetime) -> TibetanYear:
+def year_attributes(date_time: datetime, location: Location) -> TibetanYearAttributes:
     tibetan_year_number = date_time.year + 127
-    if losar(tibetan_year_number) > date_time:
+    if official_losar(tibetan_year_number) > date_time:
         tibetan_year_number -= 1
     animal = ANIMAL_TABLE[(tibetan_year_number + 1) % 12]
     element = ELEMENT_TABLE[int(((tibetan_year_number - 1) / 2) % 5)]
-    return TibetanYear(
+    return TibetanYearAttributes(
         tibetan_year_number=tibetan_year_number,
         animal=Animal(animal),
         element=Element(element),
