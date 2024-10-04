@@ -2,8 +2,8 @@
 Calculations of twilights and julian dates for 'calendar' module using Skyfield
 """
 
-import os
 import datetime as dt
+import os
 from typing import NamedTuple
 
 from skyfield import almanac

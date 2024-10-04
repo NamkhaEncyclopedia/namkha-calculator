@@ -1,8 +1,8 @@
 """ """
 
+import datetime as dt
 import math
 from dataclasses import dataclass
-import datetime as dt
 
 from .astrology import Animal, Element
 from .skyfield_calculations import Location, civil_twilight_boundaries, jd_to_datetime
@@ -32,9 +32,6 @@ SUN_TAB = (0, 6, 10, 11)
 
 ELEMENT_TABLE = list(Element)
 ANIMAL_TABLE = list(Animal)
-
-
-
 
 
 @dataclass(kw_only=True)

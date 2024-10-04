@@ -1,15 +1,18 @@
 import re
 import unittest
 from datetime import datetime
+
 from zoneinfo import ZoneInfo
 
 from namkha_calculator import calendar
 from namkha_calculator.astrology import Animal, Element
 
-TEST_LOCATION_GREENWICH = calendar.Location(51.477811, -0.001475) # Greenwich observatory
+TEST_LOCATION_GREENWICH = calendar.Location(
+    51.477811, -0.001475
+)  # Greenwich observatory
+
 
 class TestPhugpaCalendarBasic(unittest.TestCase):
-
     def test_year_attributes(self):
         test_year = calendar.TibetanYearAttributes(
             tibetan_year_number=127 + 2024,
@@ -19,7 +22,9 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
         )
         test_date = datetime(year=2024, month=6, day=1, tzinfo=ZoneInfo("UTC"))
 
-        self.assertEqual(test_year, calendar.year_attributes(test_date, TEST_LOCATION_GREENWICH))
+        self.assertEqual(
+            test_year, calendar.year_attributes(test_date, TEST_LOCATION_GREENWICH)
+        )
 
     def test_year_element_animal_against_henning(self):
         RE_HENNING_YEAR = r"New Year: \d*, ([A-Z][a-z]*)-[a-z]*-([A-Z][a-z]*)"
@@ -46,27 +51,54 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
         }
         for test_western_year in range(1800, 2601):
             with self.subTest(western_year=test_western_year):
-                test_date = datetime(year=test_western_year, month=6, day=1, tzinfo=ZoneInfo("UTC"))
-                test_year_attributes = calendar.year_attributes(test_date, TEST_LOCATION_GREENWICH)
+                test_date = datetime(
+                    year=test_western_year, month=6, day=1, tzinfo=ZoneInfo("UTC")
+                )
+                test_year_attributes = calendar.year_attributes(
+                    test_date, TEST_LOCATION_GREENWICH
+                )
                 with open(f"tests/data/Henning/pl_{test_western_year}.txt") as file:
                     file.readline()
                     match = re.match(RE_HENNING_YEAR, file.readline())
                     self.assertEqual(
-                        test_year_attributes.element, Element(ELEMENT_NAMES_MAP[match.group(1)])
+                        test_year_attributes.element,
+                        Element(ELEMENT_NAMES_MAP[match.group(1)]),
                     )
                     self.assertEqual(
-                        test_year_attributes.animal, Animal(ANIMAL_NAMES_MAP[match.group(2)])
+                        test_year_attributes.animal,
+                        Animal(ANIMAL_NAMES_MAP[match.group(2)]),
                     )
+
 
 class TestPhugpaCalendarCornerCases(unittest.TestCase):
     def test_year_element_animal_on_day_before_losar(self):
-        test_date_time = datetime(year=2025, month=2, day=27, hour=12, minute=0, second=0, tzinfo=ZoneInfo("Europe/London"))
-        test_year_attributes = calendar.year_attributes(test_date_time, TEST_LOCATION_GREENWICH)
-        self.assertEqual( test_year_attributes.element, Element.WOOD)
-        self.assertEqual( test_year_attributes.animal, Animal.DRAGON)
-    
+        test_date_time = datetime(
+            year=2025,
+            month=2,
+            day=27,
+            hour=12,
+            minute=0,
+            second=0,
+            tzinfo=ZoneInfo("Europe/London"),
+        )
+        test_year_attributes = calendar.year_attributes(
+            test_date_time, TEST_LOCATION_GREENWICH
+        )
+        self.assertEqual(test_year_attributes.element, Element.WOOD)
+        self.assertEqual(test_year_attributes.animal, Animal.DRAGON)
+
     def test_year_element_animal_one_minute_before_losar(self):
-        test_date_time = datetime(year=2025, month=2, day=28, hour=6, minute=12, second=23, tzinfo=ZoneInfo("Europe/London"))
-        test_year_attributes = calendar.year_attributes(test_date_time, TEST_LOCATION_GREENWICH)
-        self.assertEqual( test_year_attributes.element, Element.WOOD)
-        self.assertEqual( test_year_attributes.animal, Animal.DRAGON)
+        test_date_time = datetime(
+            year=2025,
+            month=2,
+            day=28,
+            hour=6,
+            minute=12,
+            second=23,
+            tzinfo=ZoneInfo("Europe/London"),
+        )
+        test_year_attributes = calendar.year_attributes(
+            test_date_time, TEST_LOCATION_GREENWICH
+        )
+        self.assertEqual(test_year_attributes.element, Element.WOOD)
+        self.assertEqual(test_year_attributes.animal, Animal.DRAGON)
