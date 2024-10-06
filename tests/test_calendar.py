@@ -49,7 +49,7 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
             "Dog": "Dog",
             "Pig": "Boar",
         }
-        for test_western_year in range(1800, 2601):
+        for test_western_year in range(1800, 2600):
             with self.subTest(western_year=test_western_year):
                 test_date = datetime(
                     year=test_western_year, month=6, day=1, tzinfo=ZoneInfo("UTC")

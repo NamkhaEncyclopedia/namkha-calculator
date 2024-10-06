@@ -18,7 +18,7 @@ class Location(NamedTuple):
 sf_load = Loader(str(os.path.dirname(os.path.abspath(__file__))), verbose=False)
 
 SF_TIMESCALE = sf_load.timescale()
-SF_EPHEMERIS = sf_load("de440.bsp")
+SF_EPHEMERIS = sf_load("de440_filtered.bsp")
 
 
 def jd_to_datetime(jd: float) -> dt.datetime:
@@ -28,6 +28,10 @@ def jd_to_datetime(jd: float) -> dt.datetime:
 def civil_twilight_boundaries(
     date_: dt.date, location: Location
 ) -> tuple[dt.datetime, dt.datetime]:
+    """
+    Returns the start and end times of civil twilight
+    for the given date and location in UTC.
+    """
     topos = wgs84.latlon(location.latitude, location.longitude)
     search_func = almanac.dark_twilight_day(SF_EPHEMERIS, topos)
     midnight = dt.datetime.combine(date_, dt.time(0, 0, 0)).astimezone(dt.timezone.utc)
