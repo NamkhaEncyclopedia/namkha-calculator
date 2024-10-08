@@ -7,9 +7,12 @@ from zoneinfo import ZoneInfo
 from namkha_calculator import calendar
 from namkha_calculator.astrology import Animal, Element
 
-TEST_LOCATION_GREENWICH = calendar.Location(
-    51.477811, -0.001475
-)  # Greenwich observatory
+TEST_LOCATIONS = {
+    "Bamako": (calendar.Location(12.65225, -7.98170), "Etc/GMT+0"),
+    "Namgyalgar": (calendar.Location(-26.91445, 152.89483), "Australia/Brisbane"),
+    "Merigar West": (calendar.Location(42.84905, 11.54506), "Europe/Rome"),
+    "Tsegyalgar West": (calendar.Location(23.49032, -109.78180), "America/Mazatlan"),
+}
 
 
 class TestPhugpaCalendarBasic(unittest.TestCase):
@@ -20,10 +23,12 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
             element=Element.WOOD,
             mewa_number=0,
         )
-        test_date = datetime(year=2024, month=6, day=1, tzinfo=ZoneInfo("UTC"))
+        test_date = datetime(
+            year=2024, month=6, day=1, tzinfo=ZoneInfo(TEST_LOCATIONS["Bamako"][1])
+        )
 
         self.assertEqual(
-            test_year, calendar.year_attributes(test_date, TEST_LOCATION_GREENWICH)
+            test_year, calendar.year_attributes(test_date, TEST_LOCATIONS["Bamako"][0])
         )
 
     def test_year_element_animal_against_henning(self):
@@ -52,10 +57,13 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
         for test_western_year in range(1800, 2600):
             with self.subTest(western_year=test_western_year):
                 test_date = datetime(
-                    year=test_western_year, month=6, day=1, tzinfo=ZoneInfo("UTC")
+                    year=test_western_year,
+                    month=6,
+                    day=1,
+                    tzinfo=ZoneInfo(TEST_LOCATIONS["Bamako"][1]),
                 )
                 test_year_attributes = calendar.year_attributes(
-                    test_date, TEST_LOCATION_GREENWICH
+                    test_date, TEST_LOCATIONS["Bamako"][0]
                 )
                 with open(f"tests/data/Henning/pl_{test_western_year}.txt") as file:
                     file.readline()
@@ -79,10 +87,10 @@ class TestPhugpaCalendarCornerCases(unittest.TestCase):
             hour=12,
             minute=0,
             second=0,
-            tzinfo=ZoneInfo("Europe/London"),
+            tzinfo=ZoneInfo(TEST_LOCATIONS["Bamako"][1]),
         )
         test_year_attributes = calendar.year_attributes(
-            test_date_time, TEST_LOCATION_GREENWICH
+            test_date_time, TEST_LOCATIONS["Bamako"][0]
         )
         self.assertEqual(test_year_attributes.element, Element.WOOD)
         self.assertEqual(test_year_attributes.animal, Animal.DRAGON)
@@ -95,10 +103,10 @@ class TestPhugpaCalendarCornerCases(unittest.TestCase):
             hour=6,
             minute=12,
             second=23,
-            tzinfo=ZoneInfo("Europe/London"),
+            tzinfo=ZoneInfo(TEST_LOCATIONS["Bamako"][1]),
         )
         test_year_attributes = calendar.year_attributes(
-            test_date_time, TEST_LOCATION_GREENWICH
+            test_date_time, TEST_LOCATIONS["Bamako"][0]
         )
         self.assertEqual(test_year_attributes.element, Element.WOOD)
         self.assertEqual(test_year_attributes.animal, Animal.DRAGON)
