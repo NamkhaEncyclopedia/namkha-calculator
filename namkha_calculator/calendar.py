@@ -171,6 +171,10 @@ def official_losar(year_number: int, location: Location) -> dt.datetime:
     return civil_twilight_boundaries(loasar_date, location)[0]
 
 
+def year_mewa(western_year: int) -> int:
+    return 9 - (western_year - 1865) % 9
+
+
 def year_attributes(
     date_time: dt.datetime, location: Location
 ) -> TibetanYearAttributes:
@@ -183,5 +187,5 @@ def year_attributes(
         tibetan_year_number=tibetan_year_number,
         animal=Animal(animal),
         element=Element(element),
-        mewa_number=0,
+        mewa_number=year_mewa(date_time.year),
     )
