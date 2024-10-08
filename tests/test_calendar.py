@@ -28,9 +28,6 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
         )
         result_year = calendar.year_attributes(test_date, TEST_LOCATIONS["Bamako"][0])
 
-        # self.assertEqual(
-        #     test_year, calendar.year_attributes(test_date, TEST_LOCATIONS["Bamako"][0])
-        # )
         self.assertEqual(test_year.tibetan_year_number, result_year.tibetan_year_number)
         self.assertEqual(test_year.animal, result_year.animal)
         self.assertEqual(test_year.element, result_year.element)
