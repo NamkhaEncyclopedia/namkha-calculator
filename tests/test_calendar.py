@@ -1,17 +1,18 @@
 import re
 import unittest
-from datetime import datetime
+from datetime import datetime, timedelta
 
-from zoneinfo import ZoneInfo
+import pytz
 
 from namkha_calculator import calendar
 from namkha_calculator.astrology import Animal, Element
 
-TEST_LOCATIONS = {
-    "Bamako": (calendar.Location(12.65225, -7.98170), "Etc/GMT+0"),
-    "Namgyalgar": (calendar.Location(-26.91445, 152.89483), "Australia/Brisbane"),
-    "Merigar West": (calendar.Location(42.84905, 11.54506), "Europe/Rome"),
-    "Tsegyalgar West": (calendar.Location(23.49032, -109.78180), "America/Mazatlan"),
+
+TEST_PLACES = {
+    "Bamako": calendar.Location(12.65225, -7.98170),  # UTC+0
+    "Namgyalgar": calendar.Location(-26.91445, 152.89483),
+    "Merigar West": calendar.Location(42.84905, 11.54506),
+    "Tsegyalgar West": calendar.Location(23.49032, -109.78180),
 }
 
 
@@ -23,10 +24,8 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
             element=Element.WOOD,
             mewa_number=0,
         )
-        test_date = datetime(
-            year=2024, month=6, day=1, tzinfo=ZoneInfo(TEST_LOCATIONS["Bamako"][1])
-        )
-        result_year = calendar.year_attributes(test_date, TEST_LOCATIONS["Bamako"][0])
+        test_date = datetime(year=2024, month=6, day=1, tzinfo=pytz.timezone("UTC"))
+        result_year = calendar.year_attributes(test_date, TEST_PLACES["Bamako"])
 
         self.assertEqual(test_year.tibetan_year_number, result_year.tibetan_year_number)
         self.assertEqual(test_year.animal, result_year.animal)
@@ -61,10 +60,10 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
                     year=test_western_year,
                     month=6,
                     day=1,
-                    tzinfo=ZoneInfo(TEST_LOCATIONS["Bamako"][1]),
+                    tzinfo=pytz.timezone("UTC"),
                 )
                 test_year_attributes = calendar.year_attributes(
-                    test_date, TEST_LOCATIONS["Bamako"][0]
+                    test_date, TEST_PLACES["Bamako"]
                 )
                 with open(f"tests/data/Henning/pl_{test_western_year}.txt") as file:
                     file.readline()
@@ -80,34 +79,35 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
 
 
 class TestPhugpaCalendarCornerCases(unittest.TestCase):
-    def test_year_element_animal_on_day_before_losar(self):
-        test_date_time = datetime(
-            year=2025,
-            month=2,
-            day=27,
-            hour=12,
-            minute=0,
-            second=0,
-            tzinfo=ZoneInfo(TEST_LOCATIONS["Bamako"][1]),
-        )
-        test_year_attributes = calendar.year_attributes(
-            test_date_time, TEST_LOCATIONS["Bamako"][0]
-        )
-        self.assertEqual(test_year_attributes.element, Element.WOOD)
-        self.assertEqual(test_year_attributes.animal, Animal.DRAGON)
+    TEST_TWILIGHTS = {
+        "Bamako": pytz.timezone("Etc/GMT+0").localize(datetime(2024, 2, 10, 6, 34, 3)),
+        "Namgyalgar": pytz.timezone("Australia/Brisbane").localize(
+            datetime(2024, 2, 10, 5, 3, 58)
+        ),
+        "Merigar West": pytz.timezone("Europe/Rome").localize(
+            datetime(2024, 2, 10, 6, 49, 17)
+        ),
+        "Tsegyalgar West": pytz.timezone("America/Mazatlan").localize(
+            datetime(2024, 2, 10, 6, 31, 55)
+        ),
+    }
 
     def test_year_element_animal_one_minute_before_losar(self):
-        test_date_time = datetime(
-            year=2025,
-            month=2,
-            day=28,
-            hour=6,
-            minute=12,
-            second=23,
-            tzinfo=ZoneInfo(TEST_LOCATIONS["Bamako"][1]),
-        )
-        test_year_attributes = calendar.year_attributes(
-            test_date_time, TEST_LOCATIONS["Bamako"][0]
-        )
-        self.assertEqual(test_year_attributes.element, Element.WOOD)
-        self.assertEqual(test_year_attributes.animal, Animal.DRAGON)
+        for place_name, place_location in TEST_PLACES.items():
+            with self.subTest(place_name=place_name):
+                test_date_time = self.TEST_TWILIGHTS[place_name] - timedelta(minutes=1)
+                year_attributes = calendar.year_attributes(
+                    test_date_time, place_location
+                )
+                self.assertEqual(year_attributes.element, Element.WATER)
+                self.assertEqual(year_attributes.animal, Animal.HARE)
+
+    def test_year_element_animal_one_minute_after_losar(self):
+        for place_name, place_location in TEST_PLACES.items():
+            with self.subTest(place_name=place_name):
+                test_date_time = self.TEST_TWILIGHTS[place_name] + timedelta(minutes=1)
+                year_attributes = calendar.year_attributes(
+                    test_date_time, place_location
+                )
+        self.assertEqual(year_attributes.element, Element.WOOD)
+        self.assertEqual(year_attributes.animal, Animal.DRAGON)

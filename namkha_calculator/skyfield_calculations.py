@@ -26,21 +26,25 @@ def jd_to_datetime(jd: float) -> dt.datetime:
 
 
 def civil_twilight_boundaries(
-    date_: dt.date, location: Location
-) -> tuple[dt.datetime, dt.datetime]:
+    date: dt.date, pytz_timezone, location: Location
+) -> list[dt.datetime, dt.datetime]:
     """
     Returns the start and end times of civil twilight
     for the given date and location in UTC.
     """
     topos = wgs84.latlon(location.latitude, location.longitude)
     search_func = almanac.dark_twilight_day(SF_EPHEMERIS, topos)
-    midnight = dt.datetime.combine(date_, dt.time(0, 0, 0)).astimezone(dt.timezone.utc)
-    noon = midnight + dt.timedelta(days=1)
+
+    naive_midnight = dt.datetime.combine(date, dt.time(0, 0, 0))
+    midnight = pytz_timezone.localize(naive_midnight)
+
+    next_midnight = midnight + dt.timedelta(days=1)
     events = almanac.find_discrete(
         SF_TIMESCALE.from_datetime(midnight),
-        SF_TIMESCALE.from_datetime(noon),
+        SF_TIMESCALE.from_datetime(next_midnight),
         search_func,
     )
+
     boundaries = []
     boundary_code = 3
     for time, code in zip(*events):
@@ -48,4 +52,4 @@ def civil_twilight_boundaries(
             boundaries.append(time.utc_datetime())
             boundary_code = 2
     assert len(boundaries) == 2
-    return tuple(boundaries)
+    return boundaries

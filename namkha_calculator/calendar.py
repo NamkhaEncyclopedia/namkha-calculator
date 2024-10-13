@@ -154,11 +154,11 @@ def tibetan_to_julian(
     return math.floor(true_date(tibetan_day, n))
 
 
-def official_losar(year_number: int, location: Location) -> dt.datetime:
+def official_losar(year_number: int, pytz_tzinfo, location: Location) -> dt.datetime:
     """
     Calculates the Western datetime for official Losar (Tibetan New Year)
     which starts on the first day of the month of Dragon
-    for a given Tibetan year number (e.g. 2137) at a given location.
+    for a given Tibetan year number (e.g. 2137) at a given location and timezone.
     Considers the start of civil twilight at the location to be the start of the day.
     """
     jd = 1 + tibetan_to_julian(
@@ -168,7 +168,7 @@ def official_losar(year_number: int, location: Location) -> dt.datetime:
         tibetan_day=30,
     )
     loasar_date = jd_to_datetime(jd).date()
-    return civil_twilight_boundaries(loasar_date, location)[0]
+    return civil_twilight_boundaries(loasar_date, pytz_tzinfo, location)[0]
 
 
 def year_mewa(western_year: int) -> int:
@@ -179,10 +179,13 @@ def year_attributes(
     date_time: dt.datetime, location: Location
 ) -> TibetanYearAttributes:
     tibetan_year_number = date_time.year + 127
-    if official_losar(tibetan_year_number, location) > date_time:
+    losar = official_losar(tibetan_year_number, date_time.tzinfo, location)
+
+    if losar > date_time:
         tibetan_year_number -= 1
     animal = ANIMAL_TABLE[(tibetan_year_number + 1) % 12]
     element = ELEMENT_TABLE[int(((tibetan_year_number - 1) / 2) % 5)]
+
     return TibetanYearAttributes(
         tibetan_year_number=tibetan_year_number,
         animal=Animal(animal),
