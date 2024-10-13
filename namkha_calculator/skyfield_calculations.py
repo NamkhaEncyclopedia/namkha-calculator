@@ -4,15 +4,11 @@ Calculations of twilights and julian dates for 'calendar' module using Skyfield
 
 import datetime as dt
 import os
-from typing import NamedTuple
 
 from skyfield import almanac
 from skyfield.api import Loader, wgs84
 
-
-class Location(NamedTuple):
-    latitude: float
-    longitude: float
+from .astronomy import Location
 
 
 sf_load = Loader(str(os.path.dirname(os.path.abspath(__file__))), verbose=False)

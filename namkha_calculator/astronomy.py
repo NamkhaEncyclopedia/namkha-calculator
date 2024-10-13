@@ -1,7 +1,6 @@
-from dataclasses import dataclass
+from typing import NamedTuple
 
 
-@dataclass
-class Location:
+class Location(NamedTuple):
     latitude: float
     longitude: float

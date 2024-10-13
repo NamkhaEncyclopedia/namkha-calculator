@@ -5,7 +5,9 @@ import math
 from dataclasses import dataclass
 
 from .astrology import Animal, Element
-from .skyfield_calculations import Location, civil_twilight_boundaries, jd_to_datetime
+from .astronomy import Location
+from .skyfield_calculations import civil_twilight_boundaries, jd_to_datetime
+
 
 # calendrical constants: month calculations
 S1 = 65 / 804
