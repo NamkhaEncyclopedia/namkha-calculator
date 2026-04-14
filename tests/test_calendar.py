@@ -4,15 +4,16 @@ from datetime import datetime, timedelta
 
 import pytz
 
+from namkha_calculator.astronomy import Location
 from namkha_calculator import calendar
 from namkha_calculator.astrology import Animal, Element
 
 
 TEST_PLACES = {
-    "Bamako": calendar.Location(12.65225, -7.98170),  # UTC+0
-    "Namgyalgar": calendar.Location(-26.91445, 152.89483),
-    "Merigar West": calendar.Location(42.84905, 11.54506),
-    "Tsegyalgar West": calendar.Location(23.49032, -109.78180),
+    "Bamako": Location(12.65225, -7.98170),  # UTC+0
+    "Namgyalgar": Location(-26.91445, 152.89483),
+    "Merigar West": Location(42.84905, 11.54506),
+    "Tsegyalgar West": Location(23.49032, -109.78180),
 }
 
 
@@ -111,3 +112,4 @@ class TestPhugpaCalendarCornerCases(unittest.TestCase):
                 )
         self.assertEqual(year_attributes.element, Element.WOOD)
         self.assertEqual(year_attributes.animal, Animal.DRAGON)
+
