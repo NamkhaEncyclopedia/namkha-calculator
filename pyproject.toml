@@ -11,6 +11,8 @@ python = "^3.12"
 skyfield = "^1.49"
 pytz = "^2025.2"
 
+[tool.poetry.scripts]
+mypkg = "mypkg.cli:main"
 
 [build-system]
 requires = ["poetry-core"]

@@ -4,9 +4,9 @@ from datetime import datetime, timedelta
 
 import pytz
 
-from namkha_calculator.astronomy import Location
-from namkha_calculator import calendar
-from namkha_calculator.astrology import Animal, Element
+from namkha_calculator.core.astronomy import Location
+from namkha_calculator.core import calendar
+from namkha_calculator.core.astrology import Animal, Element
 
 
 TEST_PLACES = {

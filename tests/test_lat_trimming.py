@@ -8,8 +8,8 @@ import datetime as dt
 
 import pytz
 
-from namkha_calculator import astronomy
-from namkha_calculator.skyfield_calculations import civil_twilight_boundaries
+from namkha_calculator.core import astronomy
+from namkha_calculator.core.skyfield_calculations import civil_twilight_boundaries
 
 TEST_PLACES = {
     "Svalbard": astronomy.Location(78.22, 15.65),
