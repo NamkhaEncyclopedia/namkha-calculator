@@ -4,30 +4,30 @@ Main Calculation Module
 
 from dataclasses import dataclass
 from datetime import datetime
-from enum import Enum, unique
+from enum import Enum, unique, auto
 
 from .harmonizer import Aspect, AspectName
 from .astronomy import Location
-
+from .calculation_notes import CalculationNoteItem
 
 @unique
 class CalculationMethod(Enum):
-    RINPOCHE = "Rinpoche"
-    CLASSIC = "Classic"
+    RINPOCHE = auto()
+    CLASSIC = auto()
 
 
 @unique
 class NamkhaType(Enum):
-    YEAR = "Year"
-    MONTH = "Month"
-    DAY = "Day"
-    HOUR = "Hour"
+    YEAR = auto()
+    MONTH = auto()
+    DAY = auto()
+    HOUR = auto()
 
 
 @unique
 class Gender(Enum):
-    MALE = "Male"
-    FEMALE = "Female"
+    MALE = auto()
+    FEMALE = auto()
 
 
 @dataclass
@@ -45,6 +45,7 @@ class NamkhaCalculationResult:
     namkha_type: NamkhaType
     harmonized_aspects: tuple[Aspect, ...]
     mewa_numbers: dict[AspectName, int]
+    calculation_notes: tuple[CalculationNoteItem, ...]
 
 
 def calculate_namkha(
