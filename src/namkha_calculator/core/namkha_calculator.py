@@ -51,4 +51,26 @@ class NamkhaCalculationResult:
 def calculate_namkha(
     namkha_type: NamkhaType, subject: Subject
 ) -> NamkhaCalculationResult:
-    ...
+    dispatch = {
+        NamkhaType.YEAR: _calc_year,
+        NamkhaType.MONTH: _calc_month,
+        NamkhaType.DAY: _calc_day,
+        NamkhaType.HOUR: _calc_hour,
+    }
+    return dispatch[namkha_type](subject)
+
+
+def _calc_year(subject: Subject) -> NamkhaCalculationResult:
+    raise NotImplementedError
+
+
+def _calc_month(subject: Subject) -> NamkhaCalculationResult:
+    raise NotImplementedError
+
+
+def _calc_day(subject: Subject) -> NamkhaCalculationResult:
+    raise NotImplementedError
+
+
+def _calc_hour(subject: Subject) -> NamkhaCalculationResult:
+    raise NotImplementedError
