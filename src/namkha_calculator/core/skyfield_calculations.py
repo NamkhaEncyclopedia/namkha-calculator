@@ -8,7 +8,6 @@ from typing import TYPE_CHECKING
 
 from skyfield import almanac
 from skyfield.api import Loader, wgs84
-from skyfield.earthlib import refraction
 
 if TYPE_CHECKING:
     from .astrology import Location
@@ -52,76 +51,3 @@ def civil_twilight_boundaries(
             boundary_code = 2
     assert len(boundaries) == 2
     return boundaries
-
-
-def solar_midnight_noon(
-    date: dt.date, pytz_timezone, location: "Location"
-) -> dt.datetime:
-    topos = wgs84.latlon(location.latitude, location.longitude)
-    search_func = almanac.meridian_transits(SF_EPHEMERIS, SF_EPHEMERIS["Sun"], topos)
-
-    naive_midnight = dt.datetime.combine(date, dt.time(0, 0, 0))
-    midnight = pytz_timezone.localize(naive_midnight)
-    next_midnight = midnight + dt.timedelta(days=1)
-
-    times, codes = almanac.find_discrete(
-        SF_TIMESCALE.from_datetime(midnight),
-        SF_TIMESCALE.from_datetime(next_midnight),
-        search_func,
-    )
-
-    times = times[codes == 1]
-    assert len(times) == 1
-    solar_noon = times[0].astimezone(pytz_timezone)
-
-    times, codes = almanac.find_discrete(
-        SF_TIMESCALE.from_datetime(solar_noon - dt.timedelta(days=1)),
-        SF_TIMESCALE.from_datetime(solar_noon),
-        search_func,
-    )
-
-    times = times[codes == 0]
-    assert len(times) == 1
-    solar_midnight = times[0].astimezone(pytz_timezone)
-
-    return solar_midnight, solar_noon
-
-
-def sun_declination(date_time: dt.datetime) -> float:
-    earth, sun = SF_EPHEMERIS["earth"], SF_EPHEMERIS["Sun"]
-    time = SF_TIMESCALE.from_datetime(date_time)
-    return earth.at(time).observe(sun).apparent().radec("date")[1]
-
-
-def _highest_lat(
-    measuring_date_time: dt.date, pytz_timezone, location: "Location", sun_alt: float
-) -> float:
-    current_lat = location.latitude
-    sun_dec = sun_declination(measuring_date_time).degrees
-
-    match (current_lat, sun_dec):
-        case (current_lat, sun_dec) if current_lat > 0 and sun_dec > 0:
-            return 90.0 - sun_dec + sun_alt
-        case (current_lat, sun_dec) if current_lat > 0 and sun_dec <= 0:
-            return 90.0 + sun_dec + sun_alt
-        case (current_lat, sun_dec) if current_lat < 0 and sun_dec > 0:
-            return -90.0 + sun_dec - sun_alt
-        case (current_lat, sun_dec) if current_lat < 0 and sun_dec <= 0:
-            return -90.0 - sun_dec - sun_alt
-        case _:
-            raise ValueError("Latitude value cannot be zero.")
-
-
-def highest_lat_night(date_: dt.date, pytz_timezone, location: "Location") -> float:
-    solar_midnight, _ = solar_midnight_noon(date_, pytz_timezone, location)
-    return _highest_lat(solar_midnight, pytz_timezone, location, -18.0)
-
-
-def highest_lat_day(date_: dt.date, pytz_timezone, location: "Location") -> float:
-    _, solar_noon = solar_midnight_noon(date_, pytz_timezone, location)
-    return _highest_lat(
-        solar_noon,
-        pytz_timezone,
-        location,
-        float(refraction(0.0, temperature_C=15.0, pressure_mbar=1030.0)),
-    )
