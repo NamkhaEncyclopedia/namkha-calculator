@@ -2,6 +2,7 @@
 Module for the final stage of Namkha calculation: harmonization of aspects
 """
 
+from typing import Optional
 from dataclasses import dataclass
 from enum import unique, Enum
 
@@ -25,7 +26,7 @@ class Aspect:
     name: AspectName
     center: Element
     harmonization_seq: tuple[Element, ...]
-    is_conflicted: bool
+    is_conflicted: Optional[bool] = None  # For every aspect except Life
 
 
 @dataclass

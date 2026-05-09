@@ -17,3 +17,7 @@ mypkg = "mypkg.cli:main"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "hypothesis (>=6.152.4,<7.0.0)"
+]
