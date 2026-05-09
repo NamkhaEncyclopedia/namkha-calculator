@@ -126,6 +126,19 @@ def true_date(day: int, month_count: int) -> float:
         - sun_equation(day, month_count) / 60
     )
 
+def from_month_count(month_count: int) -> tuple[int, int, bool]:
+    """
+    Figures out the Tibetan year number, month number within the year, and whether
+    this is a leap month, from a "month count" number.  See Svante Janson,
+    "Tibetan Calendar Mathematics", p.8 ff.
+    Returns: (year, month, is_leap_month)
+    """
+    x = math.ceil(12 * S1 * month_count + ALPHA)
+    month_number = (x - 1) % 12 + 1
+    year_number = (x - month_number) / 12 + Y0 + 127
+    is_leap_month = bool(math.ceil(12 * S1 * (month_count + 1) + ALPHA) == x)
+    return (year_number, month_number, is_leap_month)
+
 
 def to_month_count(year_number: int, month_number: int, is_leap_month: bool) -> int:
     """
@@ -172,6 +185,28 @@ def official_losar(year_number: int, pytz_tzinfo, location: Location) -> dt.date
     loasar_date = jd_to_datetime(jd).date()
     return civil_twilight_boundaries(loasar_date, pytz_tzinfo, location)[0]
 
+def has_leap_month(year_number: int, month_number: int) -> bool:
+    n = to_month_count(year_number, month_number, is_leap_month=True)
+    y, m, is_leap = from_month_count(n)
+    return y == year_number and m == month_number and is_leap
+
+
+def astrological_losar(year_number: int, pytz_tzinfo, location: Location) -> dt.datetime:
+    prev_year = year_number - 1
+    is_leap = has_leap_month(prev_year, 11)
+    month_count = to_month_count(prev_year, 11, is_leap)
+    jd_last_prev = math.floor(true_date(30, month_count - 1))
+    jd1 = math.floor(true_date(1, month_count))
+
+    if jd1 == jd_last_prev:
+        jd = math.floor(true_date(2, month_count))
+    elif jd1 - jd_last_prev == 2:
+        jd = jd1 - 1
+    else:
+        jd = jd1
+
+    losar_date = jd_to_datetime(jd).date()
+    return civil_twilight_boundaries(losar_date, pytz_tzinfo, location)[0]
 
 def year_mewa(western_year: int) -> int:
     return 9 - (western_year - 1865) % 9

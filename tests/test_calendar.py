@@ -32,6 +32,34 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
         self.assertEqual(test_year.animal, result_year.animal)
         self.assertEqual(test_year.element, result_year.element)
 
+    def test_astrological_losar_against_henning(self):
+        tz = pytz.timezone("Etc/GMT+0")
+        location = TEST_PLACES["Bamako"]
+
+        for western_year in range(1800, 2599):
+            with self.subTest(western_year=western_year):
+                tibetan_year = western_year + 127
+
+                with open(f"tests/data/Henning/pl_{western_year}.txt") as f:
+                    content = f.read()
+
+                m11 = re.search(r"Tibetan Lunar Month: 11\b", content)
+                after = content[m11.end() :]
+                next_month = re.search(r"Tibetan Lunar Month:", after)
+                month11_section = after[: next_month.start()] if next_month else after
+                if re.search(r"^1\. Omitted:", month11_section, re.MULTILINE):
+                    day_match = re.search(
+                        r"^2: .+; (\d+ \w+ \d{4})", month11_section, re.MULTILINE
+                    )
+                else:
+                    day_match = re.search(
+                        r"^1: .+; (\d+ \w+ \d{4})", month11_section, re.MULTILINE
+                    )
+                henning_date = datetime.strptime(day_match.group(1), "%d %b %Y").date()
+
+                result = calendar.astrological_losar(tibetan_year + 1, tz, location)
+                self.assertEqual(result.date(), henning_date)
+
     def test_year_element_animal_against_henning(self):
         RE_HENNING_YEAR = r"New Year: \d*, ([A-Z][a-z]*)-[a-z]*-([A-Z][a-z]*)"
         ELEMENT_NAMES_MAP = {
