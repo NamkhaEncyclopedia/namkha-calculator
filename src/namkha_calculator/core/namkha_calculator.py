@@ -12,7 +12,7 @@ from .calculation_notes import CalculationNoteItem
 
 @unique
 class CalculationMethod(Enum):
-    RINPOCHE = auto()
+    CNNR = auto()
     CLASSIC = auto()
 
 
