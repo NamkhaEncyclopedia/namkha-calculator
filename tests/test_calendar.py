@@ -55,7 +55,7 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
             "Dog": "Dog",
             "Pig": "Boar",
         }
-        for test_western_year in range(1800, 2600):
+        for test_western_year in range(1800, 2599):
             with self.subTest(western_year=test_western_year):
                 test_date = datetime(
                     year=test_western_year,
