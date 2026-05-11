@@ -4,26 +4,26 @@ Module for the final stage of Namkha calculation: harmonization of aspects
 
 from typing import Optional
 from dataclasses import dataclass
-from enum import unique, Enum
+from enum import unique, Enum, auto
 
 from .astrology import Element
 
 
 @unique
-class AspectName(str, Enum):
-    LIFE = "life"
-    BODY = "body"
-    CAPACITY = "capacity"
-    FORTUNE = "fortune"
-    MEWA_LIFE = "mewa_life"
-    MEWA_BODY = "mewa_body"
-    MEWA_CAPACITY = "mewa_capacity"
-    MEWA_FORTUNE = "mewa_fortune"
+class Aspect(Enum):
+    LIFE = auto()
+    BODY = auto()
+    CAPACITY = auto()
+    FORTUNE = auto()
+    MEWA_LIFE = auto()
+    MEWA_BODY = auto()
+    MEWA_CAPACITY = auto()
+    MEWA_FORTUNE = auto()
 
 
 @dataclass
-class Aspect:
-    name: AspectName
+class HarmonizedAspect:
+    name: Aspect
     center: Element
     harmonization_seq: tuple[Element, ...]
     is_conflicted: Optional[bool] = None  # For every aspect except Life
@@ -96,7 +96,7 @@ def harmonize_aspects(
     mewa_body: Element,
     mewa_capacity: Element,
     mewa_fortune: Element,
-) -> tuple[Aspect, ...]:
+) -> tuple[HarmonizedAspect, ...]:
     """
     Calculates the harmonization sequence for each aspect based on the given elements.
     """
@@ -105,12 +105,14 @@ def harmonize_aspects(
 
     life_seq = _full_circle_forwards(start_element=life)
     result.append(
-        Aspect(name=AspectName.LIFE, center=life, harmonization_seq=tuple(life_seq[1:]))
+        HarmonizedAspect(
+            name=Aspect.LIFE, center=life, harmonization_seq=tuple(life_seq[1:])
+        )
     )
 
     for element, name, harmonize_to in zip(
         [body, capacity, fortune, mewa_life, mewa_body, mewa_capacity, mewa_fortune],
-        list(AspectName)[1:],
+        list(Aspect)[1:],
         [life] * 4 + [mewa_life] * 3,
     ):
         is_conflicted = False
@@ -136,7 +138,7 @@ def harmonize_aspects(
                 )
 
         result.append(
-            Aspect(
+            HarmonizedAspect(
                 name=name,
                 center=stripes.pop(0),
                 harmonization_seq=tuple(stripes),

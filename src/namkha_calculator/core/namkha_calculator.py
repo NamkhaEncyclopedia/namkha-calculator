@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from enum import Enum, unique, auto
 
-from .harmonizer import Aspect, AspectName
+from .harmonizer import HarmonizedAspect, AspectName
 from .astronomy import Location
 from .calculation_notes import CalculationNoteItem
 
@@ -43,7 +43,7 @@ class NamkhaCalculationResult:
     subject: Subject
     calculation_method: CalculationMethod
     namkha_type: NamkhaType
-    harmonized_aspects: tuple[Aspect, ...]
+    harmonized_aspects: tuple[HarmonizedAspect, ...]
     mewa_numbers: dict[AspectName, int]
     calculation_notes: tuple[CalculationNoteItem, ...]
 
