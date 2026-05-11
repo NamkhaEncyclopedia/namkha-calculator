@@ -24,20 +24,6 @@ class NamkhaType(Enum):
     HOUR = auto()
 
 
-@unique
-class Gender(Enum):
-    MALE = auto()
-    FEMALE = auto()
-
-
-@dataclass
-class Subject:
-    name: str
-    gender: Gender
-    birth_datetime: datetime
-    birth_location: Location
-
-
 @dataclass
 class NamkhaCalculationResult:
     subject: Subject

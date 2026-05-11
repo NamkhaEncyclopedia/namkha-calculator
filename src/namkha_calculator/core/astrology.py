@@ -1,4 +1,8 @@
-from enum import Enum, unique
+from dataclasses import dataclass
+from datetime import datetime
+from enum import Enum, auto, unique
+
+from .astronomy import Location
 
 
 @unique
@@ -25,3 +29,16 @@ class Animal(str, Enum):
     DOG = "Dog"
     BOAR = "Boar"
 
+
+@unique
+class Gender(Enum):
+    MALE = auto()
+    FEMALE = auto()
+
+
+@dataclass
+class Subject:
+    name: str
+    gender: Gender
+    birth_datetime: datetime
+    birth_location: Location
