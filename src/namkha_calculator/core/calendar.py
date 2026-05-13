@@ -208,6 +208,14 @@ def astrological_losar(year_number: int, pytz_tzinfo, location: Location) -> dt.
     losar_date = jd_to_datetime(jd).date()
     return civil_twilight_boundaries(losar_date, pytz_tzinfo, location)[0]
 
+def nearest_previous_year_with_animal(year_number: int, animal: Animal) -> int:
+    """Find nearest Tibetan year <= year_number that has the given Animal."""
+    target_idx = ANIMAL_TABLE.index(animal)
+    current_idx = (year_number + 1) % 12
+    offset = (current_idx - target_idx) % 12 or 12
+    return year_number - offset
+
+
 def year_mewa(western_year: int) -> int:
     return 9 - (western_year - 1865) % 9
 

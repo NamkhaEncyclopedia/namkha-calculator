@@ -3,6 +3,8 @@ import unittest
 from datetime import datetime, timedelta
 
 import pytz
+from hypothesis import given, settings
+from hypothesis import strategies as st
 
 from namkha_calculator.core.astronomy import Location
 from namkha_calculator.core import calendar
@@ -107,6 +109,31 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
                     )
 
 
+class TestNearestPreviousYearWithAnimal(unittest.TestCase):
+    ANIMAL_NAMES_MAP = {
+        "Mouse": "Mouse", "Ox": "Ox", "Tiger": "Tiger", "Rabbit": "Hare",
+        "Dragon": "Dragon", "Snake": "Snake", "Horse": "Horse", "Sheep": "Sheep",
+        "Monkey": "Monkey", "Bird": "Bird", "Dog": "Dog", "Pig": "Boar",
+    }
+    RE_HENNING_YEAR = r"New Year: \d+, [A-Z][a-z]*-[a-z]*-([A-Z][a-z]*)"
+
+    @given(
+        western_year=st.integers(min_value=1800, max_value=1979),
+        offset=st.integers(min_value=1, max_value=11),
+    )
+    @settings(max_examples=180)
+    def test_nearest_previous_year_with_animal_against_henning(self, western_year, offset):
+        with open(f"tests/data/Henning/pl_{western_year}.txt") as f:
+            f.readline()
+            match = re.match(self.RE_HENNING_YEAR, f.readline())
+        animal = Animal(self.ANIMAL_NAMES_MAP[match.group(1)])
+        tib_year = western_year + 127
+        self.assertEqual(
+            calendar.nearest_previous_year_with_animal(tib_year + offset, animal),
+            tib_year,
+        )
+
+
 class TestPhugpaCalendarCornerCases(unittest.TestCase):
     TEST_TWILIGHTS = {
         "Bamako": pytz.timezone("Etc/GMT+0").localize(datetime(2024, 2, 10, 6, 34, 3)),
@@ -140,4 +167,3 @@ class TestPhugpaCalendarCornerCases(unittest.TestCase):
                 )
         self.assertEqual(year_attributes.element, Element.WOOD)
         self.assertEqual(year_attributes.animal, Animal.DRAGON)
-
