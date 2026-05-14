@@ -35,6 +35,11 @@ SUN_TAB = (0, 6, 10, 11)
 ELEMENT_TABLE = list(Element)
 ANIMAL_TABLE = list(Animal)
 
+# Metreng (60-year) cycle constants
+TIB_WESTERN_OFFSET = 127       # Tibetan year = Western year + 127
+METRENG_CYCLE_LENGTH = 60
+FIRST_METRENG_START_WESTERN = 1984  # current Metreng begins Western 1984, spans 1984–2043
+
 
 @dataclass(kw_only=True)
 class _CalendarEntityAttributes:
@@ -135,9 +140,9 @@ def from_month_count(month_count: int) -> tuple[int, int, bool]:
     """
     x = math.ceil(12 * S1 * month_count + ALPHA)
     month_number = (x - 1) % 12 + 1
-    year_number = (x - month_number) / 12 + Y0 + 127
+    year_number = (x - month_number) // 12 + Y0 + TIB_WESTERN_OFFSET
     is_leap_month = bool(math.ceil(12 * S1 * (month_count + 1) + ALPHA) == x)
-    return (year_number, month_number, is_leap_month)
+    return year_number, month_number, is_leap_month
 
 
 def to_month_count(year_number: int, month_number: int, is_leap_month: bool) -> int:
@@ -145,10 +150,10 @@ def to_month_count(year_number: int, month_number: int, is_leap_month: bool) -> 
     This is the reverse of from_month_count(): from a Tibetan year, month number
     and leap month indicator, calculates the "month count" based on the epoch.
     """
-    year_number -= 127  # the formulas on Svante's paper use western year numbers
-    L = 1 if is_leap_month else 0
+    year_number -= TIB_WESTERN_OFFSET
+    l = 1 if is_leap_month else 0
     return math.floor(
-        (12 * (year_number - Y0) + month_number - ALPHA - (1 - 12 * S1) * L) / (12 * S1)
+        (12 * (year_number - Y0) + month_number - ALPHA - (1 - 12 * S1) * l) / (12 * S1)
     )
 
 
@@ -159,7 +164,7 @@ def tibetan_to_julian(
     Gives the Julian date for a Tibetan year, month number (leap or not) and
     Tibetan day.
 
-    Does not check that the tibetan day actually exists:
+    Does not check that the Tibetan day actually exists:
     - If given the date of a skipped day, will return the same Julian date as the
     day before.
     - If given the date of a duplicate day, returns the Julian date of the second
@@ -182,8 +187,8 @@ def official_losar(year_number: int, pytz_tzinfo, location: Location) -> dt.date
         is_leap_month=False,
         tibetan_day=30,
     )
-    loasar_date = jd_to_datetime(jd).date()
-    return civil_twilight_boundaries(loasar_date, pytz_tzinfo, location)[0]
+    losar_date = jd_to_datetime(jd).date()
+    return civil_twilight_boundaries(losar_date, pytz_tzinfo, location)[0]
 
 def has_leap_month(year_number: int, month_number: int) -> bool:
     n = to_month_count(year_number, month_number, is_leap_month=True)
@@ -208,6 +213,29 @@ def astrological_losar(year_number: int, pytz_tzinfo, location: Location) -> dt.
     losar_date = jd_to_datetime(jd).date()
     return civil_twilight_boundaries(losar_date, pytz_tzinfo, location)[0]
 
+def year_with_animal_and_element_in_metreng(
+    animal: Animal, element: Element, reference_year: int
+) -> int:
+    """
+    Find the Tibetan year in the same Metreng (60-year cycle, epoch western 1984)
+    as reference_year that has the given Animal and Element.
+    """
+    western_ref = reference_year - TIB_WESTERN_OFFSET
+    cycle_no = (western_ref - FIRST_METRENG_START_WESTERN) // METRENG_CYCLE_LENGTH
+    cycle_start_tib = FIRST_METRENG_START_WESTERN + TIB_WESTERN_OFFSET + METRENG_CYCLE_LENGTH * cycle_no
+
+    for offset in range(60):
+        year = cycle_start_tib + offset
+        if (
+            ANIMAL_TABLE[(year + 1) % 12] == animal
+            and ELEMENT_TABLE[((year - 1) // 2) % 5] == element
+        ):
+            return year
+
+    # unreachable: LCM(animal=12, element_pair=10)=60, so each combo appears once per cycle
+    raise ValueError(f"No year with {animal}/{element} in Metreng cycle {cycle_no}")
+
+
 def nearest_previous_year_with_animal(year_number: int, animal: Animal) -> int:
     """Find nearest Tibetan year <= year_number that has the given Animal."""
     target_idx = ANIMAL_TABLE.index(animal)
@@ -223,7 +251,7 @@ def year_mewa(western_year: int) -> int:
 def year_attributes(
     date_time: dt.datetime, location: Location
 ) -> TibetanYearAttributes:
-    tibetan_year_number = date_time.year + 127
+    tibetan_year_number = date_time.year + TIB_WESTERN_OFFSET
     losar = official_losar(tibetan_year_number, date_time.tzinfo, location)
 
     if losar > date_time:

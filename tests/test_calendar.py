@@ -18,6 +18,26 @@ TEST_PLACES = {
     "Tsegyalgar West": Location(23.49032, -109.78180),
 }
 
+_RE_HENNING_YEAR = r"New Year: \d+, ([A-Z][a-z]*)-[a-z]*-([A-Z][a-z]*)"
+_ELEMENT_NAMES_MAP = {
+    "Iron": "Metal", "Water": "Water", "Wood": "Wood", "Fire": "Fire", "Earth": "Earth",
+}
+_ANIMAL_NAMES_MAP = {
+    "Mouse": "Mouse", "Ox": "Ox", "Tiger": "Tiger", "Rabbit": "Hare",
+    "Dragon": "Dragon", "Snake": "Snake", "Horse": "Horse", "Sheep": "Sheep",
+    "Monkey": "Monkey", "Bird": "Bird", "Dog": "Dog", "Pig": "Boar",
+}
+
+
+def _parse_henning_header(western_year: int) -> tuple[Element, Animal]:
+    with open(f"tests/data/Henning/pl_{western_year}.txt") as f:
+        f.readline()
+        match = re.match(_RE_HENNING_YEAR, f.readline())
+    return (
+        Element(_ELEMENT_NAMES_MAP[match.group(1)]),
+        Animal(_ANIMAL_NAMES_MAP[match.group(2)]),
+    )
+
 
 class TestPhugpaCalendarBasic(unittest.TestCase):
     def test_year_attributes(self):
@@ -63,28 +83,6 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
                 self.assertEqual(result.date(), henning_date)
 
     def test_year_element_animal_against_henning(self):
-        RE_HENNING_YEAR = r"New Year: \d*, ([A-Z][a-z]*)-[a-z]*-([A-Z][a-z]*)"
-        ELEMENT_NAMES_MAP = {
-            "Iron": "Metal",
-            "Water": "Water",
-            "Wood": "Wood",
-            "Fire": "Fire",
-            "Earth": "Earth",
-        }
-        ANIMAL_NAMES_MAP = {
-            "Mouse": "Mouse",
-            "Ox": "Ox",
-            "Tiger": "Tiger",
-            "Rabbit": "Hare",
-            "Dragon": "Dragon",
-            "Snake": "Snake",
-            "Horse": "Horse",
-            "Sheep": "Sheep",
-            "Monkey": "Monkey",
-            "Bird": "Bird",
-            "Dog": "Dog",
-            "Pig": "Boar",
-        }
         for test_western_year in range(1800, 2599):
             with self.subTest(western_year=test_western_year):
                 test_date = datetime(
@@ -96,42 +94,76 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
                 test_year_attributes = calendar.year_attributes(
                     test_date, TEST_PLACES["Bamako"]
                 )
-                with open(f"tests/data/Henning/pl_{test_western_year}.txt") as file:
-                    file.readline()
-                    match = re.match(RE_HENNING_YEAR, file.readline())
-                    self.assertEqual(
-                        test_year_attributes.element,
-                        Element(ELEMENT_NAMES_MAP[match.group(1)]),
-                    )
-                    self.assertEqual(
-                        test_year_attributes.animal,
-                        Animal(ANIMAL_NAMES_MAP[match.group(2)]),
-                    )
+                element, animal = _parse_henning_header(test_western_year)
+                self.assertEqual(test_year_attributes.element, element)
+                self.assertEqual(test_year_attributes.animal, animal)
 
 
 class TestNearestPreviousYearWithAnimal(unittest.TestCase):
-    ANIMAL_NAMES_MAP = {
-        "Mouse": "Mouse", "Ox": "Ox", "Tiger": "Tiger", "Rabbit": "Hare",
-        "Dragon": "Dragon", "Snake": "Snake", "Horse": "Horse", "Sheep": "Sheep",
-        "Monkey": "Monkey", "Bird": "Bird", "Dog": "Dog", "Pig": "Boar",
-    }
-    RE_HENNING_YEAR = r"New Year: \d+, [A-Z][a-z]*-[a-z]*-([A-Z][a-z]*)"
-
     @given(
         western_year=st.integers(min_value=1800, max_value=1979),
         offset=st.integers(min_value=1, max_value=11),
     )
     @settings(max_examples=180)
-    def test_nearest_previous_year_with_animal_against_henning(self, western_year, offset):
-        with open(f"tests/data/Henning/pl_{western_year}.txt") as f:
-            f.readline()
-            match = re.match(self.RE_HENNING_YEAR, f.readline())
-        animal = Animal(self.ANIMAL_NAMES_MAP[match.group(1)])
+    def test_against_henning(self, western_year, offset):
+        _, animal = _parse_henning_header(western_year)
         tib_year = western_year + 127
         self.assertEqual(
             calendar.nearest_previous_year_with_animal(tib_year + offset, animal),
             tib_year,
         )
+
+
+@st.composite
+def _year_and_metreng_ref(draw):
+    western_year = draw(st.integers(min_value=1800, max_value=2598))
+    metreng_start = 1984 + 60 * ((western_year - 1984) // 60)
+    ref_western = draw(st.integers(min_value=metreng_start, max_value=metreng_start + 59))
+    return western_year, ref_western
+
+
+class TestYearWithAnimalAndElementInMetreng(unittest.TestCase):
+    @given(_year_and_metreng_ref())
+    @settings(max_examples=200)
+    def test_against_henning(self, args):
+        western_year, ref_western = args
+        element, animal = _parse_henning_header(western_year)
+        self.assertEqual(
+            calendar.year_with_animal_and_element_in_metreng(animal, element, ref_western + 127),
+            western_year + 127,
+        )
+
+
+class TestYearWithAnimalAndElementInMetrengEdgeCases(unittest.TestCase):
+    def _assert_year(self, animal, element, ref_tib, expected_tib):
+        self.assertEqual(
+            calendar.year_with_animal_and_element_in_metreng(animal, element, ref_tib),
+            expected_tib,
+        )
+
+    def test_ref_at_metreng_start_target_is_ref(self):
+        # 1984 = Wood-Mouse, start of current Metreng; ref == target
+        self._assert_year(Animal.MOUSE, Element.WOOD, 2111, 2111)
+
+    def test_ref_at_metreng_end_target_is_ref(self):
+        # 2043 = Water-Boar, end of current Metreng; ref == target
+        self._assert_year(Animal.BOAR, Element.WATER, 2170, 2170)
+
+    def test_ref_at_previous_metreng_start_target_is_ref(self):
+        # 1924 = Wood-Mouse, start of previous Metreng; must not return 2111
+        self._assert_year(Animal.MOUSE, Element.WOOD, 2051, 2051)
+
+    def test_ref_at_previous_metreng_end_target_is_ref(self):
+        # 1983 = Water-Boar, end of previous Metreng; must not return 2170
+        self._assert_year(Animal.BOAR, Element.WATER, 2110, 2110)
+
+    def test_ref_at_metreng_start_target_at_end(self):
+        # ref=1984, target=Water-Boar which falls at 2043 in the same Metreng
+        self._assert_year(Animal.BOAR, Element.WATER, 2111, 2170)
+
+    def test_ref_at_metreng_end_target_at_start(self):
+        # ref=2043, target=Wood-Mouse which falls at 1984 in the same Metreng
+        self._assert_year(Animal.MOUSE, Element.WOOD, 2170, 2111)
 
 
 class TestPhugpaCalendarCornerCases(unittest.TestCase):
