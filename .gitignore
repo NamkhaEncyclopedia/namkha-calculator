@@ -1,6 +1,7 @@
-# Ephemeris files
-*.bsp
 
+# Exclude all ephemeris files except those near `core/skyfield_calculations.py`
+*.bsp
+!src/namkha_calculator/core/*.bsp
 
 ##################
 # Auto-generated #
