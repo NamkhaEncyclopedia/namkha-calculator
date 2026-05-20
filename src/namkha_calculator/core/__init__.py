@@ -3,11 +3,11 @@ from .astronomy import Location
 from .calculation_notes import CalculationNote, CalculationNoteItem
 from .harmonizer import Aspect, HarmonizedAspect
 from .namkha_calculator import (
-    CalculationMethod,
     NamkhaCalculationResult,
     NamkhaType,
     calculate_namkha,
 )
+from .methods import CalculationMethod
 
 __all__ = [
     "Animal",

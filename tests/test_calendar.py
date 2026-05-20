@@ -54,6 +54,16 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
         self.assertEqual(test_year.animal, result_year.animal)
         self.assertEqual(test_year.element, result_year.element)
 
+    def test_year_attributes_before_losar(self):
+        # Jan 5, 2000 is before Losar (~Feb 5, 2000), so belongs to Tibetan year 2126 (= western 1999)
+        test_date = datetime(year=2000, month=1, day=5, tzinfo=pytz.timezone("UTC"))
+        result = calendar.year_attributes(test_date, TEST_PLACES["Bamako"])
+
+        self.assertEqual(result.tibetan_year_number, 2126)  # 1999 + 127
+        self.assertEqual(result.animal, Animal.HARE)
+        self.assertEqual(result.element, Element.EARTH)
+        self.assertEqual(result.mewa_number, calendar.year_mewa(1999))  # not year_mewa(2000)
+
     def test_astrological_losar_against_henning(self):
         tz = pytz.timezone("Etc/GMT+0")
         location = TEST_PLACES["Bamako"]

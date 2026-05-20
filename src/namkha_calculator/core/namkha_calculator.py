@@ -1,19 +1,22 @@
-"""
-Main Calculation Module
+"""Top-level Namkha calculation module.
+
+`calculate_namkha` dispatches by `(NamkhaType, CalculationMethod)`. Only YEAR
+honors `method` — non-YEAR types accept only CLASSIC.
 """
 
 from dataclasses import dataclass
-from datetime import datetime
-from enum import Enum, unique, auto
+from enum import Enum, auto, unique
+from typing import Callable
 
-from .harmonizer import HarmonizedAspect, AspectName
-from .astronomy import Location
-from .calculation_notes import CalculationNoteItem
-
-@unique
-class CalculationMethod(Enum):
-    CNNR = auto()
-    CLASSIC = auto()
+from .methods import CalculationMethod
+from .astrology import Subject
+from .aspects.shared_birth import BODY_ELEMENT, FORTUNE_ELEMENT, LIFE_ELEMENT
+from .aspects.shared_mewa import MewaResult
+from .aspects.year import calculate_mewas_cnnr, calculate_mewas_classic
+from .calculation_notes import CALCULATION_NOTES, CalculationNote, CalculationNoteItem
+from .astronomy import LATITUDE_LIMIT
+from .calendar import TibetanYearAttributes, year_attributes
+from .harmonizer import Aspect, HarmonizedAspect, harmonize_aspects
 
 
 @unique
@@ -30,33 +33,100 @@ class NamkhaCalculationResult:
     calculation_method: CalculationMethod
     namkha_type: NamkhaType
     harmonized_aspects: tuple[HarmonizedAspect, ...]
-    mewa_numbers: dict[AspectName, int]
+    mewa_numbers: dict[Aspect, int]
     calculation_notes: tuple[CalculationNoteItem, ...]
 
 
+@dataclass(frozen=True)
+class _CalcResult:
+    harmonized_aspects: tuple[HarmonizedAspect, ...]
+    mewa_numbers: dict[Aspect, int]
+    notes: tuple[CalculationNoteItem, ...]
+
+
 def calculate_namkha(
-    namkha_type: NamkhaType, subject: Subject
+    namkha_type: NamkhaType,
+    subject: Subject,
+    method: CalculationMethod = CalculationMethod.CLASSIC,
 ) -> NamkhaCalculationResult:
-    dispatch = {
-        NamkhaType.YEAR: _calc_year,
-        NamkhaType.MONTH: _calc_month,
-        NamkhaType.DAY: _calc_day,
-        NamkhaType.HOUR: _calc_hour,
-    }
-    return dispatch[namkha_type](subject)
+    if namkha_type is not NamkhaType.YEAR and method is not CalculationMethod.CLASSIC:
+        raise ValueError(
+            f"{namkha_type.name} Namkha supports only the CLASSIC calculation method"
+        )
+
+    location_notes = _collect_location_notes(subject)
+    calculation = _DISPATCH[(namkha_type, method)](subject)
+
+    return NamkhaCalculationResult(
+        subject=subject,
+        calculation_method=method,
+        namkha_type=namkha_type,
+        harmonized_aspects=calculation.harmonized_aspects,
+        mewa_numbers=calculation.mewa_numbers,
+        calculation_notes=location_notes + calculation.notes,
+    )
 
 
-def _calc_year(subject: Subject) -> NamkhaCalculationResult:
+def _collect_location_notes(subject: Subject) -> tuple[CalculationNoteItem, ...]:
+    notes: list[CalculationNoteItem] = []
+    if abs(subject.birth_location.latitude) >= LATITUDE_LIMIT:
+        notes.append(CALCULATION_NOTES[CalculationNote.HIGH_LATITUDE])
+    return tuple(notes)
+
+
+def _calc_year_cnnr(subject: Subject) -> _CalcResult:
+    year_attrs = year_attributes(subject.local_birth_datetime, subject.birth_location)
+    return _build_year_result(year_attrs, calculate_mewas_cnnr(year_attrs))
+
+
+def _calc_year_classic(subject: Subject) -> _CalcResult:
+    year_attrs = year_attributes(subject.local_birth_datetime, subject.birth_location)
+    return _build_year_result(year_attrs, calculate_mewas_classic(year_attrs))
+
+
+def _build_year_result(
+    year_attrs: TibetanYearAttributes, mewas: MewaResult
+) -> _CalcResult:
+    harmonized = harmonize_aspects(
+        life=LIFE_ELEMENT[year_attrs.animal],
+        body=BODY_ELEMENT[(year_attrs.animal, year_attrs.element)],
+        capacity=year_attrs.element,
+        fortune=FORTUNE_ELEMENT[year_attrs.animal],
+        mewa_life=mewas.life.element,
+        mewa_body=mewas.body.element,
+        mewa_capacity=mewas.capacity.element,
+        mewa_fortune=mewas.fortune.element,
+    )
+    return _CalcResult(
+        harmonized_aspects=harmonized,
+        mewa_numbers={
+            Aspect.MEWA_LIFE: mewas.life,
+            Aspect.MEWA_BODY: mewas.body,
+            Aspect.MEWA_CAPACITY: mewas.capacity,
+            Aspect.MEWA_FORTUNE: mewas.fortune,
+        },
+        notes=(),
+    )
+
+
+def _calc_month(subject: Subject) -> _CalcResult:
     raise NotImplementedError
 
 
-def _calc_month(subject: Subject) -> NamkhaCalculationResult:
+def _calc_day(subject: Subject) -> _CalcResult:
     raise NotImplementedError
 
 
-def _calc_day(subject: Subject) -> NamkhaCalculationResult:
+def _calc_hour(subject: Subject) -> _CalcResult:
     raise NotImplementedError
 
 
-def _calc_hour(subject: Subject) -> NamkhaCalculationResult:
-    raise NotImplementedError
+_DISPATCH: dict[
+    tuple[NamkhaType, CalculationMethod], Callable[[Subject], _CalcResult]
+] = {
+    (NamkhaType.YEAR, CalculationMethod.CNNR): _calc_year_cnnr,
+    (NamkhaType.YEAR, CalculationMethod.CLASSIC): _calc_year_classic,
+    (NamkhaType.MONTH, CalculationMethod.CLASSIC): _calc_month,
+    (NamkhaType.DAY, CalculationMethod.CLASSIC): _calc_day,
+    (NamkhaType.HOUR, CalculationMethod.CLASSIC): _calc_hour,
+}

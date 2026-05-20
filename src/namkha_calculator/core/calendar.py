@@ -8,7 +8,6 @@ from .astrology import Animal, Element
 from .astronomy import Location
 from .skyfield_calculations import civil_twilight_boundaries, jd_to_datetime
 
-
 # calendrical constants: month calculations
 S1 = 65 / 804
 Y0 = 806
@@ -36,9 +35,11 @@ ELEMENT_TABLE = list(Element)
 ANIMAL_TABLE = list(Animal)
 
 # Metreng (60-year) cycle constants
-TIB_WESTERN_OFFSET = 127       # Tibetan year = Western year + 127
+TIB_WESTERN_OFFSET = 127  # Tibetan year = Western year + 127
 METRENG_CYCLE_LENGTH = 60
-FIRST_METRENG_START_WESTERN = 1984  # current Metreng begins Western 1984, spans 1984–2043
+FIRST_METRENG_START_WESTERN = (
+    1984  # current Metreng begins Western 1984, spans 1984–2043
+)
 
 
 @dataclass(kw_only=True)
@@ -131,6 +132,7 @@ def true_date(day: int, month_count: int) -> float:
         - sun_equation(day, month_count) / 60
     )
 
+
 def from_month_count(month_count: int) -> tuple[int, int, bool]:
     """
     Figures out the Tibetan year number, month number within the year, and whether
@@ -141,7 +143,7 @@ def from_month_count(month_count: int) -> tuple[int, int, bool]:
     x = math.ceil(12 * S1 * month_count + ALPHA)
     month_number = (x - 1) % 12 + 1
     year_number = (x - month_number) // 12 + Y0 + TIB_WESTERN_OFFSET
-    is_leap_month = bool(math.ceil(12 * S1 * (month_count + 1) + ALPHA) == x)
+    is_leap_month = math.ceil(12 * S1 * (month_count + 1) + ALPHA) == x
     return year_number, month_number, is_leap_month
 
 
@@ -190,13 +192,16 @@ def official_losar(year_number: int, pytz_tzinfo, location: Location) -> dt.date
     losar_date = jd_to_datetime(jd).date()
     return civil_twilight_boundaries(losar_date, pytz_tzinfo, location)[0]
 
+
 def has_leap_month(year_number: int, month_number: int) -> bool:
     n = to_month_count(year_number, month_number, is_leap_month=True)
     y, m, is_leap = from_month_count(n)
     return y == year_number and m == month_number and is_leap
 
 
-def astrological_losar(year_number: int, pytz_tzinfo, location: Location) -> dt.datetime:
+def astrological_losar(
+    year_number: int, pytz_tzinfo, location: Location
+) -> dt.datetime:
     prev_year = year_number - 1
     is_leap = has_leap_month(prev_year, 11)
     month_count = to_month_count(prev_year, 11, is_leap)
@@ -213,6 +218,7 @@ def astrological_losar(year_number: int, pytz_tzinfo, location: Location) -> dt.
     losar_date = jd_to_datetime(jd).date()
     return civil_twilight_boundaries(losar_date, pytz_tzinfo, location)[0]
 
+
 def year_with_animal_and_element_in_metreng(
     animal: Animal, element: Element, reference_year: int
 ) -> int:
@@ -222,7 +228,11 @@ def year_with_animal_and_element_in_metreng(
     """
     western_ref = reference_year - TIB_WESTERN_OFFSET
     cycle_no = (western_ref - FIRST_METRENG_START_WESTERN) // METRENG_CYCLE_LENGTH
-    cycle_start_tib = FIRST_METRENG_START_WESTERN + TIB_WESTERN_OFFSET + METRENG_CYCLE_LENGTH * cycle_no
+    cycle_start_tib = (
+        FIRST_METRENG_START_WESTERN
+        + TIB_WESTERN_OFFSET
+        + METRENG_CYCLE_LENGTH * cycle_no
+    )
 
     for offset in range(60):
         year = cycle_start_tib + offset
@@ -249,10 +259,12 @@ def year_mewa(western_year: int) -> int:
 
 
 def year_attributes(
-    date_time: dt.datetime, location: Location
+    date_time: dt.datetime,
+    location: Location,
+    losar_fn=official_losar,
 ) -> TibetanYearAttributes:
     tibetan_year_number = date_time.year + TIB_WESTERN_OFFSET
-    losar = official_losar(tibetan_year_number, date_time.tzinfo, location)
+    losar = losar_fn(tibetan_year_number, date_time.tzinfo, location)
 
     if losar > date_time:
         tibetan_year_number -= 1
@@ -263,5 +275,5 @@ def year_attributes(
         tibetan_year_number=tibetan_year_number,
         animal=Animal(animal),
         element=Element(element),
-        mewa_number=year_mewa(date_time.year),
+        mewa_number=year_mewa(tibetan_year_number - TIB_WESTERN_OFFSET),
     )
