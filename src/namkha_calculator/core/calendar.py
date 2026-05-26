@@ -5,7 +5,7 @@ import math
 from dataclasses import dataclass
 
 from .astrology import Animal, Element
-from .astronomy import Location
+from .astronomy import HIGH_LATITUDE_DAY_START_HOUR, LATITUDE_LIMIT, Location
 from .skyfield_calculations import civil_twilight_boundaries, jd_to_datetime
 
 # calendrical constants: month calculations
@@ -216,6 +216,10 @@ def astrological_losar(
         jd = jd1
 
     losar_date = jd_to_datetime(jd).date()
+    if abs(location.latitude) >= LATITUDE_LIMIT:
+        return pytz_tzinfo.localize(
+            dt.datetime.combine(losar_date, dt.time(HIGH_LATITUDE_DAY_START_HOUR, 0, 0))
+        )
     return civil_twilight_boundaries(losar_date, pytz_tzinfo, location)[0]
 
 
@@ -258,22 +262,36 @@ def year_mewa(western_year: int) -> int:
     return 9 - (western_year - 1865) % 9
 
 
-def year_attributes(
-    date_time: dt.datetime,
-    location: Location,
-    losar_fn=official_losar,
-) -> TibetanYearAttributes:
-    tibetan_year_number = date_time.year + TIB_WESTERN_OFFSET
-    losar = losar_fn(tibetan_year_number, date_time.tzinfo, location)
-
-    if losar > date_time:
-        tibetan_year_number -= 1
+def _make_year_attributes(tibetan_year_number: int) -> TibetanYearAttributes:
     animal = ANIMAL_TABLE[(tibetan_year_number + 1) % 12]
     element = ELEMENT_TABLE[int(((tibetan_year_number - 1) / 2) % 5)]
-
     return TibetanYearAttributes(
         tibetan_year_number=tibetan_year_number,
         animal=Animal(animal),
         element=Element(element),
         mewa_number=year_mewa(tibetan_year_number - TIB_WESTERN_OFFSET),
     )
+
+
+def official_year_attributes(
+    date_time: dt.datetime,
+    location: Location,
+    losar_fn=official_losar,
+) -> TibetanYearAttributes:
+    tibetan_year_number = date_time.year + TIB_WESTERN_OFFSET
+    losar = losar_fn(tibetan_year_number, date_time.tzinfo, location)
+    if losar > date_time:
+        tibetan_year_number -= 1
+    return _make_year_attributes(tibetan_year_number)
+
+
+def classic_year_attributes(
+    date_time: dt.datetime,
+    location: Location,
+) -> TibetanYearAttributes:
+    """Year attributes for Classic method. Astrological year starts earlier than official."""
+    tibetan_year_number = date_time.year + TIB_WESTERN_OFFSET + 1
+    losar = astrological_losar(tibetan_year_number, date_time.tzinfo, location)
+    if losar > date_time:
+        tibetan_year_number -= 1
+    return _make_year_attributes(tibetan_year_number)

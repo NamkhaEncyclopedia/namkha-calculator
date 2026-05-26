@@ -38,7 +38,7 @@ class Gender(Enum):
 
 @dataclass
 class Subject:
-    name: str
     gender: Gender
-    birth_datetime: datetime
+    local_birth_datetime: datetime
     birth_location: Location
+    name: str | None

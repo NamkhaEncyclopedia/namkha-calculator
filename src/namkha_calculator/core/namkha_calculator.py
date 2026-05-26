@@ -15,7 +15,7 @@ from .aspects.shared_mewa import MewaResult
 from .aspects.year import calculate_mewas_cnnr, calculate_mewas_classic
 from .calculation_notes import CALCULATION_NOTES, CalculationNote, CalculationNoteItem
 from .astronomy import LATITUDE_LIMIT
-from .calendar import TibetanYearAttributes, year_attributes
+from .calendar import TibetanYearAttributes, classic_year_attributes, official_year_attributes
 from .harmonizer import Aspect, HarmonizedAspect, harmonize_aspects
 
 
@@ -75,12 +75,12 @@ def _collect_location_notes(subject: Subject) -> tuple[CalculationNoteItem, ...]
 
 
 def _calc_year_cnnr(subject: Subject) -> _CalcResult:
-    year_attrs = year_attributes(subject.local_birth_datetime, subject.birth_location)
+    year_attrs = official_year_attributes(subject.local_birth_datetime, subject.birth_location)
     return _build_year_result(year_attrs, calculate_mewas_cnnr(year_attrs))
 
 
 def _calc_year_classic(subject: Subject) -> _CalcResult:
-    year_attrs = year_attributes(subject.local_birth_datetime, subject.birth_location)
+    year_attrs = classic_year_attributes(subject.local_birth_datetime, subject.birth_location)
     return _build_year_result(year_attrs, calculate_mewas_classic(year_attrs))
 
 

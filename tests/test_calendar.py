@@ -48,7 +48,7 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
             mewa_number=0,
         )
         test_date = datetime(year=2024, month=6, day=1, tzinfo=pytz.timezone("UTC"))
-        result_year = calendar.year_attributes(test_date, TEST_PLACES["Bamako"])
+        result_year = calendar.official_year_attributes(test_date, TEST_PLACES["Bamako"])
 
         self.assertEqual(test_year.tibetan_year_number, result_year.tibetan_year_number)
         self.assertEqual(test_year.animal, result_year.animal)
@@ -57,7 +57,7 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
     def test_year_attributes_before_losar(self):
         # Jan 5, 2000 is before Losar (~Feb 5, 2000), so belongs to Tibetan year 2126 (= western 1999)
         test_date = datetime(year=2000, month=1, day=5, tzinfo=pytz.timezone("UTC"))
-        result = calendar.year_attributes(test_date, TEST_PLACES["Bamako"])
+        result = calendar.official_year_attributes(test_date, TEST_PLACES["Bamako"])
 
         self.assertEqual(result.tibetan_year_number, 2126)  # 1999 + 127
         self.assertEqual(result.animal, Animal.HARE)
@@ -101,7 +101,7 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
                     day=1,
                     tzinfo=pytz.timezone("UTC"),
                 )
-                test_year_attributes = calendar.year_attributes(
+                test_year_attributes = calendar.official_year_attributes(
                     test_date, TEST_PLACES["Bamako"]
                 )
                 element, animal = _parse_henning_header(test_western_year)
@@ -194,7 +194,7 @@ class TestPhugpaCalendarCornerCases(unittest.TestCase):
         for place_name, place_location in TEST_PLACES.items():
             with self.subTest(place_name=place_name):
                 test_date_time = self.TEST_TWILIGHTS[place_name] - timedelta(minutes=1)
-                year_attributes = calendar.year_attributes(
+                year_attributes = calendar.official_year_attributes(
                     test_date_time, place_location
                 )
                 self.assertEqual(year_attributes.element, Element.WATER)
@@ -204,7 +204,7 @@ class TestPhugpaCalendarCornerCases(unittest.TestCase):
         for place_name, place_location in TEST_PLACES.items():
             with self.subTest(place_name=place_name):
                 test_date_time = self.TEST_TWILIGHTS[place_name] + timedelta(minutes=1)
-                year_attributes = calendar.year_attributes(
+                year_attributes = calendar.official_year_attributes(
                     test_date_time, place_location
                 )
         self.assertEqual(year_attributes.element, Element.WOOD)
