@@ -8,7 +8,6 @@ from ..calendar import (
 )
 from .shared_mewa import MewaAspect, MewaResult, BODY_MEWA_TO_LIFE_CAPACITY_MEWA
 
-
 CNNR_POINT_OF_FORTUNE = {
     Animal.TIGER: Animal.MONKEY,
     Animal.HORSE: Animal.MONKEY,

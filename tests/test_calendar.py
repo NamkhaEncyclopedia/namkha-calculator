@@ -10,7 +10,6 @@ from namkha_calculator.core.astronomy import Location
 from namkha_calculator.core import calendar
 from namkha_calculator.core.astrology import Animal, Element
 
-
 TEST_PLACES = {
     "Bamako": Location(12.65225, -7.98170),  # UTC+0
     "Namgyalgar": Location(-26.91445, 152.89483),
@@ -20,12 +19,25 @@ TEST_PLACES = {
 
 _RE_HENNING_YEAR = r"New Year: \d+, ([A-Z][a-z]*)-[a-z]*-([A-Z][a-z]*)"
 _ELEMENT_NAMES_MAP = {
-    "Iron": "Metal", "Water": "Water", "Wood": "Wood", "Fire": "Fire", "Earth": "Earth",
+    "Iron": "Metal",
+    "Water": "Water",
+    "Wood": "Wood",
+    "Fire": "Fire",
+    "Earth": "Earth",
 }
 _ANIMAL_NAMES_MAP = {
-    "Mouse": "Mouse", "Ox": "Ox", "Tiger": "Tiger", "Rabbit": "Hare",
-    "Dragon": "Dragon", "Snake": "Snake", "Horse": "Horse", "Sheep": "Sheep",
-    "Monkey": "Monkey", "Bird": "Bird", "Dog": "Dog", "Pig": "Boar",
+    "Mouse": "Mouse",
+    "Ox": "Ox",
+    "Tiger": "Tiger",
+    "Rabbit": "Hare",
+    "Dragon": "Dragon",
+    "Snake": "Snake",
+    "Horse": "Horse",
+    "Sheep": "Sheep",
+    "Monkey": "Monkey",
+    "Bird": "Bird",
+    "Dog": "Dog",
+    "Pig": "Boar",
 }
 
 
@@ -48,7 +60,9 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
             mewa_number=0,
         )
         test_date = datetime(year=2024, month=6, day=1, tzinfo=pytz.timezone("UTC"))
-        result_year = calendar.official_year_attributes(test_date, TEST_PLACES["Bamako"])
+        result_year = calendar.official_year_attributes(
+            test_date, TEST_PLACES["Bamako"]
+        )
 
         self.assertEqual(test_year.tibetan_year_number, result_year.tibetan_year_number)
         self.assertEqual(test_year.animal, result_year.animal)
@@ -62,7 +76,9 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
         self.assertEqual(result.tibetan_year_number, 2126)  # 1999 + 127
         self.assertEqual(result.animal, Animal.HARE)
         self.assertEqual(result.element, Element.EARTH)
-        self.assertEqual(result.mewa_number, calendar.year_mewa(1999))  # not year_mewa(2000)
+        self.assertEqual(
+            result.mewa_number, calendar.year_mewa(1999)
+        )  # not year_mewa(2000)
 
     def test_astrological_losar_against_henning(self):
         tz = pytz.timezone("Etc/GMT+0")
@@ -128,7 +144,9 @@ class TestNearestPreviousYearWithAnimal(unittest.TestCase):
 def _year_and_metreng_ref(draw):
     western_year = draw(st.integers(min_value=1800, max_value=2598))
     metreng_start = 1984 + 60 * ((western_year - 1984) // 60)
-    ref_western = draw(st.integers(min_value=metreng_start, max_value=metreng_start + 59))
+    ref_western = draw(
+        st.integers(min_value=metreng_start, max_value=metreng_start + 59)
+    )
     return western_year, ref_western
 
 
@@ -139,7 +157,9 @@ class TestYearWithAnimalAndElementInMetreng(unittest.TestCase):
         western_year, ref_western = args
         element, animal = _parse_henning_header(western_year)
         self.assertEqual(
-            calendar.year_with_animal_and_element_in_metreng(animal, element, ref_western + 127),
+            calendar.year_with_animal_and_element_in_metreng(
+                animal, element, ref_western + 127
+            ),
             western_year + 127,
         )
 

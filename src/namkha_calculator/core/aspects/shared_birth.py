@@ -4,7 +4,6 @@ Shared Birth Aspect calculation tables.
 
 from ..astrology import Animal, Element
 
-
 # Birth Period Animal -> Life Element
 LIFE_ELEMENT = {
     Animal.MOUSE: Element.WATER,
@@ -36,7 +35,6 @@ BODY_ELEMENT = {
     (Animal.BOAR, Element.METAL): Element.METAL,
     (Animal.DRAGON, Element.METAL): Element.METAL,
     (Animal.SNAKE, Element.METAL): Element.METAL,
-
     (Animal.MOUSE, Element.WATER): Element.WOOD,
     (Animal.OX, Element.WATER): Element.WOOD,
     (Animal.HORSE, Element.WATER): Element.WOOD,
@@ -49,7 +47,6 @@ BODY_ELEMENT = {
     (Animal.BOAR, Element.EARTH): Element.WOOD,
     (Animal.DRAGON, Element.EARTH): Element.WOOD,
     (Animal.SNAKE, Element.EARTH): Element.WOOD,
-
     (Animal.MOUSE, Element.FIRE): Element.WATER,
     (Animal.OX, Element.FIRE): Element.WATER,
     (Animal.HORSE, Element.FIRE): Element.WATER,
@@ -63,7 +60,6 @@ BODY_ELEMENT = {
     (Animal.DRAGON, Element.WATER): Element.WATER,
     (Animal.SNAKE, Element.WATER): Element.WATER,
     (Animal.MOUSE, Element.METAL): Element.EARTH,
-
     (Animal.OX, Element.METAL): Element.EARTH,
     (Animal.HORSE, Element.METAL): Element.EARTH,
     (Animal.SHEEP, Element.METAL): Element.EARTH,
@@ -75,7 +71,6 @@ BODY_ELEMENT = {
     (Animal.BOAR, Element.FIRE): Element.EARTH,
     (Animal.DRAGON, Element.FIRE): Element.EARTH,
     (Animal.SNAKE, Element.FIRE): Element.EARTH,
-
     (Animal.MOUSE, Element.EARTH): Element.FIRE,
     (Animal.OX, Element.EARTH): Element.FIRE,
     (Animal.HORSE, Element.EARTH): Element.FIRE,
@@ -96,15 +91,12 @@ FORTUNE_ELEMENT = {
     Animal.TIGER: Element.METAL,
     Animal.HORSE: Element.METAL,
     Animal.DOG: Element.METAL,
-
     Animal.MOUSE: Element.WOOD,
     Animal.DRAGON: Element.WOOD,
     Animal.MONKEY: Element.WOOD,
-
     Animal.BIRD: Element.WATER,
     Animal.OX: Element.WATER,
     Animal.SNAKE: Element.WATER,
-
     Animal.BOAR: Element.FIRE,
     Animal.SHEEP: Element.FIRE,
     Animal.HARE: Element.FIRE,
