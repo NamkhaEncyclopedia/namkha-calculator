@@ -153,9 +153,10 @@ def to_month_count(year_number: int, month_number: int, is_leap_month: bool) -> 
     and leap month indicator, calculates the "month count" based on the epoch.
     """
     year_number -= TIB_WESTERN_OFFSET
-    l = 1 if is_leap_month else 0
+    leap_factor = 1 if is_leap_month else 0
     return math.floor(
-        (12 * (year_number - Y0) + month_number - ALPHA - (1 - 12 * S1) * l) / (12 * S1)
+        (12 * (year_number - Y0) + month_number - ALPHA - (1 - 12 * S1) * leap_factor)
+        / (12 * S1)
     )
 
 
