@@ -1,7 +1,7 @@
 """Top-level Namkha calculation module.
 
 `calculate_namkha` dispatches by `(NamkhaType, CalculationMethod)`. Only YEAR
-honors `method` — non-YEAR types accept only CLASSIC.
+leverages `method` — non-YEAR types accept only CLASSIC.
 """
 
 from dataclasses import dataclass
@@ -53,13 +53,21 @@ def calculate_namkha(
     subject: Subject,
     method: CalculationMethod = CalculationMethod.CLASSIC,
 ) -> NamkhaCalculationResult:
-    if namkha_type is not NamkhaType.YEAR and method is not CalculationMethod.CLASSIC:
+    calc_fn = _DISPATCH.get((namkha_type, method))
+    if calc_fn is None:
+        if (
+            namkha_type is not NamkhaType.YEAR
+            and method is not CalculationMethod.CLASSIC
+        ):
+            raise ValueError(
+                f"{namkha_type.name} Namkha supports only the CLASSIC calculation method"
+            )
         raise ValueError(
-            f"{namkha_type.name} Namkha supports only the CLASSIC calculation method"
+            f"Unsupported method {method.name!r} for {namkha_type.name} Namkha"
         )
 
     location_notes = _collect_location_notes(subject)
-    calculation = _DISPATCH[(namkha_type, method)](subject)
+    calculation = calc_fn(subject)
 
     return NamkhaCalculationResult(
         subject=subject,
