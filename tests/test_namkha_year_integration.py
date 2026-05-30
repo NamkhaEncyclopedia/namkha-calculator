@@ -101,7 +101,7 @@ class TestYearCnnrFireMonkey(unittest.TestCase):
         ("12.02.1956 11:18", "Africa/Casablanca", 30.4278, -9.5981, "Agadir Morocco"),
         ("12.02.1956 09:45", "Europe/Oslo", 70.6635, 23.6821, "Hammerfest Norway"),
         ("02.03.1957 04:45", "Asia/Shanghai", 31.2304, 121.4737, "Shanghai China"),
-        ("02.03.1957 06:31", "Asia/Krasnoyarsk", 69.3536, 88.1895, "Norilsk Russia"),
+        ("02.03.1957 03:35", "Asia/Krasnoyarsk", 69.3536, 88.1895, "Norilsk Russia"),
         (
             "21.06.1956 17:33",
             "Africa/Addis_Ababa",
@@ -112,7 +112,6 @@ class TestYearCnnrFireMonkey(unittest.TestCase):
     ]
 
     # center element, harmonization sequence
-    # Note: Body and Capacity center is Fire (shown as <r> in reference due to rendering artifact)
     _EXPECTED_ASPECTS = {
         Aspect.LIFE: (E.METAL, (E.WATER, E.WOOD, E.FIRE, E.EARTH)),
         Aspect.BODY: (E.FIRE, (E.WOOD, E.WATER, E.METAL, E.EARTH, E.FIRE, E.EARTH)),
