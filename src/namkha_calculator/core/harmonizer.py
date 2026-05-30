@@ -112,7 +112,15 @@ def harmonize_aspects(
 
     for element, name, harmonize_to in zip(
         [body, capacity, fortune, mewa_life, mewa_body, mewa_capacity, mewa_fortune],
-        list(Aspect)[1:],
+        [
+            Aspect.BODY,
+            Aspect.CAPACITY,
+            Aspect.FORTUNE,
+            Aspect.MEWA_LIFE,
+            Aspect.MEWA_BODY,
+            Aspect.MEWA_CAPACITY,
+            Aspect.MEWA_FORTUNE,
+        ],
         [life] * 4 + [mewa_life] * 3,
     ):
         is_conflicted = False
