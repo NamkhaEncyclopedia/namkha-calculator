@@ -21,7 +21,7 @@ LIFE_ELEMENT = {
 }
 
 
-# (Birth Period Element, Birth Period Animal) -> Body Element
+# (Birth Period Animal, Birth Period Element) -> Body Element
 BODY_ELEMENT = {
     (Animal.MOUSE, Element.WOOD): Element.METAL,
     (Animal.OX, Element.WOOD): Element.METAL,
@@ -101,5 +101,3 @@ FORTUNE_ELEMENT = {
     Animal.SHEEP: Element.FIRE,
     Animal.HARE: Element.FIRE,
 }
-
-# CAPACITY - enement of the period

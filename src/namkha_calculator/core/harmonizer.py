@@ -2,9 +2,8 @@
 Module for the final stage of Namkha calculation: harmonization of aspects
 """
 
-from typing import Optional
 from dataclasses import dataclass
-from enum import unique, Enum, auto
+from enum import Enum, auto, unique
 
 from .astrology import Element
 
@@ -26,7 +25,7 @@ class HarmonizedAspect:
     name: Aspect
     center: Element
     harmonization_seq: tuple[Element, ...]
-    is_conflicted: Optional[bool] = None  # For every aspect except Life
+    is_conflicted: bool | None = None  # For every aspect except Life
 
 
 @dataclass
@@ -79,12 +78,11 @@ def _get_edge_element(center_element: Element) -> Element:
 
 
 def _are_in_conflict(first_element: Element, second_element: Element) -> bool:
-    if (
-        first_element in [_get_son(second_element), _get_mother(second_element)]
-        or first_element == second_element
-    ):
-        return False
-    return True
+    return first_element not in {
+        second_element,
+        _get_son(second_element),
+        _get_mother(second_element),
+    }
 
 
 def harmonize_aspects(
