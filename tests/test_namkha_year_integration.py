@@ -8,11 +8,11 @@ from datetime import datetime
 
 import pytz
 
-from namkha_calculator.core.astrology import Element, Gender, Subject
-from namkha_calculator.core.astronomy import Location
-from namkha_calculator.core.harmonizer import Aspect
-from namkha_calculator.core.methods import CalculationMethod
-from namkha_calculator.core.namkha_calculator import NamkhaType, calculate_namkha
+from namkha_calculator.astrology import Element, Gender, Subject
+from namkha_calculator.astronomy import Location
+from namkha_calculator.harmonizer import Aspect
+from namkha_calculator.methods import CalculationMethod
+from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
 
 E = Element
 

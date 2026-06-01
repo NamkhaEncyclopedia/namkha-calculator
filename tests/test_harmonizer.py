@@ -3,8 +3,8 @@ import unittest
 from hypothesis import given
 import hypothesis.strategies as st
 
-from namkha_calculator.core.astrology import Element
-from namkha_calculator.core.harmonizer import harmonize_aspects
+from namkha_calculator.astrology import Element
+from namkha_calculator.harmonizer import harmonize_aspects
 
 _element = st.sampled_from(list(Element))
 

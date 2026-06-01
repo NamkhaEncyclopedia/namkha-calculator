@@ -3,13 +3,13 @@ import unittest
 from hypothesis import given
 import hypothesis.strategies as st
 
-from namkha_calculator.core.astrology import Animal, Element
-from namkha_calculator.core.calendar import (
+from namkha_calculator.astrology import Animal, Element
+from namkha_calculator.calendar import (
     TibetanYearAttributes,
     TIB_WESTERN_OFFSET,
     year_mewa,
 )
-from namkha_calculator.core.aspects.year import fortune_mewa_cnnr, fortune_mewa_classic
+from namkha_calculator.aspects.year import fortune_mewa_cnnr, fortune_mewa_classic
 
 
 def _make_attrs(animal: Animal, tib_year: int) -> TibetanYearAttributes:

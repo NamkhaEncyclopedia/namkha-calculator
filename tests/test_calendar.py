@@ -6,9 +6,9 @@ import pytz
 from hypothesis import given, settings
 from hypothesis import strategies as st
 
-from namkha_calculator.core.astronomy import Location
-from namkha_calculator.core import calendar
-from namkha_calculator.core.astrology import Animal, Element
+from namkha_calculator.astronomy import Location
+from namkha_calculator import calendar
+from namkha_calculator.astrology import Animal, Element
 
 TEST_PLACES = {
     "Bamako": Location(12.65225, -7.98170),  # UTC+0
