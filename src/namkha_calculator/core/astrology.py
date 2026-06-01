@@ -54,4 +54,4 @@ class Subject:
 
     @property
     def local_birth_datetime(self) -> datetime:
-        return self.birth_timezone.localize(self.birth_datetime)
+        return self.birth_timezone.localize(self.birth_datetime, is_dst=False)
