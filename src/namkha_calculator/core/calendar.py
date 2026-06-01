@@ -177,12 +177,13 @@ def tibetan_to_julian(
     return math.floor(true_date(tibetan_day, n))
 
 
-def official_losar(year_number: int, pytz_tzinfo, location: Location) -> dt.datetime:
+def official_losar(year_number: int, pytz_tz, location: Location) -> dt.datetime:
     """
     Calculates the Western datetime for official Losar (Tibetan New Year)
     which starts on the first day of the month of Dragon
     for a given Tibetan year number (e.g. 2137) at a given location and timezone.
     Considers the start of civil twilight at the location to be the start of the day.
+    Above LATITUDE_LIMIT uses a fixed start time instead.
     """
     jd = 1 + tibetan_to_julian(
         year_number=year_number - 1,
@@ -191,7 +192,11 @@ def official_losar(year_number: int, pytz_tzinfo, location: Location) -> dt.date
         tibetan_day=30,
     )
     losar_date = jd_to_datetime(jd).date()
-    return civil_twilight_boundaries(losar_date, pytz_tzinfo, location)[0]
+    if abs(location.latitude) >= LATITUDE_LIMIT:
+        return pytz_tz.localize(
+            dt.datetime.combine(losar_date, dt.time(HIGH_LATITUDE_DAY_START_HOUR, 0, 0))
+        )
+    return civil_twilight_boundaries(losar_date, pytz_tz, location)[0]
 
 
 def has_leap_month(year_number: int, month_number: int) -> bool:
@@ -200,9 +205,7 @@ def has_leap_month(year_number: int, month_number: int) -> bool:
     return y == year_number and m == month_number and is_leap
 
 
-def astrological_losar(
-    year_number: int, pytz_tzinfo, location: Location
-) -> dt.datetime:
+def astrological_losar(year_number: int, pytz_tz, location: Location) -> dt.datetime:
     prev_year = year_number - 1
     is_leap = has_leap_month(prev_year, 11)
     month_count = to_month_count(prev_year, 11, is_leap)
@@ -218,10 +221,10 @@ def astrological_losar(
 
     losar_date = jd_to_datetime(jd).date()
     if abs(location.latitude) >= LATITUDE_LIMIT:
-        return pytz_tzinfo.localize(
+        return pytz_tz.localize(
             dt.datetime.combine(losar_date, dt.time(HIGH_LATITUDE_DAY_START_HOUR, 0, 0))
         )
-    return civil_twilight_boundaries(losar_date, pytz_tzinfo, location)[0]
+    return civil_twilight_boundaries(losar_date, pytz_tz, location)[0]
 
 
 def year_with_animal_and_element_in_metreng(
@@ -252,7 +255,7 @@ def year_with_animal_and_element_in_metreng(
 
 
 def nearest_previous_year_with_animal(year_number: int, animal: Animal) -> int:
-    """Find nearest Tibetan year <= year_number that has the given Animal."""
+    """Find nearest Tibetan year < year_number that has the given Animal."""
     target_idx = ANIMAL_TABLE.index(animal)
     current_idx = (year_number + 1) % 12
     offset = (current_idx - target_idx) % 12 or 12

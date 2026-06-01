@@ -2,6 +2,8 @@ from dataclasses import dataclass
 from datetime import datetime
 from enum import Enum, auto, unique
 
+import pytz
+
 from .astronomy import Location
 
 
@@ -39,6 +41,17 @@ class Gender(Enum):
 @dataclass
 class Subject:
     gender: Gender
-    local_birth_datetime: datetime
+    birth_datetime: datetime  # naive local time
+    birth_timezone: pytz.BaseTzInfo
     birth_location: Location
     name: str | None
+
+    def __post_init__(self):
+        if self.birth_datetime.tzinfo is not None:
+            raise TypeError("birth_datetime must be naive (no tzinfo)")
+        if not isinstance(self.birth_timezone, pytz.BaseTzInfo):
+            raise TypeError("birth_timezone must be a pytz timezone")
+
+    @property
+    def local_birth_datetime(self) -> datetime:
+        return self.birth_timezone.localize(self.birth_datetime)

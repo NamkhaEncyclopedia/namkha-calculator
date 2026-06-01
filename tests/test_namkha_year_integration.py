@@ -18,12 +18,11 @@ E = Element
 
 
 def _subject(dt_str: str, tz_name: str, lat: float, lon: float) -> Subject:
-    tz = pytz.timezone(tz_name)
-    dt = datetime.strptime(dt_str, "%d.%m.%Y %H:%M")
     # Gender is unused by Year Namkha but required by Subject
     return Subject(
         gender=Gender.MALE,
-        local_birth_datetime=tz.localize(dt),
+        birth_datetime=datetime.strptime(dt_str, "%d.%m.%Y %H:%M"),
+        birth_timezone=pytz.timezone(tz_name),
         birth_location=Location(lat, lon),
         name=None,
     )

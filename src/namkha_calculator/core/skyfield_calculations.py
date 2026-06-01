@@ -6,6 +6,7 @@ import datetime as dt
 import os
 from typing import TYPE_CHECKING
 
+import pytz
 from skyfield import almanac
 from skyfield.api import Loader, wgs84
 
@@ -41,19 +42,12 @@ def _get_ephemeris():
     return _sf_ephemeris
 
 
-def _localize(naive_dt: dt.datetime, tz) -> dt.datetime:
-    """Make naive_dt tz-aware. Works with pytz, ZoneInfo, and stdlib timezone."""
-    if hasattr(tz, "localize"):
-        return tz.localize(naive_dt)
-    return naive_dt.replace(tzinfo=tz)
-
-
 def jd_to_datetime(jd: float) -> dt.datetime:
     return _get_timescale().tt_jd(jd).utc_datetime()
 
 
 def civil_twilight_boundaries(
-    date: dt.date, tz, location: "Location"
+    date: dt.date, pytz_tz: pytz.BaseTzInfo, location: "Location"
 ) -> list[dt.datetime]:
     """
     Returns the start and end times of civil twilight
@@ -62,9 +56,7 @@ def civil_twilight_boundaries(
     topos = wgs84.latlon(location.latitude, location.longitude)
     search_func = almanac.dark_twilight_day(_get_ephemeris(), topos)
 
-    naive_midnight = dt.datetime.combine(date, dt.time(0, 0, 0))
-    midnight = _localize(naive_midnight, tz)
-
+    midnight = pytz_tz.localize(dt.datetime.combine(date, dt.time(0, 0, 0)))
     next_midnight = midnight + dt.timedelta(days=1)
     events = almanac.find_discrete(
         _get_timescale().from_datetime(midnight),
