@@ -255,10 +255,10 @@ def year_with_animal_and_element_in_metreng(
 
 
 def nearest_previous_year_with_animal(year_number: int, animal: Animal) -> int:
-    """Find nearest Tibetan year < year_number that has the given Animal."""
+    """Return largest Tibetan year number strictly less than year_number with given Animal."""
     target_idx = ANIMAL_TABLE.index(animal)
     current_idx = (year_number + 1) % 12
-    offset = (current_idx - target_idx) % 12 or 12
+    offset = (current_idx - target_idx) % 12
     return year_number - offset
 
 
