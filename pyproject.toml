@@ -1,0 +1,40 @@
+[project]
+name = "namkha-calculator"
+version = "0.1.0a1"
+description = "Calculate Tibetan Namkha thread-cross color schemes in Chögyal Namkhai Norbu tradition."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Namkha Encyclopedia", email = "namkha@simonweiss.space" }]
+requires-python = ">=3.12,<4.0"
+keywords = ["tibetan", "astrology", "namkha", "calendar", "buddhism"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Religion",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = [
+    "skyfield (>=1.49,<2.0)",
+    "pytz (>=2025.2)",
+]
+
+[project.urls]
+Homepage = "https://github.com/NamkhaEncyclopedia/namkha-calculator"
+Repository = "https://github.com/NamkhaEncyclopedia/namkha-calculator"
+Issues = "https://github.com/NamkhaEncyclopedia/namkha-calculator/issues"
+
+[tool.poetry]
+packages = [{ include = "namkha_calculator", from = "src" }]
+# Bundle the filtered ephemeris in the distribution; loaded relative to the module at runtime.
+include = [{ path = "src/namkha_calculator/de440_filtered.bsp", format = ["sdist", "wheel"] }]
+
+[dependency-groups]
+dev = [
+    "hypothesis (>=6.152.4,<7.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0"]
+build-backend = "poetry.core.masonry.api"

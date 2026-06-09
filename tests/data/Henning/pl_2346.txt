@@ -1,0 +1,1587 @@
+
+New Year: 2346, Fire-male-Tiger
+
+Tibetan Lunar Month: 1 - Iron-male-Dragon
+
+1: Sat. mon gre. Earth-Water; 23 Feb 2346
+  phan tshun, gdab pa, Tiger, kham 7
+  0;8,13 22;18,58 21;33,12 16;52,11 9;16,38
+  Solar: Wood-Ox. Liu 2
+  From 1st to 15th, Demonstration of Miracles.
+2: Sun. mon gru. Fire-Earth; 24 Feb 2346
+  mchog can, rigs can, Rabbit, gin 8
+  1;12,29 23;13,17 21;37,46 17;51,3 9;17,36
+  Solar: Fire-Tiger. Xing 3
+3: Mon. khrums stod. Water-Fire; 25 Feb 2346
+  yongs 'joms, khyim skyes, Dragon, zin 9
+  2;15,48 24;8,31 21;42,20 18;50,51 9;18,34
+  Solar: Fire-Rabbit. Zhang 4
+4: Tue. khrums smad. Fire-Water; 26 Feb 2346
+  zhi ba, vishti, Snake, zon 1
+  3;18,7 25;4,46 21;46,53 19;51,39 9;19,33
+  Solar: Earth-Dragon. Yi 5
+5: Wed. nam gru. Water-Water; 27 Feb 2346
+  grub pa, byis pa, Horse, li 2
+  4;19,26 26;2,0 21;51,27 20;53,27 9;20,31
+  Solar: Earth-Snake. Zhen 6
+6: Thu. tha skar. Wind-Wind; 28 Feb 2346
+  bsgrub bya, til rdung, Sheep, khon 3
+  5;19,45 0;0,15 21;56,0 21;56,15 9;21,29
+  Solar: Iron-Horse. Jiao 7
+7: Fri. bra nye. Earth-Fire; 1 Mar 2346
+  dkar po, tshong ba, Monkey, dwa 4
+  6;18,8 1;0,25 22;0,34 23;1,0 9;22,27
+  Solar: Iron-Sheep. Kang 8
+8: Sat. smin drug. Earth-Fire; 2 Mar 2346
+  tshangs pa, gdab pa, Bird, khen 5
+  0;15,27 2;1,40 22;5,8 24;6,48 9;23,25
+  Solar: Water-Monkey. Di 9
+9: Sun. snar ma. Fire-Earth; 3 Mar 2346
+  dbang po, rigs can, Dog, kham 6
+  1;11,46 3;3,55 22;9,41 25;13,36 9;24,24
+  Solar: Water-Bird. Fang 1
+10: Mon. mgo. Water-Wind; 4 Mar 2346
+  'khon 'dzin, khyim skyes, Pig, gin 7
+  2;7,5 4;7,9 22;14,15 26;21,25 9;25,22
+  Solar: Wood-Dog. Xin 2
+11: Tue. lag. Fire-Water; 5 Mar 2346
+  rnam sel, vishti, Mouse, zin 8
+  3;1,24 5;11,24 22;18,48 0;30,13 9;26,20
+  Solar: Wood-Pig. Wei 3
+12. Omitted: Ox zon 9
+13: Wed. nabs so. Water-Wind; 6 Mar 2346
+  mdza' bo, rigs can, Tiger, li 1
+  4;49,54 6;20,1 22;27,55 1;47,57 9;28,17
+  Solar: Fire-Mouse. Ji 4
+14: Thu. rgyal. Wind-Fire; 7 Mar 2346
+  tshe dang ldan pa, khyim skyes, Rabbit, khon 2
+  5;44,9 7;24,19 22;32,29 2;56,49 9;29,15
+  Solar: Fire-Ox. Dou 5
+15: Fri. skag. Earth-Water; 8 Mar 2346
+  dge byed, vishti, Dragon, dwa 3
+  6;38,24 8;28,37 22;37,2 4;5,40 10;0,13
+  Solar: Earth-Tiger. Niu 6
+16: Sat. mchu. Earth-Fire; 9 Mar 2346
+  shin tu 'grams, byis pa, Snake, khen 4
+  0;32,35 9;32,56 22;41,31 5;14,28 10;1,11
+  Solar: Earth-Rabbit. Nu 7
+17: Sun. gre. Fire-Fire; 10 Mar 2346
+  las bzang, til rdung, Horse, kham 5
+  1;27,43 10;36,18 22;46,1 6;22,19 10;2,9
+  Solar: Iron-Dragon. Xu 8
+18: Mon. dbo. Water-Wind; 11 Mar 2346
+  'dzin byed, vishti, Sheep, gin 6
+  2;23,51 11;38,40 22;50,31 7;29,11 10;3,8
+  Solar: Iron-Snake. Wei 9
+19: Tue. me bzhi. Fire-Wind; 12 Mar 2346
+  zug rngu, byis pa, Monkey, zin 7
+  3;20,59 12;40,1 22;55,1 8;35,2 10;4,6
+  Solar: Water-Horse. Shi 1
+20: Wed. nag pa. Water-Wind; 13 Mar 2346
+  'grams, til rdung, Bird, zon 8
+  4;19,7 13;40,23 22;59,30 9;39,54 10;5,4
+  Solar: Water-Sheep. Bi 2
+21: Thu. sa ri. Wind-Wind; 14 Mar 2346
+  'phel, tshong ba, Dog, li 9
+  5;19,11 14;38,48 23;4,0 10;42,49 10;6,2
+  Solar: Wood-Monkey. Kui 3
+22: Fri. sa ga. Earth-Fire; 15 Mar 2346
+  brtan pa, gdab pa, Pig, khon 1
+  6;20,19 15;36,10 23;8,30 11;44,40 10;7,0
+  Solar: Wood-Bird. Lou 4
+23: Sat. lha mtshams. Earth-Earth; 16 Mar 2346
+  yongs bsnun, rigs can, Mouse, dwa 2
+  0;22,27 16;32,32 23;12,59 12;45,32 10;7,59
+  Solar: Fire-Dog. Wei 5
+24: Sun. snron. Fire-Earth; 17 Mar 2346
+  dga' ba, khyim skyes, Ox, khen 3
+  1;25,35 17;27,53 23;17,29 13;45,23 10;8,57
+  Solar: Fire-Pig. Mao 6
+25: Mon. snrubs. Water-Water; 18 Mar 2346
+  rdo rje, tshong ba, Tiger, kham 4
+  2;29,43 18;22,15 23;21,59 14;44,14 10;9,55
+  Solar: Earth-Mouse. Bi 7
+26: Tue. chu stod. Fire-Water; 19 Mar 2346
+  dngos grub, gdab pa, Rabbit, gin 5
+  3;33,55 19;16,33 23;26,28 15;43,2 10;10,53
+  Solar: Earth-Ox. Zui 8
+27: Wed. chu smad. Water-Earth; 20 Mar 2346
+  phan tshun, rigs can, Dragon, zin 6
+  4;38,6 20;10,51 23;30,58 16;41,50 10;11,51
+  Solar: Iron-Tiger. Can 9
+28: Thu. gro zhin. Wind-Earth; 21 Mar 2346
+  mchog can, khyim skyes, Snake, zon 7
+  5;42,18 21;5,10 23;35,28 17;40,38 10;12,50
+  Solar: Iron-Rabbit. Jing 1
+29: Fri. gro zhin. Earth-Earth; 22 Mar 2346
+  yongs 'joms, vishti, Horse, li 8
+  6;46,29 21;59,28 23;39,58 18;39,26 10;13,48
+  Solar: Water-Dragon. Gui 2
+30: Sat. mon gre. Earth-Water; 23 Mar 2346
+  zhi ba, rkang bzhi, Sheep, khon 9
+  0;50,41 22;53,46 23;44,27 19;38,14 10;14,46
+  Solar: Water-Snake. Liu 3
+
+Tibetan Lunar Month: 2 - Iron-female-Snake
+
+1: Sun. mon gru. Fire-Earth; 24 Mar 2346
+  grub pa, mi sdug pa, Monkey, dwa 1
+  1;53,56 23;49,1 23;48,57 20;37,58 10;15,44
+  Solar: Wood-Horse. Xing 4
+2: Mon. khrums stod. Water-Fire; 25 Mar 2346
+  bsgrub bya, gdab pa, Bird, khen 2
+  2;56,10 24;45,16 23;53,27 21;38,43 10;16,42
+  Solar: Wood-Sheep. Zhang 5
+3: Tue. khrums smad. Fire-Water; 26 Mar 2346
+  dge ba, rigs can, Dog, kham 3
+  3;57,25 25;42,31 23;57,56 22;40,28 10;17,41
+  Solar: Fire-Monkey. Yi 6
+4: Wed. nam gru. Water-Water; 27 Mar 2346
+  dkar po, khyim skyes, Pig, gin 4
+  4;57,40 26;40,46 24;2,26 23;43,12 10;18,39
+  Solar: Fire-Bird. Zhen 7
+5: Thu. tha skar. Wind-Wind; 28 Mar 2346
+  tshangs pa, vishti, Mouse, zin 5
+  5;55,58 0;40,57 24;6,56 24;47,54 10;19,37
+  Solar: Earth-Dog. Jiao 8
+6: Fri. bra nye. Earth-Fire; 29 Mar 2346
+  dbang po, rigs can, Ox, zon 6
+  6;53,12 1;42,12 24;11,25 25;53,38 10;20,35
+  Solar: Earth-Pig. Kang 9
+7: Sat. smin drug. Earth-Fire; 30 Mar 2346
+  rnam sel, khyim skyes, Tiger, li 7
+  0;49,27 2;44,28 24;15,55 0;0,23 10;21,34
+  Solar: Iron-Mouse. Di 1
+8: Sun. snar ma. Fire-Earth; 31 Mar 2346
+  mdza' bo, vishti, Rabbit, khon 8
+  1;44,42 3;47,43 24;20,25 1;8,8 10;22,32
+  Solar: Iron-Ox. Fang 2
+9: Mon. mgo. Water-Wind; 1 Apr 2346
+  tshe dang ldan pa, byis pa, Dragon, dwa 9
+  2;38,56 4;51,58 24;24,55 2;16,53 10;23,30
+  Solar: Water-Tiger. Xin 3
+10: Tue. lag. Fire-Water; 2 Apr 2346
+  skal bzang, til rdung, Snake, khen 1
+  3;33,8 5;56,16 24;29,24 3;25,41 10;24,28
+  Solar: Water-Rabbit. Wei 4
+11: Wed. rgyal. Water-Fire; 3 Apr 2346
+  dge byed, tshong ba, Horse, kham 2
+  4;27,19 7;0,35 24;33,54 4;34,29 10;25,26
+  Solar: Wood-Dragon. Ji 5
+12: Thu. skag. Wind-Water; 4 Apr 2346
+  shin tu 'grams, byis pa, Sheep, gin 3
+  5;21,30 8;4,53 24;38,24 5;43,17 10;26,25
+  Solar: Wood-Snake. Dou 6
+13: Fri. mchu. Earth-Fire; 5 Apr 2346
+  las bzang, til rdung, Monkey, zin 4
+  6;15,42 9;9,11 24;42,53 6;52,5 10;27,23
+  Solar: Fire-Horse. Niu 7
+14: Sat. gre. Earth-Fire; 6 Apr 2346
+  zug rngu, tshong ba, Bird, zon 5
+  0;9,53 10;13,30 24;47,23 8;0,53 10;28,21
+  Solar: Fire-Sheep. Nu 8
+15: Sun. dbo. Fire-Wind; 7 Apr 2346
+  'grams, gdab pa, Dog, li 6
+  1;5,1 11;16,51 24;51,53 9;8,44 10;29,19
+  Solar: Earth-Monkey. Xu 9
+16: Mon. me bzhi. Water-Wind; 8 Apr 2346
+  'phel, rigs can, Pig, khon 7
+  2;1,8 12;19,12 24;56,21 10;15,34 11;0,17
+  Solar: Earth-Bird. Wei 1
+17. Omitted: Mouse dwa 8
+18: Tue. nag pa. Fire-Wind; 9 Apr 2346
+  brtan pa, khyim skyes, Ox, khen 9
+  3;56,13 13;20,55 25;5,8 11;26,4 11;2,14
+  Solar: Iron-Dog. Shi 2
+19: Wed. sa ri. Water-Wind; 10 Apr 2346
+  yongs bsnun, vishti, Tiger, kham 1
+  4;56,12 14;19,20 25;9,32 12;28,52 11;3,12
+  Solar: Iron-Pig. Bi 3
+20: Thu. sa ga. Wind-Fire; 11 Apr 2346
+  dga' ba, byis pa, Rabbit, gin 2
+  5;57,15 15;16,41 25;13,56 13;30,37 11;4,10
+  Solar: Water-Mouse. Kui 4
+21: Fri. lha mtshams. Earth-Earth; 12 Apr 2346
+  rdo rje, til rdung, Dragon, zin 3
+  6;59,18 16;13,2 25;18,20 14;31,23 11;5,8
+  Solar: Water-Ox. Lou 5
+22: Sat. snron. Earth-Earth; 13 Apr 2346
+  0;60,0 17;10,44 25;22,44 15;33,28 11;6,7
+  Solar: Wood-Tiger. Wei 6
+22: Sun. snrubs. Fire-Water; 14 Apr 2346
+  phan tshun, gdab pa, Snake, zon 4
+  1;2,20 18;8,23 25;22,44 16;31,8 11;6,7
+  Solar: Wood-Rabbit. Mao 7
+23: Mon. chu stod. Water-Water; 15 Apr 2346
+  mchog can, rigs can, Horse, li 5
+  2;6,23 19;2,44 25;27,8 17;29,53 11;7,5
+  Solar: Fire-Dragon. Bi 8
+24: Tue. chu stod. Fire-Water; 16 Apr 2346
+  yongs 'joms, khyim skyes, Sheep, khon 6
+  3;10,29 19;57,3 25;31,32 18;28,35 11;8,3
+  Solar: Fire-Snake. Zui 9
+25: Wed. chu smad. Water-Earth; 17 Apr 2346
+  zhi ba, vishti, Monkey, dwa 7
+  4;14,34 20;51,21 25;35,56 19;27,17 11;9,1
+  Solar: Earth-Horse. Can 1
+26: Thu. gro zhin. Wind-Earth; 18 Apr 2346
+  grub pa, byis pa, Bird, khen 8
+  5;18,40 21;45,39 25;40,20 20;25,59 11;10,0
+  Solar: Earth-Sheep. Jing 2
+27: Fri. mon gre. Earth-Water; 19 Apr 2346
+  bsgrub bya, til rdung, Dog, kham 9
+  6;22,46 22;39,57 25;44,43 21;24,41 11;10,58
+  Solar: Iron-Monkey. Gui 3
+28: Sat. mon gru. Earth-Earth; 20 Apr 2346
+  dge ba, tshong ba, Pig, gin 1
+  0;26,51 23;34,15 25;49,7 22;23,23 11;11,56
+  Solar: Iron-Bird. Liu 4
+29: Sun. khrums stod. Fire-Fire; 21 Apr 2346
+  dkar po, vishti, Mouse, zin 2
+  1;30,0 24;29,31 25;53,31 23;23,2 11;12,54
+  Solar: Water-Dog. Xing 5
+30: Mon. khrums smad. Water-Water; 22 Apr 2346
+  tshangs pa, rkang bzhi, Ox, zon 3
+  2;32,9 25;25,46 25;57,55 24;23,42 11;13,52
+  Solar: Water-Pig. Zhang 6
+
+Tibetan Lunar Month: 3 - Water-male-Horse
+
+1: Tue. nam gru. Fire-Water; 23 Apr 2346
+  dbang po, mi sdug pa, Tiger, li 4
+  3;33,17 26;23,1 26;2,19 25;25,21 11;14,51
+  Solar: Wood-Mouse. Yi 7
+2: Wed. tha skar. Water-Wind; 24 Apr 2346
+  'khon 'dzin, byis pa, Rabbit, khon 5
+  4;33,25 0;21,17 26;6,43 26;28,0 11;15,49
+  Solar: Wood-Ox. Zhen 8
+3: Thu. bra nye. Wind-Fire; 25 Apr 2346
+  rnam sel, til rdung, Dragon, dwa 6
+  5;31,37 1;21,29 26;11,7 0;32,37 11;16,47
+  Solar: Fire-Tiger. Jiao 9
+4: Fri. smin drug. Earth-Fire; 26 Apr 2346
+  mdza' bo, tshong ba, Snake, khen 7
+  6;28,45 2;22,45 26;15,31 1;38,16 11;17,45
+  Solar: Fire-Rabbit. Kang 1
+5: Sat. snar ma. Earth-Earth; 27 Apr 2346
+  tshe dang ldan pa, byis pa, Horse, kham 8
+  0;24,53 3;25,0 26;19,54 2;44,55 11;18,43
+  Solar: Earth-Dragon. Di 2
+6: Sun. mgo. Fire-Wind; 28 Apr 2346
+  skal bzang, til rdung, Sheep, gin 9
+  1;20,2 4;28,16 26;24,18 3;52,35 11;19,42
+  Solar: Earth-Snake. Fang 3
+7: Mon. lag. Water-Water; 29 Apr 2346
+  shin tu 'grams, tshong ba, Monkey, zin 1
+  2;14,10 5;32,32 26;28,42 5;1,14 11;20,40
+  Solar: Iron-Horse. Xin 4
+8: Tue. nabs so. Fire-Wind; 30 Apr 2346
+  las bzang, gdab pa, Bird, zon 2
+  3;8,16 6;36,50 26;33,6 6;9,57 11;21,38
+  Solar: Iron-Sheep. Wei 5
+9: Wed. rgyal. Water-Fire; 1 May 2346
+  'dzin byed, rigs can, Dog, li 3
+  4;2,21 7;41,8 26;37,30 7;18,39 11;22,36
+  Solar: Water-Monkey. Ji 6
+10. Omitted: Pig khon 4
+11: Thu. skag. Wind-Water; 2 May 2346
+  zug rngu, tshong ba, Mouse, dwa 5
+  5;50,32 8;49,45 26;46,18 8;36,3 11;24,33
+  Solar: Water-Bird. Dou 7
+12: Fri. mchu. Earth-Fire; 3 May 2346
+  'grams, gdab pa, Ox, khen 6
+  6;44,38 9;54,3 26;50,42 9;44,45 11;25,31
+  Solar: Wood-Dog. Niu 8
+13: Sat. gre. Earth-Fire; 4 May 2346
+  'phel, rigs can, Tiger, kham 7
+  0;39,41 10;57,24 26;55,5 10;52,30 11;26,29
+  Solar: Wood-Pig. Nu 9
+14: Sun. dbo. Fire-Wind; 5 May 2346
+  brtan pa, khyim skyes, Rabbit, gin 8
+  1;35,44 11;59,45 26;59,29 11;59,15 11;27,27
+  Solar: Fire-Mouse. Xu 1
+15: Mon. nag pa. Water-Wind; 6 May 2346
+  dga' ba, vishti, Dragon, zin 9
+  2;32,46 13;1,6 0;3,53 13;5,0 11;28,25
+  Solar: Fire-Ox. Wei 2
+  Revelation of the Kalacakra Tantra.
+16: Tue. sa ri. Fire-Wind; 7 May 2346
+  rdo rje, byis pa, Snake, zon 1
+  3;30,49 14;1,27 0;8,17 14;9,45 11;29,24
+  Solar: Earth-Tiger. Shi 3
+17: Wed. sa ri. Water-Wind; 8 May 2346
+  dngos grub, til rdung, Horse, li 2
+  4;30,48 14;59,51 0;12,40 15;12,31 0;0,22
+  Solar: Earth-Rabbit. Bi 4
+18: Thu. sa ga. Wind-Fire; 9 May 2346
+  phan tshun, tshong ba, Sheep, khon 3
+  5;31,48 15;57,11 0;17,0 16;14,11 0;1,20
+  Solar: Iron-Dragon. Kui 5
+19: Fri. lha mtshams. Earth-Earth; 10 May 2346
+  mchog can, gdab pa, Monkey, dwa 4
+  6;33,47 16;53,32 0;21,20 17;14,52 0;2,18
+  Solar: Iron-Snake. Lou 6
+20: Sat. snron. Earth-Earth; 11 May 2346
+  yongs 'joms, rigs can, Bird, khen 5
+  0;36,46 17;48,53 0;25,40 18;14,33 0;3,17
+  Solar: Water-Horse. Wei 7
+21: Sun. snrubs. Fire-Water; 12 May 2346
+  zhi ba, khyim skyes, Dog, kham 6
+  1;40,45 18;43,14 0;30,0 19;13,14 0;4,15
+  Solar: Water-Sheep. Mao 8
+22: Mon. chu stod. Water-Water; 13 May 2346
+  grub pa, vishti, Pig, gin 7
+  2;44,47 19;37,32 0;34,20 20;11,52 0;5,13
+  Solar: Wood-Monkey. Bi 9
+23: Tue. chu smad. Fire-Earth; 14 May 2346
+  bsgrub bya, byis pa, Mouse, zin 8
+  3;48,49 20;31,50 0;38,40 21;10,30 0;6,11
+  Solar: Wood-Bird. Zui 1
+24: Wed. gro zhin. Water-Earth; 15 May 2346
+  dge ba, til rdung, Ox, zon 9
+  4;52,51 21;26,8 0;43,0 22;9,8 0;7,9
+  Solar: Fire-Dog. Can 2
+25: Thu. mon gre. Wind-Water; 16 May 2346
+  dkar po, khyim skyes, Tiger, li 1
+  5;56,53 22;20,26 0;47,20 23;7,46 0;8,8
+  Solar: Fire-Pig. Jing 3
+26: Fri. mon gru. Earth-Earth; 17 May 2346
+  6;60,0 23;15,40 0;51,40 24;7,20 0;9,6
+  Solar: Earth-Mouse. Gui 4
+26: Sat. khrums stod. Earth-Fire; 18 May 2346
+  dbang po, byis pa, Rabbit, khon 2
+  0;0,54 24;14,45 0;51,40 25;6,25 0;9,6
+  Solar: Earth-Ox. Liu 5
+27: Sun. khrums smad. Fire-Water; 19 May 2346
+  'khon 'dzin, til rdung, Dragon, dwa 3
+  1;3,59 25;10,0 0;56,0 26;6,0 0;10,4
+  Solar: Iron-Tiger. Xing 6
+28: Mon. nam gru. Water-Water; 20 May 2346
+  rnam sel, tshong ba, Snake, khen 4
+  2;6,3 26;6,16 1;0,20 0;6,36 0;11,2
+  Solar: Iron-Rabbit. Zhang 7
+29: Tue. tha skar. Fire-Wind; 21 May 2346
+  mdza' bo, bkra shis, Horse, kham 5
+  3;7,7 0;3,32 1;4,40 1;8,12 0;12,0
+  Solar: Water-Dragon. Yi 8
+30: Wed. bra nye. Water-Fire; 22 May 2346
+  tshe dang ldan pa, klu, Sheep, gin 6
+  4;7,11 1;1,48 1;9,0 2;10,48 0;12,59
+  Solar: Water-Snake. Zhen 9
+
+Tibetan Lunar Month: 4 - Water-female-Sheep
+
+1: Thu. smin drug. Wind-Fire; 23 May 2346
+  skal bzang, gdab pa, Monkey, zin 7
+  5;5,18 2;2,1 1;13,20 3;15,21 0;13,57
+  Solar: Wood-Horse. Jiao 1
+2: Fri. snar ma. Earth-Earth; 24 May 2346
+  dge byed, rigs can, Bird, zon 8
+  6;2,22 3;3,17 1;17,40 4;20,57 0;14,55
+  Solar: Wood-Sheep. Kang 2
+3. Omitted: Dog li 9
+4: Sat. mgo. Earth-Wind; 25 May 2346
+  shin tu 'grams, tshong ba, Pig, khon 1
+  0;53,30 4;8,49 1;26,20 5;35,9 0;16,51
+  Solar: Fire-Monkey. Di 3
+5: Sun. lag. Fire-Water; 26 May 2346
+  las bzang, gdab pa, Mouse, dwa 2
+  1;47,34 5;13,5 1;30,40 6;43,45 0;17,50
+  Solar: Fire-Bird. Fang 4
+6: Mon. nabs so. Water-Wind; 27 May 2346
+  'dzin byed, rigs can, Ox, khen 3
+  2;41,35 6;17,24 1;35,0 7;52,24 0;18,48
+  Solar: Earth-Dog. Xin 5
+7: Tue. rgyal. Fire-Fire; 28 May 2346
+  'grams, khyim skyes, Tiger, kham 4
+  3;35,37 7;21,42 1;39,20 9;1,2 0;19,46
+  Solar: Earth-Pig. Wei 6
+  Birth of the Buddha.
+8: Wed. skag. Water-Water; 29 May 2346
+  'phel, vishti, Rabbit, gin 5
+  4;29,39 8;26,0 1;43,40 10;9,40 0;20,44
+  Solar: Iron-Mouse. Ji 7
+9: Thu. mchu. Wind-Fire; 30 May 2346
+  brtan pa, rigs can, Dragon, zin 6
+  5;23,40 9;30,19 1;48,0 11;18,19 0;21,42
+  Solar: Iron-Ox. Dou 8
+10: Fri. gre. Earth-Fire; 31 May 2346
+  yongs bsnun, khyim skyes, Snake, zon 7
+  6;17,42 10;34,37 1;52,20 12;26,57 0;22,41
+  Solar: Water-Tiger. Niu 9
+11: Sat. dbo. Earth-Wind; 1 Jun 2346
+  dga' ba, vishti, Horse, li 8
+  0;12,41 11;37,58 1;56,40 13;34,38 0;23,39
+  Solar: Water-Rabbit. Nu 1
+12: Sun. me bzhi. Fire-Wind; 2 Jun 2346
+  rdo rje, byis pa, Sheep, khon 9
+  1;8,41 12;40,18 2;1,0 14;41,18 0;24,37
+  Solar: Wood-Dragon. Xu 2
+13: Mon. nag pa. Water-Wind; 3 Jun 2346
+  dngos grub, til rdung, Monkey, dwa 1
+  2;5,40 13;41,39 2;5,20 15;46,59 0;25,35
+  Solar: Wood-Snake. Wei 3
+14: Tue. sa ri. Fire-Wind; 4 Jun 2346
+  phan tshun, tshong ba, Bird, khen 2
+  3;3,40 14;41,59 2;9,40 16;51,39 0;26,34
+  Solar: Fire-Horse. Shi 4
+15: Wed. sa ga. Water-Fire; 5 Jun 2346
+  mchog can, gdab pa, Dog, kham 3
+  4;3,37 15;40,22 2;14,0 17;54,22 0;27,32
+  Solar: Fire-Sheep. Bi 5
+  Enlightenment and Parinirvana of the Buddha.
+16: Thu. lha mtshams. Wind-Earth; 6 Jun 2346
+  yongs 'joms, rigs can, Pig, gin 4
+  5;4,37 16;37,42 2;18,20 18;56,2 0;28,30
+  Solar: Earth-Monkey. Kui 6
+17: Fri. snron. Earth-Earth; 7 Jun 2346
+  zhi ba, khyim skyes, Mouse, zin 5
+  6;6,37 17;34,2 2;22,40 19;56,42 0;29,28
+  Solar: Earth-Bird. Lou 7
+18: Sat. snrubs. Earth-Water; 8 Jun 2346
+  grub pa, vishti, Ox, zon 6
+  0;9,34 18;29,23 2;26,57 20;56,20 1;0,26
+  Solar: Iron-Dog. Wei 8
+19: Sun. chu stod. Fire-Water; 9 Jun 2346
+  bsgrub bya, byis pa, Tiger, li 7
+  1;13,27 19;23,43 2;31,11 21;54,55 1;1,25
+  Solar: Iron-Pig. Mao 9
+20: Mon. chu smad. Water-Earth; 10 Jun 2346
+  dge ba, til rdung, Rabbit, khon 8
+  2;17,23 20;18,1 2;35,25 22;53,27 1;2,23
+  Solar: Water-Mouse. Bi 1
+21: Tue. gro zhin. Fire-Earth; 11 Jun 2346
+  dkar po, tshong ba, Dragon, dwa 9
+  3;21,19 21;12,19 2;39,39 23;51,59 1;3,21
+  Solar: Water-Ox. Zui 2
+22: Wed. mon gre. Water-Water; 12 Jun 2346
+  tshangs pa, gdab pa, Snake, khen 1
+  4;25,15 22;6,38 2;43,54 24;50,32 1;4,19
+  Solar: Wood-Tiger. Can 3
+23: Thu. mon gru. Wind-Earth; 13 Jun 2346
+  dbang po, byis pa, Horse, kham 2
+  5;29,11 23;0,56 2;48,8 25;49,4 1;5,17
+  Solar: Wood-Rabbit. Jing 4
+24: Fri. mon gru. Earth-Earth; 14 Jun 2346
+  'khon 'dzin, til rdung, Sheep, gin 3
+  6;33,7 23;55,14 2;52,22 26;47,36 1;6,16
+  Solar: Fire-Dragon. Gui 5
+25: Sat. khrums stod. Earth-Fire; 15 Jun 2346
+  rnam sel, tshong ba, Monkey, zin 4
+  0;36,5 24;50,30 2;56,36 0;47,7 1;7,14
+  Solar: Fire-Snake. Liu 6
+26: Sun. khrums smad. Fire-Water; 16 Jun 2346
+  mdza' bo, gdab pa, Bird, zon 5
+  1;38,3 25;46,46 3;0,50 1;47,37 1;8,12
+  Solar: Earth-Horse. Xing 7
+27: Mon. nam gru. Water-Water; 17 Jun 2346
+  tshe dang ldan pa, rigs can, Dog, li 6
+  2;39,1 26;44,3 3;5,4 2;49,8 1;9,10
+  Solar: Earth-Sheep. Zhang 8
+28: Tue. tha skar. Fire-Wind; 18 Jun 2346
+  skal bzang, khyim skyes, Pig, khon 7
+  3;38,59 0;42,19 3;9,19 3;51,38 1;10,8
+  Solar: Iron-Monkey. Yi 9
+29: Wed. bra nye. Water-Fire; 19 Jun 2346
+  dge byed, vishti, Mouse, dwa 8
+  4;36,59 1;42,33 3;13,33 4;56,7 1;11,7
+  Solar: Iron-Bird. Zhen 1
+30: Thu. smin drug. Wind-Fire; 20 Jun 2346
+  las bzang, rkang bzhi, Ox, khen 9
+  5;33,57 2;43,50 3;17,47 6;1,37 1;12,5
+  Solar: Water-Dog. Jiao 2
+
+Tibetan Lunar Month: 5 - Wood-male-Monkey
+
+1: Fri. snar ma. Earth-Earth; 21 Jun 2346
+  'dzin byed, mi sdug pa, Tiger, kham 1
+  6;29,54 3;46,6 3;22,1 7;8,8 1;13,3
+  Solar: Water-Pig. Kang 3
+2: Sat. mgo. Earth-Wind; 22 Jun 2346
+  zug rngu, rigs can, Rabbit, gin 2
+  0;24,52 4;49,23 3;26,15 8;15,39 1;14,1
+  Solar: Wood-Mouse. Di 4
+3: Sun. lag. Fire-Water; 23 Jun 2346
+  'grams, khyim skyes, Dragon, zin 3
+  1;18,50 5;53,39 3;30,30 9;24,9 1;15,0
+  Solar: Wood-Ox. Fang 5
+4: Mon. nabs so. Water-Wind; 24 Jun 2346
+  'phel, vishti, Snake, zon 4
+  2;12,46 6;57,58 3;34,44 10;32,42 1;15,58
+  Solar: Fire-Tiger. Xin 6
+5: Tue. skag. Fire-Water; 25 Jun 2346
+  brtan pa, byis pa, Horse, li 5
+  3;6,41 8;2,16 3;38,58 11;41,14 1;16,56
+  Solar: Fire-Rabbit. Wei 7
+6: Wed. mchu. Water-Fire; 26 Jun 2346
+  yongs bsnun, til rdung, Sheep, khon 6
+  4;0,37 9;6,34 3;43,12 12;49,47 1;17,54
+  Solar: Earth-Dragon. Ji 8
+7. Omitted: Monkey dwa 7
+8: Thu. gre. Wind-Fire; 27 Jun 2346
+  rdo rje, vishti, Bird, khen 8
+  5;48,29 10;15,11 3;51,40 14;6,52 1;19,51
+  Solar: Earth-Snake. Dou 9
+9: Fri. dbo. Earth-Wind; 28 Jun 2346
+  dngos grub, byis pa, Dog, kham 9
+  6;43,23 11;18,31 3;55,55 15;14,26 1;20,49
+  Solar: Iron-Horse. Niu 1
+10: Sat. me bzhi. Earth-Wind; 29 Jun 2346
+  phan tshun, til rdung, Pig, gin 1
+  0;39,17 12;20,51 4;0,9 16;21,0 1;21,47
+  Solar: Iron-Sheep. Nu 2
+11: Sun. nag pa. Fire-Wind; 30 Jun 2346
+  mchog can, tshong ba, Mouse, zin 2
+  1;36,11 13;22,11 4;4,23 17;26,35 1;22,45
+  Solar: Water-Monkey. Xu 3
+12: Mon. sa ri. Water-Wind; 1 Jul 2346
+  yongs 'joms, gdab pa, Ox, zon 3
+  2;34,5 14;22,31 4;8,37 18;31,9 1;23,43
+  Solar: Water-Bird. Wei 4
+13: Tue. sa ga. Fire-Fire; 2 Jul 2346
+  zhi ba, rigs can, Tiger, li 4
+  3;33,58 15;20,53 4;12,51 19;33,45 1;24,42
+  Solar: Wood-Dog. Shi 5
+14: Wed. lha mtshams. Water-Earth; 3 Jul 2346
+  grub pa, khyim skyes, Rabbit, khon 5
+  4;34,52 16;18,13 4;17,5 20;35,19 1;25,40
+  Solar: Wood-Pig. Bi 6
+15: Thu. snron. Wind-Earth; 4 Jul 2346
+  bsgrub bya, vishti, Dragon, dwa 6
+  5;36,46 17;14,33 4;21,20 21;35,53 1;26,38
+  Solar: Fire-Mouse. Kui 7
+16: Fri. snrubs. Earth-Water; 5 Jul 2346
+  dge ba, byis pa, Snake, khen 7
+  6;39,41 18;9,53 4;25,34 22;35,27 1;27,36
+  Solar: Fire-Ox. Lou 8
+17: Sat. chu stod. Earth-Water; 6 Jul 2346
+  dkar po, til rdung, Horse, kham 8
+  0;43,35 19;4,12 4;29,48 23;34,1 1;28,34
+  Solar: Earth-Tiger. Wei 9
+18: Sun. chu stod. Fire-Water; 7 Jul 2346
+  tshangs pa, tshong ba, Sheep, gin 9
+  1;47,31 19;58,31 4;34,2 24;32,33 1;29,33
+  Solar: Earth-Rabbit. Mao 1
+19: Mon. chu smad. Water-Earth; 8 Jul 2346
+  dbang po, gdab pa, Monkey, zin 1
+  2;51,25 20;52,49 4;38,14 25;31,4 2;0,31
+  Solar: Iron-Dragon. Bi 2
+20: Tue. gro zhin. Fire-Earth; 9 Jul 2346
+  'khon 'dzin, byis pa, Bird, zon 2
+  3;55,17 21;47,7 4;42,25 26;29,32 2;1,29
+  Solar: Iron-Snake. Zui 3
+21: Wed. mon gre. Water-Water; 10 Jul 2346
+  rnam sel, til rdung, Dog, li 3
+  4;59,9 22;41,25 4;46,35 0;28,1 2;2,27
+  Solar: Water-Horse. Can 4
+22: Thu. mon gru. Wind-Earth; 11 Jul 2346
+  5;60,0 23;38,45 4;50,45 1;29,31 2;3,25
+  Solar: Water-Sheep. Jing 5
+22: Fri. khrums stod. Earth-Fire; 12 Jul 2346
+  tshe dang ldan pa, gdab pa, Pig, khon 4
+  6;3,1 24;35,43 4;50,45 2;26,29 2;3,25
+  Solar: Wood-Monkey. Gui 6
+23: Sat. khrums smad. Earth-Water; 13 Jul 2346
+  skal bzang, rigs can, Mouse, dwa 5
+  0;5,55 25;31,0 4;54,55 3;25,56 2;4,24
+  Solar: Wood-Bird. Liu 7
+24: Sun. nam gru. Fire-Water; 14 Jul 2346
+  dge byed, khyim skyes, Ox, khen 6
+  1;7,49 26;27,17 4;59,6 4;26,23 2;5,22
+  Solar: Fire-Dog. Xing 8
+25: Mon. tha skar. Water-Wind; 15 Jul 2346
+  shin tu 'grams, vishti, Tiger, kham 7
+  2;8,42 0;24,33 5;3,16 5;27,50 2;6,20
+  Solar: Fire-Pig. Zhang 9
+26: Tue. bra nye. Fire-Fire; 16 Jul 2346
+  las bzang, byis pa, Rabbit, gin 8
+  3;8,36 1;22,50 5;7,26 6;30,17 2;7,18
+  Solar: Earth-Mouse. Yi 1
+27: Wed. smin drug. Water-Fire; 17 Jul 2346
+  'dzin byed, til rdung, Dragon, zin 9
+  4;6,31 2;23,5 5;11,37 7;34,43 2;8,17
+  Solar: Earth-Ox. Zhen 2
+28: Thu. snar ma. Wind-Earth; 18 Jul 2346
+  zug rngu, tshong ba, Snake, zon 1
+  5;3,24 3;24,22 5;15,47 8;40,10 2;9,15
+  Solar: Iron-Tiger. Jiao 3
+29. Omitted: Horse li 2
+30: Fri. mgo. Earth-Wind; 19 Jul 2346
+  'grams, bkra shis, Sheep, khon 3
+  6;54,11 4;29,56 5;24,8 9;54,4 2;11,11
+  Solar: Iron-Rabbit. Kang 4
+
+Tibetan Lunar Month: 6 - Wood-female-Bird
+
+1: Sat. lag. Earth-Water; 20 Jul 2346
+  brtan pa, mi sdug pa, Monkey, dwa 4
+  0;48,4 5;34,13 5;28,18 11;2,31 2;12,9
+  Solar: Water-Dragon. Di 5
+2: Sun. nabs so. Fire-Wind; 21 Jul 2346
+  yongs bsnun, byis pa, Bird, khen 5
+  1;41,56 6;38,31 5;32,28 12;11,0 2;13,8
+  Solar: Water-Snake. Fang 6
+3: Mon. rgyal. Water-Fire; 22 Jul 2346
+  dga' ba, til rdung, Dog, kham 6
+  2;35,48 7;42,50 5;36,38 13;19,29 2;14,6
+  Solar: Wood-Horse. Xin 7
+4: Tue. skag. Fire-Water; 23 Jul 2346
+  rdo rje, tshong ba, Pig, gin 7
+  3;29,40 8;47,8 5;40,49 14;27,57 2;15,4
+  Solar: Wood-Sheep. Wei 8
+  Turning of the Wheel of the Dharma.
+5: Wed. mchu. Water-Fire; 24 Jul 2346
+  dngos grub, byis pa, Mouse, zin 8
+  4;23,32 9;51,26 5;44,59 15;36,26 2;16,2
+  Solar: Fire-Monkey. Ji 9
+6: Thu. gre. Wind-Fire; 25 Jul 2346
+  phan tshun, til rdung, Ox, zon 9
+  5;17,24 10;55,45 5;49,9 16;44,55 2;17,0
+  Solar: Fire-Bird. Dou 1
+7: Fri. dbo. Earth-Wind; 26 Jul 2346
+  mchog can, tshong ba, Tiger, li 1
+  6;12,15 11;59,4 5;53,20 17;52,25 2;17,59
+  Solar: Earth-Dog. Niu 2
+8: Sat. nag pa. Earth-Wind; 27 Jul 2346
+  yongs 'joms, gdab pa, Rabbit, khon 2
+  0;8,5 13;1,24 5;57,30 18;58,54 2;18,57
+  Solar: Earth-Pig. Nu 3
+9: Sun. sa ri. Fire-Wind; 28 Jul 2346
+  grub pa, rigs can, Dragon, dwa 3
+  1;4,56 14;2,44 6;1,40 20;4,24 2;19,55
+  Solar: Iron-Mouse. Xu 4
+10: Mon. sa ga. Water-Fire; 29 Jul 2346
+  bsgrub bya, khyim skyes, Snake, khen 4
+  2;2,47 15;3,3 6;5,51 21;8,54 2;20,53
+  Solar: Iron-Ox. Wei 5
+11: Tue. lha mtshams. Fire-Earth; 30 Jul 2346
+  dge ba, vishti, Horse, kham 5
+  3;2,36 16;1,24 6;10,1 22;11,25 2;21,51
+  Solar: Water-Tiger. Shi 6
+12: Wed. lha mtshams. Water-Earth; 31 Jul 2346
+  dkar po, byis pa, Sheep, gin 6
+  4;3,27 16;58,43 6;14,11 23;12,55 2;22,50
+  Solar: Water-Rabbit. Bi 7
+13: Thu. snron. Wind-Earth; 1 Aug 2346
+  tshangs pa, til rdung, Monkey, zin 7
+  5;5,18 17;55,3 6;18,21 24;13,25 2;23,48
+  Solar: Wood-Dragon. Kui 8
+14: Fri. snrubs. Earth-Water; 2 Aug 2346
+  dbang po, tshong ba, Bird, zon 8
+  6;8,9 18;50,22 6;22,32 25;12,55 2;24,46
+  Solar: Wood-Snake. Lou 9
+15: Sat. chu stod. Earth-Water; 3 Aug 2346
+  'khon 'dzin, gdab pa, Dog, li 9
+  0;12,0 19;44,42 6;26,42 26;11,24 2;25,44
+  Solar: Fire-Horse. Wei 1
+  The Buddha's entry into the womb of his mother.
+16: Sun. chu smad. Fire-Earth; 4 Aug 2346
+  rnam sel, rigs can, Pig, khon 1
+  1;15,52 20;39,0 6;30,52 0;9,53 2;26,42
+  Solar: Fire-Sheep. Mao 2
+17: Mon. gro zhin. Water-Earth; 5 Aug 2346
+  mdza' bo, khyim skyes, Mouse, dwa 2
+  2;19,44 21;33,18 6;35,3 1;8,21 2;27,41
+  Solar: Earth-Monkey. Bi 3
+18: Tue. mon gre. Fire-Water; 6 Aug 2346
+  tshe dang ldan pa, vishti, Ox, khen 3
+  3;23,36 22;27,36 6;39,13 2;6,50 2;28,39
+  Solar: Earth-Bird. Zui 4
+19: Wed. mon gru. Water-Earth; 7 Aug 2346
+  skal bzang, gdab pa, Tiger, kham 4
+  4;27,28 23;21,54 6;43,23 3;5,18 2;29,37
+  Solar: Iron-Dog. Can 5
+20: Thu. khrums stod. Wind-Fire; 8 Aug 2346
+  dge byed, rigs can, Rabbit, gin 5
+  5;31,20 24;16,13 6;47,34 4;3,47 3;0,35
+  Solar: Iron-Pig. Jing 6
+21: Fri. khrums smad. Earth-Water; 9 Aug 2346
+  shin tu 'grams, khyim skyes, Dragon, zin 6
+  6;34,14 25;11,30 6;51,44 5;3,14 3;1,34
+  Solar: Water-Mouse. Gui 7
+22: Sat. nam gru. Earth-Water; 10 Aug 2346
+  las bzang, vishti, Snake, zon 7
+  0;36,7 26;7,47 6;55,54 6;3,42 3;2,32
+  Solar: Water-Ox. Liu 8
+23: Sun. tha skar. Fire-Wind; 11 Aug 2346
+  'dzin byed, byis pa, Horse, li 8
+  1;37,0 0;5,4 7;0,4 7;5,9 3;3,30
+  Solar: Wood-Tiger. Xing 9
+24: Mon. bra nye. Water-Fire; 12 Aug 2346
+  zug rngu, til rdung, Sheep, khon 9
+  2;36,53 1;3,21 7;4,15 8;7,36 3;4,28
+  Solar: Wood-Rabbit. Zhang 1
+25: Tue. smin drug. Fire-Fire; 13 Aug 2346
+  'grams, tshong ba, Monkey, dwa 1
+  3;34,47 2;3,37 7;8,25 9;12,3 3;5,26
+  Solar: Fire-Dragon. Yi 2
+26: Wed. snar ma. Water-Earth; 14 Aug 2346
+  'phel, gdab pa, Bird, khen 2
+  4;31,40 3;4,55 7;12,35 10;17,31 3;6,25
+  Solar: Fire-Snake. Zhen 3
+27: Thu. mgo. Wind-Wind; 15 Aug 2346
+  brtan pa, rigs can, Dog, kham 3
+  5;27,33 4;7,12 7;16,46 11;23,58 3;7,23
+  Solar: Earth-Horse. Jiao 4
+28: Fri. lag. Earth-Water; 16 Aug 2346
+  yongs bsnun, tshong ba, Pig, gin 4
+  6;22,26 5;10,29 7;20,56 12;31,26 3;8,21
+  Solar: Earth-Sheep. Kang 5
+29: Sat. nabs so. Earth-Wind; 17 Aug 2346
+  dga' ba, bkra shis, Mouse, zin 5
+  0;16,19 6;14,47 7;25,6 13;39,53 3;9,19
+  Solar: Iron-Monkey. Di 6
+30: Sun. rgyal. Fire-Fire; 18 Aug 2346
+  rdo rje, klu, Ox, zon 6
+  1;10,11 7;19,5 7;29,17 14;48,22 3;10,17
+  Solar: Iron-Bird. Fang 7
+
+Tibetan Lunar Month: 7 - Fire-male-Dog
+
+1: Mon. skag. Water-Water; 19 Aug 2346
+  dngos grub, gdab pa, Tiger, li 7
+  2;4,3 8;23,23 7;33,27 15;56,51 3;11,16
+  Solar: Water-Dog. Xin 8
+2. Omitted: Rabbit khon 8
+3: Tue. mchu. Fire-Fire; 20 Aug 2346
+  mchog can, til rdung, Dragon, dwa 9
+  3;51,47 9;32,0 7;41,47 17;13,48 3;13,12
+  Solar: Water-Pig. Wei 9
+4: Wed. gre. Water-Fire; 21 Aug 2346
+  yongs 'joms, tshong ba, Snake, khen 1
+  4;45,39 10;36,18 7;45,58 18;22,17 3;14,10
+  Solar: Wood-Mouse. Ji 1
+5: Thu. dbo. Wind-Wind; 22 Aug 2346
+  zhi ba, gdab pa, Horse, kham 2
+  5;40,30 11;39,38 7;50,8 19;29,46 3;15,8
+  Solar: Wood-Ox. Dou 2
+6: Fri. me bzhi. Earth-Wind; 23 Aug 2346
+  grub pa, rigs can, Sheep, gin 3
+  6;36,21 12;41,57 7;54,18 20;36,16 3;16,7
+  Solar: Fire-Tiger. Niu 3
+7: Sat. nag pa. Earth-Wind; 24 Aug 2346
+  bsgrub bya, khyim skyes, Monkey, zin 4
+  0;33,12 13;43,16 7;58,29 21;41,45 3;17,5
+  Solar: Fire-Rabbit. Nu 4
+8: Sun. sa ri. Fire-Wind; 25 Aug 2346
+  dge ba, vishti, Bird, zon 5
+  1;31,3 14;43,35 8;2,39 22;46,15 3;18,3
+  Solar: Earth-Dragon. Xu 5
+9: Mon. sa ga. Water-Fire; 26 Aug 2346
+  dkar po, byis pa, Dog, li 6
+  2;30,54 15;41,55 8;6,49 23;48,45 3;19,1
+  Solar: Earth-Snake. Wei 6
+10: Tue. lha mtshams. Fire-Earth; 27 Aug 2346
+  tshangs pa, til rdung, Pig, khon 7
+  3;31,45 16;39,14 8;11,0 24;50,14 3;20,0
+  Solar: Iron-Horse. Shi 7
+11: Wed. snron. Water-Earth; 28 Aug 2346
+  dbang po, tshong ba, Mouse, dwa 8
+  4;33,36 17;35,33 8;15,10 25;50,43 3;20,58
+  Solar: Iron-Sheep. Bi 8
+12: Thu. snrubs. Wind-Water; 29 Aug 2346
+  'khon 'dzin, gdab pa, Ox, khen 9
+  5;36,27 18;30,52 8;19,20 26;50,13 3;21,56
+  Solar: Water-Monkey. Kui 9
+13: Fri. chu stod. Earth-Water; 30 Aug 2346
+  rnam sel, rigs can, Tiger, kham 1
+  6;40,19 19;25,11 8;23,30 0;48,42 3;22,54
+  Solar: Water-Bird. Lou 1
+14: Sat. chu smad. Earth-Earth; 31 Aug 2346
+  mdza' bo, khyim skyes, Rabbit, gin 2
+  0;44,11 20;19,29 8;27,41 1;47,10 3;23,52
+  Solar: Wood-Dog. Wei 2
+15: Sun. gro zhin. Fire-Earth; 1 Sep 2346
+  tshe dang ldan pa, vishti, Dragon, zin 3
+  1;48,3 21;13,47 8;31,51 2;45,39 3;24,51
+  Solar: Wood-Pig. Mao 3
+16: Mon. mon gre. Water-Water; 2 Sep 2346
+  skal bzang, byis pa, Snake, zon 4
+  2;51,55 22;8,6 8;36,1 3;44,7 3;25,49
+  Solar: Fire-Mouse. Bi 4
+17: Tue. mon gru. Fire-Earth; 3 Sep 2346
+  dge byed, rigs can, Horse, li 5
+  3;55,47 23;2,24 8;40,12 4;42,36 3;26,47
+  Solar: Fire-Ox. Zui 5
+18: Wed. mon gru. Water-Earth; 4 Sep 2346
+  shin tu 'grams, khyim skyes, Sheep, khon 6
+  4;59,39 23;56,42 8;44,22 5;41,4 3;27,45
+  Solar: Earth-Tiger. Can 6
+19: Thu. khrums stod. Wind-Fire; 5 Sep 2346
+  5;60,0 24;54,32 8;48,32 6;43,5 3;28,43
+  Solar: Earth-Rabbit. Jing 7
+19: Fri. khrums smad. Earth-Water; 6 Sep 2346
+  'dzin byed, byis pa, Monkey, dwa 7
+  6;2,32 25;52,0 8;48,32 7;40,32 3;28,43
+  Solar: Iron-Dragon. Gui 8
+20: Sat. nam gru. Earth-Water; 7 Sep 2346
+  zug rngu, til rdung, Bird, khen 8
+  0;4,25 26;48,17 8;52,42 8;41,0 3;29,42
+  Solar: Iron-Snake. Liu 9
+21: Sun. tha skar. Fire-Wind; 8 Sep 2346
+  'grams, tshong ba, Dog, kham 9
+  1;5,20 0;45,35 8;56,55 9;42,31 4;0,40
+  Solar: Water-Horse. Xing 1
+22: Mon. bra nye. Water-Fire; 9 Sep 2346
+  'phel, gdab pa, Pig, gin 1
+  2;5,17 1;43,52 9;1,10 10;45,3 4;1,38
+  Solar: Water-Sheep. Zhang 2
+23: Tue. smin drug. Fire-Fire; 10 Sep 2346
+  brtan pa, rigs can, Mouse, zin 2
+  3;3,14 2;44,9 9;5,24 11;49,34 4;2,36
+  Solar: Wood-Monkey. Yi 3
+24: Wed. snar ma. Water-Earth; 11 Sep 2346
+  yongs bsnun, khyim skyes, Ox, zon 3
+  4;0,10 3;45,27 9;9,38 12;55,6 4;3,34
+  Solar: Wood-Bird. Zhen 4
+25. Omitted: Tiger li 4
+26: Thu. mgo. Wind-Wind; 12 Sep 2346
+  rdo rje, gdab pa, Rabbit, khon 5
+  5;51,3 4;51,3 9;18,6 14;9,10 4;5,31
+  Solar: Fire-Dog. Jiao 5
+27: Fri. lag. Earth-Water; 13 Sep 2346
+  dngos grub, rigs can, Dragon, dwa 6
+  6;45,0 5;55,21 9;22,21 15;17,42 4;6,29
+  Solar: Fire-Pig. Kang 6
+28: Sat. nabs so. Earth-Wind; 14 Sep 2346
+  phan tshun, khyim skyes, Snake, khen 7
+  0;38,55 6;59,39 9;26,35 16;26,14 4;7,27
+  Solar: Earth-Mouse. Di 7
+29: Sun. skag. Fire-Water; 15 Sep 2346
+  mchog can, vishti, Horse, kham 8
+  1;32,51 8;3,57 9;30,49 17;34,47 4;8,25
+  Solar: Earth-Ox. Fang 8
+30: Mon. mchu. Water-Fire; 16 Sep 2346
+  yongs 'joms, klu, Sheep, gin 9
+  2;26,47 9;8,16 9;35,3 18;43,19 4;9,24
+  Solar: Iron-Tiger. Xin 9
+
+Tibetan Lunar Month: 8 - Fire-female-Pig
+
+1: Tue. gre. Fire-Fire; 17 Sep 2346
+  zhi ba, gdab pa, Monkey, zin 1
+  3;20,43 10;12,34 9;39,17 19;51,52 4;10,22
+  Solar: Iron-Rabbit. Wei 1
+2: Wed. dbo. Water-Wind; 18 Sep 2346
+  bsgrub bya, rigs can, Bird, zon 2
+  4;14,39 11;16,52 9;43,31 21;0,24 4;11,20
+  Solar: Water-Dragon. Ji 2
+3: Thu. me bzhi. Wind-Wind; 19 Sep 2346
+  dge ba, khyim skyes, Dog, li 3
+  5;9,34 12;20,11 9;47,46 22;7,57 4;12,18
+  Solar: Water-Snake. Dou 3
+4: Fri. nag pa. Earth-Wind; 20 Sep 2346
+  dkar po, vishti, Pig, khon 4
+  6;5,30 13;22,30 9;52,0 23;14,30 4;13,17
+  Solar: Wood-Horse. Niu 4
+5: Sat. sa ri. Earth-Wind; 21 Sep 2346
+  tshangs pa, byis pa, Mouse, dwa 5
+  0;2,25 14;23,48 9;56,14 24;20,3 4;14,15
+  Solar: Wood-Sheep. Nu 5
+6: Sun. sa ga. Fire-Fire; 22 Sep 2346
+  dbang po, til rdung, Ox, khen 6
+  1;0,20 15;24,7 10;0,28 25;24,36 4;15,13
+  Solar: Fire-Monkey. Xu 6
+7: Mon. lha mtshams. Water-Earth; 23 Sep 2346
+  'khon 'dzin, tshong ba, Tiger, kham 7
+  2;0,16 16;22,26 10;4,42 26;27,9 4;16,11
+  Solar: Fire-Bird. Wei 7
+8: Tue. snron. Fire-Earth; 24 Sep 2346
+  rnam sel, gdab pa, Rabbit, gin 8
+  3;1,11 17;19,45 10;8,57 0;28,42 4;17,9
+  Solar: Earth-Dog. Shi 8
+9: Wed. snrubs. Water-Water; 25 Sep 2346
+  mdza' bo, rigs can, Dragon, zin 9
+  4;3,7 18;16,3 10;13,11 1;29,15 4;18,8
+  Solar: Earth-Pig. Bi 9
+10: Thu. chu stod. Wind-Water; 26 Sep 2346
+  tshe dang ldan pa, khyim skyes, Snake, zon 1
+  5;6,2 19;11,22 10;17,25 2;28,47 4;19,6
+  Solar: Iron-Mouse. Kui 1
+11: Fri. chu smad. Earth-Earth; 27 Sep 2346
+  skal bzang, vishti, Horse, li 2
+  6;9,58 20;5,40 10;21,39 3;27,20 4;20,4
+  Solar: Iron-Ox. Lou 2
+12: Sat. chu smad. Earth-Earth; 28 Sep 2346
+  dge byed, byis pa, Sheep, khon 3
+  0;13,54 20;59,59 10;25,53 4;25,52 4;21,2
+  Solar: Water-Tiger. Wei 3
+13: Sun. gro zhin. Fire-Earth; 29 Sep 2346
+  shin tu 'grams, til rdung, Monkey, dwa 4
+  1;17,50 21;54,17 10;30,7 5;24,25 4;22,0
+  Solar: Water-Rabbit. Mao 4
+14: Mon. mon gre. Water-Water; 30 Sep 2346
+  las bzang, tshong ba, Bird, khen 5
+  2;21,46 22;48,35 10;34,22 6;22,57 4;22,59
+  Solar: Wood-Dragon. Bi 5
+15: Tue. mon gru. Fire-Earth; 1 Oct 2346
+  'dzin byed, gdab pa, Dog, kham 6
+  3;25,42 23;42,53 10;38,36 7;21,29 4;23,57
+  Solar: Wood-Snake. Zui 6
+16: Wed. khrums stod. Water-Fire; 2 Oct 2346
+  zug rngu, byis pa, Pig, gin 7
+  4;29,38 24;37,11 10;42,50 8;20,2 4;24,55
+  Solar: Fire-Horse. Can 7
+17: Thu. khrums smad. Wind-Water; 3 Oct 2346
+  'grams, til rdung, Mouse, zin 8
+  5;32,34 25;32,29 10;47,4 9;19,34 4;25,53
+  Solar: Fire-Sheep. Jing 8
+18: Fri. nam gru. Earth-Water; 4 Oct 2346
+  'phel, tshong ba, Ox, zon 9
+  6;34,30 26;28,47 10;51,18 10;20,6 4;26,51
+  Solar: Earth-Monkey. Gui 9
+19: Sat. tha skar. Earth-Wind; 5 Oct 2346
+  brtan pa, gdab pa, Tiger, li 1
+  0;35,27 0;26,5 10;55,32 11;21,38 4;27,50
+  Solar: Earth-Bird. Liu 1
+20: Sun. bra nye. Fire-Fire; 6 Oct 2346
+  yongs bsnun, rigs can, Rabbit, khon 2
+  1;35,23 1;24,23 10;59,47 12;24,11 4;28,48
+  Solar: Iron-Dog. Xing 2
+21: Mon. smin drug. Water-Fire; 7 Oct 2346
+  dga' ba, khyim skyes, Dragon, dwa 3
+  2;33,19 2;24,41 11;4,1 13;28,43 4;29,46
+  Solar: Iron-Pig. Zhang 3
+22: Tue. snar ma. Fire-Earth; 8 Oct 2346
+  rdo rje, vishti, Snake, khen 4
+  3;30,19 3;26,0 11;8,20 14;34,20 5;0,44
+  Solar: Water-Mouse. Yi 4
+23: Wed. mgo. Water-Wind; 9 Oct 2346
+  dngos grub, rigs can, Horse, kham 5
+  4;26,21 4;28,18 11;12,40 15;40,58 5;1,42
+  Solar: Water-Ox. Zhen 5
+24: Thu. lag. Wind-Water; 10 Oct 2346
+  phan tshun, khyim skyes, Sheep, gin 6
+  5;21,23 5;31,36 11;17,0 16;48,36 5;2,41
+  Solar: Wood-Tiger. Jiao 6
+25: Fri. nabs so. Earth-Wind; 11 Oct 2346
+  mchog can, vishti, Monkey, zin 7
+  6;15,25 6;35,54 11;21,20 17;57,14 5;3,39
+  Solar: Wood-Rabbit. Kang 7
+26: Sat. rgyal. Earth-Fire; 12 Oct 2346
+  zhi ba, byis pa, Bird, zon 8
+  0;9,26 7;40,13 11;25,40 19;5,53 5;4,37
+  Solar: Fire-Dragon. Di 8
+27: Sun. skag. Fire-Water; 13 Oct 2346
+  grub pa, til rdung, Dog, li 9
+  1;3,28 8;44,31 11;30,0 20;14,31 5;5,35
+  Solar: Fire-Snake. Fang 9
+28. Omitted: Pig khon 1
+29: Mon. mchu. Water-Fire; 14 Oct 2346
+  bsgrub bya, vishti, Mouse, dwa 2
+  2;51,31 9;53,8 11;38,40 21;31,48 5;7,32
+  Solar: Earth-Horse. Xin 1
+30: Tue. gre. Fire-Fire; 15 Oct 2346
+  dge ba, rkang bzhi, Ox, khen 3
+  3;45,33 10;57,26 11;43,0 22;40,26 5;8,30
+  Solar: Earth-Sheep. Wei 2
+
+Tibetan Lunar Month: 9 (Intercalary) - Earth-male-Mouse
+
+1: Wed. me bzhi. Water-Wind; 16 Oct 2346
+  dkar po, mi sdug pa, Tiger, kham 4
+  4;40,35 12;0,44 11;47,20 23;48,4 5;9,28
+  Solar: Iron-Monkey. Ji 3
+2: Thu. nag pa. Wind-Wind; 17 Oct 2346
+  tshangs pa, byis pa, Rabbit, gin 5
+  5;36,36 13;3,3 11;51,40 24;54,43 5;10,26
+  Solar: Iron-Bird. Dou 4
+3: Fri. sa ri. Earth-Wind; 18 Oct 2346
+  'khon 'dzin, til rdung, Dragon, zin 6
+  6;33,38 14;4,21 11;56,0 26;0,21 5;11,25
+  Solar: Water-Dog. Niu 5
+4: Sat. sa ga. Earth-Fire; 19 Oct 2346
+  rnam sel, tshong ba, Snake, zon 7
+  0;31,40 15;4,39 12;0,20 0;4,59 5;12,23
+  Solar: Water-Pig. Nu 6
+5: Sun. lha mtshams. Fire-Earth; 20 Oct 2346
+  mdza' bo, gdab pa, Horse, li 8
+  1;31,42 16;2,57 12;4,40 1;7,37 5;13,21
+  Solar: Wood-Mouse. Xu 7
+6: Mon. snron. Water-Earth; 21 Oct 2346
+  tshe dang ldan pa, rigs can, Sheep, khon 9
+  2;32,44 17;0,15 12;9,0 2;9,15 5;14,19
+  Solar: Wood-Ox. Wei 8
+7: Tue. snron. Fire-Earth; 22 Oct 2346
+  skal bzang, khyim skyes, Monkey, dwa 1
+  3;34,46 17;56,33 12;13,20 3;9,53 5;15,17
+  Solar: Fire-Tiger. Shi 9
+8: Wed. snrubs. Water-Water; 23 Oct 2346
+  dge byed, vishti, Bird, khen 2
+  4;37,47 18;51,52 12;17,40 4;9,32 5;16,16
+  Solar: Fire-Rabbit. Bi 1
+9: Thu. chu stod. Wind-Water; 24 Oct 2346
+  shin tu 'grams, byis pa, Dog, kham 3
+  5;41,49 19;46,10 12;22,0 5;8,10 5;17,14
+  Solar: Earth-Dragon. Kui 2
+10: Fri. chu smad. Earth-Earth; 25 Oct 2346
+  las bzang, til rdung, Pig, gin 4
+  6;45,51 20;40,28 12;26,20 6;6,48 5;18,12
+  Solar: Earth-Snake. Lou 3
+11: Sat. gro zhin. Earth-Earth; 26 Oct 2346
+  'dzin byed, tshong ba, Mouse, zin 5
+  0;49,53 21;34,46 12;30,40 7;5,26 5;19,10
+  Solar: Iron-Horse. Wei 4
+12: Sun. mon gre. Fire-Water; 27 Oct 2346
+  zug rngu, gdab pa, Ox, zon 6
+  1;53,55 22;29,4 12;35,0 8;4,4 5;20,8
+  Solar: Iron-Sheep. Mao 5
+13: Mon. mon gru. Water-Earth; 28 Oct 2346
+  'grams, byis pa, Tiger, li 7
+  2;57,57 23;23,23 12;39,20 9;2,43 5;21,7
+  Solar: Water-Monkey. Bi 6
+14: Tue. khrums stod. Fire-Fire; 29 Oct 2346
+  3;60,0 24;19,40 12;43,40 10;3,20 5;22,5
+  Solar: Water-Bird. Zui 7
+14: Wed. khrums smad. Water-Water; 30 Oct 2346
+  brtan pa, tshong ba, Rabbit, khon 8
+  4;1,58 25;17,41 12;43,40 11;1,21 5;22,5
+  Solar: Wood-Dog. Can 8
+15: Thu. nam gru. Wind-Water; 31 Oct 2346
+  yongs bsnun, gdab pa, Dragon, dwa 9
+  5;5,0 26;12,59 12;48,0 12;0,59 5;23,3
+  Solar: Wood-Pig. Jing 9
+16: Fri. tha skar. Earth-Wind; 1 Nov 2346
+  dga' ba, rigs can, Snake, khen 1
+  6;7,1 0;9,18 12;52,20 13;1,38 5;24,1
+  Solar: Fire-Mouse. Gui 1
+17: Sat. bra nye. Earth-Fire; 2 Nov 2346
+  rdo rje, khyim skyes, Horse, kham 2
+  0;8,3 1;6,36 12;56,40 14;3,16 5;25,0
+  Solar: Fire-Ox. Liu 2
+18: Sun. smin drug. Fire-Fire; 3 Nov 2346
+  dngos grub, vishti, Sheep, gin 3
+  1;8,4 2;4,55 13;1,0 15;5,55 5;25,58
+  Solar: Earth-Tiger. Xing 3
+19: Mon. snar ma. Water-Earth; 4 Nov 2346
+  phan tshun, byis pa, Monkey, zin 4
+  2;6,5 3;5,14 13;5,20 16;10,34 5;26,56
+  Solar: Earth-Rabbit. Zhang 4
+20: Tue. mgo. Fire-Wind; 5 Nov 2346
+  mchog can, til rdung, Bird, zon 5
+  3;3,7 4;6,32 13;9,40 17;16,12 5;27,54
+  Solar: Iron-Dragon. Yi 5
+21. Omitted: Dog li 6
+22: Wed. lag. Water-Water; 6 Nov 2346
+  yongs 'joms, tshong ba, Pig, khon 7
+  4;54,9 5;12,10 13;18,20 18;30,30 5;29,51
+  Solar: Iron-Snake. Zhen 6
+  Descent of the Buddha from the realm of the gods.
+23: Thu. nabs so. Wind-Wind; 7 Nov 2346
+  zhi ba, byis pa, Mouse, dwa 8
+  5;48,14 6;16,28 13;22,43 19;39,11 6;0,49
+  Solar: Water-Horse. Jiao 7
+24: Fri. rgyal. Earth-Fire; 8 Nov 2346
+  grub pa, til rdung, Ox, khen 9
+  6;42,20 7;20,46 13;27,7 20;47,54 6;1,47
+  Solar: Water-Sheep. Kang 8
+25: Sat. skag. Earth-Water; 9 Nov 2346
+  bsgrub bya, tshong ba, Tiger, kham 1
+  0;36,25 8;25,5 13;31,31 21;56,36 6;2,45
+  Solar: Wood-Monkey. Di 9
+26: Sun. mchu. Fire-Fire; 10 Nov 2346
+  dkar po, gdab pa, Rabbit, gin 2
+  1;30,31 9;29,23 13;35,54 23;5,18 6;3,43
+  Solar: Wood-Bird. Fang 1
+27: Mon. gre. Water-Fire; 11 Nov 2346
+  tshangs pa, til rdung, Dragon, zin 3
+  2;24,36 10;33,41 13;40,18 24;14,0 6;4,42
+  Solar: Fire-Dog. Xin 2
+28: Tue. dbo. Fire-Wind; 12 Nov 2346
+  dbang po, tshong ba, Snake, zon 4
+  3;18,42 11;37,59 13;44,42 25;22,42 6;5,40
+  Solar: Fire-Pig. Wei 3
+29: Wed. me bzhi. Water-Wind; 13 Nov 2346
+  'khon 'dzin, bkra shis, Horse, li 5
+  4;13,48 12;41,17 13;49,6 26;30,24 6;6,38
+  Solar: Earth-Mouse. Ji 4
+30: Thu. nag pa. Wind-Wind; 14 Nov 2346
+  rnam sel, klu, Sheep, khon 6
+  5;9,54 13;43,35 13;53,30 0;37,6 6;7,36
+  Solar: Earth-Ox. Dou 5
+
+Tibetan Lunar Month: 9 (Delayed) - Earth-male-Mouse
+
+1: Fri. sa ri. Earth-Wind; 15 Nov 2346
+  mdza' bo, gdab pa, Tiger, kham 4
+  6;7,0 14;44,53 13;57,54 1;42,47 6;8,34
+  Solar: Iron-Tiger. Niu 6
+2: Sat. sa ga. Earth-Fire; 16 Nov 2346
+  tshe dang ldan pa, rigs can, Rabbit, gin 5
+  0;5,7 15;45,10 14;2,18 2;47,28 6;9,33
+  Solar: Iron-Rabbit. Nu 7
+3: Sun. lha mtshams. Fire-Earth; 17 Nov 2346
+  skal bzang, khyim skyes, Dragon, zin 6
+  1;5,13 16;43,28 14;6,42 3;50,10 6;10,31
+  Solar: Water-Dragon. Xu 8
+4: Mon. snron. Water-Earth; 18 Nov 2346
+  dge byed, vishti, Snake, zon 7
+  2;6,19 17;40,46 14;11,5 4;51,52 6;11,29
+  Solar: Water-Snake. Wei 9
+5: Tue. snrubs. Fire-Water; 19 Nov 2346
+  shin tu 'grams, byis pa, Horse, li 8
+  3;8,26 18;37,3 14;15,29 5;52,33 6;12,27
+  Solar: Wood-Horse. Shi 1
+6: Wed. chu stod. Water-Water; 20 Nov 2346
+  las bzang, til rdung, Sheep, khon 9
+  4;11,32 19;32,21 14;19,53 6;52,15 6;13,25
+  Solar: Wood-Sheep. Bi 2
+7: Thu. chu smad. Wind-Earth; 21 Nov 2346
+  'dzin byed, tshong ba, Monkey, dwa 1
+  5;15,38 20;26,39 14;24,17 7;50,57 6;14,24
+  Solar: Fire-Monkey. Kui 3
+8: Fri. gro zhin. Earth-Earth; 22 Nov 2346
+  zug rngu, gdab pa, Bird, khen 2
+  6;19,43 21;20,57 14;28,41 8;49,39 6;15,22
+  Solar: Fire-Bird. Lou 4
+9: Sat. mon gre. Earth-Water; 23 Nov 2346
+  'grams, rigs can, Dog, kham 3
+  0;23,49 22;15,15 14;33,5 9;48,21 6;16,20
+  Solar: Earth-Dog. Wei 5
+10: Sun. mon gru. Fire-Earth; 24 Nov 2346
+  'phel, til rdung, Pig, gin 4
+  1;27,55 23;9,34 14;37,29 10;47,3 6;17,18
+  Solar: Earth-Pig. Mao 6
+11: Mon. khrums stod. Water-Fire; 25 Nov 2346
+  brtan pa, tshong ba, Mouse, zin 5
+  2;32,0 24;3,52 14;41,53 11;45,45 6;18,17
+  Solar: Iron-Mouse. Bi 7
+12: Tue. khrums stod. Fire-Fire; 26 Nov 2346
+  yongs bsnun, gdab pa, Ox, zon 6
+  3;36,5 24;58,11 14;46,17 12;44,28 6;19,15
+  Solar: Iron-Ox. Zui 8
+13: Wed. khrums smad. Water-Water; 27 Nov 2346
+  dga' ba, rigs can, Tiger, li 7
+  4;39,10 25;53,30 14;50,40 13;44,10 6;20,13
+  Solar: Water-Tiger. Can 9
+14: Thu. nam gru. Wind-Water; 28 Nov 2346
+  rdo rje, khyim skyes, Rabbit, khon 8
+  5;41,15 26;49,49 14;55,4 14;44,53 6;21,11
+  Solar: Water-Rabbit. Jing 1
+15: Fri. tha skar. Earth-Wind; 29 Nov 2346
+  dngos grub, vishti, Dragon, dwa 9
+  6;42,20 0;47,7 14;59,28 15;46,36 6;22,9
+  Solar: Wood-Dragon. Gui 2
+16: Sat. bra nye. Earth-Fire; 30 Nov 2346
+  phan tshun, byis pa, Snake, khen 1
+  0;42,24 1;45,27 15;3,52 16;49,20 6;23,8
+  Solar: Wood-Snake. Liu 3
+17: Sun. smin drug. Fire-Fire; 1 Dec 2346
+  mchog can, til rdung, Horse, kham 2
+  1;40,29 2;45,46 15;8,16 17;54,3 6;24,6
+  Solar: Fire-Horse. Xing 4
+18: Mon. snar ma. Water-Earth; 2 Dec 2346
+  yongs 'joms, tshong ba, Sheep, gin 3
+  2;37,34 3;47,5 15;12,40 18;59,46 6;25,4
+  Solar: Fire-Sheep. Zhang 5
+19: Tue. mgo. Fire-Wind; 3 Dec 2346
+  grub pa, gdab pa, Monkey, zin 4
+  3;33,39 4;49,24 15;17,4 20;6,29 6;26,2
+  Solar: Earth-Monkey. Yi 6
+20: Wed. lag. Water-Water; 4 Dec 2346
+  bsgrub bya, rigs can, Bird, zon 5
+  4;28,44 5;52,43 15;21,28 21;14,12 6;27,0
+  Solar: Earth-Bird. Zhen 7
+21: Thu. nabs so. Wind-Wind; 5 Dec 2346
+  dge ba, tshong ba, Dog, li 6
+  5;22,49 6;57,2 15;25,51 22;22,54 6;27,59
+  Solar: Iron-Dog. Jiao 8
+22: Fri. skag. Earth-Water; 6 Dec 2346
+  dkar po, gdab pa, Pig, khon 7
+  6;16,55 8;1,20 15;30,15 23;31,36 6;28,57
+  Solar: Iron-Pig. Kang 9
+23: Sat. mchu. Earth-Fire; 7 Dec 2346
+  tshangs pa, rigs can, Mouse, dwa 8
+  0;11,0 9;5,39 15;34,39 24;40,18 6;29,55
+  Solar: Water-Mouse. Di 1
+24: Sun. gre. Fire-Fire; 8 Dec 2346
+  dbang po, khyim skyes, Ox, khen 9
+  1;5,11 10;9,57 15;39,8 25;49,6 7;0,53
+  Solar: Water-Ox. Fang 2
+25. Omitted: Tiger kham 1
+26: Mon. dbo. Water-Wind; 9 Dec 2346
+  rnam sel, gdab pa, Rabbit, gin 2
+  2;53,35 11;18,33 15;48,8 0;6,41 7;2,50
+  Solar: Wood-Tiger. Xin 3
+27: Tue. me bzhi. Fire-Wind; 10 Dec 2346
+  mdza' bo, rigs can, Dragon, zin 3
+  3;48,47 12;21,50 15;52,38 1;14,28 7;3,48
+  Solar: Wood-Rabbit. Wei 4
+28: Wed. nag pa. Water-Wind; 11 Dec 2346
+  tshe dang ldan pa, khyim skyes, Snake, zon 4
+  4;44,59 13;24,8 15;57,7 2;21,15 7;4,46
+  Solar: Fire-Dragon. Ji 5
+29: Thu. sa ri. Wind-Wind; 12 Dec 2346
+  skal bzang, vishti, Horse, li 5
+  5;42,12 14;25,25 16;1,37 3;27,2 7;5,44
+  Solar: Fire-Snake. Dou 6
+30: Fri. sa ga. Earth-Fire; 13 Dec 2346
+  dge byed, rkang bzhi, Sheep, khon 6
+  6;40,25 15;25,41 16;6,7 4;31,48 7;6,42
+  Solar: Earth-Horse. Niu 7
+
+Tibetan Lunar Month: 10 - Earth-female-Ox
+
+1: Sat. lha mtshams. Earth-Earth; 14 Dec 2346
+  shin tu 'grams, mi sdug pa, Monkey, dwa 7
+  0;40,37 16;23,59 16;10,36 5;34,35 7;7,41
+  Solar: Earth-Sheep. Nu 8
+2: Sun. snron. Fire-Earth; 15 Dec 2346
+  las bzang, byis pa, Bird, khen 8
+  1;41,50 17;21,16 16;15,6 6;36,22 7;8,39
+  Solar: Iron-Monkey. Xu 9
+3: Mon. snrubs. Water-Water; 16 Dec 2346
+  'dzin byed, til rdung, Dog, kham 9
+  2;44,2 18;17,33 16;19,36 7;37,9 7;9,37
+  Solar: Iron-Bird. Wei 1
+4: Tue. chu stod. Fire-Water; 17 Dec 2346
+  zug rngu, tshong ba, Pig, gin 1
+  3;47,15 19;12,50 16;24,5 8;36,56 7;10,35
+  Solar: Water-Dog. Shi 2
+5: Wed. chu smad. Water-Earth; 18 Dec 2346
+  'grams, gdab pa, Mouse, zin 2
+  4;51,26 20;7,8 16;28,35 9;35,44 7;11,34
+  Solar: Water-Pig. Bi 3
+6: Thu. gro zhin. Wind-Earth; 19 Dec 2346
+  'phel, byis pa, Ox, zon 3
+  5;55,38 21;1,27 16;33,5 10;34,32 7;12,32
+  Solar: Wood-Mouse. Kui 4
+7: Fri. gro zhin. Earth-Earth; 20 Dec 2346
+  brtan pa, til rdung, Tiger, li 4
+  6;59,49 21;55,45 16;37,35 11;33,20 7;13,30
+  Solar: Wood-Ox. Lou 5
+8: Sat. mon gre. Earth-Water; 21 Dec 2346
+  0;60,0 22;54,4 16;42,4 12;36,9 7;14,28
+  Solar: Fire-Tiger. Wei 6
+8: Sun. mon gru. Fire-Earth; 22 Dec 2346
+  dga' ba, gdab pa, Rabbit, khon 5
+  1;4,1 23;50,3 16;42,4 13;32,8 7;14,28
+  Solar: Fire-Rabbit. Mao 7
+9: Mon. khrums stod. Water-Fire; 23 Dec 2346
+  rdo rje, rigs can, Dragon, dwa 6
+  2;8,12 24;44,21 16;46,34 14;30,56 7;15,26
+  Solar: Earth-Dragon. Bi 8
+10: Tue. khrums smad. Fire-Water; 24 Dec 2346
+  dngos grub, khyim skyes, Snake, khen 7
+  3;12,23 25;38,40 16;51,4 15;29,45 7;16,25
+  Solar: Earth-Snake. Zui 9
+11: Wed. nam gru. Water-Water; 25 Dec 2346
+  phan tshun, vishti, Horse, kham 8
+  4;15,33 26;34,0 16;55,33 16;29,34 7;17,23
+  Solar: Iron-Horse. Can 1
+12: Thu. tha skar. Wind-Wind; 26 Dec 2346
+  mchog can, byis pa, Sheep, gin 9
+  5;17,43 0;30,19 17;0,3 17;30,23 7;18,21
+  Solar: Iron-Sheep. Jing 2
+13: Fri. bra nye. Earth-Fire; 27 Dec 2346
+  yongs 'joms, til rdung, Monkey, zin 1
+  6;18,54 1;27,39 17;4,33 18;32,12 7;19,19
+  Solar: Water-Monkey. Gui 3
+14: Sat. smin drug. Earth-Fire; 28 Dec 2346
+  zhi ba, tshong ba, Bird, zon 2
+  0;19,3 2;25,59 17;9,2 19;35,2 7;20,17
+  Solar: Water-Bird. Liu 4
+15: Sun. snar ma. Fire-Earth; 29 Dec 2346
+  grub pa, gdab pa, Dog, li 3
+  1;17,13 3;26,19 17;13,32 20;39,51 7;21,16
+  Solar: Wood-Dog. Xing 5
+16: Mon. mgo. Water-Wind; 30 Dec 2346
+  bsgrub bya, rigs can, Pig, khon 4
+  2;14,23 4;27,38 17;18,2 21;45,41 7;22,14
+  Solar: Wood-Pig. Zhang 6
+17: Tue. lag. Fire-Water; 31 Dec 2346
+  dge ba, khyim skyes, Mouse, dwa 5
+  3;10,33 5;29,58 17;22,32 22;52,30 7;23,12
+  Solar: Fire-Mouse. Yi 7
+18: Wed. nabs so. Water-Wind; 1 Jan 2347
+  tshangs pa, vishti, Ox, khen 6
+  4;5,44 6;33,17 17;27,1 24;0,19 7;24,10
+  Solar: Fire-Ox. Zhen 8
+19. Omitted: Tiger kham 7
+20: Thu. rgyal. Wind-Fire; 2 Jan 2347
+  dbang po, byis pa, Rabbit, gin 8
+  5;54,6 7;41,54 17;36,1 25;17,55 7;26,7
+  Solar: Earth-Tiger. Jiao 9
+21: Fri. skag. Earth-Water; 3 Jan 2347
+  'khon 'dzin, khyim skyes, Dragon, zin 9
+  6;48,18 8;46,12 17;40,30 26;26,43 7;27,5
+  Solar: Earth-Rabbit. Kang 1
+22: Sat. mchu. Earth-Fire; 4 Jan 2347
+  rnam sel, vishti, Snake, zon 1
+  0;42,29 9;50,31 17;45,0 0;35,31 7;28,3
+  Solar: Iron-Dragon. Di 2
+23: Sun. gre. Fire-Fire; 5 Jan 2347
+  mdza' bo, byis pa, Horse, li 2
+  1;36,40 10;54,49 17;49,30 1;44,19 7;29,1
+  Solar: Iron-Snake. Fang 3
+24: Mon. dbo. Water-Wind; 6 Jan 2347
+  tshe dang ldan pa, til rdung, Sheep, khon 3
+  2;30,53 11;59,6 17;54,0 2;53,6 8;0,0
+  Solar: Water-Horse. Xin 4
+25: Tue. nag pa. Fire-Wind; 7 Jan 2347
+  dge byed, vishti, Monkey, dwa 4
+  3;26,10 13;2,23 17;58,33 4;0,57 8;0,58
+  Solar: Water-Sheep. Wei 5
+26: Wed. sa ri. Water-Wind; 8 Jan 2347
+  shin tu 'grams, byis pa, Bird, khen 5
+  4;22,26 14;4,40 18;3,7 5;7,47 8;1,56
+  Solar: Wood-Monkey. Ji 6
+27: Thu. sa ga. Wind-Fire; 9 Jan 2347
+  las bzang, til rdung, Dog, kham 6
+  5;19,43 15;5,57 18;7,40 6;13,38 8;2,54
+  Solar: Wood-Bird. Dou 7
+28: Fri. lha mtshams. Earth-Earth; 10 Jan 2347
+  'dzin byed, tshong ba, Pig, gin 7
+  6;18,1 16;6,12 18;12,14 7;18,27 8;3,52
+  Solar: Fire-Dog. Niu 8
+29: Sat. snron. Earth-Earth; 11 Jan 2347
+  zug rngu, bkra shis, Mouse, zin 8
+  0;18,18 17;4,29 18;16,47 8;21,17 8;4,51
+  Solar: Fire-Pig. Nu 9
+30: Sun. snrubs. Fire-Water; 12 Jan 2347
+  'grams, klu, Ox, zon 9
+  1;19,34 18;1,46 18;21,21 9;23,8 8;5,49
+  Solar: Earth-Mouse. Xu 1
+
+Tibetan Lunar Month: 11 - Earth-male-Tiger
+
+1: Mon. snrubs. Water-Water; 13 Jan 2347
+  'phel, gdab pa, Tiger, li 1
+  2;21,51 18;58,3 18;25,55 10;23,58 8;6,47
+  Solar: Earth-Ox. Wei 2
+2: Tue. chu stod. Fire-Water; 14 Jan 2347
+  brtan pa, rigs can, Rabbit, khon 2
+  3;25,8 19;53,20 18;30,28 11;23,48 8;7,45
+  Solar: Iron-Tiger. Shi 3
+3: Wed. chu smad. Water-Earth; 15 Jan 2347
+  yongs bsnun, til rdung, Dragon, dwa 3
+  4;29,24 20;47,38 18;35,2 12;22,40 8;8,43
+  Solar: Iron-Rabbit. Bi 4
+4: Thu. gro zhin. Wind-Earth; 16 Jan 2347
+  dga' ba, tshong ba, Snake, khen 4
+  5;33,39 21;41,56 18;39,35 13;21,32 8;9,42
+  Solar: Water-Dragon. Kui 5
+5: Fri. mon gre. Earth-Water; 17 Jan 2347
+  rdo rje, gdab pa, Horse, kham 5
+  6;37,54 22;36,14 18;44,9 14;20,24 8;10,40
+  Solar: Water-Snake. Lou 6
+6: Sat. mon gru. Earth-Earth; 18 Jan 2347
+  dngos grub, rigs can, Sheep, gin 6
+  0;42,10 23;30,32 18;48,42 15;19,15 8;11,38
+  Solar: Wood-Horse. Wei 7
+7: Sun. khrums stod. Fire-Fire; 19 Jan 2347
+  phan tshun, khyim skyes, Monkey, zin 7
+  1;46,25 24;24,51 18;53,16 16;18,7 8;12,36
+  Solar: Wood-Sheep. Mao 8
+8: Mon. khrums smad. Water-Water; 20 Jan 2347
+  mchog can, vishti, Bird, zon 8
+  2;50,39 25;19,10 18;57,50 17;17,0 8;13,34
+  Solar: Fire-Monkey. Bi 9
+9: Tue. nam gru. Fire-Water; 21 Jan 2347
+  yongs 'joms, byis pa, Dog, li 9
+  3;53,53 26;14,30 19;2,23 18;16,54 8;14,33
+  Solar: Fire-Bird. Zui 1
+10: Wed. tha skar. Water-Wind; 22 Jan 2347
+  zhi ba, rigs can, Pig, khon 1
+  4;56,6 0;10,50 19;6,57 19;17,47 8;15,31
+  Solar: Earth-Dog. Can 2
+11: Thu. bra nye. Wind-Fire; 23 Jan 2347
+  grub pa, khyim skyes, Mouse, dwa 2
+  5;57,20 1;8,10 19;11,30 20;19,41 8;16,29
+  Solar: Earth-Pig. Jing 3
+12: Fri. smin drug. Earth-Fire; 24 Jan 2347
+  bsgrub bya, vishti, Ox, khen 3
+  6;57,32 2;6,31 19;16,4 21;22,36 8;17,27
+  Solar: Iron-Mouse. Gui 4
+13: Sat. snar ma. Earth-Earth; 25 Jan 2347
+  dge ba, byis pa, Tiger, kham 4
+  0;55,46 3;6,51 19;20,38 22;27,29 8;18,25
+  Solar: Iron-Ox. Liu 5
+14: Sun. mgo. Fire-Wind; 26 Jan 2347
+  dkar po, khyim skyes, Rabbit, gin 5
+  1;53,0 4;8,11 19;25,11 23;33,23 8;19,24
+  Solar: Water-Tiger. Xing 6
+15: Mon. lag. Water-Water; 27 Jan 2347
+  tshangs pa, vishti, Dragon, zin 6
+  2;49,13 5;10,31 19;29,45 24;40,16 8;20,22
+  Solar: Water-Rabbit. Zhang 7
+16: Tue. nabs so. Fire-Wind; 28 Jan 2347
+  dbang po, byis pa, Snake, zon 7
+  3;44,27 6;13,51 19;34,18 25;48,10 8;21,20
+  Solar: Wood-Dragon. Yi 8
+17: Wed. rgyal. Water-Fire; 29 Jan 2347
+  'khon 'dzin, til rdung, Horse, li 8
+  4;38,42 7;18,9 19;38,52 26;57,2 8;22,18
+  Solar: Wood-Snake. Zhen 9
+18: Thu. skag. Wind-Water; 30 Jan 2347
+  mdza' bo, tshong ba, Sheep, khon 9
+  5;32,57 8;22,28 19;43,25 1;5,54 8;23,17
+  Solar: Fire-Horse. Jiao 1
+19: Fri. mchu. Earth-Fire; 31 Jan 2347
+  tshe dang ldan pa, gdab pa, Monkey, dwa 1
+  6;27,12 9;26,46 19;47,59 2;14,46 8;24,15
+  Solar: Fire-Sheep. Kang 2
+20: Sat. gre. Earth-Fire; 1 Feb 2347
+  skal bzang, til rdung, Bird, khen 2
+  0;21,28 10;31,4 19;52,33 3;23,38 8;25,13
+  Solar: Earth-Monkey. Di 3
+21: Sun. dbo. Fire-Wind; 2 Feb 2347
+  dge byed, tshong ba, Dog, kham 3
+  1;15,43 11;35,23 19;57,6 4;32,30 8;26,11
+  Solar: Earth-Bird. Fang 4
+22: Mon. me bzhi. Water-Wind; 3 Feb 2347
+  shin tu 'grams, gdab pa, Pig, gin 4
+  2;10,0 12;39,39 20;1,40 5;41,20 8;27,9
+  Solar: Iron-Dog. Xin 5
+23: Tue. nag pa. Fire-Wind; 4 Feb 2347
+  las bzang, rigs can, Mouse, zin 5
+  3;5,17 13;42,56 20;6,13 6;49,10 8;28,8
+  Solar: Iron-Pig. Wei 6
+24: Wed. sa ri. Water-Wind; 5 Feb 2347
+  'dzin byed, khyim skyes, Ox, zon 6
+  4;1,34 14;45,12 20;10,47 7;56,0 8;29,6
+  Solar: Water-Mouse. Ji 7
+25. Omitted: Tiger li 7
+26: Thu. sa ga. Wind-Fire; 6 Feb 2347
+  'grams, vishti, Rabbit, khon 8
+  5;57,10 15;46,43 20;19,54 9;6,38 9;1,2
+  Solar: Water-Ox. Dou 8
+27: Fri. lha mtshams. Earth-Earth; 7 Feb 2347
+  'phel, byis pa, Dragon, dwa 9
+  6;57,27 16;45,0 20;24,28 10;9,28 9;2,0
+  Solar: Wood-Tiger. Niu 9
+28: Sat. snron. Earth-Earth; 8 Feb 2347
+  brtan pa, til rdung, Snake, khen 1
+  0;58,45 17;42,16 20;29,1 11;11,18 9;2,59
+  Solar: Wood-Rabbit. Nu 1
+29: Sun. snrubs. Fire-Water; 9 Feb 2347
+  1;60,0 18;39,35 20;33,35 12;13,10 9;3,57
+  Solar: Fire-Dragon. Xu 2
+29: Mon. chu stod. Water-Water; 10 Feb 2347
+  dga' ba, bkra shis, Horse, kham 2
+  2;1,2 19;38,33 20;33,35 13;12,8 9;3,57
+  Solar: Fire-Snake. Wei 3
+30: Tue. chu smad. Fire-Earth; 11 Feb 2347
+  rdo rje, klu, Sheep, gin 3
+  3;4,19 20;33,49 20;38,8 14;11,58 9;4,55
+  Solar: Earth-Horse. Shi 4
+
+Tibetan Lunar Month: 12 - Earth-female-Rabbit
+
+1: Wed. gro zhin. Water-Earth; 12 Feb 2347
+  dngos grub, gdab pa, Monkey, zin 4
+  4;8,34 21;28,7 20;42,42 15;10,50 9;5,53
+  Solar: Earth-Sheep. Bi 5
+2: Thu. mon gre. Wind-Water; 13 Feb 2347
+  phan tshun, rigs can, Bird, zon 5
+  5;12,50 22;22,25 20;47,16 16;9,41 9;6,51
+  Solar: Iron-Monkey. Kui 6
+3: Fri. mon gru. Earth-Earth; 14 Feb 2347
+  mchog can, khyim skyes, Dog, li 6
+  6;17,5 23;16,43 20;51,49 17;8,33 9;7,50
+  Solar: Iron-Bird. Lou 7
+4: Sat. khrums stod. Earth-Fire; 15 Feb 2347
+  yongs 'joms, vishti, Pig, khon 7
+  0;21,21 24;11,2 20;56,23 18;7,25 9;8,48
+  Solar: Water-Dog. Wei 8
+5: Sun. khrums smad. Fire-Water; 16 Feb 2347
+  zhi ba, byis pa, Mouse, dwa 8
+  1;25,36 25;5,20 21;0,56 19;6,17 9;9,46
+  Solar: Water-Pig. Mao 9
+6: Mon. khrums smad. Water-Water; 17 Feb 2347
+  grub pa, rigs can, Ox, khen 9
+  2;29,49 25;59,40 21;5,30 20;5,10 9;10,44
+  Solar: Wood-Mouse. Bi 1
+7: Tue. nam gru. Fire-Water; 18 Feb 2347
+  bsgrub bya, khyim skyes, Tiger, kham 1
+  3;33,3 26;55,0 21;10,4 21;5,4 9;11,42
+  Solar: Wood-Ox. Zui 2
+8: Wed. tha skar. Water-Wind; 19 Feb 2347
+  dge ba, vishti, Rabbit, gin 2
+  4;35,16 0;51,21 21;14,37 22;5,58 9;12,41
+  Solar: Fire-Tiger. Can 3
+9: Thu. bra nye. Wind-Fire; 20 Feb 2347
+  dkar po, byis pa, Dragon, zin 3
+  5;36,29 1;48,41 21;19,11 23;7,52 9;13,39
+  Solar: Fire-Rabbit. Jing 4
+10: Fri. smin drug. Earth-Fire; 21 Feb 2347
+  tshangs pa, til rdung, Snake, zon 4
+  6;36,41 2;47,3 21;23,44 24;10,48 9;14,37
+  Solar: Earth-Dragon. Gui 5
+11: Sat. snar ma. Earth-Earth; 22 Feb 2347
+  dbang po, tshong ba, Horse, li 5
+  0;34,54 3;47,24 21;28,18 25;15,42 9;15,35
+  Solar: Earth-Snake. Liu 6
+12: Sun. mgo. Fire-Wind; 23 Feb 2347
+  'khon 'dzin, gdab pa, Sheep, khon 6
+  1;32,7 4;48,44 21;32,51 26;21,36 9;16,34
+  Solar: Iron-Horse. Xing 7
+13: Mon. lag. Water-Water; 24 Feb 2347
+  rnam sel, rigs can, Monkey, dwa 7
+  2;28,20 5;51,4 21;37,25 0;28,30 9;17,32
+  Solar: Iron-Sheep. Zhang 8
+14: Tue. nabs so. Fire-Wind; 25 Feb 2347
+  mdza' bo, tshong ba, Bird, khen 8
+  3;23,33 6;54,25 21;41,59 1;36,24 9;18,30
+  Solar: Water-Monkey. Yi 9
+15: Wed. rgyal. Water-Fire; 26 Feb 2347
+  tshe dang ldan pa, gdab pa, Dog, kham 9
+  4;17,49 7;58,43 21;46,32 2;45,16 9;19,28
+  Solar: Water-Bird. Zhen 1
+16: Thu. mchu. Wind-Fire; 27 Feb 2347
+  skal bzang, rigs can, Pig, gin 1
+  5;12,4 9;3,2 21;51,6 3;54,8 9;20,26
+  Solar: Wood-Dog. Jiao 2
+17: Fri. gre. Earth-Fire; 28 Feb 2347
+  shin tu 'grams, khyim skyes, Mouse, zin 2
+  6;6,19 10;7,20 21;55,39 5;3,0 9;21,25
+  Solar: Wood-Pig. Kang 3
+18: Sat. dbo. Earth-Wind; 1 Mar 2347
+  las bzang, vishti, Ox, zon 3
+  0;0,34 11;11,38 22;0,13 6;11,52 9;22,23
+  Solar: Fire-Mouse. Di 4
+19. Omitted: Tiger li 4
+20: Sun. me bzhi. Fire-Wind; 2 Mar 2347
+  'dzin byed, rigs can, Rabbit, khon 5
+  1;49,7 12;20,13 22;9,20 7;29,33 9;24,19
+  Solar: Fire-Ox. Fang 5
+21: Mon. nag pa. Water-Wind; 3 Mar 2347
+  zug rngu, khyim skyes, Dragon, dwa 6
+  2;44,24 13;23,29 22;13,54 8;37,23 9;25,17
+  Solar: Earth-Tiger. Xin 6
+22: Tue. sa ri. Fire-Wind; 4 Mar 2347
+  'grams, vishti, Snake, khen 7
+  3;40,42 14;25,45 22;18,27 9;44,13 9;26,16
+  Solar: Earth-Rabbit. Wei 7
+23: Wed. sa ga. Water-Fire; 5 Mar 2347
+  'phel, byis pa, Horse, kham 8
+  4;37,59 15;27,1 22;23,1 10;50,2 9;27,14
+  Solar: Iron-Dragon. Ji 8
+24: Thu. lha mtshams. Wind-Earth; 6 Mar 2347
+  brtan pa, til rdung, Sheep, gin 9
+  5;36,19 16;27,15 22;27,34 11;54,50 9;28,12
+  Solar: Iron-Snake. Dou 9
+25: Fri. snron. Earth-Earth; 7 Mar 2347
+  yongs bsnun, tshong ba, Monkey, zin 1
+  6;36,37 17;25,31 22;32,8 12;57,39 9;29,10
+  Solar: Water-Horse. Niu 1
+26: Sat. snrubs. Earth-Water; 8 Mar 2347
+  dga' ba, gdab pa, Bird, zon 2
+  0;37,54 18;22,46 22;36,41 13;59,28 10;0,8
+  Solar: Water-Sheep. Nu 2
+27: Sun. chu stod. Fire-Water; 9 Mar 2347
+  dngos grub, rigs can, Dog, li 3
+  1;40,8 19;19,2 22;41,11 15;0,14 10;1,7
+  Solar: Wood-Monkey. Xu 3
+28: Mon. chu smad. Water-Earth; 10 Mar 2347
+  dngos grub, khyim skyes, Pig, khon 4
+  2;43,22 20;14,18 22;45,40 15;59,59 10;2,5
+  Solar: Wood-Bird. Wei 4
+29: Tue. gro zhin. Fire-Earth; 11 Mar 2347
+  phan tshun, vishti, Mouse, dwa 5
+  3;47,33 21;8,36 22;50,10 16;58,47 10;3,3
+  Solar: Fire-Dog. Shi 5
+30: Wed. mon gre. Water-Water; 12 Mar 2347
+  mchog can, rkang bzhi, Ox, khen 6
+  4;51,45 22;2,55 22;54,40 17;57,35 10;4,1
+  Solar: Fire-Pig. Bi 6

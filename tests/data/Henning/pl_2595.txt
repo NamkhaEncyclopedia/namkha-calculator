@@ -1,0 +1,1588 @@
+
+New Year: 2595, Wood-female-Pig
+
+Tibetan Lunar Month: 1 - Earth-male-Dragon
+
+1: Mon. gro zhin. Water-Earth; 2 Mar 2595
+  2;60,0 21;35,38 21;41,38 16;17,16 9;18,25
+  Solar: Earth-Horse. Xin 1
+1: Tue. mon gre. Fire-Water; 3 Mar 2595
+  mchog can, gdab pa, Tiger, kham 7
+  3;3,17 22;32,20 21;41,38 17;13,58 9;18,25
+  Solar: Earth-Sheep. Wei 2
+  From 1st to 15th, Demonstration of Miracles.
+2: Wed. mon gru. Water-Earth; 4 Mar 2595
+  yongs 'joms, rigs can, Rabbit, gin 8
+  4;7,32 23;26,38 21;46,11 18;12,50 9;19,24
+  Solar: Iron-Monkey. Ji 3
+3: Thu. khrums stod. Wind-Fire; 5 Mar 2595
+  zhi ba, khyim skyes, Dragon, zin 9
+  5;11,48 24;20,57 21;50,45 19;11,42 9;20,22
+  Solar: Iron-Bird. Dou 4
+4: Fri. khrums smad. Earth-Water; 6 Mar 2595
+  grub pa, vishti, Snake, zon 1
+  6;16,3 25;15,15 21;55,18 20;10,34 9;21,20
+  Solar: Water-Dog. Niu 5
+5: Sat. nam gru. Earth-Water; 7 Mar 2595
+  bsgrub bya, byis pa, Horse, li 2
+  0;20,18 26;9,33 21;59,52 21;9,25 9;22,18
+  Solar: Water-Pig. Nu 6
+6: Sun. tha skar. Fire-Wind; 8 Mar 2595
+  dge ba, til rdung, Sheep, khon 3
+  1;24,11 0;4,14 22;4,25 22;8,40 9;23,17
+  Solar: Wood-Mouse. Xu 7
+7: Mon. tha skar. Water-Wind; 9 Mar 2595
+  dkar po, khyim skyes, Monkey, dwa 4
+  2;27,3 0;59,55 22;8,59 23;8,55 9;24,15
+  Solar: Wood-Ox. Wei 8
+8: Tue. bra nye. Fire-Fire; 10 Mar 2595
+  tshangs pa, vishti, Bird, khen 5
+  3;28,56 1;56,37 22;13,33 24;10,10 9;25,13
+  Solar: Fire-Tiger. Shi 9
+9: Wed. smin drug. Water-Fire; 11 Mar 2595
+  dbang po, byis pa, Dog, kham 6
+  4;29,48 2;54,18 22;18,6 25;12,24 9;26,11
+  Solar: Fire-Rabbit. Bi 1
+10: Thu. snar ma. Wind-Earth; 12 Mar 2595
+  'khon 'dzin, til rdung, Pig, gin 7
+  5;29,17 3;53,22 22;22,40 26;16,2 9;27,9
+  Solar: Earth-Dragon. Kui 2
+11: Fri. mgo. Earth-Wind; 13 Mar 2595
+  rnam sel, tshong ba, Mouse, zin 8
+  6;27,10 4;54,3 22;27,13 0;21,17 9;28,8
+  Solar: Earth-Snake. Lou 3
+12: Sat. lag. Earth-Water; 14 Mar 2595
+  mdza' bo, byis pa, Ox, zon 9
+  0;24,2 5;55,45 22;31,47 1;27,32 9;29,6
+  Solar: Iron-Horse. Wei 4
+13: Sun. nabs so. Fire-Wind; 15 Mar 2595
+  tshe dang ldan pa, til rdung, Tiger, li 1
+  1;19,54 6;58,26 22;36,20 2;34,47 10;0,4
+  Solar: Iron-Sheep. Mao 5
+14: Mon. skag. Water-Water; 16 Mar 2595
+  skal bzang, tshong ba, Rabbit, khon 2
+  2;14,42 8;2,8 22;40,50 3;42,58 10;1,2
+  Solar: Water-Monkey. Bi 6
+15: Tue. mchu. Fire-Fire; 17 Mar 2595
+  dge byed, gdab pa, Dragon, dwa 3
+  3;8,53 9;6,26 22;45,20 4;51,46 10;2,0
+  Solar: Water-Bird. Zui 7
+16: Wed. gre. Water-Fire; 18 Mar 2595
+  las bzang, rigs can, Snake, khen 4
+  4;3,5 10;10,44 22;49,49 6;0,34 10;2,59
+  Solar: Wood-Dog. Can 8
+17. Omitted: Horse kham 5
+18: Thu. dbo. Wind-Wind; 19 Mar 2595
+  'dzin byed, tshong ba, Sheep, gin 6
+  5;51,27 11;19,21 22;58,49 7;18,10 10;4,55
+  Solar: Wood-Pig. Jing 9
+19: Fri. me bzhi. Earth-Wind; 20 Mar 2595
+  zug rngu, gdab pa, Monkey, zin 7
+  6;45,39 12;23,39 23;3,18 8;26,58 10;5,53
+  Solar: Fire-Mouse. Gui 1
+20: Sat. nag pa. Earth-Wind; 21 Mar 2595
+  'grams, rigs can, Bird, zon 8
+  0;40,13 13;27,34 23;7,48 9;35,23 10;6,51
+  Solar: Fire-Ox. Liu 2
+21: Sun. sa ri. Fire-Wind; 22 Mar 2595
+  'phel, khyim skyes, Dog, li 9
+  1;35,48 14;30,30 23;12,18 10;42,48 10;7,50
+  Solar: Earth-Tiger. Xing 3
+22: Mon. sa ga. Water-Fire; 23 Mar 2595
+  brtan pa, vishti, Pig, khon 1
+  2;32,22 15;32,25 23;16,48 11;49,13 10;8,48
+  Solar: Earth-Rabbit. Zhang 4
+23: Tue. lha mtshams. Fire-Earth; 24 Mar 2595
+  yongs bsnun, byis pa, Mouse, dwa 2
+  3;29,57 16;33,20 23;21,17 12;54,38 10;9,46
+  Solar: Iron-Dragon. Yi 5
+24: Wed. snron. Water-Earth; 25 Mar 2595
+  dga' ba, til rdung, Ox, khen 3
+  4;28,55 17;32,52 23;25,47 13;58,39 10;10,44
+  Solar: Iron-Snake. Zhen 6
+25: Thu. snrubs. Wind-Water; 26 Mar 2595
+  dngos grub, tshong ba, Tiger, kham 4
+  5;29,30 18;30,47 23;30,17 15;1,4 10;11,42
+  Solar: Water-Horse. Jiao 7
+26: Fri. chu stod. Earth-Water; 27 Mar 2595
+  phan tshun, gdab pa, Rabbit, gin 5
+  6;31,4 19;27,42 23;34,46 16;2,28 10;12,41
+  Solar: Water-Sheep. Kang 8
+27: Sat. chu smad. Earth-Earth; 28 Mar 2595
+  mchog can, rigs can, Dragon, zin 6
+  0;33,39 20;23,36 23;39,16 17;2,53 10;13,39
+  Solar: Wood-Monkey. Di 9
+28: Sun. gro zhin. Fire-Earth; 29 Mar 2595
+  yongs 'joms, khyim skyes, Snake, zon 7
+  1;37,14 21;18,31 23;43,46 18;2,18 10;14,37
+  Solar: Wood-Bird. Fang 1
+29: Mon. mon gre. Water-Water; 30 Mar 2595
+  zhi ba, vishti, Horse, li 8
+  2;41,25 22;12,50 23;48,15 19;1,6 10;15,35
+  Solar: Fire-Dog. Xin 2
+30: Tue. mon gru. Fire-Earth; 31 Mar 2595
+  zhi ba, rkang bzhi, Sheep, khon 9
+  3;45,37 23;7,8 23;52,45 19;59,53 10;16,34
+  Solar: Fire-Pig. Wei 3
+
+Tibetan Lunar Month: 2 - Earth-female-Snake
+
+1: Wed. khrums stod. Water-Fire; 1 Apr 2595
+  grub pa, mi sdug pa, Monkey, dwa 1
+  4;49,48 24;1,26 23;57,15 20;58,41 10;17,32
+  Solar: Earth-Mouse. Ji 4
+2: Thu. khrums stod. Wind-Fire; 2 Apr 2595
+  bsgrub bya, gdab pa, Bird, khen 2
+  5;54,0 24;55,44 24;1,45 21;57,29 10;18,30
+  Solar: Earth-Ox. Dou 5
+3: Fri. khrums smad. Earth-Water; 3 Apr 2595
+  dge ba, rigs can, Dog, kham 3
+  6;58,11 25;50,2 24;6,14 22;56,17 10;19,28
+  Solar: Iron-Tiger. Niu 6
+4: Sat. nam gru. Earth-Water; 4 Apr 2595
+  0;60,0 26;46,44 24;10,44 23;57,28 10;20,26
+  Solar: Iron-Rabbit. Nu 7
+4: Sun. tha skar. Fire-Wind; 5 Apr 2595
+  tshangs pa, vishti, Pig, gin 4
+  1;2,0 0;44,44 24;10,44 24;55,28 10;20,26
+  Solar: Water-Dragon. Xu 8
+5: Mon. bra nye. Water-Fire; 6 Apr 2595
+  dbang po, byis pa, Mouse, zin 5
+  2;4,48 1;40,26 24;15,14 25;55,40 10;21,25
+  Solar: Water-Snake. Wei 9
+6: Tue. smin drug. Fire-Fire; 7 Apr 2595
+  'khon 'dzin, til rdung, Ox, zon 6
+  3;6,36 2;37,7 24;19,43 26;56,51 10;22,23
+  Solar: Wood-Horse. Shi 1
+7: Wed. snar ma. Water-Earth; 8 Apr 2595
+  rnam sel, tshong ba, Tiger, li 7
+  4;7,24 3;34,49 24;24,13 0;59,2 10;23,21
+  Solar: Wood-Sheep. Bi 2
+8: Thu. mgo. Wind-Wind; 9 Apr 2595
+  tshe dang ldan pa, gdab pa, Rabbit, khon 8
+  5;6,48 4;33,54 24;28,43 2;2,37 10;24,19
+  Solar: Fire-Monkey. Kui 3
+9: Fri. lag. Earth-Water; 10 Apr 2595
+  skal bzang, rigs can, Dragon, dwa 9
+  6;4,36 5;34,36 24;33,12 3;7,49 10;25,17
+  Solar: Fire-Bird. Lou 4
+10: Sat. nabs so. Earth-Wind; 11 Apr 2595
+  dge byed, khyim skyes, Snake, khen 1
+  0;1,24 6;36,18 24;37,42 4;14,0 10;26,16
+  Solar: Earth-Dog. Wei 5
+11. Omitted: Horse kham 2
+12: Sun. rgyal. Fire-Fire; 12 Apr 2595
+  shin tu 'grams, gdab pa, Sheep, gin 3
+  1;52,0 7;42,41 24;46,42 5;29,23 10;28,12
+  Solar: Earth-Pig. Mao 6
+13: Mon. skag. Water-Water; 13 Apr 2595
+  las bzang, rigs can, Monkey, zin 4
+  2;46,11 8;47,0 24;51,11 6;38,11 10;29,10
+  Solar: Iron-Mouse. Bi 7
+14: Tue. mchu. Fire-Fire; 14 Apr 2595
+  'dzin byed, khyim skyes, Bird, zon 5
+  3;40,22 9;51,18 24;55,40 7;46,59 11;0,8
+  Solar: Iron-Ox. Zui 8
+15: Wed. gre. Water-Fire; 15 Apr 2595
+  zug rngu, vishti, Dog, li 6
+  4;34,27 10;55,36 25;0,4 8;55,41 11;1,7
+  Solar: Water-Tiger. Can 9
+16: Thu. dbo. Wind-Wind; 16 Apr 2595
+  'phel, byis pa, Pig, khon 7
+  5;28,33 11;59,55 25;4,28 10;4,23 11;2,5
+  Solar: Water-Rabbit. Jing 1
+17: Fri. nag pa. Earth-Wind; 17 Apr 2595
+  brtan pa, khyim skyes, Mouse, dwa 8
+  6;22,38 13;4,13 25;8,52 11;13,5 11;3,3
+  Solar: Wood-Dragon. Gui 2
+18: Sat. sa ri. Earth-Wind; 18 Apr 2595
+  yongs bsnun, vishti, Ox, khen 9
+  0;17,7 14;8,8 25;13,16 12;21,24 11;4,1
+  Solar: Wood-Snake. Liu 3
+19: Sun. sa ga. Fire-Fire; 19 Apr 2595
+  dga' ba, byis pa, Tiger, kham 1
+  1;12,37 15;11,2 25;17,40 13;28,42 11;5,0
+  Solar: Fire-Horse. Xing 4
+20: Mon. lha mtshams. Water-Earth; 20 Apr 2595
+  rdo rje, til rdung, Rabbit, gin 2
+  2;9,6 16;12,57 25;22,3 14;35,1 11;5,58
+  Solar: Fire-Sheep. Zhang 5
+21: Tue. snron. Fire-Earth; 21 Apr 2595
+  dngos grub, tshong ba, Dragon, zin 3
+  3;6,35 17;13,52 25;26,27 15;40,20 11;6,56
+  Solar: Earth-Monkey. Yi 6
+22: Wed. snrubs. Water-Water; 22 Apr 2595
+  phan tshun, gdab pa, Snake, zon 4
+  4;5,28 18;13,23 25;30,51 16;44,14 11;7,54
+  Solar: Earth-Bird. Zhen 7
+23: Thu. chu stod. Wind-Water; 23 Apr 2595
+  mchog can, rigs can, Horse, li 5
+  5;5,57 19;11,17 25;35,15 17;46,33 11;8,52
+  Solar: Iron-Dog. Jiao 8
+24: Fri. chu smad. Earth-Earth; 24 Apr 2595
+  yongs 'joms, khyim skyes, Sheep, khon 6
+  6;7,27 20;8,12 25;39,39 18;47,51 11;9,51
+  Solar: Iron-Pig. Kang 9
+25: Sat. gro zhin. Earth-Earth; 25 Apr 2595
+  zhi ba, vishti, Monkey, dwa 7
+  0;9,56 21;4,6 25;44,3 19;48,10 11;10,49
+  Solar: Water-Mouse. Di 1
+26: Sun. gro zhin. Fire-Earth; 26 Apr 2595
+  grub pa, byis pa, Bird, khen 8
+  1;13,25 21;59,1 25;48,27 20;47,28 11;11,47
+  Solar: Water-Ox. Fang 2
+27: Mon. mon gre. Water-Water; 27 Apr 2595
+  bsgrub bya, til rdung, Dog, kham 9
+  2;17,31 22;53,19 25;52,51 21;46,10 11;12,45
+  Solar: Wood-Tiger. Xin 3
+28: Tue. mon gru. Fire-Earth; 28 Apr 2595
+  dge ba, tshong ba, Pig, gin 1
+  3;21,37 23;47,37 25;57,14 22;44,52 11;13,43
+  Solar: Wood-Rabbit. Wei 4
+29: Wed. khrums stod. Water-Fire; 29 Apr 2595
+  dkar po, bkra shis, Mouse, zin 2
+  4;25,43 24;41,55 26;1,38 23;43,34 11;14,42
+  Solar: Fire-Dragon. Ji 5
+30: Thu. khrums smad. Wind-Water; 30 Apr 2595
+  tshangs pa, rkang bzhi, Ox, zon 3
+  5;29,48 25;36,13 26;6,2 24;42,16 11;15,40
+  Solar: Fire-Snake. Dou 6
+
+Tibetan Lunar Month: 3 - Iron-male-Horse
+
+1: Fri. nam gru. Earth-Water; 1 May 2595
+  dbang po, mi sdug pa, Tiger, li 4
+  6;33,54 26;30,32 26;10,26 25;40,58 11;16,38
+  Solar: Earth-Horse. Niu 7
+2: Sat. tha skar. Earth-Wind; 2 May 2595
+  'khon 'dzin, byis pa, Rabbit, khon 5
+  0;37,36 0;25,14 26;14,50 26;40,4 11;17,36
+  Solar: Earth-Sheep. Nu 8
+3: Sun. bra nye. Fire-Fire; 3 May 2595
+  rnam sel, til rdung, Dragon, dwa 6
+  1;40,18 1;20,56 26;19,14 0;40,10 11;18,34
+  Solar: Iron-Monkey. Xu 9
+4: Mon. smin drug. Water-Fire; 4 May 2595
+  mdza' bo, tshong ba, Snake, khen 7
+  2;41,59 2;17,38 26;23,38 1;41,16 11;19,33
+  Solar: Iron-Bird. Wei 1
+5: Tue. snar ma. Fire-Earth; 5 May 2595
+  tshe dang ldan pa, gdab pa, Horse, kham 8
+  3;42,41 3;15,20 26;28,2 2;43,22 11;20,31
+  Solar: Water-Dog. Shi 2
+6: Wed. mgo. Water-Wind; 6 May 2595
+  skal bzang, rigs can, Sheep, gin 9
+  4;41,59 4;14,26 26;32,25 3;46,52 11;21,29
+  Solar: Water-Pig. Bi 3
+7: Thu. lag. Wind-Water; 7 May 2595
+  dge byed, khyim skyes, Monkey, zin 1
+  5;39,41 5;15,8 26;36,49 4;51,58 11;22,27
+  Solar: Wood-Mouse. Kui 4
+8: Fri. nabs so. Earth-Wind; 8 May 2595
+  shin tu 'grams, vishti, Bird, zon 2
+  6;36,22 6;16,50 26;41,13 5;58,4 11;23,25
+  Solar: Wood-Ox. Lou 5
+9: Sat. rgyal. Earth-Fire; 9 May 2595
+  'dzin byed, byis pa, Dog, li 3
+  0;32,4 7;19,33 26;45,37 7;5,10 11;24,24
+  Solar: Fire-Tiger. Wei 6
+10: Sun. skag. Fire-Water; 10 May 2595
+  zug rngu, khyim skyes, Pig, khon 4
+  1;26,45 8;23,15 26;50,1 8;13,17 11;25,22
+  Solar: Fire-Rabbit. Mao 7
+11: Mon. mchu. Water-Fire; 11 May 2595
+  'grams, vishti, Mouse, dwa 5
+  2;20,51 9;27,33 26;54,25 9;21,59 11;26,20
+  Solar: Earth-Dragon. Bi 8
+12: Tue. gre. Fire-Fire; 12 May 2595
+  'phel, byis pa, Ox, khen 6
+  3;14,57 10;31,52 26;58,49 10;30,41 11;27,18
+  Solar: Earth-Snake. Zui 9
+13: Wed. dbo. Water-Wind; 13 May 2595
+  brtan pa, til rdung, Tiger, kham 7
+  4;9,2 11;36,10 0;3,13 11;39,23 11;28,17
+  Solar: Iron-Horse. Can 1
+14: Thu. me bzhi. Wind-Wind; 14 May 2595
+  yongs bsnun, tshong ba, Rabbit, gin 8
+  5;3,8 12;40,28 0;7,37 12;48,5 11;29,15
+  Solar: Iron-Sheep. Jing 2
+15. Omitted: Dragon zin 9
+16: Fri. nag pa. Earth-Wind; 15 May 2595
+  rdo rje, byis pa, Snake, zon 1
+  6;51,38 13;48,41 0;16,20 14;5,1 0;1,11
+  Solar: Water-Monkey. Gui 3
+17: Sat. sa ri. Earth-Wind; 16 May 2595
+  dngos grub, til rdung, Horse, li 2
+  0;47,4 14;51,35 0;20,40 15;12,15 0;2,9
+  Solar: Water-Bird. Liu 4
+18: Sun. sa ga. Fire-Fire; 17 May 2595
+  phan tshun, tshong ba, Sheep, khon 3
+  1;43,29 15;53,30 0;25,0 16;18,30 0;3,8
+  Solar: Wood-Dog. Xing 5
+19: Mon. lha mtshams. Water-Earth; 18 May 2595
+  mchog can, gdab pa, Monkey, dwa 4
+  2;40,55 16;54,24 0;29,20 17;23,44 0;4,6
+  Solar: Wood-Pig. Zhang 6
+20: Tue. snron. Fire-Earth; 19 May 2595
+  yongs 'joms, rigs can, Bird, khen 5
+  3;39,45 17;53,54 0;33,40 18;27,34 0;5,4
+  Solar: Fire-Mouse. Yi 7
+21: Wed. snrubs. Water-Water; 20 May 2595
+  zhi ba, khyim skyes, Dog, kham 6
+  4;40,11 18;51,48 0;38,0 19;29,48 0;6,2
+  Solar: Fire-Ox. Zhen 8
+22: Thu. chu stod. Wind-Water; 21 May 2595
+  grub pa, vishti, Pig, gin 7
+  5;41,37 19;48,42 0;42,20 20;31,2 0;7,0
+  Solar: Earth-Tiger. Jiao 9
+23: Fri. chu smad. Earth-Earth; 22 May 2595
+  bsgrub bya, byis pa, Mouse, zin 8
+  6;44,3 20;44,36 0;46,40 21;31,16 0;7,59
+  Solar: Earth-Rabbit. Kang 1
+24: Sat. gro zhin. Earth-Earth; 23 May 2595
+  dge ba, til rdung, Ox, zon 9
+  0;47,29 21;39,30 0;51,0 22;30,30 0;8,57
+  Solar: Iron-Dragon. Di 2
+25: Sun. mon gre. Fire-Water; 24 May 2595
+  dkar po, tshong ba, Tiger, li 1
+  1;51,31 22;33,48 0;55,20 23;29,8 0;9,55
+  Solar: Iron-Snake. Fang 3
+26: Mon. mon gru. Water-Earth; 25 May 2595
+  tshangs pa, vishti, Rabbit, khon 2
+  2;55,33 23;28,6 0;59,40 24;27,46 0;10,53
+  Solar: Water-Horse. Xin 4
+27: Tue. khrums stod. Fire-Fire; 26 May 2595
+  dbang po, byis pa, Dragon, dwa 3
+  3;59,34 24;22,25 1;4,0 25;26,25 0;11,51
+  Solar: Water-Sheep. Wei 5
+28: Wed. khrums smad. Water-Water; 27 May 2595
+  4;60,0 25;20,20 1;8,20 26;28,40 0;12,50
+  Solar: Wood-Monkey. Ji 6
+28: Thu. nam gru. Wind-Water; 28 May 2595
+  rnam sel, tshong ba, Snake, khen 4
+  5;3,36 26;16,43 1;8,20 0;25,3 0;12,50
+  Solar: Wood-Bird. Dou 7
+29: Fri. tha skar. Earth-Wind; 29 May 2595
+  mdza' bo, bkra shis, Horse, kham 5
+  6;7,38 0;11,1 1;12,40 1;23,41 0;13,48
+  Solar: Fire-Dog. Niu 8
+30: Sat. bra nye. Earth-Fire; 30 May 2595
+  tshe dang ldan pa, klu, Sheep, gin 6
+  0;11,16 1;5,43 1;17,0 2;22,43 0;14,46
+  Solar: Fire-Pig. Nu 9
+
+Tibetan Lunar Month: 4 - Iron-female-Sheep
+
+1: Sun. smin drug. Fire-Fire; 31 May 2595
+  skal bzang, gdab pa, Monkey, zin 7
+  1;13,53 2;1,26 1;21,20 3;22,46 0;15,44
+  Solar: Earth-Mouse. Xu 1
+2: Mon. smin drug. Water-Fire; 1 Jun 2595
+  dge byed, rigs can, Bird, zon 8
+  2;15,30 2;58,9 1;25,40 4;23,49 0;16,42
+  Solar: Earth-Ox. Wei 2
+3: Tue. snar ma. Fire-Earth; 2 Jun 2595
+  shin tu 'grams, khyim skyes, Dog, li 9
+  3;16,8 3;55,51 1;30,0 5;25,51 0;17,41
+  Solar: Iron-Tiger. Shi 3
+4: Wed. mgo. Water-Wind; 3 Jun 2595
+  las bzang, vishti, Pig, khon 1
+  4;15,21 4;54,58 1;34,20 6;29,18 0;18,39
+  Solar: Iron-Rabbit. Bi 4
+5: Thu. lag. Wind-Water; 4 Jun 2595
+  'dzin byed, byis pa, Mouse, dwa 2
+  5;12,58 5;55,41 1;38,40 7;34,21 0;19,37
+  Solar: Water-Dragon. Kui 5
+6: Fri. nabs so. Earth-Wind; 5 Jun 2595
+  zug rngu, til rdung, Ox, khen 3
+  6;9,36 6;57,23 1;43,0 8;40,23 0;20,35
+  Solar: Water-Snake. Lou 6
+7: Sat. skag. Earth-Water; 6 Jun 2595
+  'grams, tshong ba, Tiger, kham 4
+  0;5,13 8;0,6 1;47,20 9;47,26 0;21,34
+  Solar: Wood-Horse. Wei 7
+  Birth of the Buddha.
+8. Omitted: Rabbit gin 5
+9: Sun. mchu. Fire-Fire; 7 Jun 2595
+  brtan pa, byis pa, Dragon, zin 6
+  1;53,52 9;8,7 1;56,0 11;4,7 0;23,30
+  Solar: Wood-Sheep. Mao 8
+10: Mon. gre. Water-Fire; 8 Jun 2595
+  yongs bsnun, til rdung, Snake, zon 7
+  2;47,53 10;12,26 2;0,20 12;12,46 0;24,28
+  Solar: Fire-Monkey. Bi 9
+11: Tue. dbo. Fire-Wind; 9 Jun 2595
+  dga' ba, tshong ba, Horse, li 8
+  3;41,55 11;16,44 2;4,40 13;21,24 0;25,26
+  Solar: Fire-Bird. Zui 1
+12: Wed. me bzhi. Water-Wind; 10 Jun 2595
+  rdo rje, gdab pa, Sheep, khon 9
+  4;35,57 12;21,2 2;9,0 14;30,2 0;26,25
+  Solar: Earth-Dog. Can 2
+13: Thu. nag pa. Wind-Wind; 11 Jun 2595
+  dngos grub, rigs can, Monkey, dwa 1
+  5;29,58 13;25,21 2;13,20 15;38,41 0;27,23
+  Solar: Earth-Pig. Jing 3
+14: Fri. sa ri. Earth-Wind; 12 Jun 2595
+  phan tshun, tshong ba, Bird, khen 2
+  6;24,25 14;29,14 2;17,40 16;46,54 0;28,21
+  Solar: Iron-Mouse. Gui 4
+15: Sat. sa ga. Earth-Fire; 13 Jun 2595
+  mchog can, gdab pa, Dog, kham 3
+  0;19,51 15;32,8 2;22,0 17;54,8 0;29,19
+  Solar: Iron-Ox. Liu 5
+  Enlightenment and Parinirvana of the Buddha.
+16: Sun. lha mtshams. Fire-Earth; 14 Jun 2595
+  zhi ba, rigs can, Pig, gin 4
+  1;16,15 16;34,2 2;26,18 19;0,20 1;0,17
+  Solar: Water-Tiger. Xing 6
+17: Mon. snron. Water-Earth; 15 Jun 2595
+  grub pa, khyim skyes, Mouse, zin 5
+  2;13,36 17;34,56 2;30,32 20;5,28 1;1,16
+  Solar: Water-Rabbit. Zhang 7
+18: Tue. snrubs. Fire-Water; 16 Jun 2595
+  bsgrub bya, vishti, Ox, zon 6
+  3;12,21 18;34,25 2;34,46 21;9,11 1;2,14
+  Solar: Wood-Dragon. Yi 8
+19: Wed. chu stod. Water-Water; 17 Jun 2595
+  dge ba, byis pa, Tiger, li 7
+  4;12,41 19;32,19 2;39,0 22;11,19 1;3,12
+  Solar: Wood-Snake. Zhen 9
+20: Thu. chu smad. Wind-Earth; 18 Jun 2595
+  dkar po, til rdung, Rabbit, khon 8
+  5;14,2 20;29,12 2;43,14 23;12,27 1;4,10
+  Solar: Fire-Horse. Jiao 1
+21: Fri. gro zhin. Earth-Earth; 19 Jun 2595
+  tshangs pa, tshong ba, Dragon, dwa 9
+  6;16,22 21;25,6 2;47,29 24;12,35 1;5,8
+  Solar: Fire-Sheep. Kang 2
+22: Sat. mon gre. Earth-Water; 20 Jun 2595
+  dbang po, gdab pa, Snake, khen 1
+  0;19,43 22;19,59 2;51,43 25;11,43 1;6,7
+  Solar: Earth-Monkey. Di 3
+23: Sun. mon gru. Fire-Earth; 21 Jun 2595
+  'khon 'dzin, rigs can, Horse, kham 2
+  1;23,39 23;14,18 2;55,57 26;10,15 1;7,5
+  Solar: Earth-Bird. Fang 4
+24: Mon. khrums stod. Water-Fire; 22 Jun 2595
+  rnam sel, til rdung, Sheep, gin 3
+  2;27,35 24;8,36 3;0,11 0;8,47 1;8,3
+  Solar: Iron-Dog. Xin 5
+25: Tue. khrums smad. Fire-Water; 23 Jun 2595
+  mdza' bo, tshong ba, Monkey, zin 4
+  3;31,31 25;2,54 3;4,25 1;7,20 1;9,1
+  Solar: Iron-Pig. Wei 6
+26: Wed. khrums smad. Water-Water; 24 Jun 2595
+  tshe dang ldan pa, gdab pa, Bird, zon 5
+  4;35,27 25;57,12 3;8,40 2;5,52 1;10,0
+  Solar: Water-Mouse. Ji 7
+27: Thu. nam gru. Wind-Water; 25 Jun 2595
+  skal bzang, rigs can, Dog, li 6
+  5;39,23 26;51,30 3;12,54 3;4,25 1;10,58
+  Solar: Water-Ox. Dou 8
+28: Fri. tha skar. Earth-Wind; 26 Jun 2595
+  dge byed, khyim skyes, Pig, khon 7
+  6;42,54 0;46,13 3;17,8 4;3,22 1;11,56
+  Solar: Wood-Tiger. Niu 9
+29: Sat. bra nye. Earth-Fire; 27 Jun 2595
+  shin tu 'grams, vishti, Mouse, dwa 8
+  0;45,25 1;41,56 3;21,22 5;3,19 1;12,54
+  Solar: Wood-Rabbit. Nu 1
+30: Sun. smin drug. Fire-Fire; 28 Jun 2595
+  las bzang, rkang bzhi, Ox, khen 9
+  1;46,57 2;38,39 3;25,36 6;4,16 1;13,52
+  Solar: Fire-Dragon. Xu 2
+
+Tibetan Lunar Month: 5 - Water-male-Monkey
+
+1: Mon. snar ma. Water-Earth; 29 Jun 2595
+  'dzin byed, mi sdug pa, Tiger, kham 1
+  2;47,28 3;36,22 3;29,50 7;6,13 1;14,51
+  Solar: Fire-Snake. Wei 3
+2: Tue. mgo. Fire-Wind; 30 Jun 2595
+  zug rngu, byis pa, Rabbit, gin 2
+  3;46,34 4;35,30 3;34,5 8;9,35 1;15,49
+  Solar: Earth-Horse. Shi 4
+3: Wed. lag. Water-Water; 1 Jul 2595
+  'grams, til rdung, Dragon, zin 3
+  4;44,5 5;36,13 3;38,19 9;14,32 1;16,47
+  Solar: Earth-Sheep. Bi 5
+4: Thu. nabs so. Wind-Wind; 2 Jul 2595
+  'phel, tshong ba, Snake, zon 4
+  5;40,36 6;37,56 3;42,33 10;20,30 1;17,45
+  Solar: Iron-Monkey. Kui 6
+5: Fri. rgyal. Earth-Fire; 3 Jul 2595
+  brtan pa, gdab pa, Horse, li 5
+  6;36,7 7;40,39 3;46,47 11;27,27 1;18,43
+  Solar: Iron-Bird. Lou 7
+6: Sat. skag. Earth-Water; 4 Jul 2595
+  yongs bsnun, rigs can, Sheep, khon 6
+  0;30,38 8;44,23 3;51,1 12;35,24 1;19,42
+  Solar: Water-Dog. Wei 8
+7: Sun. mchu. Fire-Fire; 5 Jul 2595
+  dga' ba, tshong ba, Monkey, dwa 7
+  1;24,34 9;48,41 3;55,15 13;43,57 1;20,40
+  Solar: Water-Pig. Mao 9
+8: Mon. gre. Water-Fire; 6 Jul 2595
+  rdo rje, gdab pa, Bird, khen 8
+  2;18,30 10;52,59 3;59,30 14;52,29 1;21,38
+  Solar: Wood-Mouse. Bi 1
+9: Tue. dbo. Fire-Wind; 7 Jul 2595
+  phan tshun, rigs can, Dog, kham 9
+  3;12,26 11;57,18 4;3,44 16;1,2 1;22,36
+  Solar: Wood-Ox. Zui 2
+10: Wed. nag pa. Water-Wind; 8 Jul 2595
+  mchog can, khyim skyes, Pig, gin 1
+  4;6,22 13;1,36 4;7,58 17;9,35 1;23,34
+  Solar: Fire-Tiger. Can 3
+11: Thu. sa ri. Wind-Wind; 9 Jul 2595
+  yongs 'joms, vishti, Mouse, zin 2
+  5;0,17 14;5,54 4;12,12 18;18,7 1;24,33
+  Solar: Fire-Rabbit. Jing 4
+12. Omitted: Ox zon 3
+13: Fri. sa ga. Earth-Fire; 10 Jul 2595
+  zhi ba, rigs can, Tiger, li 4
+  6;49,59 15;12,41 4;20,41 19;33,22 1;26,29
+  Solar: Earth-Dragon. Gui 5
+14: Sat. lha mtshams. Earth-Earth; 11 Jul 2595
+  grub pa, khyim skyes, Rabbit, khon 5
+  0;46,20 16;14,34 4;24,55 20;39,30 1;27,27
+  Solar: Earth-Snake. Liu 6
+15: Sun. snron. Fire-Earth; 12 Jul 2595
+  bsgrub bya, vishti, Dragon, dwa 6
+  1;43,41 17;15,28 4;29,9 21;44,37 1;28,25
+  Solar: Iron-Horse. Xing 7
+16: Mon. snrubs. Water-Water; 13 Jul 2595
+  dge ba, byis pa, Snake, khen 7
+  2;42,27 18;14,56 4;33,23 22;48,20 1;29,24
+  Solar: Iron-Sheep. Zhang 8
+17: Tue. chu stod. Fire-Water; 14 Jul 2595
+  dkar po, til rdung, Horse, kham 8
+  3;42,46 19;12,49 4;37,36 23;50,26 2;0,22
+  Solar: Water-Monkey. Yi 9
+18: Wed. chu smad. Water-Earth; 15 Jul 2595
+  tshangs pa, tshong ba, Sheep, gin 9
+  4;44,3 20;9,42 4;41,46 24;51,29 2;1,20
+  Solar: Water-Bird. Zhen 1
+19: Thu. gro zhin. Wind-Earth; 16 Jul 2595
+  dbang po, gdab pa, Monkey, zin 1
+  5;46,20 21;5,36 4;45,56 25;51,32 2;2,18
+  Solar: Wood-Dog. Jiao 2
+20: Fri. mon gre. Earth-Water; 17 Jul 2595
+  'khon 'dzin, rigs can, Bird, zon 2
+  6;49,37 22;0,29 4;50,7 26;50,36 2;3,17
+  Solar: Wood-Pig. Kang 3
+21: Sat. mon gre. Earth-Water; 18 Jul 2595
+  rnam sel, khyim skyes, Dog, li 3
+  0;53,30 22;54,47 4;54,17 0;49,4 2;4,15
+  Solar: Fire-Mouse. Di 4
+22: Sun. mon gru. Fire-Earth; 19 Jul 2595
+  mdza' bo, tshong ba, Pig, khon 4
+  1;57,22 23;49,5 4;58,27 1;47,33 2;5,13
+  Solar: Fire-Ox. Fang 5
+23: Mon. khrums stod. Water-Fire; 20 Jul 2595
+  2;60,0 24;44,38 5;2,38 2;47,16 2;6,11
+  Solar: Earth-Tiger. Xin 6
+23: Tue. khrums smad. Fire-Water; 21 Jul 2595
+  skal bzang, rigs can, Mouse, dwa 5
+  3;1,14 25;43,23 5;2,38 3;46,1 2;6,11
+  Solar: Earth-Rabbit. Wei 7
+24: Wed. nam gru. Water-Water; 22 Jul 2595
+  dge byed, khyim skyes, Ox, khen 6
+  4;5,6 26;37,41 5;6,48 4;44,30 2;7,9
+  Solar: Iron-Dragon. Ji 8
+25: Thu. tha skar. Wind-Wind; 23 Jul 2595
+  shin tu 'grams, vishti, Tiger, kham 7
+  5;8,58 0;32,0 5;10,58 5;42,58 2;8,8
+  Solar: Iron-Snake. Dou 9
+26: Fri. bra nye. Earth-Fire; 24 Jul 2595
+  las bzang, byis pa, Rabbit, gin 8
+  6;12,25 1;26,43 5;15,8 6;41,52 2;9,6
+  Solar: Water-Horse. Niu 1
+27: Sat. smin drug. Earth-Fire; 25 Jul 2595
+  'dzin byed, til rdung, Dragon, zin 9
+  0;14,52 2;22,26 5;19,19 7;41,46 2;10,4
+  Solar: Water-Sheep. Nu 2
+28: Sun. snar ma. Fire-Earth; 26 Jul 2595
+  zug rngu, tshong ba, Snake, zon 1
+  1;16,19 3;19,10 5;23,29 8;42,39 2;11,2
+  Solar: Wood-Monkey. Xu 3
+29: Mon. mgo. Water-Wind; 27 Jul 2595
+  'grams, bkra shis, Horse, li 2
+  2;16,46 4;16,53 5;27,39 9;44,33 2;12,0
+  Solar: Wood-Bird. Wei 4
+30: Tue. lag. Fire-Water; 28 Jul 2595
+  'phel, klu, Sheep, khon 3
+  3;15,47 5;16,2 5;31,50 10;47,52 2;12,59
+  Solar: Fire-Dog. Shi 5
+
+Tibetan Lunar Month: 6 - Water-female-Bird
+
+1: Wed. nabs so. Water-Wind; 29 Jul 2595
+  brtan pa, gdab pa, Monkey, dwa 4
+  4;13,14 6;16,46 5;36,0 11;52,46 2;13,57
+  Solar: Fire-Pig. Bi 6
+2: Thu. rgyal. Wind-Fire; 30 Jul 2595
+  yongs bsnun, rigs can, Bird, khen 5
+  5;9,41 7;18,29 5;40,10 12;58,40 2;14,55
+  Solar: Earth-Mouse. Kui 7
+3: Fri. skag. Earth-Water; 31 Jul 2595
+  rdo rje, khyim skyes, Dog, kham 6
+  6;5,7 8;21,13 5;44,21 14;5,34 2;15,53
+  Solar: Earth-Ox. Lou 8
+4. Omitted: Pig gin 7
+5: Sat. mchu. Earth-Fire; 1 Aug 2595
+  dngos grub, gdab pa, Mouse, zin 8
+  0;53,26 9;29,15 5;52,41 15;21,56 2;17,50
+  Solar: Iron-Tiger. Wei 9
+6: Sun. gre. Fire-Fire; 2 Aug 2595
+  phan tshun, rigs can, Ox, zon 9
+  1;47,18 10;33,33 5;56,51 16;30,25 2;18,48
+  Solar: Iron-Rabbit. Mao 1
+7: Mon. dbo. Water-Wind; 3 Aug 2595
+  mchog can, khyim skyes, Tiger, li 1
+  2;41,10 11;37,51 6;1,2 17;38,54 2;19,46
+  Solar: Water-Dragon. Bi 2
+8: Tue. me bzhi. Fire-Wind; 4 Aug 2595
+  yongs 'joms, vishti, Rabbit, khon 2
+  3;35,2 12;42,10 6;5,12 18;47,22 2;20,44
+  Solar: Water-Snake. Zui 3
+9: Wed. nag pa. Water-Wind; 5 Aug 2595
+  zhi ba, byis pa, Dragon, dwa 3
+  4;28,54 13;46,28 6;9,22 19;55,51 2;21,42
+  Solar: Wood-Horse. Can 4
+10: Thu. sa ri. Wind-Wind; 6 Aug 2595
+  bsgrub bya, khyim skyes, Snake, khen 4
+  5;23,11 14;50,21 6;13,33 21;3,54 2;22,41
+  Solar: Wood-Sheep. Jing 5
+11: Fri. sa ga. Earth-Fire; 7 Aug 2595
+  dge ba, vishti, Horse, kham 5
+  6;18,28 15;53,14 6;17,43 22;10,57 2;23,39
+  Solar: Fire-Monkey. Gui 6
+12: Sat. lha mtshams. Earth-Earth; 8 Aug 2595
+  dkar po, byis pa, Sheep, gin 6
+  0;14,46 16;55,7 6;21,53 23;17,1 2;24,37
+  Solar: Fire-Bird. Liu 7
+13: Sun. snron. Fire-Earth; 9 Aug 2595
+  tshangs pa, til rdung, Monkey, zin 7
+  1;12,3 17;56,0 6;26,4 24;22,4 2;25,35
+  Solar: Earth-Dog. Xing 8
+14: Mon. snrubs. Water-Water; 10 Aug 2595
+  dbang po, tshong ba, Bird, zon 8
+  2;10,46 18;55,27 6;30,14 25;25,41 2;26,34
+  Solar: Earth-Pig. Zhang 9
+15: Tue. chu stod. Fire-Water; 11 Aug 2595
+  'khon 'dzin, gdab pa, Dog, li 9
+  3;11,4 19;53,20 6;34,24 26;27,45 2;27,32
+  Solar: Iron-Mouse. Yi 1
+  The Buddha's entry into the womb of his mother.
+16: Wed. chu smad. Water-Earth; 12 Aug 2595
+  rnam sel, rigs can, Pig, khon 1
+  4;12,21 20;50,13 6;38,34 0;28,48 2;28,30
+  Solar: Iron-Ox. Zhen 2
+17: Thu. gro zhin. Wind-Earth; 13 Aug 2595
+  mdza' bo, khyim skyes, Mouse, dwa 2
+  5;14,39 21;46,5 6;42,45 1;28,51 2;29,28
+  Solar: Water-Tiger. Jiao 3
+18: Fri. mon gre. Earth-Water; 14 Aug 2595
+  tshe dang ldan pa, vishti, Ox, khen 3
+  6;17,56 22;40,58 6;46,55 2;27,54 3;0,26
+  Solar: Water-Rabbit. Kang 4
+19: Sat. mon gru. Earth-Earth; 15 Aug 2595
+  skal bzang, byis pa, Tiger, kham 4
+  0;21,49 23;35,16 6;51,5 3;26,22 3;1,25
+  Solar: Wood-Dragon. Di 5
+20: Sun. khrums stod. Fire-Fire; 16 Aug 2595
+  dge byed, til rdung, Rabbit, gin 5
+  1;25,41 24;29,34 6;55,16 4;24,51 3;2,23
+  Solar: Wood-Snake. Fang 6
+21: Mon. khrums smad. Water-Water; 17 Aug 2595
+  shin tu 'grams, khyim skyes, Dragon, zin 6
+  2;29,33 25;23,53 6;59,26 5;23,19 3;3,21
+  Solar: Fire-Horse. Xin 7
+22: Tue. nam gru. Fire-Water; 18 Aug 2595
+  las bzang, vishti, Snake, zon 7
+  3;33,25 26;18,11 7;3,36 6;21,48 3;4,19
+  Solar: Fire-Sheep. Wei 8
+23: Wed. tha skar. Water-Wind; 19 Aug 2595
+  'dzin byed, byis pa, Horse, li 8
+  4;37,17 0;12,29 7;7,47 7;20,16 3;5,17
+  Solar: Earth-Monkey. Ji 9
+24: Thu. bra nye. Wind-Fire; 20 Aug 2595
+  zug rngu, til rdung, Sheep, khon 9
+  5;40,44 1;7,13 7;11,57 8;19,10 3;6,16
+  Solar: Earth-Bird. Dou 1
+25: Fri. smin drug. Earth-Fire; 21 Aug 2595
+  'grams, tshong ba, Monkey, dwa 1
+  6;43,10 2;2,57 7;16,7 9;19,4 3;7,14
+  Solar: Iron-Dog. Niu 2
+26: Sat. smin drug. Earth-Fire; 22 Aug 2595
+  'phel, gdab pa, Bird, khen 2
+  0;44,36 2;59,41 7;20,17 10;19,58 3;8,12
+  Solar: Iron-Pig. Nu 3
+27: Sun. snar ma. Fire-Earth; 23 Aug 2595
+  brtan pa, rigs can, Dog, kham 3
+  1;45,3 3;57,24 7;24,28 11;21,53 3;9,10
+  Solar: Water-Mouse. Xu 4
+28: Mon. mgo. Water-Wind; 24 Aug 2595
+  yongs bsnun, khyim skyes, Pig, gin 4
+  2;44,3 4;56,34 7;28,38 12;25,13 3;10,8
+  Solar: Water-Ox. Wei 5
+29: Tue. lag. Fire-Water; 25 Aug 2595
+  dga' ba, vishti, Mouse, zin 5
+  3;41,30 5;57,18 7;32,48 13;30,7 3;11,7
+  Solar: Wood-Tiger. Shi 6
+30: Wed. nabs so. Water-Wind; 26 Aug 2595
+  rdo rje, rkang bzhi, Ox, zon 6
+  4;37,56 6;59,2 7;36,59 14;36,1 3;12,5
+  Solar: Wood-Rabbit. Bi 7
+
+Tibetan Lunar Month: 7 - Wood-male-Dog
+
+1: Thu. skag. Wind-Water; 27 Aug 2595
+  dngos grub, mi sdug pa, Tiger, li 7
+  5;33,22 8;1,46 7;41,9 15;42,55 3;13,3
+  Solar: Fire-Dragon. Kui 8
+2: Fri. mchu. Earth-Fire; 28 Aug 2595
+  phan tshun, byis pa, Rabbit, khon 8
+  6;27,49 9;5,30 7;45,19 16;50,50 3;14,1
+  Solar: Fire-Snake. Lou 9
+3: Sat. gre. Earth-Fire; 29 Aug 2595
+  mchog can, khyim skyes, Dragon, dwa 9
+  0;21,40 10;9,49 7;49,30 17;59,19 3;15,0
+  Solar: Earth-Horse. Wei 1
+4: Sun. dbo. Fire-Wind; 30 Aug 2595
+  zhi ba, vishti, Snake, khen 1
+  1;15,32 11;14,7 7;53,40 19;7,47 3;15,58
+  Solar: Earth-Sheep. Mao 2
+5: Mon. me bzhi. Water-Wind; 31 Aug 2595
+  grub pa, byis pa, Horse, kham 2
+  2;9,24 12;18,25 7;57,50 20;16,16 3;16,56
+  Solar: Iron-Monkey. Bi 3
+6: Tue. nag pa. Fire-Wind; 1 Sep 2595
+  bsgrub bya, til rdung, Sheep, gin 3
+  3;3,16 13;22,44 8;2,0 21;24,44 3;17,54
+  Solar: Iron-Bird. Zui 4
+7. Omitted: Monkey zin 4
+8: Wed. sa ri. Water-Wind; 2 Sep 2595
+  dge ba, vishti, Bird, zon 5
+  4;51,26 14;30,54 8;10,21 22;41,16 3;19,51
+  Solar: Water-Dog. Can 5
+9: Thu. sa ga. Wind-Fire; 3 Sep 2595
+  dkar po, byis pa, Dog, li 6
+  5;46,44 15;33,47 8;14,31 23;48,19 3;20,49
+  Solar: Water-Pig. Jing 6
+10: Fri. lha mtshams. Earth-Earth; 4 Sep 2595
+  tshangs pa, til rdung, Pig, khon 7
+  6;43,2 16;35,39 8;18,42 24;54,21 3;21,47
+  Solar: Wood-Mouse. Gui 7
+11: Sat. snron. Earth-Earth; 5 Sep 2595
+  dbang po, tshong ba, Mouse, dwa 8
+  0;40,20 17;36,32 8;22,52 25;59,24 3;22,45
+  Solar: Wood-Ox. Liu 8
+12: Sun. snrubs. Fire-Water; 6 Sep 2595
+  rnam sel, gdab pa, Ox, khen 9
+  1;39,3 18;35,58 8;27,2 0;3,1 3;23,43
+  Solar: Fire-Tiger. Xing 9
+13: Mon. chu stod. Water-Water; 7 Sep 2595
+  mdza' bo, rigs can, Tiger, kham 1
+  2;39,21 19;33,51 8;31,12 1;5,4 3;24,42
+  Solar: Fire-Rabbit. Zhang 1
+14: Tue. chu smad. Fire-Earth; 8 Sep 2595
+  tshe dang ldan pa, khyim skyes, Rabbit, gin 2
+  3;40,39 20;30,43 8;35,23 2;6,6 3;25,40
+  Solar: Earth-Dragon. Yi 2
+15: Wed. gro zhin. Water-Earth; 9 Sep 2595
+  skal bzang, vishti, Dragon, zin 3
+  4;42,57 21;26,35 8;39,33 3;6,9 3;26,38
+  Solar: Earth-Snake. Zhen 3
+16: Thu. mon gre. Wind-Water; 10 Sep 2595
+  dge byed, byis pa, Snake, zon 4
+  5;46,16 22;21,27 8;43,43 4;5,11 3;27,36
+  Solar: Iron-Horse. Jiao 4
+17: Fri. mon gru. Earth-Earth; 11 Sep 2595
+  shin tu 'grams, til rdung, Horse, li 5
+  6;50,8 23;15,46 8;47,54 5;3,40 3;28,34
+  Solar: Iron-Sheep. Kang 5
+18: Sat. khrums stod. Earth-Fire; 12 Sep 2595
+  las bzang, khyim skyes, Sheep, khon 6
+  0;54,0 24;10,4 8;52,4 6;2,8 3;29,33
+  Solar: Water-Monkey. Di 6
+19: Sun. khrums smad. Fire-Water; 13 Sep 2595
+  'dzin byed, vishti, Monkey, dwa 7
+  1;57,54 25;4,22 8;56,16 7;0,39 4;0,31
+  Solar: Water-Bird. Fang 7
+20: Mon. nam gru. Water-Water; 14 Sep 2595
+  2;60,0 26;0,31 9;0,31 8;1,2 4;1,29
+  Solar: Wood-Dog. Xin 8
+20: Tue. nam gru. Fire-Water; 15 Sep 2595
+  zug rngu, til rdung, Bird, khen 8
+  3;1,50 26;58,40 9;0,31 8;59,11 4;1,29
+  Solar: Wood-Pig. Wei 9
+21: Wed. tha skar. Water-Wind; 16 Sep 2595
+  'grams, tshong ba, Dog, kham 9
+  4;5,46 0;52,58 9;4,45 9;57,44 4;2,27
+  Solar: Fire-Mouse. Ji 1
+22: Thu. bra nye. Wind-Fire; 17 Sep 2595
+  'phel, gdab pa, Pig, gin 1
+  5;9,16 1;47,43 9;8,59 10;56,42 4;3,25
+  Solar: Fire-Ox. Dou 2
+23: Fri. smin drug. Earth-Fire; 18 Sep 2595
+  brtan pa, rigs can, Mouse, zin 2
+  6;11,46 2;43,27 9;13,13 11;56,40 4;4,24
+  Solar: Earth-Tiger. Niu 3
+24: Sat. snar ma. Earth-Earth; 19 Sep 2595
+  yongs bsnun, khyim skyes, Ox, zon 3
+  0;13,16 3;40,11 9;17,27 12;57,39 4;5,22
+  Solar: Earth-Rabbit. Nu 4
+25: Sun. mgo. Fire-Wind; 20 Sep 2595
+  dga' ba, vishti, Tiger, li 4
+  1;13,45 4;37,56 9;21,41 13;59,37 4;6,20
+  Solar: Iron-Dragon. Xu 5
+26: Mon. lag. Water-Water; 21 Sep 2595
+  dngos grub, byis pa, Rabbit, khon 5
+  2;12,49 5;37,6 9;25,56 15;3,2 4;7,18
+  Solar: Iron-Snake. Wei 6
+27: Tue. nabs so. Fire-Wind; 22 Sep 2595
+  phan tshun, til rdung, Dragon, dwa 6
+  3;10,19 6;37,50 9;30,10 16;8,1 4;8,17
+  Solar: Water-Horse. Shi 7
+28: Wed. rgyal. Water-Fire; 23 Sep 2595
+  mchog can, tshong ba, Snake, khen 7
+  4;6,49 7;39,35 9;34,24 17;13,59 4;9,15
+  Solar: Water-Sheep. Bi 8
+29: Thu. skag. Wind-Water; 24 Sep 2595
+  yongs 'joms, bkra shis, Horse, kham 8
+  5;2,18 8;42,19 9;38,38 18;20,58 4;10,13
+  Solar: Wood-Monkey. Kui 9
+30. Omitted: Sheep gin 9
+
+Tibetan Lunar Month: 8 - Wood-female-Pig
+
+1: Fri. mchu. Earth-Fire; 25 Sep 2595
+  zhi ba, mi sdug pa, Monkey, zin 1
+  6;50,44 9;50,22 9;47,7 19;37,29 4;12,9
+  Solar: Wood-Bird. Lou 1
+2: Sat. gre. Earth-Fire; 26 Sep 2595
+  grub pa, byis pa, Bird, zon 2
+  0;44,40 10;54,41 9;51,21 20;46,2 4;13,8
+  Solar: Fire-Dog. Wei 2
+3: Sun. dbo. Fire-Wind; 27 Sep 2595
+  bsgrub bya, til rdung, Dog, li 3
+  1;38,35 11;58,59 9;55,35 21;54,34 4;14,6
+  Solar: Fire-Pig. Mao 3
+4: Mon. nag pa. Water-Wind; 28 Sep 2595
+  dkar po, tshong ba, Pig, khon 4
+  2;32,31 13;3,17 9;59,49 23;3,7 4;15,4
+  Solar: Earth-Mouse. Bi 4
+5: Tue. sa ri. Fire-Wind; 29 Sep 2595
+  tshangs pa, byis pa, Mouse, dwa 5
+  3;26,27 14;7,36 10;4,3 24;11,39 4;16,2
+  Solar: Earth-Ox. Zui 5
+6: Wed. sa ga. Water-Fire; 30 Sep 2595
+  dbang po, til rdung, Ox, khen 6
+  4;20,49 15;11,28 10;8,17 25;19,46 4;17,0
+  Solar: Iron-Tiger. Can 6
+7: Thu. lha mtshams. Wind-Earth; 1 Oct 2595
+  'khon 'dzin, tshong ba, Tiger, kham 7
+  5;16,11 16;14,20 10;12,32 26;26,52 4;17,59
+  Solar: Iron-Rabbit. Jing 7
+8: Fri. snron. Earth-Earth; 2 Oct 2595
+  rnam sel, gdab pa, Rabbit, gin 8
+  6;12,33 17;16,12 10;16,46 0;32,58 4;18,57
+  Solar: Water-Dragon. Gui 8
+9: Sat. snrubs. Earth-Water; 3 Oct 2595
+  mdza' bo, rigs can, Dragon, zin 9
+  0;9,56 18;17,4 10;21,0 1;38,4 4;19,55
+  Solar: Water-Snake. Liu 9
+10: Sun. chu stod. Fire-Water; 4 Oct 2595
+  tshe dang ldan pa, khyim skyes, Snake, zon 1
+  1;8,44 19;16,29 10;25,14 2;41,44 4;20,53
+  Solar: Wood-Horse. Xing 1
+11: Mon. chu smad. Water-Earth; 5 Oct 2595
+  skal bzang, vishti, Horse, li 2
+  2;9,7 20;14,21 10;29,28 3;43,50 4;21,51
+  Solar: Wood-Sheep. Zhang 2
+12: Tue. gro zhin. Fire-Earth; 6 Oct 2595
+  dge byed, byis pa, Sheep, khon 3
+  3;10,29 21;11,13 10;33,42 4;44,56 4;22,50
+  Solar: Fire-Monkey. Yi 3
+13: Wed. mon gre. Water-Water; 7 Oct 2595
+  shin tu 'grams, til rdung, Monkey, dwa 4
+  4;12,51 22;7,5 10;37,57 5;45,2 4;23,48
+  Solar: Fire-Bird. Zhen 4
+14: Thu. mon gru. Wind-Earth; 8 Oct 2595
+  las bzang, tshong ba, Bird, khen 5
+  5;16,14 23;1,57 10;42,11 6;44,8 4;24,46
+  Solar: Earth-Dog. Jiao 5
+15: Fri. mon gru. Earth-Earth; 9 Oct 2595
+  'dzin byed, gdab pa, Dog, kham 6
+  6;20,10 23;56,15 10;46,25 7;42,40 4;25,44
+  Solar: Earth-Pig. Kang 6
+16: Sat. khrums stod. Earth-Fire; 10 Oct 2595
+  zug rngu, rigs can, Pig, gin 7
+  0;24,6 24;50,33 10;50,39 8;41,13 4;26,42
+  Solar: Iron-Mouse. Di 7
+17: Sun. khrums smad. Fire-Water; 11 Oct 2595
+  'grams, til rdung, Mouse, zin 8
+  1;28,2 25;44,51 10;54,53 9;39,45 4;27,41
+  Solar: Iron-Ox. Fang 8
+18: Mon. nam gru. Water-Water; 12 Oct 2595
+  'phel, tshong ba, Ox, zon 9
+  2;31,58 26;39,9 10;59,8 10;38,18 4;28,39
+  Solar: Water-Tiger. Xin 9
+19: Tue. tha skar. Fire-Wind; 13 Oct 2595
+  brtan pa, gdab pa, Tiger, li 1
+  3;35,54 0;33,28 11;3,22 11;36,50 4;29,37
+  Solar: Water-Rabbit. Wei 1
+20: Wed. bra nye. Water-Fire; 14 Oct 2595
+  yongs bsnun, rigs can, Rabbit, khon 2
+  4;39,27 1;28,12 11;7,40 12;35,52 5;0,35
+  Solar: Wood-Dragon. Ji 2
+21: Thu. smin drug. Wind-Fire; 15 Oct 2595
+  dga' ba, khyim skyes, Dragon, dwa 3
+  5;42,2 2;23,57 11;12,0 13;35,57 5;1,34
+  Solar: Wood-Snake. Dou 3
+22: Fri. snar ma. Earth-Earth; 16 Oct 2595
+  rdo rje, vishti, Snake, khen 4
+  6;43,37 3;20,42 11;16,20 14;37,2 5;2,32
+  Solar: Fire-Horse. Niu 4
+23: Sat. mgo. Earth-Wind; 17 Oct 2595
+  dngos grub, byis pa, Horse, kham 5
+  0;44,12 4;18,27 11;20,40 15;39,7 5;3,30
+  Solar: Fire-Sheep. Nu 5
+24: Sun. lag. Fire-Water; 18 Oct 2595
+  phan tshun, til rdung, Sheep, gin 6
+  1;43,21 5;17,38 11;25,0 16;42,38 5;4,28
+  Solar: Earth-Monkey. Xu 6
+25: Mon. nabs so. Water-Wind; 19 Oct 2595
+  mchog can, tshong ba, Monkey, zin 7
+  2;40,56 6;18,23 11;29,20 17;47,43 5;5,26
+  Solar: Earth-Bird. Wei 7
+26: Tue. rgyal. Fire-Fire; 20 Oct 2595
+  yongs 'joms, gdab pa, Bird, zon 8
+  3;37,31 7;20,8 11;33,40 18;53,48 5;6,25
+  Solar: Iron-Dog. Shi 8
+27: Wed. skag. Water-Water; 21 Oct 2595
+  grub pa, rigs can, Dog, li 9
+  4;33,6 8;22,53 11;38,0 20;0,53 5;7,23
+  Solar: Iron-Pig. Bi 9
+28: Thu. mchu. Wind-Fire; 22 Oct 2595
+  bsgrub bya, khyim skyes, Pig, khon 1
+  5;27,41 9;26,38 11;42,20 21;8,58 5;8,21
+  Solar: Water-Mouse. Kui 1
+29: Fri. gre. Earth-Fire; 23 Oct 2595
+  dge ba, bkra shis, Mouse, dwa 2
+  6;21,43 10;30,56 11;46,40 22;17,36 5;9,19
+  Solar: Water-Ox. Lou 2
+30: Sat. dbo. Earth-Wind; 24 Oct 2595
+  dkar po, klu, Ox, khen 3
+  0;15,45 11;35,14 11;51,0 23;26,14 5;10,17
+  Solar: Wood-Tiger. Wei 3
+
+Tibetan Lunar Month: 9 - Fire-male-Mouse
+
+1: Sun. me bzhi. Fire-Wind; 25 Oct 2595
+  tshangs pa, gdab pa, Tiger, kham 4
+  1;9,46 12;39,33 11;55,20 24;34,53 5;11,16
+  Solar: Wood-Rabbit. Mao 4
+2: Mon. nag pa. Water-Wind; 26 Oct 2595
+  dbang po, rigs can, Rabbit, gin 5
+  2;3,48 13;43,51 11;59,40 25;43,31 5;12,14
+  Solar: Fire-Dragon. Bi 5
+3. Omitted: Dragon zin 6
+4: Tue. sa ri. Fire-Wind; 27 Oct 2595
+  rnam sel, tshong ba, Snake, zon 7
+  3;52,18 14;52,1 12;8,20 0;0,21 5;14,10
+  Solar: Fire-Snake. Zui 6
+5: Wed. sa ga. Water-Fire; 28 Oct 2595
+  mdza' bo, gdab pa, Horse, li 8
+  4;47,46 15;54,53 12;12,40 1;7,33 5;15,8
+  Solar: Earth-Horse. Can 7
+6: Thu. lha mtshams. Wind-Earth; 29 Oct 2595
+  tshe dang ldan pa, rigs can, Sheep, khon 9
+  5;44,15 16;56,44 12;17,0 2;13,44 5;16,7
+  Solar: Earth-Sheep. Jing 8
+7: Fri. snron. Earth-Earth; 30 Oct 2595
+  skal bzang, khyim skyes, Monkey, dwa 1
+  6;41,43 17;57,36 12;21,20 3;18,56 5;17,5
+  Solar: Iron-Monkey. Gui 9
+8: Sat. snrubs. Earth-Water; 31 Oct 2595
+  dge byed, vishti, Bird, khen 2
+  0;40,39 18;57,0 12;25,40 4;22,40 5;18,3
+  Solar: Iron-Bird. Liu 1
+9: Sun. chu stod. Fire-Water; 1 Nov 2595
+  shin tu 'grams, byis pa, Dog, kham 3
+  1;41,7 19;54,52 12;30,0 5;24,52 5;19,1
+  Solar: Water-Dog. Xing 2
+10: Mon. chu smad. Water-Earth; 2 Nov 2595
+  las bzang, til rdung, Pig, gin 4
+  2;42,36 20;51,43 12;34,20 6;26,3 5;20,0
+  Solar: Water-Pig. Zhang 3
+11: Tue. gro zhin. Fire-Earth; 3 Nov 2595
+  'dzin byed, tshong ba, Mouse, zin 5
+  3;45,4 21;47,35 12;38,40 7;26,15 5;20,58
+  Solar: Wood-Mouse. Yi 4
+12: Wed. mon gre. Water-Water; 4 Nov 2595
+  zug rngu, gdab pa, Ox, zon 6
+  4;48,33 22;42,26 12;43,0 8;25,26 5;21,56
+  Solar: Wood-Ox. Zhen 5
+13: Thu. mon gru. Wind-Earth; 5 Nov 2595
+  'grams, rigs can, Tiger, li 7
+  5;52,35 23;36,44 12;47,20 9;24,4 5;22,54
+  Solar: Fire-Tiger. Jiao 6
+14: Fri. khrums stod. Earth-Fire; 6 Nov 2595
+  'phel, til rdung, Rabbit, khon 8
+  6;56,37 24;31,2 12;51,40 10;22,42 5;23,52
+  Solar: Fire-Rabbit. Kang 7
+15: Sat. khrums smad. Earth-Water; 7 Nov 2595
+  0;60,0 25;26,0 12;56,0 11;22,0 5;24,51
+  Solar: Earth-Dragon. Di 8
+15: Sun. nam gru. Fire-Water; 8 Nov 2595
+  yongs bsnun, gdab pa, Dragon, dwa 9
+  1;0,38 26;25,21 12;56,0 12;21,21 5;24,51
+  Solar: Earth-Snake. Fang 9
+16: Mon. tha skar. Water-Wind; 9 Nov 2595
+  dga' ba, rigs can, Snake, khen 1
+  2;4,40 0;19,39 13;0,20 13;19,59 5;25,49
+  Solar: Iron-Horse. Xin 1
+17: Tue. bra nye. Fire-Fire; 10 Nov 2595
+  rdo rje, khyim skyes, Horse, kham 2
+  3;8,42 1;13,57 13;4,40 14;18,37 5;26,47
+  Solar: Iron-Sheep. Wei 2
+18: Wed. smin drug. Water-Fire; 11 Nov 2595
+  dngos grub, vishti, Sheep, gin 3
+  4;12,17 2;8,42 13;9,0 15;17,42 5;27,45
+  Solar: Water-Monkey. Ji 3
+19: Thu. snar ma. Wind-Earth; 12 Nov 2595
+  phan tshun, byis pa, Monkey, zin 4
+  5;14,52 3;4,27 13;13,20 16;17,47 5;28,43
+  Solar: Water-Bird. Dou 4
+20: Fri. mgo. Earth-Wind; 13 Nov 2595
+  mchog can, til rdung, Bird, zon 5
+  6;16,26 4;1,13 13;17,40 17;18,53 5;29,42
+  Solar: Wood-Dog. Niu 5
+21: Sat. mgo. Earth-Wind; 14 Nov 2595
+  yongs 'joms, tshong ba, Dog, li 6
+  0;17,4 4;58,58 13;22,2 18;21,0 6;0,40
+  Solar: Wood-Pig. Nu 6
+22: Sun. lag. Fire-Water; 15 Nov 2595
+  zhi ba, gdab pa, Pig, khon 7
+  1;16,16 5;58,10 13;26,26 19;24,37 6;1,38
+  Solar: Fire-Mouse. Xu 7
+  Descent of the Buddha from the realm of the gods.
+23: Mon. nabs so. Water-Wind; 16 Nov 2595
+  grub pa, rigs can, Mouse, dwa 8
+  2;13,54 6;58,55 13;30,50 20;29,46 6;2,36
+  Solar: Fire-Ox. Wei 8
+24: Tue. skag. Fire-Water; 17 Nov 2595
+  bsgrub bya, khyim skyes, Ox, khen 9
+  3;10,33 8;0,41 13;35,14 21;35,55 6;3,34
+  Solar: Earth-Tiger. Shi 9
+25: Wed. mchu. Water-Fire; 18 Nov 2595
+  dge ba, vishti, Tiger, kham 1
+  4;6,11 9;3,26 13;39,38 22;43,4 6;4,33
+  Solar: Earth-Rabbit. Bi 1
+26: Thu. gre. Wind-Fire; 19 Nov 2595
+  dkar po, byis pa, Rabbit, gin 2
+  5;0,50 10;7,12 13;44,2 23;51,14 6;5,31
+  Solar: Iron-Dragon. Kui 2
+27. Omitted: Dragon zin 3
+28: Fri. dbo. Earth-Wind; 20 Nov 2595
+  dbang po, khyim skyes, Snake, zon 4
+  6;49,1 11;15,48 13;52,49 25;8,38 6;7,27
+  Solar: Iron-Snake. Lou 3
+29: Sat. me bzhi. Earth-Wind; 21 Nov 2595
+  'khon 'dzin, vishti, Horse, li 5
+  0;43,6 12;20,7 13;57,13 26;17,20 6;8,25
+  Solar: Water-Horse. Wei 4
+30: Sun. nag pa. Fire-Wind; 22 Nov 2595
+  rnam sel, rkang bzhi, Sheep, khon 6
+  1;37,12 13;24,25 14;1,37 0;26,3 6;9,24
+  Solar: Water-Sheep. Mao 5
+
+Tibetan Lunar Month: 10 - Fire-female-Ox
+
+1: Mon. sa ri. Water-Wind; 23 Nov 2595
+  mdza' bo, mi sdug pa, Monkey, dwa 7
+  2;31,17 14;28,43 14;6,1 1;34,45 6;10,22
+  Solar: Wood-Monkey. Bi 6
+2: Tue. sa ga. Fire-Fire; 24 Nov 2595
+  tshe dang ldan pa, rigs can, Bird, khen 8
+  3;25,50 15;32,34 14;10,25 2;43,0 6;11,20
+  Solar: Wood-Bird. Zui 7
+3: Wed. lha mtshams. Water-Earth; 25 Nov 2595
+  skal bzang, khyim skyes, Dog, kham 9
+  4;21,23 16;35,26 14;14,49 3;50,15 6;12,18
+  Solar: Fire-Dog. Can 8
+4: Thu. snron. Wind-Earth; 26 Nov 2595
+  dge byed, vishti, Pig, gin 1
+  5;17,55 17;37,17 14;19,13 4;56,30 6;13,17
+  Solar: Fire-Pig. Jing 9
+5: Fri. snrubs. Earth-Water; 27 Nov 2595
+  las bzang, byis pa, Mouse, zin 2
+  6;15,28 18;38,8 14;23,37 6;1,45 6;14,15
+  Solar: Earth-Mouse. Gui 1
+6: Sat. chu stod. Earth-Water; 28 Nov 2595
+  'dzin byed, til rdung, Ox, zon 3
+  0;14,28 19;37,32 14;28,0 7;5,32 6;15,13
+  Solar: Earth-Ox. Liu 2
+7: Sun. chu smad. Fire-Earth; 29 Nov 2595
+  zug rngu, tshong ba, Tiger, li 4
+  1;15,1 20;35,23 14;32,24 8;7,47 6;16,11
+  Solar: Iron-Tiger. Xing 3
+8: Mon. gro zhin. Water-Earth; 30 Nov 2595
+  'grams, gdab pa, Rabbit, khon 5
+  2;16,34 21;32,14 14;36,48 9;9,2 6;17,9
+  Solar: Iron-Rabbit. Zhang 4
+9: Tue. mon gre. Fire-Water; 1 Dec 2595
+  'phel, rigs can, Dragon, dwa 6
+  3;19,7 22;28,4 14;41,12 10;9,17 6;18,8
+  Solar: Water-Dragon. Yi 5
+10: Wed. mon gru. Water-Earth; 2 Dec 2595
+  brtan pa, khyim skyes, Snake, khen 7
+  4;22,40 23;22,55 14;45,36 11;8,32 6;19,6
+  Solar: Water-Snake. Zhen 6
+11: Thu. khrums stod. Wind-Fire; 3 Dec 2595
+  yongs bsnun, vishti, Horse, kham 8
+  5;26,46 24;17,14 14;50,0 12;7,14 6;20,4
+  Solar: Wood-Horse. Jiao 7
+12: Fri. khrums smad. Earth-Water; 4 Dec 2595
+  dga' ba, gdab pa, Sheep, gin 9
+  6;30,51 25;11,32 14;54,24 13;5,56 6;21,2
+  Solar: Wood-Sheep. Kang 8
+13: Sat. nam gru. Earth-Water; 5 Dec 2595
+  rdo rje, rigs can, Monkey, zin 1
+  0;34,57 26;5,50 14;58,48 14;4,38 6;22,0
+  Solar: Fire-Monkey. Di 9
+14: Sun. tha skar. Fire-Wind; 6 Dec 2595
+  dngos grub, khyim skyes, Bird, zon 2
+  1;39,3 0;0,8 15;3,11 15;3,20 6;22,59
+  Solar: Fire-Bird. Fang 1
+15: Mon. tha skar. Water-Wind; 7 Dec 2595
+  phan tshun, vishti, Dog, li 3
+  2;43,8 0;54,26 15;7,35 16;2,2 6;23,57
+  Solar: Earth-Dog. Xin 2
+16: Tue. bra nye. Fire-Fire; 8 Dec 2595
+  mchog can, byis pa, Pig, khon 4
+  3;46,47 1;49,12 15;11,59 17;1,12 6;24,55
+  Solar: Earth-Pig. Wei 3
+17: Wed. smin drug. Water-Fire; 9 Dec 2595
+  yongs 'joms, til rdung, Mouse, dwa 5
+  4;49,25 2;44,58 15;16,23 18;1,21 6;25,53
+  Solar: Iron-Mouse. Ji 4
+18: Thu. snar ma. Wind-Earth; 10 Dec 2595
+  zhi ba, tshong ba, Ox, khen 6
+  5;51,3 3;41,43 15;20,47 19;2,31 6;26,51
+  Solar: Iron-Ox. Dou 5
+19: Fri. mgo. Earth-Wind; 11 Dec 2595
+  grub pa, gdab pa, Tiger, kham 7
+  6;51,41 4;39,29 15;25,11 20;4,40 6;27,50
+  Solar: Water-Tiger. Niu 6
+20: Sat. lag. Earth-Water; 12 Dec 2595
+  bsgrub bya, rigs can, Rabbit, gin 8
+  0;50,52 5;38,42 15;29,35 21;8,17 6;28,48
+  Solar: Water-Rabbit. Nu 7
+21: Sun. nabs so. Fire-Wind; 13 Dec 2595
+  dge ba, khyim skyes, Dragon, zin 9
+  1;48,30 6;39,28 15;33,59 22;13,27 6;29,46
+  Solar: Wood-Dragon. Xu 8
+22: Mon. rgyal. Water-Fire; 14 Dec 2595
+  dkar po, vishti, Snake, zon 1
+  2;45,13 7;41,14 15;38,27 23;19,41 7;0,44
+  Solar: Wood-Snake. Wei 9
+23: Tue. skag. Fire-Water; 15 Dec 2595
+  tshangs pa, byis pa, Horse, li 2
+  3;40,57 8;43,59 15;42,57 24;26,57 7;1,42
+  Solar: Fire-Horse. Shi 1
+24: Wed. mchu. Water-Fire; 16 Dec 2595
+  dbang po, til rdung, Sheep, khon 3
+  4;35,41 9;47,45 15;47,26 25;35,12 7;2,41
+  Solar: Fire-Sheep. Bi 2
+25: Thu. gre. Wind-Fire; 17 Dec 2595
+  'khon 'dzin, tshong ba, Monkey, dwa 4
+  5;29,52 10;52,4 15;51,56 26;44,0 7;3,39
+  Solar: Earth-Monkey. Kui 3
+26: Fri. dbo. Earth-Wind; 18 Dec 2595
+  rnam sel, byis pa, Bird, khen 5
+  6;24,3 11;56,22 15;56,26 0;52,48 7;4,37
+  Solar: Earth-Bird. Lou 4
+27: Sat. nag pa. Earth-Wind; 19 Dec 2595
+  tshe dang ldan pa, til rdung, Dog, kham 6
+  0;18,15 13;0,40 16;0,55 2;1,36 7;5,35
+  Solar: Iron-Dog. Wei 5
+28: Sun. sa ri. Fire-Wind; 20 Dec 2595
+  skal bzang, tshong ba, Pig, gin 7
+  1;12,26 14;4,59 16;5,25 3;10,24 7;6,34
+  Solar: Iron-Pig. Mao 6
+29: Mon. sa ga. Water-Fire; 21 Dec 2595
+  dge byed, bkra shis, Mouse, zin 8
+  2;6,37 15;9,17 16;9,55 4;19,12 7;7,32
+  Solar: Water-Mouse. Bi 7
+30: Tue. lha mtshams. Fire-Earth; 22 Dec 2595
+  shin tu 'grams, klu, Ox, zon 9
+  3;1,16 16;13,8 16;14,25 5;27,33 7;8,30
+  Solar: Water-Ox. Zui 8
+
+Tibetan Lunar Month: 11 (Intercalary) - Earth-male-Tiger
+
+1. Omitted: Tiger li 1
+2: Wed. snron. Water-Earth; 23 Dec 2595
+  las bzang, byis pa, Rabbit, khon 2
+  4;53,34 17;17,49 16;23,24 6;41,14 7;10,26
+  Solar: Wood-Tiger. Can 9
+3: Thu. snrubs. Wind-Water; 24 Dec 2595
+  'dzin byed, til rdung, Dragon, dwa 3
+  5;51,13 18;18,40 16;27,54 7;46,34 7;11,25
+  Solar: Wood-Rabbit. Jing 1
+4: Fri. chu stod. Earth-Water; 25 Dec 2595
+  zug rngu, tshong ba, Snake, khen 4
+  6;50,20 19;18,3 16;32,23 8;50,27 7;12,23
+  Solar: Fire-Dragon. Gui 2
+5: Sat. chu smad. Earth-Earth; 26 Dec 2595
+  'grams, gdab pa, Horse, kham 5
+  0;50,59 20;15,53 16;36,53 9;52,47 7;13,21
+  Solar: Fire-Snake. Liu 3
+6: Sun. gro zhin. Fire-Earth; 27 Dec 2595
+  'phel, rigs can, Sheep, gin 6
+  1;52,39 21;12,44 16;41,23 10;54,7 7;14,19
+  Solar: Earth-Horse. Xing 4
+7: Mon. mon gre. Water-Water; 28 Dec 2595
+  brtan pa, til rdung, Monkey, zin 7
+  2;55,18 22;8,34 16;45,52 11;54,27 7;15,17
+  Solar: Earth-Sheep. Zhang 5
+8: Tue. mon gru. Fire-Earth; 29 Dec 2595
+  yongs bsnun, tshong ba, Bird, zon 8
+  3;58,57 23;3,25 16;50,22 12;53,47 7;16,16
+  Solar: Iron-Monkey. Yi 6
+9: Wed. khrums stod. Water-Fire; 30 Dec 2595
+  4;60,0 24;0,52 16;54,52 13;55,44 7;17,14
+  Solar: Iron-Bird. Zhen 7
+9: Thu. khrums stod. Wind-Fire; 31 Dec 2595
+  rdo rje, rigs can, Dog, li 9
+  5;3,8 24;57,43 16;54,52 14;52,35 7;17,14
+  Solar: Water-Dog. Jiao 8
+10: Fri. khrums smad. Earth-Water; 1 Jan 2596
+  dngos grub, khyim skyes, Pig, khon 1
+  6;7,20 25;52,1 16;59,22 15;51,23 7;18,12
+  Solar: Water-Pig. Kang 9
+11: Sat. nam gru. Earth-Water; 2 Jan 2596
+  phan tshun, vishti, Mouse, dwa 2
+  0;11,32 26;46,19 17;3,51 16;50,11 7;19,10
+  Solar: Wood-Mouse. Di 1
+12: Sun. tha skar. Fire-Wind; 3 Jan 2596
+  mchog can, byis pa, Ox, khen 3
+  1;15,43 0;40,37 17;8,21 17;48,59 7;20,8
+  Solar: Wood-Ox. Fang 2
+13: Mon. bra nye. Water-Fire; 4 Jan 2596
+  yongs 'joms, til rdung, Tiger, kham 4
+  2;19,55 1;34,56 17;12,51 18;47,47 7;21,7
+  Solar: Fire-Tiger. Xin 3
+14: Tue. smin drug. Fire-Fire; 5 Jan 2596
+  zhi ba, tshong ba, Rabbit, gin 5
+  3;23,38 2;29,42 17;17,20 19;47,3 7;22,5
+  Solar: Fire-Rabbit. Wei 4
+15: Wed. snar ma. Water-Earth; 6 Jan 2596
+  grub pa, gdab pa, Dragon, zin 6
+  4;26,22 3;25,28 17;21,50 20;47,18 7;23,3
+  Solar: Earth-Dragon. Ji 5
+16: Thu. mgo. Wind-Wind; 7 Jan 2596
+  bsgrub bya, byis pa, Snake, zon 7
+  5;28,5 4;22,14 17;26,20 21;48,34 7;24,1
+  Solar: Earth-Snake. Dou 6
+17: Fri. lag. Earth-Water; 8 Jan 2596
+  dge ba, til rdung, Horse, li 8
+  6;28,49 5;20,0 17;30,50 22;50,50 7;25,0
+  Solar: Iron-Horse. Niu 7
+18: Sat. nabs so. Earth-Wind; 9 Jan 2596
+  dkar po, tshong ba, Sheep, khon 9
+  0;28,5 6;19,14 17;35,19 23;54,34 7;25,58
+  Solar: Iron-Sheep. Nu 8
+19: Sun. rgyal. Fire-Fire; 10 Jan 2596
+  tshangs pa, byis pa, Monkey, dwa 1
+  1;25,48 7;20,0 17;39,49 24;59,50 7;26,56
+  Solar: Water-Monkey. Xu 9
+20: Mon. skag. Water-Water; 11 Jan 2596
+  'khon 'dzin, til rdung, Bird, khen 2
+  2;22,32 8;21,46 17;44,19 26;6,6 7;27,54
+  Solar: Water-Bird. Wei 1
+21: Tue. mchu. Fire-Fire; 12 Jan 2596
+  rnam sel, tshong ba, Dog, kham 3
+  3;18,15 9;24,33 17;48,48 0;13,22 7;28,52
+  Solar: Wood-Dog. Shi 2
+22: Wed. gre. Water-Fire; 13 Jan 2596
+  mdza' bo, gdab pa, Pig, gin 4
+  4;12,58 10;28,19 17;53,18 1;21,38 7;29,51
+  Solar: Wood-Pig. Bi 3
+23: Thu. dbo. Wind-Wind; 14 Jan 2596
+  tshe dang ldan pa, rigs can, Mouse, zin 5
+  5;7,13 11;32,37 17;57,51 2;30,29 8;0,49
+  Solar: Fire-Mouse. Kui 4
+24: Fri. me bzhi. Earth-Wind; 15 Jan 2596
+  skal bzang, khyim skyes, Ox, zon 6
+  6;1,28 12;36,56 18;2,25 3;39,21 8;1,47
+  Solar: Fire-Ox. Lou 5
+25. Omitted: Tiger li 7
+26: Sat. nag pa. Earth-Wind; 16 Jan 2596
+  dge byed, gdab pa, Rabbit, khon 8
+  0;49,59 13;45,32 18;11,32 4;57,5 8;3,43
+  Solar: Earth-Tiger. Wei 6
+27: Sun. sa ri. Fire-Wind; 17 Jan 2596
+  las bzang, rigs can, Dragon, dwa 9
+  1;44,14 14;49,51 18;16,5 6;5,57 8;4,42
+  Solar: Earth-Rabbit. Mao 7
+28: Mon. sa ga. Water-Fire; 18 Jan 2596
+  'dzin byed, khyim skyes, Snake, khen 1
+  2;38,57 15;53,41 18;20,39 7;14,20 8;5,40
+  Solar: Iron-Dragon. Bi 8
+29: Tue. lha mtshams. Fire-Earth; 19 Jan 2596
+  zug rngu, vishti, Horse, kham 2
+  3;34,41 16;56,31 18;25,12 8;21,44 8;6,38
+  Solar: Iron-Snake. Zui 9
+30: Wed. snron. Water-Earth; 20 Jan 2596
+  'grams, rkang bzhi, Sheep, gin 3
+  4;31,24 17;58,22 18;29,46 9;28,8 8;7,36
+  Solar: Water-Horse. Can 1
+
+Tibetan Lunar Month: 11 (Delayed) - Earth-male-Tiger
+
+1: Thu. snrubs. Wind-Water; 21 Jan 2596
+  'phel, mi sdug pa, Tiger, li 1
+  5;29,7 18;59,12 18;34,20 10;33,32 8;8,34
+  Solar: Water-Sheep. Jing 2
+2: Fri. chu stod. Earth-Water; 22 Jan 2596
+  brtan pa, byis pa, Rabbit, khon 2
+  6;28,19 19;58,34 18;38,53 11;37,28 8;9,33
+  Solar: Wood-Monkey. Gui 3
+3: Sat. chu smad. Earth-Earth; 23 Jan 2596
+  yongs bsnun, til rdung, Dragon, dwa 3
+  0;29,2 20;56,24 18;43,27 12;39,51 8;10,31
+  Solar: Wood-Bird. Liu 4
+4: Sun. gro zhin. Fire-Earth; 24 Jan 2596
+  dga' ba, tshong ba, Snake, khen 4
+  1;30,46 21;53,14 18;48,0 13;41,15 8;11,29
+  Solar: Fire-Dog. Xing 5
+5: Mon. mon gre. Water-Water; 25 Jan 2596
+  rdo rje, gdab pa, Horse, kham 5
+  2;33,29 22;49,4 18;52,34 14;41,39 8;12,27
+  Solar: Fire-Pig. Zhang 6
+6: Tue. mon gru. Fire-Earth; 26 Jan 2596
+  dngos grub, rigs can, Sheep, gin 6
+  3;37,13 23;43,54 18;57,8 15;41,2 8;13,25
+  Solar: Earth-Mouse. Yi 7
+7: Wed. khrums stod. Water-Fire; 27 Jan 2596
+  phan tshun, khyim skyes, Monkey, zin 7
+  4;41,28 24;38,12 19;1,41 16;39,54 8;14,24
+  Solar: Earth-Ox. Zhen 8
+8: Thu. khrums smad. Wind-Water; 28 Jan 2596
+  mchog can, vishti, Bird, zon 8
+  5;45,44 25;32,30 19;6,15 17;38,46 8;15,22
+  Solar: Iron-Tiger. Jiao 9
+9: Fri. nam gru. Earth-Water; 29 Jan 2596
+  yongs 'joms, byis pa, Dog, li 9
+  6;49,59 26;26,49 19;10,48 18;37,37 8;16,20
+  Solar: Iron-Rabbit. Kang 1
+10: Sat. tha skar. Earth-Wind; 30 Jan 2596
+  zhi ba, rigs can, Pig, khon 1
+  0;54,15 0;21,7 19;15,22 19;36,29 8;17,18
+  Solar: Water-Dragon. Di 2
+11: Sun. bra nye. Fire-Fire; 31 Jan 2596
+  grub pa, khyim skyes, Mouse, dwa 2
+  1;58,30 1;15,25 19;19,55 20;35,21 8;18,17
+  Solar: Water-Snake. Fang 3
+12: Mon. smin drug. Water-Fire; 1 Feb 2596
+  2;60,0 2;12,29 19;24,29 21;36,59 8;19,15
+  Solar: Wood-Horse. Xin 4
+12: Tue. snar ma. Fire-Earth; 2 Feb 2596
+  dge ba, byis pa, Ox, khen 3
+  3;2,17 3;10,11 19;24,29 22;34,41 8;19,15
+  Solar: Wood-Sheep. Wei 5
+13: Wed. mgo. Water-Wind; 3 Feb 2596
+  dkar po, til rdung, Tiger, kham 4
+  4;5,4 4;5,58 19;29,3 23;35,1 8;20,13
+  Solar: Fire-Monkey. Ji 6
+14: Thu. lag. Wind-Water; 4 Feb 2596
+  tshangs pa, tshong ba, Rabbit, gin 5
+  5;6,51 5;2,45 19;33,36 24;36,21 8;21,11
+  Solar: Fire-Bird. Dou 7
+15: Fri. nabs so. Earth-Wind; 5 Feb 2596
+  dbang po, gdab pa, Dragon, zin 6
+  6;7,38 6;0,31 19;38,10 25;38,41 8;22,9
+  Solar: Earth-Dog. Niu 8
+16: Sat. nabs so. Earth-Wind; 6 Feb 2596
+  'khon 'dzin, rigs can, Snake, zon 7
+  0;6,57 6;59,46 19;42,43 26;42,30 8;23,8
+  Solar: Earth-Pig. Nu 9
+17: Sun. skag. Fire-Water; 7 Feb 2596
+  rnam sel, khyim skyes, Horse, li 8
+  1;4,44 8;0,33 19;47,17 0;47,50 8;24,6
+  Solar: Iron-Mouse. Xu 1
+18: Mon. mchu. Water-Fire; 8 Feb 2596
+  mdza' bo, vishti, Sheep, khon 9
+  2;1,31 9;2,19 19;51,51 1;54,10 8;25,4
+  Solar: Iron-Ox. Wei 2
+19. Omitted: Monkey dwa 1
+20: Tue. gre. Fire-Fire; 9 Feb 2596
+  skal bzang, rigs can, Bird, khen 2
+  3;52,4 10;8,53 20;0,58 3;9,51 8;27,0
+  Solar: Water-Tiger. Shi 3
+21: Wed. dbo. Water-Wind; 10 Feb 2596
+  dge byed, khyim skyes, Dog, kham 3
+  4;46,20 11;13,11 20;5,31 4;18,43 8;27,59
+  Solar: Water-Rabbit. Bi 4
+22: Thu. me bzhi. Wind-Wind; 11 Feb 2596
+  shin tu 'grams, vishti, Pig, gin 4
+  5;40,35 12;17,30 20;10,5 5;27,35 8;28,57
+  Solar: Wood-Dragon. Kui 5
+23: Fri. nag pa. Earth-Wind; 12 Feb 2596
+  las bzang, byis pa, Mouse, zin 5
+  6;34,50 13;21,48 20;14,38 6;36,27 8;29,55
+  Solar: Wood-Snake. Lou 6
+24: Sat. sa ri. Earth-Wind; 13 Feb 2596
+  'dzin byed, til rdung, Ox, zon 6
+  0;29,5 14;26,6 20;19,12 7;45,19 9;0,53
+  Solar: Fire-Horse. Wei 7
+25: Sun. sa ga. Fire-Fire; 14 Feb 2596
+  zug rngu, vishti, Tiger, li 7
+  1;23,21 15;30,25 20;23,46 8;54,11 9;1,51
+  Solar: Fire-Sheep. Mao 8
+26: Mon. lha mtshams. Water-Earth; 15 Feb 2596
+  'phel, byis pa, Rabbit, khon 8
+  2;18,4 16;34,14 20;28,19 10;2,34 9;2,50
+  Solar: Earth-Monkey. Bi 9
+27: Tue. snron. Fire-Earth; 16 Feb 2596
+  brtan pa, til rdung, Dragon, dwa 9
+  3;13,48 17;37,4 20;32,53 11;9,58 9;3,48
+  Solar: Earth-Bird. Zui 1
+28: Wed. snrubs. Water-Water; 17 Feb 2596
+  yongs bsnun, tshong ba, Snake, khen 1
+  4;10,32 18;38,54 20;37,26 12;16,21 9;4,46
+  Solar: Iron-Dog. Can 2
+29: Thu. chu stod. Wind-Water; 18 Feb 2596
+  dga' ba, bkra shis, Horse, kham 2
+  5;8,16 19;39,44 20;42,0 13;21,44 9;5,44
+  Solar: Iron-Pig. Jing 3
+30: Fri. chu smad. Earth-Earth; 19 Feb 2596
+  rdo rje, klu, Sheep, gin 3
+  6;7,28 20;39,5 20;46,34 14;25,39 9;6,42
+  Solar: Water-Mouse. Gui 4
+
+Tibetan Lunar Month: 12 - Earth-female-Rabbit
+
+1: Sat. gro zhin. Earth-Earth; 20 Feb 2596
+  dngos grub, gdab pa, Monkey, zin 4
+  0;8,12 21;36,55 20;51,7 15;28,2 9;7,41
+  Solar: Water-Ox. Liu 5
+2: Sun. mon gre. Fire-Water; 21 Feb 2596
+  phan tshun, rigs can, Bird, zon 5
+  1;9,56 22;33,44 20;55,41 16;29,25 9;8,39
+  Solar: Wood-Tiger. Xing 6
+3: Mon. mon gru. Water-Earth; 22 Feb 2596
+  mchog can, khyim skyes, Dog, li 6
+  2;12,40 23;29,34 21;0,14 17;29,49 9;9,37
+  Solar: Wood-Rabbit. Zhang 7
+4: Tue. khrums stod. Fire-Fire; 23 Feb 2596
+  yongs 'joms, vishti, Pig, khon 7
+  3;16,24 24;24,23 21;4,48 18;29,12 9;10,35
+  Solar: Fire-Dragon. Yi 8
+5: Wed. khrums smad. Water-Water; 24 Feb 2596
+  zhi ba, byis pa, Mouse, dwa 8
+  4;20,39 25;18,42 21;9,21 19;28,4 9;11,34
+  Solar: Fire-Snake. Zhen 9
+6: Thu. nam gru. Wind-Water; 25 Feb 2596
+  grub pa, til rdung, Ox, khen 9
+  5;24,55 26;13,0 21;13,55 20;26,55 9;12,32
+  Solar: Earth-Horse. Jiao 1
+7: Fri. tha skar. Earth-Wind; 26 Feb 2596
+  bsgrub bya, khyim skyes, Tiger, kham 1
+  6;29,10 0;7,18 21;18,29 21;25,47 9;13,30
+  Solar: Earth-Sheep. Kang 2
+8: Sat. bra nye. Earth-Fire; 27 Feb 2596
+  dge ba, vishti, Rabbit, gin 2
+  0;33,26 1;1,36 21;23,2 22;24,39 9;14,28
+  Solar: Iron-Monkey. Di 3
+9: Sun. bra nye. Fire-Fire; 28 Feb 2596
+  dkar po, byis pa, Dragon, zin 3
+  1;37,41 1;55,54 21;27,36 23;23,31 9;15,26
+  Solar: Iron-Bird. Fang 4
+10: Mon. smin drug. Water-Fire; 29 Feb 2596
+  tshangs pa, til rdung, Snake, zon 4
+  2;41,28 2;50,41 21;32,9 24;22,51 9;16,25
+  Solar: Water-Dog. Xin 5
+11: Tue. snar ma. Fire-Earth; 1 Mar 2596
+  dbang po, tshong ba, Horse, li 5
+  3;44,14 3;46,28 21;36,43 25;23,12 9;17,23
+  Solar: Water-Pig. Wei 6
+12: Wed. mgo. Water-Wind; 2 Mar 2596
+  'khon 'dzin, gdab pa, Sheep, khon 6
+  4;46,1 4;43,15 21;41,17 26;24,32 9;18,21
+  Solar: Wood-Mouse. Ji 7
+13: Thu. lag. Wind-Water; 3 Mar 2596
+  rnam sel, rigs can, Monkey, dwa 7
+  5;46,47 5;41,2 21;45,50 0;26,53 9;19,19
+  Solar: Wood-Ox. Dou 8
+14: Fri. nabs so. Earth-Wind; 4 Mar 2596
+  mdza' bo, khyim skyes, Bird, khen 8
+  6;46,5 6;40,18 21;50,24 1;30,42 9;20,17
+  Solar: Fire-Tiger. Niu 9
+15: Sat. rgyal. Earth-Fire; 5 Mar 2596
+  tshe dang ldan pa, vishti, Dog, kham 9
+  0;43,52 7;41,5 21;54,57 2;36,3 9;21,16
+  Solar: Fire-Rabbit. Nu 1
+16: Sun. skag. Fire-Water; 6 Mar 2596
+  skal bzang, byis pa, Pig, gin 1
+  1;40,38 8;42,52 21;59,31 3;42,24 9;22,14
+  Solar: Earth-Dragon. Xu 2
+17: Mon. mchu. Water-Fire; 7 Mar 2596
+  dge byed, til rdung, Mouse, zin 2
+  2;36,25 9;45,39 22;4,4 4;49,44 9;23,12
+  Solar: Earth-Snake. Wei 3
+18: Tue. gre. Fire-Fire; 8 Mar 2596
+  shin tu 'grams, tshong ba, Ox, zon 3
+  3;31,11 10;49,27 22;8,38 5;58,5 9;24,10
+  Solar: Iron-Horse. Shi 4
+19: Wed. dbo. Water-Wind; 9 Mar 2596
+  'dzin byed, byis pa, Tiger, li 4
+  4;25,26 11;53,45 22;13,12 7;6,57 9;25,8
+  Solar: Iron-Sheep. Bi 5
+20: Thu. me bzhi. Wind-Wind; 10 Mar 2596
+  zug rngu, til rdung, Rabbit, khon 5
+  5;19,41 12;58,3 22;17,45 8;15,49 9;26,7
+  Solar: Water-Monkey. Kui 6
+21: Fri. sa ri. Earth-Wind; 11 Mar 2596
+  'grams, tshong ba, Dragon, dwa 6
+  6;13,57 14;2,22 22;22,19 9;24,41 9;27,5
+  Solar: Water-Bird. Lou 7
+22: Sat. sa ga. Earth-Fire; 12 Mar 2596
+  'phel, gdab pa, Snake, khen 7
+  0;8,12 15;6,40 22;26,52 10;33,33 9;28,3
+  Solar: Wood-Dog. Wei 8
+23: Sun. lha mtshams. Fire-Earth; 13 Mar 2596
+  brtan pa, rigs can, Horse, kham 8
+  1;2,27 16;10,58 22;31,26 11;42,25 9;29,1
+  Solar: Wood-Pig. Mao 9
+24. Omitted: Sheep gin 9
+25: Mon. snron. Water-Earth; 14 Mar 2596
+  yongs bsnun, tshong ba, Monkey, zin 1
+  2;52,52 17;17,37 22;40,29 12;58,7 10;0,58
+  Solar: Fire-Mouse. Bi 1
+26: Tue. snrubs. Fire-Water; 15 Mar 2596
+  rdo rje, gdab pa, Bird, zon 2
+  3;49,32 18;19,26 22;44,59 14;4,26 10;1,56
+  Solar: Fire-Ox. Zui 2
+27: Wed. chu stod. Water-Water; 16 Mar 2596
+  dngos grub, rigs can, Dog, li 3
+  4;47,12 19;20,16 22;49,29 15;9,45 10;2,54
+  Solar: Earth-Tiger. Can 3
+28: Thu. chu smad. Wind-Earth; 17 Mar 2596
+  phan tshun, khyim skyes, Pig, khon 4
+  5;46,22 20;19,36 22;53,58 16;13,35 10;3,52
+  Solar: Earth-Rabbit. Jing 4
+29: Fri. gro zhin. Earth-Earth; 18 Mar 2596
+  mchog can, vishti, Mouse, dwa 5
+  6;47,2 21;17,25 22;58,28 17;15,54 10;4,51
+  Solar: Iron-Dragon. Gui 5
+30: Sat. mon gre. Earth-Water; 19 Mar 2596
+  yongs 'joms, rkang bzhi, Ox, khen 6
+  0;48,43 22;14,14 23;2,58 18;17,13 10;5,49
+  Solar: Iron-Snake. Liu 6

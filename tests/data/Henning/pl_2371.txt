@@ -1,0 +1,1590 @@
+
+New Year: 2371, Iron-female-Rabbit
+
+Tibetan Lunar Month: 1 - Wood-male-Dragon
+
+1: Wed. gro zhin. Water-Earth; 17 Feb 2371
+  dngos grub, gdab pa, Tiger, kham 7
+  4;18,40 21;36,58 21;1,38 15;38,37 9;9,55
+  Solar: Iron-Horse. Can 1
+  From 1st to 15th, Demonstration of Miracles.
+2: Thu. mon gre. Wind-Water; 18 Feb 2371
+  phan tshun, rigs can, Rabbit, gin 8
+  5;18,9 22;36,3 21;6,12 16;42,15 9;10,53
+  Solar: Iron-Sheep. Jing 2
+3: Fri. mon gru. Earth-Earth; 19 Feb 2371
+  mchog can, khyim skyes, Dragon, zin 9
+  6;16,1 23;36,44 21;10,46 17;47,31 9;11,51
+  Solar: Water-Monkey. Gui 3
+4: Sat. khrums stod. Earth-Fire; 20 Feb 2371
+  yongs 'joms, vishti, Snake, zon 1
+  0;12,53 24;38,26 21;15,19 18;53,46 9;12,50
+  Solar: Water-Bird. Liu 4
+5: Sun. khrums smad. Fire-Water; 21 Feb 2371
+  grub pa, byis pa, Horse, li 2
+  1;8,44 25;41,8 21;19,53 20;1,1 9;13,48
+  Solar: Wood-Dog. Xing 5
+6: Mon. nam gru. Water-Water; 22 Feb 2371
+  bsgrub bya, til rdung, Sheep, khon 3
+  2;3,36 26;44,50 21;24,26 21;9,16 9;14,46
+  Solar: Wood-Pig. Zhang 6
+7. Omitted: Monkey dwa 4
+8: Tue. tha skar. Fire-Wind; 23 Feb 2371
+  dge ba, vishti, Bird, khen 5
+  3;52,7 0;53,26 21;33,34 22;27,0 9;16,42
+  Solar: Fire-Mouse. Yi 7
+9: Wed. bra nye. Water-Fire; 24 Feb 2371
+  dkar po, byis pa, Dog, kham 6
+  4;46,22 1;57,45 21;38,7 23;35,52 9;17,41
+  Solar: Fire-Ox. Zhen 8
+10: Thu. snar ma. Wind-Earth; 25 Feb 2371
+  tshangs pa, til rdung, Pig, gin 7
+  5;40,37 3;2,3 21;42,41 24;44,44 9;18,39
+  Solar: Earth-Tiger. Jiao 9
+11: Fri. mgo. Earth-Wind; 26 Feb 2371
+  dbang po, tshong ba, Mouse, zin 8
+  6;34,52 4;6,21 21;47,14 25;53,36 9;19,37
+  Solar: Earth-Rabbit. Kang 1
+12: Sat. lag. Earth-Water; 27 Feb 2371
+  rnam sel, gdab pa, Ox, zon 9
+  0;29,31 5;10,16 21;51,48 0;2,5 9;20,35
+  Solar: Iron-Dragon. Di 2
+13: Sun. nabs so. Fire-Wind; 28 Feb 2371
+  mdza' bo, til rdung, Tiger, li 1
+  1;25,10 6;13,11 21;56,21 1;9,33 9;21,34
+  Solar: Iron-Snake. Fang 3
+14: Mon. rgyal. Water-Fire; 1 Mar 2371
+  tshe dang ldan pa, tshong ba, Rabbit, khon 2
+  2;21,49 7;15,6 22;0,55 2;16,1 9;22,32
+  Solar: Water-Horse. Xin 4
+15: Tue. skag. Fire-Water; 2 Mar 2371
+  skal bzang, gdab pa, Dragon, dwa 3
+  3;19,28 8;16,0 22;5,29 3;21,30 9;23,30
+  Solar: Water-Sheep. Wei 5
+16: Wed. mchu. Water-Fire; 3 Mar 2371
+  dge byed, rigs can, Snake, khen 4
+  4;18,30 9;15,32 22;10,2 4;25,34 9;24,28
+  Solar: Wood-Monkey. Ji 6
+17: Thu. gre. Wind-Fire; 4 Mar 2371
+  shin tu 'grams, khyim skyes, Horse, kham 5
+  5;19,9 10;13,26 22;14,36 5;28,3 9;25,26
+  Solar: Wood-Bird. Dou 7
+18: Fri. dbo. Earth-Wind; 5 Mar 2371
+  las bzang, vishti, Sheep, gin 6
+  6;20,48 11;10,21 22;19,9 6;29,31 9;26,25
+  Solar: Fire-Dog. Niu 8
+19: Sat. me bzhi. Earth-Wind; 6 Mar 2371
+  'dzin byed, byis pa, Monkey, zin 7
+  0;23,27 12;6,15 22;23,43 7;29,59 9;27,23
+  Solar: Fire-Pig. Nu 9
+20: Sun. nag pa. Fire-Wind; 7 Mar 2371
+  zug rngu, rigs can, Bird, zon 8
+  1;27,6 13;1,10 22;28,17 8;29,27 9;28,21
+  Solar: Earth-Mouse. Xu 1
+21: Mon. nag pa. Water-Wind; 8 Mar 2371
+  'grams, khyim skyes, Dog, li 9
+  2;31,21 13;55,28 22;32,50 9;28,19 9;29,19
+  Solar: Earth-Ox. Wei 2
+22: Tue. sa ri. Fire-Wind; 9 Mar 2371
+  'phel, vishti, Pig, khon 1
+  3;35,36 14;49,46 22;37,22 10;27,9 10;0,17
+  Solar: Iron-Tiger. Shi 3
+23: Wed. sa ga. Water-Fire; 10 Mar 2371
+  brtan pa, byis pa, Mouse, dwa 2
+  4;39,47 15;44,5 22;41,52 11;25,57 10;1,16
+  Solar: Iron-Rabbit. Bi 4
+24: Thu. lha mtshams. Wind-Earth; 11 Mar 2371
+  yongs bsnun, til rdung, Ox, khen 3
+  5;43,59 16;38,23 22;46,22 12;24,45 10;2,14
+  Solar: Water-Dragon. Kui 5
+25: Fri. snron. Earth-Earth; 12 Mar 2371
+  dga' ba, tshong ba, Tiger, kham 4
+  6;48,10 17;32,41 22;50,52 13;23,33 10;3,12
+  Solar: Water-Snake. Lou 6
+26: Sat. snrubs. Earth-Water; 13 Mar 2371
+  rdo rje, gdab pa, Rabbit, gin 5
+  0;51,58 18;27,23 22;55,21 14;22,45 10;4,10
+  Solar: Wood-Horse. Wei 7
+27: Sun. chu stod. Fire-Water; 14 Mar 2371
+  dngos grub, byis pa, Dragon, zin 6
+  1;54,46 19;23,5 22;59,51 15;22,56 10;5,8
+  Solar: Wood-Sheep. Mao 8
+28: Mon. chu smad. Water-Earth; 15 Mar 2371
+  phan tshun, til rdung, Snake, zon 7
+  2;56,33 20;19,47 23;4,21 16;24,8 10;6,7
+  Solar: Fire-Monkey. Bi 9
+29: Tue. gro zhin. Fire-Earth; 16 Mar 2371
+  mchog can, tshong ba, Horse, li 8
+  3;57,21 21;17,29 23;8,50 17;26,20 10;7,5
+  Solar: Fire-Bird. Zui 1
+30: Wed. mon gre. Water-Water; 17 Mar 2371
+  yongs 'joms, bkra shis, Sheep, khon 9
+  4;56,45 22;16,35 23;13,20 18;29,55 10;8,3
+  Solar: Earth-Dog. Can 2
+
+Tibetan Lunar Month: 2 (Intercalary) - Wood-female-Snake
+
+1: Thu. mon gru. Wind-Earth; 18 Mar 2371
+  zhi ba, klu, Monkey, dwa 1
+  5;54,32 23;17,17 23;17,50 19;35,7 10;9,1
+  Solar: Earth-Pig. Jing 3
+2: Fri. khrums stod. Earth-Fire; 19 Mar 2371
+  grub pa, byis pa, Bird, khen 2
+  6;51,20 24;18,59 23;22,20 20;41,19 10;10,0
+  Solar: Iron-Mouse. Gui 4
+3: Sat. khrums smad. Earth-Water; 20 Mar 2371
+  bsgrub bya, til rdung, Dog, kham 3
+  0;47,8 25;21,41 23;26,49 21;48,31 10;10,58
+  Solar: Iron-Ox. Liu 5
+4: Sun. nam gru. Fire-Water; 21 Mar 2371
+  dge ba, tshong ba, Pig, gin 4
+  1;41,55 26;25,23 23;31,19 22;56,43 10;11,56
+  Solar: Water-Tiger. Xing 6
+5: Mon. tha skar. Water-Wind; 22 Mar 2371
+  tshangs pa, gdab pa, Mouse, zin 5
+  2;36,6 0;29,42 23;35,49 24;5,31 10;12,54
+  Solar: Water-Rabbit. Zhang 7
+6: Tue. bra nye. Fire-Fire; 23 Mar 2371
+  dbang po, rigs can, Ox, zon 6
+  3;30,18 1;34,0 23;40,18 25;14,19 10;13,52
+  Solar: Wood-Dragon. Yi 8
+7: Wed. smin drug. Water-Fire; 24 Mar 2371
+  'khon 'dzin, tshong ba, Tiger, li 7
+  4;24,29 2;38,18 23;44,48 26;23,7 10;14,51
+  Solar: Wood-Snake. Zhen 9
+8: Thu. snar ma. Wind-Earth; 25 Mar 2371
+  rnam sel, gdab pa, Rabbit, khon 8
+  5;18,40 3;42,37 23;49,18 0;31,55 10;15,49
+  Solar: Fire-Horse. Jiao 1
+9: Fri. mgo. Earth-Wind; 26 Mar 2371
+  mdza' bo, rigs can, Dragon, dwa 9
+  6;12,52 4;46,55 23;53,47 1;40,43 10;16,47
+  Solar: Fire-Sheep. Kang 2
+10: Sat. lag. Earth-Water; 27 Mar 2371
+  tshe dang ldan pa, khyim skyes, Snake, khen 1
+  0;7,27 5;50,50 23;58,17 2;49,7 10;17,45
+  Solar: Earth-Monkey. Di 3
+11: Sun. nabs so. Fire-Wind; 28 Mar 2371
+  skal bzang, vishti, Horse, kham 2
+  1;3,2 6;53,44 24;2,47 3;56,31 10;18,43
+  Solar: Earth-Bird. Fang 4
+12. Omitted: Sheep gin 3
+13: Mon. rgyal. Water-Fire; 29 Mar 2371
+  shin tu 'grams, byis pa, Monkey, zin 4
+  2;57,13 7;56,32 24;11,46 5;8,19 10;20,40
+  Solar: Iron-Dog. Xin 5
+14: Tue. skag. Fire-Water; 30 Mar 2371
+  las bzang, til rdung, Bird, zon 5
+  3;56,13 8;56,3 24;16,16 6;12,19 10;21,38
+  Solar: Iron-Pig. Wei 6
+15: Wed. mchu. Water-Fire; 31 Mar 2371
+  'dzin byed, tshong ba, Dog, li 6
+  4;56,48 9;53,57 24;20,46 7;14,43 10;22,36
+  Solar: Water-Mouse. Ji 7
+16: Thu. gre. Wind-Fire; 1 Apr 2371
+  zug rngu, gdab pa, Pig, khon 7
+  5;58,24 10;50,51 24;25,15 8;16,7 10;23,34
+  Solar: Water-Ox. Dou 8
+17: Fri. dbo. Earth-Wind; 2 Apr 2371
+  6;60,0 11;47,45 24;29,45 9;17,31 10;24,33
+  Solar: Wood-Tiger. Niu 9
+17: Sat. me bzhi. Earth-Wind; 3 Apr 2371
+  'phel, khyim skyes, Mouse, dwa 8
+  0;0,59 12;46,45 24;29,45 10;16,31 10;24,33
+  Solar: Wood-Rabbit. Nu 1
+18: Sun. nag pa. Fire-Wind; 4 Apr 2371
+  brtan pa, vishti, Ox, khen 9
+  1;4,35 13;41,39 24;34,15 11;15,55 10;25,31
+  Solar: Fire-Dragon. Xu 2
+19: Mon. sa ri. Water-Wind; 5 Apr 2371
+  yongs bsnun, byis pa, Tiger, kham 1
+  2;8,46 14;35,58 24;38,44 12;14,42 10;26,29
+  Solar: Fire-Snake. Wei 3
+20: Tue. sa ga. Fire-Fire; 6 Apr 2371
+  dga' ba, til rdung, Rabbit, gin 2
+  3;12,58 15;30,16 24;43,14 13;13,30 10;27,27
+  Solar: Earth-Horse. Shi 4
+21: Wed. lha mtshams. Water-Earth; 7 Apr 2371
+  rdo rje, tshong ba, Dragon, zin 3
+  4;17,9 16;24,34 24;47,44 14;12,18 10;28,25
+  Solar: Earth-Sheep. Bi 5
+22: Thu. snron. Wind-Earth; 8 Apr 2371
+  dngos grub, gdab pa, Snake, zon 4
+  5;21,21 17;18,52 24;52,14 15;11,6 10;29,24
+  Solar: Iron-Monkey. Kui 6
+23: Fri. snrubs. Earth-Water; 9 Apr 2371
+  phan tshun, rigs can, Horse, li 5
+  6;25,30 18;13,10 24;56,41 16;9,52 11;0,22
+  Solar: Iron-Bird. Lou 7
+24: Sat. chu stod. Earth-Water; 10 Apr 2371
+  mchog can, til rdung, Sheep, khon 6
+  0;29,12 19;7,53 25;1,5 17;8,58 11;1,20
+  Solar: Water-Dog. Wei 8
+25: Sun. chu smad. Fire-Earth; 11 Apr 2371
+  yongs 'joms, tshong ba, Monkey, dwa 7
+  1;31,53 20;3,35 25;5,29 18;9,4 11;2,18
+  Solar: Water-Pig. Mao 9
+26: Mon. gro zhin. Water-Earth; 12 Apr 2371
+  zhi ba, gdab pa, Bird, khen 8
+  2;33,35 21;0,18 25;9,53 19;10,11 11;3,17
+  Solar: Wood-Mouse. Bi 1
+27: Tue. gro zhin. Fire-Earth; 13 Apr 2371
+  grub pa, rigs can, Dog, kham 9
+  3;34,16 21;58,0 25;14,17 20;12,17 11;4,15
+  Solar: Wood-Ox. Zui 2
+28: Wed. mon gre. Water-Water; 14 Apr 2371
+  bsgrub bya, khyim skyes, Pig, gin 1
+  4;33,33 22;57,7 25;18,40 21;15,48 11;5,13
+  Solar: Fire-Tiger. Can 3
+29: Thu. mon gru. Wind-Earth; 15 Apr 2371
+  dge ba, vishti, Mouse, zin 2
+  5;31,14 23;57,49 25;23,4 22;20,54 11;6,11
+  Solar: Fire-Rabbit. Jing 4
+30: Fri. khrums stod. Earth-Fire; 16 Apr 2371
+  dkar po, rkang bzhi, Ox, zon 3
+  6;27,56 24;59,32 25;27,28 23;27,1 11;7,9
+  Solar: Earth-Dragon. Gui 5
+
+Tibetan Lunar Month: 2 (Delayed) - Wood-female-Snake
+
+1: Sat. nam gru. Earth-Water; 17 Apr 2371
+  tshangs pa, gdab pa, Monkey, dwa 1
+  0;23,37 26;2,15 25;31,52 24;34,7 11;8,8
+  Solar: Earth-Snake. Liu 6
+2: Sun. tha skar. Fire-Wind; 18 Apr 2371
+  dbang po, rigs can, Bird, khen 2
+  1;18,18 0;5,57 25;36,16 25;42,14 11;9,6
+  Solar: Iron-Horse. Xing 7
+3: Mon. bra nye. Water-Fire; 19 Apr 2371
+  'khon 'dzin, khyim skyes, Dog, kham 3
+  2;12,24 1;10,16 25;40,40 26;50,56 11;10,4
+  Solar: Iron-Sheep. Zhang 8
+4: Tue. smin drug. Fire-Fire; 20 Apr 2371
+  rnam sel, vishti, Pig, gin 4
+  3;6,29 2;14,34 25;45,4 0;59,38 11;11,2
+  Solar: Water-Monkey. Yi 9
+5: Wed. snar ma. Water-Earth; 21 Apr 2371
+  tshe dang ldan pa, byis pa, Mouse, zin 5
+  4;0,35 3;18,52 25;49,28 2;8,20 11;12,0
+  Solar: Water-Bird. Zhen 1
+6. Omitted: Ox zon 6
+7: Thu. mgo. Wind-Wind; 22 Apr 2371
+  skal bzang, khyim skyes, Tiger, li 7
+  5;48,46 4;27,29 25;58,15 3;25,45 11;13,57
+  Solar: Wood-Dog. Jiao 2
+8: Fri. lag. Earth-Water; 23 Apr 2371
+  dge byed, vishti, Rabbit, khon 8
+  6;43,16 5;31,23 26;2,39 4;34,3 11;14,55
+  Solar: Wood-Pig. Kang 3
+9: Sat. nabs so. Earth-Wind; 24 Apr 2371
+  shin tu 'grams, byis pa, Dragon, dwa 9
+  0;38,46 6;34,17 26;7,3 5;41,20 11;15,53
+  Solar: Fire-Mouse. Di 4
+10: Sun. rgyal. Fire-Fire; 25 Apr 2371
+  las bzang, til rdung, Snake, khen 1
+  1;35,16 7;36,11 26;11,27 6;47,38 11;16,51
+  Solar: Fire-Ox. Fang 5
+11: Mon. skag. Water-Water; 26 Apr 2371
+  'dzin byed, tshong ba, Horse, kham 2
+  2;32,46 8;37,4 26;15,51 7;52,56 11;17,50
+  Solar: Earth-Tiger. Xin 6
+12: Tue. mchu. Fire-Fire; 27 Apr 2371
+  zug rngu, gdab pa, Sheep, gin 3
+  3;31,40 9;36,34 26;20,15 8;56,49 11;18,48
+  Solar: Earth-Rabbit. Wei 7
+13: Wed. gre. Water-Fire; 28 Apr 2371
+  'grams, rigs can, Monkey, zin 4
+  4;32,11 10;34,28 26;24,39 9;59,7 11;19,46
+  Solar: Iron-Dragon. Ji 8
+14: Thu. dbo. Wind-Wind; 29 Apr 2371
+  brtan pa, khyim skyes, Bird, zon 5
+  5;33,41 11;31,21 26;29,2 11;0,24 11;20,44
+  Solar: Iron-Snake. Dou 9
+15: Fri. me bzhi. Earth-Wind; 30 Apr 2371
+  yongs bsnun, vishti, Dog, li 6
+  6;36,11 12;27,15 26;33,26 12;0,42 11;21,42
+  Solar: Water-Horse. Niu 1
+16: Sat. nag pa. Earth-Wind; 1 May 2371
+  yongs bsnun, byis pa, Pig, khon 7
+  0;39,41 13;22,9 26;37,50 12;59,59 11;22,41
+  Solar: Water-Sheep. Nu 2
+17: Sun. sa ri. Fire-Wind; 2 May 2371
+  dga' ba, til rdung, Mouse, dwa 8
+  1;43,47 14;16,27 26;42,14 13;58,41 11;23,39
+  Solar: Wood-Monkey. Xu 3
+18: Mon. sa ga. Water-Fire; 3 May 2371
+  rdo rje, tshong ba, Ox, khen 9
+  2;47,52 15;10,45 26;46,38 14;57,24 11;24,37
+  Solar: Wood-Bird. Wei 4
+19: Tue. lha mtshams. Fire-Earth; 4 May 2371
+  dngos grub, gdab pa, Tiger, kham 1
+  3;51,58 16;5,3 26;51,2 15;56,6 11;25,35
+  Solar: Fire-Dog. Shi 5
+20: Wed. lha mtshams. Water-Earth; 5 May 2371
+  phan tshun, byis pa, Rabbit, gin 2
+  4;56,4 16;59,21 26;55,26 16;54,48 11;26,34
+  Solar: Fire-Pig. Bi 6
+21: Thu. snron. Wind-Earth; 6 May 2371
+  5;60,0 17;53,50 26;59,50 17;53,40 11;27,32
+  Solar: Earth-Mouse. Kui 7
+21: Fri. snrubs. Earth-Water; 7 May 2371
+  yongs 'joms, tshong ba, Dragon, zin 3
+  6;0,10 18;53,40 26;59,50 18;53,30 11;27,32
+  Solar: Earth-Ox. Lou 8
+22: Sat. chu stod. Earth-Water; 8 May 2371
+  zhi ba, gdab pa, Snake, zon 4
+  0;3,51 19;48,22 0;4,14 19;52,36 11;28,30
+  Solar: Iron-Tiger. Wei 9
+23: Sun. chu smad. Fire-Earth; 9 May 2371
+  grub pa, rigs can, Horse, li 5
+  1;6,32 20;44,5 0;8,37 20;52,43 11;29,28
+  Solar: Iron-Rabbit. Mao 1
+24: Mon. gro zhin. Water-Earth; 10 May 2371
+  bsgrub bya, khyim skyes, Sheep, khon 6
+  2;8,11 21;40,48 0;13,0 21;53,48 0;0,26
+  Solar: Water-Dragon. Bi 2
+25: Tue. mon gre. Fire-Water; 11 May 2371
+  dge ba, vishti, Monkey, dwa 7
+  3;8,48 22;38,31 0;17,20 22;55,51 0;1,25
+  Solar: Water-Snake. Zui 3
+26: Wed. mon gru. Water-Earth; 12 May 2371
+  dkar po, byis pa, Bird, khen 8
+  4;8,0 23;37,39 0;21,40 23;59,19 0;2,23
+  Solar: Wood-Horse. Can 4
+27: Thu. khrums stod. Wind-Fire; 13 May 2371
+  dbang po, til rdung, Dog, kham 9
+  5;5,37 24;38,22 0;26,0 25;4,22 0;3,21
+  Solar: Wood-Sheep. Jing 5
+28: Fri. khrums smad. Earth-Water; 14 May 2371
+  'khon 'dzin, tshong ba, Pig, gin 1
+  6;2,14 25;40,5 0;30,20 26;10,25 0;4,19
+  Solar: Fire-Monkey. Gui 6
+29. Omitted: Mouse zin 2
+30: Sat. nam gru. Earth-Water; 15 May 2371
+  rnam sel, rkang bzhi, Ox, zon 3
+  0;52,28 26;46,31 0;39,0 0;25,31 0;6,16
+  Solar: Fire-Bird. Liu 7
+
+Tibetan Lunar Month: 3 - Fire-male-Horse
+
+1: Sun. tha skar. Fire-Wind; 16 May 2371
+  mdza' bo, mi sdug pa, Tiger, li 4
+  1;46,30 0;50,49 0;43,20 1;34,9 0;7,14
+  Solar: Earth-Dog. Xing 8
+2: Mon. bra nye. Water-Fire; 17 May 2371
+  tshe dang ldan pa, byis pa, Rabbit, khon 5
+  2;40,31 1;55,8 0;47,40 2;42,48 0;8,12
+  Solar: Earth-Pig. Zhang 9
+3: Tue. smin drug. Fire-Fire; 18 May 2371
+  skal bzang, til rdung, Dragon, dwa 6
+  3;34,33 2;59,26 0;52,0 3;51,26 0;9,10
+  Solar: Iron-Mouse. Yi 1
+4: Wed. mgo. Water-Wind; 19 May 2371
+  shin tu 'grams, tshong ba, Snake, khen 7
+  4;28,35 4;3,44 0;56,20 5;0,4 0;10,8
+  Solar: Iron-Ox. Zhen 2
+5: Thu. lag. Wind-Water; 20 May 2371
+  las bzang, byis pa, Horse, kham 8
+  5;22,36 5;8,3 1;0,40 6;8,43 0;11,7
+  Solar: Water-Tiger. Jiao 3
+6: Fri. nabs so. Earth-Wind; 21 May 2371
+  'dzin byed, til rdung, Sheep, gin 9
+  6;17,3 6;11,56 1;5,0 7;16,56 0;12,5
+  Solar: Water-Rabbit. Kang 4
+7: Sat. rgyal. Earth-Fire; 22 May 2371
+  zug rngu, tshong ba, Monkey, zin 1
+  0;12,29 7;14,50 1;9,20 8;24,10 0;13,3
+  Solar: Wood-Dragon. Di 5
+8: Sun. skag. Fire-Water; 23 May 2371
+  'grams, gdab pa, Bird, zon 2
+  1;8,56 8;16,43 1;13,40 9;30,23 0;14,1
+  Solar: Wood-Snake. Fang 6
+9: Mon. mchu. Water-Fire; 24 May 2371
+  'phel, rigs can, Dog, li 3
+  2;6,23 9;17,36 1;18,0 10;35,36 0;15,0
+  Solar: Fire-Horse. Xin 7
+10: Tue. gre. Fire-Fire; 25 May 2371
+  brtan pa, khyim skyes, Pig, khon 4
+  3;5,14 10;17,5 1;22,20 11;39,25 0;15,58
+  Solar: Fire-Sheep. Wei 8
+11: Wed. dbo. Water-Wind; 26 May 2371
+  yongs bsnun, vishti, Mouse, dwa 5
+  4;5,41 11;14,58 1;26,40 12;41,38 0;16,56
+  Solar: Earth-Monkey. Ji 9
+12: Thu. me bzhi. Wind-Wind; 27 May 2371
+  dga' ba, byis pa, Ox, khen 6
+  5;7,7 12;11,52 1;31,0 13;42,52 0;17,54
+  Solar: Earth-Bird. Dou 1
+13: Fri. nag pa. Earth-Wind; 28 May 2371
+  rdo rje, til rdung, Tiger, kham 7
+  6;9,34 13;7,45 1;35,20 14;43,5 0;18,52
+  Solar: Iron-Dog. Niu 2
+14: Sat. sa ri. Earth-Wind; 29 May 2371
+  dngos grub, tshong ba, Rabbit, gin 8
+  0;13,1 14;2,38 1;39,40 15;42,18 0;19,51
+  Solar: Iron-Pig. Nu 3
+15: Sun. sa ri. Fire-Wind; 30 May 2371
+  phan tshun, gdab pa, Dragon, zin 9
+  1;17,3 14;56,56 1;44,0 16;40,56 0;20,49
+  Solar: Water-Mouse. Xu 4
+  Revelation of the Kalacakra Tantra.
+16: Mon. sa ga. Water-Fire; 31 May 2371
+  mchog can, rigs can, Snake, zon 1
+  2;21,5 15;51,14 1;48,20 17;39,34 0;21,47
+  Solar: Water-Ox. Wei 5
+17: Tue. lha mtshams. Fire-Earth; 1 Jun 2371
+  yongs 'joms, khyim skyes, Horse, li 2
+  3;25,6 16;45,33 1;52,40 18;38,13 0;22,45
+  Solar: Wood-Tiger. Shi 6
+18: Wed. snron. Water-Earth; 2 Jun 2371
+  zhi ba, tshong ba, Sheep, khon 3
+  4;29,8 17;39,51 1;57,0 19;36,51 0;23,43
+  Solar: Wood-Rabbit. Bi 7
+19: Thu. snrubs. Wind-Water; 3 Jun 2371
+  grub pa, gdab pa, Monkey, dwa 4
+  5;33,10 18;34,9 2;1,20 20;35,29 0;24,42
+  Solar: Fire-Dragon. Kui 8
+20: Fri. chu stod. Earth-Water; 4 Jun 2371
+  bsgrub bya, rigs can, Bird, khen 5
+  6;36,47 19;28,52 2;5,40 21;34,32 0;25,40
+  Solar: Fire-Snake. Lou 9
+21: Sat. chu smad. Earth-Earth; 5 Jun 2371
+  dge ba, khyim skyes, Dog, kham 6
+  0;39,23 20;24,36 2;10,0 22;34,36 0;26,38
+  Solar: Earth-Horse. Wei 1
+22: Sun. gro zhin. Fire-Earth; 6 Jun 2371
+  dkar po, vishti, Pig, gin 7
+  1;41,0 21;21,19 2;14,20 23;35,39 0;27,36
+  Solar: Earth-Sheep. Mao 2
+23: Mon. mon gre. Water-Water; 7 Jun 2371
+  tshangs pa, byis pa, Mouse, zin 8
+  2;41,37 22;19,2 2;18,40 24;37,42 0;28,34
+  Solar: Iron-Monkey. Bi 3
+24: Tue. mon gru. Fire-Earth; 8 Jun 2371
+  dbang po, til rdung, Ox, zon 9
+  3;40,48 23;18,11 2;23,0 25;41,11 0;29,33
+  Solar: Iron-Bird. Zui 4
+25: Wed. khrums stod. Water-Fire; 9 Jun 2371
+  'khon 'dzin, tshong ba, Tiger, li 1
+  4;38,22 24;18,54 2;27,16 26;46,11 1;0,31
+  Solar: Water-Dog. Can 5
+26: Thu. khrums smad. Wind-Water; 10 Jun 2371
+  rnam sel, gdab pa, Rabbit, khon 2
+  5;34,52 25;20,38 2;31,31 0;52,9 1;1,29
+  Solar: Water-Pig. Jing 6
+27: Fri. nam gru. Earth-Water; 11 Jun 2371
+  mdza' bo, rigs can, Dragon, dwa 3
+  6;30,23 26;23,21 2;35,45 1;59,6 1;2,27
+  Solar: Wood-Mouse. Gui 7
+28: Sat. tha skar. Earth-Wind; 12 Jun 2371
+  skal bzang, tshong ba, Snake, khen 4
+  0;24,54 0;27,5 2;39,59 3;7,4 1;3,25
+  Solar: Wood-Ox. Liu 8
+29: Sun. bra nye. Fire-Fire; 13 Jun 2371
+  dge byed, bkra shis, Horse, kham 5
+  1;18,50 1;31,23 2;44,13 4;15,37 1;4,24
+  Solar: Fire-Tiger. Xing 9
+30: Mon. smin drug. Water-Fire; 14 Jun 2371
+  shin tu 'grams, klu, Sheep, gin 6
+  2;12,45 2;35,41 2;48,27 5;24,9 1;5,22
+  Solar: Fire-Rabbit. Zhang 1
+
+Tibetan Lunar Month: 4 - Fire-female-Sheep
+
+1: Tue. snar ma. Fire-Earth; 15 Jun 2371
+  las bzang, gdab pa, Monkey, zin 7
+  3;6,41 3;40,0 2;52,41 6;32,42 1;6,20
+  Solar: Earth-Dragon. Yi 2
+2: Wed. mgo. Water-Wind; 16 Jun 2371
+  'dzin byed, rigs can, Bird, zon 8
+  4;0,37 4;44,18 2;56,56 7;41,14 1;7,18
+  Solar: Earth-Snake. Zhen 3
+3. Omitted: Dog li 9
+4: Thu. lag. Wind-Water; 17 Jun 2371
+  zug rngu, tshong ba, Pig, khon 1
+  5;48,54 5;52,30 3;5,24 8;57,54 1;9,15
+  Solar: Iron-Horse. Jiao 4
+5: Fri. nabs so. Earth-Wind; 18 Jun 2371
+  'phel, gdab pa, Mouse, dwa 2
+  6;44,15 6;55,23 3;9,38 10;5,1 1;10,13
+  Solar: Iron-Sheep. Kang 5
+6: Sat. rgyal. Earth-Fire; 19 Jun 2371
+  brtan pa, rigs can, Ox, khen 3
+  0;40,36 7;57,16 3;13,52 11;11,8 1;11,11
+  Solar: Water-Monkey. Di 6
+7: Sun. skag. Fire-Water; 20 Jun 2371
+  yongs bsnun, khyim skyes, Tiger, kham 4
+  1;37,58 8;58,8 3;18,7 12;16,15 1;12,9
+  Solar: Water-Bird. Fang 7
+  Birth of the Buddha.
+8: Mon. mchu. Water-Fire; 21 Jun 2371
+  dga' ba, vishti, Rabbit, gin 5
+  2;36,44 9;57,36 3;22,21 13;19,57 1;13,8
+  Solar: Wood-Dog. Xin 8
+9: Tue. gre. Fire-Fire; 22 Jun 2371
+  rdo rje, byis pa, Dragon, zin 6
+  3;37,5 10;55,29 3;26,35 14;22,4 1;14,6
+  Solar: Wood-Pig. Wei 9
+10: Wed. dbo. Water-Wind; 23 Jun 2371
+  dngos grub, til rdung, Snake, zon 7
+  4;38,27 11;52,22 3;30,49 15;23,11 1;15,4
+  Solar: Fire-Mouse. Ji 1
+11: Thu. me bzhi. Wind-Wind; 24 Jun 2371
+  phan tshun, tshong ba, Horse, li 8
+  5;40,48 12;48,15 3;35,3 16;23,18 1;16,2
+  Solar: Fire-Ox. Dou 2
+12: Fri. nag pa. Earth-Wind; 25 Jun 2371
+  mchog can, gdab pa, Sheep, khon 9
+  6;44,10 13;43,7 3;39,17 17;22,25 1;17,0
+  Solar: Earth-Tiger. Niu 3
+13: Sat. sa ri. Earth-Wind; 26 Jun 2371
+  yongs 'joms, rigs can, Monkey, dwa 1
+  0;48,6 14;37,26 3;43,32 18;20,58 1;17,59
+  Solar: Earth-Rabbit. Nu 4
+14: Sun. sa ga. Fire-Fire; 27 Jun 2371
+  zhi ba, khyim skyes, Bird, khen 2
+  1;52,2 15;31,44 3;47,46 19;19,30 1;18,57
+  Solar: Iron-Dragon. Xu 5
+15: Mon. lha mtshams. Water-Earth; 28 Jun 2371
+  grub pa, tshong ba, Dog, kham 3
+  2;55,58 16;26,2 3;52,0 20;18,2 1;19,55
+  Solar: Iron-Snake. Wei 6
+  Enlightenment and Parinirvana of the Buddha.
+16: Tue. snron. Fire-Earth; 29 Jun 2371
+  bsgrub bya, gdab pa, Pig, gin 4
+  3;59,54 17;20,20 3;56,14 21;16,35 1;20,53
+  Solar: Water-Horse. Shi 7
+17: Wed. snrubs. Water-Water; 30 Jun 2371
+  4;60,0 18;18,28 4;0,28 22;18,57 1;21,51
+  Solar: Water-Sheep. Bi 8
+17: Thu. chu stod. Wind-Water; 1 Jul 2371
+  dkar po, khyim skyes, Mouse, zin 5
+  5;3,50 19;14,38 4;0,28 23;15,7 1;21,51
+  Solar: Wood-Monkey. Kui 9
+18: Fri. chu smad. Earth-Earth; 2 Jul 2371
+  tshangs pa, vishti, Ox, zon 6
+  6;7,20 20;9,22 4;4,42 24;14,5 1;22,50
+  Solar: Wood-Bird. Lou 1
+19: Sat. gro zhin. Earth-Earth; 3 Jul 2371
+  dbang po, byis pa, Tiger, li 7
+  0;9,50 21;5,6 4;8,57 25;14,3 1;23,48
+  Solar: Fire-Dog. Wei 2
+20: Sun. mon gre. Fire-Water; 4 Jul 2371
+  'khon 'dzin, til rdung, Rabbit, khon 8
+  1;11,21 22;1,50 4;13,11 26;15,1 1;24,46
+  Solar: Fire-Pig. Mao 3
+21: Mon. mon gre. Water-Water; 5 Jul 2371
+  rnam sel, tshong ba, Dragon, dwa 9
+  2;11,51 22;59,33 4;17,25 0;16,59 1;25,44
+  Solar: Earth-Mouse. Bi 4
+22: Tue. mon gru. Fire-Earth; 6 Jul 2371
+  mdza' bo, gdab pa, Snake, khen 1
+  3;10,56 23;58,43 4;21,39 1;20,22 1;26,42
+  Solar: Earth-Ox. Zui 5
+23: Wed. khrums stod. Water-Fire; 7 Jul 2371
+  tshe dang ldan pa, rigs can, Horse, kham 2
+  4;8,26 24;59,27 4;25,53 2;25,21 1;27,41
+  Solar: Iron-Tiger. Can 6
+24: Thu. nam gru. Wind-Water; 8 Jul 2371
+  skal bzang, khyim skyes, Sheep, gin 3
+  5;4,56 26;1,11 4;30,8 3;31,19 1;28,39
+  Solar: Iron-Rabbit. Jing 7
+25: Fri. tha skar. Earth-Wind; 9 Jul 2371
+  dge byed, vishti, Monkey, zin 4
+  6;0,27 0;3,55 4;34,22 4;38,17 1;29,37
+  Solar: Water-Dragon. Gui 8
+26. Omitted: Bird zon 5
+27: Sat. bra nye. Earth-Fire; 10 Jul 2371
+  shin tu 'grams, rigs can, Dog, li 6
+  0;48,46 1;11,57 4;42,44 5;54,41 2;1,34
+  Solar: Water-Snake. Liu 9
+28: Sun. smin drug. Fire-Fire; 11 Jul 2371
+  'dzin byed, khyim skyes, Pig, khon 7
+  1;42,38 2;16,15 4;46,54 7;3,10 2;2,32
+  Solar: Wood-Horse. Xing 1
+29: Mon. snar ma. Water-Earth; 12 Jul 2371
+  zug rngu, vishti, Mouse, dwa 8
+  2;36,30 3;20,34 4;51,4 8;11,38 2;3,30
+  Solar: Wood-Sheep. Zhang 2
+30: Tue. mgo. Fire-Wind; 13 Jul 2371
+  'grams, rkang bzhi, Ox, khen 9
+  3;30,22 4;24,52 4;55,15 9;20,7 2;4,28
+  Solar: Fire-Monkey. Yi 3
+
+Tibetan Lunar Month: 5 - Earth-male-Monkey
+
+1: Wed. lag. Water-Water; 14 Jul 2371
+  'phel, gdab pa, Tiger, kham 1
+  4;24,14 5;29,10 4;59,25 10;28,36 2;5,26
+  Solar: Fire-Bird. Zhen 4
+2: Thu. nabs so. Wind-Wind; 15 Jul 2371
+  brtan pa, rigs can, Rabbit, gin 2
+  5;18,32 6;33,3 5;3,35 11;36,39 2;6,25
+  Solar: Earth-Dog. Jiao 5
+3: Fri. rgyal. Earth-Fire; 16 Jul 2371
+  yongs bsnun, khyim skyes, Dragon, zin 3
+  6;13,50 7;35,55 5;7,46 12;43,42 2;7,23
+  Solar: Earth-Pig. Kang 6
+4: Sat. skag. Earth-Water; 17 Jul 2371
+  dga' ba, vishti, Snake, zon 4
+  0;10,7 8;37,48 5;11,56 13;49,44 2;8,21
+  Solar: Iron-Mouse. Di 7
+5: Sun. mchu. Fire-Fire; 18 Jul 2371
+  rdo rje, byis pa, Horse, li 5
+  1;7,25 9;38,40 5;16,6 14;54,47 2;9,19
+  Solar: Iron-Ox. Fang 8
+6: Mon. gre. Water-Fire; 19 Jul 2371
+  dngos grub, til rdung, Sheep, khon 6
+  2;6,9 10;38,7 5;20,17 15;58,24 2;10,17
+  Solar: Water-Tiger. Xin 9
+7: Tue. dbo. Fire-Wind; 20 Jul 2371
+  mchog can, tshong ba, Monkey, dwa 7
+  3;6,27 11;36,0 5;24,27 17;0,27 2;11,16
+  Solar: Water-Rabbit. Wei 1
+8: Wed. me bzhi. Water-Wind; 21 Jul 2371
+  yongs 'joms, gdab pa, Bird, khen 8
+  4;7,45 12;32,52 5;28,37 18;1,30 2;12,14
+  Solar: Wood-Dragon. Ji 2
+9: Thu. nag pa. Wind-Wind; 22 Jul 2371
+  zhi ba, rigs can, Dog, kham 9
+  5;10,3 13;28,44 5;32,47 19;1,32 2;13,12
+  Solar: Wood-Snake. Dou 3
+10: Fri. sa ri. Earth-Wind; 23 Jul 2371
+  grub pa, khyim skyes, Pig, gin 1
+  6;13,21 14;23,37 5;36,58 20;0,35 2;14,10
+  Solar: Fire-Horse. Niu 4
+11: Sat. sa ga. Earth-Fire; 24 Jul 2371
+  grub pa, vishti, Mouse, zin 2
+  0;17,13 15;17,55 5;41,8 20;59,3 2;15,8
+  Solar: Fire-Sheep. Nu 5
+12: Sun. lha mtshams. Fire-Earth; 25 Jul 2371
+  bsgrub bya, byis pa, Ox, zon 3
+  1;21,5 16;12,13 5;45,18 21;57,32 2;16,7
+  Solar: Earth-Monkey. Xu 6
+13: Mon. snron. Water-Earth; 26 Jul 2371
+  dge ba, til rdung, Tiger, li 4
+  2;24,57 17;6,31 5;49,29 22;56,0 2;17,5
+  Solar: Earth-Bird. Wei 7
+14: Tue. snrubs. Fire-Water; 27 Jul 2371
+  dkar po, khyim skyes, Rabbit, khon 5
+  3;28,49 18;0,49 5;53,39 23;54,29 2;18,3
+  Solar: Iron-Dog. Shi 8
+15: Wed. snrubs. Water-Water; 28 Jul 2371
+  tshangs pa, vishti, Dragon, dwa 6
+  4;32,41 18;55,8 5;57,49 24;52,57 2;19,1
+  Solar: Iron-Pig. Bi 9
+16: Thu. chu stod. Wind-Water; 29 Jul 2371
+  dbang po, byis pa, Snake, khen 7
+  5;36,7 19;49,52 6;2,0 25;51,52 2;20,0
+  Solar: Water-Mouse. Kui 1
+17: Fri. chu smad. Earth-Earth; 30 Jul 2371
+  'khon 'dzin, til rdung, Horse, kham 8
+  6;38,33 20;45,36 6;6,10 26;51,46 2;20,58
+  Solar: Water-Ox. Lou 2
+18: Sat. gro zhin. Earth-Earth; 31 Jul 2371
+  rnam sel, tshong ba, Sheep, gin 9
+  0;39,59 21;42,20 6;10,20 0;52,41 2;21,56
+  Solar: Wood-Tiger. Wei 3
+19: Sun. mon gre. Fire-Water; 1 Aug 2371
+  mdza' bo, gdab pa, Monkey, zin 1
+  1;40,25 22;40,4 6;14,30 1;54,35 2;22,54
+  Solar: Wood-Rabbit. Mao 4
+20: Mon. mon gru. Water-Earth; 2 Aug 2371
+  tshe dang ldan pa, rigs can, Bird, zon 2
+  2;39,25 23;39,15 6;18,41 2;57,56 2;23,52
+  Solar: Fire-Dragon. Bi 5
+21: Tue. khrums stod. Fire-Fire; 3 Aug 2371
+  dge byed, khyim skyes, Dog, li 3
+  3;36,51 24;39,59 6;22,51 4;2,51 2;24,51
+  Solar: Fire-Snake. Zui 6
+22: Wed. khrums smad. Water-Water; 4 Aug 2371
+  shin tu 'grams, vishti, Pig, khon 4
+  4;33,17 25;41,43 6;27,1 5;8,45 2;25,49
+  Solar: Earth-Horse. Can 7
+23: Thu. nam gru. Wind-Water; 5 Aug 2371
+  las bzang, byis pa, Mouse, dwa 5
+  5;28,43 26;44,28 6;31,12 6;15,40 2;26,47
+  Solar: Earth-Sheep. Jing 8
+24: Fri. tha skar. Earth-Wind; 6 Aug 2371
+  'dzin byed, khyim skyes, Ox, khen 6
+  6;23,9 0;48,12 6;35,22 7;23,35 2;27,45
+  Solar: Iron-Monkey. Gui 9
+25: Sat. bra nye. Earth-Fire; 7 Aug 2371
+  zug rngu, vishti, Tiger, kham 7
+  0;17,1 1;52,31 6;39,32 8;32,3 2;28,43
+  Solar: Iron-Bird. Liu 1
+26: Sun. smin drug. Fire-Fire; 8 Aug 2371
+  'grams, byis pa, Rabbit, gin 8
+  1;10,53 2;56,49 6;43,42 9;40,32 2;29,42
+  Solar: Water-Dog. Xing 2
+27: Mon. mgo. Water-Wind; 9 Aug 2371
+  'phel, til rdung, Dragon, zin 9
+  2;4,45 4;1,7 6;47,53 10;49,1 3;0,40
+  Solar: Water-Pig. Zhang 3
+28. Omitted: Snake zon 1
+29: Tue. lag. Fire-Water; 10 Aug 2371
+  yongs bsnun, vishti, Horse, li 2
+  3;52,29 5;9,44 6;56,13 12;5,58 3;2,36
+  Solar: Wood-Mouse. Yi 4
+30: Wed. nabs so. Water-Wind; 11 Aug 2371
+  dga' ba, rkang bzhi, Sheep, khon 3
+  4;46,47 6;13,36 7;0,24 13;14,0 3;3,34
+  Solar: Wood-Ox. Zhen 5
+
+Tibetan Lunar Month: 6 - Earth-female-Bird
+
+1: Thu. rgyal. Wind-Fire; 12 Aug 2371
+  rdo rje, mi sdug pa, Monkey, dwa 4
+  5;42,5 7;16,28 7;4,34 14;21,3 3;4,33
+  Solar: Fire-Tiger. Jiao 6
+2: Fri. skag. Earth-Water; 13 Aug 2371
+  dngos grub, byis pa, Bird, khen 5
+  6;38,23 8;18,20 7;8,44 15;27,5 3;5,31
+  Solar: Fire-Rabbit. Kang 7
+3: Sat. mchu. Earth-Fire; 14 Aug 2371
+  phan tshun, til rdung, Dog, kham 6
+  0;35,42 9;19,12 7;12,55 16;32,8 3;6,29
+  Solar: Earth-Dragon. Di 8
+4: Sun. gre. Fire-Fire; 15 Aug 2371
+  mchog can, tshong ba, Pig, gin 7
+  1;34,26 10;18,38 7;17,5 17;35,44 3;7,27
+  Solar: Earth-Snake. Fang 9
+  Turning of the Wheel of the Dharma.
+5: Mon. dbo. Water-Wind; 16 Aug 2371
+  yongs 'joms, gdab pa, Mouse, zin 8
+  2;34,44 11;16,30 7;21,15 18;37,46 3;8,25
+  Solar: Iron-Horse. Xin 1
+6: Tue. me bzhi. Fire-Wind; 17 Aug 2371
+  zhi ba, rigs can, Ox, zon 9
+  3;36,3 12;13,22 7;25,25 19;38,48 3;9,24
+  Solar: Iron-Sheep. Wei 2
+7: Wed. nag pa. Water-Wind; 18 Aug 2371
+  grub pa, khyim skyes, Tiger, li 1
+  4;38,21 13;9,14 7;29,36 20;38,50 3;10,22
+  Solar: Water-Monkey. Ji 3
+8: Thu. sa ri. Wind-Wind; 19 Aug 2371
+  bsgrub bya, vishti, Rabbit, khon 2
+  5;41,40 14;4,6 7;33,46 21;37,53 3;11,20
+  Solar: Water-Bird. Dou 4
+9: Fri. sa ri. Earth-Wind; 20 Aug 2371
+  dge ba, byis pa, Dragon, dwa 3
+  6;45,32 14;58,24 7;37,56 22;36,21 3;12,18
+  Solar: Wood-Dog. Niu 5
+10: Sat. sa ga. Earth-Fire; 21 Aug 2371
+  dkar po, til rdung, Snake, khen 4
+  0;49,24 15;52,42 7;42,7 23;34,50 3;13,17
+  Solar: Wood-Pig. Nu 6
+11: Sun. lha mtshams. Fire-Earth; 22 Aug 2371
+  tshangs pa, tshong ba, Horse, kham 5
+  1;53,16 16;47,1 7;46,17 24;33,18 3;14,15
+  Solar: Fire-Mouse. Xu 7
+12: Mon. snron. Water-Earth; 23 Aug 2371
+  dbang po, vishti, Sheep, gin 6
+  2;57,8 17;41,19 7;50,27 25;31,47 3;15,13
+  Solar: Fire-Ox. Wei 8
+13: Tue. snrubs. Fire-Water; 24 Aug 2371
+  3;60,0 18;36,38 7;54,38 26;31,16 3;16,11
+  Solar: Earth-Tiger. Shi 9
+13: Wed. chu stod. Water-Water; 25 Aug 2371
+  rnam sel, til rdung, Monkey, zin 7
+  4;1,0 19;35,37 7;54,38 0;30,15 3;16,11
+  Solar: Earth-Rabbit. Bi 1
+14: Thu. chu smad. Wind-Earth; 26 Aug 2371
+  mdza' bo, tshong ba, Bird, zon 8
+  5;4,26 20;30,22 7;58,48 1;29,10 3;17,9
+  Solar: Iron-Dragon. Kui 2
+15: Fri. gro zhin. Earth-Earth; 27 Aug 2371
+  tshe dang ldan pa, gdab pa, Dog, li 9
+  6;6,51 21;26,6 8;2,58 2;29,5 3;18,8
+  Solar: Iron-Snake. Lou 3
+  The Buddha's entry into the womb of his mother.
+16: Sat. mon gre. Earth-Water; 28 Aug 2371
+  skal bzang, rigs can, Pig, khon 1
+  0;8,17 22;22,51 8;7,8 3;30,0 3;19,6
+  Solar: Water-Horse. Wei 4
+17: Sun. mon gru. Fire-Earth; 29 Aug 2371
+  dge byed, khyim skyes, Mouse, dwa 2
+  1;8,43 23;20,36 8;11,19 4;31,55 3;20,4
+  Solar: Water-Sheep. Mao 5
+18: Mon. khrums stod. Water-Fire; 30 Aug 2371
+  shin tu 'grams, vishti, Ox, khen 3
+  2;7,42 24;19,47 8;15,29 5;35,16 3;21,2
+  Solar: Wood-Monkey. Bi 6
+19: Tue. khrums smad. Fire-Water; 31 Aug 2371
+  las bzang, byis pa, Tiger, kham 4
+  3;5,7 25;20,32 8;19,39 6;40,11 3;22,0
+  Solar: Wood-Bird. Zui 7
+20: Wed. nam gru. Water-Water; 1 Sep 2371
+  'dzin byed, til rdung, Rabbit, gin 5
+  4;1,33 26;22,16 8;23,50 7;46,7 3;22,59
+  Solar: Fire-Dog. Can 8
+21. Omitted: Dragon zin 6
+22: Thu. tha skar. Wind-Wind; 2 Sep 2371
+  'grams, vishti, Snake, zon 7
+  5;51,24 0;28,46 8;32,10 9;0,57 3;24,55
+  Solar: Fire-Pig. Jing 9
+23: Fri. bra nye. Earth-Fire; 3 Sep 2371
+  'phel, byis pa, Horse, li 8
+  6;45,16 1;33,4 8;36,21 10;9,25 3;25,53
+  Solar: Earth-Mouse. Gui 1
+24: Sat. smin drug. Earth-Fire; 4 Sep 2371
+  brtan pa, til rdung, Sheep, khon 9
+  0;39,8 2;37,23 8;40,31 11;17,54 3;26,51
+  Solar: Earth-Ox. Liu 2
+25: Sun. snar ma. Fire-Earth; 5 Sep 2371
+  yongs bsnun, tshong ba, Monkey, dwa 1
+  1;33,0 3;41,41 8;44,41 12;26,23 3;27,50
+  Solar: Iron-Tiger. Xing 3
+26: Mon. mgo. Water-Wind; 6 Sep 2371
+  dga' ba, byis pa, Bird, khen 2
+  2;26,51 4;45,59 8;48,51 13;34,51 3;28,48
+  Solar: Iron-Rabbit. Zhang 4
+27: Tue. lag. Fire-Water; 7 Sep 2371
+  rdo rje, til rdung, Dog, kham 3
+  3;20,43 5;50,18 8;53,2 14;43,20 3;29,46
+  Solar: Water-Dragon. Yi 5
+28: Wed. nabs so. Water-Wind; 8 Sep 2371
+  dngos grub, tshong ba, Pig, gin 4
+  4;15,5 6;54,10 8;57,15 15;51,25 4;0,44
+  Solar: Water-Snake. Zhen 6
+29: Thu. rgyal. Wind-Fire; 9 Sep 2371
+  phan tshun, bkra shis, Mouse, zin 5
+  5;10,27 7;57,1 9;1,29 16;58,31 4;1,42
+  Solar: Wood-Horse. Jiao 7
+30: Fri. skag. Earth-Water; 10 Sep 2371
+  yongs 'joms, klu, Ox, zon 6
+  6;6,50 8;58,53 9;5,43 18;4,37 4;2,41
+  Solar: Wood-Sheep. Kang 8
+
+Tibetan Lunar Month: 7 - Iron-male-Dog
+
+1: Sat. mchu. Earth-Fire; 11 Sep 2371
+  zhi ba, gdab pa, Tiger, li 7
+  0;4,13 9;59,44 9;9,58 19;9,43 4;3,39
+  Solar: Fire-Monkey. Di 9
+2: Sun. gre. Fire-Fire; 12 Sep 2371
+  grub pa, rigs can, Rabbit, khon 8
+  1;3,2 10;59,9 9;14,12 20;13,22 4;4,37
+  Solar: Fire-Bird. Fang 1
+3: Mon. dbo. Water-Wind; 13 Sep 2371
+  bsgrub bya, khyim skyes, Dragon, dwa 9
+  2;3,25 11;57,1 9;18,26 21;15,27 4;5,35
+  Solar: Earth-Dog. Xin 2
+4: Tue. me bzhi. Fire-Wind; 14 Sep 2371
+  dge ba, vishti, Snake, khen 1
+  3;4,47 12;53,52 9;22,40 22;16,33 4;6,34
+  Solar: Earth-Pig. Wei 3
+5: Wed. nag pa. Water-Wind; 15 Sep 2371
+  dkar po, byis pa, Horse, kham 2
+  4;7,10 13;49,44 9;26,54 23;16,39 4;7,32
+  Solar: Iron-Mouse. Ji 4
+6: Thu. sa ri. Wind-Wind; 16 Sep 2371
+  tshangs pa, til rdung, Sheep, gin 3
+  5;10,33 14;44,35 9;31,8 24;15,44 4;8,30
+  Solar: Iron-Ox. Dou 5
+7: Fri. sa ga. Earth-Fire; 17 Sep 2371
+  dbang po, tshong ba, Monkey, zin 4
+  6;14,29 15;38,54 9;35,23 25;14,17 4;9,28
+  Solar: Water-Tiger. Niu 6
+8: Sat. lha mtshams. Earth-Earth; 18 Sep 2371
+  'khon 'dzin, gdab pa, Bird, zon 5
+  0;18,25 16;33,12 9;39,37 26;12,49 4;10,26
+  Solar: Water-Rabbit. Nu 7
+9: Sun. snron. Fire-Earth; 19 Sep 2371
+  rnam sel, rigs can, Dog, li 6
+  1;22,21 17;27,30 9;43,51 0;11,21 4;11,25
+  Solar: Wood-Dragon. Xu 8
+10: Mon. snrubs. Water-Water; 20 Sep 2371
+  mdza' bo, khyim skyes, Pig, khon 7
+  2;26,17 18;21,48 9;48,5 1;9,54 4;12,23
+  Solar: Wood-Snake. Wei 9
+11: Tue. chu stod. Fire-Water; 21 Sep 2371
+  tshe dang ldan pa, tshong ba, Mouse, dwa 8
+  3;30,13 19;16,6 9;52,19 2;8,26 4;13,21
+  Solar: Fire-Horse. Shi 1
+12: Wed. chu smad. Water-Earth; 22 Sep 2371
+  skal bzang, gdab pa, Ox, khen 9
+  4;33,42 20;10,51 9;56,34 3;7,25 4;14,19
+  Solar: Fire-Sheep. Bi 2
+13: Thu. gro zhin. Wind-Earth; 23 Sep 2371
+  dge byed, rigs can, Tiger, kham 1
+  5;36,11 21;6,36 10;0,48 4;7,25 4;15,17
+  Solar: Earth-Monkey. Kui 3
+14: Fri. mon gre. Earth-Water; 24 Sep 2371
+  shin tu 'grams, khyim skyes, Rabbit, gin 2
+  6;37,40 22;3,22 10;5,2 5;8,24 4;16,16
+  Solar: Earth-Bird. Lou 4
+15: Sat. mon gru. Earth-Earth; 25 Sep 2371
+  las bzang, vishti, Dragon, zin 3
+  0;38,9 23;1,7 10;9,16 6;10,23 4;17,14
+  Solar: Iron-Dog. Wei 5
+16: Sun. khrums stod. Fire-Fire; 26 Sep 2371
+  'dzin byed, byis pa, Snake, zon 4
+  1;37,11 24;0,19 10;13,30 7;13,50 4;18,12
+  Solar: Iron-Pig. Mao 6
+17: Mon. khrums smad. Water-Water; 27 Sep 2371
+  zug rngu, til rdung, Horse, li 5
+  2;34,40 25;1,4 10;17,44 8;18,49 4;19,10
+  Solar: Water-Mouse. Bi 7
+18: Tue. nam gru. Fire-Water; 28 Sep 2371
+  'grams, tshong ba, Sheep, khon 6
+  3;31,9 26;2,49 10;21,59 9;24,48 4;20,8
+  Solar: Water-Ox. Zui 8
+19: Wed. tha skar. Water-Wind; 29 Sep 2371
+  'phel, byis pa, Monkey, dwa 7
+  4;26,38 0;5,35 10;26,13 10;31,48 4;21,7
+  Solar: Wood-Tiger. Can 9
+20: Thu. bra nye. Wind-Fire; 30 Sep 2371
+  brtan pa, til rdung, Bird, khen 8
+  5;21,7 1;9,20 10;30,27 11;39,47 4;22,5
+  Solar: Wood-Rabbit. Jing 1
+21: Fri. smin drug. Earth-Fire; 1 Oct 2371
+  yongs bsnun, tshong ba, Dog, kham 9
+  6;15,2 2;13,38 10;34,41 12;48,20 4;23,3
+  Solar: Fire-Dragon. Gui 2
+22: Sat. snar ma. Earth-Earth; 2 Oct 2371
+  dga' ba, gdab pa, Pig, gin 1
+  0;8,58 3;17,57 10;38,55 13;56,52 4;24,1
+  Solar: Fire-Snake. Liu 3
+23: Sun. mgo. Fire-Wind; 3 Oct 2371
+  dngos grub, rigs can, Mouse, zin 2
+  1;2,54 4;22,15 10;43,10 15;5,25 4;25,0
+  Solar: Earth-Horse. Xing 4
+24. Omitted: Ox zon 3
+25: Mon. lag. Water-Water; 4 Oct 2371
+  phan tshun, tshong ba, Tiger, li 4
+  2;50,46 5;30,52 10;51,38 16;22,30 4;26,56
+  Solar: Earth-Sheep. Zhang 5
+26: Tue. nabs so. Fire-Wind; 5 Oct 2371
+  mchog can, gdab pa, Rabbit, khon 5
+  3;45,9 6;34,43 10;55,52 17;30,35 4;27,54
+  Solar: Iron-Monkey. Yi 6
+27: Wed. rgyal. Water-Fire; 6 Oct 2371
+  yongs 'joms, rigs can, Dragon, dwa 6
+  4;40,32 7;37,34 11;0,6 18;37,41 4;28,52
+  Solar: Iron-Bird. Zhen 7
+28: Thu. skag. Wind-Water; 7 Oct 2371
+  zhi ba, khyim skyes, Snake, khen 7
+  5;36,55 8;39,25 11;4,20 19;43,46 4;29,51
+  Solar: Water-Dog. Jiao 8
+29: Fri. mchu. Earth-Fire; 8 Oct 2371
+  grub pa, vishti, Horse, kham 8
+  6;34,23 9;40,16 11;8,40 20;48,56 5;0,49
+  Solar: Water-Pig. Kang 9
+30: Sat. gre. Earth-Fire; 9 Oct 2371
+  bsgrub bya, rkang bzhi, Sheep, gin 9
+  0;33,19 10;39,40 11;13,0 21;52,40 5;1,47
+  Solar: Wood-Mouse. Di 1
+
+Tibetan Lunar Month: 8 - Iron-female-Pig
+
+1: Sun. dbo. Fire-Wind; 10 Oct 2371
+  dge ba, mi sdug pa, Monkey, zin 1
+  1;33,47 11;37,32 11;17,20 22;54,52 5;2,45
+  Solar: Wood-Ox. Fang 2
+2: Mon. me bzhi. Water-Wind; 11 Oct 2371
+  dkar po, byis pa, Bird, zon 2
+  2;35,16 12;34,23 11;21,40 23;56,3 5;3,43
+  Solar: Fire-Tiger. Xin 3
+3: Tue. nag pa. Fire-Wind; 12 Oct 2371
+  tshangs pa, til rdung, Dog, li 3
+  3;37,45 13;30,14 11;26,0 24;56,14 5;4,42
+  Solar: Fire-Rabbit. Wei 4
+4: Wed. sa ri. Water-Wind; 13 Oct 2371
+  dbang po, tshong ba, Pig, khon 4
+  4;41,14 14;25,5 11;30,20 25;55,25 5;5,40
+  Solar: Earth-Dragon. Ji 5
+5: Thu. sa ga. Wind-Fire; 14 Oct 2371
+  'khon 'dzin, gdab pa, Mouse, dwa 5
+  5;45,16 15;19,23 11;34,40 26;54,3 5;6,38
+  Solar: Earth-Snake. Dou 6
+6: Fri. lha mtshams. Earth-Earth; 15 Oct 2371
+  rnam sel, rigs can, Ox, khen 6
+  6;49,18 16;13,41 11;39,0 0;52,41 5;7,36
+  Solar: Iron-Horse. Niu 7
+7: Sat. snron. Earth-Earth; 16 Oct 2371
+  mdza' bo, khyim skyes, Tiger, kham 7
+  0;53,20 17;7,59 11;43,20 1;51,19 5;8,34
+  Solar: Iron-Sheep. Nu 8
+8: Sun. snrubs. Fire-Water; 17 Oct 2371
+  tshe dang ldan pa, tshong ba, Rabbit, gin 8
+  1;57,22 18;2,17 11;47,40 2;49,57 5;9,33
+  Solar: Water-Monkey. Xu 9
+9: Mon. snrubs. Water-Water; 18 Oct 2371
+  2;60,0 18;58,0 11;52,0 3;50,0 5;10,31
+  Solar: Water-Bird. Wei 1
+9: Tue. chu stod. Fire-Water; 19 Oct 2371
+  dge byed, rigs can, Dragon, zin 9
+  3;1,23 19;56,36 11;52,0 4;48,36 5;10,31
+  Solar: Wood-Dog. Shi 2
+10: Wed. chu smad. Water-Earth; 20 Oct 2371
+  shin tu 'grams, khyim skyes, Snake, zon 1
+  4;4,58 20;51,21 11;56,20 5;47,41 5;11,29
+  Solar: Wood-Pig. Bi 3
+11: Thu. gro zhin. Wind-Earth; 21 Oct 2371
+  las bzang, vishti, Horse, li 2
+  5;7,32 21;47,7 12;0,40 6;47,47 5;12,27
+  Solar: Fire-Mouse. Kui 4
+12: Fri. mon gre. Earth-Water; 22 Oct 2371
+  'dzin byed, byis pa, Sheep, khon 3
+  6;9,7 22;43,52 12;5,0 7;48,52 5;13,25
+  Solar: Fire-Ox. Lou 5
+13: Sat. mon gru. Earth-Earth; 23 Oct 2371
+  zug rngu, til rdung, Monkey, dwa 4
+  0;9,41 23;41,38 12;9,20 8;50,58 5;14,24
+  Solar: Earth-Tiger. Wei 6
+14: Sun. khrums stod. Fire-Fire; 24 Oct 2371
+  'grams, tshong ba, Bird, khen 5
+  1;8,48 24;40,51 12;13,40 9;54,31 5;15,22
+  Solar: Earth-Rabbit. Mao 7
+15: Mon. khrums smad. Water-Water; 25 Oct 2371
+  'phel, gdab pa, Dog, kham 6
+  2;6,23 25;41,36 12;18,0 10;59,36 5;16,20
+  Solar: Iron-Dragon. Bi 8
+16: Tue. nam gru. Fire-Water; 26 Oct 2371
+  yongs bsnun, rigs can, Pig, gin 7
+  3;2,57 26;43,22 12;22,20 12;5,42 5;17,18
+  Solar: Iron-Snake. Zui 9
+17. Omitted: Mouse zin 8
+18: Wed. tha skar. Water-Wind; 27 Oct 2371
+  dga' ba, tshong ba, Ox, zon 9
+  4;53,5 0;49,54 12;31,0 13;20,54 5;19,15
+  Solar: Water-Horse. Can 1
+19: Thu. bra nye. Wind-Fire; 28 Oct 2371
+  rdo rje, gdab pa, Tiger, li 1
+  5;47,7 1;54,12 12;35,20 14;29,32 5;20,13
+  Solar: Water-Sheep. Jing 2
+20: Fri. smin drug. Earth-Fire; 29 Oct 2371
+  dngos grub, rigs can, Rabbit, khon 2
+  6;41,9 2;58,30 12;39,40 15;38,10 5;21,11
+  Solar: Wood-Monkey. Gui 3
+21: Sat. mgo. Earth-Wind; 30 Oct 2371
+  phan tshun, khyim skyes, Dragon, dwa 3
+  0;35,10 4;2,49 12;44,0 16;46,49 5;22,9
+  Solar: Wood-Bird. Liu 4
+22: Sun. lag. Fire-Water; 31 Oct 2371
+  mchog can, vishti, Snake, khen 4
+  1;29,12 5;7,7 12;48,20 17;55,27 5;23,8
+  Solar: Fire-Dog. Xing 5
+23: Mon. nabs so. Water-Wind; 1 Nov 2371
+  zhi ba, rigs can, Horse, kham 5
+  2;23,14 6;11,25 12;52,40 19;4,5 5;24,6
+  Solar: Fire-Pig. Zhang 6
+24: Tue. rgyal. Fire-Fire; 2 Nov 2371
+  grub pa, khyim skyes, Sheep, gin 6
+  3;17,43 7;15,16 12;57,0 20;12,16 5;25,4
+  Solar: Earth-Mouse. Yi 7
+25: Wed. skag. Water-Water; 3 Nov 2371
+  bsgrub bya, vishti, Monkey, zin 7
+  4;13,12 8;18,7 13;1,20 21;19,27 5;26,2
+  Solar: Earth-Ox. Zhen 8
+26: Thu. mchu. Wind-Fire; 4 Nov 2371
+  dge ba, byis pa, Bird, zon 8
+  5;9,41 9;19,58 13;5,40 22;25,38 5;27,0
+  Solar: Iron-Tiger. Jiao 9
+27: Fri. gre. Earth-Fire; 5 Nov 2371
+  dkar po, til rdung, Dog, li 9
+  6;7,11 10;20,48 13;10,0 23;30,48 5;27,59
+  Solar: Iron-Rabbit. Kang 1
+28: Sat. dbo. Earth-Wind; 6 Nov 2371
+  tshangs pa, tshong ba, Pig, khon 1
+  0;6,7 11;20,12 13;14,20 24;34,32 5;28,57
+  Solar: Water-Dragon. Di 2
+29: Sun. me bzhi. Fire-Wind; 7 Nov 2371
+  dbang po, bkra shis, Mouse, dwa 2
+  1;6,37 12;18,2 13;18,40 25;36,42 5;29,55
+  Solar: Water-Snake. Fang 3
+30: Mon. nag pa. Water-Wind; 8 Nov 2371
+  'khon 'dzin, klu, Ox, khen 3
+  2;8,10 13;14,53 13;23,3 26;37,56 6;0,53
+  Solar: Wood-Horse. Xin 4
+
+Tibetan Lunar Month: 9 - Water-male-Mouse
+
+1: Tue. sa ri. Fire-Wind; 9 Nov 2371
+  rnam sel, gdab pa, Tiger, kham 4
+  3;10,43 14;10,43 13;27,27 0;38,11 6;1,51
+  Solar: Wood-Sheep. Wei 5
+2: Wed. sa ga. Water-Fire; 10 Nov 2371
+  mdza' bo, rigs can, Rabbit, gin 5
+  4;14,16 15;5,34 13;31,51 1;37,25 6;2,50
+  Solar: Fire-Monkey. Ji 6
+3: Thu. sa ga. Wind-Fire; 11 Nov 2371
+  tshe dang ldan pa, khyim skyes, Dragon, zin 6
+  5;18,22 15;59,52 13;36,15 2;36,7 6;3,48
+  Solar: Fire-Bird. Dou 7
+4: Fri. lha mtshams. Earth-Earth; 12 Nov 2371
+  skal bzang, vishti, Snake, zon 7
+  6;22,28 16;54,10 13;40,39 3;34,49 6;4,46
+  Solar: Earth-Dog. Niu 8
+5: Sat. snron. Earth-Earth; 13 Nov 2371
+  dge byed, byis pa, Horse, li 8
+  0;26,33 17;48,29 13;45,2 4;33,32 6;5,44
+  Solar: Earth-Pig. Nu 9
+6: Sun. snrubs. Fire-Water; 14 Nov 2371
+  shin tu 'grams, rigs can, Sheep, khon 9
+  1;30,39 18;42,47 13;49,26 5;32,14 6;6,42
+  Solar: Iron-Mouse. Xu 1
+7: Mon. chu stod. Water-Water; 15 Nov 2371
+  las bzang, khyim skyes, Monkey, dwa 1
+  2;34,45 19;37,5 13;53,50 6;30,56 6;7,41
+  Solar: Iron-Ox. Wei 2
+8: Tue. chu smad. Fire-Earth; 16 Nov 2371
+  'dzin byed, vishti, Bird, khen 2
+  3;38,23 20;31,51 13;58,14 7;30,6 6;8,39
+  Solar: Water-Tiger. Shi 3
+9: Wed. gro zhin. Water-Earth; 17 Nov 2371
+  zug rngu, byis pa, Dog, kham 3
+  4;41,1 21;27,37 14;2,38 8;30,15 6;9,37
+  Solar: Water-Rabbit. Bi 4
+10: Thu. mon gre. Wind-Water; 18 Nov 2371
+  'grams, til rdung, Pig, gin 4
+  5;42,39 22;24,23 14;7,2 9;31,25 6;10,35
+  Solar: Wood-Dragon. Kui 5
+11: Fri. mon gru. Earth-Earth; 19 Nov 2371
+  'phel, tshong ba, Mouse, zin 5
+  6;43,16 23;22,9 14;11,26 10;33,35 6;11,34
+  Solar: Wood-Snake. Lou 6
+12: Sat. khrums stod. Earth-Fire; 20 Nov 2371
+  brtan pa, gdab pa, Ox, zon 6
+  0;42,26 24;21,23 14;15,50 11;37,13 6;12,32
+  Solar: Fire-Horse. Wei 7
+13: Sun. khrums smad. Fire-Water; 21 Nov 2371
+  yongs bsnun, rigs can, Tiger, li 7
+  1;40,4 25;22,9 14;20,14 12;42,23 6;13,30
+  Solar: Fire-Sheep. Mao 8
+14: Mon. nam gru. Water-Water; 22 Nov 2371
+  dga' ba, khyim skyes, Rabbit, khon 8
+  2;36,42 26;23,55 14;24,37 13;48,33 6;14,28
+  Solar: Earth-Monkey. Bi 9
+15: Tue. tha skar. Fire-Wind; 23 Nov 2371
+  rdo rje, vishti, Dragon, dwa 9
+  3;32,20 0;26,41 14;29,1 14;55,43 6;15,26
+  Solar: Earth-Bird. Zui 1
+16: Wed. bra nye. Water-Fire; 24 Nov 2371
+  phan tshun, rigs can, Snake, khen 1
+  4;26,57 1;30,27 14;33,25 16;3,53 6;16,25
+  Solar: Iron-Dog. Can 2
+17: Thu. smin drug. Wind-Fire; 25 Nov 2371
+  mchog can, khyim skyes, Horse, kham 2
+  5;21,3 2;34,46 14;37,49 17;12,35 6;17,23
+  Solar: Iron-Pig. Jing 3
+18: Fri. snar ma. Earth-Earth; 26 Nov 2371
+  yongs 'joms, vishti, Sheep, gin 3
+  6;15,8 3;39,4 14;42,13 18;21,18 6;18,21
+  Solar: Water-Mouse. Gui 4
+19: Sat. mgo. Earth-Wind; 27 Nov 2371
+  zhi ba, byis pa, Monkey, zin 4
+  0;9,14 4;43,22 14;46,37 19;30,0 6;19,19
+  Solar: Water-Ox. Liu 5
+20: Sun. lag. Fire-Water; 28 Nov 2371
+  grub pa, til rdung, Bird, zon 5
+  1;3,19 5;47,41 14;51,1 20;38,42 6;20,17
+  Solar: Wood-Tiger. Xing 6
+21. Omitted: Dog li 6
+22: Mon. nabs so. Water-Wind; 29 Nov 2371
+  bsgrub bya, vishti, Pig, khon 7
+  2;51,58 6;55,50 14;59,48 21;55,38 6;22,14
+  Solar: Wood-Rabbit. Zhang 7
+  Descent of the Buddha from the realm of the gods.
+23: Tue. rgyal. Fire-Fire; 30 Nov 2371
+  dkar po, byis pa, Mouse, dwa 8
+  3;47,32 7;58,40 15;4,12 23;2,53 6;23,12
+  Solar: Fire-Dragon. Yi 8
+24: Wed. mchu. Water-Fire; 1 Dec 2371
+  tshangs pa, til rdung, Ox, khen 9
+  4;44,6 9;0,30 15;8,36 24;9,7 6;24,10
+  Solar: Fire-Snake. Zhen 9
+25: Thu. gre. Wind-Fire; 2 Dec 2371
+  dbang po, tshong ba, Tiger, kham 1
+  5;41,39 10;1,20 15;13,0 25;14,21 6;25,8
+  Solar: Earth-Horse. Jiao 1
+26: Fri. dbo. Earth-Wind; 3 Dec 2371
+  'khon 'dzin, gdab pa, Rabbit, gin 2
+  6;40,41 11;0,43 15;17,24 26;18,7 6;26,7
+  Solar: Earth-Sheep. Kang 2
+27: Sat. dbo. Earth-Wind; 4 Dec 2371
+  rnam sel, rigs can, Dragon, zin 3
+  0;41,14 11;58,33 15;21,48 0;20,21 6;27,5
+  Solar: Iron-Monkey. Di 3
+28: Sun. me bzhi. Fire-Wind; 5 Dec 2371
+  mdza' bo, khyim skyes, Snake, zon 4
+  1;42,48 12;55,23 15;26,12 1;21,35 6;28,3
+  Solar: Iron-Bird. Fang 4
+29: Mon. nag pa. Water-Wind; 6 Dec 2371
+  tshe dang ldan pa, vishti, Horse, li 5
+  2;45,22 13;51,13 15;30,36 2;21,49 6;29,1
+  Solar: Water-Dog. Xin 5
+30: Tue. sa ri. Fire-Wind; 7 Dec 2371
+  skal bzang, rkang bzhi, Sheep, khon 6
+  3;48,56 14;46,3 15;35,0 3;21,3 7;0,0
+  Solar: Water-Pig. Wei 6
+
+Tibetan Lunar Month: 10 - Water-female-Ox
+
+1: Wed. sa ga. Water-Fire; 8 Dec 2371
+  dge byed, mi sdug pa, Monkey, dwa 7
+  4;53,7 15;40,22 15;39,29 4;19,51 7;0,58
+  Solar: Wood-Mouse. Ji 7
+2: Thu. lha mtshams. Wind-Earth; 9 Dec 2371
+  shin tu 'grams, gdab pa, Bird, khen 8
+  5;57,19 16;34,40 15;43,59 5;18,39 7;1,56
+  Solar: Wood-Ox. Dou 8
+3: Fri. snron. Earth-Earth; 10 Dec 2371
+  6;60,0 17;30,29 15;48,29 6;18,58 7;2,54
+  Solar: Fire-Tiger. Niu 9
+3: Sat. snrubs. Earth-Water; 11 Dec 2371
+  'dzin byed, khyim skyes, Dog, kham 9
+  0;1,30 18;28,58 15;48,29 7;17,27 7;2,54
+  Solar: Fire-Rabbit. Nu 1
+4: Sun. chu stod. Fire-Water; 12 Dec 2371
+  zug rngu, vishti, Pig, gin 1
+  1;5,42 19;23,16 15;52,58 8;16,15 7;3,52
+  Solar: Earth-Dragon. Xu 2
+5: Mon. chu smad. Water-Earth; 13 Dec 2371
+  'grams, byis pa, Mouse, zin 2
+  2;9,53 20;17,34 15;57,28 9;15,3 7;4,51
+  Solar: Earth-Snake. Wei 3
+6: Tue. gro zhin. Fire-Earth; 14 Dec 2371
+  'phel, til rdung, Ox, zon 3
+  3;13,37 21;12,21 16;1,58 10;14,19 7;5,49
+  Solar: Iron-Horse. Shi 4
+7: Wed. mon gre. Water-Water; 15 Dec 2371
+  brtan pa, tshong ba, Tiger, li 4
+  4;16,20 22;8,7 16;6,27 11;14,35 7;6,47
+  Solar: Iron-Sheep. Bi 5
+8: Thu. mon gru. Wind-Earth; 16 Dec 2371
+  yongs bsnun, gdab pa, Rabbit, khon 5
+  5;18,3 23;4,54 16;10,57 12;15,51 7;7,45
+  Solar: Water-Monkey. Kui 6
+9: Fri. khrums stod. Earth-Fire; 17 Dec 2371
+  dga' ba, rigs can, Dragon, dwa 6
+  6;18,46 24;2,40 16;15,27 13;18,7 7;8,43
+  Solar: Water-Bird. Lou 7
+10: Sat. khrums smad. Earth-Water; 18 Dec 2371
+  rdo rje, khyim skyes, Snake, khen 7
+  0;18,1 25;1,55 16;19,57 14;21,52 7;9,42
+  Solar: Wood-Dog. Wei 8
+11: Sun. nam gru. Fire-Water; 19 Dec 2371
+  dngos grub, vishti, Horse, kham 8
+  1;15,44 26;2,41 16;24,26 15;27,8 7;10,40
+  Solar: Wood-Pig. Mao 9
+12: Mon. tha skar. Water-Wind; 20 Dec 2371
+  phan tshun, byis pa, Sheep, gin 9
+  2;12,28 0;4,28 16;28,56 16;33,24 7;11,38
+  Solar: Fire-Mouse. Bi 1
+13: Tue. bra nye. Fire-Fire; 21 Dec 2371
+  mchog can, til rdung, Monkey, zin 1
+  3;8,11 1;7,15 16;33,26 17;40,41 7;12,36
+  Solar: Fire-Ox. Zui 2
+14: Wed. smin drug. Water-Fire; 22 Dec 2371
+  yongs 'joms, tshong ba, Bird, zon 2
+  4;2,54 2;11,1 16;37,55 18;48,57 7;13,34
+  Solar: Earth-Tiger. Can 3
+15. Omitted: Dog li 3
+16: Thu. snar ma. Wind-Earth; 23 Dec 2371
+  grub pa, byis pa, Pig, khon 4
+  5;51,16 3;19,38 16;46,55 20;6,33 7;15,31
+  Solar: Earth-Rabbit. Jing 4
+17: Fri. mgo. Earth-Wind; 24 Dec 2371
+  bsgrub bya, til rdung, Mouse, dwa 5
+  6;45,28 4;23,56 16;51,24 21;15,21 7;16,29
+  Solar: Iron-Dragon. Gui 5
+18: Sat. lag. Earth-Water; 25 Dec 2371
+  dge ba, tshong ba, Ox, khen 6
+  0;39,39 5;28,15 16;55,54 22;24,9 7;17,27
+  Solar: Iron-Snake. Liu 6
+19: Sun. nabs so. Fire-Wind; 26 Dec 2371
+  dkar po, gdab pa, Tiger, kham 7
+  1;33,50 6;32,33 17;0,24 23;32,57 7;18,25
+  Solar: Water-Horse. Xing 7
+20: Mon. rgyal. Water-Fire; 27 Dec 2371
+  tshangs pa, rigs can, Rabbit, gin 8
+  2;28,30 7;36,23 17;4,54 24;41,17 7;19,24
+  Solar: Water-Sheep. Zhang 8
+21: Tue. skag. Fire-Water; 28 Dec 2371
+  dbang po, tshong ba, Dragon, zin 9
+  3;24,10 8;39,13 17;9,23 25;48,37 7;20,22
+  Solar: Wood-Monkey. Yi 9
+22: Wed. mchu. Water-Fire; 29 Dec 2371
+  'khon 'dzin, gdab pa, Snake, zon 1
+  4;20,50 9;41,3 17;13,53 26;54,56 7;21,20
+  Solar: Wood-Bird. Zhen 1
+23: Thu. gre. Wind-Fire; 30 Dec 2371
+  mdza' bo, rigs can, Horse, li 2
+  5;18,30 10;41,52 17;18,23 1;0,16 7;22,18
+  Solar: Fire-Dog. Jiao 2
+24: Fri. dbo. Earth-Wind; 31 Dec 2371
+  tshe dang ldan pa, khyim skyes, Sheep, khon 3
+  6;17,38 11;41,14 17;22,52 2;4,7 7;23,17
+  Solar: Fire-Pig. Kang 3
+25: Sat. me bzhi. Earth-Wind; 1 Jan 2372
+  skal bzang, vishti, Monkey, dwa 4
+  0;18,18 12;39,4 17;27,22 3;6,26 7;24,15
+  Solar: Earth-Mouse. Di 4
+26: Sun. nag pa. Fire-Wind; 2 Jan 2372
+  dge byed, byis pa, Bird, khen 5
+  1;19,58 13;35,53 17;31,52 4;7,46 7;25,13
+  Solar: Earth-Ox. Fang 5
+27: Mon. sa ri. Water-Wind; 3 Jan 2372
+  shin tu 'grams, til rdung, Dog, kham 6
+  2;22,38 14;31,43 17;36,21 5;8,5 7;26,11
+  Solar: Iron-Tiger. Xin 6
+28: Tue. sa ga. Fire-Fire; 4 Jan 2372
+  las bzang, tshong ba, Pig, gin 7
+  3;26,18 15;26,33 17;40,51 6;7,24 7;27,9
+  Solar: Iron-Rabbit. Wei 7
+29: Wed. lha mtshams. Water-Earth; 5 Jan 2372
+  'dzin byed, vishti, Mouse, zin 8
+  4;30,29 16;20,51 17;45,21 7;6,12 7;28,8
+  Solar: Water-Dragon. Ji 8
+30: Thu. snron. Wind-Earth; 6 Jan 2372
+  zug rngu, rkang bzhi, Ox, zon 9
+  5;34,41 17;15,9 17;49,51 8;5,0 7;29,6
+  Solar: Water-Snake. Dou 9
+
+Tibetan Lunar Month: 11 - Wood-male-Tiger
+
+1: Fri. snrubs. Earth-Water; 7 Jan 2372
+  'grams, mi sdug pa, Tiger, li 1
+  6;38,53 18;9,27 17;54,21 9;3,48 8;0,4
+  Solar: Wood-Horse. Niu 1
+2: Sat. chu stod. Earth-Water; 8 Jan 2372
+  'phel, byis pa, Rabbit, khon 2
+  0;43,8 19;3,45 17;58,54 10;2,40 8;1,2
+  Solar: Wood-Sheep. Nu 2
+3: Sun. chu stod. Fire-Water; 9 Jan 2372
+  brtan pa, til rdung, Dragon, dwa 3
+  1;47,24 19;58,4 18;3,28 11;1,32 8;2,0
+  Solar: Fire-Monkey. Xu 3
+4: Mon. chu smad. Water-Earth; 10 Jan 2372
+  yongs bsnun, tshong ba, Snake, khen 4
+  2;51,10 20;52,50 18;8,1 12;0,52 8;2,59
+  Solar: Fire-Bird. Wei 4
+5: Tue. gro zhin. Fire-Earth; 11 Jan 2372
+  dga' ba, gdab pa, Horse, kham 5
+  3;53,57 21;48,37 18;12,35 13;1,13 8;3,57
+  Solar: Earth-Dog. Shi 5
+6: Wed. mon gre. Water-Water; 12 Jan 2372
+  rdo rje, byis pa, Sheep, gin 6
+  4;55,44 22;45,24 18;17,8 14;2,33 8;4,55
+  Solar: Earth-Pig. Bi 6
+7: Thu. mon gru. Wind-Earth; 13 Jan 2372
+  dngos grub, til rdung, Monkey, zin 7
+  5;56,30 23;43,11 18;21,42 15;4,54 8;5,53
+  Solar: Iron-Mouse. Kui 7
+8: Fri. khrums stod. Earth-Fire; 14 Jan 2372
+  phan tshun, tshong ba, Bird, zon 8
+  6;55,48 24;42,27 18;26,16 16;8,43 8;6,51
+  Solar: Iron-Ox. Lou 8
+9: Sat. khrums smad. Earth-Water; 15 Jan 2372
+  mchog can, byis pa, Dog, li 9
+  0;53,35 25;43,14 18;30,49 17;14,3 8;7,50
+  Solar: Water-Tiger. Wei 9
+10: Sun. nam gru. Fire-Water; 16 Jan 2372
+  yongs 'joms, til rdung, Pig, khon 1
+  1;50,21 26;45,1 18;35,23 18;20,24 8;8,48
+  Solar: Water-Rabbit. Mao 1
+11: Mon. tha skar. Water-Wind; 17 Jan 2372
+  zhi ba, tshong ba, Mouse, dwa 2
+  2;46,8 0;47,48 18;39,56 19;27,45 8;9,46
+  Solar: Wood-Dragon. Bi 2
+12: Tue. bra nye. Fire-Fire; 18 Jan 2372
+  grub pa, gdab pa, Ox, khen 3
+  3;40,54 1;51,35 18;44,30 20;36,5 8;10,44
+  Solar: Wood-Snake. Zui 3
+13: Wed. smin drug. Water-Fire; 19 Jan 2372
+  bsgrub bya, rigs can, Tiger, kham 4
+  4;35,10 2;55,53 18;49,4 21;44,57 8;11,42
+  Solar: Fire-Horse. Can 4
+14: Thu. mgo. Wind-Wind; 20 Jan 2372
+  dge ba, khyim skyes, Rabbit, gin 5
+  5;29,25 4;0,12 18;53,37 22;53,49 8;12,41
+  Solar: Fire-Sheep. Jing 5
+15: Fri. lag. Earth-Water; 21 Jan 2372
+  tshangs pa, gdab pa, Dragon, zin 6
+  6;23,40 5;4,30 18;58,11 24;2,41 8;13,39
+  Solar: Earth-Monkey. Gui 6
+16: Sat. nabs so. Earth-Wind; 22 Jan 2372
+  dbang po, rigs can, Snake, zon 7
+  0;17,55 6;8,48 19;2,44 25;11,33 8;14,37
+  Solar: Earth-Bird. Liu 7
+17: Sun. rgyal. Fire-Fire; 23 Jan 2372
+  'khon 'dzin, khyim skyes, Horse, li 8
+  1;12,11 7;13,7 19;7,18 26;20,25 8;15,35
+  Solar: Iron-Dog. Xing 8
+18: Mon. skag. Water-Water; 24 Jan 2372
+  rnam sel, vishti, Sheep, khon 9
+  2;6,55 8;16,56 19;11,51 0;28,48 8;16,34
+  Solar: Iron-Pig. Zhang 9
+19: Tue. mchu. Fire-Fire; 25 Jan 2372
+  mdza' bo, byis pa, Monkey, dwa 1
+  3;2,39 9;19,46 19;16,25 1;36,11 8;17,32
+  Solar: Water-Mouse. Yi 1
+20. Omitted: Bird khen 2
+21: Wed. gre. Water-Fire; 26 Jan 2372
+  tshe dang ldan pa, til rdung, Dog, kham 3
+  4;57,7 10;22,24 19;25,32 2;47,57 8;19,28
+  Solar: Water-Ox. Zhen 2
+22: Thu. dbo. Wind-Wind; 27 Jan 2372
+  skal bzang, tshong ba, Pig, gin 4
+  5;56,20 11;21,45 19;30,6 3;51,51 8;20,26
+  Solar: Wood-Tiger. Jiao 3
+23: Fri. me bzhi. Earth-Wind; 28 Jan 2372
+  dge byed, gdab pa, Mouse, zin 5
+  6;57,5 12;19,34 19;34,39 4;54,14 8;21,25
+  Solar: Wood-Rabbit. Kang 4
+24: Sat. nag pa. Earth-Wind; 29 Jan 2372
+  shin tu 'grams, rigs can, Ox, zon 6
+  0;58,49 13;16,24 19;39,13 5;55,37 8;22,23
+  Solar: Fire-Dragon. Di 5
+25: Sun. sa ri. Fire-Wind; 30 Jan 2372
+  1;60,0 14;13,47 19;43,47 6;57,34 8;23,21
+  Solar: Fire-Snake. Fang 6
+25: Mon. sa ga. Water-Fire; 31 Jan 2372
+  'dzin byed, vishti, Tiger, li 7
+  2;1,33 15;12,13 19;43,47 7;56,0 8;23,21
+  Solar: Earth-Horse. Xin 7
+26: Tue. lha mtshams. Fire-Earth; 1 Feb 2372
+  zug rngu, byis pa, Rabbit, khon 8
+  3;5,18 16;7,2 19;48,20 8;55,23 8;24,19
+  Solar: Earth-Sheep. Wei 8
+27: Wed. snron. Water-Earth; 2 Feb 2372
+  'grams, til rdung, Dragon, dwa 9
+  4;9,33 17;1,20 19;52,54 9;54,14 8;25,17
+  Solar: Iron-Monkey. Ji 9
+28: Thu. snron. Wind-Earth; 3 Feb 2372
+  'phel, tshong ba, Snake, khen 1
+  5;13,48 17;55,38 19;57,27 10;53,6 8;26,16
+  Solar: Iron-Bird. Dou 1
+29: Fri. snrubs. Earth-Water; 4 Feb 2372
+  brtan pa, bkra shis, Horse, kham 2
+  6;18,4 18;49,57 20;2,1 11;51,58 8;27,14
+  Solar: Water-Dog. Niu 2
+30: Sat. chu stod. Earth-Water; 5 Feb 2372
+  yongs bsnun, klu, Sheep, gin 3
+  0;22,19 19;44,15 20;6,34 12;50,50 8;28,12
+  Solar: Water-Pig. Nu 3
+
+Tibetan Lunar Month: 12 - Wood-female-Rabbit
+
+1: Sun. chu smad. Fire-Earth; 6 Feb 2372
+  dga' ba, gdab pa, Monkey, zin 4
+  1;26,35 20;38,33 20;11,8 13;49,41 8;29,10
+  Solar: Wood-Mouse. Xu 4
+2: Mon. gro zhin. Water-Earth; 7 Feb 2372
+  rdo rje, byis pa, Bird, zon 5
+  2;30,21 21;33,20 20;15,42 14;49,2 9;0,8
+  Solar: Wood-Ox. Wei 5
+3: Tue. mon gre. Fire-Water; 8 Feb 2372
+  dngos grub, til rdung, Dog, li 6
+  3;33,7 22;29,8 20;20,15 15;49,23 9;1,7
+  Solar: Fire-Tiger. Shi 6
+4: Wed. mon gru. Water-Earth; 9 Feb 2372
+  phan tshun, tshong ba, Pig, khon 7
+  4;34,53 23;25,55 20;24,49 16;50,44 9;2,5
+  Solar: Fire-Rabbit. Bi 7
+5: Thu. khrums stod. Wind-Fire; 10 Feb 2372
+  mchog can, gdab pa, Mouse, dwa 8
+  5;35,40 24;23,42 20;29,22 17;53,5 9;3,3
+  Solar: Earth-Dragon. Kui 8
+6: Fri. khrums smad. Earth-Water; 11 Feb 2372
+  yongs 'joms, rigs can, Ox, khen 9
+  6;34,57 25;22,59 20;33,56 18;56,55 9;4,1
+  Solar: Earth-Snake. Lou 9
+7: Sat. nam gru. Earth-Water; 12 Feb 2372
+  grub pa, khyim skyes, Tiger, kham 1
+  0;32,43 26;23,46 20;38,30 20;2,16 9;5,0
+  Solar: Iron-Horse. Wei 1
+8: Sun. tha skar. Fire-Wind; 13 Feb 2372
+  bsgrub bya, vishti, Rabbit, gin 2
+  1;29,29 0;25,34 20;43,3 21;8,37 9;5,58
+  Solar: Iron-Sheep. Mao 2
+9: Mon. bra nye. Water-Fire; 14 Feb 2372
+  dge ba, rigs can, Dragon, zin 3
+  2;25,15 1;28,21 20;47,37 22;15,58 9;6,56
+  Solar: Water-Monkey. Bi 3
+10: Tue. smin drug. Fire-Fire; 15 Feb 2372
+  dkar po, khyim skyes, Snake, zon 4
+  3;20,1 2;32,9 20;52,10 23;24,19 9;7,54
+  Solar: Water-Bird. Zui 4
+11: Wed. snar ma. Water-Earth; 16 Feb 2372
+  tshangs pa, vishti, Horse, li 5
+  4;14,16 3;36,27 20;56,44 24;33,11 9;8,52
+  Solar: Wood-Dog. Can 5
+12: Thu. mgo. Wind-Wind; 17 Feb 2372
+  dbang po, byis pa, Sheep, khon 6
+  5;8,31 4;40,45 21;1,17 25;42,3 9;9,51
+  Solar: Wood-Pig. Jing 6
+13: Fri. lag. Earth-Water; 18 Feb 2372
+  'khon 'dzin, til rdung, Monkey, dwa 7
+  6;2,47 5;45,4 21;5,51 26;50,55 9;10,49
+  Solar: Fire-Mouse. Gui 7
+14. Omitted: Bird khen 8
+15: Sat. nabs so. Earth-Wind; 19 Feb 2372
+  mdza' bo, vishti, Dog, kham 9
+  0;51,17 6;53,40 21;14,58 1;8,39 9;12,45
+  Solar: Fire-Ox. Liu 8
+16: Sun. rgyal. Fire-Fire; 20 Feb 2372
+  tshe dang ldan pa, byis pa, Pig, gin 1
+  1;46,2 7;57,30 21;19,32 2;17,2 9;13,43
+  Solar: Earth-Tiger. Xing 9
+17: Mon. mchu. Water-Fire; 21 Feb 2372
+  skal bzang, til rdung, Mouse, zin 2
+  2;41,46 9;0,19 21;24,5 3;24,24 9;14,42
+  Solar: Earth-Rabbit. Zhang 1
+18: Tue. gre. Fire-Fire; 22 Feb 2372
+  dge byed, tshong ba, Ox, zon 3
+  3;38,31 10;2,8 21;28,39 4;30,47 9;15,40
+  Solar: Iron-Dragon. Yi 2
+19: Wed. dbo. Water-Wind; 23 Feb 2372
+  shin tu 'grams, gdab pa, Tiger, li 4
+  4;36,16 11;2,56 21;33,12 5;36,9 9;16,38
+  Solar: Iron-Snake. Zhen 3
+20: Thu. me bzhi. Wind-Wind; 24 Feb 2372
+  las bzang, rigs can, Rabbit, khon 5
+  5;35,30 12;2,16 21;37,46 6;40,3 9;17,36
+  Solar: Water-Horse. Jiao 4
+21: Fri. nag pa. Earth-Wind; 25 Feb 2372
+  'dzin byed, khyim skyes, Dragon, dwa 6
+  6;36,14 13;0,5 21;42,20 7;42,25 9;18,34
+  Solar: Water-Sheep. Kang 5
+22: Sat. nag pa. Earth-Wind; 26 Feb 2372
+  zug rngu, vishti, Snake, khen 7
+  0;37,59 13;56,54 21;46,53 8;43,47 9;19,33
+  Solar: Wood-Monkey. Di 6
+23: Sun. sa ri. Fire-Wind; 27 Feb 2372
+  'grams, byis pa, Horse, kham 8
+  1;40,44 14;52,43 21;51,27 9;44,10 9;20,31
+  Solar: Wood-Bird. Fang 7
+24: Mon. sa ga. Water-Fire; 28 Feb 2372
+  'phel, til rdung, Sheep, gin 9
+  2;44,29 15;47,31 21;56,0 10;43,32 9;21,29
+  Solar: Fire-Dog. Xin 8
+25: Tue. lha mtshams. Fire-Earth; 29 Feb 2372
+  brtan pa, tshong ba, Monkey, zin 1
+  3;48,44 16;41,50 22;0,34 11;42,24 9;22,27
+  Solar: Fire-Pig. Wei 9
+26: Wed. snron. Water-Earth; 1 Mar 2372
+  yongs bsnun, gdab pa, Bird, zon 2
+  4;52,59 17;36,8 22;5,8 12;41,16 9;23,25
+  Solar: Earth-Mouse. Ji 1
+27: Thu. snrubs. Wind-Water; 2 Mar 2372
+  dga' ba, byis pa, Dog, li 3
+  5;57,15 18;30,26 22;9,41 13;40,8 9;24,24
+  Solar: Earth-Ox. Dou 2
+28: Fri. chu stod. Earth-Water; 3 Mar 2372
+  6;60,0 19;26,15 22;14,15 14;40,30 9;25,22
+  Solar: Iron-Tiger. Niu 3
+28: Sat. chu smad. Earth-Earth; 4 Mar 2372
+  dngos grub, tshong ba, Pig, khon 4
+  0;1,30 20;24,44 22;14,15 15;38,59 9;25,22
+  Solar: Iron-Rabbit. Nu 4
+29: Sun. gro zhin. Fire-Earth; 5 Mar 2372
+  phan tshun, bkra shis, Mouse, dwa 5
+  1;5,46 21;19,2 22;18,48 16;37,51 9;26,20
+  Solar: Water-Dragon. Xu 5
+30: Mon. mon gre. Water-Water; 6 Mar 2372
+  mchog can, klu, Ox, khen 6
+  2;9,31 22;13,50 22;23,22 17;37,12 9;27,18
+  Solar: Water-Snake. Wei 6

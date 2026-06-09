@@ -1,0 +1,1467 @@
+
+New Year: 1804, Wood-male-Mouse
+
+Tibetan Lunar Month: 1 - Earth-male-Dragon
+
+1: Sun. mon gre. Fire-Water; 12 Feb 1804
+  mchog can, gdab pa, Tiger, kham 7
+  1;18,29 22;25,33 21;50,3 17;15,36 9;20,13
+  Solar: Water-Dragon. Xu 2
+  From 1st to 15th, Demonstration of Miracles.
+2: Mon. mon gru. Water-Earth; 13 Feb 1804
+  yongs 'joms, rigs can, Rabbit, gin 8
+  2;15,1 23;27,35 21;54,36 18;22,12 9;21,11
+  Solar: Water-Snake. Wei 3
+3: Tue. khrums stod. Fire-Fire; 14 Feb 1804
+  zhi ba, khyim skyes, Dragon, zin 9
+  3;10,32 24;30,37 21;59,10 19;29,48 9;22,9
+  Solar: Wood-Horse. Shi 4
+4: Wed. khrums smad. Water-Water; 15 Feb 1804
+  grub pa, vishti, Snake, zon 1
+  4;5,3 25;34,39 22;3,43 20;38,23 9;23,8
+  Solar: Wood-Sheep. Bi 5
+5. Omitted: Horse li 2
+6: Thu. nam gru. Wind-Water; 16 Feb 1804
+  bsgrub bya, rigs can, Sheep, khon 3
+  5;53,34 26;43,16 22;12,51 21;56,7 9;25,4
+  Solar: Fire-Monkey. Kui 6
+7: Fri. tha skar. Earth-Wind; 17 Feb 1804
+  dkar po, khyim skyes, Monkey, dwa 4
+  6;47,49 0;47,35 22;17,24 23;4,59 9;26,2
+  Solar: Fire-Bird. Lou 7
+8: Sat. bra nye. Earth-Fire; 18 Feb 1804
+  tshangs pa, vishti, Bird, khen 5
+  0;42,4 1;51,53 22;21,58 24;13,51 9;27,0
+  Solar: Earth-Dog. Wei 8
+9: Sun. smin drug. Fire-Fire; 19 Feb 1804
+  dbang po, byis pa, Dog, kham 6
+  1;36,20 2;56,11 22;26,31 25;22,43 9;27,59
+  Solar: Earth-Pig. Mao 9
+10: Mon. snar ma. Water-Earth; 20 Feb 1804
+  'khon 'dzin, til rdung, Pig, gin 7
+  2;31,19 3;59,46 22;31,5 26;30,51 9;28,57
+  Solar: Iron-Mouse. Bi 1
+11: Tue. lag. Fire-Water; 21 Feb 1804
+  rnam sel, tshong ba, Mouse, zin 8
+  3;27,18 5;2,20 22;35,38 0;37,59 9;29,55
+  Solar: Iron-Ox. Zui 2
+12: Wed. nabs so. Water-Wind; 22 Feb 1804
+  mdza' bo, byis pa, Ox, zon 9
+  4;24,14 6;3,54 22;40,8 1;44,3 10;0,53
+  Solar: Water-Tiger. Can 3
+13: Thu. rgyal. Wind-Fire; 23 Feb 1804
+  tshe dang ldan pa, til rdung, Tiger, li 1
+  5;22,9 7;4,29 22;44,38 2;49,7 10;1,51
+  Solar: Water-Rabbit. Jing 4
+14: Fri. skag. Earth-Water; 24 Feb 1804
+  skal bzang, tshong ba, Rabbit, khon 2
+  6;21,49 8;3,19 22;49,8 3;52,27 10;2,50
+  Solar: Wood-Dragon. Gui 5
+15: Sat. mchu. Earth-Fire; 25 Feb 1804
+  dge byed, gdab pa, Dragon, dwa 3
+  0;22,44 9;0,53 22;53,38 4;54,31 10;3,48
+  Solar: Wood-Snake. Liu 6
+16: Sun. mchu. Fire-Fire; 26 Feb 1804
+  shin tu 'grams, rigs can, Snake, khen 4
+  1;24,40 9;57,27 22;58,7 5;55,35 10;4,46
+  Solar: Fire-Horse. Xing 7
+17: Mon. gre. Water-Fire; 27 Feb 1804
+  las bzang, til rdung, Horse, kham 5
+  2;27,35 10;53,1 23;2,37 6;55,39 10;5,44
+  Solar: Fire-Sheep. Zhang 8
+18: Tue. dbo. Fire-Wind; 28 Feb 1804
+  'dzin byed, tshong ba, Sheep, gin 6
+  3;31,31 11;47,35 23;7,7 7;54,43 10;6,42
+  Solar: Earth-Monkey. Yi 9
+19: Wed. me bzhi. Water-Wind; 29 Feb 1804
+  zug rngu, gdab pa, Monkey, zin 7
+  4;35,42 12;41,54 23;11,36 8;53,30 10;7,41
+  Solar: Earth-Bird. Zhen 1
+20: Thu. nag pa. Wind-Wind; 1 Mar 1804
+  'grams, rigs can, Bird, zon 8
+  5;39,54 13;36,12 23;16,6 9;52,18 10;8,39
+  Solar: Iron-Dog. Jiao 2
+21: Fri. sa ri. Earth-Wind; 2 Mar 1804
+  'phel, khyim skyes, Dog, li 9
+  6;44,5 14;30,30 23;20,36 10;51,6 10;9,37
+  Solar: Iron-Pig. Kang 3
+22: Sat. sa ga. Earth-Fire; 3 Mar 1804
+  brtan pa, vishti, Pig, khon 1
+  0;48,17 15;24,48 23;25,5 11;49,54 10;10,35
+  Solar: Water-Mouse. Di 4
+23: Sun. lha mtshams. Fire-Earth; 4 Mar 1804
+  yongs bsnun, byis pa, Mouse, dwa 2
+  1;52,28 16;19,6 23;29,35 12;48,42 10;11,34
+  Solar: Water-Ox. Fang 5
+24: Mon. snron. Water-Earth; 5 Mar 1804
+  dga' ba, rigs can, Ox, khen 3
+  2;55,56 17;14,9 23;34,5 13;48,14 10;12,32
+  Solar: Wood-Tiger. Xin 6
+25: Tue. snrubs. Fire-Water; 6 Mar 1804
+  rdo rje, khyim skyes, Tiger, kham 4
+  3;58,23 18;10,11 23;38,35 14;48,46 10;13,30
+  Solar: Wood-Rabbit. Wei 7
+26: Wed. chu stod. Water-Water; 7 Mar 1804
+  dngos grub, vishti, Rabbit, gin 5
+  4;59,50 19;7,14 23;43,4 15;50,18 10;14,28
+  Solar: Fire-Dragon. Ji 8
+27: Thu. chu smad. Wind-Earth; 8 Mar 1804
+  5;60,0 20;5,34 23;47,34 16;53,8 10;15,26
+  Solar: Fire-Snake. Dou 9
+27: Fri. gro zhin. Earth-Earth; 9 Mar 1804
+  mchog can, til rdung, Dragon, zin 6
+  6;0,17 21;5,16 23;47,34 17;52,51 10;15,26
+  Solar: Earth-Horse. Niu 1
+28. Omitted: Snake zon 7
+29: Sat. mon gre. Earth-Water; 10 Mar 1804
+  zhi ba, tshong ba, Horse, li 8
+  0;56,28 22;6,5 23;56,33 19;2,39 10;17,23
+  Solar: Earth-Sheep. Nu 2
+30: Sun. mon gru. Fire-Earth; 11 Mar 1804
+  grub pa, rkang bzhi, Sheep, khon 9
+  1;52,55 23;8,8 24;1,3 20;9,12 10;18,21
+  Solar: Iron-Monkey. Xu 3
+
+Tibetan Lunar Month: 2 - Earth-female-Snake
+
+1: Mon. khrums stod. Water-Fire; 12 Mar 1804
+  bsgrub bya, mi sdug pa, Monkey, dwa 1
+  2;48,22 24;11,11 24;5,33 21;16,44 10;19,19
+  Solar: Iron-Bird. Wei 4
+2: Tue. khrums smad. Fire-Water; 13 Mar 1804
+  dge ba, byis pa, Bird, khen 2
+  3;42,49 25;15,13 24;10,2 22;25,16 10;20,17
+  Solar: Water-Dog. Shi 5
+3: Wed. nam gru. Water-Water; 14 Mar 1804
+  dkar po, til rdung, Dog, kham 3
+  4;37,0 26;19,32 24;14,32 23;34,4 10;21,16
+  Solar: Water-Pig. Bi 6
+4: Thu. tha skar. Wind-Wind; 15 Mar 1804
+  tshangs pa, tshong ba, Pig, gin 4
+  5;31,11 0;23,50 24;19,2 24;42,52 10;22,14
+  Solar: Wood-Mouse. Kui 7
+5: Fri. bra nye. Earth-Fire; 16 Mar 1804
+  dbang po, byis pa, Mouse, zin 5
+  6;25,23 1;28,8 24;23,32 25;51,40 10;23,12
+  Solar: Wood-Ox. Lou 8
+6: Sat. smin drug. Earth-Fire; 17 Mar 1804
+  rnam sel, til rdung, Ox, zon 6
+  0;19,34 2;32,27 24;28,1 0;0,28 10;24,10
+  Solar: Fire-Tiger. Wei 9
+7: Sun. snar ma. Fire-Earth; 18 Mar 1804
+  mdza' bo, tshong ba, Tiger, li 7
+  1;13,46 3;36,45 24;32,31 1;9,16 10;25,8
+  Solar: Fire-Rabbit. Mao 1
+8: Mon. mgo. Water-Wind; 19 Mar 1804
+  tshe dang ldan pa, gdab pa, Rabbit, khon 8
+  2;8,41 4;40,19 24;37,1 2;17,20 10;26,7
+  Solar: Earth-Dragon. Bi 2
+9: Tue. lag. Fire-Water; 20 Mar 1804
+  skal bzang, rigs can, Dragon, dwa 9
+  3;4,37 5;42,53 24;41,30 3;24,24 10;27,5
+  Solar: Earth-Snake. Zui 3
+10: Wed. nabs so. Water-Wind; 21 Mar 1804
+  dge byed, khyim skyes, Snake, khen 1
+  4;1,33 6;44,27 24;46,0 4;30,27 10;28,3
+  Solar: Iron-Horse. Can 4
+11. Omitted: Horse kham 2
+12: Thu. rgyal. Wind-Fire; 22 Mar 1804
+  shin tu 'grams, vishti, Sheep, gin 3
+  5;59,9 7;43,50 24;55,0 5;38,50 11;0,0
+  Solar: Iron-Sheep. Jing 5
+13: Fri. skag. Earth-Water; 23 Mar 1804
+  las bzang, byis pa, Monkey, zin 4
+  6;59,59 8;41,24 24;59,23 6;40,48 11;0,58
+  Solar: Water-Monkey. Gui 6
+14: Sat. mchu. Earth-Fire; 24 Mar 1804
+  0;60,0 9;39,47 25;3,47 7;43,35 11;1,56
+  Solar: Water-Bird. Liu 7
+14: Sun. gre. Fire-Fire; 25 Mar 1804
+  zug rngu, tshong ba, Bird, zon 5
+  1;1,49 10;37,57 25;3,47 8;41,45 11;1,56
+  Solar: Wood-Dog. Xing 8
+15: Mon. dbo. Water-Wind; 26 Mar 1804
+  'grams, gdab pa, Dog, li 6
+  2;4,40 11;33,31 25;8,11 9;41,43 11;2,54
+  Solar: Wood-Pig. Zhang 9
+16: Tue. me bzhi. Fire-Wind; 27 Mar 1804
+  'phel, rigs can, Pig, khon 7
+  3;8,30 12;28,5 25;12,35 10;40,40 11;3,52
+  Solar: Fire-Mouse. Yi 1
+17: Wed. nag pa. Water-Wind; 28 Mar 1804
+  brtan pa, khyim skyes, Mouse, dwa 8
+  4;12,35 13;22,23 25;16,59 11;39,22 11;4,51
+  Solar: Fire-Ox. Zhen 2
+18: Thu. sa ri. Wind-Wind; 29 Mar 1804
+  yongs bsnun, vishti, Ox, khen 9
+  5;16,41 14;16,41 25;21,23 12;38,4 11;5,49
+  Solar: Earth-Tiger. Jiao 3
+19: Fri. sa ga. Earth-Fire; 30 Mar 1804
+  dga' ba, byis pa, Tiger, kham 1
+  6;20,47 15;10,59 25;25,47 13;36,46 11;6,47
+  Solar: Earth-Rabbit. Kang 4
+20: Sat. lha mtshams. Earth-Earth; 31 Mar 1804
+  rdo rje, til rdung, Rabbit, gin 2
+  0;24,53 16;5,17 25;30,11 14;35,29 11;7,45
+  Solar: Iron-Dragon. Di 5
+21: Sun. lha mtshams. Fire-Earth; 1 Apr 1804
+  dngos grub, khyim skyes, Dragon, zin 3
+  1;28,58 16;59,36 25;34,34 15;34,11 11;8,43
+  Solar: Iron-Snake. Fang 6
+22: Mon. snron. Water-Earth; 2 Apr 1804
+  phan tshun, vishti, Snake, zon 4
+  2;32,19 17;54,39 25;38,58 16;33,37 11;9,42
+  Solar: Water-Horse. Xin 7
+23: Tue. snrubs. Fire-Water; 3 Apr 1804
+  mchog can, byis pa, Horse, li 5
+  3;34,40 18;50,41 25;43,22 17;34,4 11;10,40
+  Solar: Water-Sheep. Wei 8
+24: Wed. chu stod. Water-Water; 4 Apr 1804
+  yongs 'joms, til rdung, Sheep, khon 6
+  4;36,1 19;47,44 25;47,46 18;35,31 11;11,38
+  Solar: Wood-Monkey. Ji 9
+25: Thu. chu smad. Wind-Earth; 5 Apr 1804
+  zhi ba, tshong ba, Monkey, dwa 7
+  5;36,22 20;45,47 25;52,10 19;37,58 11;12,36
+  Solar: Wood-Bird. Dou 1
+26: Fri. gro zhin. Earth-Earth; 6 Apr 1804
+  grub pa, gdab pa, Bird, khen 8
+  6;34,59 21;45,35 25;56,34 20;42,9 11;13,34
+  Solar: Fire-Dog. Niu 2
+27: Sat. mon gre. Earth-Water; 7 Apr 1804
+  bsgrub bya, rigs can, Dog, kham 9
+  0;32,19 22;46,38 26;0,58 21;47,36 11;14,33
+  Solar: Fire-Pig. Nu 3
+28: Sun. mon gru. Fire-Earth; 8 Apr 1804
+  dge ba, khyim skyes, Pig, gin 1
+  1;28,40 23;48,41 26;5,22 22;54,3 11;15,31
+  Solar: Earth-Mouse. Xu 4
+29: Mon. khrums stod. Water-Fire; 9 Apr 1804
+  tshangs pa, bkra shis, Mouse, zin 2
+  2;24,1 24;51,44 26;9,45 24;1,30 11;16,29
+  Solar: Earth-Ox. Wei 5
+30: Tue. khrums smad. Fire-Water; 10 Apr 1804
+  dbang po, klu, Ox, zon 3
+  3;18,22 25;55,47 26;14,9 25;9,57 11;17,27
+  Solar: Iron-Tiger. Shi 6
+
+Tibetan Lunar Month: 3 - Iron-male-Horse
+
+1: Wed. tha skar. Water-Wind; 11 Apr 1804
+  'khon 'dzin, gdab pa, Tiger, li 4
+  4;12,27 0;0,5 26;18,33 26;18,39 11;18,25
+  Solar: Iron-Rabbit. Bi 7
+2: Thu. bra nye. Wind-Fire; 12 Apr 1804
+  rnam sel, rigs can, Rabbit, khon 5
+  5;6,33 1;4,24 26;22,57 0;27,21 11;19,24
+  Solar: Water-Dragon. Kui 8
+3: Fri. smin drug. Earth-Fire; 13 Apr 1804
+  mdza' bo, khyim skyes, Dragon, dwa 6
+  6;0,38 2;8,42 26;27,21 1;36,4 11;20,22
+  Solar: Water-Snake. Lou 9
+4. Omitted: Snake khen 7
+5: Sat. snar ma. Earth-Earth; 14 Apr 1804
+  tshe dang ldan pa, gdab pa, Horse, kham 8
+  0;48,50 3;17,19 26;36,9 2;53,28 11;22,18
+  Solar: Wood-Horse. Wei 1
+6: Sun. mgo. Fire-Wind; 15 Apr 1804
+  dge byed, rigs can, Sheep, gin 9
+  1;43,40 4;20,52 26;40,33 4;1,25 11;23,17
+  Solar: Wood-Sheep. Mao 2
+7: Mon. lag. Water-Water; 16 Apr 1804
+  shin tu 'grams, khyim skyes, Monkey, zin 1
+  2;39,30 5;23,26 26;44,57 5;8,23 11;24,15
+  Solar: Fire-Monkey. Bi 3
+8: Tue. nabs so. Fire-Wind; 17 Apr 1804
+  las bzang, vishti, Bird, zon 2
+  3;36,21 6;24,59 26;49,20 6;14,20 11;25,13
+  Solar: Fire-Bird. Zui 4
+9: Wed. rgyal. Water-Fire; 18 Apr 1804
+  'dzin byed, byis pa, Dog, li 3
+  4;34,11 7;25,33 26;53,44 7;19,17 11;26,11
+  Solar: Earth-Dog. Can 5
+10: Thu. skag. Wind-Water; 19 Apr 1804
+  zug rngu, til rdung, Pig, khon 4
+  5;33,47 8;24,21 26;58,8 8;22,30 11;27,9
+  Solar: Earth-Pig. Jing 6
+11: Fri. mchu. Earth-Fire; 20 Apr 1804
+  'grams, tshong ba, Mouse, dwa 5
+  6;34,37 9;21,54 0;2,32 9;24,27 11;28,8
+  Solar: Iron-Mouse. Gui 7
+12: Sat. gre. Earth-Fire; 21 Apr 1804
+  'phel, gdab pa, Ox, khen 6
+  0;36,28 10;18,28 0;6,56 10;25,24 11;29,6
+  Solar: Iron-Ox. Liu 8
+13: Sun. dbo. Fire-Wind; 22 Apr 1804
+  brtan pa, rigs can, Tiger, kham 7
+  1;39,18 11;14,1 0;11,20 11;25,21 0;0,4
+  Solar: Water-Tiger. Xing 9
+14: Mon. me bzhi. Water-Wind; 23 Apr 1804
+  yongs bsnun, khyim skyes, Rabbit, gin 8
+  2;43,5 12;8,34 0;15,40 12;24,14 0;1,2
+  Solar: Water-Rabbit. Zhang 1
+15: Tue. nag pa. Fire-Wind; 24 Apr 1804
+  dga' ba, vishti, Dragon, zin 9
+  3;47,7 13;2,52 0;20,0 13;22,52 0;2,0
+  Solar: Wood-Dragon. Yi 2
+  Revelation of the Kalacakra Tantra.
+16: Wed. nag pa. Water-Wind; 25 Apr 1804
+  rdo rje, byis pa, Snake, zon 1
+  4;51,9 13;57,10 0;24,20 14;21,30 0;2,59
+  Solar: Wood-Snake. Zhen 3
+17: Thu. sa ri. Wind-Wind; 26 Apr 1804
+  dngos grub, rigs can, Horse, li 2
+  5;55,10 14;51,29 0;28,40 15;20,9 0;3,57
+  Solar: Fire-Horse. Jiao 4
+18: Fri. sa ga. Earth-Fire; 27 Apr 1804
+  phan tshun, khyim skyes, Sheep, khon 3
+  6;59,12 15;45,47 0;33,0 16;18,47 0;4,55
+  Solar: Fire-Sheep. Kang 5
+19: Sat. lha mtshams. Earth-Earth; 28 Apr 1804
+  0;60,0 16;43,20 0;37,20 17;20,40 0;5,53
+  Solar: Earth-Monkey. Di 6
+19: Sun. snron. Fire-Earth; 29 Apr 1804
+  yongs 'joms, byis pa, Monkey, dwa 4
+  1;3,14 17;40,5 0;37,20 18;17,25 0;5,53
+  Solar: Earth-Bird. Fang 7
+20: Mon. snrubs. Water-Water; 30 Apr 1804
+  zhi ba, til rdung, Bird, khen 5
+  2;6,31 18;35,8 0;41,40 19;16,48 0;6,51
+  Solar: Iron-Dog. Xin 8
+21: Tue. chu stod. Fire-Water; 1 May 1804
+  grub pa, tshong ba, Dog, kham 6
+  3;8,47 19;31,12 0;46,0 20;17,12 0;7,50
+  Solar: Iron-Pig. Wei 9
+22: Wed. chu smad. Water-Earth; 2 May 1804
+  bsgrub bya, gdab pa, Pig, gin 7
+  4;10,4 20;28,15 0;50,20 21;18,35 0;8,48
+  Solar: Water-Mouse. Ji 1
+23: Thu. gro zhin. Wind-Earth; 3 May 1804
+  dge ba, rigs can, Mouse, zin 8
+  5;10,21 21;26,18 0;54,40 22;20,58 0;9,46
+  Solar: Water-Ox. Dou 2
+24: Fri. mon gre. Earth-Water; 4 May 1804
+  dkar po, khyim skyes, Ox, zon 9
+  6;8,52 22;26,7 0;59,0 23;25,7 0;10,44
+  Solar: Wood-Tiger. Niu 3
+25: Sat. mon gru. Earth-Earth; 5 May 1804
+  tshangs pa, vishti, Tiger, li 1
+  0;6,9 23;27,10 1;3,20 24;30,30 0;11,42
+  Solar: Wood-Rabbit. Nu 4
+26: Sun. khrums stod. Fire-Fire; 6 May 1804
+  dbang po, byis pa, Rabbit, khon 2
+  1;2,25 24;29,14 1;7,40 25;36,54 0;12,41
+  Solar: Fire-Dragon. Xu 5
+27. Omitted: Dragon dwa 3
+28: Mon. khrums smad. Water-Water; 7 May 1804
+  'khon 'dzin, khyim skyes, Snake, khen 4
+  2;51,58 25;36,21 1;16,20 26;52,41 0;14,37
+  Solar: Fire-Snake. Wei 6
+29: Tue. nam gru. Fire-Water; 8 May 1804
+  mdza' bo, vishti, Horse, kham 5
+  3;46,0 26;40,39 1;20,40 1;1,19 0;15,35
+  Solar: Earth-Horse. Shi 7
+30: Wed. tha skar. Water-Wind; 9 May 1804
+  tshe dang ldan pa, rkang bzhi, Sheep, gin 6
+  4;40,2 0;44,57 1;25,0 2;9,57 0;16,34
+  Solar: Earth-Sheep. Bi 8
+
+Tibetan Lunar Month: 4 - Iron-female-Sheep
+
+1: Thu. bra nye. Wind-Fire; 10 May 1804
+  skal bzang, mi sdug pa, Monkey, zin 7
+  5;34,3 1;49,16 1;29,20 3;18,36 0;17,32
+  Solar: Iron-Monkey. Kui 9
+2: Fri. smin drug. Earth-Fire; 11 May 1804
+  dge byed, byis pa, Bird, zon 8
+  6;28,5 2;53,34 1;33,40 4;27,14 0;18,30
+  Solar: Iron-Bird. Lou 1
+3: Sat. snar ma. Earth-Earth; 12 May 1804
+  shin tu 'grams, khyim skyes, Dog, li 9
+  0;22,6 3;57,53 1;38,0 5;35,53 0;19,28
+  Solar: Water-Dog. Wei 2
+4: Sun. lag. Fire-Water; 13 May 1804
+  las bzang, vishti, Pig, khon 1
+  1;16,53 5;1,26 1;42,20 6;43,46 0;20,26
+  Solar: Water-Pig. Mao 3
+5: Mon. nabs so. Water-Wind; 14 May 1804
+  'dzin byed, byis pa, Mouse, dwa 2
+  2;12,40 6;3,59 1;46,40 7;50,39 0;21,25
+  Solar: Wood-Mouse. Bi 4
+6: Tue. rgyal. Fire-Fire; 15 May 1804
+  zug rngu, til rdung, Ox, khen 3
+  3;9,27 7;5,32 1;51,0 8;56,32 0;22,23
+  Solar: Wood-Ox. Zui 5
+7: Wed. skag. Water-Water; 16 May 1804
+  'phel, tshong ba, Tiger, kham 4
+  4;7,14 8;6,5 1;55,20 10;1,25 0;23,21
+  Solar: Fire-Tiger. Can 6
+  Birth of the Buddha.
+8: Thu. mchu. Wind-Fire; 17 May 1804
+  brtan pa, gdab pa, Rabbit, gin 5
+  5;6,47 9;4,52 1;59,40 11;4,32 0;24,19
+  Solar: Fire-Rabbit. Jing 7
+9: Fri. gre. Earth-Fire; 18 May 1804
+  yongs bsnun, rigs can, Dragon, zin 6
+  6;7,34 10;2,25 2;4,0 12;6,25 0;25,17
+  Solar: Earth-Dragon. Gui 8
+10: Sat. gre. Earth-Fire; 19 May 1804
+  dga' ba, khyim skyes, Snake, zon 7
+  0;9,21 10;58,58 2;8,20 13;7,18 0;26,16
+  Solar: Earth-Snake. Liu 9
+11: Sun. dbo. Fire-Wind; 20 May 1804
+  rdo rje, vishti, Horse, li 8
+  1;12,8 11;54,31 2;12,40 14;7,11 0;27,14
+  Solar: Iron-Horse. Xing 1
+12: Mon. me bzhi. Water-Wind; 21 May 1804
+  dngos grub, byis pa, Sheep, khon 9
+  2;15,56 12;49,3 2;17,0 15;6,3 0;28,12
+  Solar: Iron-Sheep. Zhang 2
+13: Tue. nag pa. Fire-Wind; 22 May 1804
+  phan tshun, til rdung, Monkey, dwa 1
+  3;19,57 13;43,22 2;21,20 16;4,42 0;29,10
+  Solar: Water-Monkey. Yi 3
+14: Wed. sa ri. Water-Wind; 23 May 1804
+  mchog can, tshong ba, Bird, khen 2
+  4;23,58 14;37,40 2;25,39 17;3,19 1;0,8
+  Solar: Water-Bird. Zhen 4
+15: Thu. sa ga. Wind-Fire; 24 May 1804
+  yongs 'joms, vishti, Dog, kham 3
+  5;27,54 15;31,58 2;29,53 18;1,51 1;1,7
+  Solar: Wood-Dog. Jiao 5
+  Enlightenment and Parinirvana of the Buddha.
+16: Fri. lha mtshams. Earth-Earth; 25 May 1804
+  zhi ba, byis pa, Pig, gin 4
+  6;31,50 16;26,16 2;34,7 19;0,24 1;2,5
+  Solar: Wood-Pig. Kang 6
+17: Sat. snron. Earth-Earth; 26 May 1804
+  zhi ba, til rdung, Mouse, zin 5
+  0;35,46 17;20,34 2;38,21 19;58,56 1;3,3
+  Solar: Fire-Mouse. Di 7
+18: Sun. snrubs. Fire-Water; 27 May 1804
+  grub pa, tshong ba, Ox, zon 6
+  1;38,57 18;15,38 2;42,35 20;58,14 1;4,1
+  Solar: Fire-Ox. Fang 8
+19: Mon. chu stod. Water-Water; 28 May 1804
+  bsgrub bya, gdab pa, Tiger, li 7
+  2;41,7 19;11,42 2;46,50 21;58,32 1;5,0
+  Solar: Earth-Tiger. Xin 9
+20: Tue. chu smad. Fire-Earth; 29 May 1804
+  dge ba, rigs can, Rabbit, khon 8
+  3;42,18 20;8,46 2;51,4 22;59,50 1;5,58
+  Solar: Earth-Rabbit. Wei 1
+21: Wed. gro zhin. Water-Earth; 30 May 1804
+  tshangs pa, khyim skyes, Dragon, dwa 9
+  4;42,28 21;6,49 2;55,18 24;2,8 1;6,56
+  Solar: Iron-Dragon. Ji 2
+22: Thu. mon gre. Wind-Water; 31 May 1804
+  dbang po, vishti, Snake, khen 1
+  5;40,53 22;6,39 2;59,32 25;6,11 1;7,54
+  Solar: Iron-Snake. Dou 3
+23: Fri. mon gru. Earth-Earth; 1 Jun 1804
+  'khon 'dzin, byis pa, Horse, kham 2
+  6;38,3 23;7,43 3;3,46 26;11,29 1;8,52
+  Solar: Water-Horse. Niu 4
+24: Sat. khrums stod. Earth-Fire; 2 Jun 1804
+  rnam sel, til rdung, Sheep, gin 3
+  0;34,13 24;9,47 3;8,0 0;17,48 1;9,51
+  Solar: Water-Sheep. Nu 5
+25: Sun. khrums smad. Fire-Water; 3 Jun 1804
+  mdza' bo, tshong ba, Monkey, zin 4
+  1;29,23 25;12,51 3;12,15 1;25,6 1;10,49
+  Solar: Wood-Monkey. Xu 6
+26: Mon. nam gru. Water-Water; 4 Jun 1804
+  tshe dang ldan pa, byis pa, Bird, zon 5
+  2;23,34 26;16,55 3;16,29 2;33,24 1;11,47
+  Solar: Wood-Bird. Wei 7
+27: Tue. tha skar. Fire-Wind; 5 Jun 1804
+  skal bzang, til rdung, Dog, li 6
+  3;17,30 0;21,13 3;20,43 3;41,56 1;12,45
+  Solar: Fire-Dog. Shi 8
+28: Wed. bra nye. Water-Fire; 6 Jun 1804
+  dge byed, tshong ba, Pig, khon 7
+  4;11,25 1;25,31 3;24,57 4;50,29 1;13,43
+  Solar: Fire-Pig. Bi 9
+29: Thu. smin drug. Wind-Fire; 7 Jun 1804
+  shin tu 'grams, bkra shis, Mouse, dwa 8
+  5;5,21 2;29,50 3;29,11 5;59,1 1;14,42
+  Solar: Earth-Mouse. Kui 1
+30. Omitted: Ox khen 9
+
+Tibetan Lunar Month: 5 - Water-male-Monkey
+
+1: Fri. snar ma. Earth-Earth; 8 Jun 1804
+  'dzin byed, mi sdug pa, Tiger, kham 1
+  6;53,13 3;38,26 3;37,40 7;16,6 1;16,38
+  Solar: Earth-Ox. Lou 2
+2: Sat. mgo. Earth-Wind; 9 Jun 1804
+  zug rngu, byis pa, Rabbit, gin 2
+  0;47,54 4;41,59 3;41,54 8;23,53 1;17,36
+  Solar: Iron-Tiger. Wei 3
+3: Sun. lag. Fire-Water; 10 Jun 1804
+  'grams, til rdung, Dragon, zin 3
+  1;43,36 5;44,31 3;46,8 9;30,40 1;18,34
+  Solar: Iron-Rabbit. Mao 4
+4: Mon. nabs so. Water-Wind; 11 Jun 1804
+  'phel, tshong ba, Snake, zon 4
+  2;40,18 6;46,4 3;50,22 10;36,27 1;19,33
+  Solar: Water-Dragon. Bi 5
+5: Tue. rgyal. Fire-Fire; 12 Jun 1804
+  brtan pa, gdab pa, Horse, li 5
+  3;37,59 7;46,37 3;54,36 11;41,13 1;20,31
+  Solar: Water-Snake. Zui 6
+6: Wed. skag. Water-Water; 13 Jun 1804
+  yongs bsnun, rigs can, Sheep, khon 6
+  4;37,27 8;45,23 3;58,51 12;44,14 1;21,29
+  Solar: Wood-Horse. Can 7
+7: Thu. mchu. Wind-Fire; 14 Jun 1804
+  dga' ba, khyim skyes, Monkey, dwa 7
+  5;38,9 9;42,56 4;3,5 13;46,1 1;22,27
+  Solar: Wood-Sheep. Jing 8
+8: Fri. gre. Earth-Fire; 15 Jun 1804
+  rdo rje, vishti, Bird, khen 8
+  6;39,50 10;39,28 4;7,19 14;46,47 1;23,25
+  Solar: Fire-Monkey. Gui 9
+9: Sat. dbo. Earth-Wind; 16 Jun 1804
+  dngos grub, byis pa, Dog, kham 9
+  0;42,32 11;35,0 4;11,33 15;46,34 1;24,24
+  Solar: Fire-Bird. Liu 1
+10: Sun. me bzhi. Fire-Wind; 17 Jun 1804
+  phan tshun, til rdung, Pig, gin 1
+  1;46,14 12;29,33 4;15,47 16;45,20 1;25,22
+  Solar: Earth-Dog. Xing 2
+11: Mon. nag pa. Water-Wind; 18 Jun 1804
+  mchog can, tshong ba, Mouse, zin 2
+  2;50,10 13;23,51 4;20,1 17;43,53 1;26,20
+  Solar: Earth-Pig. Zhang 3
+12: Tue. sa ri. Fire-Wind; 19 Jun 1804
+  yongs 'joms, vishti, Ox, zon 3
+  3;54,6 14;18,9 4;24,16 18;42,25 1;27,18
+  Solar: Iron-Mouse. Yi 4
+13: Wed. sa ga. Water-Fire; 20 Jun 1804
+  zhi ba, byis pa, Tiger, li 4
+  4;58,2 15;12,27 4;28,30 19;40,58 1;28,17
+  Solar: Iron-Ox. Zhen 5
+14: Thu. lha mtshams. Wind-Earth; 21 Jun 1804
+  5;60,0 16;8,44 4;32,44 20;41,28 1;29,15
+  Solar: Water-Tiger. Jiao 6
+14: Fri. snron. Earth-Earth; 22 Jun 1804
+  bsgrub bya, tshong ba, Rabbit, khon 5
+  6;1,58 17;6,45 4;32,44 21;39,30 1;29,15
+  Solar: Water-Rabbit. Kang 7
+15: Sat. snrubs. Earth-Water; 23 Jun 1804
+  dge ba, gdab pa, Dragon, dwa 6
+  0;5,53 18;1,4 4;36,57 22;38,1 2;0,13
+  Solar: Wood-Dragon. Di 8
+16: Sun. snrubs. Fire-Water; 24 Jun 1804
+  dkar po, rigs can, Snake, khen 7
+  1;8,59 18;56,8 4;41,8 23;37,16 2;1,11
+  Solar: Wood-Snake. Fang 9
+17: Mon. chu stod. Water-Water; 25 Jun 1804
+  tshangs pa, khyim skyes, Horse, kham 8
+  2;11,5 19;52,12 4;45,18 24;37,30 2;2,9
+  Solar: Fire-Horse. Xin 1
+18: Tue. chu smad. Fire-Earth; 26 Jun 1804
+  dbang po, vishti, Sheep, gin 9
+  3;12,11 20;49,16 4;49,28 25;38,45 2;3,8
+  Solar: Fire-Sheep. Wei 2
+19: Wed. gro zhin. Water-Earth; 27 Jun 1804
+  'khon 'dzin, byis pa, Monkey, zin 1
+  4;12,17 21;47,21 4;53,38 26;40,59 2;4,6
+  Solar: Earth-Monkey. Ji 3
+20: Thu. mon gre. Wind-Water; 28 Jun 1804
+  rnam sel, til rdung, Bird, zon 2
+  5;10,37 22;47,11 4;57,49 0;45,0 2;5,4
+  Solar: Earth-Bird. Dou 4
+21: Fri. mon gru. Earth-Earth; 29 Jun 1804
+  mdza' bo, tshong ba, Dog, li 3
+  6;7,43 23;48,15 5;1,59 1;50,15 2;6,2
+  Solar: Iron-Dog. Niu 5
+22: Sat. khrums stod. Earth-Fire; 30 Jun 1804
+  tshe dang ldan pa, gdab pa, Pig, khon 4
+  0;3,49 24;50,20 5;6,9 2;56,29 2;7,0
+  Solar: Iron-Pig. Nu 6
+23. Omitted: Mouse dwa 5
+24: Sun. khrums smad. Fire-Water; 1 Jul 1804
+  dge byed, til rdung, Ox, khen 6
+  1;53,1 25;57,28 5;14,30 4;11,59 2;8,57
+  Solar: Water-Mouse. Xu 7
+25: Mon. tha skar. Water-Wind; 2 Jul 1804
+  shin tu 'grams, tshong ba, Tiger, kham 7
+  2;46,53 0;1,47 5;18,40 5;20,27 2;9,55
+  Solar: Water-Ox. Wei 8
+26: Tue. bra nye. Fire-Fire; 3 Jul 1804
+  las bzang, gdab pa, Rabbit, gin 8
+  3;40,45 1;6,5 5;22,51 6;28,56 2;10,53
+  Solar: Wood-Tiger. Shi 9
+27: Wed. smin drug. Water-Fire; 4 Jul 1804
+  'dzin byed, rigs can, Dragon, zin 9
+  4;34,37 2;10,23 5;27,1 7;37,25 2;11,51
+  Solar: Wood-Rabbit. Bi 1
+28: Thu. snar ma. Wind-Earth; 5 Jul 1804
+  zug rngu, khyim skyes, Snake, zon 1
+  5;28,29 3;14,42 5;31,11 8;45,53 2;12,50
+  Solar: Fire-Dragon. Kui 2
+29: Fri. mgo. Earth-Wind; 6 Jul 1804
+  'grams, bkra shis, Horse, li 2
+  6;22,21 4;19,0 5;35,21 9;54,22 2;13,48
+  Solar: Fire-Snake. Lou 3
+30: Sat. lag. Earth-Water; 7 Jul 1804
+  brtan pa, klu, Sheep, khon 3
+  0;16,59 5;22,32 5;39,32 11;2,4 2;14,46
+  Solar: Earth-Horse. Wei 4
+
+Tibetan Lunar Month: 6 - Water-female-Bird
+
+1: Sun. nabs so. Fire-Wind; 8 Jul 1804
+  yongs bsnun, gdab pa, Monkey, dwa 4
+  1;12,37 6;25,4 5;43,42 12;8,47 2;15,44
+  Solar: Earth-Sheep. Mao 5
+2: Mon. rgyal. Water-Fire; 9 Jul 1804
+  dga' ba, rigs can, Bird, khen 5
+  2;9,15 7;26,36 5;47,52 13;14,29 2;16,42
+  Solar: Iron-Monkey. Bi 6
+3: Tue. skag. Fire-Water; 10 Jul 1804
+  rdo rje, khyim skyes, Dog, kham 6
+  3;6,54 8;27,9 5;52,3 14;19,12 2;17,41
+  Solar: Iron-Bird. Zui 7
+4: Wed. mchu. Water-Fire; 11 Jul 1804
+  dngos grub, vishti, Pig, gin 7
+  4;6,18 9;25,54 5;56,13 15;22,8 2;18,39
+  Solar: Water-Dog. Can 8
+  Turning of the Wheel of the Dharma.
+5: Thu. gre. Wind-Fire; 12 Jul 1804
+  phan tshun, byis pa, Mouse, zin 8
+  5;6,56 10;23,26 6;0,23 16;23,50 2;19,37
+  Solar: Water-Pig. Jing 9
+6: Fri. dbo. Earth-Wind; 13 Jul 1804
+  mchog can, til rdung, Ox, zon 9
+  6;8,35 11;19,58 6;4,34 17;24,32 2;20,35
+  Solar: Wood-Mouse. Gui 1
+7: Sat. me bzhi. Earth-Wind; 14 Jul 1804
+  yongs 'joms, tshong ba, Tiger, li 1
+  0;11,13 12;15,30 6;8,44 18;24,14 2;21,34
+  Solar: Wood-Ox. Liu 2
+8: Sun. nag pa. Fire-Wind; 15 Jul 1804
+  zhi ba, gdab pa, Rabbit, khon 2
+  1;14,52 13;10,2 6;12,54 19;22,57 2;22,32
+  Solar: Fire-Tiger. Xing 3
+9: Mon. sa ri. Water-Wind; 16 Jul 1804
+  grub pa, rigs can, Dragon, dwa 3
+  2;18,44 14;4,20 6;17,4 20;21,25 2;23,30
+  Solar: Fire-Rabbit. Zhang 4
+10: Tue. sa ri. Fire-Wind; 17 Jul 1804
+  bsgrub bya, khyim skyes, Snake, khen 4
+  3;22,36 14;58,38 6;21,15 21;19,54 2;24,28
+  Solar: Earth-Dragon. Yi 5
+11: Wed. sa ga. Water-Fire; 18 Jul 1804
+  dge ba, vishti, Horse, kham 5
+  4;26,28 15;52,57 6;25,25 22;18,22 2;25,26
+  Solar: Earth-Snake. Zhen 6
+12: Thu. lha mtshams. Wind-Earth; 19 Jul 1804
+  dkar po, gdab pa, Sheep, gin 6
+  5;30,20 16;47,15 6;29,35 23;16,51 2;26,25
+  Solar: Iron-Horse. Jiao 7
+13: Fri. snron. Earth-Earth; 20 Jul 1804
+  tshangs pa, rigs can, Monkey, zin 7
+  6;34,12 17;41,33 6;33,46 24;15,19 2;27,23
+  Solar: Iron-Sheep. Kang 8
+14: Sat. snrubs. Earth-Water; 21 Jul 1804
+  dbang po, khyim skyes, Bird, zon 8
+  0;37,18 18;36,38 6;37,56 25;14,34 2;28,21
+  Solar: Water-Monkey. Di 9
+15: Sun. chu stod. Fire-Water; 22 Jul 1804
+  'khon 'dzin, vishti, Dog, li 9
+  1;39,23 19;32,42 6;42,6 26;14,49 2;29,19
+  Solar: Water-Bird. Fang 1
+  The Buddha's entry into the womb of his mother.
+16: Mon. chu smad. Water-Earth; 23 Jul 1804
+  rnam sel, byis pa, Pig, khon 1
+  2;40,29 20;29,47 6;46,17 0;16,4 3;0,17
+  Solar: Wood-Dog. Xin 2
+17: Tue. gro zhin. Fire-Earth; 24 Jul 1804
+  mdza' bo, til rdung, Mouse, dwa 2
+  3;40,35 21;27,52 6;50,27 1;18,19 3;1,16
+  Solar: Wood-Pig. Wei 3
+18: Wed. mon gre. Water-Water; 25 Jul 1804
+  tshe dang ldan pa, tshong ba, Ox, khen 3
+  4;38,54 22;27,43 6;54,37 2;22,20 3;2,14
+  Solar: Fire-Mouse. Ji 4
+19: Thu. mon gru. Wind-Earth; 26 Jul 1804
+  skal bzang, gdab pa, Tiger, kham 4
+  5;35,59 23;28,48 6;58,47 3;27,36 3;3,12
+  Solar: Fire-Ox. Dou 5
+20: Fri. khrums stod. Earth-Fire; 27 Jul 1804
+  dge byed, rigs can, Rabbit, gin 5
+  6;32,5 24;30,52 7;2,58 4;33,51 3;4,10
+  Solar: Earth-Tiger. Niu 6
+21: Sat. khrums smad. Earth-Water; 28 Jul 1804
+  shin tu 'grams, khyim skyes, Dragon, zin 6
+  0;27,10 25;33,57 7;7,8 5;41,6 3;5,8
+  Solar: Earth-Rabbit. Nu 7
+22: Sun. nam gru. Fire-Water; 29 Jul 1804
+  las bzang, gdab pa, Snake, zon 7
+  1;21,16 26;38,2 7;11,18 6;49,21 3;6,7
+  Solar: Iron-Dragon. Xu 8
+23: Mon. tha skar. Water-Wind; 30 Jul 1804
+  'dzin byed, rigs can, Horse, li 8
+  2;15,8 0;42,20 7;15,29 7;57,50 3;7,5
+  Solar: Iron-Snake. Wei 9
+24: Tue. bra nye. Fire-Fire; 31 Jul 1804
+  'grams, khyim skyes, Sheep, khon 9
+  3;9,0 1;46,39 7;19,39 9;6,18 3;8,3
+  Solar: Water-Horse. Shi 1
+25: Wed. smin drug. Water-Fire; 1 Aug 1804
+  'phel, vishti, Monkey, dwa 1
+  4;2,52 2;50,57 7;23,49 10;14,47 3;9,1
+  Solar: Water-Sheep. Bi 2
+26. Omitted: Bird khen 2
+27: Thu. snar ma. Wind-Earth; 2 Aug 1804
+  brtan pa, rigs can, Dog, kham 3
+  5;50,35 3;59,34 7;32,10 11;31,44 3;10,58
+  Solar: Wood-Monkey. Kui 3
+28: Fri. lag. Earth-Water; 3 Aug 1804
+  yongs bsnun, khyim skyes, Pig, gin 4
+  6;45,14 5;3,6 7;36,20 12;39,26 3;11,56
+  Solar: Wood-Bird. Lou 4
+29: Sat. nabs so. Earth-Wind; 4 Aug 1804
+  dga' ba, vishti, Mouse, zin 5
+  0;40,53 6;5,37 7;40,30 13;46,8 3;12,54
+  Solar: Fire-Dog. Wei 5
+30: Sun. rgyal. Fire-Fire; 5 Aug 1804
+  rdo rje, rkang bzhi, Ox, zon 6
+  1;37,31 7;7,9 7;44,41 14;51,50 3;13,52
+  Solar: Fire-Pig. Mao 6
+
+Tibetan Lunar Month: 7 - Wood-male-Dog
+
+1: Mon. skag. Water-Water; 6 Aug 1804
+  dngos grub, mi sdug pa, Tiger, li 7
+  2;35,10 8;7,41 7;48,51 15;56,32 3;14,51
+  Solar: Earth-Mouse. Bi 7
+2: Tue. mchu. Fire-Fire; 7 Aug 1804
+  phan tshun, byis pa, Rabbit, khon 8
+  3;34,35 9;6,25 7;53,1 16;59,27 3;15,49
+  Solar: Earth-Ox. Zui 8
+3: Wed. gre. Water-Fire; 8 Aug 1804
+  yongs 'joms, til rdung, Dragon, dwa 9
+  4;35,14 10;3,57 7;57,12 18;1,9 3;16,47
+  Solar: Iron-Tiger. Can 9
+4: Thu. dbo. Wind-Wind; 9 Aug 1804
+  zhi ba, tshong ba, Snake, khen 1
+  5;36,53 11;0,28 8;1,22 19;1,51 3;17,45
+  Solar: Iron-Rabbit. Jing 1
+5: Fri. dbo. Earth-Wind; 10 Aug 1804
+  grub pa, gdab pa, Horse, kham 2
+  6;39,32 11;56,0 8;5,32 20;1,33 3;18,43
+  Solar: Water-Dragon. Gui 2
+6: Sat. me bzhi. Earth-Wind; 11 Aug 1804
+  bsgrub bya, rigs can, Sheep, gin 3
+  0;43,11 12;50,31 8;9,42 21;0,14 3;19,42
+  Solar: Water-Snake. Liu 3
+7: Sun. nag pa. Fire-Wind; 12 Aug 1804
+  bsgrub bya, khyim skyes, Monkey, zin 4
+  1;47,3 13;44,50 8;13,53 21;58,43 3;20,40
+  Solar: Wood-Horse. Xing 4
+8: Mon. sa ri. Water-Wind; 13 Aug 1804
+  dge ba, vishti, Bird, zon 5
+  2;50,55 14;39,8 8;18,3 22;57,11 3;21,38
+  Solar: Wood-Sheep. Zhang 5
+9: Tue. sa ga. Fire-Fire; 14 Aug 1804
+  dkar po, gdab pa, Dog, li 6
+  3;54,47 15;33,26 8;22,13 23;55,40 3;22,36
+  Solar: Fire-Monkey. Yi 6
+10: Wed. lha mtshams. Water-Earth; 15 Aug 1804
+  tshangs pa, rigs can, Pig, khon 7
+  4;58,39 16;27,44 8;26,24 24;54,8 3;23,34
+  Solar: Fire-Bird. Zhen 7
+11: Thu. snron. Wind-Earth; 16 Aug 1804
+  5;60,0 17;24,34 8;30,34 25;55,8 3;24,33
+  Solar: Earth-Dog. Jiao 8
+11: Fri. snrubs. Earth-Water; 17 Aug 1804
+  'khon 'dzin, vishti, Mouse, dwa 8
+  6;2,31 18;22,2 8;30,34 26;52,37 3;24,33
+  Solar: Earth-Pig. Kang 9
+12: Sat. chu stod. Earth-Water; 18 Aug 1804
+  rnam sel, byis pa, Ox, khen 9
+  0;5,36 19;17,7 8;34,44 0;51,52 3;25,31
+  Solar: Iron-Mouse. Di 1
+13: Sun. chu smad. Fire-Earth; 19 Aug 1804
+  mdza' bo, til rdung, Tiger, kham 1
+  1;7,42 20;13,12 8;38,55 1;52,8 3;26,29
+  Solar: Iron-Ox. Fang 2
+14: Mon. gro zhin. Water-Earth; 20 Aug 1804
+  tshe dang ldan pa, tshong ba, Rabbit, gin 2
+  2;8,47 21;10,18 8;43,5 2;53,23 3;27,27
+  Solar: Water-Tiger. Xin 3
+15: Tue. mon gre. Fire-Water; 21 Aug 1804
+  skal bzang, gdab pa, Dragon, zin 3
+  3;8,52 22;8,23 8;47,15 3;55,38 3;28,25
+  Solar: Water-Rabbit. Wei 4
+16: Wed. mon gru. Water-Earth; 22 Aug 1804
+  dge byed, rigs can, Snake, zon 4
+  4;7,10 23;8,15 8;51,25 4;59,41 3;29,24
+  Solar: Wood-Dragon. Ji 5
+17: Thu. khrums stod. Wind-Fire; 23 Aug 1804
+  las bzang, khyim skyes, Horse, li 5
+  5;4,17 24;9,20 8;55,37 6;4,58 4;0,22
+  Solar: Wood-Snake. Dou 6
+18: Fri. khrums smad. Earth-Water; 24 Aug 1804
+  'dzin byed, vishti, Sheep, khon 6
+  6;0,26 25;11,25 8;59,51 7;11,17 4;1,20
+  Solar: Fire-Horse. Niu 7
+19. Omitted: Monkey dwa 7
+20: Sat. nam gru. Earth-Water; 25 Aug 1804
+  zug rngu, rigs can, Bird, khen 8
+  0;49,43 26;18,36 9;8,20 8;26,56 4;3,17
+  Solar: Fire-Sheep. Nu 8
+21: Sun. tha skar. Fire-Wind; 26 Aug 1804
+  'grams, khyim skyes, Dog, kham 9
+  1;43,39 0;22,54 9;12,34 9;35,29 4;4,15
+  Solar: Earth-Monkey. Xu 9
+22: Mon. bra nye. Water-Fire; 27 Aug 1804
+  'phel, vishti, Pig, gin 1
+  2;37,35 1;27,13 9;16,48 10;44,1 4;5,13
+  Solar: Earth-Bird. Wei 1
+23: Tue. smin drug. Fire-Fire; 28 Aug 1804
+  brtan pa, byis pa, Mouse, zin 2
+  3;31,31 2;31,31 9;21,2 11;52,34 4;6,11
+  Solar: Iron-Dog. Shi 2
+24: Wed. snar ma. Water-Earth; 29 Aug 1804
+  dga' ba, khyim skyes, Ox, zon 3
+  4;25,27 3;35,49 9;25,17 13;1,6 4;7,9
+  Solar: Iron-Pig. Bi 3
+25: Thu. mgo. Wind-Wind; 30 Aug 1804
+  rdo rje, vishti, Tiger, li 4
+  5;19,23 4;40,8 9;29,31 14;9,39 4;8,8
+  Solar: Water-Mouse. Kui 4
+26: Fri. lag. Earth-Water; 31 Aug 1804
+  dngos grub, byis pa, Rabbit, khon 5
+  6;14,5 5;43,39 9;33,45 15;17,24 4;9,6
+  Solar: Water-Ox. Lou 5
+27: Sat. nabs so. Earth-Wind; 1 Sep 1804
+  phan tshun, til rdung, Dragon, dwa 6
+  0;9,48 6;46,10 9;37,59 16;24,10 4;10,4
+  Solar: Wood-Tiger. Wei 6
+28: Sun. rgyal. Fire-Fire; 2 Sep 1804
+  mchog can, tshong ba, Snake, khen 7
+  1;6,31 7;47,41 9;42,13 17;29,55 4;11,2
+  Solar: Wood-Rabbit. Mao 7
+29: Mon. skag. Water-Water; 3 Sep 1804
+  yongs 'joms, bkra shis, Horse, kham 8
+  2;4,14 8;48,13 9;46,27 18;34,40 4;12,0
+  Solar: Fire-Dragon. Bi 8
+30: Tue. mchu. Fire-Fire; 4 Sep 1804
+  zhi ba, klu, Sheep, gin 9
+  3;3,45 9;46,57 9;50,42 19;37,39 4;12,59
+  Solar: Fire-Snake. Zui 9
+
+Tibetan Lunar Month: 8 - Wood-female-Pig
+
+1: Wed. gre. Water-Fire; 5 Sep 1804
+  grub pa, gdab pa, Monkey, zin 1
+  4;4,28 10;44,28 9;54,56 20;39,24 4;13,57
+  Solar: Earth-Horse. Can 1
+2: Thu. dbo. Wind-Wind; 6 Sep 1804
+  bsgrub bya, rigs can, Bird, zon 2
+  5;6,11 11;40,59 9;59,10 21;40,9 4;14,55
+  Solar: Earth-Sheep. Jing 2
+3: Fri. me bzhi. Earth-Wind; 7 Sep 1804
+  dge ba, khyim skyes, Dog, li 3
+  6;8,54 12;36,30 10;3,24 22;39,54 4;15,53
+  Solar: Iron-Monkey. Gui 3
+4: Sat. nag pa. Earth-Wind; 8 Sep 1804
+  dkar po, vishti, Pig, khon 4
+  0;12,37 13;31,1 10;7,38 23;38,40 4;16,51
+  Solar: Iron-Bird. Liu 4
+5: Sun. sa ri. Fire-Wind; 9 Sep 1804
+  tshangs pa, byis pa, Mouse, dwa 5
+  1;16,33 14;25,19 10;11,52 24;37,12 4;17,50
+  Solar: Water-Dog. Xing 5
+6: Mon. sa ga. Water-Fire; 10 Sep 1804
+  dbang po, til rdung, Ox, khen 6
+  2;20,29 15;19,37 10;16,7 25;35,44 4;18,48
+  Solar: Water-Pig. Zhang 6
+7: Tue. lha mtshams. Fire-Earth; 11 Sep 1804
+  'khon 'dzin, tshong ba, Tiger, kham 7
+  3;24,25 16;13,55 10;20,21 26;34,17 4;19,46
+  Solar: Wood-Mouse. Yi 7
+8: Wed. snron. Water-Earth; 12 Sep 1804
+  rnam sel, vishti, Rabbit, gin 8
+  4;28,21 17;8,13 10;24,35 0;32,49 4;20,44
+  Solar: Wood-Ox. Zhen 8
+9: Thu. snrubs. Wind-Water; 13 Sep 1804
+  mdza' bo, byis pa, Dragon, zin 9
+  5;32,17 18;2,32 10;28,49 1;31,21 4;21,42
+  Solar: Fire-Tiger. Jiao 9
+10: Fri. snrubs. Earth-Water; 14 Sep 1804
+  tshe dang ldan pa, til rdung, Snake, zon 1
+  6;35,26 18;57,37 10;33,3 2;30,41 4;22,41
+  Solar: Fire-Rabbit. Kang 1
+11: Sat. chu stod. Earth-Water; 15 Sep 1804
+  skal bzang, tshong ba, Horse, li 2
+  0;37,34 19;53,43 10;37,18 3;31,1 4;23,39
+  Solar: Earth-Dragon. Di 2
+12: Sun. chu smad. Fire-Earth; 16 Sep 1804
+  dge byed, gdab pa, Sheep, khon 3
+  1;38,43 20;50,48 10;41,32 4;32,20 4;24,37
+  Solar: Earth-Snake. Fang 3
+13: Mon. gro zhin. Water-Earth; 17 Sep 1804
+  shin tu 'grams, rigs can, Monkey, dwa 4
+  2;38,52 21;48,54 10;45,46 5;34,40 4;25,35
+  Solar: Iron-Horse. Xin 4
+14: Tue. mon gre. Fire-Water; 18 Sep 1804
+  las bzang, khyim skyes, Bird, khen 5
+  3;37,13 22;48,47 10;50,0 6;38,47 4;26,34
+  Solar: Iron-Sheep. Wei 5
+15: Wed. mon gru. Water-Earth; 19 Sep 1804
+  'dzin byed, vishti, Dog, kham 6
+  4;34,21 23;49,52 10;54,14 7;44,7 4;27,32
+  Solar: Water-Monkey. Ji 6
+16: Thu. khrums stod. Wind-Fire; 20 Sep 1804
+  zug rngu, byis pa, Pig, gin 7
+  5;30,30 24;51,58 10;58,28 8;50,27 4;28,30
+  Solar: Water-Bird. Dou 7
+17: Fri. khrums smad. Earth-Water; 21 Sep 1804
+  'grams, khyim skyes, Mouse, zin 8
+  6;25,38 25;55,4 11;2,43 9;57,47 4;29,28
+  Solar: Wood-Dog. Niu 8
+18: Sat. nam gru. Earth-Water; 22 Sep 1804
+  brtan pa, vishti, Ox, zon 9
+  0;19,49 26;59,10 11;7,0 11;6,10 5;0,26
+  Solar: Wood-Pig. Nu 9
+19: Sun. bra nye. Fire-Fire; 23 Sep 1804
+  yongs bsnun, byis pa, Tiger, li 1
+  1;13,51 1;3,28 11;11,20 12;14,48 5;1,25
+  Solar: Fire-Mouse. Xu 1
+20: Mon. smin drug. Water-Fire; 24 Sep 1804
+  dga' ba, til rdung, Rabbit, khon 2
+  2;7,53 2;7,46 11;15,40 13;23,26 5;2,23
+  Solar: Fire-Ox. Wei 2
+21: Tue. snar ma. Fire-Earth; 25 Sep 1804
+  rdo rje, tshong ba, Dragon, dwa 3
+  3;1,54 3;12,5 11;20,0 14;32,5 5;3,21
+  Solar: Earth-Tiger. Shi 3
+22. Omitted: Snake khen 4
+23: Wed. mgo. Water-Wind; 26 Sep 1804
+  dngos grub, byis pa, Horse, kham 5
+  4;49,58 4;20,41 11;28,40 15;49,21 5;5,17
+  Solar: Earth-Rabbit. Bi 4
+24: Thu. lag. Wind-Water; 27 Sep 1804
+  phan tshun, til rdung, Sheep, gin 6
+  5;44,47 5;24,12 11;33,0 16;57,12 5;6,16
+  Solar: Iron-Dragon. Kui 5
+25: Fri. nabs so. Earth-Wind; 28 Sep 1804
+  yongs 'joms, tshong ba, Monkey, zin 7
+  6;40,36 6;26,43 11;37,20 18;4,3 5;7,14
+  Solar: Iron-Snake. Lou 6
+26: Sat. rgyal. Earth-Fire; 29 Sep 1804
+  zhi ba, gdab pa, Bird, zon 8
+  0;37,25 7;28,14 11;41,40 19;9,54 5;8,12
+  Solar: Water-Horse. Wei 7
+27: Sun. skag. Fire-Water; 30 Sep 1804
+  grub pa, rigs can, Dog, li 9
+  1;35,14 8;28,45 11;46,0 20;14,45 5;9,10
+  Solar: Water-Sheep. Mao 8
+28: Mon. mchu. Water-Fire; 1 Oct 1804
+  bsgrub bya, khyim skyes, Pig, khon 1
+  2;34,51 9;27,28 11;50,20 21;17,48 5;10,8
+  Solar: Wood-Monkey. Bi 9
+29: Tue. gre. Fire-Fire; 2 Oct 1804
+  dge ba, vishti, Mouse, dwa 2
+  3;35,41 10;24,58 11;54,40 22;19,38 5;11,7
+  Solar: Wood-Bird. Zui 1
+30: Wed. dbo. Water-Wind; 3 Oct 1804
+  dkar po, rkang bzhi, Ox, khen 3
+  4;37,30 11;21,29 11;59,0 23;20,29 5;12,5
+  Solar: Fire-Dog. Can 2
+
+Tibetan Lunar Month: 9 - Fire-male-Mouse
+
+1: Thu. me bzhi. Wind-Wind; 4 Oct 1804
+  tshangs pa, mi sdug pa, Tiger, kham 4
+  5;40,20 12;17,0 12;3,20 24;20,20 5;13,3
+  Solar: Fire-Pig. Jing 3
+2: Fri. nag pa. Earth-Wind; 5 Oct 1804
+  dbang po, byis pa, Rabbit, gin 5
+  6;44,9 13;11,30 12;7,40 25;19,10 5;14,1
+  Solar: Earth-Mouse. Gui 4
+3: Sat. sa ri. Earth-Wind; 6 Oct 1804
+  'khon 'dzin, til rdung, Dragon, zin 6
+  0;48,11 14;5,48 12;12,0 26;17,48 5;15,0
+  Solar: Earth-Ox. Liu 5
+4: Sun. sa ga. Fire-Fire; 7 Oct 1804
+  rnam sel, tshong ba, Snake, zon 7
+  1;52,13 15;0,6 12;16,20 0;16,26 5;15,58
+  Solar: Iron-Tiger. Xing 6
+5: Mon. sa ga. Water-Fire; 8 Oct 1804
+  mdza' bo, vishti, Horse, li 8
+  2;56,14 15;54,25 12;20,40 1;15,5 5;16,56
+  Solar: Iron-Rabbit. Zhang 7
+6: Tue. lha mtshams. Fire-Earth; 9 Oct 1804
+  3;60,0 16;49,0 12;25,0 2;14,0 5;17,54
+  Solar: Water-Dragon. Yi 8
+6: Wed. snron. Water-Earth; 10 Oct 1804
+  skal bzang, til rdung, Sheep, khon 9
+  4;0,16 17;48,43 12;25,0 3;13,43 5;17,54
+  Solar: Water-Snake. Zhen 9
+7: Thu. snrubs. Wind-Water; 11 Oct 1804
+  dge byed, tshong ba, Monkey, dwa 1
+  5;4,18 18;43,1 12;29,20 4;12,21 5;18,52
+  Solar: Wood-Horse. Jiao 1
+8: Fri. chu stod. Earth-Water; 12 Oct 1804
+  shin tu 'grams, gdab pa, Bird, khen 2
+  6;7,32 19;38,7 12;33,40 5;11,47 5;19,51
+  Solar: Wood-Sheep. Kang 2
+9: Sat. chu smad. Earth-Earth; 13 Oct 1804
+  las bzang, rigs can, Dog, kham 3
+  0;9,46 20;34,13 12;38,0 6;12,13 5;20,49
+  Solar: Fire-Monkey. Di 3
+10: Sun. gro zhin. Fire-Earth; 14 Oct 1804
+  'dzin byed, khyim skyes, Pig, gin 4
+  1;11,0 21;31,19 12;42,20 7;13,39 5;21,47
+  Solar: Fire-Bird. Fang 4
+11: Mon. mon gre. Water-Water; 15 Oct 1804
+  zug rngu, vishti, Mouse, zin 5
+  2;11,14 22;29,25 12;46,40 8;16,5 5;22,45
+  Solar: Earth-Dog. Xin 5
+12: Tue. mon gru. Fire-Earth; 16 Oct 1804
+  'grams, byis pa, Ox, zon 6
+  3;9,40 23;29,19 12;51,0 9;20,19 5;23,43
+  Solar: Earth-Pig. Wei 6
+13: Wed. khrums stod. Water-Fire; 17 Oct 1804
+  'phel, til rdung, Tiger, li 7
+  4;6,54 24;30,25 12;55,20 10;25,45 5;24,42
+  Solar: Iron-Mouse. Ji 7
+14: Thu. khrums smad. Wind-Water; 18 Oct 1804
+  brtan pa, tshong ba, Rabbit, khon 8
+  5;3,8 25;32,31 12;59,40 11;32,11 5;25,40
+  Solar: Iron-Ox. Dou 8
+15. Omitted: Dragon dwa 9
+16: Fri. nam gru. Earth-Water; 19 Oct 1804
+  yongs bsnun, byis pa, Snake, khen 1
+  6;52,36 26;39,43 13;8,20 12;48,3 5;27,36
+  Solar: Water-Tiger. Niu 9
+17: Sat. tha skar. Earth-Wind; 20 Oct 1804
+  dga' ba, til rdung, Horse, kham 2
+  0;46,37 0;44,2 13;12,40 13;56,42 5;28,34
+  Solar: Water-Rabbit. Nu 1
+18: Sun. bra nye. Fire-Fire; 21 Oct 1804
+  dngos grub, tshong ba, Sheep, gin 3
+  1;40,39 1;48,20 13;17,0 15;5,20 5;29,33
+  Solar: Wood-Dragon. Xu 2
+19: Mon. smin drug. Water-Fire; 22 Oct 1804
+  phan tshun, gdab pa, Monkey, zin 4
+  2;34,43 2;52,39 13;21,22 16;14,1 6;0,31
+  Solar: Wood-Snake. Wei 3
+20: Tue. snar ma. Fire-Earth; 23 Oct 1804
+  mchog can, rigs can, Bird, zon 5
+  3;28,48 3;56,57 13;25,45 17;22,43 6;1,29
+  Solar: Fire-Horse. Shi 4
+21: Wed. lag. Water-Water; 24 Oct 1804
+  yongs 'joms, tshong ba, Dog, li 6
+  4;22,54 5;1,15 13;30,9 18;31,25 6;2,27
+  Solar: Fire-Sheep. Bi 5
+22: Thu. nabs so. Wind-Wind; 25 Oct 1804
+  zhi ba, gdab pa, Pig, khon 7
+  5;17,47 6;4,46 13;34,33 19;39,19 6;3,25
+  Solar: Earth-Monkey. Kui 6
+  Descent of the Buddha from the realm of the gods.
+23: Fri. rgyal. Earth-Fire; 26 Oct 1804
+  grub pa, rigs can, Mouse, dwa 8
+  6;13,41 7;7,16 13;38,57 20;46,14 6;4,24
+  Solar: Earth-Bird. Lou 7
+24: Sat. skag. Earth-Water; 27 Oct 1804
+  bsgrub bya, khyim skyes, Ox, khen 9
+  0;10,34 8;8,46 13;43,21 21;52,8 6;5,22
+  Solar: Iron-Dog. Wei 8
+25: Sun. mchu. Fire-Fire; 28 Oct 1804
+  dge ba, vishti, Tiger, kham 1
+  1;8,28 9;9,17 13;47,45 22;57,2 6;6,20
+  Solar: Iron-Pig. Mao 9
+26: Mon. gre. Water-Fire; 29 Oct 1804
+  tshangs pa, byis pa, Rabbit, gin 2
+  2;8,9 10;7,59 13;52,9 24;0,8 6;7,18
+  Solar: Water-Mouse. Bi 1
+27: Tue. dbo. Fire-Wind; 30 Oct 1804
+  dbang po, til rdung, Dragon, zin 3
+  3;9,3 11;5,29 13;56,33 25;2,2 6;8,17
+  Solar: Water-Ox. Zui 2
+28: Wed. me bzhi. Water-Wind; 31 Oct 1804
+  'khon 'dzin, tshong ba, Snake, zon 4
+  4;10,57 12;1,59 14;0,57 26;2,56 6;9,15
+  Solar: Wood-Tiger. Can 3
+29: Thu. me bzhi. Wind-Wind; 1 Nov 1804
+  rnam sel, bkra shis, Horse, li 5
+  5;13,51 12;57,29 14;5,20 0;2,50 6;10,13
+  Solar: Wood-Rabbit. Jing 4
+30: Fri. nag pa. Earth-Wind; 2 Nov 1804
+  mdza' bo, klu, Sheep, khon 6
+  6;17,44 13;51,59 14;9,44 1;1,44 6;11,11
+  Solar: Fire-Dragon. Gui 5
+
+Tibetan Lunar Month: 10 - Fire-female-Ox
+
+1: Sat. sa ri. Earth-Wind; 3 Nov 1804
+  tshe dang ldan pa, gdab pa, Monkey, dwa 7
+  0;21,50 14;46,18 14;14,8 2;0,26 6;12,9
+  Solar: Fire-Snake. Liu 6
+2: Sun. sa ga. Fire-Fire; 4 Nov 1804
+  tshe dang ldan pa, rigs can, Bird, khen 8
+  1;25,56 15;40,36 14;18,32 2;59,8 6;13,8
+  Solar: Earth-Horse. Xing 7
+3: Mon. lha mtshams. Water-Earth; 5 Nov 1804
+  skal bzang, til rdung, Dog, kham 9
+  2;30,1 16;34,54 14;22,56 3;57,50 6;14,6
+  Solar: Earth-Sheep. Zhang 8
+4: Tue. snron. Fire-Earth; 6 Nov 1804
+  dge byed, tshong ba, Pig, gin 1
+  3;34,7 17;29,12 14;27,20 4;56,32 6;15,4
+  Solar: Iron-Monkey. Yi 9
+5: Wed. snrubs. Water-Water; 7 Nov 1804
+  shin tu 'grams, gdab pa, Mouse, zin 2
+  4;38,13 18;23,30 14;31,44 5;55,15 6;16,2
+  Solar: Iron-Bird. Zhen 1
+6: Thu. chu stod. Wind-Water; 8 Nov 1804
+  las bzang, rigs can, Ox, zon 3
+  5;41,30 19;18,37 14;36,8 6;54,45 6;17,0
+  Solar: Water-Dog. Jiao 2
+7: Fri. chu smad. Earth-Earth; 9 Nov 1804
+  'dzin byed, khyim skyes, Tiger, li 4
+  6;43,48 20;14,43 14;40,31 7;55,15 6;17,59
+  Solar: Water-Pig. Kang 3
+8: Sat. gro zhin. Earth-Earth; 10 Nov 1804
+  zug rngu, vishti, Rabbit, khon 5
+  0;45,5 21;11,50 14;44,55 8;56,45 6;18,57
+  Solar: Wood-Mouse. Di 4
+9: Sun. mon gre. Fire-Water; 11 Nov 1804
+  'grams, byis pa, Dragon, dwa 6
+  1;45,23 22;9,56 14;49,19 9;59,16 6;19,55
+  Solar: Wood-Ox. Fang 5
+10: Mon. mon gru. Water-Earth; 12 Nov 1804
+  brtan pa, til rdung, Snake, khen 7
+  2;43,52 23;9,51 14;53,43 11;3,34 6;20,53
+  Solar: Fire-Tiger. Xin 6
+11: Tue. khrums stod. Fire-Fire; 13 Nov 1804
+  yongs bsnun, tshong ba, Horse, kham 8
+  3;41,9 24;10,57 14;58,7 12;9,5 6;21,51
+  Solar: Fire-Rabbit. Wei 7
+12: Wed. khrums smad. Water-Water; 14 Nov 1804
+  dga' ba, gdab pa, Sheep, gin 9
+  4;37,26 25;13,4 15;2,31 13;15,35 6;22,50
+  Solar: Earth-Dragon. Ji 8
+13: Thu. nam gru. Wind-Water; 15 Nov 1804
+  rdo rje, rigs can, Monkey, zin 1
+  5;32,44 26;16,11 15;6,55 14;23,6 6;23,48
+  Solar: Earth-Snake. Dou 9
+14: Fri. tha skar. Earth-Wind; 16 Nov 1804
+  dngos grub, khyim skyes, Bird, zon 2
+  6;27,1 0;20,17 15;11,19 15;31,36 6;24,46
+  Solar: Iron-Horse. Niu 1
+15: Sat. bra nye. Earth-Fire; 17 Nov 1804
+  phan tshun, gdab pa, Dog, li 3
+  0;21,6 1;24,36 15;15,42 16;40,19 6;25,44
+  Solar: Iron-Sheep. Nu 2
+16: Sun. smin drug. Fire-Fire; 18 Nov 1804
+  mchog can, rigs can, Pig, khon 4
+  1;15,12 2;28,54 15;20,6 17;49,1 6;26,42
+  Solar: Water-Monkey. Xu 3
+17: Mon. snar ma. Water-Earth; 19 Nov 1804
+  yongs 'joms, khyim skyes, Mouse, dwa 5
+  2;9,17 3;33,12 15;24,30 18;57,43 6;27,41
+  Solar: Water-Bird. Wei 4
+18: Tue. mgo. Fire-Wind; 20 Nov 1804
+  grub pa, vishti, Ox, khen 6
+  3;3,23 4;37,31 15;28,54 20;6,25 6;28,39
+  Solar: Wood-Dog. Shi 5
+19. Omitted: Tiger kham 7
+20: Wed. lag. Water-Water; 21 Nov 1804
+  bsgrub bya, rigs can, Rabbit, gin 8
+  4;52,26 5;45,19 15;37,45 21;23,5 7;0,35
+  Solar: Wood-Pig. Bi 6
+21: Thu. nabs so. Wind-Wind; 22 Nov 1804
+  dge ba, khyim skyes, Dragon, zin 9
+  5;48,26 6;47,49 15;42,15 22;30,4 7;1,34
+  Solar: Fire-Mouse. Kui 7
+22: Fri. rgyal. Earth-Fire; 23 Nov 1804
+  dkar po, vishti, Snake, zon 1
+  6;45,26 7;49,19 15;46,45 23;36,4 7;2,32
+  Solar: Fire-Ox. Lou 8
+23: Sat. skag. Earth-Water; 24 Nov 1804
+  tshangs pa, byis pa, Horse, li 2
+  0;43,26 8;49,49 15;51,15 24;41,4 7;3,30
+  Solar: Earth-Tiger. Wei 9
+24: Sun. mchu. Fire-Fire; 25 Nov 1804
+  dbang po, til rdung, Sheep, khon 3
+  1;43,14 9;48,30 15;55,44 25;44,15 7;4,28
+  Solar: Earth-Rabbit. Mao 1
+25: Mon. gre. Water-Fire; 26 Nov 1804
+  'khon 'dzin, tshong ba, Monkey, dwa 4
+  2;44,14 10;46,0 16;0,14 26;46,14 7;5,26
+  Solar: Iron-Dragon. Bi 2
+26: Tue. dbo. Fire-Wind; 27 Nov 1804
+  rnam sel, gdab pa, Bird, khen 5
+  3;46,14 11;42,29 16;4,44 0;47,14 7;6,25
+  Solar: Iron-Snake. Zui 3
+27: Wed. me bzhi. Water-Wind; 28 Nov 1804
+  mdza' bo, rigs can, Dog, kham 6
+  4;49,14 12;37,59 16;9,13 1;47,13 7;7,23
+  Solar: Water-Horse. Can 4
+28: Thu. nag pa. Wind-Wind; 29 Nov 1804
+  tshe dang ldan pa, khyim skyes, Pig, gin 7
+  5;53,14 13;32,29 16;13,43 2;46,12 7;8,21
+  Solar: Water-Sheep. Jing 5
+29: Fri. sa ri. Earth-Wind; 30 Nov 1804
+  skal bzang, tshong ba, Mouse, zin 8
+  6;57,25 14;26,47 16;18,13 3;45,0 7;9,19
+  Solar: Wood-Monkey. Gui 6
+30: Sat. sa ga. Earth-Fire; 1 Dec 1804
+  0;60,0 15;22,42 16;22,42 4;45,25 7;10,17
+  Solar: Wood-Bird. Liu 7
+30: Sun. lha mtshams. Fire-Earth; 2 Dec 1804
+  shin tu 'grams, klu, Ox, zon 9
+  1;1,37 16;21,5 16;22,42 5;43,48 7;10,17
+  Solar: Fire-Dog. Xing 8
+
+Tibetan Lunar Month: 11 - Fire-male-Tiger
+
+1: Mon. snron. Water-Earth; 3 Dec 1804
+  las bzang, gdab pa, Tiger, li 1
+  2;5,48 17;15,23 16;27,12 6;42,36 7;11,16
+  Solar: Fire-Pig. Zhang 9
+2: Tue. snrubs. Fire-Water; 4 Dec 1804
+  'dzin byed, rigs can, Rabbit, khon 2
+  3;10,0 18;9,41 16;31,42 7;41,24 7;12,14
+  Solar: Earth-Mouse. Yi 1
+3: Wed. chu stod. Water-Water; 5 Dec 1804
+  zug rngu, khyim skyes, Dragon, dwa 3
+  4;14,11 19;4,0 16;36,12 8;40,12 7;13,12
+  Solar: Earth-Ox. Zhen 2
+4: Thu. chu stod. Wind-Water; 6 Dec 1804
+  'grams, vishti, Snake, khen 4
+  5;17,34 19;59,7 16;40,41 9;39,48 7;14,10
+  Solar: Iron-Tiger. Jiao 3
+5: Fri. chu smad. Earth-Earth; 7 Dec 1804
+  'phel, byis pa, Horse, kham 5
+  6;19,57 20;55,13 16;45,11 10;40,25 7;15,8
+  Solar: Iron-Rabbit. Kang 4
+6: Sat. gro zhin. Earth-Earth; 8 Dec 1804
+  brtan pa, til rdung, Sheep, gin 6
+  0;21,20 21;52,20 16;49,41 11;42,1 7;16,7
+  Solar: Water-Dragon. Di 5
+7: Sun. mon gre. Fire-Water; 9 Dec 1804
+  yongs bsnun, tshong ba, Monkey, zin 7
+  1;21,43 22;50,27 16;54,10 12;44,38 7;17,5
+  Solar: Water-Snake. Fang 6
+8: Mon. mon gru. Water-Earth; 10 Dec 1804
+  dga' ba, gdab pa, Bird, zon 8
+  2;20,17 23;50,23 16;58,40 13;49,3 7;18,3
+  Solar: Wood-Horse. Xin 7
+9: Tue. khrums stod. Fire-Fire; 11 Dec 1804
+  rdo rje, rigs can, Dog, li 9
+  3;17,39 24;51,30 17;3,10 14;54,40 7;19,1
+  Solar: Wood-Sheep. Wei 8
+10: Wed. khrums smad. Water-Water; 12 Dec 1804
+  phan tshun, khyim skyes, Pig, khon 1
+  4;14,2 25;53,37 17;7,40 16;1,17 7;20,0
+  Solar: Fire-Monkey. Ji 9
+11: Thu. nam gru. Wind-Water; 13 Dec 1804
+  mchog can, vishti, Mouse, dwa 2
+  5;9,25 26;56,44 17;12,9 17;8,54 7;20,58
+  Solar: Fire-Bird. Dou 1
+12: Fri. bra nye. Earth-Fire; 14 Dec 1804
+  yongs 'joms, byis pa, Ox, khen 3
+  6;3,47 1;0,51 17;16,39 18;17,30 7;21,56
+  Solar: Earth-Dog. Niu 2
+13. Omitted: Tiger kham 4
+14: Sat. smin drug. Earth-Fire; 15 Dec 1804
+  zhi ba, khyim skyes, Rabbit, gin 5
+  0;52,10 2;9,28 17;25,38 19;35,7 7;23,52
+  Solar: Earth-Pig. Nu 3
+15: Sun. snar ma. Fire-Earth; 16 Dec 1804
+  grub pa, vishti, Dragon, zin 6
+  1;46,21 3;13,46 17;30,8 20;43,55 7;24,51
+  Solar: Iron-Mouse. Xu 4
+16: Mon. mgo. Water-Wind; 17 Dec 1804
+  bsgrub bya, byis pa, Snake, zon 7
+  2;40,33 4;18,4 17;34,38 21;52,43 7;25,49
+  Solar: Iron-Ox. Wei 5
+17: Tue. lag. Fire-Water; 18 Dec 1804
+  dkar po, til rdung, Horse, li 8
+  3;34,44 5;22,23 17;39,7 23;1,31 7;26,47
+  Solar: Water-Tiger. Shi 6
+18: Wed. nabs so. Water-Wind; 19 Dec 1804
+  tshangs pa, tshong ba, Sheep, khon 9
+  4;29,44 6;25,52 17;43,37 24;9,30 7;27,45
+  Solar: Water-Rabbit. Bi 7
+19: Thu. rgyal. Wind-Fire; 20 Dec 1804
+  dbang po, byis pa, Monkey, dwa 1
+  5;25,45 7;28,22 17;48,7 25;16,29 7;28,43
+  Solar: Wood-Dragon. Kui 8
+20: Fri. skag. Earth-Water; 21 Dec 1804
+  'khon 'dzin, til rdung, Bird, khen 2
+  6;22,45 8;29,51 17;52,37 26;22,28 7;29,42
+  Solar: Wood-Snake. Lou 9
+21: Sat. mchu. Earth-Fire; 22 Dec 1804
+  rnam sel, tshong ba, Dog, kham 3
+  0;20,48 9;30,21 17;57,9 0;27,30 8;0,40
+  Solar: Fire-Horse. Wei 1
+22: Sun. gre. Fire-Fire; 23 Dec 1804
+  mdza' bo, gdab pa, Pig, gin 4
+  1;20,41 10;29,1 18;1,42 1;30,44 8;1,38
+  Solar: Fire-Sheep. Mao 2
+23: Mon. dbo. Water-Wind; 24 Dec 1804
+  tshe dang ldan pa, rigs can, Mouse, zin 5
+  2;21,45 11;26,30 18;6,16 2;32,47 8;2,36
+  Solar: Earth-Monkey. Bi 3
+24: Tue. me bzhi. Fire-Wind; 25 Dec 1804
+  skal bzang, khyim skyes, Ox, zon 6
+  3;23,50 12;23,0 18;10,50 3;33,50 8;3,34
+  Solar: Earth-Bird. Zui 4
+25: Wed. nag pa. Water-Wind; 26 Dec 1804
+  dge byed, vishti, Tiger, li 7
+  4;26,54 13;18,29 18;15,23 4;33,53 8;4,33
+  Solar: Iron-Dog. Can 5
+26: Thu. sa ri. Wind-Wind; 27 Dec 1804
+  shin tu 'grams, gdab pa, Rabbit, khon 8
+  5;30,58 14;12,58 18;19,57 5;32,55 8;5,31
+  Solar: Iron-Pig. Jing 6
+27: Fri. sa ga. Earth-Fire; 28 Dec 1804
+  las bzang, rigs can, Dragon, dwa 9
+  6;35,14 15;7,16 18;24,30 6;31,47 8;6,29
+  Solar: Water-Mouse. Gui 7
+28: Sat. lha mtshams. Earth-Earth; 29 Dec 1804
+  'dzin byed, khyim skyes, Snake, khen 1
+  0;39,29 16;1,34 18;29,4 7;30,39 8;7,27
+  Solar: Water-Ox. Liu 8
+29: Sun. lha mtshams. Fire-Earth; 30 Dec 1804
+  zug rngu, vishti, Horse, kham 2
+  1;43,44 16;55,53 18;33,38 8;29,31 8;8,25
+  Solar: Wood-Tiger. Xing 9
+30: Mon. snron. Water-Earth; 31 Dec 1804
+  'grams, rkang bzhi, Sheep, gin 3
+  2;48,0 17;50,11 18;38,11 9;28,22 8;9,24
+  Solar: Wood-Rabbit. Zhang 1
+
+Tibetan Lunar Month: 12 - Fire-female-Rabbit
+
+1: Tue. snrubs. Fire-Water; 1 Jan 1805
+  'phel, mi sdug pa, Monkey, zin 4
+  3;52,15 18;44,29 18;42,45 10;27,14 8;10,22
+  Solar: Fire-Dragon. Yi 2
+2: Wed. chu stod. Water-Water; 2 Jan 1805
+  brtan pa, gdab pa, Bird, zon 5
+  4;55,42 19;39,36 18;47,18 11;26,55 8;11,20
+  Solar: Fire-Snake. Zhen 3
+3: Thu. chu smad. Wind-Earth; 3 Jan 1805
+  yongs bsnun, rigs can, Dog, li 6
+  5;58,8 20;35,44 18;51,52 12;27,36 8;12,18
+  Solar: Earth-Horse. Jiao 4
+4: Fri. gro zhin. Earth-Earth; 4 Jan 1805
+  dga' ba, khyim skyes, Pig, khon 7
+  6;59,34 21;32,51 18;56,25 13;29,17 8;13,17
+  Solar: Earth-Sheep. Kang 5
+5: Sat. mon gre. Earth-Water; 5 Jan 1805
+  0;60,0 22;30,59 19;0,59 14;31,59 8;14,15
+  Solar: Iron-Monkey. Di 6
+5: Sun. mon gru. Fire-Earth; 6 Jan 1805
+  dngos grub, byis pa, Mouse, dwa 8
+  1;0,0 23;30,58 19;0,59 15;31,58 8;14,15
+  Solar: Iron-Bird. Fang 7
+6. Omitted: Ox khen 9
+7: Mon. khrums stod. Water-Fire; 7 Jan 1805
+  phan tshun, til rdung, Tiger, kham 1
+  2;56,3 24;32,2 19;10,6 16;42,9 8;16,11
+  Solar: Water-Dog. Xin 8
+8: Tue. khrums smad. Fire-Water; 8 Jan 1805
+  mchog can, vishti, Rabbit, gin 2
+  3;52,30 25;34,10 19;14,40 17;48,50 8;17,9
+  Solar: Water-Pig. Wei 9
+9: Wed. nam gru. Water-Water; 9 Jan 1805
+  yongs 'joms, byis pa, Dragon, zin 3
+  4;47,56 26;37,17 19;19,13 18;56,31 8;18,8
+  Solar: Wood-Mouse. Ji 1
+10: Thu. tha skar. Wind-Wind; 10 Jan 1805
+  grub pa, til rdung, Snake, zon 4
+  5;42,22 0;41,25 19;23,47 20;5,12 8;19,6
+  Solar: Wood-Ox. Dou 2
+11: Fri. bra nye. Earth-Fire; 11 Jan 1805
+  bsgrub bya, tshong ba, Horse, li 5
+  6;36,37 1;45,43 19;28,21 21;14,4 8;20,4
+  Solar: Fire-Tiger. Niu 3
+12: Sat. smin drug. Earth-Fire; 12 Jan 1805
+  dge ba, gdab pa, Sheep, khon 6
+  0;30,52 2;50,1 19;32,54 22;22,56 8;21,2
+  Solar: Fire-Rabbit. Nu 4
+13: Sun. snar ma. Fire-Earth; 13 Jan 1805
+  dkar po, til rdung, Monkey, dwa 7
+  1;25,7 3;54,20 19;37,28 23;31,48 8;22,0
+  Solar: Earth-Dragon. Xu 5
+14: Mon. mgo. Water-Wind; 14 Jan 1805
+  tshangs pa, tshong ba, Bird, khen 8
+  2;19,23 4;58,38 19;42,1 24;40,40 8;22,59
+  Solar: Earth-Snake. Wei 6
+15: Tue. nabs so. Fire-Wind; 15 Jan 1805
+  dbang po, gdab pa, Dog, kham 9
+  3;13,38 6;2,57 19;46,35 25;49,32 8;23,57
+  Solar: Iron-Horse. Shi 7
+16: Wed. rgyal. Water-Fire; 16 Jan 1805
+  'khon 'dzin, rigs can, Pig, gin 1
+  4;8,42 7;6,26 19;51,8 26;57,35 8;24,55
+  Solar: Iron-Sheep. Bi 8
+17: Thu. skag. Wind-Water; 17 Jan 1805
+  mdza' bo, khyim skyes, Mouse, zin 2
+  5;4,47 8;8,55 19;55,42 1;4,37 8;25,53
+  Solar: Water-Monkey. Kui 9
+18: Fri. mchu. Earth-Fire; 18 Jan 1805
+  tshe dang ldan pa, vishti, Ox, zon 3
+  6;1,52 9;10,24 20;0,16 2;10,40 8;26,51
+  Solar: Water-Bird. Lou 1
+19. Omitted: Tiger li 4
+20: Sat. gre. Earth-Fire; 19 Jan 1805
+  skal bzang, byis pa, Rabbit, khon 5
+  0;59,50 10;9,32 20;9,23 3;18,55 8;28,48
+  Solar: Wood-Dog. Wei 2
+21: Sun. dbo. Fire-Wind; 20 Jan 1805
+  1;60,0 11;7,56 20;13,56 4;21,53 8;29,46
+  Solar: Wood-Pig. Mao 3
+21: Mon. me bzhi. Water-Wind; 21 Jan 1805
+  shin tu 'grams, tshong ba, Dragon, dwa 6
+  2;0,55 12;7,1 20;13,56 5;20,58 8;29,46
+  Solar: Fire-Mouse. Bi 4
+22: Tue. nag pa. Fire-Wind; 22 Jan 1805
+  las bzang, gdab pa, Snake, khen 7
+  3;3,0 13;3,30 20;18,30 6;22,0 9;0,44
+  Solar: Fire-Ox. Zui 5
+23: Wed. nag pa. Water-Wind; 23 Jan 1805
+  'dzin byed, rigs can, Horse, kham 8
+  4;6,4 13;58,59 20;23,4 7;22,3 9;1,42
+  Solar: Earth-Tiger. Can 6
+24: Thu. sa ri. Wind-Wind; 24 Jan 1805
+  zug rngu, khyim skyes, Sheep, gin 9
+  5;10,9 14;53,27 20;27,37 8;21,5 9;2,41
+  Solar: Earth-Rabbit. Jing 7
+25: Fri. sa ga. Earth-Fire; 25 Jan 1805
+  'grams, vishti, Monkey, zin 1
+  6;14,25 15;47,46 20;32,11 9;19,57 9;3,39
+  Solar: Iron-Dragon. Gui 8
+26: Sat. lha mtshams. Earth-Earth; 26 Jan 1805
+  'phel, byis pa, Bird, zon 2
+  0;18,40 16;42,4 20;36,44 10;18,49 9;4,37
+  Solar: Iron-Snake. Liu 9
+27: Sun. snron. Fire-Earth; 27 Jan 1805
+  brtan pa, til rdung, Dog, li 3
+  1;22,55 17;36,22 20;41,18 11;17,40 9;5,35
+  Solar: Water-Horse. Xing 1
+28: Mon. snrubs. Water-Water; 28 Jan 1805
+  yongs bsnun, khyim skyes, Pig, khon 4
+  2;27,11 18;30,40 20;45,51 12;16,32 9;6,34
+  Solar: Water-Sheep. Zhang 2
+29: Tue. chu stod. Fire-Water; 29 Jan 1805
+  dga' ba, vishti, Mouse, dwa 5
+  3;31,26 19;24,58 20;50,25 13;15,24 9;7,32
+  Solar: Wood-Monkey. Yi 3
+30: Wed. chu smad. Water-Earth; 30 Jan 1805
+  rdo rje, rkang bzhi, Ox, khen 6
+  4;34,52 20;20,6 20;54,59 14;15,5 9;8,30
+  Solar: Wood-Bird. Zhen 4
