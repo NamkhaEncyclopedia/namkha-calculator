@@ -1,4 +1,13 @@
-""" """
+"""
+Partial implementation of Tibetan Phugpa calendar based on
+Svante Janson, "Tibetan Calendar Mathematics" adapted from
+Perl library by Roger Espel
+(see https://digitaltibetan.github.io/DigitalTibetan/docs/digital_tibetan_tools_calendar.html)
+and this Python rewrite: https://github.com/forest-jiang/phugpa-cal
+It is tested on Western year range 1800-2598 against the output of C program made by E. Henning,
+the author of "Kalachakra and the Tibetan Calendar" book, which Janson's paper is based upon
+(see http://kalacakra.org/calendar/os_tib.htm).
+"""
 
 import datetime as dt
 import math
@@ -8,7 +17,7 @@ from .astrology import Animal, Element
 from .astronomy import HIGH_LATITUDE_DAY_START_HOUR, LATITUDE_LIMIT, Location
 from .skyfield_calculations import civil_twilight_boundaries, jd_to_datetime
 
-# calendrical constants: month calculations
+# Calendrical constants: month calculations
 S1 = 65 / 804
 Y0 = 806
 S0 = 743 / 804
@@ -17,7 +26,7 @@ P0 = 139 / 180
 ALPHA = 1 + 827 / 1005
 BETA = 123
 
-# calendrical constants: day calculations
+# Calendrical constants: day calculations
 M1 = 167025 / 5656
 M2 = M1 / 30
 M0 = 2015501 + 4783 / 5656
@@ -27,7 +36,7 @@ A2 = 1 / 28
 # A2 = 1/28 + 1/105840 # not used see Janson, p. 17, bottom.
 A0 = 475 / 3528
 
-# fixed tables
+# Fixed tables
 MOON_TAB = (0, 5, 10, 15, 19, 22, 24, 25)
 SUN_TAB = (0, 6, 10, 11)
 
@@ -206,6 +215,13 @@ def has_leap_month(year_number: int, month_number: int) -> bool:
 
 
 def astrological_losar(year_number: int, pytz_tz, location: Location) -> dt.datetime:
+    """
+    Calculates the Western datetime for astrological Losar (Tibetan New Year)
+    which starts on the first day of the month of Tiger
+    for a given Tibetan year number (e.g. 2137) at a given location and timezone.
+    Considers the start of civil twilight at the location to be the start of the day.
+    Above LATITUDE_LIMIT uses a fixed start time instead.
+    """
     prev_year = year_number - 1
     is_leap = has_leap_month(prev_year, 11)
     month_count = to_month_count(prev_year, 11, is_leap)
@@ -255,7 +271,7 @@ def year_with_animal_and_element_in_metreng(
 
 
 def nearest_previous_year_with_animal(year_number: int, animal: Animal) -> int:
-    """Return largest Tibetan year number strictly less than year_number with given Animal."""
+    """Return largest Tibetan year number less than year_number with given Animal."""
     target_idx = ANIMAL_TABLE.index(animal)
     current_idx = (year_number + 1) % 12
     offset = (current_idx - target_idx) % 12

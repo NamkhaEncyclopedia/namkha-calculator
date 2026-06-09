@@ -1,5 +1,5 @@
 """
-Shared Birth Aspect calculation tables.
+Birth Aspect calculation tables shared between multiple Namkha types.
 """
 
 from ..astrology import Animal, Element

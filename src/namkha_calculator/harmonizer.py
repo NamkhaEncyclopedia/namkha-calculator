@@ -1,5 +1,5 @@
 """
-Module for the final stage of Namkha calculation: harmonization of aspects
+Final stage of calculation - harmonization of aspects
 """
 
 from dataclasses import dataclass

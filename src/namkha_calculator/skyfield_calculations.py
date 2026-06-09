@@ -1,5 +1,5 @@
 """
-Calculations of twilights and julian dates for 'calendar' module using Skyfield
+Calculations of twilights and julian date conversion for `calendar` module
 """
 
 import datetime as dt

@@ -34,7 +34,7 @@ class TestCnnrFortuneMewa(unittest.TestCase):
     def test_boar_year(self):
         self.assertEqual(fortune_mewa_cnnr(_make_attrs(Animal.BOAR, 2146)), 5)
 
-    # Only {2, 5, 8} (Water/Earth/Metal) are reachable — CNNR_POINT_OF_FORTUNE targets
+    # Only {2, 5, 8} (Water/Earth/Metal) are reachable – CNNR_POINT_OF_FORTUNE targets
     # only 4 animals whose tib-year numbers share fixed residues mod 9.
     @given(
         st.sampled_from(list(Animal)),

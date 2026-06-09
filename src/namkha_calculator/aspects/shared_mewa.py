@@ -1,5 +1,5 @@
 """
-Shared Mewa Aspect calculation tables.
+Mewa Aspect calculation tables and classes shared between multiple Namkha types.
 """
 
 from typing import NamedTuple

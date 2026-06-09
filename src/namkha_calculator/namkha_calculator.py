@@ -1,7 +1,14 @@
-"""Top-level Namkha calculation module.
+"""Tibetan Namkha thread-cross calculation.
 
-`calculate_namkha` dispatches by `(NamkhaType, CalculationMethod)`. Only YEAR
-leverages `method` — non-YEAR types accept only CLASSIC.
+Main entry point::
+
+    result = calculate_namkha(NamkhaType.YEAR, subject, CalculationMethod.CLASSIC)
+
+``result.harmonized_aspects`` – sequence of harmonized :class:`HarmonizedAspect` objects
+describing thread colors. ``result.mewa_numbers`` – mewa number for each aspect.
+
+Only ``NamkhaType.YEAR`` supports multiple :class:`CalculationMethod` values;
+all other types accept only ``CLASSIC`` and raise ``ValueError`` otherwise.
 """
 
 from dataclasses import dataclass
