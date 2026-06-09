@@ -14,6 +14,8 @@ import math
 from dataclasses import dataclass
 from typing import Protocol
 
+import pytz
+
 from .astrology import Animal, Element
 from .astronomy import HIGH_LATITUDE_DAY_START_HOUR, LATITUDE_LIMIT, Location
 from .skyfield_calculations import civil_twilight_boundaries, jd_to_datetime
@@ -81,11 +83,11 @@ class TibetanHourAttributes(_CalendarEntityAttributes):
     end: dt.datetime
 
 
-def mean_date(day, month_count):
+def mean_date(day: int, month_count: int) -> float:
     return month_count * M1 + day * M2 + M0
 
 
-def moon_tab_int(i):
+def moon_tab_int(i: int) -> int:
     i = i % 28
     if i <= 7:
         return MOON_TAB[i]
@@ -96,21 +98,21 @@ def moon_tab_int(i):
     return -MOON_TAB[28 - i]
 
 
-def moon_tab(i):
+def moon_tab(i: float) -> float:
     u = moon_tab_int(int(math.ceil(i)))
     d = moon_tab_int(int(math.floor(i)))
     return d + (i - math.floor(i)) * (u - d)
 
 
-def moon_anomaly(day, month_count):
+def moon_anomaly(day: int, month_count: int) -> float:
     return month_count * A1 + day * A2 + A0
 
 
-def moon_equation(day, month_count):
+def moon_equation(day: int, month_count: int) -> float:
     return moon_tab(28 * moon_anomaly(day, month_count))
 
 
-def sun_tab_int(i):
+def sun_tab_int(i: int) -> int:
     i = i % 12
     if i <= 3:
         return SUN_TAB[i]
@@ -121,18 +123,18 @@ def sun_tab_int(i):
     return -SUN_TAB[12 - i]
 
 
-def sun_tab(i):
+def sun_tab(i: float) -> float:
     """Sun tab, with linear interpolation."""
     u = sun_tab_int(int(math.ceil(i)))
     d = sun_tab_int(int(math.floor(i)))
     return d + (i - math.floor(i)) * (u - d)
 
 
-def mean_sun(day, month_count):
+def mean_sun(day: int, month_count: int) -> float:
     return month_count * S1 + day * S2 + S0
 
 
-def sun_equation(day, month_count):
+def sun_equation(day: int, month_count: int) -> float:
     return sun_tab(12.0 * (mean_sun(day, month_count) - 1.0 / 4))
 
 
@@ -192,11 +194,13 @@ class LosarFn(Protocol):
     """Calculates Losar (Tibetan New Year) datetime for a given Tibetan year."""
 
     def __call__(
-        self, year_number: int, pytz_tz, location: Location
+        self, year_number: int, pytz_tz: pytz.BaseTzInfo, location: Location
     ) -> dt.datetime: ...
 
 
-def official_losar(year_number: int, pytz_tz, location: Location) -> dt.datetime:
+def official_losar(
+    year_number: int, pytz_tz: pytz.BaseTzInfo, location: Location
+) -> dt.datetime:
     """
     Calculates the Western datetime for official Losar (Tibetan New Year)
     which starts on the first day of the month of Dragon
@@ -224,7 +228,9 @@ def has_leap_month(year_number: int, month_number: int) -> bool:
     return y == year_number and m == month_number and is_leap
 
 
-def astrological_losar(year_number: int, pytz_tz, location: Location) -> dt.datetime:
+def astrological_losar(
+    year_number: int, pytz_tz: pytz.BaseTzInfo, location: Location
+) -> dt.datetime:
     """
     Calculates the Western datetime for astrological Losar (Tibetan New Year)
     which starts on the first day of the month of Tiger

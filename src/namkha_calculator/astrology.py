@@ -46,7 +46,7 @@ class Subject:
     birth_location: Location
     name: str | None
 
-    def __post_init__(self):
+    def __post_init__(self) -> None:
         if self.birth_datetime.tzinfo is not None:
             raise TypeError("birth_datetime must be naive (no tzinfo)")
         if not isinstance(self.birth_timezone, pytz.BaseTzInfo):
