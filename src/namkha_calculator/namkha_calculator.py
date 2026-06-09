@@ -138,15 +138,15 @@ def _build_year_result(
 
 
 def _calc_month(subject: Subject) -> _CalcResult:
-    raise NotImplementedError
+    raise NotImplementedError("MONTH Namkha calculation is not implemented yet")
 
 
 def _calc_day(subject: Subject) -> _CalcResult:
-    raise NotImplementedError
+    raise NotImplementedError("DAY Namkha calculation is not implemented yet")
 
 
 def _calc_hour(subject: Subject) -> _CalcResult:
-    raise NotImplementedError
+    raise NotImplementedError("HOUR Namkha calculation is not implemented yet")
 
 
 _DISPATCH: dict[

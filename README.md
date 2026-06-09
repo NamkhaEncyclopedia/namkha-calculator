@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-  <img src="logo.webp" alt="Namkha Calculator logo" width="150" height="150" />
+  <img src="https://raw.githubusercontent.com/NamkhaEncyclopedia/namkha-calculator/main/logo.webp" alt="Namkha Calculator logo" width="150" height="150" />
 </div>
 
 # Namkha Calculator
