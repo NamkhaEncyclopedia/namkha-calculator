@@ -20,7 +20,12 @@ from .astrology import Subject
 from .aspects.shared_birth import BODY_ELEMENT, FORTUNE_ELEMENT, LIFE_ELEMENT
 from .aspects.shared_mewa import MewaResult
 from .aspects.year import calculate_mewas_cnnr, calculate_mewas_classic
-from .calculation_notes import CALCULATION_NOTES, CalculationNote, CalculationNoteItem
+from .calculation_notes import (
+    CALCULATION_NOTES,
+    CalculationNote,
+    CalculationNoteItem,
+    period_boundary_note,
+)
 from .astronomy import LATITUDE_LIMIT
 from .calendar import (
     TibetanYearAttributes,
@@ -97,18 +102,18 @@ def _calc_year_cnnr(subject: Subject) -> _CalcResult:
     year_attrs = official_year_attributes(
         subject.local_birth_datetime, subject.birth_location
     )
-    return _build_year_result(year_attrs, calculate_mewas_cnnr(year_attrs))
+    return _build_year_result(subject, year_attrs, calculate_mewas_cnnr(year_attrs))
 
 
 def _calc_year_classic(subject: Subject) -> _CalcResult:
     year_attrs = classic_year_attributes(
         subject.local_birth_datetime, subject.birth_location
     )
-    return _build_year_result(year_attrs, calculate_mewas_classic(year_attrs))
+    return _build_year_result(subject, year_attrs, calculate_mewas_classic(year_attrs))
 
 
 def _build_year_result(
-    year_attrs: TibetanYearAttributes, mewas: MewaResult
+    subject: Subject, year_attrs: TibetanYearAttributes, mewas: MewaResult
 ) -> _CalcResult:
     harmonized = harmonize_aspects(
         life=LIFE_ELEMENT[year_attrs.animal],
@@ -128,7 +133,7 @@ def _build_year_result(
             Aspect.MEWA_CAPACITY: mewas.capacity,
             Aspect.MEWA_FORTUNE: mewas.fortune,
         },
-        notes=(),
+        notes=period_boundary_note(subject.local_birth_datetime, year_attrs.boundaries),
     )
 
 

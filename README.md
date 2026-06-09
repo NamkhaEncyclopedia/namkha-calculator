@@ -13,7 +13,7 @@ Python library for calculating [Namkha thread-cross](https://en.wikipedia.org/wi
 ### TODO
 
 - [x] Year Namkha calculation (CNNR and Classic)
-- [ ] Birth-time edge-case warnings
+- [x] Birth-time edge-case warnings
 - [ ] Month Namkha calculation
 - [ ] Day Namkha calculation
 - [ ] Hour Namkha calculation

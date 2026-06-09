@@ -58,6 +58,7 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
             animal=Animal.DRAGON,
             element=Element.WOOD,
             mewa_number=0,
+            boundaries=(),
         )
         test_date = datetime(year=2024, month=6, day=1, tzinfo=pytz.timezone("UTC"))
         result_year = calendar.official_year_attributes(

@@ -12,6 +12,7 @@ the author of "Kalachakra and the Tibetan Calendar" book, which Janson's paper i
 import datetime as dt
 import math
 from dataclasses import dataclass
+from typing import Protocol
 
 from .astrology import Animal, Element
 from .astronomy import HIGH_LATITUDE_DAY_START_HOUR, LATITUDE_LIMIT, Location
@@ -56,6 +57,7 @@ class _CalendarEntityAttributes:
     element: Element
     animal: Animal
     mewa_number: int
+    boundaries: tuple[dt.datetime, ...]
 
 
 @dataclass(kw_only=True)
@@ -186,6 +188,14 @@ def tibetan_to_julian(
     return math.floor(true_date(tibetan_day, n))
 
 
+class LosarFn(Protocol):
+    """Calculates Losar (Tibetan New Year) datetime for a given Tibetan year."""
+
+    def __call__(
+        self, year_number: int, pytz_tz, location: Location
+    ) -> dt.datetime: ...
+
+
 def official_losar(year_number: int, pytz_tz, location: Location) -> dt.datetime:
     """
     Calculates the Western datetime for official Losar (Tibetan New Year)
@@ -282,27 +292,40 @@ def year_mewa(western_year: int) -> int:
     return 9 - (western_year - 1865) % 9
 
 
-def _make_year_attributes(tibetan_year_number: int) -> TibetanYearAttributes:
-    animal = ANIMAL_TABLE[(tibetan_year_number + 1) % 12]
-    element = ELEMENT_TABLE[int(((tibetan_year_number - 1) / 2) % 5)]
+def _year_attributes(
+    date_time: dt.datetime, location: Location, losar_fn: LosarFn, initial_year: int
+) -> TibetanYearAttributes:
+    """
+    Resolve the Tibetan year of date_time, its bounding Losar dates and attributes.
+    """
+    losar = losar_fn(initial_year, date_time.tzinfo, location)
+    if losar > date_time:
+        # born before this Losar -> previous year, which this Losar ends
+        tibetan_year_number = initial_year - 1
+        year_start = losar_fn(tibetan_year_number, date_time.tzinfo, location)
+        year_end = losar
+    else:
+        tibetan_year_number = initial_year
+        year_start = losar
+        year_end = losar_fn(initial_year + 1, date_time.tzinfo, location)
+
     return TibetanYearAttributes(
         tibetan_year_number=tibetan_year_number,
-        animal=Animal(animal),
-        element=Element(element),
+        animal=Animal(ANIMAL_TABLE[(tibetan_year_number + 1) % 12]),
+        element=Element(ELEMENT_TABLE[int(((tibetan_year_number - 1) / 2) % 5)]),
         mewa_number=year_mewa(tibetan_year_number - TIB_WESTERN_OFFSET),
+        boundaries=(year_start, year_end),
     )
 
 
 def official_year_attributes(
     date_time: dt.datetime,
     location: Location,
-    losar_fn=official_losar,
+    losar_fn: LosarFn = official_losar,
 ) -> TibetanYearAttributes:
-    tibetan_year_number = date_time.year + TIB_WESTERN_OFFSET
-    losar = losar_fn(tibetan_year_number, date_time.tzinfo, location)
-    if losar > date_time:
-        tibetan_year_number -= 1
-    return _make_year_attributes(tibetan_year_number)
+    return _year_attributes(
+        date_time, location, losar_fn, date_time.year + TIB_WESTERN_OFFSET
+    )
 
 
 def classic_year_attributes(
@@ -310,8 +333,6 @@ def classic_year_attributes(
     location: Location,
 ) -> TibetanYearAttributes:
     """Year attributes for Classic method. Astrological year starts earlier than official."""
-    tibetan_year_number = date_time.year + TIB_WESTERN_OFFSET + 1
-    losar = astrological_losar(tibetan_year_number, date_time.tzinfo, location)
-    if losar > date_time:
-        tibetan_year_number -= 1
-    return _make_year_attributes(tibetan_year_number)
+    return _year_attributes(
+        date_time, location, astrological_losar, date_time.year + TIB_WESTERN_OFFSET + 1
+    )

@@ -18,6 +18,7 @@ def _make_attrs(animal: Animal, tib_year: int) -> TibetanYearAttributes:
         animal=animal,
         element=Element.EARTH,  # unused by fortune_mewa_cnnr
         mewa_number=year_mewa(tib_year - TIB_WESTERN_OFFSET),
+        boundaries=(),
     )
 
 
