@@ -9,7 +9,7 @@
 [![License: MIT](https://img.shields.io/pypi/l/namkha-calculator)](https://github.com/NamkhaEncyclopedia/namkha-calculator/blob/main/LICENSE)
 [![Development Status](https://img.shields.io/pypi/status/namkha-calculator)](https://pypi.org/project/namkha-calculator/)
 
-Python library for calculating [Namkha thread-cross](https://en.wikipedia.org/wiki/Namkha) color schemes in the tradition of [Chögyal Namkhai Norbu Rinpoche](https://en.wikipedia.org/wiki/Namkhai_Norbu), with all the methods covered in the source text.[^1] Classical Tibetan astrology calculations were added for cases where the source refers to them for complete instructions.[^2]
+Python library for calculating [Namkha thread-cross](https://en.wikipedia.org/wiki/Namkha) colour schemes in the tradition of [Chögyal Namkhai Norbu Rinpoche](https://en.wikipedia.org/wiki/Namkhai_Norbu), with all the methods covered in the source text.[^1] Classical Tibetan astrology calculations were added for cases where the source refers to them for complete instructions.[^2]
 
 ## Development status
 > [!WARNING]
@@ -91,11 +91,13 @@ for note in result.calculation_notes:
 | Field               | Type                  | Description                                                   |
 |---------------------|-----------------------|---------------------------------------------------------------|
 | `name`              | `Aspect`              | `LIFE`, `BODY`, `CAPACITY`, `FORTUNE`, `MEWA_*`               |
-| `center`            | `Element`             | center element                                                |
-| `harmonization_seq` | `tuple[Element, ...]` | harmonization sequence: remaining thread colors outward       |
+| `center`            | `Element`             | centre element                                                |
+| `harmonization_seq` | `tuple[Element, ...]` | harmonization sequence: remaining thread colours outward      |
 | `is_conflicted`     | `bool or None`        | `None` for `LIFE`; `True` when conflict harmonization applied |
 
 ### Calculation notes
+
+`PERIOD_BOUNDARY` (caution) is attached when the birth time falls within 5 minutes of a calculation-period boundary (for `YEAR`, the Tibetan year start/end). That close to a boundary the result can flip to the neighbouring period, so the birth time must be precise.
 
 `HIGH_LATITUDE` (notice) is attached when `abs(latitude) >= 60.0`. Above this limit the library falls back to a fixed 5:00 AM day-start instead of civil twilight, which affects birth period boundary detection.
 
