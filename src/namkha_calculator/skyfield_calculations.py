@@ -12,7 +12,7 @@ from skyfield import almanac
 from skyfield.api import Loader, wgs84
 
 if TYPE_CHECKING:
-    from .astrology import Location
+    from .astronomy import Location
 
 
 @lru_cache(maxsize=None)
@@ -32,6 +32,23 @@ def _get_ephemeris():
 
 def jd_to_datetime(jd: float) -> dt.datetime:
     return _get_timescale().tt_jd(jd).utc_datetime()
+
+
+@lru_cache(maxsize=None)
+def ephemeris_date_range() -> tuple[dt.datetime, dt.datetime]:
+    """UTC dates the bundled ephemeris covers (intersection of all segments)."""
+    segments = _get_ephemeris().spk.segments
+    if not segments:
+        raise ValueError("Ephemeris contains no segments; cannot determine date range")
+    start_jd = max(seg.start_jd for seg in segments)
+    end_jd = min(seg.end_jd for seg in segments)
+    if start_jd > end_jd:
+        raise ValueError(
+            f"Ephemeris segments have no common coverage "
+            f"(latest start {start_jd} > earliest end {end_jd})"
+        )
+    ts = _get_timescale()
+    return ts.tt_jd(start_jd).utc_datetime(), ts.tt_jd(end_jd).utc_datetime()
 
 
 def civil_twilight_boundaries(
@@ -67,7 +84,9 @@ def civil_twilight_boundaries(
     if len(boundaries) != 2:
         raise ValueError(
             f"Expected 2 civil-twilight boundaries for {date} at "
-            f"lat={location.latitude:.2f}, got {len(boundaries)}. "
-            "Location may be within polar day/night on this date."
+            f"lat={location.latitude:.2f}, lon={location.longitude:.2f}, "
+            f"tz={pytz_tz}, got {len(boundaries)}. "
+            "Likely the timezone does not match the location's longitude, "
+            "or the location is within polar day/night on this date."
         )
     return boundaries[0], boundaries[1]

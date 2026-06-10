@@ -32,6 +32,7 @@ from .calendar import (
     TibetanYearAttributes,
     classic_year_attributes,
     official_year_attributes,
+    supported_year_range,
 )
 from .harmonizer import Aspect, HarmonizedAspect, harmonize_aspects
 
@@ -79,6 +80,7 @@ def calculate_namkha(
             f"Unsupported method {method.name!r} for {namkha_type.name} Namkha"
         )
 
+    _check_supported_year(subject)
     subject_notes = _collect_subject_notes(subject)
     calculation = calc_fn(subject)
 
@@ -90,6 +92,17 @@ def calculate_namkha(
         mewa_numbers=calculation.mewa_numbers,
         calculation_notes=subject_notes + calculation.notes,
     )
+
+
+def _check_supported_year(subject: Subject) -> None:
+    """Reject birth years outside the bundled ephemeris coverage."""
+    year_min, year_max = supported_year_range()
+    year = subject.birth_datetime.year
+    if not year_min <= year <= year_max:
+        raise ValueError(
+            f"birth year {year} is outside the supported range "
+            f"[{year_min}, {year_max}] (limited by the bundled ephemeris)"
+        )
 
 
 def _collect_subject_notes(subject: Subject) -> tuple[CalculationNoteItem, ...]:

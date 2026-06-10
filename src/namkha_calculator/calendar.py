@@ -12,13 +12,24 @@ the author of "Kalachakra and the Tibetan Calendar" book, which Janson's paper i
 import datetime as dt
 import math
 from dataclasses import dataclass
+from functools import lru_cache
 from typing import Protocol
 
 import pytz
 
 from .astrology import Animal, Element
 from .astronomy import HIGH_LATITUDE_DAY_START_HOUR, LATITUDE_LIMIT, Location
-from .skyfield_calculations import civil_twilight_boundaries, jd_to_datetime
+from .skyfield_calculations import (
+    civil_twilight_boundaries,
+    ephemeris_date_range,
+    jd_to_datetime,
+)
+
+# Margin (in years) kept inside the ephemeris coverage: the Losar calc reaches
+# into adjacent years either side of the birth year, so the usable range is
+# narrower than the raw ephemeris span (verified empirically at both ends).
+# Note: calendar output is only validated against Henning from 1800 onward.
+_YEAR_RANGE_MARGIN = 2
 
 # Calendrical constants: month calculations
 S1 = 65 / 804
@@ -218,6 +229,13 @@ class LosarFn(Protocol):
     def __call__(
         self, year_number: int, pytz_tz: pytz.BaseTzInfo, location: Location
     ) -> dt.datetime: ...
+
+
+@lru_cache(maxsize=None)
+def supported_year_range() -> tuple[int, int]:
+    """Western birth-year range derived from the bundled ephemeris coverage."""
+    start, end = ephemeris_date_range()
+    return start.year + _YEAR_RANGE_MARGIN, end.year - _YEAR_RANGE_MARGIN
 
 
 def official_losar(
