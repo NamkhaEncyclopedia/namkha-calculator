@@ -6,6 +6,8 @@ import datetime as dt
 from dataclasses import dataclass
 from enum import Enum, auto, unique
 
+import pytz
+
 # Birth time closer than this to a period boundary triggers a PERIOD_BOUNDARY note.
 PERIOD_BOUNDARY_THRESHOLD = dt.timedelta(minutes=5)
 
@@ -20,6 +22,8 @@ class CalculationNoteType(Enum):
 class CalculationNote(Enum):
     HIGH_LATITUDE = auto()
     PERIOD_BOUNDARY = auto()
+    AMBIGUOUS_LOCAL_TIME = auto()
+    NONEXISTENT_LOCAL_TIME = auto()
 
 
 @dataclass(frozen=True)
@@ -39,9 +43,37 @@ CALCULATION_NOTES = {
     CalculationNote.PERIOD_BOUNDARY: CalculationNoteItem(
         note=CalculationNote.PERIOD_BOUNDARY,
         note_type=CalculationNoteType.CAUTION,
-        message="Birth time very close to a period boundary; be shure that it is precise enough.",
+        message="Birth time very close to a period boundary; be sure that it is precise enough.",
+    ),
+    CalculationNote.AMBIGUOUS_LOCAL_TIME: CalculationNoteItem(
+        note=CalculationNote.AMBIGUOUS_LOCAL_TIME,
+        note_type=CalculationNoteType.CAUTION,
+        message="Local birth time is ambiguous due to a daylight-saving change; "
+        "the standard-time reading was used.",
+    ),
+    CalculationNote.NONEXISTENT_LOCAL_TIME: CalculationNoteItem(
+        note=CalculationNote.NONEXISTENT_LOCAL_TIME,
+        note_type=CalculationNoteType.CAUTION,
+        message="Local birth time falls in a daylight-saving gap and does not exist; "
+        "the standard-time reading was used.",
     ),
 }
+
+
+def local_time_dst_note(
+    birth_datetime: dt.datetime, tz: pytz.BaseTzInfo
+) -> tuple[CalculationNoteItem, ...]:
+    """Caution if the naive local birth time is ambiguous or non-existent on a DST transition.
+
+    The calculation itself resolves such times with ``is_dst=False``; this only flags them.
+    """
+    try:
+        tz.localize(birth_datetime, is_dst=None)
+    except pytz.exceptions.AmbiguousTimeError:
+        return (CALCULATION_NOTES[CalculationNote.AMBIGUOUS_LOCAL_TIME],)
+    except pytz.exceptions.NonExistentTimeError:
+        return (CALCULATION_NOTES[CalculationNote.NONEXISTENT_LOCAL_TIME],)
+    return ()
 
 
 def period_boundary_note(

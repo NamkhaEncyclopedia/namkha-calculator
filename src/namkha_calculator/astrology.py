@@ -1,5 +1,5 @@
+import datetime as dt
 from dataclasses import dataclass
-from datetime import datetime
 from enum import Enum, auto, unique
 
 import pytz
@@ -41,7 +41,7 @@ class Gender(Enum):
 @dataclass
 class Subject:
     gender: Gender
-    birth_datetime: datetime  # naive local time
+    birth_datetime: dt.datetime  # naive local time
     birth_timezone: pytz.BaseTzInfo
     birth_location: Location
     name: str | None
@@ -53,5 +53,5 @@ class Subject:
             raise TypeError("birth_timezone must be a pytz timezone")
 
     @property
-    def local_birth_datetime(self) -> datetime:
+    def local_birth_datetime(self) -> dt.datetime:
         return self.birth_timezone.localize(self.birth_datetime, is_dst=False)

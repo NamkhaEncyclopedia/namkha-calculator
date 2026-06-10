@@ -43,8 +43,30 @@ A0 = 475 / 3528
 MOON_TAB = (0, 5, 10, 15, 19, 22, 24, 25)
 SUN_TAB = (0, 6, 10, 11)
 
-ELEMENT_TABLE = list(Element)
-ANIMAL_TABLE = list(Animal)
+# Astrological order of the 12-animal and 5-element cycles.
+ANIMAL_ORDER = (
+    Animal.MOUSE,
+    Animal.OX,
+    Animal.TIGER,
+    Animal.HARE,
+    Animal.DRAGON,
+    Animal.SNAKE,
+    Animal.HORSE,
+    Animal.SHEEP,
+    Animal.MONKEY,
+    Animal.BIRD,
+    Animal.DOG,
+    Animal.BOAR,
+)
+ELEMENT_ORDER = (
+    Element.WOOD,
+    Element.FIRE,
+    Element.EARTH,
+    Element.METAL,
+    Element.WATER,
+)
+assert set(ANIMAL_ORDER) == set(Animal), "ANIMAL_ORDER must cover every Animal"
+assert set(ELEMENT_ORDER) == set(Element), "ELEMENT_ORDER must cover every Element"
 
 # Metreng (60-year) cycle constants
 TIB_WESTERN_OFFSET = 127  # Tibetan year = Western year + 127
@@ -277,8 +299,8 @@ def year_with_animal_and_element_in_metreng(
     for offset in range(60):
         year = cycle_start_tib + offset
         if (
-            ANIMAL_TABLE[(year + 1) % 12] == animal
-            and ELEMENT_TABLE[((year - 1) // 2) % 5] == element
+            ANIMAL_ORDER[(year + 1) % 12] == animal
+            and ELEMENT_ORDER[((year - 1) // 2) % 5] == element
         ):
             return year
 
@@ -288,7 +310,7 @@ def year_with_animal_and_element_in_metreng(
 
 def nearest_previous_year_with_animal(year_number: int, animal: Animal) -> int:
     """Return largest Tibetan year number less than year_number with given Animal."""
-    target_idx = ANIMAL_TABLE.index(animal)
+    target_idx = ANIMAL_ORDER.index(animal)
     current_idx = (year_number + 1) % 12
     offset = (current_idx - target_idx) % 12
     return year_number - offset
@@ -317,8 +339,8 @@ def _year_attributes(
 
     return TibetanYearAttributes(
         tibetan_year_number=tibetan_year_number,
-        animal=Animal(ANIMAL_TABLE[(tibetan_year_number + 1) % 12]),
-        element=Element(ELEMENT_TABLE[int(((tibetan_year_number - 1) / 2) % 5)]),
+        animal=ANIMAL_ORDER[(tibetan_year_number + 1) % 12],
+        element=ELEMENT_ORDER[((tibetan_year_number - 1) // 2) % 5],
         mewa_number=year_mewa(tibetan_year_number - TIB_WESTERN_OFFSET),
         boundaries=(year_start, year_end),
     )

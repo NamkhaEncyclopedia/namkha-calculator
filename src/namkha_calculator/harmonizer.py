@@ -108,19 +108,19 @@ def harmonize_aspects(
         )
     )
 
-    for element, name, harmonize_to in zip(
-        [body, capacity, fortune, mewa_life, mewa_body, mewa_capacity, mewa_fortune],
-        [
-            Aspect.BODY,
-            Aspect.CAPACITY,
-            Aspect.FORTUNE,
-            Aspect.MEWA_LIFE,
-            Aspect.MEWA_BODY,
-            Aspect.MEWA_CAPACITY,
-            Aspect.MEWA_FORTUNE,
-        ],
-        [life] * 4 + [mewa_life] * 3,
-    ):
+    # Each row: (aspect, its element, the element it harmonizes towards).
+    # Birth aspects harmonize to Life; Mewa aspects harmonize to Mewa Life.
+    aspect_rows = (
+        (Aspect.BODY, body, life),
+        (Aspect.CAPACITY, capacity, life),
+        (Aspect.FORTUNE, fortune, life),
+        (Aspect.MEWA_LIFE, mewa_life, life),
+        (Aspect.MEWA_BODY, mewa_body, mewa_life),
+        (Aspect.MEWA_CAPACITY, mewa_capacity, mewa_life),
+        (Aspect.MEWA_FORTUNE, mewa_fortune, mewa_life),
+    )
+
+    for name, element, harmonize_to in aspect_rows:
         is_conflicted = False
 
         if _are_in_conflict(element, harmonize_to):

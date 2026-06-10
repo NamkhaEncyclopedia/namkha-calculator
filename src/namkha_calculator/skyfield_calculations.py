@@ -52,6 +52,12 @@ def civil_twilight_boundaries(
         search_func,
     )
 
+    # almanac.dark_twilight_day codes the new state after each transition:
+    # 0 night, 1 astronomical, 2 nautical, 3 civil, 4 day. Civil twilight spans
+    # the sun being between 0 and -6 deg. We want its two -6 deg crossings:
+    # morning = entering civil (code 3), evening = leaving civil back into nautical
+    # (code 2). Match them in order, switching the target after the morning one.
+    # See also: https://rhodesmill.org/skyfield/almanac.html#twilight
     boundaries = []
     boundary_code = 3
     for time, code in zip(*events):

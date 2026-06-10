@@ -24,6 +24,7 @@ from .calculation_notes import (
     CALCULATION_NOTES,
     CalculationNote,
     CalculationNoteItem,
+    local_time_dst_note,
     period_boundary_note,
 )
 from .astronomy import LATITUDE_LIMIT
@@ -78,7 +79,7 @@ def calculate_namkha(
             f"Unsupported method {method.name!r} for {namkha_type.name} Namkha"
         )
 
-    location_notes = _collect_location_notes(subject)
+    subject_notes = _collect_subject_notes(subject)
     calculation = calc_fn(subject)
 
     return NamkhaCalculationResult(
@@ -87,14 +88,16 @@ def calculate_namkha(
         namkha_type=namkha_type,
         harmonized_aspects=calculation.harmonized_aspects,
         mewa_numbers=calculation.mewa_numbers,
-        calculation_notes=location_notes + calculation.notes,
+        calculation_notes=subject_notes + calculation.notes,
     )
 
 
-def _collect_location_notes(subject: Subject) -> tuple[CalculationNoteItem, ...]:
+def _collect_subject_notes(subject: Subject) -> tuple[CalculationNoteItem, ...]:
+    """Notes that depend only on the subject's location and local time."""
     notes: list[CalculationNoteItem] = []
     if abs(subject.birth_location.latitude) >= LATITUDE_LIMIT:
         notes.append(CALCULATION_NOTES[CalculationNote.HIGH_LATITUDE])
+    notes.extend(local_time_dst_note(subject.birth_datetime, subject.birth_timezone))
     return tuple(notes)
 
 

@@ -7,6 +7,7 @@ from namkha_calculator.astrology import Gender, Subject
 from namkha_calculator.astronomy import Location
 from namkha_calculator.calculation_notes import (
     CalculationNote,
+    local_time_dst_note,
 )
 from namkha_calculator.methods import CalculationMethod
 from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
@@ -53,6 +54,35 @@ class TestPeriodBoundaryNote(unittest.TestCase):
         # 07:45 is ~14 min after the astrological Losar
         notes = _notes(_subject("13.12.2023 07:45"), CalculationMethod.CLASSIC)
         self.assertNotIn(CalculationNote.PERIOD_BOUNDARY, notes)
+
+
+class TestLocalTimeDstNote(unittest.TestCase):
+    # Europe/Berlin 2024: spring-forward gap 31.03 02:00->03:00,
+    # autumn fall-back overlap 27.10 03:00->02:00.
+    _TZ = pytz.timezone("Europe/Berlin")
+
+    def _dst_notes(self, dt_str):
+        naive = datetime.strptime(dt_str, "%d.%m.%Y %H:%M")
+        return {item.note for item in local_time_dst_note(naive, self._TZ)}
+
+    def test_nonexistent_time_in_spring_gap(self):
+        self.assertIn(
+            CalculationNote.NONEXISTENT_LOCAL_TIME, self._dst_notes("31.03.2024 02:30")
+        )
+
+    def test_ambiguous_time_in_autumn_overlap(self):
+        self.assertIn(
+            CalculationNote.AMBIGUOUS_LOCAL_TIME, self._dst_notes("27.10.2024 02:30")
+        )
+
+    def test_normal_time_no_note(self):
+        self.assertEqual(self._dst_notes("15.06.2024 12:00"), set())
+
+
+class TestDstNoteInResult(unittest.TestCase):
+    def test_ambiguous_time_emits_note_in_result(self):
+        notes = _notes(_subject("27.10.2024 02:30"), CalculationMethod.CLASSIC)
+        self.assertIn(CalculationNote.AMBIGUOUS_LOCAL_TIME, notes)
 
 
 if __name__ == "__main__":

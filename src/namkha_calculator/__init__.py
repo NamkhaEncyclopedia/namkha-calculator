@@ -1,4 +1,3 @@
-from . import namkha_calculator
 from .astrology import Animal, Element, Gender, Subject
 from .astronomy import Location
 from .calculation_notes import CalculationNote, CalculationNoteItem
@@ -24,5 +23,4 @@ __all__ = [
     "NamkhaType",
     "Subject",
     "calculate_namkha",
-    "namkha_calculator",
 ]
