@@ -16,7 +16,7 @@ from enum import Enum, auto, unique
 from typing import Callable
 
 from .methods import CalculationMethod
-from .astrology import Subject
+from .astrology import Animal, Element, Subject
 from .aspects.shared_birth import BODY_ELEMENT, FORTUNE_ELEMENT, LIFE_ELEMENT
 from .aspects.shared_mewa import MewaResult
 from .aspects.year import calculate_mewas_cnnr, calculate_mewas_classic
@@ -50,6 +50,9 @@ class NamkhaCalculationResult:
     subject: Subject
     calculation_method: CalculationMethod
     namkha_type: NamkhaType
+    birth_element: Element
+    birth_animal: Animal
+    birth_mewa: int
     harmonized_aspects: tuple[HarmonizedAspect, ...]
     mewa_numbers: dict[Aspect, int]
     calculation_notes: tuple[CalculationNoteItem, ...]
@@ -57,6 +60,9 @@ class NamkhaCalculationResult:
 
 @dataclass(frozen=True)
 class _CalcResult:
+    birth_element: Element
+    birth_animal: Animal
+    birth_mewa: int
     harmonized_aspects: tuple[HarmonizedAspect, ...]
     mewa_numbers: dict[Aspect, int]
     notes: tuple[CalculationNoteItem, ...]
@@ -88,6 +94,9 @@ def calculate_namkha(
         subject=subject,
         calculation_method=method,
         namkha_type=namkha_type,
+        birth_element=calculation.birth_element,
+        birth_animal=calculation.birth_animal,
+        birth_mewa=calculation.birth_mewa,
         harmonized_aspects=calculation.harmonized_aspects,
         mewa_numbers=calculation.mewa_numbers,
         calculation_notes=subject_notes + calculation.notes,
@@ -142,6 +151,9 @@ def _build_year_result(
         mewa_fortune=mewas.fortune.element,
     )
     return _CalcResult(
+        birth_element=year_attrs.element,
+        birth_animal=year_attrs.animal,
+        birth_mewa=year_attrs.mewa_number,
         harmonized_aspects=harmonized,
         mewa_numbers={
             Aspect.MEWA_LIFE: mewas.life,

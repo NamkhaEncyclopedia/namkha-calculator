@@ -8,7 +8,7 @@ from datetime import datetime
 
 import pytz
 
-from namkha_calculator.astrology import Element, Gender, Subject
+from namkha_calculator.astrology import Animal, Element, Gender, Subject
 from namkha_calculator.astronomy import Location
 from namkha_calculator.harmonizer import Aspect
 from namkha_calculator.methods import CalculationMethod
@@ -70,6 +70,8 @@ class TestYearClassicWoodTiger(unittest.TestCase):
         Aspect.MEWA_FORTUNE: 8,
     }
 
+    _EXPECTED_BIRTH = (Element.WOOD, Animal.TIGER, 8)
+
     def test_aspects_and_mewas(self):
         for dt_str, tz, lat, lon, label in self._BIRTHS:
             with self.subTest(case=label):
@@ -91,6 +93,15 @@ class TestYearClassicWoodTiger(unittest.TestCase):
                     self.assertEqual(
                         result.mewa_numbers[asp], exp_num, f"{label} {asp.name} number"
                     )
+
+                exp_element, exp_animal, exp_mewa = self._EXPECTED_BIRTH
+                self.assertEqual(
+                    result.birth_element, exp_element, f"{label} birth element"
+                )
+                self.assertEqual(
+                    result.birth_animal, exp_animal, f"{label} birth animal"
+                )
+                self.assertEqual(result.birth_mewa, exp_mewa, f"{label} birth mewa")
 
 
 class TestYearCnnrFireMonkey(unittest.TestCase):
@@ -129,6 +140,8 @@ class TestYearCnnrFireMonkey(unittest.TestCase):
         Aspect.MEWA_FORTUNE: 5,
     }
 
+    _EXPECTED_BIRTH = (Element.FIRE, Animal.MONKEY, 8)
+
     def test_aspects_and_mewas(self):
         for dt_str, tz, lat, lon, label in self._BIRTHS:
             with self.subTest(case=label):
@@ -150,3 +163,12 @@ class TestYearCnnrFireMonkey(unittest.TestCase):
                     self.assertEqual(
                         result.mewa_numbers[asp], exp_num, f"{label} {asp.name} number"
                     )
+
+                exp_element, exp_animal, exp_mewa = self._EXPECTED_BIRTH
+                self.assertEqual(
+                    result.birth_element, exp_element, f"{label} birth element"
+                )
+                self.assertEqual(
+                    result.birth_animal, exp_animal, f"{label} birth animal"
+                )
+                self.assertEqual(result.birth_mewa, exp_mewa, f"{label} birth mewa")
