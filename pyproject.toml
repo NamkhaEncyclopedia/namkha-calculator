@@ -1,6 +1,6 @@
 [project]
 name = "namkha-calculator"
-version = "0.1.0a2"
+version = "0.1.0a3"
 description = "Calculate Tibetan Namkha thread-cross color schemes in Chögyal Namkhai Norbu tradition."
 readme = "README.md"
 license = "MIT"
