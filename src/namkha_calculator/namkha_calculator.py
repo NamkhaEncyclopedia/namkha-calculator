@@ -11,6 +11,7 @@ Only ``NamkhaType.YEAR`` supports multiple :class:`CalculationMethod` values;
 all other types accept only ``CLASSIC`` and raise ``ValueError`` otherwise.
 """
 
+import datetime as dt
 from dataclasses import dataclass
 from enum import Enum, auto, unique
 from typing import Callable
@@ -106,10 +107,11 @@ def calculate_namkha(
 def _check_supported_year(subject: Subject) -> None:
     """Reject birth years outside the bundled ephemeris coverage."""
     year_min, year_max = supported_year_range()
-    year = subject.birth_datetime.year
-    if not year_min <= year <= year_max:
+    utc_year = subject.local_birth_datetime.astimezone(dt.timezone.utc).year
+    if not year_min <= utc_year <= year_max:
         raise ValueError(
-            f"birth year {year} is outside the supported range "
+            f"birth year {subject.birth_datetime.year} (UTC year {utc_year}) "
+            f"is outside the supported range "
             f"[{year_min}, {year_max}] (limited by the bundled ephemeris)"
         )
 

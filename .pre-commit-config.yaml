@@ -2,7 +2,8 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
-      - id: no-commit-to-branch  # block direct commits on main/master
+      - id: no-commit-to-branch  # block direct commits to main; bypass: SKIP=no-commit-to-branch git commit
+        args: [--branch, main]
       - id: check-ast          # catch Python syntax errors
       - id: check-toml         # validate pyproject.toml
       - id: check-yaml
