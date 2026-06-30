@@ -1,0 +1,1590 @@
+
+New Year: 1685, Wood-female-Ox
+
+Tibetan Lunar Month: 1 - Earth-male-Dragon
+
+1: Sun. mon gre. Fire-Water; 4 Feb 1685
+  phan tshun, mi sdug pa, Tiger, kham 7
+  1;29,12 22;6,25 21;41,38 16;48,3 9;18,25
+  Solar: Water-Dog. Xing 2
+  From 1st to 15th, Demonstration of Miracles.
+2: Mon. mon gru. Water-Earth; 5 Feb 1685
+  mchog can, byis pa, Rabbit, gin 8
+  2;29,30 23;4,41 21;46,11 17;50,52 9;19,24
+  Solar: Water-Pig. Zhang 3
+3: Tue. khrums stod. Fire-Fire; 6 Feb 1685
+  yongs 'joms, til rdung, Dragon, zin 9
+  3;30,48 24;1,56 21;50,45 18;52,41 9;20,22
+  Solar: Wood-Mouse. Yi 4
+4: Wed. khrums stod. Water-Fire; 7 Feb 1685
+  zhi ba, tshong ba, Snake, zon 1
+  4;33,6 24;58,11 21;55,18 19;53,30 9;21,20
+  Solar: Wood-Ox. Zhen 5
+5: Thu. khrums smad. Wind-Water; 8 Feb 1685
+  grub pa, gdab pa, Horse, li 2
+  5;36,25 25;53,27 21;59,52 20;53,19 9;22,18
+  Solar: Fire-Tiger. Jiao 6
+6: Fri. nam gru. Earth-Water; 9 Feb 1685
+  bsgrub bya, rigs can, Sheep, khon 3
+  6;40,40 26;47,45 22;4,25 21;52,11 9;23,17
+  Solar: Fire-Rabbit. Kang 7
+7: Sat. tha skar. Earth-Wind; 10 Feb 1685
+  dge ba, khyim skyes, Monkey, dwa 4
+  0;44,56 0;42,3 22;8,59 22;51,3 9;24,15
+  Solar: Earth-Dragon. Di 8
+8: Sun. bra nye. Fire-Fire; 11 Feb 1685
+  dkar po, vishti, Bird, khen 5
+  1;49,11 1;36,21 22;13,33 23;49,54 9;25,13
+  Solar: Earth-Snake. Fang 9
+9: Mon. smin drug. Water-Fire; 12 Feb 1685
+  tshangs pa, byis pa, Dog, kham 6
+  2;53,26 2;30,39 22;18,6 24;48,46 9;26,11
+  Solar: Iron-Horse. Xin 1
+10: Tue. snar ma. Fire-Earth; 13 Feb 1685
+  dbang po, rigs can, Pig, gin 7
+  3;57,42 3;24,58 22;22,40 25;47,38 9;27,9
+  Solar: Iron-Sheep. Wei 2
+11: Wed. mgo. Water-Wind; 14 Feb 1685
+  4;60,0 4;21,13 22;27,13 26;48,27 9;28,8
+  Solar: Water-Monkey. Ji 3
+11: Thu. lag. Wind-Water; 15 Feb 1685
+  rnam sel, vishti, Mouse, zin 8
+  5;1,54 5;19,19 22;27,13 0;46,33 9;28,8
+  Solar: Water-Bird. Dou 4
+12: Fri. nabs so. Earth-Wind; 16 Feb 1685
+  mdza' bo, byis pa, Ox, zon 9
+  6;5,6 6;14,40 22;31,47 1;46,28 9;29,6
+  Solar: Wood-Dog. Niu 5
+13: Sat. rgyal. Earth-Fire; 17 Feb 1685
+  tshe dang ldan pa, til rdung, Tiger, li 1
+  0;7,18 7;11,1 22;36,20 2;47,22 10;0,4
+  Solar: Wood-Pig. Nu 6
+14: Sun. skag. Fire-Water; 18 Feb 1685
+  skal bzang, tshong ba, Rabbit, khon 2
+  1;8,27 8;8,23 22;40,50 3;49,13 10;1,2
+  Solar: Fire-Mouse. Xu 7
+15: Mon. mchu. Water-Fire; 19 Feb 1685
+  dge byed, gdab pa, Dragon, dwa 3
+  2;8,32 9;6,47 22;45,20 4;52,7 10;2,0
+  Solar: Fire-Ox. Wei 8
+16: Tue. gre. Fire-Fire; 20 Feb 1685
+  shin tu 'grams, rigs can, Snake, khen 4
+  3;6,40 10;7,9 22;49,49 5;56,58 10;2,59
+  Solar: Earth-Tiger. Shi 9
+17: Wed. dbo. Water-Wind; 21 Feb 1685
+  'dzin byed, khyim skyes, Horse, kham 5
+  4;3,49 11;8,30 22;54,19 7;2,50 10;3,57
+  Solar: Earth-Rabbit. Bi 1
+18. Omitted: Sheep gin 6
+19: Thu. me bzhi. Wind-Wind; 22 Feb 1685
+  zug rngu, vishti, Monkey, zin 7
+  5;55,5 12;14,13 23;3,18 8;17,32 10;5,53
+  Solar: Iron-Dragon. Kui 2
+20: Fri. nag pa. Earth-Wind; 23 Feb 1685
+  'grams, rigs can, Bird, zon 8
+  6;49,16 13;18,31 23;7,48 9;26,20 10;6,51
+  Solar: Iron-Snake. Lou 3
+21: Sat. sa ri. Earth-Wind; 24 Feb 1685
+  'phel, khyim skyes, Dog, li 9
+  0;43,28 14;22,50 23;12,18 10;35,8 10;7,50
+  Solar: Water-Horse. Wei 4
+22: Sun. sa ga. Fire-Fire; 25 Feb 1685
+  brtan pa, vishti, Pig, khon 1
+  1;37,39 15;27,8 23;16,48 11;43,56 10;8,48
+  Solar: Water-Sheep. Mao 5
+23: Mon. lha mtshams. Water-Earth; 26 Feb 1685
+  yongs bsnun, byis pa, Mouse, dwa 2
+  2;31,50 16;31,26 23;21,17 12;52,44 10;9,46
+  Solar: Wood-Monkey. Bi 6
+24: Tue. snron. Fire-Earth; 27 Feb 1685
+  rdo rje, khyim skyes, Ox, khen 3
+  3;26,2 17;35,45 23;25,47 14;1,32 10;10,44
+  Solar: Wood-Bird. Zui 7
+25: Wed. snrubs. Water-Water; 28 Feb 1685
+  dngos grub, vishti, Tiger, kham 4
+  4;20,16 18;40,0 23;30,17 15;10,17 10;11,42
+  Solar: Fire-Dog. Can 8
+26: Thu. chu stod. Wind-Water; 1 Mar 1685
+  phan tshun, byis pa, Rabbit, gin 5
+  5;15,31 19;43,15 23;34,46 16;18,2 10;12,41
+  Solar: Fire-Pig. Jing 9
+27: Fri. chu smad. Earth-Earth; 2 Mar 1685
+  mchog can, til rdung, Dragon, zin 6
+  6;11,46 20;45,30 23;39,16 17;24,46 10;13,39
+  Solar: Earth-Mouse. Gui 1
+28: Sat. gro zhin. Earth-Earth; 3 Mar 1685
+  yongs 'joms, tshong ba, Snake, zon 7
+  0;9,0 21;46,45 23;43,46 18;30,31 10;14,37
+  Solar: Earth-Ox. Liu 2
+29: Sun. mon gre. Fire-Water; 4 Mar 1685
+  zhi ba, bkra shis, Horse, li 8
+  1;7,18 22;46,56 23;48,15 19;35,12 10;15,35
+  Solar: Iron-Tiger. Xing 3
+30: Mon. mon gru. Water-Earth; 5 Mar 1685
+  grub pa, klu, Sheep, khon 9
+  2;7,33 23;45,11 23;52,45 20;37,57 10;16,34
+  Solar: Iron-Rabbit. Zhang 4
+
+Tibetan Lunar Month: 2 - Earth-female-Snake
+
+1: Tue. khrums stod. Fire-Fire; 6 Mar 1685
+  bsgrub bya, gdab pa, Monkey, dwa 1
+  3;8,48 24;42,26 23;57,15 21;39,42 10;17,32
+  Solar: Water-Dragon. Yi 5
+2: Wed. khrums smad. Water-Water; 7 Mar 1685
+  dge ba, rigs can, Bird, khen 2
+  4;11,3 25;38,41 24;1,45 22;40,26 10;18,30
+  Solar: Water-Snake. Zhen 6
+3: Thu. nam gru. Wind-Water; 8 Mar 1685
+  dkar po, khyim skyes, Dog, kham 3
+  5;14,18 26;33,56 24;6,14 23;40,11 10;19,28
+  Solar: Wood-Horse. Jiao 7
+4: Fri. tha skar. Earth-Wind; 9 Mar 1685
+  tshangs pa, vishti, Pig, gin 4
+  6;18,29 0;28,14 24;10,44 24;38,59 10;20,26
+  Solar: Wood-Sheep. Kang 8
+5: Sat. bra nye. Earth-Fire; 10 Mar 1685
+  dbang po, byis pa, Mouse, zin 5
+  0;22,41 1;22,32 24;15,14 25;37,47 10;21,25
+  Solar: Fire-Monkey. Di 9
+6: Sun. smin drug. Fire-Fire; 11 Mar 1685
+  'khon 'dzin, til rdung, Ox, zon 6
+  1;26,52 2;16,51 24;19,43 26;36,34 10;22,23
+  Solar: Fire-Bird. Fang 1
+7: Mon. snar ma. Water-Earth; 12 Mar 1685
+  rnam sel, khyim skyes, Tiger, li 7
+  2;31,4 3;11,9 24;24,13 0;35,22 10;23,21
+  Solar: Earth-Dog. Xin 2
+8: Tue. mgo. Fire-Wind; 13 Mar 1685
+  mdza' bo, vishti, Rabbit, khon 8
+  3;35,15 4;5,27 24;28,43 1;34,10 10;24,19
+  Solar: Earth-Pig. Wei 3
+9: Wed. mgo. Water-Wind; 14 Mar 1685
+  tshe dang ldan pa, byis pa, Dragon, dwa 9
+  4;39,23 4;59,49 24;33,12 2;33,2 10;25,17
+  Solar: Iron-Mouse. Ji 4
+10: Thu. lag. Wind-Water; 15 Mar 1685
+  skal bzang, til rdung, Snake, khen 1
+  5;42,31 5;55,10 24;37,42 3;32,53 10;26,16
+  Solar: Iron-Ox. Dou 5
+11: Fri. nabs so. Earth-Wind; 16 Mar 1685
+  dge byed, tshong ba, Horse, kham 2
+  6;44,39 6;51,32 24;42,12 4;33,44 10;27,14
+  Solar: Water-Tiger. Niu 6
+12: Sat. rgyal. Earth-Fire; 17 Mar 1685
+  shin tu 'grams, gdab pa, Sheep, gin 3
+  0;45,47 7;48,54 24;46,42 5;35,36 10;28,12
+  Solar: Water-Rabbit. Nu 7
+13: Sun. skag. Fire-Water; 18 Mar 1685
+  las bzang, rigs can, Monkey, zin 4
+  1;45,52 8;47,19 24;51,11 6;38,31 10;29,10
+  Solar: Wood-Dragon. Xu 8
+14: Mon. mchu. Water-Fire; 19 Mar 1685
+  'dzin byed, khyim skyes, Bird, zon 5
+  2;43,59 9;47,41 24;55,40 7;43,22 11;0,8
+  Solar: Wood-Snake. Wei 9
+15: Tue. gre. Fire-Fire; 20 Mar 1685
+  zug rngu, vishti, Dog, li 6
+  3;41,1 10;49,3 25;0,4 8;49,7 11;1,7
+  Solar: Fire-Horse. Shi 1
+16: Wed. dbo. Water-Wind; 21 Mar 1685
+  'grams, byis pa, Pig, khon 7
+  4;37,3 11;51,25 25;4,28 9;55,53 11;2,5
+  Solar: Fire-Sheep. Bi 2
+17: Thu. me bzhi. Wind-Wind; 22 Mar 1685
+  brtan pa, til rdung, Mouse, dwa 8
+  5;32,5 12;54,47 25;8,52 11;3,39 11;3,3
+  Solar: Earth-Monkey. Kui 3
+18: Fri. nag pa. Earth-Wind; 23 Mar 1685
+  yongs bsnun, vishti, Ox, khen 9
+  6;26,10 13;59,5 25;13,16 12;12,21 11;4,1
+  Solar: Earth-Bird. Lou 4
+19: Sat. sa ga. Earth-Fire; 24 Mar 1685
+  dga' ba, byis pa, Tiger, kham 1
+  0;20,16 15;3,23 25;17,40 13;21,3 11;5,0
+  Solar: Iron-Dog. Wei 5
+20: Sun. lha mtshams. Fire-Earth; 25 Mar 1685
+  rdo rje, til rdung, Rabbit, gin 2
+  1;14,21 16;7,42 25;22,3 14;29,46 11;5,58
+  Solar: Iron-Pig. Mao 6
+21: Mon. snron. Water-Earth; 26 Mar 1685
+  dngos grub, tshong ba, Dragon, zin 3
+  2;8,27 17;12,0 25;26,27 15;38,28 11;6,56
+  Solar: Water-Mouse. Bi 7
+22: Tue. snrubs. Fire-Water; 27 Mar 1685
+  phan tshun, gdab pa, Snake, zon 4
+  3;2,32 18;16,18 25;30,51 16;47,10 11;7,54
+  Solar: Water-Ox. Zui 8
+23. Omitted: Horse li 5
+24: Wed. chu stod. Water-Water; 28 Mar 1685
+  yongs 'joms, til rdung, Sheep, khon 6
+  4;51,51 19;23,48 25;39,39 18;3,27 11;9,51
+  Solar: Wood-Tiger. Can 9
+25: Thu. chu smad. Wind-Earth; 29 Mar 1685
+  zhi ba, tshong ba, Monkey, dwa 7
+  5;48,0 20;26,2 25;44,3 19;10,6 11;10,49
+  Solar: Wood-Rabbit. Jing 1
+26: Fri. gro zhin. Earth-Earth; 30 Mar 1685
+  grub pa, gdab pa, Bird, khen 8
+  6;45,9 21;27,17 25;48,27 20;15,44 11;11,47
+  Solar: Fire-Dragon. Gui 2
+27: Sat. mon gre. Earth-Water; 31 Mar 1685
+  bsgrub bya, rigs can, Dog, kham 9
+  0;43,22 22;27,28 25;52,51 21;20,19 11;12,45
+  Solar: Fire-Snake. Liu 3
+28: Sun. mon gru. Fire-Earth; 1 Apr 1685
+  dge ba, khyim skyes, Pig, gin 1
+  1;43,32 23;25,42 25;57,14 22;22,57 11;13,43
+  Solar: Earth-Horse. Xing 4
+29: Mon. khrums stod. Water-Fire; 2 Apr 1685
+  dkar po, vishti, Mouse, zin 2
+  2;44,41 24;22,57 26;1,38 23;24,35 11;14,42
+  Solar: Earth-Sheep. Zhang 5
+30: Tue. khrums smad. Fire-Water; 3 Apr 1685
+  tshangs pa, rkang bzhi, Ox, zon 3
+  3;46,51 25;19,11 26;6,2 24;25,14 11;15,40
+  Solar: Iron-Monkey. Yi 6
+
+Tibetan Lunar Month: 3 - Iron-male-Horse
+
+1: Wed. nam gru. Water-Water; 4 Apr 1685
+  dbang po, mi sdug pa, Tiger, li 4
+  4;50,0 26;14,25 26;10,26 25;24,52 11;16,38
+  Solar: Iron-Bird. Zhen 7
+2: Thu. tha skar. Wind-Wind; 5 Apr 1685
+  'khon 'dzin, gdab pa, Rabbit, khon 5
+  5;54,6 0;8,44 26;14,50 26;23,34 11;17,36
+  Solar: Water-Dog. Jiao 8
+3: Fri. bra nye. Earth-Fire; 6 Apr 1685
+  rnam sel, rigs can, Dragon, dwa 6
+  6;58,12 1;3,2 26;19,14 0;22,16 11;18,34
+  Solar: Water-Pig. Kang 9
+4: Sat. bra nye. Earth-Fire; 7 Apr 1685
+  0;60,0 1;59,38 26;23,38 1;23,16 11;19,33
+  Solar: Wood-Mouse. Di 1
+4: Sun. smin drug. Fire-Fire; 8 Apr 1685
+  tshe dang ldan pa, vishti, Snake, khen 7
+  1;2,17 2;57,20 26;23,38 2;20,58 11;19,33
+  Solar: Wood-Ox. Fang 2
+5: Mon. snar ma. Water-Earth; 9 Apr 1685
+  skal bzang, byis pa, Horse, kham 8
+  2;6,23 3;51,38 26;28,2 3;19,40 11;20,31
+  Solar: Fire-Tiger. Xin 3
+6: Tue. mgo. Fire-Wind; 10 Apr 1685
+  dge byed, til rdung, Sheep, gin 9
+  3;10,29 4;45,56 26;32,25 4;18,22 11;21,29
+  Solar: Fire-Rabbit. Wei 4
+7: Wed. lag. Water-Water; 11 Apr 1685
+  shin tu 'grams, tshong ba, Monkey, zin 1
+  4;14,30 5;40,18 26;36,49 5;17,8 11;22,27
+  Solar: Earth-Dragon. Ji 5
+8: Thu. nabs so. Wind-Wind; 12 Apr 1685
+  las bzang, gdab pa, Bird, zon 2
+  5;17,32 6;35,41 26;41,13 6;16,54 11;23,25
+  Solar: Earth-Snake. Dou 6
+9: Fri. rgyal. Earth-Fire; 13 Apr 1685
+  'dzin byed, rigs can, Dog, li 3
+  6;19,34 7;32,3 26;45,37 7;17,40 11;24,24
+  Solar: Iron-Horse. Niu 7
+10: Sat. skag. Earth-Water; 14 Apr 1685
+  zug rngu, khyim skyes, Pig, khon 4
+  0;20,36 8;29,25 26;50,1 8;19,26 11;25,22
+  Solar: Iron-Sheep. Nu 8
+11: Sun. mchu. Fire-Fire; 15 Apr 1685
+  'grams, vishti, Mouse, dwa 5
+  1;20,33 9;27,51 26;54,25 9;22,17 11;26,20
+  Solar: Water-Monkey. Xu 9
+12: Mon. gre. Water-Fire; 16 Apr 1685
+  'phel, byis pa, Ox, khen 6
+  2;18,35 10;28,13 26;58,49 10;27,3 11;27,18
+  Solar: Water-Bird. Wei 1
+13: Tue. dbo. Fire-Wind; 17 Apr 1685
+  brtan pa, til rdung, Tiger, kham 7
+  3;15,36 11;29,36 0;3,13 11;32,49 11;28,17
+  Solar: Wood-Dog. Shi 2
+14: Wed. me bzhi. Water-Wind; 18 Apr 1685
+  yongs bsnun, tshong ba, Rabbit, gin 8
+  4;11,38 12;31,58 0;7,37 12;39,35 11;29,15
+  Solar: Wood-Pig. Bi 3
+15: Thu. nag pa. Wind-Wind; 19 Apr 1685
+  dga' ba, gdab pa, Dragon, zin 9
+  5;6,39 13;35,20 0;12,0 13;47,20 0;0,13
+  Solar: Fire-Mouse. Kui 4
+  Revelation of the Kalacakra Tantra.
+16: Fri. sa ri. Earth-Wind; 20 Apr 1685
+  rdo rje, rigs can, Snake, zon 1
+  6;0,40 14;39,39 0;16,20 14;55,59 0;1,11
+  Solar: Fire-Ox. Lou 5
+17. Omitted: Horse li 2
+18: Sat. sa ga. Earth-Fire; 21 Apr 1685
+  phan tshun, tshong ba, Sheep, khon 3
+  0;48,43 15;48,16 0;25,0 16;13,16 0;3,8
+  Solar: Earth-Tiger. Wei 6
+19: Sun. lha mtshams. Fire-Earth; 22 Apr 1685
+  mchog can, gdab pa, Monkey, dwa 4
+  1;42,45 16;52,34 0;29,20 17;21,54 0;4,6
+  Solar: Earth-Rabbit. Mao 7
+20: Mon. snron. Water-Earth; 23 Apr 1685
+  yongs 'joms, rigs can, Bird, khen 5
+  2;36,47 17;56,52 0;33,40 18;30,32 0;5,4
+  Solar: Iron-Dragon. Bi 8
+21: Tue. chu stod. Fire-Water; 24 Apr 1685
+  zhi ba, khyim skyes, Dog, kham 6
+  3;30,53 19;1,6 0;38,0 19;39,6 0;6,2
+  Solar: Iron-Snake. Zui 9
+22: Wed. chu smad. Water-Earth; 25 Apr 1685
+  grub pa, gdab pa, Pig, gin 7
+  4;25,58 20;4,21 0;42,20 20;46,41 0;7,0
+  Solar: Water-Horse. Can 1
+23: Thu. gro zhin. Wind-Earth; 26 Apr 1685
+  bsgrub bya, rigs can, Mouse, zin 8
+  5;22,4 21;6,35 0;46,40 21;53,15 0;7,59
+  Solar: Water-Sheep. Jing 2
+24: Fri. mon gre. Earth-Water; 27 Apr 1685
+  dge ba, khyim skyes, Ox, zon 9
+  6;19,10 22;7,49 0;51,0 22;58,49 0;8,57
+  Solar: Wood-Monkey. Gui 3
+25: Sat. mon gru. Earth-Earth; 28 Apr 1685
+  tshangs pa, vishti, Tiger, li 1
+  0;17,20 23;7,59 0;55,20 24;3,19 0;9,55
+  Solar: Wood-Bird. Liu 4
+26: Sun. khrums stod. Fire-Fire; 29 Apr 1685
+  dbang po, byis pa, Rabbit, khon 2
+  1;17,26 24;6,13 0;59,40 25;5,53 0;10,53
+  Solar: Fire-Dog. Xing 5
+27: Mon. khrums smad. Water-Water; 30 Apr 1685
+  'khon 'dzin, til rdung, Dragon, dwa 3
+  2;18,32 25;3,27 1;4,0 26;7,27 0;11,51
+  Solar: Fire-Pig. Zhang 6
+28: Tue. khrums smad. Fire-Water; 1 May 1685
+  rnam sel, tshong ba, Snake, khen 4
+  3;20,38 25;59,41 1;8,20 0;8,1 0;12,50
+  Solar: Earth-Mouse. Yi 7
+29: Wed. nam gru. Water-Water; 2 May 1685
+  mdza' bo, bkra shis, Horse, kham 5
+  4;23,44 26;54,55 1;12,40 1;7,35 0;13,48
+  Solar: Earth-Ox. Zhen 8
+30: Thu. tha skar. Wind-Wind; 3 May 1685
+  tshe dang ldan pa, rkang bzhi, Sheep, gin 6
+  5;27,46 0;49,13 1;17,0 2;6,13 0;14,46
+  Solar: Iron-Tiger. Jiao 9
+
+Tibetan Lunar Month: 4 - Iron-female-Sheep
+
+1: Fri. bra nye. Earth-Fire; 4 May 1685
+  skal bzang, mi sdug pa, Monkey, zin 7
+  6;31,48 1;43,31 1;21,20 3;4,51 0;15,44
+  Solar: Iron-Rabbit. Kang 1
+2: Sat. smin drug. Earth-Fire; 5 May 1685
+  dge byed, byis pa, Bird, zon 8
+  0;35,50 2;37,49 1;25,40 4;3,29 0;16,42
+  Solar: Water-Dragon. Di 2
+3: Sun. snar ma. Fire-Earth; 6 May 1685
+  shin tu 'grams, til rdung, Dog, li 9
+  1;39,52 3;32,7 1;30,0 5;2,7 0;17,41
+  Solar: Water-Snake. Fang 3
+4: Mon. mgo. Water-Wind; 7 May 1685
+  las bzang, tshong ba, Pig, khon 1
+  2;43,53 4;26,26 1;34,20 6;0,46 0;18,39
+  Solar: Wood-Horse. Xin 4
+5: Tue. lag. Fire-Water; 8 May 1685
+  las bzang, gdab pa, Mouse, dwa 2
+  3;47,51 5;20,48 1;38,40 6;59,28 0;19,37
+  Solar: Wood-Sheep. Wei 5
+6: Wed. nabs so. Water-Wind; 9 May 1685
+  'dzin byed, rigs can, Ox, khen 3
+  4;50,48 6;16,11 1;43,0 7;59,11 0;20,35
+  Solar: Fire-Monkey. Ji 6
+7: Thu. rgyal. Wind-Fire; 10 May 1685
+  zug rngu, khyim skyes, Tiger, kham 4
+  5;52,46 7;12,33 1;47,20 8;59,53 0;21,34
+  Solar: Fire-Bird. Dou 7
+  Birth of the Buddha.
+8: Fri. skag. Earth-Water; 11 May 1685
+  'phel, vishti, Rabbit, gin 5
+  6;53,43 8;9,56 1;51,40 10;1,36 0;22,32
+  Solar: Earth-Dog. Niu 8
+9: Sat. mchu. Earth-Fire; 12 May 1685
+  brtan pa, byis pa, Dragon, zin 6
+  0;53,36 9;8,23 1;56,0 11;4,23 0;23,30
+  Solar: Earth-Pig. Nu 9
+10: Sun. gre. Fire-Fire; 13 May 1685
+  yongs bsnun, til rdung, Snake, zon 7
+  1;51,33 10;8,46 2;0,20 12;9,6 0;24,28
+  Solar: Iron-Mouse. Xu 1
+11: Mon. dbo. Water-Wind; 14 May 1685
+  dga' ba, tshong ba, Horse, li 8
+  2;48,30 11;10,9 2;4,40 13;14,49 0;25,26
+  Solar: Iron-Ox. Wei 2
+12: Tue. me bzhi. Fire-Wind; 15 May 1685
+  rdo rje, gdab pa, Sheep, khon 9
+  3;44,28 12;12,31 2;9,0 14;21,31 0;26,25
+  Solar: Water-Tiger. Shi 3
+13: Wed. nag pa. Water-Wind; 16 May 1685
+  dngos grub, rigs can, Monkey, dwa 1
+  4;39,25 13;15,54 2;13,20 15;29,14 0;27,23
+  Solar: Water-Rabbit. Bi 4
+14: Thu. sa ri. Wind-Wind; 17 May 1685
+  phan tshun, khyim skyes, Bird, khen 2
+  5;33,26 14;20,13 2;17,40 16;37,53 0;28,21
+  Solar: Wood-Dragon. Kui 5
+15: Fri. sa ga. Earth-Fire; 18 May 1685
+  mchog can, vishti, Dog, kham 3
+  6;27,28 15;24,31 2;22,0 17;46,31 0;29,19
+  Solar: Wood-Snake. Lou 6
+  Enlightenment and Parinirvana of the Buddha.
+16: Sat. lha mtshams. Earth-Earth; 19 May 1685
+  yongs 'joms, rigs can, Pig, gin 4
+  0;21,28 16;28,49 2;26,18 18;55,8 1;0,17
+  Solar: Fire-Horse. Wei 7
+17: Sun. snron. Fire-Earth; 20 May 1685
+  grub pa, khyim skyes, Mouse, zin 5
+  1;15,24 17;33,8 2;30,32 20;3,40 1;1,16
+  Solar: Fire-Sheep. Mao 8
+18: Mon. snrubs. Water-Water; 21 May 1685
+  bsgrub bya, vishti, Ox, zon 6
+  2;9,20 18;37,26 2;34,46 21;12,13 1;2,14
+  Solar: Earth-Monkey. Bi 9
+19: Tue. chu stod. Fire-Water; 22 May 1685
+  dge ba, byis pa, Tiger, li 7
+  3;3,20 19;41,40 2;39,0 22;20,40 1;3,12
+  Solar: Earth-Bird. Zui 1
+20. Omitted: Rabbit khon 8
+21: Wed. chu smad. Water-Earth; 23 May 1685
+  dkar po, til rdung, Dragon, dwa 9
+  4;54,21 20;47,7 2;47,29 23;34,36 1;5,8
+  Solar: Iron-Dog. Can 2
+22: Thu. gro zhin. Wind-Earth; 24 May 1685
+  tshangs pa, vishti, Snake, khen 1
+  5;51,21 21;48,21 2;51,43 24;40,4 1;6,7
+  Solar: Iron-Pig. Jing 3
+23: Fri. mon gre. Earth-Water; 25 May 1685
+  dbang po, byis pa, Horse, kham 2
+  6;49,27 22;48,30 2;55,57 25;44,27 1;7,5
+  Solar: Water-Mouse. Gui 4
+24: Sat. mon gru. Earth-Earth; 26 May 1685
+  'khon 'dzin, til rdung, Sheep, gin 3
+  0;49,27 23;46,43 3;0,11 26;46,55 1;8,3
+  Solar: Water-Ox. Liu 5
+25: Sun. khrums stod. Fire-Fire; 27 May 1685
+  rnam sel, tshong ba, Monkey, zin 4
+  1;50,28 24;43,57 3;4,25 0;48,23 1;9,1
+  Solar: Wood-Tiger. Xing 6
+26: Mon. khrums smad. Water-Water; 28 May 1685
+  mdza' bo, gdab pa, Bird, zon 5
+  2;52,29 25;40,10 3;8,40 1;48,50 1;10,0
+  Solar: Wood-Rabbit. Zhang 7
+27: Tue. nam gru. Fire-Water; 29 May 1685
+  tshe dang ldan pa, byis pa, Dog, li 6
+  3;55,29 26;35,24 3;12,54 2;48,18 1;10,58
+  Solar: Fire-Dragon. Yi 8
+28: Wed. tha skar. Water-Wind; 30 May 1685
+  skal bzang, til rdung, Pig, khon 7
+  4;59,25 0;29,42 3;17,8 3;46,51 1;11,56
+  Solar: Fire-Snake. Zhen 9
+29: Thu. bra nye. Wind-Fire; 31 May 1685
+  5;60,0 1;27,22 3;21,22 4;48,45 1;12,54
+  Solar: Earth-Horse. Jiao 1
+29: Fri. smin drug. Earth-Fire; 1 Jun 1685
+  shin tu 'grams, bkra shis, Mouse, dwa 8
+  6;3,21 2;24,0 3;21,22 5;45,23 1;12,54
+  Solar: Earth-Sheep. Kang 2
+30: Sat. snar ma. Earth-Earth; 2 Jun 1685
+  las bzang, klu, Ox, khen 9
+  0;7,17 3;18,19 3;25,36 6;43,55 1;13,52
+  Solar: Iron-Monkey. Di 3
+
+Tibetan Lunar Month: 5 - Water-male-Monkey
+
+1: Sun. mgo. Fire-Wind; 3 Jun 1685
+  'dzin byed, gdab pa, Tiger, kham 1
+  1;11,13 4;12,37 3;29,50 7;42,28 1;14,51
+  Solar: Iron-Bird. Fang 4
+2: Mon. lag. Water-Water; 4 Jun 1685
+  zug rngu, rigs can, Rabbit, gin 2
+  2;15,9 5;6,55 3;34,5 8;41,0 1;15,49
+  Solar: Water-Dog. Xin 5
+3: Tue. nabs so. Fire-Wind; 5 Jun 1685
+  'grams, khyim skyes, Dragon, zin 3
+  3;19,0 6;1,18 3;38,19 9;39,37 1;16,47
+  Solar: Water-Pig. Wei 6
+4: Wed. nabs so. Water-Wind; 6 Jun 1685
+  'phel, vishti, Snake, zon 4
+  4;21,51 6;56,41 3;42,33 10;39,14 1;17,45
+  Solar: Wood-Mouse. Ji 7
+5: Thu. rgyal. Wind-Fire; 7 Jun 1685
+  brtan pa, byis pa, Horse, li 5
+  5;23,43 7;53,4 3;46,47 11;39,52 1;18,43
+  Solar: Wood-Ox. Dou 8
+6: Fri. skag. Earth-Water; 8 Jun 1685
+  yongs bsnun, til rdung, Sheep, khon 6
+  6;24,34 8;50,27 3;51,1 12;41,29 1;19,42
+  Solar: Fire-Tiger. Niu 9
+7: Sat. mchu. Earth-Fire; 9 Jun 1685
+  dga' ba, tshong ba, Monkey, dwa 7
+  0;24,20 9;48,55 3;55,15 13;44,11 1;20,40
+  Solar: Fire-Rabbit. Nu 1
+8: Sun. gre. Fire-Fire; 10 Jun 1685
+  rdo rje, gdab pa, Bird, khen 8
+  1;22,11 10;49,18 3;59,30 14;48,48 1;21,38
+  Solar: Earth-Dragon. Xu 2
+9: Mon. dbo. Water-Wind; 11 Jun 1685
+  dngos grub, rigs can, Dog, kham 9
+  2;19,2 11;50,42 4;3,44 15;54,26 1;22,36
+  Solar: Earth-Snake. Wei 3
+10: Tue. me bzhi. Fire-Wind; 12 Jun 1685
+  mchog can, khyim skyes, Pig, gin 1
+  3;14,53 12;53,5 4;7,58 17;1,3 1;23,34
+  Solar: Iron-Horse. Shi 4
+11: Wed. nag pa. Water-Wind; 13 Jun 1685
+  yongs 'joms, vishti, Mouse, zin 2
+  4;9,44 13;56,28 4;12,12 18;8,41 1;24,33
+  Solar: Iron-Sheep. Bi 5
+12: Thu. sa ga. Wind-Fire; 14 Jun 1685
+  zhi ba, byis pa, Ox, zon 3
+  5;3,39 15;0,46 4;16,26 19;17,13 1;25,31
+  Solar: Water-Monkey. Kui 6
+13. Omitted: Tiger li 4
+14: Fri. lha mtshams. Earth-Earth; 15 Jun 1685
+  grub pa, khyim skyes, Rabbit, khon 5
+  6;51,31 16;9,23 4;24,55 20;34,18 1;27,27
+  Solar: Water-Bird. Lou 7
+15: Sat. snron. Earth-Earth; 16 Jun 1685
+  bsgrub bya, vishti, Dragon, dwa 6
+  0;45,27 17;13,41 4;29,9 21;42,51 1;28,25
+  Solar: Wood-Dog. Wei 8
+16: Sun. snrubs. Fire-Water; 17 Jun 1685
+  dge ba, byis pa, Snake, khen 7
+  1;39,23 18;18,0 4;33,23 22;51,23 1;29,24
+  Solar: Wood-Pig. Mao 9
+17: Mon. chu stod. Water-Water; 18 Jun 1685
+  dkar po, til rdung, Horse, kham 8
+  2;33,22 19;22,13 4;37,36 23;59,49 2;0,22
+  Solar: Fire-Mouse. Bi 1
+18: Tue. chu smad. Fire-Earth; 19 Jun 1685
+  dbang po, tshong ba, Sheep, gin 9
+  3;28,19 20;25,26 4;41,46 25;7,13 2;1,20
+  Solar: Fire-Ox. Zui 2
+19: Wed. gro zhin. Water-Earth; 20 Jun 1685
+  'khon 'dzin, byis pa, Monkey, zin 1
+  4;24,16 21;27,40 4;45,56 26;13,36 2;2,18
+  Solar: Earth-Tiger. Can 3
+20: Thu. mon gre. Wind-Water; 21 Jun 1685
+  rnam sel, til rdung, Bird, zon 2
+  5;21,13 22;28,53 4;50,7 0;19,0 2;3,17
+  Solar: Earth-Rabbit. Jing 4
+21: Fri. mon gru. Earth-Earth; 22 Jun 1685
+  mdza' bo, tshong ba, Dog, li 3
+  6;19,16 23;29,1 4;54,17 1;23,18 2;4,15
+  Solar: Iron-Dragon. Gui 5
+22: Sat. khrums stod. Earth-Fire; 23 Jun 1685
+  tshe dang ldan pa, gdab pa, Pig, khon 4
+  0;19,13 24;27,14 4;58,27 2;25,42 2;5,13
+  Solar: Iron-Snake. Liu 6
+23: Sun. khrums smad. Fire-Water; 24 Jun 1685
+  skal bzang, rigs can, Mouse, dwa 5
+  1;20,10 25;24,27 5;2,38 3;27,5 2;6,11
+  Solar: Water-Horse. Xing 7
+24: Mon. nam gru. Water-Water; 25 Jun 1685
+  dge byed, khyim skyes, Ox, khen 6
+  2;22,7 26;20,40 5;6,48 4;27,29 2;7,9
+  Solar: Water-Sheep. Zhang 8
+25: Tue. tha skar. Fire-Wind; 26 Jun 1685
+  shin tu 'grams, vishti, Tiger, kham 7
+  3;25,4 0;15,53 5;10,58 5;26,52 2;8,8
+  Solar: Wood-Monkey. Yi 9
+26: Wed. bra nye. Water-Fire; 27 Jun 1685
+  las bzang, gdab pa, Rabbit, gin 8
+  4;28,56 1;10,12 5;15,8 6;25,20 2;9,6
+  Solar: Wood-Bird. Zhen 1
+27: Thu. smin drug. Wind-Fire; 28 Jun 1685
+  'dzin byed, rigs can, Dragon, zin 9
+  5;32,49 2;4,30 5;19,19 7;23,49 2;10,4
+  Solar: Fire-Dog. Jiao 2
+28: Fri. smin drug. Earth-Fire; 29 Jun 1685
+  zug rngu, khyim skyes, Snake, zon 1
+  6;36,41 2;58,48 5;23,29 8;22,17 2;11,2
+  Solar: Fire-Pig. Kang 3
+29: Sat. snar ma. Earth-Earth; 30 Jun 1685
+  'grams, vishti, Horse, li 2
+  0;40,33 3;53,6 5;27,39 9;20,46 2;12,0
+  Solar: Earth-Mouse. Di 4
+30: Sun. mgo. Fire-Wind; 1 Jul 1685
+  'phel, rkang bzhi, Sheep, khon 3
+  1;44,25 4;47,24 5;31,50 10;19,14 2;12,59
+  Solar: Earth-Ox. Fang 5
+
+Tibetan Lunar Month: 6 - Water-female-Bird
+
+1: Mon. lag. Water-Water; 2 Jul 1685
+  brtan pa, mi sdug pa, Monkey, dwa 4
+  2;48,12 5;41,48 5;36,0 11;17,48 2;13,57
+  Solar: Iron-Tiger. Xin 6
+2: Tue. nabs so. Fire-Wind; 3 Jul 1685
+  yongs bsnun, byis pa, Bird, khen 5
+  3;50,59 6;37,11 5;40,10 12;17,22 2;14,55
+  Solar: Iron-Rabbit. Wei 7
+3: Wed. rgyal. Water-Fire; 4 Jul 1685
+  dga' ba, til rdung, Dog, kham 6
+  4;52,45 7;33,35 5;44,21 13;17,56 2;15,53
+  Solar: Water-Dragon. Ji 8
+4: Thu. skag. Wind-Water; 5 Jul 1685
+  rdo rje, tshong ba, Pig, gin 7
+  5;53,32 8;30,58 5;48,31 14;19,30 2;16,51
+  Solar: Water-Snake. Dou 9
+  Turning of the Wheel of the Dharma.
+5: Fri. mchu. Earth-Fire; 6 Jul 1685
+  dngos grub, gdab pa, Mouse, zin 8
+  6;53,14 9;29,27 5;52,41 15;22,9 2;17,50
+  Solar: Wood-Horse. Niu 1
+6: Sat. gre. Earth-Fire; 7 Jul 1685
+  phan tshun, rigs can, Ox, zon 9
+  0;51,0 10;29,51 5;56,51 16;26,43 2;18,48
+  Solar: Wood-Sheep. Nu 2
+7: Sun. dbo. Fire-Wind; 8 Jul 1685
+  mchog can, khyim skyes, Tiger, li 1
+  1;47,47 11;31,14 6;1,2 17;32,17 2;19,46
+  Solar: Fire-Monkey. Xu 3
+8: Mon. me bzhi. Water-Wind; 9 Jul 1685
+  yongs 'joms, vishti, Rabbit, khon 2
+  2;43,33 12;33,38 6;5,12 18;38,51 2;20,44
+  Solar: Fire-Bird. Wei 4
+9: Tue. nag pa. Fire-Wind; 10 Jul 1685
+  zhi ba, byis pa, Dragon, dwa 3
+  3;38,20 13;37,2 6;9,22 19;46,25 2;21,42
+  Solar: Earth-Dog. Shi 5
+10: Wed. sa ri. Water-Wind; 11 Jul 1685
+  grub pa, til rdung, Snake, khen 4
+  4;32,12 14;41,20 6;13,33 20;54,53 2;22,41
+  Solar: Earth-Pig. Bi 6
+11: Thu. sa ga. Wind-Fire; 12 Jul 1685
+  dge ba, vishti, Horse, kham 5
+  5;26,4 15;45,38 6;17,43 22;3,22 2;23,39
+  Solar: Iron-Mouse. Kui 7
+12: Fri. lha mtshams. Earth-Earth; 13 Jul 1685
+  dkar po, byis pa, Sheep, gin 6
+  6;19,56 16;49,57 6;21,53 23;11,51 2;24,37
+  Solar: Iron-Ox. Lou 8
+13: Sat. snron. Earth-Earth; 14 Jul 1685
+  tshangs pa, til rdung, Monkey, zin 7
+  0;13,48 17;54,15 6;26,4 24;20,19 2;25,35
+  Solar: Water-Tiger. Wei 9
+14: Sun. snrubs. Fire-Water; 15 Jul 1685
+  dbang po, tshong ba, Bird, zon 8
+  1;7,40 18;58,34 6;30,14 25;28,48 2;26,34
+  Solar: Water-Rabbit. Mao 1
+15: Mon. chu smad. Water-Earth; 16 Jul 1685
+  'khon 'dzin, gdab pa, Dog, li 9
+  2;1,37 20;2,46 6;34,24 26;37,11 2;27,32
+  Solar: Wood-Dragon. Bi 2
+  The Buddha's entry into the womb of his mother.
+16. Omitted: Pig khon 1
+17: Tue. gro zhin. Fire-Earth; 17 Jul 1685
+  rnam sel, til rdung, Mouse, dwa 2
+  3;52,32 21;8,12 6;42,45 0;50,57 2;29,28
+  Solar: Wood-Snake. Zui 3
+18: Wed. mon gre. Water-Water; 18 Jul 1685
+  mdza' bo, tshong ba, Ox, khen 3
+  4;49,30 22;9,25 6;46,55 1;56,20 3;0,26
+  Solar: Fire-Horse. Can 4
+19: Thu. mon gru. Wind-Earth; 19 Jul 1685
+  skal bzang, gdab pa, Tiger, kham 4
+  5;47,33 23;9,32 6;51,5 3;0,38 3;1,25
+  Solar: Fire-Sheep. Jing 5
+20: Fri. khrums stod. Earth-Fire; 20 Jul 1685
+  dge byed, rigs can, Rabbit, gin 5
+  6;47,30 24;7,45 6;55,16 4;3,1 3;2,23
+  Solar: Earth-Monkey. Gui 6
+21: Sat. khrums smad. Earth-Water; 21 Jul 1685
+  shin tu 'grams, khyim skyes, Dragon, zin 6
+  0;48,28 25;4,57 6;59,26 5;4,24 3;3,21
+  Solar: Earth-Bird. Liu 7
+22: Sun. nam gru. Fire-Water; 22 Jul 1685
+  las bzang, vishti, Snake, zon 7
+  1;50,26 26;1,10 7;3,36 6;4,47 3;4,19
+  Solar: Iron-Dog. Xing 8
+23: Mon. nam gru. Water-Water; 23 Jul 1685
+  'dzin byed, byis pa, Horse, li 8
+  2;53,23 26;56,23 7;7,47 7;4,10 3;5,17
+  Solar: Iron-Pig. Zhang 9
+24: Tue. tha skar. Fire-Wind; 24 Jul 1685
+  zug rngu, rigs can, Sheep, khon 9
+  3;57,15 0;50,41 7;11,57 8;2,38 3;6,16
+  Solar: Water-Mouse. Yi 1
+25: Wed. bra nye. Water-Fire; 25 Jul 1685
+  4;60,0 1;46,7 7;16,7 9;2,15 3;7,14
+  Solar: Water-Ox. Zhen 2
+25: Thu. smin drug. Wind-Fire; 26 Jul 1685
+  'phel, vishti, Monkey, dwa 1
+  5;1,8 2;44,59 7;16,7 10;1,7 3;7,14
+  Solar: Wood-Tiger. Jiao 3
+26: Fri. snar ma. Earth-Earth; 27 Jul 1685
+  'phel, byis pa, Bird, khen 2
+  6;5,0 3;39,17 7;20,17 10;59,35 3;8,12
+  Solar: Wood-Rabbit. Kang 4
+27: Sat. mgo. Earth-Wind; 28 Jul 1685
+  brtan pa, til rdung, Dog, kham 3
+  0;8,52 4;33,35 7;24,28 11;58,4 3;9,10
+  Solar: Fire-Dragon. Di 5
+28: Sun. lag. Fire-Water; 29 Jul 1685
+  yongs bsnun, tshong ba, Pig, gin 4
+  1;12,44 5;27,54 7;28,38 12;56,32 3;10,8
+  Solar: Fire-Snake. Fang 6
+29: Mon. nabs so. Water-Wind; 30 Jul 1685
+  dga' ba, bkra shis, Mouse, zin 5
+  2;16,30 6;22,18 7;32,48 13;55,6 3;11,7
+  Solar: Earth-Horse. Xin 7
+30: Tue. rgyal. Fire-Fire; 31 Jul 1685
+  rdo rje, klu, Ox, zon 6
+  3;19,17 7;17,41 7;36,59 14;54,41 3;12,5
+  Solar: Earth-Sheep. Wei 8
+
+Tibetan Lunar Month: 7 - Wood-male-Dog
+
+1: Wed. skag. Water-Water; 1 Aug 1685
+  dngos grub, gdab pa, Tiger, li 7
+  4;21,3 8;14,5 7;41,9 15;55,15 3;13,3
+  Solar: Iron-Monkey. Ji 9
+2: Thu. mchu. Wind-Fire; 2 Aug 1685
+  phan tshun, rigs can, Rabbit, khon 8
+  5;21,49 9;11,29 7;45,19 16;56,49 3;14,1
+  Solar: Iron-Bird. Dou 1
+3: Fri. gre. Earth-Fire; 3 Aug 1685
+  mchog can, khyim skyes, Dragon, dwa 9
+  6;21,30 10;9,59 7;49,30 17;59,29 3;15,0
+  Solar: Water-Dog. Niu 2
+4: Sat. dbo. Earth-Wind; 4 Aug 1685
+  zhi ba, vishti, Snake, khen 1
+  0;19,16 11;10,23 7;53,40 19;4,3 3;15,58
+  Solar: Water-Pig. Nu 3
+5: Sun. me bzhi. Fire-Wind; 5 Aug 1685
+  grub pa, byis pa, Horse, kham 2
+  1;16,2 12;11,47 7;57,50 20;9,38 3;16,56
+  Solar: Wood-Mouse. Xu 4
+6: Mon. nag pa. Water-Wind; 6 Aug 1685
+  bsgrub bya, til rdung, Sheep, gin 3
+  2;11,48 13;14,11 8;2,0 21;16,12 3;17,54
+  Solar: Wood-Ox. Wei 5
+7: Tue. sa ri. Fire-Wind; 7 Aug 1685
+  dge ba, tshong ba, Monkey, zin 4
+  3;6,35 14;17,36 8;6,11 22;23,47 3;18,52
+  Solar: Fire-Tiger. Shi 6
+8: Wed. sa ga. Water-Fire; 8 Aug 1685
+  dkar po, gdab pa, Bird, zon 5
+  4;0,27 15;21,54 8;10,21 23;32,15 3;19,51
+  Solar: Fire-Rabbit. Bi 7
+9. Omitted: Dog li 6
+10: Thu. lha mtshams. Wind-Earth; 9 Aug 1685
+  tshangs pa, til rdung, Pig, khon 7
+  5;48,10 16;30,31 8;18,42 24;49,13 3;21,47
+  Solar: Earth-Dragon. Kui 8
+11: Fri. snron. Earth-Earth; 10 Aug 1685
+  dbang po, tshong ba, Mouse, dwa 8
+  6;42,2 17;34,49 8;22,52 25;57,41 3;22,45
+  Solar: Earth-Snake. Lou 9
+12: Sat. snrubs. Earth-Water; 11 Aug 1685
+  rnam sel, gdab pa, Ox, khen 9
+  0;35,54 18;39,7 8;27,2 0;6,10 3;23,43
+  Solar: Iron-Horse. Wei 1
+13: Sun. chu stod. Fire-Water; 12 Aug 1685
+  mdza' bo, rigs can, Tiger, kham 1
+  1;29,52 19;43,20 8;31,12 1;14,33 3;24,42
+  Solar: Iron-Sheep. Mao 2
+14: Mon. chu smad. Water-Earth; 13 Aug 1685
+  tshe dang ldan pa, tshong ba, Rabbit, gin 2
+  2;24,50 20;46,32 8;35,23 2;21,55 3;25,40
+  Solar: Water-Monkey. Bi 3
+15: Tue. gro zhin. Fire-Earth; 14 Aug 1685
+  skal bzang, gdab pa, Dragon, zin 3
+  3;20,48 21;48,45 8;39,33 3;28,18 3;26,38
+  Solar: Water-Bird. Zui 4
+16: Wed. mon gre. Water-Water; 15 Aug 1685
+  dge byed, rigs can, Snake, zon 4
+  4;17,46 22;49,57 8;43,43 4;33,41 3;27,36
+  Solar: Wood-Dog. Can 5
+17: Thu. mon gru. Wind-Earth; 16 Aug 1685
+  shin tu 'grams, khyim skyes, Horse, li 5
+  5;15,50 23;50,3 8;47,54 5;37,57 3;28,34
+  Solar: Wood-Pig. Jing 6
+18: Fri. khrums stod. Earth-Fire; 17 Aug 1685
+  las bzang, vishti, Sheep, khon 6
+  6;15,48 24;48,15 8;52,4 6;40,20 3;29,33
+  Solar: Fire-Mouse. Gui 7
+19: Sat. khrums smad. Earth-Water; 18 Aug 1685
+  'dzin byed, byis pa, Monkey, dwa 7
+  0;16,48 25;45,28 8;56,16 7;41,45 4;0,31
+  Solar: Fire-Ox. Liu 8
+20: Sun. nam gru. Fire-Water; 19 Aug 1685
+  zug rngu, til rdung, Bird, khen 8
+  1;18,50 26;41,40 9;0,31 8;42,11 4;1,29
+  Solar: Earth-Tiger. Xing 9
+21: Mon. tha skar. Water-Wind; 20 Aug 1685
+  'grams, tshong ba, Dog, kham 9
+  2;21,52 0;36,52 9;4,45 9;41,37 4;2,27
+  Solar: Earth-Rabbit. Zhang 1
+22: Tue. bra nye. Fire-Fire; 21 Aug 1685
+  'phel, gdab pa, Pig, gin 1
+  3;25,48 1;31,10 9;8,59 10;40,10 4;3,25
+  Solar: Iron-Dragon. Yi 2
+23: Wed. smin drug. Water-Fire; 22 Aug 1685
+  brtan pa, byis pa, Mouse, zin 2
+  4;29,44 2;25,28 9;13,13 11;38,42 4;4,24
+  Solar: Iron-Snake. Zhen 3
+24: Thu. snar ma. Wind-Earth; 23 Aug 1685
+  yongs bsnun, til rdung, Ox, zon 3
+  5;33,40 3;19,47 9;17,27 12;37,14 4;5,22
+  Solar: Water-Horse. Jiao 4
+25: Fri. mgo. Earth-Wind; 24 Aug 1685
+  dga' ba, tshong ba, Tiger, li 4
+  6;37,36 4;14,5 9;21,41 13;35,47 4;6,20
+  Solar: Water-Sheep. Kang 5
+26: Sat. lag. Earth-Water; 25 Aug 1685
+  rdo rje, gdab pa, Rabbit, khon 5
+  0;41,32 5;8,23 9;25,56 14;34,19 4;7,18
+  Solar: Wood-Monkey. Di 6
+27: Sun. nabs so. Fire-Wind; 26 Aug 1685
+  dngos grub, rigs can, Dragon, dwa 6
+  1;45,22 6;2,47 9;30,10 15;32,58 4;8,17
+  Solar: Wood-Bird. Fang 7
+28: Mon. nabs so. Water-Wind; 27 Aug 1685
+  phan tshun, khyim skyes, Snake, khen 7
+  2;48,12 6;58,12 9;34,24 16;32,36 4;9,15
+  Solar: Fire-Dog. Xin 8
+29: Tue. rgyal. Fire-Fire; 28 Aug 1685
+  mchog can, vishti, Horse, kham 8
+  3;50,2 7;54,36 9;38,38 17;33,15 4;10,13
+  Solar: Fire-Pig. Wei 9
+30: Wed. skag. Water-Water; 29 Aug 1685
+  yongs 'joms, rkang bzhi, Sheep, gin 9
+  4;50,51 8;52,0 9;42,52 18;34,53 4;11,11
+  Solar: Earth-Mouse. Ji 1
+
+Tibetan Lunar Month: 8 - Wood-female-Pig
+
+1: Thu. mchu. Wind-Fire; 30 Aug 1685
+  zhi ba, mi sdug pa, Monkey, zin 1
+  5;50,35 9;50,31 9;47,7 19;37,38 4;12,9
+  Solar: Earth-Ox. Dou 2
+2: Fri. gre. Earth-Fire; 31 Aug 1685
+  grub pa, byis pa, Bird, zon 2
+  6;48,25 10;50,56 9;51,21 20;42,17 4;13,8
+  Solar: Iron-Tiger. Niu 3
+3: Sat. dbo. Earth-Wind; 1 Sep 1685
+  bsgrub bya, til rdung, Dog, li 3
+  0;45,14 11;52,20 9;55,35 21;47,56 4;14,6
+  Solar: Iron-Rabbit. Nu 4
+4: Sun. me bzhi. Fire-Wind; 2 Sep 1685
+  dge ba, tshong ba, Pig, khon 4
+  1;41,4 12;54,45 9;59,49 22;54,34 4;15,4
+  Solar: Water-Dragon. Xu 5
+5: Mon. nag pa. Water-Wind; 3 Sep 1685
+  tshangs pa, gdab pa, Mouse, dwa 5
+  2;35,53 13;58,9 10;4,3 24;2,13 4;16,2
+  Solar: Water-Snake. Wei 6
+6: Tue. sa ga. Fire-Fire; 4 Sep 1685
+  dbang po, rigs can, Ox, khen 6
+  3;29,49 15;2,28 10;8,17 25;10,46 4;17,0
+  Solar: Wood-Horse. Shi 7
+7: Wed. lha mtshams. Water-Earth; 5 Sep 1685
+  'khon 'dzin, tshong ba, Tiger, kham 7
+  4;23,45 16;6,46 10;12,32 26;19,18 4;17,59
+  Solar: Wood-Sheep. Bi 8
+8: Thu. snron. Wind-Earth; 6 Sep 1685
+  rnam sel, gdab pa, Rabbit, gin 8
+  5;17,41 17;11,4 10;16,46 0;27,51 4;18,57
+  Solar: Fire-Monkey. Kui 9
+9: Fri. snrubs. Earth-Water; 7 Sep 1685
+  mdza' bo, rigs can, Dragon, zin 9
+  6;11,37 18;15,23 10;21,0 1;36,23 4;19,55
+  Solar: Fire-Bird. Lou 1
+10: Sat. chu stod. Earth-Water; 8 Sep 1685
+  tshe dang ldan pa, khyim skyes, Snake, zon 1
+  0;5,33 19;19,41 10;25,14 2;44,56 4;20,53
+  Solar: Earth-Dog. Wei 2
+11. Omitted: Horse li 2
+12: Sun. chu smad. Fire-Earth; 9 Sep 1685
+  dge byed, vishti, Sheep, khon 3
+  1;54,37 20;27,5 10;33,42 4;0,48 4;22,50
+  Solar: Earth-Pig. Mao 3
+13: Mon. gro zhin. Water-Earth; 10 Sep 1685
+  shin tu 'grams, rigs can, Monkey, dwa 4
+  2;50,39 21;29,17 10;37,57 5;7,14 4;23,48
+  Solar: Iron-Mouse. Bi 4
+14: Tue. mon gre. Fire-Water; 11 Sep 1685
+  las bzang, khyim skyes, Bird, khen 5
+  3;47,41 22;30,29 10;42,11 6;12,40 4;24,46
+  Solar: Iron-Ox. Zui 5
+15: Wed. mon gru. Water-Earth; 12 Sep 1685
+  'dzin byed, vishti, Dog, kham 6
+  4;45,50 23;30,34 10;46,25 7;17,0 4;25,44
+  Solar: Water-Tiger. Can 6
+16: Thu. khrums stod. Wind-Fire; 13 Sep 1685
+  zug rngu, byis pa, Pig, gin 7
+  5;45,53 24;28,46 10;50,39 8;19,26 4;26,42
+  Solar: Water-Rabbit. Jing 7
+17: Fri. khrums smad. Earth-Water; 14 Sep 1685
+  'grams, til rdung, Mouse, zin 8
+  6;46,55 25;25,58 10;54,53 9;20,52 4;27,41
+  Solar: Wood-Dragon. Gui 8
+18: Sat. nam gru. Earth-Water; 15 Sep 1685
+  'phel, tshong ba, Ox, zon 9
+  0;48,57 26;22,10 10;59,8 10;21,18 4;28,39
+  Solar: Wood-Snake. Liu 9
+19: Sun. tha skar. Fire-Wind; 16 Sep 1685
+  brtan pa, gdab pa, Tiger, li 1
+  1;52,0 0;17,21 11;3,22 11;20,44 4;29,37
+  Solar: Fire-Horse. Xing 1
+20: Mon. bra nye. Water-Fire; 17 Sep 1685
+  yongs bsnun, byis pa, Rabbit, khon 2
+  2;55,59 1;11,40 11;7,40 12;19,20 5;0,35
+  Solar: Fire-Sheep. Zhang 2
+21: Tue. smin drug. Fire-Fire; 18 Sep 1685
+  3;60,0 2;6,0 11;12,0 13;18,0 5;1,34
+  Solar: Earth-Monkey. Yi 3
+21: Wed. snar ma. Water-Earth; 19 Sep 1685
+  rdo rje, tshong ba, Dragon, dwa 3
+  4;0,1 3;5,58 11;12,0 14;17,58 5;1,34
+  Solar: Earth-Bird. Zhen 4
+22: Thu. mgo. Wind-Wind; 20 Sep 1685
+  dngos grub, gdab pa, Snake, khen 4
+  5;4,3 4;0,16 11;16,20 15;16,36 5;2,32
+  Solar: Iron-Dog. Jiao 5
+23: Fri. mgo. Earth-Wind; 21 Sep 1685
+  phan tshun, rigs can, Horse, kham 5
+  6;8,5 4;54,34 11;20,40 16;15,14 5;3,30
+  Solar: Iron-Pig. Kang 6
+24: Sat. lag. Earth-Water; 22 Sep 1685
+  mchog can, khyim skyes, Sheep, gin 6
+  0;12,7 5;48,52 11;25,0 17;13,52 5;4,28
+  Solar: Water-Mouse. Di 7
+25: Sun. nabs so. Fire-Wind; 23 Sep 1685
+  yongs 'joms, vishti, Monkey, zin 7
+  1;16,2 6;43,17 11;29,20 18;12,37 5;5,26
+  Solar: Water-Ox. Fang 8
+26: Mon. rgyal. Water-Fire; 24 Sep 1685
+  zhi ba, byis pa, Bird, zon 8
+  2;18,57 7;38,42 11;33,40 19;12,22 5;6,25
+  Solar: Wood-Tiger. Xin 9
+27: Tue. skag. Fire-Water; 25 Sep 1685
+  grub pa, til rdung, Dog, li 9
+  3;20,52 8;35,7 11;38,0 20;13,7 5;7,23
+  Solar: Wood-Rabbit. Wei 1
+28: Wed. mchu. Water-Fire; 26 Sep 1685
+  bsgrub bya, tshong ba, Pig, khon 1
+  4;21,47 9;32,32 11;42,20 21;14,52 5;8,21
+  Solar: Fire-Dragon. Ji 2
+29: Thu. gre. Wind-Fire; 27 Sep 1685
+  dge ba, bkra shis, Mouse, dwa 2
+  5;21,36 10;31,3 11;46,40 22;17,43 5;9,19
+  Solar: Fire-Snake. Dou 3
+30: Fri. dbo. Earth-Wind; 28 Sep 1685
+  dkar po, klu, Ox, khen 3
+  6;19,31 11;31,28 11;51,0 23;22,28 5;10,17
+  Solar: Earth-Horse. Niu 4
+
+Tibetan Lunar Month: 9 - Fire-male-Mouse
+
+1: Sat. me bzhi. Earth-Wind; 29 Sep 1685
+  tshangs pa, gdab pa, Tiger, kham 4
+  0;16,26 12;32,53 11;55,20 24;28,13 5;11,16
+  Solar: Earth-Sheep. Nu 5
+2: Sun. nag pa. Fire-Wind; 30 Sep 1685
+  dbang po, rigs can, Rabbit, gin 5
+  1;12,21 13;35,18 11;59,40 25;34,58 5;12,14
+  Solar: Iron-Monkey. Xu 6
+3: Mon. sa ri. Water-Wind; 1 Oct 1685
+  'khon 'dzin, khyim skyes, Dragon, zin 6
+  2;7,16 14;38,43 12;4,0 26;42,43 5;13,12
+  Solar: Iron-Bird. Wei 7
+4: Tue. sa ga. Fire-Fire; 2 Oct 1685
+  rnam sel, vishti, Snake, zon 7
+  3;1,18 15;43,1 12;8,20 0;51,21 5;14,10
+  Solar: Water-Dog. Shi 8
+5. Omitted: Horse li 8
+6: Wed. lha mtshams. Water-Earth; 3 Oct 1685
+  tshe dang ldan pa, rigs can, Sheep, khon 9
+  4;49,21 16;51,38 12;17,0 2;8,38 5;16,7
+  Solar: Water-Pig. Bi 9
+7: Thu. snron. Wind-Earth; 4 Oct 1685
+  skal bzang, khyim skyes, Monkey, dwa 1
+  5;43,22 17;55,57 12;21,20 3;17,17 5;17,5
+  Solar: Wood-Mouse. Kui 1
+8: Fri. chu stod. Earth-Water; 5 Oct 1685
+  dge byed, vishti, Bird, khen 2
+  6;37,24 19;0,15 12;25,40 4;25,55 5;18,3
+  Solar: Wood-Ox. Lou 2
+9: Sat. chu smad. Earth-Earth; 6 Oct 1685
+  shin tu 'grams, byis pa, Dog, kham 3
+  0;31,33 20;4,26 12;30,0 5;34,26 5;19,1
+  Solar: Fire-Tiger. Wei 3
+10: Sun. gro zhin. Fire-Earth; 7 Oct 1685
+  las bzang, khyim skyes, Pig, gin 4
+  1;26,41 21;7,38 12;34,20 6;41,58 5;20,0
+  Solar: Fire-Rabbit. Mao 4
+11: Mon. mon gre. Water-Water; 8 Oct 1685
+  'dzin byed, vishti, Mouse, zin 5
+  2;22,50 22;9,49 12;38,40 7;48,29 5;20,58
+  Solar: Earth-Dragon. Bi 5
+12: Tue. mon gru. Fire-Earth; 9 Oct 1685
+  zug rngu, byis pa, Ox, zon 6
+  3;19,58 23;11,1 12;43,0 8;54,1 5;21,56
+  Solar: Earth-Snake. Zui 6
+13: Wed. khrums stod. Water-Fire; 10 Oct 1685
+  'grams, til rdung, Tiger, li 7
+  4;18,14 24;11,5 12;47,20 9;58,25 5;22,54
+  Solar: Iron-Horse. Can 7
+14: Thu. khrums smad. Wind-Water; 11 Oct 1685
+  brtan pa, tshong ba, Rabbit, khon 8
+  5;18,22 25;9,17 12;51,40 11;0,57 5;23,52
+  Solar: Iron-Sheep. Jing 8
+15: Fri. nam gru. Earth-Water; 12 Oct 1685
+  yongs bsnun, gdab pa, Dragon, dwa 9
+  6;19,31 26;6,28 12;56,0 12;2,28 5;24,51
+  Solar: Water-Monkey. Gui 9
+16: Sat. tha skar. Earth-Wind; 13 Oct 1685
+  dga' ba, rigs can, Snake, khen 1
+  0;21,40 0;2,39 13;0,20 13;2,59 5;25,49
+  Solar: Water-Bird. Liu 1
+17: Sun. tha skar. Fire-Wind; 14 Oct 1685
+  rdo rje, khyim skyes, Horse, kham 2
+  1;24,48 0;57,51 13;4,40 14;2,31 5;26,47
+  Solar: Wood-Dog. Xing 2
+18: Mon. bra nye. Water-Fire; 15 Oct 1685
+  dngos grub, tshong ba, Sheep, gin 3
+  2;28,50 1;52,9 13;9,0 15;1,9 5;27,45
+  Solar: Wood-Pig. Zhang 3
+19: Tue. smin drug. Fire-Fire; 16 Oct 1685
+  dngos grub, gdab pa, Monkey, zin 4
+  3;32,52 2;46,27 13;13,20 15;59,47 5;28,43
+  Solar: Fire-Mouse. Yi 4
+20: Wed. snar ma. Water-Earth; 17 Oct 1685
+  phan tshun, rigs can, Bird, zon 5
+  4;36,54 3;40,45 13;17,40 16;58,25 5;29,42
+  Solar: Fire-Ox. Zhen 5
+21: Thu. mgo. Wind-Wind; 18 Oct 1685
+  mchog can, khyim skyes, Dog, li 6
+  5;40,58 4;35,3 13;22,2 17;57,6 6;0,40
+  Solar: Earth-Tiger. Jiao 6
+22: Fri. lag. Earth-Water; 19 Oct 1685
+  yongs 'joms, vishti, Pig, khon 7
+  6;45,4 5;29,22 13;26,26 18;55,48 6;1,38
+  Solar: Earth-Rabbit. Kang 7
+  Descent of the Buddha from the realm of the gods.
+23: Sat. nabs so. Earth-Wind; 20 Oct 1685
+  zhi ba, byis pa, Mouse, dwa 8
+  0;49,3 6;23,47 13;30,50 19;54,37 6;2,36
+  Solar: Iron-Dragon. Di 8
+24: Sun. rgyal. Fire-Fire; 21 Oct 1685
+  grub pa, til rdung, Ox, khen 9
+  1;52,1 7;19,12 13;35,14 20;54,26 6;3,34
+  Solar: Iron-Snake. Fang 9
+25: Mon. skag. Water-Water; 22 Oct 1685
+  bsgrub bya, khyim skyes, Tiger, kham 1
+  2;54,0 8;15,37 13;39,38 21;55,16 6;4,33
+  Solar: Water-Horse. Xin 1
+26: Tue. mchu. Fire-Fire; 23 Oct 1685
+  dge ba, vishti, Rabbit, gin 2
+  3;54,58 9;13,3 13;44,2 22;57,5 6;5,31
+  Solar: Water-Sheep. Wei 2
+27: Wed. gre. Water-Fire; 24 Oct 1685
+  tshangs pa, byis pa, Dragon, zin 3
+  4;54,50 10;11,35 13;48,25 24;0,1 6;6,29
+  Solar: Wood-Monkey. Ji 3
+28: Thu. dbo. Wind-Wind; 25 Oct 1685
+  dbang po, khyim skyes, Snake, zon 4
+  5;52,48 11;12,1 13;52,49 25;4,50 6;7,27
+  Solar: Wood-Bird. Dou 4
+29: Fri. me bzhi. Earth-Wind; 26 Oct 1685
+  'khon 'dzin, vishti, Horse, li 5
+  6;49,47 12;13,26 13;57,13 26;10,40 6;8,25
+  Solar: Fire-Dog. Niu 5
+30: Sat. nag pa. Earth-Wind; 27 Oct 1685
+  rnam sel, rkang bzhi, Sheep, khon 6
+  0;45,45 13;15,51 14;1,37 0;17,29 6;9,24
+  Solar: Fire-Pig. Nu 6
+
+Tibetan Lunar Month: 10 - Fire-female-Ox
+
+1: Sun. sa ri. Fire-Wind; 28 Oct 1685
+  mdza' bo, mi sdug pa, Monkey, dwa 7
+  1;40,44 14;19,17 14;6,1 1;25,18 6;10,22
+  Solar: Earth-Mouse. Xu 7
+2: Mon. sa ga. Water-Fire; 29 Oct 1685
+  tshe dang ldan pa, byis pa, Bird, khen 8
+  2;34,49 15;23,35 14;10,25 2;34,1 6;11,20
+  Solar: Earth-Ox. Wei 8
+3: Tue. lha mtshams. Fire-Earth; 30 Oct 1685
+  skal bzang, til rdung, Dog, kham 9
+  3;28,55 16;27,54 14;14,49 3;42,43 6;12,18
+  Solar: Iron-Tiger. Shi 9
+4: Wed. snron. Water-Earth; 31 Oct 1685
+  dge byed, vishti, Pig, gin 1
+  4;23,0 17;32,12 14;19,13 4;51,25 6;13,17
+  Solar: Iron-Rabbit. Bi 1
+5: Thu. snrubs. Wind-Water; 1 Nov 1685
+  las bzang, byis pa, Mouse, zin 2
+  5;17,6 18;36,30 14;23,37 6;0,7 6;14,15
+  Solar: Water-Dragon. Kui 2
+6: Fri. chu stod. Earth-Water; 2 Nov 1685
+  'dzin byed, til rdung, Ox, zon 3
+  6;11,11 19;40,49 14;28,0 7;8,50 6;15,13
+  Solar: Water-Snake. Lou 3
+7: Sat. chu smad. Earth-Earth; 3 Nov 1685
+  zug rngu, tshong ba, Tiger, li 4
+  0;5,24 20;45,0 14;32,24 8;17,25 6;16,11
+  Solar: Wood-Horse. Wei 4
+8: Sun. gro zhin. Fire-Earth; 4 Nov 1685
+  'grams, gdab pa, Rabbit, khon 5
+  1;0,37 21;48,11 14;36,48 9;24,59 6;17,9
+  Solar: Wood-Sheep. Mao 5
+9. Omitted: Dragon dwa 6
+10: Mon. mon gre. Water-Water; 5 Nov 1685
+  'phel, rigs can, Snake, khen 7
+  2;54,3 22;51,33 14;45,36 10;37,9 6;19,6
+  Solar: Fire-Monkey. Bi 6
+11: Tue. mon gru. Fire-Earth; 6 Nov 1685
+  brtan pa, tshong ba, Horse, kham 8
+  3;52,23 23;51,37 14;50,0 11;41,37 6;20,4
+  Solar: Fire-Bird. Zui 7
+12: Wed. khrums stod. Water-Fire; 7 Nov 1685
+  yongs bsnun, gdab pa, Sheep, gin 9
+  4;52,36 24;49,47 14;54,24 12;44,12 6;21,2
+  Solar: Earth-Dog. Can 8
+13: Thu. khrums smad. Wind-Water; 8 Nov 1685
+  dga' ba, rigs can, Monkey, zin 1
+  5;53,49 25;46,58 14;58,48 13;45,46 6;22,0
+  Solar: Earth-Pig. Jing 9
+14: Fri. nam gru. Earth-Water; 9 Nov 1685
+  rdo rje, til rdung, Bird, zon 2
+  6;56,2 26;43,9 15;3,11 14;46,21 6;22,59
+  Solar: Iron-Mouse. Gui 1
+15: Sat. tha skar. Earth-Wind; 10 Nov 1685
+  dngos grub, tshong ba, Dog, li 3
+  0;59,15 0;38,20 15;7,35 15;45,56 6;23,57
+  Solar: Iron-Ox. Liu 2
+16: Sun. bra nye. Fire-Fire; 11 Nov 1685
+  1;60,0 1;35,59 15;11,59 16;47,59 6;24,55
+  Solar: Water-Tiger. Xing 3
+16: Mon. smin drug. Water-Fire; 12 Nov 1685
+  mchog can, rigs can, Pig, khon 4
+  2;3,21 2;32,38 15;11,59 17;44,38 6;24,55
+  Solar: Water-Rabbit. Zhang 4
+17: Tue. snar ma. Fire-Earth; 13 Nov 1685
+  yongs 'joms, khyim skyes, Mouse, dwa 5
+  3;7,26 3;26,56 15;16,23 18;43,20 6;25,53
+  Solar: Wood-Dragon. Yi 5
+18: Wed. mgo. Water-Wind; 14 Nov 1685
+  zhi ba, vishti, Ox, khen 6
+  4;11,32 4;21,15 15;20,47 19;42,2 6;26,51
+  Solar: Wood-Snake. Zhen 6
+19: Thu. lag. Wind-Water; 15 Nov 1685
+  grub pa, byis pa, Tiger, kham 7
+  5;15,38 5;15,33 15;25,11 20;40,44 6;27,50
+  Solar: Fire-Horse. Jiao 7
+20: Fri. nabs so. Earth-Wind; 16 Nov 1685
+  bsgrub bya, til rdung, Rabbit, gin 8
+  6;19,43 6;9,51 15;29,35 21;39,26 6;28,48
+  Solar: Fire-Sheep. Kang 8
+21: Sat. rgyal. Earth-Fire; 17 Nov 1685
+  dge ba, tshong ba, Dragon, zin 9
+  0;23,41 7;4,17 15;33,59 22;38,16 6;29,46
+  Solar: Earth-Monkey. Di 9
+22: Sun. rgyal. Fire-Fire; 18 Nov 1685
+  dkar po, gdab pa, Snake, zon 1
+  1;26,44 7;59,42 15;38,27 23;38,10 7;0,44
+  Solar: Earth-Bird. Fang 1
+23: Mon. skag. Water-Water; 19 Nov 1685
+  tshangs pa, byis pa, Horse, li 2
+  2;28,48 8;56,8 15;42,57 24;39,5 7;1,42
+  Solar: Iron-Dog. Xin 2
+24: Tue. mchu. Fire-Fire; 20 Nov 1685
+  dbang po, til rdung, Sheep, khon 3
+  3;29,52 9;53,34 15;47,26 25;41,1 7;2,41
+  Solar: Iron-Pig. Wei 3
+25: Wed. gre. Water-Fire; 21 Nov 1685
+  'khon 'dzin, tshong ba, Monkey, dwa 4
+  4;29,48 10;52,7 15;51,56 26;44,4 7;3,39
+  Solar: Water-Mouse. Ji 4
+26: Thu. dbo. Wind-Wind; 22 Nov 1685
+  rnam sel, gdab pa, Bird, khen 5
+  5;27,52 11;52,33 15;56,26 0;48,59 7;4,37
+  Solar: Water-Ox. Dou 5
+27: Fri. me bzhi. Earth-Wind; 23 Nov 1685
+  mdza' bo, til rdung, Dog, kham 6
+  6;24,56 12;53,59 16;0,55 1;54,55 7;5,35
+  Solar: Wood-Tiger. Niu 6
+28: Sat. nag pa. Earth-Wind; 24 Nov 1685
+  skal bzang, tshong ba, Pig, gin 7
+  0;21,0 13;56,25 16;5,25 3;1,50 7;6,34
+  Solar: Wood-Rabbit. Nu 7
+29: Sun. sa ri. Fire-Wind; 25 Nov 1685
+  dge byed, bkra shis, Mouse, zin 8
+  1;16,4 14;59,51 16;9,55 4;9,46 7;7,32
+  Solar: Fire-Dragon. Xu 8
+30: Mon. lha mtshams. Water-Earth; 26 Nov 1685
+  shin tu 'grams, klu, Ox, zon 9
+  2;10,15 16;4,9 16;14,25 5;18,34 7;8,30
+  Solar: Fire-Snake. Wei 9
+
+Tibetan Lunar Month: 11 (Intercalary) - Earth-male-Tiger
+
+1: Tue. snron. Fire-Earth; 27 Nov 1685
+  las bzang, gdab pa, Tiger, li 1
+  3;4,26 17;8,27 16;18,54 6;27,22 7;9,28
+  Solar: Earth-Horse. Shi 1
+2. Omitted: Rabbit khon 2
+3: Wed. snrubs. Water-Water; 28 Nov 1685
+  'dzin byed, til rdung, Dragon, dwa 3
+  4;52,49 18;17,4 16;27,54 7;44,58 7;11,25
+  Solar: Earth-Sheep. Bi 2
+4: Thu. chu stod. Wind-Water; 29 Nov 1685
+  zug rngu, tshong ba, Snake, khen 4
+  5;47,0 19;21,22 16;32,23 8;53,46 7;12,23
+  Solar: Iron-Monkey. Kui 3
+5: Fri. chu smad. Earth-Earth; 30 Nov 1685
+  'phel, gdab pa, Horse, kham 5
+  6;41,19 20;25,33 16;36,53 10;2,27 7;13,21
+  Solar: Iron-Bird. Lou 4
+6: Sat. gro zhin. Earth-Earth; 1 Dec 1685
+  brtan pa, rigs can, Sheep, gin 6
+  0;36,39 21;28,44 16;41,23 11;10,7 7;14,19
+  Solar: Water-Dog. Wei 5
+7: Sun. mon gre. Fire-Water; 2 Dec 1685
+  yongs bsnun, khyim skyes, Monkey, zin 7
+  1;32,58 22;30,54 16;45,52 12;16,47 7;15,17
+  Solar: Water-Pig. Mao 6
+8: Mon. mon gru. Water-Earth; 3 Dec 1685
+  dga' ba, vishti, Bird, zon 8
+  2;30,17 23;32,5 16;50,22 13;22,28 7;16,16
+  Solar: Wood-Mouse. Bi 7
+9: Tue. khrums stod. Fire-Fire; 4 Dec 1685
+  rdo rje, byis pa, Dog, li 9
+  3;28,44 24;32,8 16;54,52 14;27,0 7;17,14
+  Solar: Wood-Ox. Zui 8
+10: Wed. khrums smad. Water-Water; 5 Dec 1685
+  dngos grub, til rdung, Pig, khon 1
+  4;29,3 25;30,18 16;59,22 15;29,40 7;18,12
+  Solar: Fire-Tiger. Can 9
+11: Thu. nam gru. Wind-Water; 6 Dec 1685
+  phan tshun, tshong ba, Mouse, dwa 2
+  5;30,22 26;27,29 17;3,51 16;31,20 7;19,10
+  Solar: Fire-Rabbit. Jing 1
+12: Fri. tha skar. Earth-Wind; 7 Dec 1685
+  mchog can, gdab pa, Ox, khen 3
+  6;32,42 0;23,39 17;8,21 17;32,0 7;20,8
+  Solar: Earth-Dragon. Gui 2
+13: Sat. bra nye. Earth-Fire; 8 Dec 1685
+  yongs 'joms, rigs can, Tiger, kham 4
+  0;36,1 1;18,49 17;12,51 18;31,41 7;21,7
+  Solar: Earth-Snake. Liu 3
+14: Sun. smin drug. Fire-Fire; 9 Dec 1685
+  zhi ba, khyim skyes, Rabbit, gin 5
+  1;40,12 2;13,8 17;17,20 19;30,28 7;22,5
+  Solar: Iron-Horse. Xing 4
+15: Mon. snar ma. Water-Earth; 10 Dec 1685
+  grub pa, vishti, Dragon, zin 6
+  2;44,24 3;7,26 17;21,50 20;29,16 7;23,3
+  Solar: Iron-Sheep. Zhang 5
+16: Tue. mgo. Fire-Wind; 11 Dec 1685
+  bsgrub bya, byis pa, Snake, zon 7
+  3;48,35 4;1,44 17;26,20 21;28,4 7;24,1
+  Solar: Water-Monkey. Yi 6
+17: Wed. mgo. Water-Wind; 12 Dec 1685
+  dge ba, til rdung, Horse, li 8
+  4;52,47 4;56,2 17;30,50 22;26,52 7;25,0
+  Solar: Water-Bird. Zhen 7
+18: Thu. lag. Wind-Water; 13 Dec 1685
+  dkar po, khyim skyes, Sheep, khon 9
+  5;56,58 5;50,20 17;35,19 23;25,40 7;25,58
+  Solar: Wood-Dog. Jiao 8
+19: Fri. nabs so. Earth-Wind; 14 Dec 1685
+  6;60,0 6;45,49 17;39,49 24;25,38 7;26,56
+  Solar: Wood-Pig. Kang 9
+19: Sat. rgyal. Earth-Fire; 15 Dec 1685
+  dbang po, byis pa, Monkey, dwa 1
+  0;1,2 7;44,46 17;39,49 25;24,36 7;26,56
+  Solar: Fire-Mouse. Di 1
+20: Sun. skag. Fire-Water; 16 Dec 1685
+  'khon 'dzin, til rdung, Bird, khen 2
+  1;4,6 8;40,13 17;44,19 26;24,32 7;27,54
+  Solar: Fire-Ox. Fang 2
+21: Mon. mchu. Water-Fire; 17 Dec 1685
+  rnam sel, tshong ba, Dog, kham 3
+  2;6,9 9;36,39 17;48,48 0;25,28 7;28,52
+  Solar: Earth-Tiger. Xin 3
+22: Tue. gre. Fire-Fire; 18 Dec 1685
+  mdza' bo, gdab pa, Pig, gin 4
+  3;7,13 10;34,5 17;53,18 1;27,23 7;29,51
+  Solar: Earth-Rabbit. Wei 4
+23: Wed. dbo. Water-Wind; 19 Dec 1685
+  tshe dang ldan pa, rigs can, Mouse, zin 5
+  4;7,11 11;32,39 17;57,51 2;30,31 8;0,49
+  Solar: Iron-Dragon. Ji 5
+24: Thu. me bzhi. Wind-Wind; 20 Dec 1685
+  skal bzang, khyim skyes, Ox, zon 6
+  5;5,19 12;33,5 18;2,25 3;35,30 8;1,47
+  Solar: Iron-Snake. Dou 6
+25: Fri. nag pa. Earth-Wind; 21 Dec 1685
+  dge byed, vishti, Tiger, li 7
+  6;2,26 13;34,32 18;6,58 4;41,30 8;2,45
+  Solar: Water-Horse. Niu 7
+26. Omitted: Rabbit khon 8
+27: Sat. sa ri. Earth-Wind; 22 Dec 1685
+  shin tu 'grams, rigs can, Dragon, dwa 9
+  0;53,40 14;40,24 18;16,5 5;56,30 8;4,42
+  Solar: Water-Sheep. Nu 8
+28: Sun. sa ga. Fire-Fire; 23 Dec 1685
+  'dzin byed, khyim skyes, Snake, khen 1
+  1;47,56 15;44,43 18;20,39 7;5,22 8;5,40
+  Solar: Wood-Monkey. Xu 9
+29: Mon. lha mtshams. Water-Earth; 24 Dec 1685
+  zug rngu, vishti, Horse, kham 2
+  2;42,11 16;49,1 18;25,12 8;14,14 8;6,38
+  Solar: Wood-Bird. Wei 1
+30: Tue. snron. Fire-Earth; 25 Dec 1685
+  'grams, rkang bzhi, Sheep, gin 3
+  3;36,26 17;53,20 18;29,46 9;23,6 8;7,36
+  Solar: Fire-Dog. Shi 2
+
+Tibetan Lunar Month: 11 (Delayed) - Earth-male-Tiger
+
+1: Wed. snrubs. Water-Water; 26 Dec 1685
+  'phel, mi sdug pa, Tiger, li 1
+  4;30,41 18;57,38 18;34,20 10;31,58 8;8,34
+  Solar: Fire-Pig. Bi 3
+2: Thu. chu smad. Wind-Earth; 27 Dec 1685
+  brtan pa, rigs can, Rabbit, khon 2
+  5;24,57 20;1,56 18;38,53 11;40,50 8;9,33
+  Solar: Earth-Mouse. Kui 4
+3: Fri. gro zhin. Earth-Earth; 28 Dec 1685
+  yongs bsnun, khyim skyes, Dragon, dwa 3
+  6;19,20 21;6,6 18;43,27 12;49,34 8;10,31
+  Solar: Earth-Ox. Lou 5
+4: Sat. mon gre. Earth-Water; 29 Dec 1685
+  dga' ba, vishti, Snake, khen 4
+  0;14,43 22;9,17 18;48,0 13;57,17 8;11,29
+  Solar: Iron-Tiger. Wei 6
+5: Sun. mon gru. Fire-Earth; 30 Dec 1685
+  dngos grub, byis pa, Horse, kham 5
+  1;11,7 23;11,27 18;52,34 15;4,1 8;12,27
+  Solar: Iron-Rabbit. Mao 7
+6: Mon. khrums stod. Water-Fire; 31 Dec 1685
+  phan tshun, til rdung, Sheep, gin 6
+  2;8,30 24;12,37 18;57,8 16;9,45 8;13,25
+  Solar: Water-Dragon. Bi 8
+7: Tue. khrums smad. Fire-Water; 1 Jan 1686
+  mchog can, tshong ba, Monkey, zin 7
+  3;7,2 25;12,39 19;1,41 17;14,20 8;14,24
+  Solar: Water-Snake. Zui 9
+8: Wed. nam gru. Water-Water; 2 Jan 1686
+  yongs 'joms, gdab pa, Bird, zon 8
+  4;7,25 26;10,49 19;6,15 18;17,4 8;15,22
+  Solar: Wood-Horse. Can 1
+9: Thu. tha skar. Wind-Wind; 3 Jan 1686
+  zhi ba, rigs can, Dog, li 9
+  5;8,49 0;7,59 19;10,48 19;18,48 8;16,20
+  Solar: Wood-Sheep. Jing 2
+10: Fri. bra nye. Earth-Fire; 4 Jan 1686
+  grub pa, khyim skyes, Pig, khon 1
+  6;11,13 1;4,9 19;15,22 20;19,31 8;17,18
+  Solar: Fire-Monkey. Gui 3
+11: Sat. bra nye. Earth-Fire; 5 Jan 1686
+  bsgrub bya, vishti, Mouse, dwa 2
+  0;14,36 1;59,19 19;19,55 21;19,15 8;18,17
+  Solar: Fire-Bird. Liu 4
+12: Sun. smin drug. Fire-Fire; 6 Jan 1686
+  dge ba, byis pa, Ox, khen 3
+  1;18,52 2;53,37 19;24,29 22;18,6 8;19,15
+  Solar: Earth-Dog. Xing 5
+13: Mon. snar ma. Water-Earth; 7 Jan 1686
+  dkar po, til rdung, Tiger, kham 4
+  2;23,7 3;47,55 19;29,3 23;16,58 8;20,13
+  Solar: Earth-Pig. Zhang 6
+14: Tue. mgo. Fire-Wind; 8 Jan 1686
+  tshangs pa, khyim skyes, Rabbit, gin 5
+  3;27,22 4;42,13 19;33,36 24;15,50 8;21,11
+  Solar: Iron-Mouse. Yi 7
+15: Wed. lag. Water-Water; 9 Jan 1686
+  dbang po, vishti, Dragon, zin 6
+  4;31,38 5;36,31 19;38,10 25;14,42 8;22,9
+  Solar: Iron-Ox. Zhen 8
+16: Thu. nabs so. Wind-Wind; 10 Jan 1686
+  'khon 'dzin, byis pa, Snake, zon 7
+  5;35,53 6;30,50 19;42,43 26;13,33 8;23,8
+  Solar: Water-Tiger. Jiao 9
+17: Fri. rgyal. Earth-Fire; 11 Jan 1686
+  rnam sel, til rdung, Horse, li 8
+  6;40,0 7;25,16 19;47,17 0;12,34 8;24,6
+  Solar: Water-Rabbit. Kang 1
+18: Sat. skag. Earth-Water; 12 Jan 1686
+  mdza' bo, tshong ba, Sheep, khon 9
+  0;43,7 8;20,43 19;51,51 1;12,34 8;25,4
+  Solar: Wood-Dragon. Di 2
+19: Sun. mchu. Fire-Fire; 13 Jan 1686
+  tshe dang ldan pa, gdab pa, Monkey, dwa 1
+  1;45,14 9;17,9 19;56,24 2;13,34 8;26,2
+  Solar: Wood-Snake. Fang 3
+20: Mon. gre. Water-Fire; 14 Jan 1686
+  skal bzang, rigs can, Bird, khen 2
+  2;46,21 10;14,36 20;0,58 3;15,34 8;27,0
+  Solar: Fire-Horse. Xin 4
+21: Tue. dbo. Fire-Wind; 15 Jan 1686
+  dge byed, khyim skyes, Dog, kham 3
+  3;46,20 11;13,11 20;5,31 4;18,43 8;27,59
+  Solar: Fire-Sheep. Wei 5
+22: Wed. me bzhi. Water-Wind; 16 Jan 1686
+  shin tu 'grams, vishti, Pig, gin 4
+  4;44,27 12;13,38 20;10,5 5;23,43 8;28,57
+  Solar: Earth-Monkey. Ji 6
+23: Thu. nag pa. Wind-Wind; 17 Jan 1686
+  las bzang, byis pa, Mouse, zin 5
+  5;41,33 13;15,5 20;14,38 6;29,44 8;29,55
+  Solar: Earth-Bird. Dou 7
+24: Fri. sa ri. Earth-Wind; 18 Jan 1686
+  'dzin byed, til rdung, Ox, zon 6
+  6;37,40 14;17,31 20;19,12 7;36,44 9;0,53
+  Solar: Iron-Dog. Niu 8
+25: Sat. sa ga. Earth-Fire; 19 Jan 1686
+  zug rngu, tshong ba, Tiger, li 7
+  0;32,47 15;20,58 20;23,46 8;44,44 9;1,51
+  Solar: Iron-Pig. Nu 9
+26: Sun. lha mtshams. Fire-Earth; 20 Jan 1686
+  'grams, gdab pa, Rabbit, khon 8
+  1;27,2 16;25,17 20;28,19 9;53,36 9;2,50
+  Solar: Water-Mouse. Xu 1
+27: Mon. snron. Water-Earth; 21 Jan 1686
+  brtan pa, til rdung, Dragon, dwa 9
+  2;21,17 17;29,35 20;32,53 11;2,28 9;3,48
+  Solar: Water-Ox. Wei 2
+28: Tue. snrubs. Fire-Water; 22 Jan 1686
+  yongs bsnun, tshong ba, Snake, khen 1
+  3;15,33 18;33,53 20;37,26 12;11,20 9;4,46
+  Solar: Wood-Tiger. Shi 3
+29: Wed. chu stod. Water-Water; 23 Jan 1686
+  dga' ba, bkra shis, Horse, kham 2
+  4;9,48 19;38,12 20;42,0 13;20,12 9;5,44
+  Solar: Wood-Rabbit. Bi 4
+30: Thu. chu smad. Wind-Earth; 24 Jan 1686
+  rdo rje, klu, Sheep, gin 3
+  5;4,3 20;42,30 20;46,34 14;29,4 9;6,42
+  Solar: Fire-Dragon. Kui 5
+
+Tibetan Lunar Month: 12 - Earth-female-Rabbit
+
+1. Omitted: Monkey zin 4
+2: Fri. gro zhin. Earth-Earth; 25 Jan 1686
+  dngos grub, byis pa, Bird, zon 5
+  6;53,51 21;49,49 20;55,41 15;45,31 9;8,39
+  Solar: Fire-Snake. Lou 6
+3: Sat. mon gre. Earth-Water; 26 Jan 1686
+  phan tshun, til rdung, Dog, li 6
+  0;50,15 22;51,59 21;0,14 16;52,14 9;9,37
+  Solar: Earth-Horse. Wei 7
+4: Sun. mon gru. Fire-Earth; 27 Jan 1686
+  mchog can, tshong ba, Pig, khon 7
+  1;47,39 23;53,9 21;4,48 17;57,57 9;10,35
+  Solar: Earth-Sheep. Mao 8
+5: Mon. khrums stod. Water-Fire; 28 Jan 1686
+  zhi ba, gdab pa, Mouse, dwa 8
+  2;46,11 24;53,10 21;9,21 19;2,32 9;11,34
+  Solar: Iron-Monkey. Bi 9
+6: Tue. khrums smad. Fire-Water; 29 Jan 1686
+  grub pa, rigs can, Ox, khen 9
+  3;46,35 25;51,19 21;13,55 20;5,15 9;12,32
+  Solar: Iron-Bird. Zui 1
+7: Wed. nam gru. Water-Water; 30 Jan 1686
+  bsgrub bya, khyim skyes, Tiger, kham 1
+  4;47,59 26;48,29 21;18,29 21;6,58 9;13,30
+  Solar: Water-Dog. Can 2
+8: Thu. tha skar. Wind-Wind; 31 Jan 1686
+  dge ba, vishti, Rabbit, gin 2
+  5;50,23 0;44,39 21;23,2 22;7,41 9;14,28
+  Solar: Water-Pig. Jing 3
+9: Fri. bra nye. Earth-Fire; 1 Feb 1686
+  dkar po, byis pa, Dragon, zin 3
+  6;53,47 1;39,48 21;27,36 23;7,24 9;15,26
+  Solar: Wood-Mouse. Gui 4
+10: Sat. smin drug. Earth-Fire; 2 Feb 1686
+  tshangs pa, rigs can, Snake, zon 4
+  0;58,3 2;34,6 21;32,9 24;6,16 9;16,25
+  Solar: Wood-Ox. Liu 5
+11: Sun. snar ma. Fire-Earth; 3 Feb 1686
+  1;60,0 3;30,43 21;36,43 25;7,26 9;17,23
+  Solar: Fire-Tiger. Xing 6
+11: Mon. mgo. Water-Wind; 4 Feb 1686
+  'khon 'dzin, vishti, Horse, li 5
+  2;2,18 4;28,24 21;36,43 26;5,8 9;17,23
+  Solar: Fire-Rabbit. Zhang 7
+12: Tue. lag. Fire-Water; 5 Feb 1686
+  rnam sel, byis pa, Sheep, khon 6
+  3;6,33 5;22,43 21;41,17 0;4,0 9;18,21
+  Solar: Earth-Dragon. Yi 8
+13: Wed. nabs so. Water-Wind; 6 Feb 1686
+  mdza' bo, til rdung, Monkey, dwa 7
+  4;10,49 6;17,1 21;45,50 1;2,51 9;19,19
+  Solar: Earth-Snake. Zhen 9
+14: Thu. rgyal. Wind-Fire; 7 Feb 1686
+  tshe dang ldan pa, tshong ba, Bird, khen 8
+  5;15,4 7;11,19 21;50,24 2;1,43 9;20,17
+  Solar: Iron-Horse. Jiao 1
+15: Fri. skag. Earth-Water; 8 Feb 1686
+  skal bzang, gdab pa, Dog, kham 9
+  6;19,11 8;5,46 21;54,57 3;0,44 9;21,16
+  Solar: Iron-Sheep. Kang 2
+16: Sat. mchu. Earth-Fire; 9 Feb 1686
+  dge byed, rigs can, Pig, gin 1
+  0;22,17 9;1,13 21;59,31 4;0,44 9;22,14
+  Solar: Water-Monkey. Di 3
+17: Sun. mchu. Fire-Fire; 10 Feb 1686
+  shin tu 'grams, khyim skyes, Mouse, zin 2
+  1;24,24 9;57,40 22;4,4 5;1,45 9;23,12
+  Solar: Water-Bird. Fang 4
+18: Mon. gre. Water-Fire; 11 Feb 1686
+  las bzang, vishti, Ox, zon 3
+  2;25,30 10;55,7 22;8,38 6;3,46 9;24,10
+  Solar: Wood-Dog. Xin 5
+19: Tue. dbo. Fire-Wind; 12 Feb 1686
+  'dzin byed, byis pa, Tiger, li 4
+  3;25,28 11;53,43 22;13,12 7;6,55 9;25,8
+  Solar: Wood-Pig. Wei 6
+20: Wed. me bzhi. Water-Wind; 13 Feb 1686
+  zug rngu, til rdung, Rabbit, khon 5
+  4;23,34 12;54,10 22;17,45 8;11,56 9;26,7
+  Solar: Fire-Mouse. Ji 7
+21: Thu. nag pa. Wind-Wind; 14 Feb 1686
+  'grams, tshong ba, Dragon, dwa 6
+  5;20,41 13;55,38 22;22,19 9;17,57 9;27,5
+  Solar: Fire-Ox. Dou 8
+22: Fri. sa ri. Earth-Wind; 15 Feb 1686
+  'phel, gdab pa, Snake, khen 7
+  6;16,47 14;58,5 22;26,52 10;24,58 9;28,3
+  Solar: Earth-Tiger. Niu 9
+23: Sat. lha mtshams. Earth-Earth; 16 Feb 1686
+  brtan pa, rigs can, Horse, kham 8
+  0;11,53 16;1,32 22;31,26 11;32,58 9;29,1
+  Solar: Earth-Rabbit. Nu 1
+24: Sun. snron. Fire-Earth; 17 Feb 1686
+  yongs bsnun, khyim skyes, Sheep, gin 9
+  1;6,9 17;5,50 22;36,0 12;41,50 10;0,0
+  Solar: Iron-Dragon. Xu 2
+25: Mon. snrubs. Water-Water; 18 Feb 1686
+  dga' ba, vishti, Monkey, zin 1
+  2;0,20 18;10,9 22;40,29 13;50,38 10;0,58
+  Solar: Iron-Snake. Wei 3
+26. Omitted: Bird zon 2
+27: Tue. chu stod. Fire-Water; 19 Feb 1686
+  dngos grub, rigs can, Dog, li 3
+  3;48,43 19;18,45 22;49,29 15;8,15 10;2,54
+  Solar: Water-Horse. Shi 4
+28: Wed. chu smad. Water-Earth; 20 Feb 1686
+  phan tshun, khyim skyes, Pig, khon 4
+  4;42,54 20;23,4 22;53,58 16;17,3 10;3,52
+  Solar: Water-Sheep. Bi 5
+29: Thu. gro zhin. Wind-Earth; 21 Feb 1686
+  mchog can, vishti, Mouse, dwa 5
+  5;37,14 21;27,13 22;58,28 17;25,42 10;4,51
+  Solar: Wood-Monkey. Kui 6
+30: Fri. mon gre. Earth-Water; 22 Feb 1686
+  yongs 'joms, rkang bzhi, Ox, khen 6
+  6;32,35 22;30,22 23;2,58 18;33,21 10;5,49
+  Solar: Wood-Bird. Lou 7
