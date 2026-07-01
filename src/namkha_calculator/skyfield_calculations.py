@@ -51,42 +51,37 @@ def ephemeris_date_range() -> tuple[dt.datetime, dt.datetime]:
     return ts.tt_jd(start_jd).utc_datetime(), ts.tt_jd(end_jd).utc_datetime()
 
 
-def civil_twilight_boundaries(
+@lru_cache(maxsize=2048)
+def morning_civil_twilight(
     date: dt.date, pytz_tz: pytz.BaseTzInfo, location: "Location"
-) -> tuple[dt.datetime, dt.datetime]:
+) -> dt.datetime | None:
     """
-    Returns the start and end times of civil twilight
-    for the given date and location in UTC.
+    Start of morning civil twilight (dawn) on a local date, returned in UTC.
+
+    Searches the morning window [local midnight, +14h] and returns the rising
+    crossing into civil twilight (the sun passing -6 deg upward). Returns None
+    when no such crossing exists that date, so the caller can fall back to a fixed start.
+
+    The return value is always UTC.
     """
     topos = wgs84.latlon(location.latitude, location.longitude)
     search_func = almanac.dark_twilight_day(_get_ephemeris(), topos)
 
     midnight = pytz_tz.localize(dt.datetime.combine(date, dt.time(0, 0, 0)))
-    next_midnight = midnight + dt.timedelta(days=1)
-    events = almanac.find_discrete(
-        _get_timescale().from_datetime(midnight),
-        _get_timescale().from_datetime(next_midnight),
-        search_func,
+    window_end = midnight + dt.timedelta(hours=14)
+    ts = _get_timescale()
+    times, codes = almanac.find_discrete(
+        ts.from_datetime(midnight), ts.from_datetime(window_end), search_func
     )
 
-    # almanac.dark_twilight_day codes the new state after each transition:
-    # 0 night, 1 astronomical, 2 nautical, 3 civil, 4 day. Civil twilight spans
-    # the sun being between 0 and -6 deg. We want its two -6 deg crossings:
-    # morning = entering civil (code 3), evening = leaving civil back into nautical
-    # (code 2). Match them in order, switching the target after the morning one.
-    # See also: https://rhodesmill.org/skyfield/almanac.html#twilight
-    boundaries = []
-    boundary_code = 3
-    for time, code in zip(*events):
-        if code == boundary_code:
-            boundaries.append(time.utc_datetime())
-            boundary_code = 2
-    if len(boundaries) != 2:
-        raise ValueError(
-            f"Expected 2 civil-twilight boundaries for {date} at "
-            f"lat={location.latitude:.2f}, lon={location.longitude:.2f}, "
-            f"tz={pytz_tz}, got {len(boundaries)}. "
-            "Likely the timezone does not match the location's longitude, "
-            "or the location is within polar day/night on this date."
-        )
-    return boundaries[0], boundaries[1]
+    # dark_twilight_day codes the state after each transition: 0 night,
+    # 1 astronomical, 2 nautical, 3 civil, 4 day. The Tibetan day starts at the
+    # rising edge of civil twilight: the first transition reaching civil (code 3)
+    # from a darker state (previous code < 3). A 4 -> 3 drop is evening dusk, not
+    # dawn. See https://rhodesmill.org/skyfield/almanac.html#twilight
+    previous_code = search_func(ts.from_datetime(midnight)).item()
+    for time, code in zip(times, codes):
+        if code == 3 and previous_code < 3:
+            return time.utc_datetime()
+        previous_code = code
+    return None

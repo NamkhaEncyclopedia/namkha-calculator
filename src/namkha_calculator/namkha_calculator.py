@@ -28,10 +28,10 @@ from .calculation_notes import (
     local_time_dst_note,
     period_boundary_note,
 )
-from .astronomy import LATITUDE_LIMIT
 from .calendar import (
     TibetanYearAttributes,
     classic_year_attributes,
+    day_start,
     official_year_attributes,
     supported_year_range,
 )
@@ -119,7 +119,8 @@ def _check_supported_year(subject: Subject) -> None:
 def _collect_subject_notes(subject: Subject) -> tuple[CalculationNoteItem, ...]:
     """Notes that depend only on the subject's location and local time."""
     notes: list[CalculationNoteItem] = []
-    if abs(subject.birth_location.latitude) >= LATITUDE_LIMIT:
+    local_dt = subject.local_birth_datetime
+    if day_start(local_dt.date(), local_dt.tzinfo, subject.birth_location).is_fixed:
         notes.append(CALCULATION_NOTES[CalculationNote.HIGH_LATITUDE])
     notes.extend(local_time_dst_note(subject.birth_datetime, subject.birth_timezone))
     return tuple(notes)

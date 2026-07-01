@@ -20,9 +20,9 @@ import pytz
 from .astrology import Animal, Element
 from .astronomy import HIGH_LATITUDE_DAY_START_HOUR, LATITUDE_LIMIT, Location
 from .skyfield_calculations import (
-    civil_twilight_boundaries,
     ephemeris_date_range,
     jd_to_datetime,
+    morning_civil_twilight,
 )
 
 # Margin (in years) kept inside the ephemeris coverage: the Losar calc reaches
@@ -238,6 +238,50 @@ def supported_year_range() -> tuple[int, int]:
     return start.year + _YEAR_RANGE_MARGIN, end.year - _YEAR_RANGE_MARGIN
 
 
+@dataclass(frozen=True)
+class DayStart:
+    """Resolved start of a Tibetan day, with where it came from."""
+
+    at: dt.datetime
+    is_fixed: bool  # fixed-hour fallback (True) vs real civil-twilight dawn (False)
+
+
+def day_start(date: dt.date, pytz_tz: pytz.BaseTzInfo, location: Location) -> DayStart:
+    """
+    Start of the Tibetan day (dawn) for a local date.
+
+    Real dawn mapped to the start of morning civil twilight. Falls back to a fixed local
+    hour (HIGH_LATITUDE_DAY_START_HOUR) at or above LATITUDE_LIMIT, or when no dawn
+    occurs on this date (polar day/night).
+
+    DayStart.at is always in pytz_tz (never UTC), so it is safe to call .date()
+    or .hour on it and get local-time values.
+    """
+    if abs(location.latitude) < LATITUDE_LIMIT:
+        dawn = morning_civil_twilight(date, pytz_tz, location)
+        if dawn is not None:
+            return DayStart(dawn.astimezone(pytz_tz), is_fixed=False)
+
+    naive_dt = dt.datetime.combine(date, dt.time(HIGH_LATITUDE_DAY_START_HOUR, 0, 0))
+    # is_dst=False picks standard time for ambiguous wall-clock times (DST fall-back);
+    # normalize() shifts non-existent wall-clock times (DST spring-forward) past the gap.
+    fixed = pytz_tz.normalize(pytz_tz.localize(naive_dt, is_dst=False))
+    return DayStart(fixed, is_fixed=True)
+
+
+def tibetan_day_date(date_time: dt.datetime, location: Location) -> dt.date:
+    """
+    Western calendar date that labels the Tibetan day that contains date_time.
+
+    A Tibetan day spans dawn-to-dawn, so an instant before its date's dawn belongs
+    to the previous date's Tibetan day. date_time must be tz-aware.
+    """
+    local_date = date_time.date()
+    if date_time < day_start(local_date, date_time.tzinfo, location).at:
+        return local_date - dt.timedelta(days=1)
+    return local_date
+
+
 def official_losar(
     year_number: int, pytz_tz: pytz.BaseTzInfo, location: Location
 ) -> dt.datetime:
@@ -255,11 +299,7 @@ def official_losar(
         tibetan_day=30,
     )
     losar_date = jd_to_datetime(jd).date()
-    if abs(location.latitude) >= LATITUDE_LIMIT:
-        return pytz_tz.localize(
-            dt.datetime.combine(losar_date, dt.time(HIGH_LATITUDE_DAY_START_HOUR, 0, 0))
-        )
-    return civil_twilight_boundaries(losar_date, pytz_tz, location)[0]
+    return day_start(losar_date, pytz_tz, location).at
 
 
 def has_leap_month(year_number: int, month_number: int) -> bool:
@@ -292,11 +332,7 @@ def astrological_losar(
         jd = jd1
 
     losar_date = jd_to_datetime(jd).date()
-    if abs(location.latitude) >= LATITUDE_LIMIT:
-        return pytz_tz.localize(
-            dt.datetime.combine(losar_date, dt.time(HIGH_LATITUDE_DAY_START_HOUR, 0, 0))
-        )
-    return civil_twilight_boundaries(losar_date, pytz_tz, location)[0]
+    return day_start(losar_date, pytz_tz, location).at
 
 
 def year_with_animal_and_element_in_metreng(

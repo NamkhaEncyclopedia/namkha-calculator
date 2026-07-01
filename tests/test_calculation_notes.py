@@ -85,5 +85,29 @@ class TestDstNoteInResult(unittest.TestCase):
         self.assertIn(CalculationNote.AMBIGUOUS_LOCAL_TIME, notes)
 
 
+class TestHighLatitudeNoteInResult(unittest.TestCase):
+    def _svalbard_subject(self, dt_str: str) -> Subject:
+        # Svalbard (78 N) is above the 60 deg limit, so the day start always
+        # uses the fixed-hour fallback.
+        return Subject(
+            gender=Gender.MALE,
+            birth_datetime=datetime.strptime(dt_str, "%d.%m.%Y %H:%M"),
+            birth_timezone=pytz.timezone("Arctic/Longyearbyen"),
+            birth_location=Location(78.0, 15.0),
+            name=None,
+        )
+
+    def test_high_latitude_emits_note(self):
+        notes = _notes(
+            self._svalbard_subject("15.06.1985 12:00"), CalculationMethod.CLASSIC
+        )
+        self.assertIn(CalculationNote.HIGH_LATITUDE, notes)
+
+    def test_normal_latitude_no_note(self):
+        # Stuttgart (48.8 N) has a real dawn, so no fixed-hour fallback.
+        notes = _notes(_subject("15.06.1985 12:00"), CalculationMethod.CLASSIC)
+        self.assertNotIn(CalculationNote.HIGH_LATITUDE, notes)
+
+
 if __name__ == "__main__":
     unittest.main()

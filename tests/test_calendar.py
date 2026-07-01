@@ -1,14 +1,15 @@
 import re
 import unittest
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 
 import pytz
 from hypothesis import given, settings
 from hypothesis import strategies as st
 
-from namkha_calculator.astronomy import Location
+from namkha_calculator.astronomy import HIGH_LATITUDE_DAY_START_HOUR, Location
 from namkha_calculator import calendar
 from namkha_calculator.astrology import Animal, Element
+from namkha_calculator.skyfield_calculations import morning_civil_twilight
 
 TEST_PLACES = {
     "Bamako": Location(12.65225, -7.98170),  # UTC+0
@@ -230,3 +231,64 @@ class TestPhugpaCalendarCornerCases(unittest.TestCase):
                 )
         self.assertEqual(year_attributes.element, Element.WOOD)
         self.assertEqual(year_attributes.animal, Animal.DRAGON)
+
+
+class TestTibetanDayMembership(unittest.TestCase):
+    """A Tibetan day runs dawn-to-dawn: a pre-dawn instant belongs to the
+    previous Western date. These cases pin the membership to a timestamp
+    comparison in the local frame - a solar-midnight / hour-angle method would
+    misclassify pre-dawn births in timezones offset from local solar time."""
+
+    MADRID = Location(40.4168, -3.7038)
+    # Urumqi runs on Beijing time (UTC+8) though ~2 h ahead of local solar time.
+    URUMQI = Location(43.8256, 87.6168)
+
+    def test_offset_timezone_predawn_is_previous_day(self):
+        # 00:30 local sits between civil midnight and solar midnight (~01:29),
+        # hours before dawn (~07:20). Tibetan day is the previous date.
+        t = pytz.timezone("Europe/Madrid").localize(datetime(2024, 2, 10, 0, 30))
+        self.assertEqual(calendar.tibetan_day_date(t, self.MADRID), date(2024, 2, 9))
+
+    def test_afternoon_is_same_day(self):
+        t = pytz.timezone("Europe/Madrid").localize(datetime(2024, 2, 10, 13, 0))
+        self.assertEqual(calendar.tibetan_day_date(t, self.MADRID), date(2024, 2, 10))
+
+    def test_far_west_of_timezone_predawn_is_previous_day(self):
+        # 01:00 Beijing time in Urumqi is deep pre-dawn (dawn ~09:00 local clock).
+        t = pytz.timezone("Asia/Shanghai").localize(datetime(2024, 2, 10, 1, 0))
+        self.assertEqual(calendar.tibetan_day_date(t, self.URUMQI), date(2024, 2, 9))
+
+
+class TestDayStartFallback(unittest.TestCase):
+    def test_polar_day_has_no_dawn_and_falls_back(self):
+        # Svalbard at the solstice: sun never drops to -6 deg, so there is no
+        # dawn. The lookup returns None instead of raising, and day_start uses
+        # the fixed hour.
+        place = Location(78.0, 15.0)
+        tz = pytz.timezone("Arctic/Longyearbyen")
+        d = date(2024, 6, 21)
+        self.assertIsNone(morning_civil_twilight(d, tz, place))
+        ds = calendar.day_start(d, tz, place)
+        self.assertTrue(ds.is_fixed)
+        self.assertEqual(ds.at.hour, HIGH_LATITUDE_DAY_START_HOUR)
+
+    def test_high_latitude_summer_below_limit_does_not_raise(self):
+        # ~59 N in summer has a brief dip below -6 deg, so a real dawn exists and
+        # day_start must resolve it without raising (the old two-boundary search
+        # asserted exactly two crossings and could fail here).
+        place = Location(59.33, 18.07)  # Stockholm
+        tz = pytz.timezone("Europe/Stockholm")
+        ds = calendar.day_start(date(2024, 6, 21), tz, place)
+        self.assertIsInstance(ds.at, datetime)
+        self.assertFalse(ds.is_fixed)
+
+    def test_spring_forward_gap_at_fallback_hour_shifts_past_gap(self):
+        # Asia/Baku on 1996-03-31: clocks jumped 05:00 -> 06:00, so 05:00 local
+        # does not exist. HIGH_LATITUDE_DAY_START_HOUR = 5 lands exactly in that
+        # gap. normalize() must push the result to 06:00 without raising.
+        place = Location(65.0, 50.0)  # above LATITUDE_LIMIT -> fixed fallback
+        tz = pytz.timezone("Asia/Baku")
+        d = date(1996, 3, 31)
+        ds = calendar.day_start(d, tz, place)
+        self.assertTrue(ds.is_fixed)
+        self.assertEqual(ds.at.hour, 6)  # shifted past the 05:00-06:00 gap
