@@ -59,6 +59,7 @@ def fortune_mewa_cnnr(year_attrs: TibetanYearAttributes) -> MewaAspect:
 
 
 def calculate_mewas_cnnr(year_attrs: TibetanYearAttributes) -> MewaResult:
+    # CNNR rule swaps the table's (life, capacity) order - not a transposition bug.
     capacity_mewa, life_mewa = BODY_MEWA_TO_LIFE_CAPACITY_MEWA[year_attrs.mewa_number]
     return MewaResult(
         life=MewaAspect(life_mewa),

@@ -28,6 +28,7 @@ from .calculation_notes import (
     local_time_dst_note,
     period_boundary_note,
 )
+from .astronomy import LATITUDE_LIMIT
 from .calendar import (
     TibetanYearAttributes,
     classic_year_attributes,
@@ -87,7 +88,7 @@ def calculate_namkha(
             f"Unsupported method {method.name!r} for {namkha_type.name} Namkha"
         )
 
-    _check_supported_year(subject)
+    _validate_subject(subject)
     subject_notes = _collect_subject_notes(subject)
     calculation = calc_fn(subject)
 
@@ -104,10 +105,19 @@ def calculate_namkha(
     )
 
 
-def _check_supported_year(subject: Subject) -> None:
-    """Reject birth years outside the bundled ephemeris coverage."""
+def _validate_subject(subject: Subject) -> None:
+    """Reject births the calculation cannot handle.
+
+    The birth year must lie within the bundled ephemeris coverage. Below
+    LATITUDE_LIMIT the birth date must also have a day start of its own:
+    day_start raises for dates skipped by a dateline jump and for dates
+    whose dawn drifted across clock midnight. At or above the limit the
+    day starts at a fixed hour, so neither date case can arise.
+    """
+    local_dt = subject.local_birth_datetime
+
     year_min, year_max = supported_year_range()
-    utc_year = subject.local_birth_datetime.astimezone(dt.timezone.utc).year
+    utc_year = local_dt.astimezone(dt.timezone.utc).year
     if not year_min <= utc_year <= year_max:
         raise ValueError(
             f"birth year {subject.birth_datetime.year} (UTC year {utc_year}) "
@@ -115,12 +125,14 @@ def _check_supported_year(subject: Subject) -> None:
             f"[{year_min}, {year_max}] (limited by the bundled ephemeris)"
         )
 
+    if abs(subject.birth_location.latitude) < LATITUDE_LIMIT:
+        day_start(local_dt.date(), local_dt.tzinfo, subject.birth_location)  # type: ignore[arg-type]
+
 
 def _collect_subject_notes(subject: Subject) -> tuple[CalculationNoteItem, ...]:
     """Notes that depend only on the subject's location and local time."""
     notes: list[CalculationNoteItem] = []
-    local_dt = subject.local_birth_datetime
-    if day_start(local_dt.date(), local_dt.tzinfo, subject.birth_location).is_fixed:
+    if abs(subject.birth_location.latitude) >= LATITUDE_LIMIT:
         notes.append(CALCULATION_NOTES[CalculationNote.HIGH_LATITUDE])
     notes.extend(local_time_dst_note(subject.birth_datetime, subject.birth_timezone))
     return tuple(notes)

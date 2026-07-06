@@ -8,6 +8,8 @@ from enum import Enum, auto, unique
 
 import pytz
 
+from .astronomy import PytzTimezone
+
 # Birth time closer than this to a period boundary triggers a PERIOD_BOUNDARY note.
 PERIOD_BOUNDARY_THRESHOLD = dt.timedelta(minutes=5)
 
@@ -61,7 +63,7 @@ CALCULATION_NOTES = {
 
 
 def local_time_dst_note(
-    birth_datetime: dt.datetime, tz: pytz.BaseTzInfo
+    birth_datetime: dt.datetime, tz: PytzTimezone
 ) -> tuple[CalculationNoteItem, ...]:
     """Caution if the naive local birth time is ambiguous or non-existent on a DST transition.
 

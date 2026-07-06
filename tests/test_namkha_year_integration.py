@@ -10,6 +10,7 @@ import pytz
 
 from namkha_calculator.astrology import Animal, Element, Gender, Subject
 from namkha_calculator.astronomy import Location
+from namkha_calculator.calendar import supported_year_range
 from namkha_calculator.harmonizer import Aspect
 from namkha_calculator.methods import CalculationMethod
 from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
@@ -172,3 +173,32 @@ class TestYearCnnrFireMonkey(unittest.TestCase):
                     result.birth_animal, exp_animal, f"{label} birth animal"
                 )
                 self.assertEqual(result.birth_mewa, exp_mewa, f"{label} birth mewa")
+
+
+class TestSupportedYearExtremes(unittest.TestCase):
+    """calendar._YEAR_RANGE_MARGIN is empirical: the whole pipeline must run at
+    both ends of supported_year_range() for every method, and reject the years
+    just outside."""
+
+    # Bamako on UTC-1 ("Etc/GMT+1" is UTC-1 in POSIX sign convention)
+    _PLACE = ("Etc/GMT+1", 12.65225, -7.98170)
+
+    def test_extreme_years_calculate(self):
+        year_min, year_max = supported_year_range()
+        for year in (year_min, year_max):
+            for method in (CalculationMethod.CLASSIC, CalculationMethod.CNNR):
+                with self.subTest(year=year, method=method.name):
+                    subject = _subject(f"15.06.{year} 12:00", *self._PLACE)
+                    result = calculate_namkha(NamkhaType.YEAR, subject, method)
+                    self.assertIsInstance(result.birth_element, Element)
+                    self.assertIsInstance(result.birth_animal, Animal)
+
+    def test_years_outside_range_rejected(self):
+        year_min, year_max = supported_year_range()
+        for year in (year_min - 1, year_max + 1):
+            with self.subTest(year=year):
+                subject = _subject(f"15.06.{year} 12:00", *self._PLACE)
+                with self.assertRaisesRegex(ValueError, "outside the supported range"):
+                    calculate_namkha(
+                        NamkhaType.YEAR, subject, CalculationMethod.CLASSIC
+                    )

@@ -6,10 +6,17 @@ import pytz
 from hypothesis import given, settings
 from hypothesis import strategies as st
 
-from namkha_calculator.astronomy import HIGH_LATITUDE_DAY_START_HOUR, Location
+from namkha_calculator.astronomy import (
+    HIGH_LATITUDE_DAY_START_HOUR,
+    Location,
+    fixed_offset,
+)
 from namkha_calculator import calendar
 from namkha_calculator.astrology import Animal, Element
-from namkha_calculator.skyfield_calculations import morning_civil_twilight
+from namkha_calculator.skyfield_calculations import (
+    ephemeris_date_range,
+    morning_civil_twilight,
+)
 
 TEST_PLACES = {
     "Bamako": Location(12.65225, -7.98170),  # UTC+0
@@ -125,6 +132,29 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
                 element, animal = _parse_henning_header(test_western_year)
                 self.assertEqual(test_year_attributes.element, element)
                 self.assertEqual(test_year_attributes.animal, animal)
+
+    def test_order_tables_match_astrological_cycle(self):
+        self.assertEqual(
+            calendar.ANIMAL_ORDER,
+            (
+                Animal.MOUSE,
+                Animal.OX,
+                Animal.TIGER,
+                Animal.HARE,
+                Animal.DRAGON,
+                Animal.SNAKE,
+                Animal.HORSE,
+                Animal.SHEEP,
+                Animal.MONKEY,
+                Animal.BIRD,
+                Animal.DOG,
+                Animal.BOAR,
+            ),
+        )
+        self.assertEqual(
+            calendar.ELEMENT_ORDER,
+            (Element.WOOD, Element.FIRE, Element.EARTH, Element.METAL, Element.WATER),
+        )
 
 
 class TestNearestPreviousYearWithAnimal(unittest.TestCase):
@@ -269,7 +299,7 @@ class TestDayStartFallback(unittest.TestCase):
         d = date(2024, 6, 21)
         self.assertIsNone(morning_civil_twilight(d, tz, place))
         ds = calendar.day_start(d, tz, place)
-        self.assertTrue(ds.is_fixed)
+        self.assertTrue(ds.is_fallback)
         self.assertEqual(ds.at.hour, HIGH_LATITUDE_DAY_START_HOUR)
 
     def test_high_latitude_summer_below_limit_does_not_raise(self):
@@ -280,7 +310,7 @@ class TestDayStartFallback(unittest.TestCase):
         tz = pytz.timezone("Europe/Stockholm")
         ds = calendar.day_start(date(2024, 6, 21), tz, place)
         self.assertIsInstance(ds.at, datetime)
-        self.assertFalse(ds.is_fixed)
+        self.assertFalse(ds.is_fallback)
 
     def test_spring_forward_gap_at_fallback_hour_shifts_past_gap(self):
         # Asia/Baku on 1996-03-31: clocks jumped 05:00 -> 06:00, so 05:00 local
@@ -290,5 +320,134 @@ class TestDayStartFallback(unittest.TestCase):
         tz = pytz.timezone("Asia/Baku")
         d = date(1996, 3, 31)
         ds = calendar.day_start(d, tz, place)
-        self.assertTrue(ds.is_fixed)
+        self.assertTrue(ds.is_fallback)
         self.assertEqual(ds.at.hour, 6)  # shifted past the 05:00-06:00 gap
+
+
+class TestDecoupledOffsetDawn(unittest.TestCase):
+    """When the timezone offset is decoupled from the location's longitude, dawn
+    can land at any local clock hour. The full-day search must still find the real
+    dawn (not fall back to a fixed hour), and day membership must flip across it."""
+
+    # Equator, longitude -30 (solar ~ UTC-2) on clock offset +12: dawn ~19:35 local.
+    LOC = Location(0.0, -30.0)
+    TZ = fixed_offset(timedelta(hours=12))
+    DATE = date(2024, 6, 21)
+
+    def test_real_dawn_found_not_fixed_fallback(self):
+        ds = calendar.day_start(self.DATE, self.TZ, self.LOC)
+        self.assertFalse(ds.is_fallback)  # before the fix this was the fixed 5 AM
+        self.assertIsInstance(ds.at, datetime)
+        self.assertEqual(ds.at.hour, 19)  # ~19:35 local, hours past the 14 h window
+
+    def test_membership_flips_across_decoupled_dawn(self):
+        before = self.TZ.localize(datetime(2024, 6, 21, 10, 0))  # before ~19:35 dawn
+        after = self.TZ.localize(datetime(2024, 6, 21, 20, 0))  # after dawn
+        self.assertEqual(calendar.tibetan_day_date(before, self.LOC), date(2024, 6, 20))
+        self.assertEqual(calendar.tibetan_day_date(after, self.LOC), date(2024, 6, 21))
+
+
+class TestDecoupledOffsetMissRaises(unittest.TestCase):
+    """A clock far enough behind the location's mean solar time drifts dawn across
+    clock midnight on ~1 date/year: that date's window (below LATITUDE_LIMIT) has
+    no dawn of its own, and day_start must raise clearly rather than fall back.
+    The neighbouring dates each still find a real dawn (dawn slips from just
+    before midnight to just after it). No real IANA zone can produce this."""
+
+    # 45N: dawn is 2024-07-21 23:59:49-04:00, then 2024-07-23 00:00:59-04:00 -
+    # 2024-07-22 has no dawn of its own. Verified directly against
+    # morning_civil_twilight (not mocked).
+    LOC = Location(45.0, 0.0)
+    TZ = fixed_offset(timedelta(hours=-4))
+    MISS_DATE = date(2024, 7, 22)
+
+    def test_search_miss_raises(self):
+        self.assertIsNone(morning_civil_twilight(self.MISS_DATE, self.TZ, self.LOC))
+        with self.assertRaisesRegex(ValueError, "no dawn"):
+            calendar.day_start(self.MISS_DATE, self.TZ, self.LOC)
+
+    def test_neighbouring_dates_still_find_real_dawn(self):
+        for d in (date(2024, 7, 21), date(2024, 7, 23)):
+            with self.subTest(date=d):
+                ds = calendar.day_start(d, self.TZ, self.LOC)
+                self.assertFalse(ds.is_fallback)
+
+    def test_predawn_after_miss_date_skips_to_real_dawn_date(self):
+        # 2024-07-23 00:00:30 lies between the 07-21 23:59:49 dawn and the
+        # 07-23 00:00:59 one, so its Tibetan day began on 07-21 - not on the
+        # dawnless 07-22, which never starts a Tibetan day.
+        t = self.TZ.localize(datetime(2024, 7, 23, 0, 0, 30))
+        self.assertEqual(calendar.tibetan_day_date(t, self.LOC), date(2024, 7, 21))
+
+    def test_subject_passable_offset_can_still_miss(self):
+        # 59N with a clock only 1.5 h behind solar (within the Subject bounds):
+        # midsummer dawn sits at clock midnight, so the miss is still reachable
+        # for accepted input and must surface as the same clear error.
+        loc = Location(59.0, 0.0)
+        tz = fixed_offset(timedelta(hours=-1, minutes=-30))
+        with self.assertRaisesRegex(ValueError, "no dawn"):
+            calendar.day_start(date(2024, 6, 30), tz, loc)
+
+
+class TestSkippedDateRaises(unittest.TestCase):
+    def test_samoa_dateline_jump_date_raises(self):
+        # Samoa skipped 2011-12-30 when it crossed the dateline: the local date
+        # has zero duration, so the dawn lookup must reject it clearly instead
+        # of leaking skyfield internals.
+        tz = pytz.timezone("Pacific/Apia")
+        loc = Location(-13.8333, -171.7667)
+        with self.assertRaisesRegex(ValueError, "does not exist"):
+            morning_civil_twilight(date(2011, 12, 30), tz, loc)
+        for d in (date(2011, 12, 29), date(2011, 12, 31)):
+            with self.subTest(date=d):
+                self.assertIsNotNone(morning_civil_twilight(d, tz, loc))
+
+
+class TestFixedOffsetPeriodBoundary(unittest.TestCase):
+    """A fixed-offset timezone yields a real dawn-based Losar boundary; births one
+    minute either side of it fall in adjacent Tibetan years."""
+
+    LOC = Location(12.65225, -7.98170)  # Bamako
+    TZ = fixed_offset(timedelta(hours=1))
+
+    def test_year_flips_across_fixed_offset_losar(self):
+        tibetan_year = 2024 + calendar.TIB_WESTERN_OFFSET  # Losar falls in Feb 2024
+        losar = calendar.official_losar(tibetan_year, self.TZ, self.LOC)
+        before = calendar.official_year_attributes(
+            losar - timedelta(minutes=1), self.LOC
+        )
+        after = calendar.official_year_attributes(
+            losar + timedelta(minutes=1), self.LOC
+        )
+        self.assertEqual(before.tibetan_year_number, tibetan_year - 1)
+        self.assertEqual(after.tibetan_year_number, tibetan_year)
+
+
+class TestEphemerisEdgeStability(unittest.TestCase):
+    """Across the whole supported range the dawn lookup must never raise for any
+    offset; a date outside the ephemeris coverage must raise a clear ValueError
+    rather than degrade silently."""
+
+    LOC = Location(0.0, -30.0)
+
+    def test_supported_extremes_never_raise(self):
+        year_min, year_max = calendar.supported_year_range()
+        for year in (year_min, year_max):
+            for d in (date(year, 1, 1), date(year, 12, 31)):
+                for minutes in (14 * 60, -14 * 60, 1439, -1439):
+                    with self.subTest(date=d, minutes=minutes):
+                        # Must not raise; None or a datetime are both acceptable.
+                        morning_civil_twilight(
+                            d, fixed_offset(timedelta(minutes=minutes)), self.LOC
+                        )
+
+    def test_out_of_coverage_date_raises_valueerror(self):
+        eph_start, eph_end = ephemeris_date_range()
+        tz = fixed_offset(timedelta(hours=2))
+        for d in (
+            eph_start.date() - timedelta(days=5),
+            eph_end.date() + timedelta(days=5),
+        ):
+            with self.subTest(date=d):
+                with self.assertRaises(ValueError):
+                    morning_civil_twilight(d, tz, self.LOC)

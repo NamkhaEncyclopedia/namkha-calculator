@@ -15,10 +15,14 @@ from dataclasses import dataclass
 from functools import lru_cache
 from typing import Protocol
 
-import pytz
-
 from .astrology import Animal, Element
-from .astronomy import HIGH_LATITUDE_DAY_START_HOUR, LATITUDE_LIMIT, Location
+from .astronomy import (
+    HIGH_LATITUDE_DAY_START_HOUR,
+    LATITUDE_LIMIT,
+    Location,
+    PytzTimezone,
+    localize_standard,
+)
 from .skyfield_calculations import (
     ephemeris_date_range,
     jd_to_datetime,
@@ -54,30 +58,10 @@ A0 = 475 / 3528
 MOON_TAB = (0, 5, 10, 15, 19, 22, 24, 25)
 SUN_TAB = (0, 6, 10, 11)
 
-# Astrological order of the 12-animal and 5-element cycles.
-ANIMAL_ORDER = (
-    Animal.MOUSE,
-    Animal.OX,
-    Animal.TIGER,
-    Animal.HARE,
-    Animal.DRAGON,
-    Animal.SNAKE,
-    Animal.HORSE,
-    Animal.SHEEP,
-    Animal.MONKEY,
-    Animal.BIRD,
-    Animal.DOG,
-    Animal.BOAR,
-)
-ELEMENT_ORDER = (
-    Element.WOOD,
-    Element.FIRE,
-    Element.EARTH,
-    Element.METAL,
-    Element.WATER,
-)
-assert set(ANIMAL_ORDER) == set(Animal), "ANIMAL_ORDER must cover every Animal"
-assert set(ELEMENT_ORDER) == set(Element), "ELEMENT_ORDER must cover every Element"
+# Astrological order of the 12-animal and 5-element cycles
+# (enum declaration order, see astrology.py).
+ANIMAL_ORDER = tuple(Animal)
+ELEMENT_ORDER = tuple(Element)
 
 # Metreng (60-year) cycle constants
 TIB_WESTERN_OFFSET = 127  # Tibetan year = Western year + 127
@@ -227,7 +211,7 @@ class LosarFn(Protocol):
     """Calculates Losar (Tibetan New Year) datetime for a given Tibetan year."""
 
     def __call__(
-        self, year_number: int, pytz_tz: pytz.BaseTzInfo, location: Location
+        self, year_number: int, pytz_tz: PytzTimezone, location: Location
     ) -> dt.datetime: ...
 
 
@@ -243,47 +227,62 @@ class DayStart:
     """Resolved start of a Tibetan day, with where it came from."""
 
     at: dt.datetime
-    is_fixed: bool  # fixed-hour fallback (True) vs real civil-twilight dawn (False)
+    is_fallback: bool  # fallback fixed hour (True) vs real civil-twilight dawn (False)
 
 
-def day_start(date: dt.date, pytz_tz: pytz.BaseTzInfo, location: Location) -> DayStart:
+def day_start(date: dt.date, pytz_tz: PytzTimezone, location: Location) -> DayStart:
     """
     Start of the Tibetan day (dawn) for a local date.
 
-    Real dawn mapped to the start of morning civil twilight. Falls back to a fixed local
-    hour (HIGH_LATITUDE_DAY_START_HOUR) at or above LATITUDE_LIMIT, or when no dawn
-    occurs on this date (polar day/night).
+    Real dawn mapped to the start of morning civil twilight. Falls back to a fixed
+    local hour (HIGH_LATITUDE_DAY_START_HOUR) at or above LATITUDE_LIMIT.
+
+    Below the limit raises ValueError when the date has no dawn of its own - a
+    clock running far enough behind the location's mean solar time drifts dawn
+    across clock midnight, skipping ~1 date/year. No real IANA zone does this;
+    it needs a decoupled fixed offset (behind the sun at 56-60 deg latitude).
 
     DayStart.at is always in pytz_tz (never UTC), so it is safe to call .date()
     or .hour on it and get local-time values.
     """
     if abs(location.latitude) < LATITUDE_LIMIT:
         dawn = morning_civil_twilight(date, pytz_tz, location)
-        if dawn is not None:
-            return DayStart(dawn.astimezone(pytz_tz), is_fixed=False)
+        if dawn is None:
+            raise ValueError(
+                f"no dawn on {date}: timezone offset is too far behind the "
+                "location's mean solar time"
+            )
+        return DayStart(dawn.astimezone(pytz_tz), is_fallback=False)  # type: ignore[arg-type]
 
     naive_dt = dt.datetime.combine(date, dt.time(HIGH_LATITUDE_DAY_START_HOUR, 0, 0))
-    # is_dst=False picks standard time for ambiguous wall-clock times (DST fall-back);
     # normalize() shifts non-existent wall-clock times (DST spring-forward) past the gap.
-    fixed = pytz_tz.normalize(pytz_tz.localize(naive_dt, is_dst=False))
-    return DayStart(fixed, is_fixed=True)
+    fallback_at = pytz_tz.normalize(localize_standard(naive_dt, pytz_tz))
+    return DayStart(fallback_at, is_fallback=True)
 
 
 def tibetan_day_date(date_time: dt.datetime, location: Location) -> dt.date:
-    """
-    Western calendar date that labels the Tibetan day that contains date_time.
+    """Western date of the Tibetan day (dawn-to-dawn) containing date_time (tz-aware).
 
-    A Tibetan day spans dawn-to-dawn, so an instant before its date's dawn belongs
-    to the previous date's Tibetan day. date_time must be tz-aware.
+    A pre-dawn instant belongs to the day begun at the previous dawn; that
+    dawn's date lies more than one day back when the date in between has no
+    dawn of its own (dawn drifted across clock midnight, or the date was
+    skipped by an offset change).
     """
     local_date = date_time.date()
-    if date_time < day_start(local_date, date_time.tzinfo, location).at:
-        return local_date - dt.timedelta(days=1)
-    return local_date
+    if date_time >= day_start(local_date, date_time.tzinfo, location).at:  # type: ignore[arg-type]
+        return local_date
+    candidate = local_date - dt.timedelta(days=1)
+    for _ in range(3):
+        try:
+            day_start(candidate, date_time.tzinfo, location)  # type: ignore[arg-type]
+            return candidate
+        except ValueError:
+            candidate -= dt.timedelta(days=1)
+    raise ValueError(f"no Tibetan day start found within 3 days before {local_date}")
 
 
 def official_losar(
-    year_number: int, pytz_tz: pytz.BaseTzInfo, location: Location
+    year_number: int, pytz_tz: PytzTimezone, location: Location
 ) -> dt.datetime:
     """
     Calculates the Western datetime for official Losar (Tibetan New Year)
@@ -309,7 +308,7 @@ def has_leap_month(year_number: int, month_number: int) -> bool:
 
 
 def astrological_losar(
-    year_number: int, pytz_tz: pytz.BaseTzInfo, location: Location
+    year_number: int, pytz_tz: PytzTimezone, location: Location
 ) -> dt.datetime:
     """
     Calculates the Western datetime for astrological Losar (Tibetan New Year)
@@ -380,16 +379,16 @@ def _year_attributes(
     """
     Resolve the Tibetan year of date_time, its bounding Losar dates and attributes.
     """
-    losar = losar_fn(initial_year, date_time.tzinfo, location)
+    losar = losar_fn(initial_year, date_time.tzinfo, location)  # type: ignore[arg-type]
     if losar > date_time:
         # born before this Losar -> previous year, which this Losar ends
         tibetan_year_number = initial_year - 1
-        year_start = losar_fn(tibetan_year_number, date_time.tzinfo, location)
+        year_start = losar_fn(tibetan_year_number, date_time.tzinfo, location)  # type: ignore[arg-type]
         year_end = losar
     else:
         tibetan_year_number = initial_year
         year_start = losar
-        year_end = losar_fn(initial_year + 1, date_time.tzinfo, location)
+        year_end = losar_fn(initial_year + 1, date_time.tzinfo, location)  # type: ignore[arg-type]
 
     return TibetanYearAttributes(
         tibetan_year_number=tibetan_year_number,

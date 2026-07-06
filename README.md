@@ -64,15 +64,32 @@ for note in result.calculation_notes:
 #### User input
 **`Subject`** – birth data for one person or any other appropriate entity.
 
-| Field            | Type              | Notes                                                      |
-|------------------|-------------------|------------------------------------------------------------|
-| `gender`         | `Gender`          | `MALE` or `FEMALE`                                         |
-| `birth_datetime` | `datetime`        | 'naive' (no tzinfo) local time                             |
-| `birth_timezone` | `pytz.BaseTzInfo` | use `pytz.timezone(...)`                                   |
-| `birth_location` | `Location`        | latitude/longitude in decimal degrees, optional place name |
-| `name`           | `str or None`     | optional subject name                                      |
+| Field            | Type            | Notes                                                                             |
+|------------------|-----------------|-----------------------------------------------------------------------------------|
+| `gender`         | `Gender`        | `MALE` or `FEMALE`                                                                |
+| `birth_datetime` | `datetime`      | 'naive' (no tzinfo) local time                                                    |
+| `birth_timezone` | `PytzTimezone`  | use `pytz.timezone(...)`, or `fixed_offset(timedelta(...))` for a bare UTC offset |
+| `birth_location` | `Location`      | latitude/longitude in decimal degrees, optional place name                        |
+| `name`           | `str or None`   | optional subject name                                                             |
 
-**`Location`** – `NamedTuple(latitude, longitude, name=None)`.
+When the birth time is known only as a UTC offset (no named zone), build the timezone with `nc.fixed_offset(timedelta(hours=..., minutes=...))`.
+
+#### Input validation and errors
+
+`Subject` validates its input at construction and raises instead of computing from inconsistent data:
+
+- `birth_datetime` must be naive – `TypeError` otherwise (the timezone belongs in `birth_timezone`).
+- `birth_timezone` must be a pytz timezone or a `fixed_offset(...)` result; stdlib `zoneinfo` / `datetime.timezone` are rejected with `TypeError`.
+- The (standard-time) UTC offset must lie within the range real timezones use, *UTC−12* to *UTC+14*, or `ValueError` – an offset outside it is a data-entry error (e.g. +22 entered for −2).
+- The offset must be consistent with the location's longitude, or `ValueError`: the (standard-time) clock may run at most *2.5 h behind* or *3.5 h ahead* of the longitude's mean solar time. Every historical timezone fits these bounds; the behind bound is tighter because a clock behind the sun pulls dawn towards clock midnight. This check is skipped at latitudes of 60° and above, where the day start is a fixed local hour and solar time is irrelevant (polar stations run on zones from arbitrary longitudes).
+
+`calculate_namkha` raises `ValueError` – never degrades silently – when:
+
+- the birth date never existed in its timezone (dates skipped by dateline changes, e.g. 2011-12-30 in Samoa);
+- the birth year falls outside the supported range (limited by the bundled ephemeris);
+- an extreme behind-the-sun fixed offset at 56–60° latitude lands on the rare date (~1 per year) whose dawn drifts across clock midnight onto a neighbouring date – no real timezone can trigger this.
+
+**`Location`** – `latitude`, `longitude`, optional `name`.
 
 **`NamkhaType`** – `YEAR`, `MONTH`, `DAY`, `HOUR`.
 
