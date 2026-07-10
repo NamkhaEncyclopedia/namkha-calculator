@@ -2,6 +2,7 @@
 *.bsp
 !src/namkha_calculator/core/*.bsp
 
+.vscode/
 #########################
 # NO vibe-coding please #
 #########################
