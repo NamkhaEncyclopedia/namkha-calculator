@@ -106,14 +106,9 @@ def calculate_namkha(
 
 
 def _validate_subject(subject: Subject) -> None:
-    """Reject births the calculation cannot handle.
-
-    The birth year must lie within the bundled ephemeris coverage. Below
-    LATITUDE_LIMIT the birth date must also have a day start of its own:
-    day_start raises for dates skipped by a dateline jump and for dates
-    whose dawn drifted across clock midnight. At or above the limit the
-    day starts at a fixed hour, so neither date case can arise.
-    """
+    """Reject birth periods outside ephemeris coverage and, below
+    LATITUDE_LIMIT, birth dates with no day start (dawnless or
+    skipped by a dateline jump)."""
     local_dt = subject.local_birth_datetime
 
     year_min, year_max = supported_year_range()
@@ -126,7 +121,7 @@ def _validate_subject(subject: Subject) -> None:
         )
 
     if abs(subject.birth_location.latitude) < LATITUDE_LIMIT:
-        day_start(local_dt.date(), local_dt.tzinfo, subject.birth_location)  # type: ignore[arg-type]
+        day_start(local_dt.date(), local_dt.tzinfo, subject.birth_location)
 
 
 def _collect_subject_notes(subject: Subject) -> tuple[CalculationNoteItem, ...]:

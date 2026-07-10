@@ -60,18 +60,12 @@ def morning_civil_twilight(
     """
     Start of morning civil twilight (dawn) on a local date, returned in UTC.
 
-    Searches the whole local day [local midnight, next local midnight] and returns
-    the first rising crossing into civil twilight (the sun passing -6 deg upward).
-    The full-day window keeps the result correct even when the timezone offset is
-    decoupled from the location's longitude (a mismatched zone, or an arbitrary
-    fixed offset), where dawn can land at any local clock hour.
+    Searches the whole local day, so the result stays correct even when the
+    timezone offset is decoupled from the location's longitude.
 
-    Returns None when no such crossing exists on a covered date (polar day/night,
-    white nights), so the caller can fall back to a fixed start. Raises ValueError
-    when the date lies outside the ephemeris coverage, or when the date does not
-    exist in the timezone (skipped by a dateline jump, e.g. Samoa 2011-12-30).
-
-    The return value is always UTC.
+    Returns None when the date has no dawn (polar day/night, white nights).
+    Raises ValueError when the date is outside the ephemeris coverage or
+    does not exist in the timezone (skipped by a dateline jump).
     """
     topos = wgs84.latlon(location.latitude, location.longitude)
     search_func = almanac.dark_twilight_day(_get_ephemeris(), topos)

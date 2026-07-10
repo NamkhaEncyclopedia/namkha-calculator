@@ -73,9 +73,8 @@ class Subject:
                 f"real-timezone range [{UTC_OFFSET_MIN_HOURS:+d}, "
                 f"{UTC_OFFSET_MAX_HOURS:+d}] h; check the UTC offset"
             )
-        # At or above LATITUDE_LIMIT the day start is a fixed local hour, so
-        # solar time is irrelevant there (and polar stations run on zones from
-        # arbitrary longitudes, e.g. the South Pole on New Zealand time).
+        # At or above LATITUDE_LIMIT the day start is a fixed local hour,
+        # so solar time is irrelevant there.
         if abs(self.birth_location.latitude) >= LATITUDE_LIMIT:
             return
         gap = offset_solar_gap_hours(self.local_birth_datetime, self.birth_location)

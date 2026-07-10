@@ -20,7 +20,7 @@ OFFSET_AHEAD_SOLAR_LIMIT_HOURS = 3.5
 
 # Real time zones span UTC-12 (Baker Island) to UTC+14 (Line Islands). An
 # offset outside this range is a data-entry error; without this bound the
-# mod-24 gap wrap below would let a day-off offset (e.g. +22 for -2) pass
+# mod-24 gap would wrap and would let a day-off offset (e.g. +22 for -2) pass
 # the solar check as a near-zero gap.
 UTC_OFFSET_MIN_HOURS = -12
 UTC_OFFSET_MAX_HOURS = 14
@@ -55,13 +55,15 @@ def fixed_offset(offset: dt.timedelta) -> PytzTimezone:
 
 
 def localize_standard(naive_dt: dt.datetime, tz: PytzTimezone) -> dt.datetime:
-    """Naive wall-clock time resolved with the standard-time reading.
+    """Attach the timezone to a naive local time.
 
-    The single point of the resolution for ambiguous and non-existent
-    local times; calculation_notes.local_time_dst_note flags affected times.
+    Normal times get their true offset, DST included. The two DST edge
+    cases – a repeated hour (clock set back) and a skipped hour (clock
+    set forward) – are read as standard time instead of raising an error;
+    calculation_notes.local_time_dst_note flags them to the user.
 
-    All library code must localize naive datetimes through this function.
-    The only allowed direct tz.localize call is the is_dst=None probe in
+    Single localization point for the library: no other code may call
+    tz.localize directly, except the ambiguity check in
     local_time_dst_note. Enforced by tests/test_localization_policy.py.
     """
     return tz.localize(naive_dt, is_dst=False)

@@ -259,8 +259,8 @@ class TestPhugpaCalendarCornerCases(unittest.TestCase):
                 year_attributes = calendar.official_year_attributes(
                     test_date_time, place_location
                 )
-        self.assertEqual(year_attributes.element, Element.WOOD)
-        self.assertEqual(year_attributes.animal, Animal.DRAGON)
+                self.assertEqual(year_attributes.element, Element.WOOD)
+                self.assertEqual(year_attributes.animal, Animal.DRAGON)
 
 
 class TestTibetanDayMembership(unittest.TestCase):
@@ -325,9 +325,10 @@ class TestDayStartFallback(unittest.TestCase):
 
 
 class TestDecoupledOffsetDawn(unittest.TestCase):
-    """When the timezone offset is decoupled from the location's longitude, dawn
-    can land at any local clock hour. The full-day search must still find the real
-    dawn (not fall back to a fixed hour), and day membership must flip across it."""
+    """Here the clock is decoupled from the sun: the manual offset is +12 but the
+    longitude gives solar time ~UTC-2, so dawn falls around 19:35 on the local
+    clock. Even then day_start must find that real dawn (not the fixed-hour
+    fallback), and the Tibetan day must still change exactly at it."""
 
     # Equator, longitude -30 (solar ~ UTC-2) on clock offset +12: dawn ~19:35 local.
     LOC = Location(0.0, -30.0)
@@ -336,7 +337,7 @@ class TestDecoupledOffsetDawn(unittest.TestCase):
 
     def test_real_dawn_found_not_fixed_fallback(self):
         ds = calendar.day_start(self.DATE, self.TZ, self.LOC)
-        self.assertFalse(ds.is_fallback)  # before the fix this was the fixed 5 AM
+        self.assertFalse(ds.is_fallback)
         self.assertIsInstance(ds.at, datetime)
         self.assertEqual(ds.at.hour, 19)  # ~19:35 local, hours past the 14 h window
 
@@ -348,13 +349,13 @@ class TestDecoupledOffsetDawn(unittest.TestCase):
 
 
 class TestDecoupledOffsetMissRaises(unittest.TestCase):
-    """A clock far enough behind the location's mean solar time drifts dawn across
-    clock midnight on ~1 date/year: that date's window (below LATITUDE_LIMIT) has
-    no dawn of its own, and day_start must raise clearly rather than fall back.
-    The neighbouring dates each still find a real dawn (dawn slips from just
-    before midnight to just after it). No real IANA zone can produce this."""
+    """An arbitrary fixed offset far enough behind the location's mean solar time pushes dawn
+    across clock midnight on ~1 date/year, so that local date has no dawn of its
+    own while its neighbors still do. Below LATITUDE_LIMIT, day_start must raise
+    a clear ValueError for such a date instead of falling back to the fixed hour.
+    No real IANA zone produces this; it needs an artificial fixed offset."""
 
-    # 45N: dawn is 2024-07-21 23:59:49-04:00, then 2024-07-23 00:00:59-04:00 -
+    # 45N: dawn is 2024-07-21 23:59:49UTC-04:00, then 2024-07-23 00:00:59UTC-04:00 -
     # 2024-07-22 has no dawn of its own. Verified directly against
     # morning_civil_twilight (not mocked).
     LOC = Location(45.0, 0.0)
@@ -404,8 +405,10 @@ class TestSkippedDateRaises(unittest.TestCase):
 
 
 class TestFixedOffsetPeriodBoundary(unittest.TestCase):
-    """A fixed-offset timezone yields a real dawn-based Losar boundary; births one
-    minute either side of it fall in adjacent Tibetan years."""
+    """Even with a fixed-offset timezone (no named IANA zone), the Tibetan year
+    boundary is still the real computed dawn of Losar day: a birth one minute
+    before that dawn falls in the previous Tibetan year, one minute after it in
+    the new one."""
 
     LOC = Location(12.65225, -7.98170)  # Bamako
     TZ = fixed_offset(timedelta(hours=1))

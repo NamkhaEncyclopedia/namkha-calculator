@@ -83,17 +83,13 @@ class TestYearClassicWoodTiger(unittest.TestCase):
                 aspects = _aspect_map(result)
 
                 for asp, (exp_center, exp_seq) in self._EXPECTED_ASPECTS.items():
-                    self.assertEqual(
-                        aspects[asp][0], exp_center, f"{label} {asp.name} center"
-                    )
-                    self.assertEqual(
-                        aspects[asp][1], exp_seq, f"{label} {asp.name} seq"
-                    )
+                    with self.subTest(case=label, aspect=asp.name):
+                        self.assertEqual(aspects[asp][0], exp_center, "center")
+                        self.assertEqual(aspects[asp][1], exp_seq, "seq")
 
                 for asp, exp_num in self._EXPECTED_MEWAS.items():
-                    self.assertEqual(
-                        result.mewa_numbers[asp], exp_num, f"{label} {asp.name} number"
-                    )
+                    with self.subTest(case=label, aspect=asp.name):
+                        self.assertEqual(result.mewa_numbers[asp], exp_num, "number")
 
                 exp_element, exp_animal, exp_mewa = self._EXPECTED_BIRTH
                 self.assertEqual(
@@ -153,17 +149,13 @@ class TestYearCnnrFireMonkey(unittest.TestCase):
                 aspects = _aspect_map(result)
 
                 for asp, (exp_center, exp_seq) in self._EXPECTED_ASPECTS.items():
-                    self.assertEqual(
-                        aspects[asp][0], exp_center, f"{label} {asp.name} center"
-                    )
-                    self.assertEqual(
-                        aspects[asp][1], exp_seq, f"{label} {asp.name} seq"
-                    )
+                    with self.subTest(case=label, aspect=asp.name):
+                        self.assertEqual(aspects[asp][0], exp_center, "center")
+                        self.assertEqual(aspects[asp][1], exp_seq, "seq")
 
                 for asp, exp_num in self._EXPECTED_MEWAS.items():
-                    self.assertEqual(
-                        result.mewa_numbers[asp], exp_num, f"{label} {asp.name} number"
-                    )
+                    with self.subTest(case=label, aspect=asp.name):
+                        self.assertEqual(result.mewa_numbers[asp], exp_num, "number")
 
                 exp_element, exp_animal, exp_mewa = self._EXPECTED_BIRTH
                 self.assertEqual(
