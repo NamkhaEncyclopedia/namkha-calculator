@@ -186,6 +186,10 @@ Timezone boundary lookups use [timezonefinder](https://github.com/jannikmi/timez
 ## Acknowledgments
 
 <p style="text-align: center">
+  <img src="WhiteAThigle.webp" alt="White A Thigle" width="150" height="150" />
+</p>
+
+<p style="text-align: center">
 *Whatever wisdom this contains belongs to the Tibetan astrological traditions and their holders; whatever faults it contains are our own.*
 </p>
 
