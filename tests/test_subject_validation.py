@@ -36,8 +36,8 @@ def _subject(
 
 class TestOffsetSolarGapBounds(unittest.TestCase):
     """The gap between the standard-time clock offset and the longitude's mean
-    solar time must stay within (-OFFSET_BEHIND_SOLAR_LIMIT_HOURS,
-    +OFFSET_AHEAD_SOLAR_LIMIT_HOURS); a bigger gap is a data-entry error. The
+    solar time must stay within [OFFSET_BEHIND_SOLAR_LIMIT_HOURS,
+    OFFSET_AHEAD_SOLAR_LIMIT_HOURS]; a bigger gap is a data-entry error. The
     behind bound is tighter because a clock behind the sun pulls dawn toward
     clock midnight. All historical zones fit inside the bounds."""
 

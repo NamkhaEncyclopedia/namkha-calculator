@@ -311,7 +311,7 @@ class TestDayStartFallback(unittest.TestCase):
     def test_spring_forward_gap_at_fallback_hour_shifts_past_gap(self):
         # Asia/Baku on 1996-03-31: clocks jumped 05:00 -> 06:00, so 05:00 local
         # does not exist. HIGH_LATITUDE_DAY_START_HOUR = 5 lands exactly in that
-        # gap. normalize() must push the result to 06:00 without raising.
+        # gap. shift_past_clock_gap() must push the result to 06:00 without raising.
         place = Location(65.0, 50.0)  # above LATITUDE_LIMIT -> fixed fallback
         tz = zone("Asia/Baku")
         d = date(1996, 3, 31)

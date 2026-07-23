@@ -109,7 +109,6 @@ def harmonize_aspects(
     )
 
     # Each row: (aspect, its element, the element it harmonises towards).
-    # Birth aspects harmonise to Life; Mewa aspects harmonise to Mewa Life.
     aspect_rows = (
         (Aspect.BODY, body, life),
         (Aspect.CAPACITY, capacity, life),

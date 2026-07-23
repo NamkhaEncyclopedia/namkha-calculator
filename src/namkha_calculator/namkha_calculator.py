@@ -116,7 +116,7 @@ def _validate_subject(subject: Subject) -> None:
     """Reject birth periods outside ephemeris coverage, birth instants that never
     existed in the timezone (a spring-forward clock gap or a dateline-jumped date;
     checked at every latitude), and - below LATITUDE_LIMIT - dawnless birth dates
-    (polar day/night).
+    (a clock far behind mean solar time drifting dawn past midnight).
     """
     local_dt = subject.local_birth_datetime
     tz = subject.effective_timezone

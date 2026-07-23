@@ -28,7 +28,7 @@ _PACKAGE_TZDATA = (
     Path(__file__).resolve().parent.parent / "src" / "namkha_calculator" / "tzdata"
 )
 
-# Build artefacts not needed at runtime; the .tab files are kept.
+# Build artefacts and zonenow.tab not needed at runtime; zone.tab is kept.
 _EXCLUDED = ("leapseconds", "tzdata.zi", "zonenow.tab")
 
 
