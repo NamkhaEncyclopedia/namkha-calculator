@@ -17,7 +17,7 @@ classifiers = [
 ]
 dependencies = [
     "skyfield (>=1.49,<2.0)",
-    "pytz (>=2025.2)",
+    "timezonefinder (>=6.5)",
 ]
 
 [project.urls]

@@ -1,7 +1,6 @@
+import pickle
 import unittest
-from datetime import datetime, timedelta, timezone
-
-import pytz
+from datetime import datetime, timedelta, timezone, tzinfo
 
 from namkha_calculator.astrology import Animal, Element, Gender, Subject
 from namkha_calculator.astronomy import (
@@ -10,6 +9,7 @@ from namkha_calculator.astronomy import (
     Location,
     fixed_offset,
     offset_solar_gap_hours,
+    zone,
 )
 from namkha_calculator.methods import CalculationMethod
 from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
@@ -28,7 +28,7 @@ def _subject(
     return Subject(
         gender=Gender.MALE,
         birth_datetime=birth,
-        birth_timezone=tz if tz is not None else pytz.timezone(_TZ),
+        birth_timezone=tz if tz is not None else zone(_TZ),
         birth_location=location if location is not None else Location(_LAT, _LON),
         name=None,
     )
@@ -63,16 +63,14 @@ class TestOffsetSolarGapBounds(unittest.TestCase):
 
     def test_matched_offset_accepted(self):
         """Stuttgart on Europe/Berlin: offset tracks longitude (~1 h apart)."""
-        subject = _subject(
-            tz=pytz.timezone("Europe/Berlin"), location=Location(48.7758, 9.1829)
-        )
+        subject = _subject(tz=zone("Europe/Berlin"), location=Location(48.7758, 9.1829))
         self.assertIsInstance(subject, Subject)
 
     def test_real_wide_zone_accepted(self):
         """Urumqi on Beijing time (UTC+8, ~2.2 h ahead of local solar): the widest
         kind of real mismatch, well inside the ahead bound."""
         subject = _subject(
-            tz=pytz.timezone("Asia/Shanghai"), location=Location(43.8256, 87.6168)
+            tz=zone("Asia/Shanghai"), location=Location(43.8256, 87.6168)
         )
         self.assertIsInstance(subject, Subject)
 
@@ -85,11 +83,11 @@ class TestOffsetSolarGapBounds(unittest.TestCase):
         location = Location(76.7667, -18.6667)
         subject = _subject(
             datetime(1950, 1, 15, 12, 0),
-            tz=pytz.timezone("America/Danmarkshavn"),
+            tz=zone("America/Danmarkshavn"),
             location=location,
         )
         gap = offset_solar_gap_hours(subject.local_birth_datetime, location)
-        self.assertGreater(gap, -OFFSET_BEHIND_SOLAR_LIMIT_HOURS)
+        self.assertGreater(gap, OFFSET_BEHIND_SOLAR_LIMIT_HOURS)
         self.assertLess(gap, 0)
 
     def test_high_latitude_skips_gap_check(self):
@@ -97,7 +95,7 @@ class TestOffsetSolarGapBounds(unittest.TestCase):
         far over the bound, irrelevant above LATITUDE_LIMIT (fixed-hour day
         start). Construction must succeed although the gap is out of bounds."""
         location = Location(-89.9, 0.0)
-        subject = _subject(tz=pytz.timezone("Pacific/Auckland"), location=location)
+        subject = _subject(tz=zone("Pacific/Auckland"), location=location)
         gap = offset_solar_gap_hours(subject.local_birth_datetime, location)
         self.assertGreater(abs(gap), OFFSET_AHEAD_SOLAR_LIMIT_HOURS)
 
@@ -111,18 +109,20 @@ class TestOffsetSolarGapBounds(unittest.TestCase):
             )
 
     def test_extreme_real_offsets_within_offset_range(self):
-        """The widest offsets any real zone uses: UTC+14 (Line Islands) and
-        UTC-12 (Baker Island), each at its own longitude, so the
-        UTC_OFFSET_MIN/MAX_HOURS range must admit both."""
-        for hours, longitude in ((14, -157.43), (-12, -176.48)):
-            with self.subTest(hours=hours, longitude=longitude):
-                subject = _subject(
-                    tz=fixed_offset(timedelta(hours=hours)),
-                    location=Location(1.87, longitude),
-                )
-                self.assertEqual(
-                    subject.local_birth_datetime.utcoffset(), timedelta(hours=hours)
-                )
+        """The widest offsets any real zone uses: modern civil UTC+14 (Line
+        Islands) and UTC-12 (Baker Island), plus the historical date-side
+        extreme UTC-15:56 at Manila's longitude (= +8:04 - 24 h, so its solar
+        gap is ~0). Each at its own longitude, so UTC_OFFSET_MIN/MAX_HOURS must
+        accept them all."""
+        cases = (
+            (timedelta(hours=14), Location(1.87, -157.43)),
+            (timedelta(hours=-12), Location(1.87, -176.48)),
+            (timedelta(hours=-15, minutes=-56), Location(14.6, 121.0)),
+        )
+        for offset, location in cases:
+            with self.subTest(offset=offset, longitude=location.longitude):
+                subject = _subject(tz=fixed_offset(offset), location=location)
+                self.assertEqual(subject.local_birth_datetime.utcoffset(), offset)
 
     def test_historical_dst_on_wide_zone_accepted(self):
         """Kashgar, summer 1988: China DST put the clock at UTC+9, ~3.9 h ahead of
@@ -130,7 +130,7 @@ class TestOffsetSolarGapBounds(unittest.TestCase):
         standard time (UTC+8, ~2.9 h), so this legal birth is accepted."""
         subject = _subject(
             datetime(1988, 7, 1, 12, 0),
-            tz=pytz.timezone("Asia/Shanghai"),
+            tz=zone("Asia/Shanghai"),
             location=Location(39.4704, 75.9898),
         )
         self.assertEqual(subject.local_birth_datetime.dst(), timedelta(hours=1))
@@ -142,23 +142,42 @@ class TestSkippedDateBirth(unittest.TestCase):
         date must fail with a clear error, not a raw skyfield one."""
         subject = _subject(
             datetime(2011, 12, 30, 10, 0),
-            tz=pytz.timezone("Pacific/Apia"),
+            tz=zone("Pacific/Apia"),
             location=Location(-13.8333, -171.7667),
         )
         with self.assertRaisesRegex(ValueError, "does not exist"):
             calculate_namkha(NamkhaType.YEAR, subject, CalculationMethod.CLASSIC)
 
-    def test_high_latitude_birth_skips_date_check(self):
-        """At/above LATITUDE_LIMIT the day starts at a fixed hour; the birth-date
-        check must not run there (dawn/dateline cases can't arise) and
-        calculation proceeds even on a date the below-limit path would reject."""
+    def test_high_latitude_dateline_skip_still_raises(self):
+        """A date that never existed in the timezone is pure calendar arithmetic,
+        independent of dawn, so it is rejected at every latitude - including
+        at/above LATITUDE_LIMIT, where only the dawnless-date check is skipped."""
         subject = _subject(
             datetime(2011, 12, 30, 10, 0),
-            tz=pytz.timezone("Pacific/Apia"),
+            tz=zone("Pacific/Apia"),
             location=Location(65.0, 10.0),
         )
-        result = calculate_namkha(NamkhaType.YEAR, subject, CalculationMethod.CLASSIC)
-        self.assertIsNotNone(result.harmonized_aspects)
+        with self.assertRaisesRegex(ValueError, "does not exist"):
+            calculate_namkha(NamkhaType.YEAR, subject, CalculationMethod.CLASSIC)
+
+    def test_high_latitude_dst_gap_time_raises(self):
+        """A wall-clock time skipped by a spring-forward gap never existed, so it
+        is rejected even above LATITUDE_LIMIT. Anchorage (61.2 N) skipped
+        2024-03-10 02:00->03:00, so 02:30 that day did not happen."""
+        subject = _subject(
+            datetime(2024, 3, 10, 2, 30),
+            tz=zone("America/Anchorage"),
+            location=Location(61.2181, -149.9003),
+        )
+        with self.assertRaisesRegex(ValueError, "does not exist"):
+            calculate_namkha(NamkhaType.YEAR, subject, CalculationMethod.CLASSIC)
+
+    def test_normal_latitude_dst_gap_time_raises(self):
+        """The same spring-forward rejection at a normal latitude. Europe/Berlin
+        skipped 2024-03-31 02:00->03:00, so 02:30 that day did not happen."""
+        subject = _subject(datetime(2024, 3, 31, 2, 30))
+        with self.assertRaisesRegex(ValueError, "does not exist"):
+            calculate_namkha(NamkhaType.YEAR, subject, CalculationMethod.CLASSIC)
 
 
 class TestFixedOffsetSubject(unittest.TestCase):
@@ -171,10 +190,86 @@ class TestFixedOffsetSubject(unittest.TestCase):
         self.assertIsInstance(result.birth_element, Element)
         self.assertIsInstance(result.birth_animal, Animal)
 
-    def test_stdlib_timezone_rejected(self):
-        """datetime.timezone lacks .localize, so it must be rejected."""
+    def test_stdlib_timezone_accepted(self):
+        """datetime.timezone is the supported fixed-offset input type."""
+        subject = _subject(
+            tz=timezone(timedelta(hours=5, minutes=45)), location=Location(27.7, 85.3)
+        )
+        self.assertEqual(
+            subject.local_birth_datetime.utcoffset(),
+            timedelta(hours=5, minutes=45),
+        )
+
+    def test_foreign_tzinfo_rejected(self):
+        """Only ZoneInfo and datetime.timezone are supported timezone types."""
+
+        class LegacyTz(tzinfo):
+            """Stand-in for a non-supported tzinfo implementation (e.g. pytz)."""
+
         with self.assertRaises(TypeError):
-            _subject(tz=timezone(timedelta(hours=2)), location=Location(27.7, 85.3))
+            _subject(tz=LegacyTz(), location=Location(27.7, 85.3))
+
+
+class TestLmtEraValidation(unittest.TestCase):
+    """Pre-standard-time births are validated against the raw zone offset, not
+    astronomy._birth_longitude_mean_time (which recomputes the offset from the
+    birth longitude and so would mask a mismatched timezone)."""
+
+    ROME = Location(41.9028, 12.4964)
+    MANILA = Location(14.5995, 120.9842)
+
+    def test_lmt_era_mismatched_zone_rejected(self):
+        with self.assertRaisesRegex(ValueError, "inconsistent"):
+            _subject(
+                datetime(1700, 6, 15, 12, 0),
+                tz=zone("Asia/Manila"),
+                location=self.ROME,
+            )
+
+    def test_lmt_era_matching_zone_accepted(self):
+        subject = _subject(
+            datetime(1700, 6, 15, 12, 0),
+            tz=zone("Asia/Manila"),
+            location=self.MANILA,
+        )
+        self.assertIsInstance(subject, Subject)
+
+    def test_hand_built_lmt_named_offset_keeps_its_offset(self):
+        """A fixed offset labeled 'LMT' must not trigger
+        astronomy._birth_longitude_mean_time (only real tzdb zones may) nor
+        bypass validation: -2 h at Berlin is far behind local solar."""
+        with self.assertRaisesRegex(ValueError, "behind"):
+            _subject(
+                datetime(1900, 6, 15, 12, 0),
+                tz=timezone(timedelta(hours=-2), "LMT"),
+                location=Location(52.52, 13.405),
+            )
+
+
+class TestSubjectPicklable(unittest.TestCase):
+    """zone() returns a picklable ZoneInfo subclass, so a resolved Subject
+    survives pickle/deepcopy (needed for multiprocessing and disk caching)."""
+
+    def test_explicit_zone_subject_pickles(self):
+        subject = _subject(tz=zone("Europe/Berlin"))
+        _ = subject.local_birth_datetime
+        restored = pickle.loads(pickle.dumps(subject))
+        self.assertEqual(
+            restored.local_birth_datetime.utcoffset(),
+            subject.local_birth_datetime.utcoffset(),
+        )
+
+    def test_location_derived_subject_pickles(self):
+        subject = Subject(
+            gender=Gender.MALE,
+            birth_datetime=datetime(1985, 6, 15, 12, 0),
+            birth_location=Location(_LAT, _LON),
+        )
+        _ = subject.effective_timezone
+        restored = pickle.loads(pickle.dumps(subject))
+        self.assertEqual(
+            str(restored.effective_timezone), str(subject.effective_timezone)
+        )
 
 
 if __name__ == "__main__":

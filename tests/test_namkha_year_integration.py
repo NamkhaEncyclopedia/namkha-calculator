@@ -6,10 +6,8 @@ Reference data from manual verification against known birth cases.
 import unittest
 from datetime import datetime
 
-import pytz
-
 from namkha_calculator.astrology import Animal, Element, Gender, Subject
-from namkha_calculator.astronomy import Location
+from namkha_calculator.astronomy import Location, zone
 from namkha_calculator.calendar import supported_year_range
 from namkha_calculator.harmonizer import Aspect
 from namkha_calculator.methods import CalculationMethod
@@ -23,7 +21,7 @@ def _subject(dt_str: str, tz_name: str, lat: float, lon: float) -> Subject:
     return Subject(
         gender=Gender.MALE,
         birth_datetime=datetime.strptime(dt_str, "%d.%m.%Y %H:%M"),
-        birth_timezone=pytz.timezone(tz_name),
+        birth_timezone=zone(tz_name),
         birth_location=Location(lat, lon),
         name=None,
     )

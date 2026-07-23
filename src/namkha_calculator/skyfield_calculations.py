@@ -11,10 +11,10 @@ from skyfield import almanac
 from skyfield.api import Loader, wgs84
 from skyfield.errors import EphemerisRangeError
 
-from .astronomy import localize_standard
+from .astronomy import resolve_local_time
 
 if TYPE_CHECKING:
-    from .astronomy import Location, PytzTimezone
+    from .astronomy import Location
 
 
 @lru_cache(maxsize=None)
@@ -29,7 +29,16 @@ def _get_timescale():
 
 @lru_cache(maxsize=None)
 def _get_ephemeris():
-    return _get_loader()("de440_filtered.bsp")
+    filename = "de440_filtered.bsp"
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), filename)
+    if not os.path.isfile(path):
+        # Guard before Loader: skyfield treats a missing filename as
+        # something to download, not a broken installation.
+        raise RuntimeError(
+            f"bundled {filename} is missing from this namkha-calculator"
+            " installation; reinstall the package"
+        )
+    return _get_loader()(filename)
 
 
 def jd_to_datetime(jd: float) -> dt.datetime:
@@ -55,7 +64,7 @@ def ephemeris_date_range() -> tuple[dt.datetime, dt.datetime]:
 
 @lru_cache(maxsize=2048)
 def morning_civil_twilight(
-    date: dt.date, pytz_tz: "PytzTimezone", location: "Location"
+    date: dt.date, tz: dt.tzinfo, location: "Location"
 ) -> dt.datetime | None:
     """
     Start of morning civil twilight (dawn) on a local date, returned in UTC.
@@ -70,19 +79,24 @@ def morning_civil_twilight(
     topos = wgs84.latlon(location.latitude, location.longitude)
     search_func = almanac.dark_twilight_day(_get_ephemeris(), topos)
 
-    midnight = localize_standard(dt.datetime.combine(date, dt.time(0, 0, 0)), pytz_tz)
-    window_end = localize_standard(
-        dt.datetime.combine(date + dt.timedelta(days=1), dt.time(0, 0, 0)), pytz_tz
+    midnight = resolve_local_time(
+        dt.datetime.combine(date, dt.time(0, 0, 0)), tz, location
     )
-    if window_end <= midnight:
+    next_midnight = resolve_local_time(
+        dt.datetime.combine(date + dt.timedelta(days=1), dt.time(0, 0, 0)),
+        tz,
+        location,
+    )
+    utc = dt.timezone.utc
+    if next_midnight.astimezone(utc) <= midnight.astimezone(utc):
         raise ValueError(
-            f"local date {date} does not exist in timezone {pytz_tz} "
+            f"local date {date} does not exist in timezone {tz} "
             "(skipped by an offset change)"
         )
     ts = _get_timescale()
     try:
         times, codes = almanac.find_discrete(
-            ts.from_datetime(midnight), ts.from_datetime(window_end), search_func
+            ts.from_datetime(midnight), ts.from_datetime(next_midnight), search_func
         )
         previous_code = search_func(ts.from_datetime(midnight)).item()
     except EphemerisRangeError as exc:

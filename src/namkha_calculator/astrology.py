@@ -2,18 +2,15 @@ import datetime as dt
 from dataclasses import dataclass
 from enum import Enum, auto, unique
 from functools import cached_property
+from zoneinfo import ZoneInfo
 
 from .astronomy import (
-    LATITUDE_LIMIT,
-    OFFSET_AHEAD_SOLAR_LIMIT_HOURS,
-    OFFSET_BEHIND_SOLAR_LIMIT_HOURS,
-    UTC_OFFSET_MAX_HOURS,
-    UTC_OFFSET_MIN_HOURS,
     Location,
-    PytzTimezone,
-    localize_standard,
-    offset_solar_gap_hours,
-    standard_offset_hours,
+    TimezoneDerivation,
+    is_longitude_based_timezone,
+    resolve_local_time,
+    location_timezone,
+    validate_timezone_for_location,
 )
 
 
@@ -50,48 +47,69 @@ class Gender(Enum):
     FEMALE = auto()
 
 
-@dataclass(frozen=True)
+@dataclass(frozen=True, kw_only=True)
 class Subject:
     gender: Gender
     birth_datetime: dt.datetime  # naive local time
-    birth_timezone: PytzTimezone
     birth_location: Location
-    name: str | None
+    birth_timezone: dt.tzinfo | None = None  # None -> derive from the location
+    on_summer_time: bool | None = None  # pin a repeated fall-back hour; None -> guess
+    name: str | None = None
 
     def __post_init__(self) -> None:
+        """Reject aware birth times, unsupported timezone types, and timezones
+        inconsistent with the birth location. An absense of timezone is exempt:
+        it will be derived from the location itself with a level of certainty."""
         if self.birth_datetime.tzinfo is not None:
             raise TypeError("birth_datetime must be naive (no tzinfo)")
-        if not isinstance(self.birth_timezone, PytzTimezone):
-            raise TypeError(
-                "birth_timezone must be a pytz timezone or a fixed offset "
-                "(use fixed_offset(...) for an arbitrary UTC offset)"
-            )
-        offset_h = standard_offset_hours(self.local_birth_datetime)
-        if not UTC_OFFSET_MIN_HOURS <= offset_h <= UTC_OFFSET_MAX_HOURS:
-            raise ValueError(
-                f"birth_timezone UTC offset {offset_h:+.1f} h is outside the "
-                f"real-timezone range [{UTC_OFFSET_MIN_HOURS:+d}, "
-                f"{UTC_OFFSET_MAX_HOURS:+d}] h; check the UTC offset"
-            )
-        # At or above LATITUDE_LIMIT the day start is a fixed local hour,
-        # so solar time is irrelevant there.
-        if abs(self.birth_location.latitude) >= LATITUDE_LIMIT:
+        if self.birth_timezone is None:
             return
-        gap = offset_solar_gap_hours(self.local_birth_datetime, self.birth_location)
-        if (
-            not -OFFSET_BEHIND_SOLAR_LIMIT_HOURS
-            <= gap
-            <= OFFSET_AHEAD_SOLAR_LIMIT_HOURS
-        ):
-            direction = "behind" if gap < 0 else "ahead of"
-            raise ValueError(
-                "birth_timezone offset is inconsistent with birth_location longitude "
-                f"(clock {abs(gap):.1f} h {direction} local mean solar time; allowed "
-                f"{-OFFSET_BEHIND_SOLAR_LIMIT_HOURS:+.1f} to "
-                f"{OFFSET_AHEAD_SOLAR_LIMIT_HOURS:+.1f} h); "
-                "check the location and UTC offset"
+        if not isinstance(self.birth_timezone, (ZoneInfo, dt.timezone)):
+            raise TypeError(
+                "birth_timezone must be a zoneinfo.ZoneInfo (use "
+                "namkha_calculator.zone(key) for OS-independent data), a fixed "
+                "offset (use fixed_offset(...)), or None to derive it"
+                "from the birth location"
             )
+        validate_timezone_for_location(
+            self.birth_datetime, self.birth_timezone, self.birth_location
+        )
+
+    @cached_property
+    def _located_timezone(self) -> tuple[dt.tzinfo, TimezoneDerivation]:
+        """Timezone derived from the birth location, with how sure it is."""
+        return location_timezone(self.birth_location, self.birth_datetime)
+
+    @cached_property
+    def effective_timezone(self) -> dt.tzinfo:
+        """Timezone used in calculation: the given one, or the located one."""
+        if self.birth_timezone is not None:
+            return self.birth_timezone
+        return self._located_timezone[0]
+
+    @cached_property
+    def timezone_derivation(self) -> TimezoneDerivation:
+        """How sure the effective timezone is: an explicit birth_timezone is
+        CERTAIN, a located one as sure as its derivation (see
+        location_timezone)."""
+        if self.birth_timezone is not None:
+            return TimezoneDerivation.CERTAIN
+        return self._located_timezone[1]
+
+    @cached_property
+    def timezone_is_longitude_based(self) -> bool:
+        """Whether a derived timezone approximates local time from longitude
+        alone (nautical or mean-solar), not from civil timezone rules."""
+        return self.birth_timezone is None and is_longitude_based_timezone(
+            self.effective_timezone
+        )
 
     @cached_property
     def local_birth_datetime(self) -> dt.datetime:
-        return localize_standard(self.birth_datetime, self.birth_timezone)
+        """Birth time with the effective timezone attached."""
+        return resolve_local_time(
+            self.birth_datetime,
+            self.effective_timezone,
+            self.birth_location,
+            on_summer_time=self.on_summer_time,
+        )

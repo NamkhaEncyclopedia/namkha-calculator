@@ -1,5 +1,5 @@
 from .astrology import Animal, Element, Gender, Subject
-from .astronomy import Location, PytzTimezone, fixed_offset
+from .astronomy import Location, TimezoneDerivation, fixed_offset, zone
 from .calculation_notes import CalculationNote, CalculationNoteItem
 from .harmonizer import Aspect, HarmonizedAspect
 from .methods import CalculationMethod
@@ -22,7 +22,8 @@ __all__ = [
     "Location",
     "NamkhaCalculationResult",
     "NamkhaType",
-    "PytzTimezone",
     "Subject",
+    "TimezoneDerivation",
     "calculate_namkha",
+    "zone",
 ]

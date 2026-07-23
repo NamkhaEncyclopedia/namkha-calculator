@@ -25,10 +25,17 @@ from .calculation_notes import (
     CALCULATION_NOTES,
     CalculationNote,
     CalculationNoteItem,
+    local_mean_time_note,
     local_time_dst_note,
     period_boundary_note,
+    pre_gregorian_note,
+    timezone_derivation_note,
 )
-from .astronomy import LATITUDE_LIMIT
+from .astronomy import (
+    LATITUDE_LIMIT,
+    is_nonexistent_local_time,
+    uses_local_mean_time,
+)
 from .calendar import (
     TibetanYearAttributes,
     classic_year_attributes,
@@ -106,10 +113,13 @@ def calculate_namkha(
 
 
 def _validate_subject(subject: Subject) -> None:
-    """Reject birth periods outside ephemeris coverage and, below
-    LATITUDE_LIMIT, birth dates with no day start (dawnless or
-    skipped by a dateline jump)."""
+    """Reject birth periods outside ephemeris coverage, birth instants that never
+    existed in the timezone (a spring-forward clock gap or a dateline-jumped date;
+    checked at every latitude), and - below LATITUDE_LIMIT - dawnless birth dates
+    (polar day/night).
+    """
     local_dt = subject.local_birth_datetime
+    tz = subject.effective_timezone
 
     year_min, year_max = supported_year_range()
     utc_year = local_dt.astimezone(dt.timezone.utc).year
@@ -120,8 +130,16 @@ def _validate_subject(subject: Subject) -> None:
             f"[{year_min}, {year_max}] (limited by the bundled ephemeris)"
         )
 
-    if abs(subject.birth_location.latitude) < LATITUDE_LIMIT:
-        day_start(local_dt.date(), local_dt.tzinfo, subject.birth_location)
+    if not uses_local_mean_time(
+        subject.birth_datetime, tz
+    ) and is_nonexistent_local_time(subject.birth_datetime, tz):
+        raise ValueError(
+            f"local birth date/time {subject.birth_datetime} does not exist in "
+            f"{tz}: it was skipped by a clock change or a dateline jump; correct "
+            "the birth date or time"
+        )
+
+    day_start(local_dt.date(), tz, subject.birth_location)
 
 
 def _collect_subject_notes(subject: Subject) -> tuple[CalculationNoteItem, ...]:
@@ -129,7 +147,22 @@ def _collect_subject_notes(subject: Subject) -> tuple[CalculationNoteItem, ...]:
     notes: list[CalculationNoteItem] = []
     if abs(subject.birth_location.latitude) >= LATITUDE_LIMIT:
         notes.append(CALCULATION_NOTES[CalculationNote.HIGH_LATITUDE])
-    notes.extend(local_time_dst_note(subject.birth_datetime, subject.birth_timezone))
+    notes.extend(timezone_derivation_note(subject.timezone_derivation))
+    notes.extend(
+        local_time_dst_note(
+            subject.birth_datetime,
+            subject.effective_timezone,
+            subject.on_summer_time is not None,
+        )
+    )
+    notes.extend(
+        local_mean_time_note(
+            subject.birth_datetime,
+            subject.effective_timezone,
+            subject.timezone_is_longitude_based,
+        )
+    )
+    notes.extend(pre_gregorian_note(subject.birth_datetime, subject.birth_location))
     return tuple(notes)
 
 
