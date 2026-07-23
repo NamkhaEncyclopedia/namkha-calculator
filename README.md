@@ -1,8 +1,6 @@
-<p style="text-align: center;">
-  <img src="https://raw.githubusercontent.com/NamkhaEncyclopedia/namkha-calculator/main/logo.webp" alt="Namkha Calculator logo" width="150" height="150" />
-</p>
+<img src="https://raw.githubusercontent.com/NamkhaEncyclopedia/namkha-calculator/main/logo.webp" alt="Namkha Calculator logo" width="150" height="150" />
 
-<h1 style="text-align: center">Namkha Calculator</h1>
+# Namkha Calculator
 
 ---
 
@@ -185,13 +183,10 @@ Timezone boundary lookups use [timezonefinder](https://github.com/jannikmi/timez
 
 ## Acknowledgments
 
-<p style="text-align: center">
-  <img src="WhiteAThigle.webp" alt="White A Thigle" width="150" height="150" />
-</p>
+<img src="https://raw.githubusercontent.com/NamkhaEncyclopedia/namkha-calculator/main/WhiteAThigle.webp" alt="White A Thigle" width="150" height="150" />
 
-<p style="text-align: center">
-*Whatever wisdom this contains belongs to the Tibetan astrological traditions and their holders; whatever faults it contains are our own.*
-</p>
+***Whatever wisdom this contains belongs to the Tibetan astrological traditions and their holders; whatever faults it contains are our own.***
+
 
 We thank everyone who supported the Namkha Calculator project financially – your help means a great deal to us, and it sustained us through a lot of obstacles.
 
