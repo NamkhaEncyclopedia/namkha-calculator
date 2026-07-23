@@ -3,7 +3,7 @@ name = "namkha-calculator"
 version = "0.1.0a3"
 description = "Calculate Tibetan Namkha thread-cross color schemes in Chögyal Namkhai Norbu tradition."
 readme = "README.md"
-license = "MIT"
+license = "GPL-3.0-or-later"
 authors = [{ name = "Namkha Encyclopedia", email = "namkha@simonweiss.space" }]
 requires-python = ">=3.12,<4.0"
 keywords = ["tibetan", "astrology", "namkha", "calendar", "buddhism"]

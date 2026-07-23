@@ -6,7 +6,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/namkha-calculator)](https://pypi.org/project/namkha-calculator/)
 [![Python versions](https://img.shields.io/pypi/pyversions/namkha-calculator)](https://pypi.org/project/namkha-calculator/)
-[![License: MIT](https://img.shields.io/pypi/l/namkha-calculator)](https://github.com/NamkhaEncyclopedia/namkha-calculator/blob/main/LICENSE)
+[![License: GPL-3.0-or-later](https://img.shields.io/pypi/l/namkha-calculator)](https://github.com/NamkhaEncyclopedia/namkha-calculator/blob/main/LICENSE)
 [![Development Status](https://img.shields.io/pypi/status/namkha-calculator)](https://pypi.org/project/namkha-calculator/)
 [![Tests](https://github.com/NamkhaEncyclopedia/namkha-calculator/actions/workflows/tests.yml/badge.svg?event=push)](https://github.com/NamkhaEncyclopedia/namkha-calculator/actions/workflows/tests.yml)
 
@@ -132,6 +132,16 @@ As far as we know, there is no unified solution to this problem among Tibetan as
 Issues, PRs and questions are welcome.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## Licence
+
+[GPL-3.0-or-later](LICENSE). The package bundles:
+
+- historical world border maps from [aourednik/historical-basemaps](https://github.com/aourednik/historical-basemaps) (GPL-3.0) – bundling them is why this project is GPL rather than MIT;
+- an IANA [tzdb](https://www.iana.org/time-zones) zoneinfo tree compiled with backzone data (public domain);
+- a filtered JPL DE440 ephemeris (public domain).
+
+Timezone boundary lookups use [timezonefinder](https://github.com/jannikmi/timezonefinder) (MIT), whose boundary data derives from [timezone-boundary-builder](https://github.com/evansiroky/timezone-boundary-builder) (ODbL).
 
 ## Acknowledgments
 
