@@ -27,8 +27,15 @@ Issues = "https://github.com/NamkhaEncyclopedia/namkha-calculator/issues"
 
 [tool.poetry]
 packages = [{ include = "namkha_calculator", from = "src" }]
-# Bundle the filtered ephemeris in the distribution; loaded relative to the module at runtime.
-include = [{ path = "src/namkha_calculator/de440_filtered.bsp", format = ["sdist", "wheel"] }]
+# Bundle the filtered ephemeris, the backzone-compiled zoneinfo tree
+# (tools/build_tzdata.py), and the historical border maps
+# (tools/fetch_basemaps.py) in the distribution; all are loaded relative
+# to the package at runtime.
+include = [
+    { path = "src/namkha_calculator/de440_filtered.bsp", format = ["sdist", "wheel"] },
+    { path = "src/namkha_calculator/tzdata/**/*", format = ["sdist", "wheel"] },
+    { path = "src/namkha_calculator/basemaps/*", format = ["sdist", "wheel"] },
+]
 
 [dependency-groups]
 dev = [

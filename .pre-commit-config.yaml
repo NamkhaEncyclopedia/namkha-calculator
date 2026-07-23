@@ -8,11 +8,14 @@ repos:
       - id: check-toml         # validate pyproject.toml
       - id: check-yaml
       - id: end-of-file-fixer
+        exclude: '^src/namkha_calculator/(tzdata|basemaps)/'  # vendored data, kept byte-for-byte
       - id: trailing-whitespace
+        exclude: '^src/namkha_calculator/(tzdata|basemaps)/'  # vendored data, kept byte-for-byte
       - id: check-merge-conflict
       - id: debug-statements   # catch leftover pdb/breakpoint()
       - id: check-added-large-files
-        exclude: '\.bsp$'      # ephemeris files are intentionally large
+        # ephemeris and vendored basemaps/tzdata are intentionally large
+        exclude: '(\.bsp$|^src/namkha_calculator/(tzdata|basemaps)/)'
 
   - repo: https://github.com/psf/black
     rev: 25.1.0
