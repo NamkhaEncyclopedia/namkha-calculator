@@ -3,13 +3,11 @@ import unittest
 from datetime import datetime, timedelta, timezone, tzinfo
 
 from namkha_calculator.astrology import Animal, Element, Gender, Subject
-from namkha_calculator.astronomy import (
+from namkha_calculator.tz import Location, fixed_offset, zone
+from namkha_calculator.zone_derivation import (
     OFFSET_AHEAD_SOLAR_LIMIT_HOURS,
     OFFSET_BEHIND_SOLAR_LIMIT_HOURS,
-    Location,
-    fixed_offset,
     offset_solar_gap_hours,
-    zone,
 )
 from namkha_calculator.methods import CalculationMethod
 from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha

@@ -11,10 +11,10 @@ from skyfield import almanac
 from skyfield.api import Loader, wgs84
 from skyfield.errors import EphemerisRangeError
 
-from .astronomy import resolve_local_time
+from .localization import resolve_local_time
 
 if TYPE_CHECKING:
-    from .astronomy import Location
+    from .tz import Location
 
 
 @lru_cache(maxsize=None)

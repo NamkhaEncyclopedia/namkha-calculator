@@ -3,7 +3,7 @@ lookup, and border stability around a year."""
 
 import unittest
 
-from namkha_calculator.historical_borders import (
+from namkha_calculator.zone_derivation.historical_borders import (
     SNAPSHOT_YEARS,
     _point_in_ring,
     nearest_snapshot_year,

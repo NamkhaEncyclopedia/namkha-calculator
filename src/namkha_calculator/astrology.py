@@ -4,14 +4,9 @@ from enum import Enum, auto, unique
 from functools import cached_property
 from zoneinfo import ZoneInfo
 
-from .astronomy import (
-    Location,
-    TimezoneDerivation,
-    is_longitude_based_timezone,
-    resolve_local_time,
-    location_timezone,
-    validate_timezone_for_location,
-)
+from .localization import is_longitude_based_timezone, resolve_local_time
+from .tz import Location, TimezoneDerivation
+from .zone_derivation import location_timezone, validate_timezone_for_location
 
 
 # Declaration order of Element and Animal is the astrological cycle order;

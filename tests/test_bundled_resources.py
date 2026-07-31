@@ -6,8 +6,11 @@ import unittest
 from unittest import mock
 from zoneinfo import ZoneInfoNotFoundError
 
-from namkha_calculator.astronomy import _zone_tab_rows, zone
-from namkha_calculator.historical_borders import _parse_snapshot, _snapshot_features
+from namkha_calculator.tz import _zone_tab_rows, zone
+from namkha_calculator.zone_derivation.historical_borders import (
+    _parse_snapshot,
+    _snapshot_features,
+)
 from namkha_calculator.skyfield_calculations import _get_ephemeris
 
 

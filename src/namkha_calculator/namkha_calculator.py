@@ -31,11 +31,8 @@ from .calculation_notes import (
     pre_gregorian_note,
     timezone_derivation_note,
 )
-from .astronomy import (
-    LATITUDE_LIMIT,
-    is_nonexistent_local_time,
-    uses_local_mean_time,
-)
+from .localization import is_nonexistent_local_time, uses_local_mean_time
+from .tz import LATITUDE_LIMIT
 from .calendar import (
     TibetanYearAttributes,
     classic_year_attributes,

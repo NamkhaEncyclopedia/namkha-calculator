@@ -16,13 +16,8 @@ from functools import lru_cache
 from typing import Protocol
 
 from .astrology import Animal, Element
-from .astronomy import (
-    HIGH_LATITUDE_DAY_START_HOUR,
-    LATITUDE_LIMIT,
-    Location,
-    resolve_local_time,
-    shift_past_clock_gap,
-)
+from .localization import resolve_local_time, shift_past_clock_gap
+from .tz import HIGH_LATITUDE_DAY_START_HOUR, LATITUDE_LIMIT, Location
 from .skyfield_calculations import (
     ephemeris_date_range,
     jd_to_datetime,

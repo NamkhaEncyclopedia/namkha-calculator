@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime, timedelta, timezone
 
 from namkha_calculator.astrology import Gender, Subject
-from namkha_calculator.astronomy import Location, zone
+from namkha_calculator.tz import Location, zone
 from namkha_calculator.calculation_notes import (
     CalculationNote,
     local_mean_time_note,

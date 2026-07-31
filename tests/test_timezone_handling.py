@@ -7,7 +7,14 @@ from datetime import date, datetime, timedelta, tzinfo
 
 from namkha_calculator import calendar
 from namkha_calculator.astrology import Gender, Subject
-from namkha_calculator.astronomy import (
+from namkha_calculator.localization import (
+    is_ambiguous_local_time,
+    is_longitude_based_timezone,
+    is_nonexistent_local_time,
+    resolve_local_time,
+    uses_local_mean_time,
+)
+from namkha_calculator.tz import (
     Location,
     TimezoneDerivation,
     _mean_solar_timezone,
@@ -15,11 +22,6 @@ from namkha_calculator.astronomy import (
     _parse_zone_tab,
     _zone_tab_rows,
     fixed_offset,
-    is_ambiguous_local_time,
-    is_longitude_based_timezone,
-    is_nonexistent_local_time,
-    resolve_local_time,
-    uses_local_mean_time,
     zone,
 )
 from namkha_calculator.methods import CalculationMethod

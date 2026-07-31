@@ -7,7 +7,7 @@ import unittest
 from datetime import datetime
 
 from namkha_calculator.astrology import Animal, Element, Gender, Subject
-from namkha_calculator.astronomy import Location, zone
+from namkha_calculator.tz import Location, zone
 from namkha_calculator.calendar import supported_year_range
 from namkha_calculator.harmonizer import Aspect
 from namkha_calculator.methods import CalculationMethod

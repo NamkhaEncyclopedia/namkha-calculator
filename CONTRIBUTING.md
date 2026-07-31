@@ -33,7 +33,7 @@ pre-commit run --all-files
 
 **Imports**
 - Use `X | None` instead of `Optional[X]`.
-- Use local relative imports (`from ..astronomy import LATITUDE_LIMIT`).
+- Use local relative imports (`from ..tz import LATITUDE_LIMIT`).
 
 **Types and data**
 - `Element` and `Animal` are `str` enums – values are English names consistent with Namkhai Norbu tradition.

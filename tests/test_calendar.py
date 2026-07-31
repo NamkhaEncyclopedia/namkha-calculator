@@ -5,7 +5,7 @@ from datetime import date, datetime, timedelta
 from hypothesis import given, settings
 from hypothesis import strategies as st
 
-from namkha_calculator.astronomy import (
+from namkha_calculator.tz import (
     HIGH_LATITUDE_DAY_START_HOUR,
     Location,
     fixed_offset,
