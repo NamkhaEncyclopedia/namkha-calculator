@@ -4,15 +4,17 @@ from datetime import datetime, timedelta, timezone
 from namkha_calculator.astrology import Gender, Subject
 from namkha_calculator.astronomy import Location, zone
 from namkha_calculator.calculation_notes import (
-    GREGORIAN_REFORM_DATE,
     CalculationNote,
-    gregorian_adoption_date,
     local_mean_time_note,
     local_time_dst_note,
     period_boundary_note,
     pre_gregorian_note,
 )
 from namkha_calculator.methods import CalculationMethod
+from namkha_calculator.zone_derivation.gregorian import (
+    GREGORIAN_REFORM_DATE,
+    gregorian_adoption_date,
+)
 from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
 
 # Stuttgart; Losar times calculated from the calendar code (Europe/Berlin, CET):

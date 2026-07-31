@@ -1,5 +1,5 @@
 from .astrology import Animal, Element, Gender, Subject
-from .astronomy import Location, TimezoneDerivation, fixed_offset, zone
+from .tz import Location, TimezoneDerivation, fixed_offset, zone, zone_keys
 from .calculation_notes import CalculationNote, CalculationNoteItem
 from .harmonizer import Aspect, HarmonizedAspect
 from .methods import CalculationMethod
@@ -26,4 +26,5 @@ __all__ = [
     "TimezoneDerivation",
     "calculate_namkha",
     "zone",
+    "zone_keys",
 ]

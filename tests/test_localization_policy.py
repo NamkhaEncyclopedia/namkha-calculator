@@ -3,7 +3,7 @@
 1. Only resolve_local_time and its listed helpers may call
    replace(tzinfo=...), so ambiguous, skipped and LMT-era times are resolved
    in one place.
-2. Only astronomy.zone may construct ZoneInfo objects, so every zone comes
+2. Only tz.zone may construct ZoneInfo objects, so every zone comes
    from the bundled tzdata package, never the OS database.
 
 Each rule has an allowlist of the (file, function) call sites permitted to
@@ -22,18 +22,18 @@ ALLOWED_TZINFO_ATTACH_SITES = {
     # The helpers of resolve_local_time, the single resolution point the
     # policy protects: its repeated-hour chooser and its pre-standard-time
     # branch.
-    ("astronomy.py", "_resolve_repeated_hour"),
-    ("astronomy.py", "_birth_longitude_mean_time"),
+    ("localization.py", "_resolve_repeated_hour"),
+    ("localization.py", "_birth_longitude_mean_time"),
     # Fold probes: detect ambiguous/non-existent times, resolve nothing.
-    ("astronomy.py", "is_ambiguous_local_time"),
-    ("astronomy.py", "is_nonexistent_local_time"),
+    ("localization.py", "is_ambiguous_local_time"),
+    ("localization.py", "is_nonexistent_local_time"),
 }
 
 # (file, function) allowed to construct ZoneInfo objects. Everything else must
-# use astronomy.zone, which loads from the bundled tzdata package instead of
+# use tz.zone, which loads from the bundled tzdata package instead of
 # the OS timezone database.
 ALLOWED_ZONEINFO_SITES = {
-    ("astronomy.py", "zone"),
+    ("tz/__init__.py", "zone"),
 }
 
 
@@ -128,7 +128,7 @@ class TestLocalizationPolicy(unittest.TestCase):
             [],
             outside,
             "direct ZoneInfo construction bypasses the bundled tzdata: "
-            f"{outside}; use astronomy.zone, or extend "
+            f"{outside}; use tz.zone, or extend "
             "ALLOWED_ZONEINFO_SITES with a justification",
         )
 
