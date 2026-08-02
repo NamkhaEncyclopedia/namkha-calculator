@@ -52,9 +52,11 @@ class Subject:
     name: str | None = None
 
     def __post_init__(self) -> None:
-        """Reject aware birth times, unsupported timezone types, and timezones
-        inconsistent with the birth location. An absence of timezone is exempt:
-        it will be derived from the location itself with a level of certainty."""
+        """Reject aware birth times and unsupported timezone types (TypeError),
+        and timezones inconsistent with the birth location
+        (TimezoneOffsetOutOfRangeError or TimezoneLocationMismatchError, both
+        TimezoneError). An absence of timezone is exempt: it will be derived
+        from the location itself with a level of certainty."""
         if self.birth_datetime.tzinfo is not None:
             raise TypeError("birth_datetime must be naive (no tzinfo)")
         if self.birth_timezone is None:

@@ -9,16 +9,25 @@ import.
 
 import datetime as dt
 import importlib.resources
+import math
 import re
 from dataclasses import dataclass
 from enum import Enum, auto, unique
-from functools import lru_cache
+from functools import cached_property, lru_cache
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
+
+from .errors import StaleTimezoneError
 
 DATA_PACKAGE = "namkha_calculator"
 
 LATITUDE_LIMIT = 60.0
 HIGH_LATITUDE_DAY_START_HOUR = 5
+
+# How far coordinates may drift and still count as the same place. Floats that
+# have been through text or a database come back a fraction out; a millionth of
+# a degree is about 10 cm, well above that noise and far below any timezone
+# boundary.
+_COORDINATE_TOLERANCE_DEGREES = 1e-6
 
 _MEAN_SOLAR_TZNAME = "mean solar time"
 
@@ -169,3 +178,88 @@ def zone_country(key: str) -> str | None:
 def zone_keys() -> tuple[str, ...]:
     """Every IANA zone key the bundled tzdata lists, in zone.tab order."""
     return tuple(key for _, _, key in _zone_tab_rows())
+
+
+@unique
+class TimezoneProvenance(Enum):
+    """Where a resolved timezone came from.
+
+    LOCATION_DERIVED: worked out from the coordinates and the birth date.
+    USER_ZONE: an IANA zone the user named.
+    USER_OFFSET: a UTC offset the user provided.
+    """
+
+    LOCATION_DERIVED = auto()
+    USER_ZONE = auto()
+    USER_OFFSET = auto()
+
+
+@dataclass(frozen=True, kw_only=True)
+class ResolvedTimezone:
+    """A settled timezone: which one, how sure, and the place facts the
+    calculation would otherwise have to look up again.
+
+    zone_derivation.derive_timezone builds one; Subject holds it. It lives here
+    with its readers because the calculation path may not import the code that
+    builds it. Fields are plain values, so it stays hashable and picklable.
+
+    Deriving and using are separate steps, so they can drift: it records the
+    birth details it was derived for, and assert_binds checks them.
+    """
+
+    key: str | None
+    offset_seconds: int | None
+    provenance: TimezoneProvenance
+    derivation: TimezoneDerivation
+    is_longitude_based: bool
+    on_summer_time: bool | None
+
+    for_latitude: float
+    for_longitude: float
+    for_birth_date: dt.date
+
+    modern_zone_key: str | None
+    gregorian_adoption_date: dt.date
+
+    def __post_init__(self) -> None:
+        """A timezone is either a named zone or an offset, never both or neither."""
+        if (self.key is None) == (self.offset_seconds is None):
+            raise ValueError("exactly one of key and offset_seconds must be set")
+
+    @cached_property
+    def tzinfo(self) -> dt.tzinfo:
+        """The timezone itself, rebuilt from the stored key or offset."""
+        if self.key is not None:
+            return zone(self.key)
+        offset = dt.timedelta(seconds=self.offset_seconds or 0)
+        if self.is_longitude_based:
+            # A mean solar offset is a whole number of seconds, not of minutes,
+            # so fixed_offset would round it and move the birth by up to 30 s.
+            return dt.timezone(offset, _MEAN_SOLAR_TZNAME)
+        return fixed_offset(offset)
+
+    def assert_binds(self, location: Location, birth_datetime: dt.datetime) -> None:
+        """Raise unless the birth details still match the ones this was derived
+        for. Coordinates are compared with a small tolerance. The time of day is
+        not compared at all, since only the date can change which timezone
+        applied."""
+        if (
+            not math.isclose(
+                location.latitude,
+                self.for_latitude,
+                abs_tol=_COORDINATE_TOLERANCE_DEGREES,
+            )
+            or not math.isclose(
+                location.longitude,
+                self.for_longitude,
+                abs_tol=_COORDINATE_TOLERANCE_DEGREES,
+            )
+            or birth_datetime.date() != self.for_birth_date
+        ):
+            raise StaleTimezoneError(
+                "resolved timezone was derived for "
+                f"({self.for_latitude}, {self.for_longitude}) on "
+                f"{self.for_birth_date}, but the birth is at "
+                f"({location.latitude}, {location.longitude}) on "
+                f"{birth_datetime.date()}; derive it again"
+            )

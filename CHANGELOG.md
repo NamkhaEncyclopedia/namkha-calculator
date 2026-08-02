@@ -11,6 +11,22 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - `zone_keys()` lists every IANA zone key in the bundled tzdata, so callers
   building a zone picker no longer reach into private members.
+- `ResolvedTimezone`, a settled timezone with how sure it is, where it came
+  from, and the place facts that would otherwise need a fresh coordinate
+  lookup during the calculation. It records the birth details it was worked
+  out for and refuses, through `assert_binds`, to be used with others.
+- `zone_derivation.derive_timezone()` produces one. It is deliberately not
+  re-exported at the package root: importing it from `zone_derivation` is
+  what keeps the calculation path clear of the derivation code. Its
+  `on_summer_time` argument is dropped from the result unless the birth
+  time actually falls in a repeated fall-back hour, so a stored answer
+  always means an ambiguity was resolved, never a no-op.
+- `TimezoneError` and its subclasses `StaleTimezoneError`,
+  `TimezoneOffsetOutOfRangeError` and `TimezoneLocationMismatchError`. All are
+  ValueErrors, so existing catchers keep working, but callers can now tell the
+  failures apart without matching on message text.
+
+Nothing consumes `ResolvedTimezone` yet; `Subject` is unchanged.
 
 ### Changed
 

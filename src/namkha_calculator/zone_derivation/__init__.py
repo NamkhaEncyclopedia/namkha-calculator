@@ -14,16 +14,24 @@ from functools import lru_cache
 from typing import NamedTuple
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
-from ..localization import _resolve_repeated_hour
+from ..localization import (
+    _resolve_repeated_hour,
+    is_ambiguous_local_time,
+    is_longitude_based_timezone,
+)
 from ..tz import (
     LATITUDE_LIMIT,
     Location,
+    ResolvedTimezone,
     TimezoneDerivation,
+    TimezoneProvenance,
     _mean_solar_timezone,
     _parse_iso6709,
     _zone_tab_rows,
+    fixed_offset,
     zone,
 )
+from ..tz.errors import TimezoneLocationMismatchError, TimezoneOffsetOutOfRangeError
 from .gregorian import gregorian_adoption_date
 from .historical_borders import (
     nearest_snapshot_year,
@@ -33,6 +41,7 @@ from .historical_borders import (
 from .lookup import location_zone_key
 
 __all__ = [
+    "derive_timezone",
     "gregorian_adoption_date",
     "location_timezone",
     "location_zone_key",
@@ -170,7 +179,7 @@ def _historical_timezone(
 
 def location_timezone(
     location: Location, birth_datetime: dt.datetime
-) -> tuple[dt.tzinfo, TimezoneDerivation]:
+) -> tuple[ZoneInfo | dt.timezone, TimezoneDerivation]:
     """Timezone for the coordinates at the birth moment, and how sure it is.
 
     A geographic IANA zone covering the point derives the timezone with
@@ -201,6 +210,73 @@ def location_timezone(
                 _mean_solar_timezone(location.longitude),
                 TimezoneDerivation.ESTIMATED,
             )
+
+
+def derive_timezone(
+    location: Location,
+    birth_datetime: dt.datetime,
+    *,
+    zone_key: str | None = None,
+    offset: dt.timedelta | None = None,
+    on_summer_time: bool | None = None,
+) -> ResolvedTimezone:
+    """Work out which timezone applied at a birth.
+
+    With neither zone_key nor offset, the timezone comes from the coordinates
+    and the birth date, along with how sure that answer is. Either argument
+    names the timezone instead. That is always certain, but it is checked
+    against the birthplace first, because a wrongly given offset can belong
+    nowhere near it.
+
+    The place lookups happen here, so the calculation never repeats them.
+    """
+    if zone_key is not None and offset is not None:
+        raise ValueError("pass zone_key or offset, not both")
+
+    if zone_key is not None:
+        tz: ZoneInfo | dt.timezone = zone(zone_key)
+        provenance = TimezoneProvenance.USER_ZONE
+        derivation = TimezoneDerivation.CERTAIN
+    elif offset is not None:
+        tz = fixed_offset(offset)
+        provenance = TimezoneProvenance.USER_OFFSET
+        derivation = TimezoneDerivation.CERTAIN
+    else:
+        tz, derivation = location_timezone(location, birth_datetime)
+        provenance = TimezoneProvenance.LOCATION_DERIVED
+
+    # A derived timezone corresponds to its location by construction;
+    # only user-supplied one could be incorrect.
+    if provenance is not TimezoneProvenance.LOCATION_DERIVED:
+        validate_timezone_for_location(birth_datetime, tz, location)
+
+    if isinstance(tz, ZoneInfo):
+        key, offset_seconds = tz.key, None
+    else:
+        key, offset_seconds = None, round(tz.utcoffset(None).total_seconds())
+
+    return ResolvedTimezone(
+        key=key,
+        offset_seconds=offset_seconds,
+        provenance=provenance,
+        derivation=derivation,
+        # A nautical or mean-solar zone counts as longitude-based only when we
+        # chose it; the same offset typed by hand is a deliberate clock time.
+        is_longitude_based=(
+            provenance is TimezoneProvenance.LOCATION_DERIVED
+            and is_longitude_based_timezone(tz)
+        ),
+        # A summer-time answer is kept only when the birth time really falls in
+        # a repeated fall-back hour; anywhere else it resolved nothing.
+        on_summer_time=(
+            on_summer_time if is_ambiguous_local_time(birth_datetime, tz) else None
+        ),
+        for_latitude=location.latitude,
+        for_longitude=location.longitude,
+        for_birth_date=birth_datetime.date(),
+        modern_zone_key=location_zone_key(location),
+        gregorian_adoption_date=gregorian_adoption_date(location),
+    )
 
 
 def standard_offset_hours(local_dt: dt.datetime) -> float:
@@ -238,7 +314,7 @@ def validate_timezone_for_location(
     if isinstance(tz, dt.timezone):
         offset_h = standard_offset_hours(raw_local)
         if not UTC_OFFSET_MIN_HOURS <= offset_h <= UTC_OFFSET_MAX_HOURS:
-            raise ValueError(
+            raise TimezoneOffsetOutOfRangeError(
                 f"birth_timezone UTC offset {offset_h:+.1f} h is outside the "
                 f"real-timezone range [{UTC_OFFSET_MIN_HOURS:+d}, "
                 f"{UTC_OFFSET_MAX_HOURS:+d}] h; check the UTC offset"
@@ -248,7 +324,7 @@ def validate_timezone_for_location(
     gap = offset_solar_gap_hours(raw_local, location)
     if not OFFSET_BEHIND_SOLAR_LIMIT_HOURS <= gap <= OFFSET_AHEAD_SOLAR_LIMIT_HOURS:
         direction = "behind" if gap < 0 else "ahead of"
-        raise ValueError(
+        raise TimezoneLocationMismatchError(
             "birth_timezone offset is inconsistent with birth_location longitude "
             f"(clock {abs(gap):.1f} h {direction} local mean solar time; allowed "
             f"{OFFSET_BEHIND_SOLAR_LIMIT_HOURS:+.1f} to "
