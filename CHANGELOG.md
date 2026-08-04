@@ -26,7 +26,16 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   ValueErrors, so existing catchers keep working, but callers can now tell the
   failures apart without matching on message text.
 
-Nothing consumes `ResolvedTimezone` yet; `Subject` is unchanged.
+- `input_notes(resolved_timezone, birth_datetime)` returns the notes that
+  follow from the birth details alone, without running a calculation. A form
+  can show them while the user is still entering data instead of leaving them
+  for the finished sheet. Notes that need the calculation itself, such as
+  `PERIOD_BOUNDARY`, are not included.
+- `CalculationNoteType` is re-exported at the package root. It was already the
+  type of `CalculationNoteItem.note_type`, so reading a note's severity meant
+  importing from `calculation_notes` directly.
+
+`Subject` is unchanged.
 
 ### Changed
 

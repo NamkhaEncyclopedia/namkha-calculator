@@ -7,6 +7,7 @@ from namkha_calculator.calculation_notes import (
     CalculationNote,
     local_mean_time_note,
     local_time_dst_note,
+    input_notes,
     period_boundary_note,
     pre_gregorian_note,
 )
@@ -15,7 +16,12 @@ from namkha_calculator.zone_derivation.gregorian import (
     GREGORIAN_REFORM_DATE,
     gregorian_adoption_date,
 )
-from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
+from namkha_calculator.namkha_calculator import (
+    NamkhaType,
+    _collect_subject_notes,
+    calculate_namkha,
+)
+from namkha_calculator.zone_derivation import derive_timezone
 
 # Stuttgart; Losar times calculated from the calendar code (Europe/Berlin, CET):
 #   official      Losar (Tibetan year 2151) = 2024-02-10 07:07:39
@@ -289,6 +295,85 @@ class TestHighLatitudeNoteInResult(unittest.TestCase):
         # Stuttgart (48.8 N) has a real dawn, so no fixed-hour fallback.
         notes = _notes(_subject("15.06.1985 12:00"), CalculationMethod.CLASSIC)
         self.assertNotIn(CalculationNote.HIGH_LATITUDE, notes)
+
+
+# Two ways to reach the same notes: input_notes reads a settled ResolvedTimezone,
+# _collect_subject_notes reads a Subject. Both call the same note builders, and
+# _collect_subject_notes goes away once Subject carries a resolved timezone. Until
+# then this class is what keeps the two from drifting.
+class TestInputNotesMatchSubjectNotes(unittest.TestCase):
+    CASES = {
+        "modern city, nothing to report": (
+            Location(52.52, 13.405),
+            datetime(1985, 6, 15, 12, 0),
+            None,
+        ),
+        "borders moved around the birth year": (
+            Location(49.8397, 24.0297),
+            datetime(1940, 6, 15, 12, 0),
+            None,
+        ),
+        "far north, before the Gregorian calendar reached it": (
+            Location(64.5401, 40.5433),
+            datetime(1849, 3, 15, 12, 0),
+            None,
+        ),
+        "open water, no civil time at all": (
+            Location(0.0, -140.0),
+            datetime(1900, 1, 1, 12, 0),
+            None,
+        ),
+        "the repeated hour, unanswered": (
+            Location(_LAT, _LON),
+            datetime(1985, 9, 29, 2, 30),
+            None,
+        ),
+        "the repeated hour, answered": (
+            Location(_LAT, _LON),
+            datetime(1985, 9, 29, 2, 30),
+            True,
+        ),
+    }
+
+    def test_both_paths_give_the_same_notes(self):
+        for name, (location, birth, on_summer_time) in self.CASES.items():
+            with self.subTest(name):
+                subject = Subject(
+                    gender=Gender.MALE,
+                    birth_datetime=birth,
+                    birth_timezone=None,
+                    birth_location=location,
+                    on_summer_time=on_summer_time,
+                )
+                resolved = derive_timezone(
+                    location, birth, on_summer_time=on_summer_time
+                )
+                self.assertEqual(
+                    input_notes(resolved, birth), _collect_subject_notes(subject)
+                )
+
+    def test_the_cases_cover_every_input_note(self):
+        """Guard the case set above: it must still produce every input note.
+
+        If a case stops emitting one, the comparison test silently stops
+        covering that note.
+        """
+        seen = set()
+        for location, birth, on_summer_time in self.CASES.values():
+            resolved = derive_timezone(location, birth, on_summer_time=on_summer_time)
+            seen.update(item.note for item in input_notes(resolved, birth))
+        self.assertEqual(
+            seen,
+            {
+                CalculationNote.HIGH_LATITUDE,
+                CalculationNote.PRE_GREGORIAN_DATE,
+                CalculationNote.LOCAL_MEAN_TIME,
+                CalculationNote.TIMEZONE_ESTIMATED,
+                CalculationNote.TIMEZONE_BORDERS_UNCERTAIN,
+                CalculationNote.AMBIGUOUS_LOCAL_TIME,
+                CalculationNote.AMBIGUOUS_LOCAL_TIME_RESOLVED,
+            },
+        )
 
 
 if __name__ == "__main__":

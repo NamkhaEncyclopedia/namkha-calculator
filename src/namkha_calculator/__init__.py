@@ -14,7 +14,12 @@ from .tz.errors import (
     TimezoneLocationMismatchError,
     TimezoneOffsetOutOfRangeError,
 )
-from .calculation_notes import CalculationNote, CalculationNoteItem
+from .calculation_notes import (
+    CalculationNote,
+    CalculationNoteItem,
+    CalculationNoteType,
+    input_notes,
+)
 from .harmonizer import Aspect, HarmonizedAspect
 from .methods import CalculationMethod
 from .namkha_calculator import (
@@ -33,6 +38,8 @@ __all__ = [
     "CalculationMethod",
     "CalculationNote",
     "CalculationNoteItem",
+    "CalculationNoteType",
+    "input_notes",
     "Element",
     "Gender",
     "HarmonizedAspect",

@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from enum import Enum, auto, unique
 
 from .localization import is_ambiguous_local_time, uses_local_mean_time
-from .tz import Location, TimezoneDerivation
+from .tz import LATITUDE_LIMIT, Location, ResolvedTimezone, TimezoneDerivation
 
 # Temporary: the Gregorian tables moved to zone_derivation because they need
 # the same location lookup as the timezone. Nothing on the calculation path may
@@ -157,6 +157,37 @@ def pre_gregorian_note(
     if birth_datetime.date() < gregorian_adoption_date(location):
         return (CALCULATION_NOTES[CalculationNote.PRE_GREGORIAN_DATE],)
     return ()
+
+
+def input_notes(
+    resolved_timezone: ResolvedTimezone, birth_datetime: dt.datetime
+) -> tuple[CalculationNoteItem, ...]:
+    """Notes that follow from the birth details alone.
+
+    These are known as soon as the timezone is settled. A form can show them
+    while the user is still entering data. Notes that need the calculation
+    itself are not here.
+
+    birth_datetime is the naive local time, as entered.
+    """
+    notes: list[CalculationNoteItem] = []
+    if abs(resolved_timezone.for_latitude) >= LATITUDE_LIMIT:
+        notes.append(CALCULATION_NOTES[CalculationNote.HIGH_LATITUDE])
+    notes.extend(timezone_derivation_note(resolved_timezone.derivation))
+    tz = resolved_timezone.tzinfo
+    notes.extend(
+        local_time_dst_note(
+            birth_datetime, tz, resolved_timezone.on_summer_time is not None
+        )
+    )
+    notes.extend(
+        local_mean_time_note(birth_datetime, tz, resolved_timezone.is_longitude_based)
+    )
+    # The adoption date travels with the resolved timezone, so this does not
+    # repeat pre_gregorian_note's location lookup.
+    if birth_datetime.date() < resolved_timezone.gregorian_adoption_date:
+        notes.append(CALCULATION_NOTES[CalculationNote.PRE_GREGORIAN_DATE])
+    return tuple(notes)
 
 
 def period_boundary_note(
