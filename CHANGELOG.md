@@ -46,5 +46,9 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   Deriving a timezone is expensive and belongs to the moment birth details are
   entered, not to the calculation; keeping the two apart is what lets a caller
   do it once, up front.
-- `astronomy` and `historical_borders` still re-export everything from their
-  new homes. Both are deprecated and will be removed in the next release.
+- **Breaking:** the `astronomy` and `historical_borders` modules are gone, with
+  no deprecation period. `import namkha_calculator.astronomy` now fails.
+  Nothing public was lost: everything it held is importable from `tz`,
+  `localization` or `zone_derivation`, and the names re-exported at the package
+  root are unchanged. Only code reaching into the module paths directly is
+  affected.

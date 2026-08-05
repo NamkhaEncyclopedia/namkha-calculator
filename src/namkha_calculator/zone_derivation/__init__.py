@@ -2,9 +2,12 @@
 
 This is the expensive half of the astronomy-related stuff: the polygon search, the
 historical border maps, and the checks that a timezone someone supplied is
-plausible for the location. It runs once, when the birth details are entered,
-and nothing on the calculation path may import it - see
-tests/test_localization_policy.py.
+plausible for the location. It runs once, when the birth details are entered.
+
+The calculation path is meant to stay clear of it. That is not true yet:
+astrology.py imports location_timezone, because Subject still works out its own
+timezone. Once Subject takes a settled one instead, the last importer goes and
+the rule becomes a check in tests/test_localization_policy.py.
 """
 
 import datetime as dt
