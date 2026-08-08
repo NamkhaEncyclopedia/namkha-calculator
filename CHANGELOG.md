@@ -26,19 +26,51 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   ValueErrors, so existing catchers keep working, but callers can now tell the
   failures apart without matching on message text.
 
-- `input_notes(resolved_timezone, birth_datetime)` returns the notes that
-  follow from the birth details alone, without running a calculation. A form
-  can show them while the user is still entering data instead of leaving them
-  for the finished sheet. Notes that need the calculation itself, such as
-  `PERIOD_BOUNDARY`, are not included.
+- `input_notes(resolved_timezone, location, birth_datetime)` returns the notes
+  that follow from the birth details alone, without running a calculation. A
+  form can show them while the user is still entering data instead of leaving
+  them for the finished sheet. Notes that need the calculation itself, such as
+  `PERIOD_BOUNDARY`, are not included. It takes the birth location and calls
+  `assert_binds`, so a timezone derived for another place or date raises
+  `StaleTimezoneError` instead of deciding the high-latitude note.
 - `CalculationNoteType` is re-exported at the package root. It was already the
   type of `CalculationNoteItem.note_type`, so reading a note's severity meant
   importing from `calculation_notes` directly.
 
-`Subject` is unchanged.
-
 ### Changed
 
+- **Breaking:** `Subject` takes a `resolved_timezone` instead of
+  `birth_timezone` and `on_summer_time`. Build one with
+  `zone_derivation.derive_timezone(location, birth_datetime)`, passing
+  `zone_key=`, `offset=` or `on_summer_time=` where they used to go on
+  `Subject`. Omitting the timezone no longer derives it: `Subject` never
+  derives anything now, so a caller who leaves it out gets a `TypeError` for
+  the missing argument rather than a silent coordinate lookup mid-calculation.
+
+  There is no compatibility shim, and one is not possible. A `ResolvedTimezone`
+  carries facts only the derivation knows – the birthplace's Gregorian adoption
+  date among them – so a shim accepting `birth_timezone=` could fill them in
+  only by importing the derivation code into the calculation path, which is the
+  separation this release exists to make. Substituting defaults instead would
+  quietly change which births get a `PRE_GREGORIAN_DATE` caution.
+
+  `Subject.effective_timezone`, `timezone_derivation` and
+  `timezone_is_longitude_based` still read the same; they now come straight
+  off the resolved value. A timezone derived for a different place or date is
+  refused with `StaleTimezoneError`, and passing a timezone object where the
+  resolved value belongs raises `TypeError`.
+
+  The four note messages that told the reader to set `birth_timezone` or
+  `on_summer_time` now point at `zone_derivation.derive_timezone` and its
+  `zone_key`, `offset` and `on_summer_time` arguments. Code matching on the
+  message text has to change; the note identities are the same.
+
+- `calculation_notes.pre_gregorian_note` takes the birth region's Gregorian
+  adoption date, as `gregorian_adoption_date`, instead of a `Location`. It no
+  longer looks the date up; the resolved timezone already carries it. The
+  parameter is named after the field and the lookup function it comes from, so
+  a call passing a date that was not looked up for the birth place reads as
+  wrong at the call site.
 - `astronomy` has been split into three modules, separating the choice of a
   timezone from its use: `tz` holds the bundled tzdata and the plain value
   types, `localization` attaches a timezone to a naive local time, and

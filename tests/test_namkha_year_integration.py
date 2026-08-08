@@ -7,22 +7,25 @@ import unittest
 from datetime import datetime
 
 from namkha_calculator.astrology import Animal, Element, Gender, Subject
-from namkha_calculator.tz import Location, zone
+from namkha_calculator.tz import Location
 from namkha_calculator.calendar import supported_year_range
 from namkha_calculator.harmonizer import Aspect
 from namkha_calculator.methods import CalculationMethod
 from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
+from namkha_calculator.zone_derivation import derive_timezone
 
 E = Element
 
 
 def _subject(dt_str: str, tz_name: str, lat: float, lon: float) -> Subject:
     # Gender is unused by Year Namkha but required by Subject
+    birth = datetime.strptime(dt_str, "%d.%m.%Y %H:%M")
+    location = Location(lat, lon)
     return Subject(
         gender=Gender.MALE,
-        birth_datetime=datetime.strptime(dt_str, "%d.%m.%Y %H:%M"),
-        birth_timezone=zone(tz_name),
-        birth_location=Location(lat, lon),
+        birth_datetime=birth,
+        birth_location=location,
+        resolved_timezone=derive_timezone(location, birth, zone_key=tz_name),
         name=None,
     )
 

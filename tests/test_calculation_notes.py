@@ -3,6 +3,7 @@ from datetime import datetime, timedelta, timezone
 
 from namkha_calculator.astrology import Gender, Subject
 from namkha_calculator.tz import Location, zone
+from namkha_calculator.tz.errors import StaleTimezoneError
 from namkha_calculator.calculation_notes import (
     CalculationNote,
     local_mean_time_note,
@@ -16,11 +17,7 @@ from namkha_calculator.zone_derivation.gregorian import (
     GREGORIAN_REFORM_DATE,
     gregorian_adoption_date,
 )
-from namkha_calculator.namkha_calculator import (
-    NamkhaType,
-    _collect_subject_notes,
-    calculate_namkha,
-)
+from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
 from namkha_calculator.zone_derivation import derive_timezone
 
 # Stuttgart; Losar times calculated from the calendar code (Europe/Berlin, CET):
@@ -32,18 +29,20 @@ _LAT, _LON = 48.7758, 9.1829
 
 def _subject(
     birth: str | datetime = "15.06.1985 12:00",
-    tz=None,
+    zone_key: str | None = _TZ,
     location: Location | None = None,
     on_summer_time: bool | None = None,
 ) -> Subject:
     if isinstance(birth, str):
         birth = datetime.strptime(birth, "%d.%m.%Y %H:%M")
+    location = location if location is not None else Location(_LAT, _LON)
     return Subject(
         gender=Gender.MALE,
         birth_datetime=birth,
-        birth_timezone=tz if tz is not None else zone(_TZ),
-        birth_location=location if location is not None else Location(_LAT, _LON),
-        on_summer_time=on_summer_time,
+        birth_location=location,
+        resolved_timezone=derive_timezone(
+            location, birth, zone_key=zone_key, on_summer_time=on_summer_time
+        ),
         name=None,
     )
 
@@ -141,7 +140,7 @@ class TestPreGregorianNote(unittest.TestCase):
     def test_pre_reform_birth_emits_note(self):
         subject = _subject(
             datetime(1580, 6, 15, 12, 0),
-            tz=zone("Europe/Rome"),
+            zone_key="Europe/Rome",
             location=self._ROME,
         )
         self.assertIn(
@@ -152,7 +151,7 @@ class TestPreGregorianNote(unittest.TestCase):
     def test_post_reform_birth_no_note(self):
         subject = _subject(
             datetime(1583, 6, 15, 12, 0),
-            tz=zone("Europe/Rome"),
+            zone_key="Europe/Rome",
             location=self._ROME,
         )
         self.assertNotIn(
@@ -162,7 +161,9 @@ class TestPreGregorianNote(unittest.TestCase):
 
 
 class TestRegionalGregorianAdoption(unittest.TestCase):
-    """Adoption-date cutoffs per birth region; boundaries via pre_gregorian_note directly."""
+    """Adoption-date cutoffs per birth region. The lookup and the note are
+    separate steps now, so each case does both: find the region's adoption date,
+    then ask whether the birth falls before it."""
 
     _MOSCOW = Location(55.7558, 37.6173)
     _LONDON = Location(51.5074, -0.1278)
@@ -200,7 +201,7 @@ class TestRegionalGregorianAdoption(unittest.TestCase):
     def test_adoption_cutoffs(self):
         for label, location, birth, expect_note in self._CASES:
             with self.subTest(label):
-                notes = pre_gregorian_note(birth, location)
+                notes = pre_gregorian_note(birth, gregorian_adoption_date(location))
                 emitted = {item.note for item in notes}
                 if expect_note:
                     self.assertEqual(emitted, {CalculationNote.PRE_GREGORIAN_DATE})
@@ -242,7 +243,7 @@ class TestLocalMeanTimeNoteInResult(unittest.TestCase):
     def test_lmt_era_emits_note_in_result(self):
         subject = _subject(
             datetime(1700, 6, 15, 12, 0),
-            tz=zone("Europe/Rome"),
+            zone_key="Europe/Rome",
             location=Location(41.9028, 12.4964),
         )
         notes = _notes(subject, CalculationMethod.CLASSIC)
@@ -252,11 +253,10 @@ class TestLocalMeanTimeNoteInResult(unittest.TestCase):
 class TestTimezoneDerivationNotes(unittest.TestCase):
     def test_estimated_timezone_emits_caution(self):
         # Open-ocean birth: no civil zone, so the derivation is an estimate.
-        subject = Subject(
-            gender=Gender.MALE,
-            birth_datetime=datetime(1990, 6, 15, 12, 0),
-            birth_location=Location(10.0, -150.0),
-            name=None,
+        subject = _subject(
+            datetime(1990, 6, 15, 12, 0),
+            zone_key=None,
+            location=Location(10.0, -150.0),
         )
         notes = _notes(subject, CalculationMethod.CLASSIC)
         self.assertIn(CalculationNote.TIMEZONE_ESTIMATED, notes)
@@ -265,11 +265,10 @@ class TestTimezoneDerivationNotes(unittest.TestCase):
     def test_borders_uncertain_emits_only_that_caution(self):
         # Lviv 1940 lies between maps that disagree about its country; the
         # two timezone cautions are mutually exclusive.
-        subject = Subject(
-            gender=Gender.MALE,
-            birth_datetime=datetime(1940, 6, 15, 12, 0),
-            birth_location=Location(49.8397, 24.0297),
-            name=None,
+        subject = _subject(
+            datetime(1940, 6, 15, 12, 0),
+            zone_key=None,
+            location=Location(49.8397, 24.0297),
         )
         notes = _notes(subject, CalculationMethod.CLASSIC)
         self.assertIn(CalculationNote.TIMEZONE_BORDERS_UNCERTAIN, notes)
@@ -286,7 +285,7 @@ class TestHighLatitudeNoteInResult(unittest.TestCase):
         # Svalbard (78 N) is above the 60 deg limit, so the day start always
         # uses the fixed-hour fallback.
         svalbard = _subject(
-            tz=zone("Arctic/Longyearbyen"), location=Location(78.0, 15.0)
+            zone_key="Arctic/Longyearbyen", location=Location(78.0, 15.0)
         )
         notes = _notes(svalbard, CalculationMethod.CLASSIC)
         self.assertIn(CalculationNote.HIGH_LATITUDE, notes)
@@ -297,11 +296,10 @@ class TestHighLatitudeNoteInResult(unittest.TestCase):
         self.assertNotIn(CalculationNote.HIGH_LATITUDE, notes)
 
 
-# Two ways to reach the same notes: input_notes reads a settled ResolvedTimezone,
-# _collect_subject_notes reads a Subject. Both call the same note builders, and
-# _collect_subject_notes goes away once Subject carries a resolved timezone. Until
-# then this class is what keeps the two from drifting.
-class TestInputNotesMatchSubjectNotes(unittest.TestCase):
+class TestInputNotesReachEveryNote(unittest.TestCase):
+    """input_notes is what the form calls before any calculation runs. Each
+    case below is a birth that should raise one of its notes."""
+
     CASES = {
         "modern city, nothing to report": (
             Location(52.52, 13.405),
@@ -335,33 +333,13 @@ class TestInputNotesMatchSubjectNotes(unittest.TestCase):
         ),
     }
 
-    def test_both_paths_give_the_same_notes(self):
-        for name, (location, birth, on_summer_time) in self.CASES.items():
-            with self.subTest(name):
-                subject = Subject(
-                    gender=Gender.MALE,
-                    birth_datetime=birth,
-                    birth_timezone=None,
-                    birth_location=location,
-                    on_summer_time=on_summer_time,
-                )
-                resolved = derive_timezone(
-                    location, birth, on_summer_time=on_summer_time
-                )
-                self.assertEqual(
-                    input_notes(resolved, birth), _collect_subject_notes(subject)
-                )
-
     def test_the_cases_cover_every_input_note(self):
-        """Guard the case set above: it must still produce every input note.
-
-        If a case stops emitting one, the comparison test silently stops
-        covering that note.
-        """
+        """Between them the cases must raise every note input_notes can give.
+        A note no case reaches is a note nothing here tests."""
         seen = set()
         for location, birth, on_summer_time in self.CASES.values():
             resolved = derive_timezone(location, birth, on_summer_time=on_summer_time)
-            seen.update(item.note for item in input_notes(resolved, birth))
+            seen.update(item.note for item in input_notes(resolved, location, birth))
         self.assertEqual(
             seen,
             {
@@ -374,6 +352,40 @@ class TestInputNotesMatchSubjectNotes(unittest.TestCase):
                 CalculationNote.AMBIGUOUS_LOCAL_TIME_RESOLVED,
             },
         )
+
+
+class TestInputNotesRefusesAnotherPlace(unittest.TestCase):
+    """input_notes compares the timezone against the location itself.
+
+    Subject does that comparison whenever there is a Subject. A form calls
+    input_notes before building one, so nothing else would catch a location
+    that has moved on since the timezone was derived.
+    """
+
+    BERLIN = Location(52.52, 13.405)
+    SVALBARD = Location(78.0, 15.0)
+
+    BIRTH = datetime(1985, 6, 15, 12, 0)
+
+    def test_polar_timezone_with_a_temperate_location(self):
+        resolved = derive_timezone(self.SVALBARD, self.BIRTH)
+        with self.assertRaises(StaleTimezoneError):
+            input_notes(resolved, self.BERLIN, self.BIRTH)
+
+    def test_temperate_timezone_with_a_polar_location(self):
+        resolved = derive_timezone(self.BERLIN, self.BIRTH)
+        with self.assertRaises(StaleTimezoneError):
+            input_notes(resolved, self.SVALBARD, self.BIRTH)
+
+    def test_another_date(self):
+        resolved = derive_timezone(self.BERLIN, self.BIRTH)
+        with self.assertRaises(StaleTimezoneError):
+            input_notes(resolved, self.BERLIN, datetime(1985, 6, 16, 12, 0))
+
+    def test_the_place_it_was_derived_for_is_accepted(self):
+        resolved = derive_timezone(self.SVALBARD, self.BIRTH)
+        notes = input_notes(resolved, self.SVALBARD, self.BIRTH)
+        self.assertIn(CalculationNote.HIGH_LATITUDE, {item.note for item in notes})
 
 
 if __name__ == "__main__":

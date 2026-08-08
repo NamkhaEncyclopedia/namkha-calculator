@@ -1,6 +1,9 @@
-"""Timezone handling across the full ephemeris range (1550-2599): full tzdb
-history, LMT-era birth-longitude mean time, future DST projection,
-location-derived timezones, and the guess/certainty notes."""
+"""What a settled timezone does to a birth, across the full ephemeris range
+(1550-2599): full tzdb history, LMT-era birth-longitude mean time, future DST
+projection, and the repeated fall-back hour.
+
+Working out which timezone applied is a separate job, tested in
+test_zone_derivation.py."""
 
 import unittest
 from datetime import date, datetime, timedelta, tzinfo
@@ -16,7 +19,6 @@ from namkha_calculator.localization import (
 )
 from namkha_calculator.tz import (
     Location,
-    TimezoneDerivation,
     _mean_solar_timezone,
     _parse_iso6709,
     _parse_zone_tab,
@@ -26,19 +28,30 @@ from namkha_calculator.tz import (
 )
 from namkha_calculator.methods import CalculationMethod
 from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
+from namkha_calculator.zone_derivation import derive_timezone
 
 
-def _subject(birth: datetime, location: Location, tz=None) -> Subject:
+def _subject(
+    birth: datetime,
+    location: Location,
+    zone_key: str | None = None,
+    on_summer_time: bool | None = None,
+) -> Subject:
     return Subject(
         gender=Gender.MALE,
         birth_datetime=birth,
         birth_location=location,
-        birth_timezone=tz,
+        resolved_timezone=derive_timezone(
+            location, birth, zone_key=zone_key, on_summer_time=on_summer_time
+        ),
     )
 
 
+SECONDS_PER_DEGREE_LONGITUDE = 240  # 86400 seconds / 360 degrees
+
+
 def _solar(longitude: float) -> timedelta:
-    return timedelta(seconds=round(longitude * 240))
+    return timedelta(seconds=round(longitude * SECONDS_PER_DEGREE_LONGITUDE))
 
 
 class FallBackAtDawnZone(tzinfo):
@@ -99,7 +112,7 @@ class TestTzdbHistory(unittest.TestCase):
     def test_manila_1880_is_on_asian_date_side(self):
         """The Philippines crossed the dateline in 1845; pytz reported the
         colonial -15:56 for all of 1845-1901 (a full day off)."""
-        subject = _subject(datetime(1880, 6, 15, 12, 0), MANILA, zone("Asia/Manila"))
+        subject = _subject(datetime(1880, 6, 15, 12, 0), MANILA, "Asia/Manila")
         self.assertEqual(
             subject.local_birth_datetime.utcoffset(), _solar(MANILA.longitude)
         )
@@ -107,7 +120,7 @@ class TestTzdbHistory(unittest.TestCase):
     def test_sitka_1880_is_on_american_date_side(self):
         """Alaska crossed the dateline with the 1867 purchase; pytz reported
         the Russian-era +14:59 until 1901."""
-        subject = _subject(datetime(1880, 6, 15, 12, 0), SITKA, zone("America/Sitka"))
+        subject = _subject(datetime(1880, 6, 15, 12, 0), SITKA, "America/Sitka")
         self.assertEqual(
             subject.local_birth_datetime.utcoffset(), _solar(SITKA.longitude)
         )
@@ -121,7 +134,7 @@ class TestBirthLongitudeMeanTime(unittest.TestCase):
     +8:04 - 24h = -15:56), so the birth keeps its historical calendar date."""
 
     def test_manila_1700_keeps_american_date_side(self):
-        subject = _subject(datetime(1700, 6, 15, 12, 0), MANILA, zone("Asia/Manila"))
+        subject = _subject(datetime(1700, 6, 15, 12, 0), MANILA, "Asia/Manila")
         self.assertEqual(
             subject.local_birth_datetime.utcoffset(),
             _solar(MANILA.longitude) - timedelta(hours=24),
@@ -130,7 +143,7 @@ class TestBirthLongitudeMeanTime(unittest.TestCase):
     def test_oslo_1700_uses_birth_longitude_not_reference_city(self):
         """Post-2021 tzdb merges Oslo into Berlin (+0:53:28); the birth
         longitude gives Oslo's own +0:43:01."""
-        subject = _subject(datetime(1700, 6, 15, 12, 0), OSLO, zone("Europe/Oslo"))
+        subject = _subject(datetime(1700, 6, 15, 12, 0), OSLO, "Europe/Oslo")
         self.assertEqual(
             subject.local_birth_datetime.utcoffset(), _solar(OSLO.longitude)
         )
@@ -148,7 +161,7 @@ class TestBirthLongitudeMeanTime(unittest.TestCase):
     def test_juneau_1860_calculates(self):
         """LMT-era Alaska."""
         juneau = Location(58.3005, -134.4201)
-        subject = _subject(datetime(1860, 6, 15, 12, 0), juneau, zone("America/Juneau"))
+        subject = _subject(datetime(1860, 6, 15, 12, 0), juneau, "America/Juneau")
         result = calculate_namkha(NamkhaType.YEAR, subject, CalculationMethod.CLASSIC)
         self.assertTrue(result.harmonized_aspects)
 
@@ -156,7 +169,7 @@ class TestBirthLongitudeMeanTime(unittest.TestCase):
 class TestHistoricalSkippedDate(unittest.TestCase):
 
     def test_skipped_birth_date_raises_clearly(self):
-        subject = _subject(datetime(1844, 12, 31, 10, 0), MANILA, zone("Asia/Manila"))
+        subject = _subject(datetime(1844, 12, 31, 10, 0), MANILA, "Asia/Manila")
         with self.assertRaisesRegex(ValueError, "does not exist"):
             calculate_namkha(NamkhaType.YEAR, subject, CalculationMethod.CLASSIC)
 
@@ -168,7 +181,7 @@ class TestHistoricalSkippedDate(unittest.TestCase):
 class TestFutureDstProjection(unittest.TestCase):
 
     def test_rome_2039_summer_gets_dst(self):
-        subject = _subject(datetime(2039, 7, 1, 12, 0), ROME, zone("Europe/Rome"))
+        subject = _subject(datetime(2039, 7, 1, 12, 0), ROME, "Europe/Rome")
         self.assertEqual(subject.local_birth_datetime.utcoffset(), timedelta(hours=2))
 
     def test_post_2037_fall_back_still_ambiguous(self):
@@ -191,13 +204,7 @@ class TestSummerTimeDisambiguation(unittest.TestCase):
     DUBLIN_AMBIGUOUS = datetime(2023, 10, 29, 1, 30)
 
     def _offset(self, location, tz_key, naive, on_summer_time):
-        subject = Subject(
-            gender=Gender.MALE,
-            birth_datetime=naive,
-            birth_location=location,
-            birth_timezone=zone(tz_key),
-            on_summer_time=on_summer_time,
-        )
+        subject = _subject(naive, location, tz_key, on_summer_time=on_summer_time)
         return subject.local_birth_datetime.utcoffset()
 
     def test_berlin_pre_fallback_reading(self):
@@ -273,18 +280,20 @@ class TestLongitudeBasedTimezone(unittest.TestCase):
     an explicit fixed offset the user chose IS NOT."""
 
     def test_open_water_birth_is_longitude_based(self):
-        subject = Subject(
-            gender=Gender.MALE,
-            birth_datetime=datetime(1700, 6, 15, 12, 0),
-            birth_location=Location(10.0, -150.0),  # mid-Pacific -> nautical Etc
-        )
+        # mid-Pacific -> nautical Etc zone
+        subject = _subject(datetime(1700, 6, 15, 12, 0), Location(10.0, -150.0))
         self.assertTrue(subject.timezone_is_longitude_based)
 
     def test_explicit_fixed_offset_is_not_longitude_based(self):
-        subject = _subject(
-            datetime(1700, 6, 15, 12, 0),
-            location=Location(27.7, 85.3),
-            tz=fixed_offset(timedelta(hours=5, minutes=30)),
+        location = Location(27.7, 85.3)
+        birth = datetime(1700, 6, 15, 12, 0)
+        subject = Subject(
+            gender=Gender.MALE,
+            birth_datetime=birth,
+            birth_location=location,
+            resolved_timezone=derive_timezone(
+                location, birth, offset=timedelta(hours=5, minutes=30)
+            ),
         )
         self.assertFalse(subject.timezone_is_longitude_based)
 
@@ -368,24 +377,12 @@ class TestZoneTabParsing(unittest.TestCase):
         self.assertIn(("FR", "+4852+00220", "Europe/Paris"), rows)
 
 
-class TestLocationDerivedTimezone(unittest.TestCase):
-    """birth_timezone=None is the expected default: derived from coordinates,
-    with a derivation grade saying how sure the result is."""
+class TestDerivedTimezoneReachesTheCalculation(unittest.TestCase):
+    """Which timezone a place and date give is settled in test_zone_derivation.
+    What matters here is that the birth then gets that timezone's real offset."""
 
-    def test_modern_land_birth_is_certain(self):
-        subject = _subject(datetime(2000, 6, 15, 12, 0), ROME)
-        self.assertEqual(
-            getattr(subject.effective_timezone, "key", None), "Europe/Rome"
-        )
-        self.assertIs(subject.timezone_derivation, TimezoneDerivation.CERTAIN)
-
-    def test_pre_1970_land_birth_is_estimated(self):
-        subject = _subject(datetime(1950, 6, 15, 12, 0), ROME)
-        self.assertIs(subject.timezone_derivation, TimezoneDerivation.ESTIMATED)
-
-    def test_open_ocean_birth_is_estimated_and_calculates(self):
+    def test_open_ocean_birth_gets_its_nautical_offset(self):
         subject = _subject(datetime(1990, 6, 15, 12, 0), Location(10.0, -150.0))
-        self.assertIs(subject.timezone_derivation, TimezoneDerivation.ESTIMATED)
         self.assertEqual(subject.local_birth_datetime.utcoffset(), timedelta(hours=-10))
 
     def test_south_pole_birth_calculates(self):
@@ -393,75 +390,16 @@ class TestLocationDerivedTimezone(unittest.TestCase):
         result = calculate_namkha(NamkhaType.YEAR, subject, CalculationMethod.CLASSIC)
         self.assertTrue(result.harmonized_aspects)
 
-    def test_explicit_timezone_is_certain(self):
-        subject = _subject(datetime(1950, 6, 15, 12, 0), ROME, zone("Europe/Rome"))
-        self.assertIs(subject.timezone_derivation, TimezoneDerivation.CERTAIN)
-
-
-class TestHistoricalBorderTimezone(unittest.TestCase):
-    """A pre-1970 birth gets the time history of the country that held the
-    birthplace in the birth year, never of today's map alone."""
-
-    LVIV = Location(49.8397, 24.0297)
-
     def test_interwar_lviv_gets_polish_time(self):
-        subject = _subject(datetime(1930, 6, 15, 12, 0), self.LVIV)
-        self.assertEqual(
-            getattr(subject.effective_timezone, "key", None), "Europe/Warsaw"
-        )
-        self.assertIs(subject.timezone_derivation, TimezoneDerivation.ESTIMATED)
+        """Lviv was Polish in 1930, so the birth runs an hour ahead of UTC, not
+        the three hours today's Kyiv zone would give."""
+        subject = _subject(datetime(1930, 6, 15, 12, 0), Location(49.8397, 24.0297))
         self.assertEqual(subject.local_birth_datetime.utcoffset(), timedelta(hours=1))
 
-    def test_postwar_lviv_gets_soviet_time(self):
-        subject = _subject(datetime(1950, 6, 15, 12, 0), self.LVIV)
-        self.assertEqual(
-            getattr(subject.effective_timezone, "key", None), "Europe/Kyiv"
-        )
-        self.assertIs(subject.timezone_derivation, TimezoneDerivation.ESTIMATED)
-        self.assertEqual(subject.local_birth_datetime.utcoffset(), timedelta(hours=3))
-
-    def test_wartime_lviv_flagged_borders_uncertain(self):
-        """Lviv changed hands between the 1938 and 1945 maps, and its true
-        1940 legal time (Moscow time, decreed after the 1939 Soviet
-        annexation) is invisible to both - that's because currently used open data
-        falls short. WIP.
-        """
-        subject = _subject(datetime(1940, 6, 15, 12, 0), self.LVIV)
-        self.assertIs(subject.timezone_derivation, TimezoneDerivation.BORDERS_UNCERTAIN)
-
-    def test_wartime_lviv_explicit_timezone_overrides(self):
-        """The documented remedy for a borders-uncertain birth: the caller
-        supplies the researched legal time."""
-        subject = _subject(
-            datetime(1940, 6, 15, 12, 0), self.LVIV, zone("Europe/Moscow")
-        )
-        self.assertIs(subject.timezone_derivation, TimezoneDerivation.CERTAIN)
-        self.assertEqual(subject.local_birth_datetime.utcoffset(), timedelta(hours=3))
-
-    def test_renamed_country_is_not_a_border_change(self):
-        """Strasbourg 1916: the maps around the year call the country
-        'German Empire' and 'Germany'; a rename must not flag uncertainty,
-        and the birth gets German time including the 1916 DST."""
-        subject = _subject(datetime(1916, 7, 1, 12, 0), Location(48.5734, 7.7521))
-        self.assertIs(subject.timezone_derivation, TimezoneDerivation.ESTIMATED)
-        self.assertEqual(subject.local_birth_datetime.utcoffset(), timedelta(hours=2))
-
-    def test_stable_country_keeps_polygon_zone(self):
-        """Colorado 1950: the USA polygon zone's reference city (Denver) is in
-        the same country, so the geographically exact zone is kept."""
-        subject = _subject(datetime(1950, 6, 15, 12, 0), Location(39.74, -104.99))
-        self.assertEqual(
-            getattr(subject.effective_timezone, "key", None), "America/Denver"
-        )
-
-    def test_merged_zone_history_applies_to_pre_1970_birth(self):
-        """Amsterdam 1935: the birth must get the real Dutch +1:19:32 summer
-        offset, not the +1:00 of the Brussels zone that a default tzdb build
-        merges Amsterdam into."""
+    def test_merged_zone_history_reaches_the_birth(self):
+        """Amsterdam 1935 must get the real Dutch +1:19:32 summer offset, not
+        the +1:00 of the Brussels zone a default tzdb build merges it into."""
         subject = _subject(datetime(1935, 6, 15, 12, 0), Location(52.37, 4.90))
-        self.assertEqual(
-            getattr(subject.effective_timezone, "key", None), "Europe/Amsterdam"
-        )
         self.assertEqual(
             subject.local_birth_datetime.utcoffset(),
             timedelta(hours=1, minutes=19, seconds=32),

@@ -22,17 +22,11 @@ from .aspects.shared_birth import BODY_ELEMENT, FORTUNE_ELEMENT, LIFE_ELEMENT
 from .aspects.shared_mewa import MewaResult
 from .aspects.year import calculate_mewas_cnnr, calculate_mewas_classic
 from .calculation_notes import (
-    CALCULATION_NOTES,
-    CalculationNote,
     CalculationNoteItem,
-    local_mean_time_note,
-    local_time_dst_note,
+    input_notes,
     period_boundary_note,
-    pre_gregorian_note,
-    timezone_derivation_note,
 )
 from .localization import is_nonexistent_local_time, uses_local_mean_time
-from .tz import LATITUDE_LIMIT
 from .calendar import (
     TibetanYearAttributes,
     classic_year_attributes,
@@ -93,7 +87,9 @@ def calculate_namkha(
         )
 
     _validate_subject(subject)
-    subject_notes = _collect_subject_notes(subject)
+    subject_notes = input_notes(
+        subject.resolved_timezone, subject.birth_location, subject.birth_datetime
+    )
     calculation = calc_fn(subject)
 
     return NamkhaCalculationResult(
@@ -137,30 +133,6 @@ def _validate_subject(subject: Subject) -> None:
         )
 
     day_start(local_dt.date(), tz, subject.birth_location)
-
-
-def _collect_subject_notes(subject: Subject) -> tuple[CalculationNoteItem, ...]:
-    """Notes that depend only on the subject's location and local time."""
-    notes: list[CalculationNoteItem] = []
-    if abs(subject.birth_location.latitude) >= LATITUDE_LIMIT:
-        notes.append(CALCULATION_NOTES[CalculationNote.HIGH_LATITUDE])
-    notes.extend(timezone_derivation_note(subject.timezone_derivation))
-    notes.extend(
-        local_time_dst_note(
-            subject.birth_datetime,
-            subject.effective_timezone,
-            subject.on_summer_time is not None,
-        )
-    )
-    notes.extend(
-        local_mean_time_note(
-            subject.birth_datetime,
-            subject.effective_timezone,
-            subject.timezone_is_longitude_based,
-        )
-    )
-    notes.extend(pre_gregorian_note(subject.birth_datetime, subject.birth_location))
-    return tuple(notes)
 
 
 def _calc_year_cnnr(subject: Subject) -> _CalcResult:

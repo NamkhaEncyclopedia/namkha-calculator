@@ -9,12 +9,6 @@ from enum import Enum, auto, unique
 from .localization import is_ambiguous_local_time, uses_local_mean_time
 from .tz import LATITUDE_LIMIT, Location, ResolvedTimezone, TimezoneDerivation
 
-# Temporary: the Gregorian tables moved to zone_derivation because they need
-# the same location lookup as the timezone. Nothing on the calculation path may
-# import zone_derivation, so this goes away once the resolved timezone carries
-# the adoption date with it.
-from .zone_derivation.gregorian import gregorian_adoption_date
-
 # Birth time closer than this to a period boundary triggers a PERIOD_BOUNDARY note.
 PERIOD_BOUNDARY_THRESHOLD = dt.timedelta(minutes=5)
 
@@ -66,14 +60,15 @@ CALCULATION_NOTES = {
         note=CalculationNote.AMBIGUOUS_LOCAL_TIME,
         note_type=CalculationNoteType.CAUTION,
         message="Local birth time is ambiguous due to a clock change and was "
-        "guessed as the later (standard-time) reading; set on_summer_time to say "
-        "which reading is correct, as it can shift the hour.",
+        "guessed as the later (standard-time) reading; pass on_summer_time to "
+        "zone_derivation.derive_timezone to say which reading is correct, as it "
+        "can shift the hour.",
     ),
     CalculationNote.AMBIGUOUS_LOCAL_TIME_RESOLVED: CalculationNoteItem(
         note=CalculationNote.AMBIGUOUS_LOCAL_TIME_RESOLVED,
         note_type=CalculationNoteType.NOTICE,
         message="Local birth time was ambiguous due to a clock change; resolved "
-        "using the on_summer_time value you provided.",
+        "using the on_summer_time value given to zone_derivation.derive_timezone.",
     ),
     CalculationNote.LOCAL_MEAN_TIME: CalculationNoteItem(
         note=CalculationNote.LOCAL_MEAN_TIME,
@@ -95,15 +90,17 @@ CALCULATION_NOTES = {
         note_type=CalculationNoteType.CAUTION,
         message="The timezone could not be determined with certainty from the "
         "birth location and date; the best historically recorded regional "
-        "time was used. Set birth_timezone if the local legal time is known.",
+        "time was used. If the local legal time is known, pass it to "
+        "zone_derivation.derive_timezone as zone_key or offset.",
     ),
     CalculationNote.TIMEZONE_BORDERS_UNCERTAIN: CalculationNoteItem(
         note=CalculationNote.TIMEZONE_BORDERS_UNCERTAIN,
         note_type=CalculationNoteType.CAUTION,
         message="Borders around the birth place changed close to the birth "
         "year, so even the country whose time applied is uncertain; the best "
-        "historically recorded regional time was used. Set birth_timezone if "
-        "the local legal time is known.",
+        "historically recorded regional time was used. If the local legal time "
+        "is known, pass it to zone_derivation.derive_timezone as zone_key or "
+        "offset.",
     ),
 }
 
@@ -151,16 +148,26 @@ def local_mean_time_note(
 
 
 def pre_gregorian_note(
-    birth_datetime: dt.datetime, location: Location
+    birth_datetime: dt.datetime, adoption_date: dt.date
 ) -> tuple[CalculationNoteItem, ...]:
-    """Caution when the birth date precedes the Gregorian calendar at the birth place."""
-    if birth_datetime.date() < gregorian_adoption_date(location):
+    """Caution when the birth date precedes the Gregorian calendar at the birth
+    place.
+
+    adoption_date must be the date looked up for the birth place, not one cutoff
+    used for every place: pass ResolvedTimezone.gregorian_adoption_date, or
+    zone_derivation.gregorian_adoption_date(location) when there is no resolved
+    timezone at hand. It is looked up while the timezone is derived and travels
+    with it, so this never looks up the birth place itself.
+    """
+    if birth_datetime.date() < adoption_date:
         return (CALCULATION_NOTES[CalculationNote.PRE_GREGORIAN_DATE],)
     return ()
 
 
 def input_notes(
-    resolved_timezone: ResolvedTimezone, birth_datetime: dt.datetime
+    resolved_timezone: ResolvedTimezone,
+    location: Location,
+    birth_datetime: dt.datetime,
 ) -> tuple[CalculationNoteItem, ...]:
     """Notes that follow from the birth details alone.
 
@@ -169,9 +176,14 @@ def input_notes(
     itself are not here.
 
     birth_datetime is the naive local time, as entered.
+
+    The timezone must be the one derived for this location and date. A
+    mismatch raises StaleTimezoneError: forms call this without a Subject, so
+    nothing else compares the two.
     """
+    resolved_timezone.assert_binds(location, birth_datetime)
     notes: list[CalculationNoteItem] = []
-    if abs(resolved_timezone.for_latitude) >= LATITUDE_LIMIT:
+    if abs(location.latitude) >= LATITUDE_LIMIT:
         notes.append(CALCULATION_NOTES[CalculationNote.HIGH_LATITUDE])
     notes.extend(timezone_derivation_note(resolved_timezone.derivation))
     tz = resolved_timezone.tzinfo
@@ -183,10 +195,9 @@ def input_notes(
     notes.extend(
         local_mean_time_note(birth_datetime, tz, resolved_timezone.is_longitude_based)
     )
-    # The adoption date travels with the resolved timezone, so this does not
-    # repeat pre_gregorian_note's location lookup.
-    if birth_datetime.date() < resolved_timezone.gregorian_adoption_date:
-        notes.append(CALCULATION_NOTES[CalculationNote.PRE_GREGORIAN_DATE])
+    notes.extend(
+        pre_gregorian_note(birth_datetime, resolved_timezone.gregorian_adoption_date)
+    )
     return tuple(notes)
 
 
