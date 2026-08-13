@@ -24,7 +24,7 @@ Python library for calculating [Namkha thread-cross](https://en.wikipedia.org/wi
   - [Calculation notes](#calculation-notes)
     - [Latitude "trimming"](#latitude-trimming)
 - [Contributing](#contributing)
-- [Licence](#licence)
+- [License](#license)
 - [Acknowledgments](#acknowledgments)
 - [References](#references)
 
@@ -137,8 +137,8 @@ Birth dates are proleptic Gregorian; a Julian-calendar source date must be conve
 | Field               | Type                  | Description                                                   |
 |---------------------|-----------------------|---------------------------------------------------------------|
 | `name`              | `Aspect`              | `LIFE`, `BODY`, `CAPACITY`, `FORTUNE`, `MEWA_*`               |
-| `center`            | `Element`             | centre element                                                |
-| `harmonization_seq` | `tuple[Element, ...]` | harmonization sequence: remaining thread colours outward      |
+| `center`            | `Element`             | center element                                                |
+| `harmonization_seq` | `tuple[Element, ...]` | harmonization sequence: remaining thread colors outward       |
 | `is_conflicted`     | `bool or None`        | `None` for `LIFE`; `True` when conflict harmonization applied |
 
 ### Calculation notes
@@ -171,7 +171,7 @@ Issues, PRs and questions are welcome.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-## Licence
+## License
 
 [GPL-3.0-or-later](LICENSE). The package bundles:
 

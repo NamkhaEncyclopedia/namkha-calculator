@@ -36,7 +36,7 @@ def main() -> None:
         print(f"downloading {url}")
         urllib.request.urlretrieve(url, _PACKAGE_BASEMAPS / f"world_{year}.geojson")
     (_PACKAGE_BASEMAPS / "SOURCE").write_text(
-        f"{SOURCE_REPO} @ {SOURCE_COMMIT}\nLicence: GPL-3.0\n"
+        f"{SOURCE_REPO} @ {SOURCE_COMMIT}\nLicense: GPL-3.0\n"
     )
     print(f"{len(SNAPSHOT_YEARS)} snapshots installed into {_PACKAGE_BASEMAPS}")
 

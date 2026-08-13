@@ -2,7 +2,7 @@
 
 Compiles the release with zic, restoring backzone pre-1970 histories for
 every zone listed in zone.tab (PACKRATDATA/PACKRATLIST) – the default tzdb
-build replaces those histories with a post-1970-equivalent neighbour's.
+build replaces those histories with a post-1970-equivalent neighbor's.
 The output tree is committed to src/namkha_calculator/tzdata/ and is the
 only timezone data the package uses at runtime.
 

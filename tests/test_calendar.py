@@ -361,7 +361,7 @@ class TestDecoupledOffsetMissRaises(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "no dawn"):
             calendar.day_start(self.MISS_DATE, self.TZ, self.LOC)
 
-    def test_neighbouring_dates_still_find_real_dawn(self):
+    def test_neighboring_dates_still_find_real_dawn(self):
         for d in (date(2024, 7, 21), date(2024, 7, 23)):
             with self.subTest(date=d):
                 ds = calendar.day_start(d, self.TZ, self.LOC)

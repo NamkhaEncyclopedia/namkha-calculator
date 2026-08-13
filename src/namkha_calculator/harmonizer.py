@@ -108,7 +108,7 @@ def harmonize_aspects(
         )
     )
 
-    # Each row: (aspect, its element, the element it harmonises towards).
+    # Each row: (aspect, its element, the element it harmonizes toward).
     aspect_rows = (
         (Aspect.BODY, body, life),
         (Aspect.CAPACITY, capacity, life),
