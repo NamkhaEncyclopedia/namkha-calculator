@@ -1,4 +1,4 @@
-"""What a settled timezone does to a birth, across the full ephemeris range
+"""What a resolved timezone does to a birth, across the full ephemeris range
 (1550-2599): full tzdb history, LMT-era birth-longitude mean time, future DST
 projection, and the repeated fall-back hour.
 
@@ -14,7 +14,7 @@ from namkha_calculator.localization import (
     is_ambiguous_local_time,
     is_longitude_based_timezone,
     is_nonexistent_local_time,
-    resolve_local_time,
+    localize_naive_time,
     uses_local_mean_time,
 )
 from namkha_calculator.tz import (
@@ -28,7 +28,7 @@ from namkha_calculator.tz import (
 )
 from namkha_calculator.methods import CalculationMethod
 from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
-from namkha_calculator.zone_derivation import derive_timezone
+from namkha_calculator.zone_derivation import resolve_timezone
 
 
 def _subject(
@@ -41,7 +41,7 @@ def _subject(
         gender=Gender.MALE,
         birth_datetime=birth,
         birth_location=location,
-        resolved_timezone=derive_timezone(
+        resolved_timezone=resolve_timezone(
             location, birth, zone_key=zone_key, on_summer_time=on_summer_time
         ),
     )
@@ -245,8 +245,8 @@ class TestSummerTimeDisambiguation(unittest.TestCase):
         loc = Location(59.5, 20.0)
         tz = FallBackAtDawnZone()
         naive = datetime(2018, 5, 13, 2, 5)
-        earlier = resolve_local_time(naive, tz, loc, on_summer_time=True)
-        later = resolve_local_time(naive, tz, loc, on_summer_time=False)
+        earlier = localize_naive_time(naive, tz, loc, on_summer_time=True)
+        later = localize_naive_time(naive, tz, loc, on_summer_time=False)
         self.assertEqual(calendar.tibetan_day_date(earlier, loc), date(2018, 5, 12))
         self.assertEqual(calendar.tibetan_day_date(later, loc), date(2018, 5, 13))
 
@@ -291,7 +291,7 @@ class TestLongitudeBasedTimezone(unittest.TestCase):
             gender=Gender.MALE,
             birth_datetime=birth,
             birth_location=location,
-            resolved_timezone=derive_timezone(
+            resolved_timezone=resolve_timezone(
                 location, birth, offset=timedelta(hours=5, minutes=30)
             ),
         )
@@ -378,7 +378,7 @@ class TestZoneTabParsing(unittest.TestCase):
 
 
 class TestDerivedTimezoneReachesTheCalculation(unittest.TestCase):
-    """Which timezone a place and date give is settled in test_zone_derivation.
+    """Which timezone a place and date give is tested in test_zone_derivation.
     What matters here is that the birth then gets that timezone's real offset."""
 
     def test_open_ocean_birth_gets_its_nautical_offset(self):

@@ -10,9 +10,9 @@ details are entered. It lives in zone_derivation, which nothing here may
 import.
 
 Every naive datetime the calculation touches goes through here, not only the
-birth time: the dawn search localises both ends of a local day, and day_start
-localises a fixed morning hour. Any of them can fall in a repeated or skipped
-hour, so each is resolved on its own.
+birth time: the dawn search localizes both ends of a local day, and day_start
+localizes a fixed morning hour. Any of them can fall in a repeated or skipped
+hour, so each is localized on its own.
 """
 
 import datetime as dt
@@ -24,7 +24,7 @@ _DAY = dt.timedelta(hours=24)
 _UTC = dt.timezone.utc
 
 
-def _resolve_repeated_hour(
+def _choose_repeated_hour(
     naive_dt: dt.datetime, tz: dt.tzinfo, *, on_summer_time: bool | None = None
 ) -> dt.datetime:
     """Attach the timezone, choosing which reading of a repeated fall-back
@@ -33,11 +33,11 @@ def _resolve_repeated_hour(
     In a fall-back hour the wall-clock time maps to two instants; summer time is
     the earlier one, with the higher offset. on_summer_time=True picks it, False
     or None the later (lower-offset) reading. Chosen by offset, not dst(), so
-    reversed-DST zones resolve correctly.
+    reversed-DST zones read correctly.
 
     Requires a PEP 495 tzinfo (zoneinfo.ZoneInfo or datetime.timezone - the only
     kinds Subject accepts); pre-PEP 495 classes like pytz ignore fold and would
-    misresolve clock changes.
+    misread clock changes.
     """
     first = naive_dt.replace(tzinfo=tz, fold=0)
     second = naive_dt.replace(tzinfo=tz, fold=1)
@@ -50,7 +50,7 @@ def _resolve_repeated_hour(
 
 def uses_local_mean_time(naive_dt: dt.datetime, tz: dt.tzinfo) -> bool:
     """Whether the instant falls in the timezone's pre-standard-time era."""
-    return _resolve_repeated_hour(naive_dt, tz).tzname() == "LMT"
+    return _choose_repeated_hour(naive_dt, tz).tzname() == "LMT"
 
 
 def is_longitude_based_timezone(tz: dt.tzinfo) -> bool:
@@ -63,25 +63,25 @@ def is_longitude_based_timezone(tz: dt.tzinfo) -> bool:
     return isinstance(tz, dt.timezone) and tz.tzname(None) == _MEAN_SOLAR_TZNAME
 
 
-def resolve_local_time(
+def localize_naive_time(
     naive_dt: dt.datetime,
     tz: dt.tzinfo,
     location: Location,
     *,
     on_summer_time: bool | None = None,
 ) -> dt.datetime:
-    """Attach the timezone to a naive local time: resolve a repeated fall-back
-    hour, then substitute mean solar time in a zone's pre-standard-time era.
+    """Attach the timezone to a naive local time: choose a reading for a repeated
+    fall-back hour, substitute mean solar time in a zone's pre-standard-time era.
 
     on_summer_time is consulted only when the time is genuinely ambiguous. A
     skipped time reads differently under the two folds as well, but it never
     happened, so neither reading is correct; it always keeps the pre-gap one.
 
-    The library's single localisation point, enforced by
+    The library's single localization point, enforced by
     tests/test_localization_policy.py.
     """
-    resolved = on_summer_time if is_ambiguous_local_time(naive_dt, tz) else None
-    localized = _resolve_repeated_hour(naive_dt, tz, on_summer_time=resolved)
+    summer_time = on_summer_time if is_ambiguous_local_time(naive_dt, tz) else None
+    localized = _choose_repeated_hour(naive_dt, tz, on_summer_time=summer_time)
     if not isinstance(tz, ZoneInfo) or localized.tzname() != "LMT":
         return localized
     return _birth_longitude_mean_time(naive_dt, localized, location)

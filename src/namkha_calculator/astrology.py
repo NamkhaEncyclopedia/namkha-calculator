@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from enum import Enum, auto, unique
 from functools import cached_property
 
-from .localization import resolve_local_time
+from .localization import localize_naive_time
 from .tz import Location, ResolvedTimezone, TimezoneDerivation
 
 
@@ -59,7 +59,7 @@ class Subject:
             raise TypeError(
                 "resolved_timezone must be a ResolvedTimezone, not a timezone "
                 "object; build one with "
-                "namkha_calculator.zone_derivation.derive_timezone(...)"
+                "namkha_calculator.zone_derivation.resolve_timezone(...)"
             )
         self.resolved_timezone.assert_binds(self.birth_location, self.birth_datetime)
 
@@ -82,7 +82,7 @@ class Subject:
     @cached_property
     def local_birth_datetime(self) -> dt.datetime:
         """Birth time with the timezone attached."""
-        return resolve_local_time(
+        return localize_naive_time(
             self.birth_datetime,
             self.effective_timezone,
             self.birth_location,

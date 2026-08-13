@@ -11,7 +11,7 @@ from skyfield import almanac
 from skyfield.api import Loader, wgs84
 from skyfield.errors import EphemerisRangeError
 
-from .localization import resolve_local_time
+from .localization import localize_naive_time
 
 if TYPE_CHECKING:
     from .tz import Location
@@ -79,10 +79,10 @@ def morning_civil_twilight(
     topos = wgs84.latlon(location.latitude, location.longitude)
     search_func = almanac.dark_twilight_day(_get_ephemeris(), topos)
 
-    midnight = resolve_local_time(
+    midnight = localize_naive_time(
         dt.datetime.combine(date, dt.time(0, 0, 0)), tz, location
     )
-    next_midnight = resolve_local_time(
+    next_midnight = localize_naive_time(
         dt.datetime.combine(date + dt.timedelta(days=1), dt.time(0, 0, 0)),
         tz,
         location,

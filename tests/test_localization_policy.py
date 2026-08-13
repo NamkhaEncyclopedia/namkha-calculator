@@ -1,7 +1,7 @@
 """These tests read the package's own source code and check three rules:
 
-1. Only resolve_local_time and its listed helpers may call
-   replace(tzinfo=...), so ambiguous, skipped and LMT-era times are resolved
+1. Only localize_naive_time and its listed helpers may call
+   replace(tzinfo=...), so ambiguous, skipped and LMT-era times are localized
    in one place.
 2. Only tz.zone may construct ZoneInfo objects, so every zone comes
    from the bundled tzdata package, never the OS database.
@@ -14,7 +14,7 @@ The first two rules have an allowlist of the (file, function) call sites
 permitted to break them. To allow a new site, add an entry with a
 justification; test_allowed_sites_still_exist fails if an entry goes stale.
 The third has no allowlist: nothing outside zone_derivation needs it, and
-derive_timezone is deliberately absent from the package's __init__."""
+resolve_timezone is deliberately absent from the package's __init__."""
 
 import ast
 import unittest
@@ -30,12 +30,12 @@ DERIVATION_PACKAGE = "zone_derivation"
 # (file relative to package, enclosing function) allowed to attach a tzinfo
 # via datetime.replace(tzinfo=...). Every entry needs a justification here.
 ALLOWED_TZINFO_ATTACH_SITES = {
-    # The helpers of resolve_local_time, the single resolution point the
+    # The helpers of localize_naive_time, the single localization point the
     # policy protects: its repeated-hour chooser and its pre-standard-time
     # branch.
-    ("localization.py", "_resolve_repeated_hour"),
+    ("localization.py", "_choose_repeated_hour"),
     ("localization.py", "_birth_longitude_mean_time"),
-    # Fold probes: detect ambiguous/non-existent times, resolve nothing.
+    # Fold probes: detect ambiguous/non-existent times, localize nothing.
     ("localization.py", "is_ambiguous_local_time"),
     ("localization.py", "is_nonexistent_local_time"),
 }
@@ -238,8 +238,8 @@ class TestLocalizationPolicy(unittest.TestCase):
         self.assertEqual(
             [],
             outside,
-            "replace(tzinfo=...) bypasses resolve_local_time: "
-            f"{outside}; use resolve_local_time, or extend "
+            "replace(tzinfo=...) bypasses localize_naive_time: "
+            f"{outside}; use localize_naive_time, or extend "
             "ALLOWED_TZINFO_ATTACH_SITES with a justification",
         )
 
@@ -260,7 +260,7 @@ class TestLocalizationPolicy(unittest.TestCase):
             into_derivation,
             "these modules can reach zone_derivation and so could derive a "
             f"timezone again during a calculation: {into_derivation}; take the "
-            "value from the ResolvedTimezone the caller already settled",
+            "value from the ResolvedTimezone the caller already resolved",
         )
 
     def test_the_import_graph_sees_the_package(self):

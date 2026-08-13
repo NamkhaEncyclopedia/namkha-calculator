@@ -196,15 +196,15 @@ class TimezoneProvenance(Enum):
 
 @dataclass(frozen=True, kw_only=True)
 class ResolvedTimezone:
-    """A settled timezone: which one, how sure, and the place facts the
+    """A resolved timezone: which one, how sure, and the place facts the
     calculation would otherwise have to look up again.
 
-    zone_derivation.derive_timezone builds one; Subject holds it. It lives here
+    zone_derivation.resolve_timezone builds one; Subject holds it. It lives here
     with its readers because the calculation path may not import the code that
     builds it. Fields are plain values, so it stays hashable and picklable.
 
-    Deriving and using are separate steps, so they can drift: it records the
-    birth details it was derived for, and assert_binds checks them.
+    Resolving and using are separate steps, so they can drift: it records the
+    birth details it was worked out for, and assert_binds checks them.
     """
 
     key: str | None
@@ -239,10 +239,10 @@ class ResolvedTimezone:
         return fixed_offset(offset)
 
     def assert_binds(self, location: Location, birth_datetime: dt.datetime) -> None:
-        """Raise unless the birth details still match the ones this was derived
-        for. Coordinates are compared with a small tolerance. The time of day is
-        not compared at all, since only the date can change which timezone
-        applied."""
+        """Raise unless the birth details still match the ones this was worked
+        out for. Coordinates are compared with a small tolerance. The time of
+        day is not compared at all, since only the date can change which
+        timezone applied."""
         if (
             not math.isclose(
                 location.latitude,
@@ -257,9 +257,9 @@ class ResolvedTimezone:
             or birth_datetime.date() != self.for_birth_date
         ):
             raise StaleTimezoneError(
-                "resolved timezone was derived for "
+                "resolved timezone was worked out for "
                 f"({self.for_latitude}, {self.for_longitude}) on "
                 f"{self.for_birth_date}, but the birth is at "
                 f"({location.latitude}, {location.longitude}) on "
-                f"{birth_datetime.date()}; derive it again"
+                f"{birth_datetime.date()}; work it out again"
             )

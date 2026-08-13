@@ -11,11 +11,11 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - `zone_keys()` lists every IANA zone key in the bundled tzdata, so callers
   building a zone picker no longer reach into private members.
-- `ResolvedTimezone`, a settled timezone with how sure it is, where it came
+- `ResolvedTimezone`, a resolved timezone with how sure it is, where it came
   from, and the place facts that would otherwise need a fresh coordinate
   lookup during the calculation. It records the birth details it was worked
   out for and refuses, through `assert_binds`, to be used with others.
-- `zone_derivation.derive_timezone()` produces one. It is deliberately not
+- `zone_derivation.resolve_timezone()` produces one. It is deliberately not
   re-exported at the package root: importing it from `zone_derivation` is
   what keeps the calculation path clear of the derivation code. Its
   `on_summer_time` argument is dropped from the result unless the birth
@@ -31,7 +31,7 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   form can show them while the user is still entering data instead of leaving
   them for the finished sheet. Notes that need the calculation itself, such as
   `PERIOD_BOUNDARY`, are not included. It takes the birth location and calls
-  `assert_binds`, so a timezone derived for another place or date raises
+  `assert_binds`, so a timezone worked out for another place or date raises
   `StaleTimezoneError` instead of deciding the high-latitude note.
 - `CalculationNoteType` is re-exported at the package root. It was already the
   type of `CalculationNoteItem.note_type`, so reading a note's severity meant
@@ -41,7 +41,7 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - **Breaking:** `Subject` takes a `resolved_timezone` instead of
   `birth_timezone` and `on_summer_time`. Build one with
-  `zone_derivation.derive_timezone(location, birth_datetime)`, passing
+  `zone_derivation.resolve_timezone(location, birth_datetime)`, passing
   `zone_key=`, `offset=` or `on_summer_time=` where they used to go on
   `Subject`. Omitting the timezone no longer derives it: `Subject` never
   derives anything now, so a caller who leaves it out gets a `TypeError` for
@@ -56,12 +56,12 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
   `Subject.effective_timezone`, `timezone_derivation` and
   `timezone_is_longitude_based` still read the same; they now come straight
-  off the resolved value. A timezone derived for a different place or date is
+  off the resolved value. A timezone worked out for a different place or date is
   refused with `StaleTimezoneError`, and passing a timezone object where the
   resolved value belongs raises `TypeError`.
 
   The four note messages that told the reader to set `birth_timezone` or
-  `on_summer_time` now point at `zone_derivation.derive_timezone` and its
+  `on_summer_time` now point at `zone_derivation.resolve_timezone` and its
   `zone_key`, `offset` and `on_summer_time` arguments. Code matching on the
   message text has to change; the note identities are the same.
 

@@ -1,13 +1,16 @@
 """Choosing which timezone applied at a place and date.
 
-This is the expensive half of the astronomy-related stuff: the polygon search, the
+This is the expensive half of the timezone work: the polygon search, the
 historical border maps, and the checks that a timezone someone supplied is
 plausible for the location. It runs once, when the birth details are entered.
 
-The calculation path is meant to stay clear of it. That is not true yet:
-astrology.py imports location_timezone, because Subject still works out its own
-timezone. Once Subject takes a settled one instead, the last importer goes and
-the rule becomes a check in tests/test_localization_policy.py.
+resolve_timezone is the way in. It returns a ResolvedTimezone whatever the
+source: it records a zone or an offset the user chose, and calls
+location_timezone to work one out only when the user chose neither.
+
+The calculation path stays clear of this package. No module outside it may
+import it, directly or through a chain of imports, and
+tests/test_localization_policy.py checks that.
 """
 
 import datetime as dt
@@ -18,7 +21,7 @@ from typing import NamedTuple
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from ..localization import (
-    _resolve_repeated_hour,
+    _choose_repeated_hour,
     is_ambiguous_local_time,
     is_longitude_based_timezone,
 )
@@ -44,7 +47,7 @@ from .historical_borders import (
 from .lookup import location_zone_key
 
 __all__ = [
-    "derive_timezone",
+    "resolve_timezone",
     "gregorian_adoption_date",
     "location_timezone",
     "location_zone_key",
@@ -215,7 +218,7 @@ def location_timezone(
             )
 
 
-def derive_timezone(
+def resolve_timezone(
     location: Location,
     birth_datetime: dt.datetime,
     *,
@@ -307,13 +310,13 @@ def validate_timezone_for_location(
     """Reject a fixed offset outside the real-timezone range, and any timezone
     whose clock is too far from the location's mean solar time.
 
-    Checks the zone's raw reading: in the LMT era resolve_local_time substitutes
+    Checks the zone's raw reading: in the LMT era localize_naive_time substitutes
     the birth longitude's mean solar time, whose solar gap is ~0 by construction
     and would mask a bogus offset. The solar-gap check is skipped at or above
     LATITUDE_LIMIT, where the day start is a fixed local hour and solar time
     is irrelevant.
     """
-    raw_local = _resolve_repeated_hour(naive_dt, tz)
+    raw_local = _choose_repeated_hour(naive_dt, tz)
     if isinstance(tz, dt.timezone):
         offset_h = standard_offset_hours(raw_local)
         if not UTC_OFFSET_MIN_HOURS <= offset_h <= UTC_OFFSET_MAX_HOURS:

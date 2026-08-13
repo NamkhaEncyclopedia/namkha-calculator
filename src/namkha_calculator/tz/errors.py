@@ -4,7 +4,7 @@ class TimezoneError(ValueError):
 
 class StaleTimezoneError(TimezoneError):
     """A resolved timezone does not match the birth details it was worked out
-    for: the place or the date changed after it was settled."""
+    for: the place or the date changed since."""
 
 
 class TimezoneOffsetOutOfRangeError(TimezoneError):

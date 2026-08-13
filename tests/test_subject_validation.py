@@ -14,7 +14,7 @@ from namkha_calculator.tz import Location, zone
 from namkha_calculator.tz.errors import StaleTimezoneError
 from namkha_calculator.methods import CalculationMethod
 from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
-from namkha_calculator.zone_derivation import derive_timezone
+from namkha_calculator.zone_derivation import resolve_timezone
 
 _TZ_BERLIN = "Europe/Berlin"
 
@@ -43,7 +43,7 @@ def _subject(
         gender=Gender.MALE,
         birth_datetime=birth,
         birth_location=location,
-        resolved_timezone=derive_timezone(
+        resolved_timezone=resolve_timezone(
             location,
             birth,
             zone_key=None if offset is not None else zone_key,
@@ -106,12 +106,12 @@ class TestFixedOffsetSubject(unittest.TestCase):
 
 
 class TestTimezoneMustBeResolved(unittest.TestCase):
-    """Subject takes the settled timezone, never a timezone object. Passing one
+    """Subject takes the resolved timezone, never a timezone object. Passing one
     used to work, so the mistake needs a clear error rather than an
     AttributeError from somewhere inside."""
 
     def test_a_timezone_object_is_refused(self):
-        with self.assertRaisesRegex(TypeError, "derive_timezone"):
+        with self.assertRaisesRegex(TypeError, "resolve_timezone"):
             Subject(
                 gender=Gender.MALE,
                 birth_datetime=_DEFAULT_BIRTH,
@@ -122,7 +122,7 @@ class TestTimezoneMustBeResolved(unittest.TestCase):
     def test_a_timezone_for_another_place_is_refused(self):
         """The timezone is derived before the calculation, so the birth details
         can change afterwards; a stale value would give the wrong zone."""
-        resolved = derive_timezone(_STUTTGART, _DEFAULT_BIRTH, zone_key=_TZ_BERLIN)
+        resolved = resolve_timezone(_STUTTGART, _DEFAULT_BIRTH, zone_key=_TZ_BERLIN)
         with self.assertRaises(StaleTimezoneError):
             Subject(
                 gender=Gender.MALE,

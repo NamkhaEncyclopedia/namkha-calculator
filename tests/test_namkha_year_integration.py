@@ -12,7 +12,7 @@ from namkha_calculator.calendar import supported_year_range
 from namkha_calculator.harmonizer import Aspect
 from namkha_calculator.methods import CalculationMethod
 from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
-from namkha_calculator.zone_derivation import derive_timezone
+from namkha_calculator.zone_derivation import resolve_timezone
 
 E = Element
 
@@ -25,7 +25,7 @@ def _subject(dt_str: str, tz_name: str, lat: float, lon: float) -> Subject:
         gender=Gender.MALE,
         birth_datetime=birth,
         birth_location=location,
-        resolved_timezone=derive_timezone(location, birth, zone_key=tz_name),
+        resolved_timezone=resolve_timezone(location, birth, zone_key=tz_name),
         name=None,
     )
 

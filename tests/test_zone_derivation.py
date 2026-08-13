@@ -1,10 +1,10 @@
-"""derive_timezone: settling a birth's timezone once, from the place and date
+"""resolve_timezone: settling a birth's timezone once, from the place and date
 or from what the user named."""
 
 import datetime as dt
 import unittest
 
-from namkha_calculator.localization import resolve_local_time
+from namkha_calculator.localization import localize_naive_time
 from namkha_calculator.tz import Location, TimezoneDerivation, TimezoneProvenance
 from namkha_calculator.tz.errors import (
     TimezoneLocationMismatchError,
@@ -13,7 +13,7 @@ from namkha_calculator.tz.errors import (
 from namkha_calculator.zone_derivation import (
     OFFSET_AHEAD_SOLAR_LIMIT_HOURS,
     OFFSET_BEHIND_SOLAR_LIMIT_HOURS,
-    derive_timezone,
+    resolve_timezone,
     offset_solar_gap_hours,
 )
 
@@ -25,23 +25,23 @@ PACIFIC = Location(latitude=0.0, longitude=-140.0)
 
 class TestDerivedFromLocation(unittest.TestCase):
     def test_modern_birth_is_certain(self):
-        resolved = derive_timezone(BERLIN, dt.datetime(1985, 6, 15, 12, 0))
+        resolved = resolve_timezone(BERLIN, dt.datetime(1985, 6, 15, 12, 0))
         self.assertEqual(resolved.key, "Europe/Berlin")
         self.assertIs(resolved.derivation, TimezoneDerivation.CERTAIN)
         self.assertIs(resolved.provenance, TimezoneProvenance.LOCATION_DERIVED)
 
     def test_pre_1970_birth_is_an_estimate(self):
-        resolved = derive_timezone(BERLIN, dt.datetime(1935, 6, 15, 12, 0))
+        resolved = resolve_timezone(BERLIN, dt.datetime(1935, 6, 15, 12, 0))
         self.assertIs(resolved.derivation, TimezoneDerivation.ESTIMATED)
 
     def test_moving_borders_are_reported_as_such(self):
         """Lviv changed hands around 1940, so even the country is a guess."""
-        resolved = derive_timezone(LVIV, dt.datetime(1940, 6, 15, 12, 0))
+        resolved = resolve_timezone(LVIV, dt.datetime(1940, 6, 15, 12, 0))
         self.assertEqual(resolved.key, "Europe/Warsaw")
         self.assertIs(resolved.derivation, TimezoneDerivation.BORDERS_UNCERTAIN)
 
     def test_open_water_is_longitude_based(self):
-        resolved = derive_timezone(PACIFIC, dt.datetime(1900, 1, 1, 12, 0))
+        resolved = resolve_timezone(PACIFIC, dt.datetime(1900, 1, 1, 12, 0))
         self.assertTrue(resolved.is_longitude_based)
 
 
@@ -50,12 +50,12 @@ class TestHistoricalBorders(unittest.TestCase):
     in the birth year, not by the country holding it today."""
 
     def test_lviv_returns_to_soviet_time_after_the_war(self):
-        resolved = derive_timezone(LVIV, dt.datetime(1950, 6, 15, 12, 0))
+        resolved = resolve_timezone(LVIV, dt.datetime(1950, 6, 15, 12, 0))
         self.assertEqual(resolved.key, "Europe/Kyiv")
         self.assertIs(resolved.derivation, TimezoneDerivation.ESTIMATED)
 
     def test_lviv_is_on_polish_time_between_the_wars(self):
-        resolved = derive_timezone(LVIV, dt.datetime(1930, 6, 15, 12, 0))
+        resolved = resolve_timezone(LVIV, dt.datetime(1930, 6, 15, 12, 0))
         self.assertEqual(resolved.key, "Europe/Warsaw")
         self.assertIs(resolved.derivation, TimezoneDerivation.ESTIMATED)
 
@@ -64,7 +64,7 @@ class TestHistoricalBorders(unittest.TestCase):
         Berlin's clock rather than Paris's. The maps either side of that year
         name the country 'German Empire' and 'Germany'; both still give Berlin,
         so the rename must not read as the border moving."""
-        resolved = derive_timezone(
+        resolved = resolve_timezone(
             Location(latitude=48.5734, longitude=7.7521), dt.datetime(1916, 7, 1, 12, 0)
         )
         self.assertEqual(resolved.key, "Europe/Berlin")
@@ -74,7 +74,7 @@ class TestHistoricalBorders(unittest.TestCase):
     def test_a_country_that_never_moved_keeps_its_exact_zone(self):
         """Colorado 1950: the reference city of the polygon zone (Denver) was
         in the same country, so the geographically exact zone stands."""
-        resolved = derive_timezone(
+        resolved = resolve_timezone(
             Location(latitude=39.74, longitude=-104.99), dt.datetime(1950, 6, 15, 12, 0)
         )
         self.assertEqual(resolved.key, "America/Denver")
@@ -86,7 +86,7 @@ class TestHistoricalBorders(unittest.TestCase):
         What that zone does to the birth time is checked in
         test_timezone_handling.
         """
-        resolved = derive_timezone(
+        resolved = resolve_timezone(
             Location(latitude=52.37, longitude=4.90), dt.datetime(1935, 6, 15, 12, 0)
         )
         self.assertEqual(resolved.key, "Europe/Amsterdam")
@@ -94,7 +94,7 @@ class TestHistoricalBorders(unittest.TestCase):
 
 class TestNamedByTheUser(unittest.TestCase):
     def test_a_chosen_zone_is_certain(self):
-        resolved = derive_timezone(
+        resolved = resolve_timezone(
             KATHMANDU, dt.datetime(1985, 6, 15, 12, 0), zone_key="Asia/Kathmandu"
         )
         self.assertEqual(resolved.key, "Asia/Kathmandu")
@@ -102,7 +102,7 @@ class TestNamedByTheUser(unittest.TestCase):
         self.assertIs(resolved.derivation, TimezoneDerivation.CERTAIN)
 
     def test_a_user_provided_offset_is_kept_as_an_offset(self):
-        resolved = derive_timezone(
+        resolved = resolve_timezone(
             KATHMANDU,
             dt.datetime(1985, 6, 15, 12, 0),
             offset=dt.timedelta(hours=5, minutes=45),
@@ -114,14 +114,14 @@ class TestNamedByTheUser(unittest.TestCase):
     def test_a_user_provided_offset_is_never_longitude_based(self):
         """An offset someone provided is a clock they meant, even where a derived
         one at the same place would have come from longitude."""
-        resolved = derive_timezone(
+        resolved = resolve_timezone(
             PACIFIC, dt.datetime(1900, 1, 1, 12, 0), offset=dt.timedelta(hours=-9)
         )
         self.assertFalse(resolved.is_longitude_based)
 
     def test_zone_and_offset_together_are_refused(self):
         with self.assertRaises(ValueError):
-            derive_timezone(
+            resolve_timezone(
                 KATHMANDU,
                 dt.datetime(1985, 6, 15, 12, 0),
                 zone_key="Asia/Kathmandu",
@@ -129,7 +129,7 @@ class TestNamedByTheUser(unittest.TestCase):
             )
 
     def test_summer_time_answer_is_carried_through(self):
-        resolved = derive_timezone(
+        resolved = resolve_timezone(
             BERLIN, dt.datetime(1985, 9, 29, 2, 30), on_summer_time=True
         )
         self.assertTrue(resolved.on_summer_time)
@@ -138,14 +138,14 @@ class TestNamedByTheUser(unittest.TestCase):
         """A birth time with no repeated hour to resolve never records an
         answer, even if one was passed - it would misread as an ambiguity
         that got resolved."""
-        resolved = derive_timezone(
+        resolved = resolve_timezone(
             BERLIN, dt.datetime(1985, 6, 15, 12, 0), on_summer_time=True
         )
         self.assertIsNone(resolved.on_summer_time)
 
     def test_summer_time_answer_is_dropped_for_a_fixed_offset(self):
         """A fixed offset never has a repeated hour to disambiguate."""
-        resolved = derive_timezone(
+        resolved = resolve_timezone(
             KATHMANDU,
             dt.datetime(1985, 6, 15, 12, 0),
             offset=dt.timedelta(hours=5, minutes=45),
@@ -157,20 +157,20 @@ class TestNamedByTheUser(unittest.TestCase):
 class TestSuppliedTimezoneIsChecked(unittest.TestCase):
     def test_impossible_offset_is_refused(self):
         with self.assertRaises(TimezoneOffsetOutOfRangeError):
-            derive_timezone(
+            resolve_timezone(
                 BERLIN, dt.datetime(1985, 6, 15, 12, 0), offset=dt.timedelta(hours=22)
             )
 
     def test_offset_far_from_the_birthplace_is_refused(self):
         with self.assertRaises(TimezoneLocationMismatchError):
-            derive_timezone(
+            resolve_timezone(
                 BERLIN, dt.datetime(1985, 6, 15, 12, 0), offset=dt.timedelta(hours=-4)
             )
 
     def test_a_derived_timezone_is_not_checked(self):
         """It came from the place, so it agrees with it by construction - and
         a nautical zone would fail the solar check that a typed one gets."""
-        derive_timezone(PACIFIC, dt.datetime(1900, 1, 1, 12, 0))
+        resolve_timezone(PACIFIC, dt.datetime(1900, 1, 1, 12, 0))
 
 
 class TestSolarGapBounds(unittest.TestCase):
@@ -187,16 +187,16 @@ class TestSolarGapBounds(unittest.TestCase):
         """At 0 deg longitude solar time is about UTC, so a UTC-4 clock is 4 h
         behind."""
         with self.assertRaisesRegex(ValueError, "behind"):
-            derive_timezone(self.GREENWICH, self.BIRTH, offset=dt.timedelta(hours=-4))
+            resolve_timezone(self.GREENWICH, self.BIRTH, offset=dt.timedelta(hours=-4))
 
     def test_far_ahead_is_refused(self):
         """The same place on a UTC+4 clock: 4 h ahead, over the +3.5 h bound."""
         with self.assertRaisesRegex(ValueError, "ahead"):
-            derive_timezone(self.GREENWICH, self.BIRTH, offset=dt.timedelta(hours=4))
+            resolve_timezone(self.GREENWICH, self.BIRTH, offset=dt.timedelta(hours=4))
 
     def test_moderately_behind_is_accepted(self):
         """1.5 h behind solar is rare but plausible, so it stays allowed."""
-        resolved = derive_timezone(
+        resolved = resolve_timezone(
             self.GREENWICH, self.BIRTH, offset=dt.timedelta(hours=-1, minutes=-30)
         )
         self.assertEqual(resolved.offset_seconds, -5400)
@@ -204,7 +204,7 @@ class TestSolarGapBounds(unittest.TestCase):
     def test_a_real_wide_zone_is_accepted(self):
         """Urumqi keeps Beijing time, UTC+8 against about 5.8 h of solar time.
         That is the widest mismatch a real clock makes, and it must pass."""
-        resolved = derive_timezone(
+        resolved = resolve_timezone(
             Location(latitude=43.8256, longitude=87.6168),
             self.BIRTH,
             zone_key="Asia/Shanghai",
@@ -217,9 +217,9 @@ class TestSolarGapBounds(unittest.TestCase):
         skips the check, so the bound is compared against the gap itself."""
         location = Location(latitude=76.7667, longitude=-18.6667)
         birth = dt.datetime(1950, 1, 15, 12, 0)
-        resolved = derive_timezone(location, birth, zone_key="America/Danmarkshavn")
+        resolved = resolve_timezone(location, birth, zone_key="America/Danmarkshavn")
         gap = offset_solar_gap_hours(
-            resolve_local_time(birth, resolved.tzinfo, location), location
+            localize_naive_time(birth, resolved.tzinfo, location), location
         )
         self.assertLess(gap, 0)
         self.assertGreater(gap, OFFSET_BEHIND_SOLAR_LIMIT_HOURS)
@@ -229,9 +229,9 @@ class TestSolarGapBounds(unittest.TestCase):
         bound. Above LATITUDE_LIMIT the day starts at a fixed hour, so the gap
         stops mattering and the check is not made."""
         location = Location(latitude=-89.9, longitude=0.0)
-        resolved = derive_timezone(location, self.BIRTH, zone_key="Pacific/Auckland")
+        resolved = resolve_timezone(location, self.BIRTH, zone_key="Pacific/Auckland")
         gap = offset_solar_gap_hours(
-            resolve_local_time(self.BIRTH, resolved.tzinfo, location), location
+            localize_naive_time(self.BIRTH, resolved.tzinfo, location), location
         )
         self.assertGreater(abs(gap), OFFSET_AHEAD_SOLAR_LIMIT_HOURS)
 
@@ -239,7 +239,7 @@ class TestSolarGapBounds(unittest.TestCase):
         """+22 h at longitude -30 wraps round to almost no solar gap, so only
         the offset range catches this typo for -2."""
         with self.assertRaisesRegex(ValueError, "outside the real-timezone range"):
-            derive_timezone(
+            resolve_timezone(
                 Location(latitude=45.0, longitude=-30.0),
                 self.BIRTH,
                 offset=dt.timedelta(hours=22),
@@ -260,14 +260,14 @@ class TestSolarGapBounds(unittest.TestCase):
         )
         for offset, location in cases:
             with self.subTest(offset=offset, longitude=location.longitude):
-                resolved = derive_timezone(location, self.BIRTH, offset=offset)
+                resolved = resolve_timezone(location, self.BIRTH, offset=offset)
                 self.assertEqual(resolved.offset_seconds, offset.total_seconds())
 
     def test_summer_time_does_not_count_toward_the_gap(self):
         """Kashgar in summer 1988 sat on China's DST clock, UTC+9, about 3.9 h
         ahead of solar - over the bound if DST counted. The gap is measured
         against standard time, so the birth is accepted."""
-        resolved = derive_timezone(
+        resolved = resolve_timezone(
             Location(latitude=39.4704, longitude=75.9898),
             dt.datetime(1988, 7, 1, 12, 0),
             zone_key="Asia/Shanghai",
@@ -286,27 +286,27 @@ class TestPreStandardTimeEra(unittest.TestCase):
 
     def test_a_zone_from_the_wrong_side_of_the_world_is_refused(self):
         with self.assertRaises(TimezoneLocationMismatchError):
-            derive_timezone(self.ROME, self.BIRTH, zone_key="Asia/Manila")
+            resolve_timezone(self.ROME, self.BIRTH, zone_key="Asia/Manila")
 
     def test_the_zone_of_the_birthplace_is_accepted(self):
-        resolved = derive_timezone(self.MANILA, self.BIRTH, zone_key="Asia/Manila")
+        resolved = resolve_timezone(self.MANILA, self.BIRTH, zone_key="Asia/Manila")
         self.assertEqual(resolved.key, "Asia/Manila")
 
 
-class TestPlaceFactsAreSettledHere(unittest.TestCase):
+class TestPlaceFactsAreResolvedHere(unittest.TestCase):
     def test_modern_zone_is_recorded_alongside_the_historical_one(self):
         """For a pre-1970 birth the two differ, which is what explains an
         unexpected zone to whoever asks about it later."""
-        resolved = derive_timezone(LVIV, dt.datetime(1940, 6, 15, 12, 0))
+        resolved = resolve_timezone(LVIV, dt.datetime(1940, 6, 15, 12, 0))
         self.assertEqual(resolved.key, "Europe/Warsaw")
         self.assertEqual(resolved.modern_zone_key, "Europe/Kyiv")
 
     def test_gregorian_adoption_date_is_recorded(self):
-        resolved = derive_timezone(LVIV, dt.datetime(1940, 6, 15, 12, 0))
+        resolved = resolve_timezone(LVIV, dt.datetime(1940, 6, 15, 12, 0))
         self.assertEqual(resolved.gregorian_adoption_date, dt.date(1918, 2, 14))
 
     def test_birth_details_are_recorded_for_the_binding(self):
-        resolved = derive_timezone(BERLIN, dt.datetime(1985, 6, 15, 12, 0))
+        resolved = resolve_timezone(BERLIN, dt.datetime(1985, 6, 15, 12, 0))
         self.assertEqual(resolved.for_latitude, BERLIN.latitude)
         self.assertEqual(resolved.for_longitude, BERLIN.longitude)
         self.assertEqual(resolved.for_birth_date, dt.date(1985, 6, 15))

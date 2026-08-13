@@ -61,14 +61,14 @@ CALCULATION_NOTES = {
         note_type=CalculationNoteType.CAUTION,
         message="Local birth time is ambiguous due to a clock change and was "
         "guessed as the later (standard-time) reading; pass on_summer_time to "
-        "zone_derivation.derive_timezone to say which reading is correct, as it "
+        "zone_derivation.resolve_timezone to say which reading is correct, as it "
         "can shift the hour.",
     ),
     CalculationNote.AMBIGUOUS_LOCAL_TIME_RESOLVED: CalculationNoteItem(
         note=CalculationNote.AMBIGUOUS_LOCAL_TIME_RESOLVED,
         note_type=CalculationNoteType.NOTICE,
         message="Local birth time was ambiguous due to a clock change; resolved "
-        "using the on_summer_time value given to zone_derivation.derive_timezone.",
+        "using the on_summer_time value given to zone_derivation.resolve_timezone.",
     ),
     CalculationNote.LOCAL_MEAN_TIME: CalculationNoteItem(
         note=CalculationNote.LOCAL_MEAN_TIME,
@@ -91,7 +91,7 @@ CALCULATION_NOTES = {
         message="The timezone could not be determined with certainty from the "
         "birth location and date; the best historically recorded regional "
         "time was used. If the local legal time is known, pass it to "
-        "zone_derivation.derive_timezone as zone_key or offset.",
+        "zone_derivation.resolve_timezone as zone_key or offset.",
     ),
     CalculationNote.TIMEZONE_BORDERS_UNCERTAIN: CalculationNoteItem(
         note=CalculationNote.TIMEZONE_BORDERS_UNCERTAIN,
@@ -99,7 +99,7 @@ CALCULATION_NOTES = {
         message="Borders around the birth place changed close to the birth "
         "year, so even the country whose time applied is uncertain; the best "
         "historically recorded regional time was used. If the local legal time "
-        "is known, pass it to zone_derivation.derive_timezone as zone_key or "
+        "is known, pass it to zone_derivation.resolve_timezone as zone_key or "
         "offset.",
     ),
 }
@@ -171,13 +171,13 @@ def input_notes(
 ) -> tuple[CalculationNoteItem, ...]:
     """Notes that follow from the birth details alone.
 
-    These are known as soon as the timezone is settled. A form can show them
+    These are known as soon as the timezone is resolved. A form can show them
     while the user is still entering data. Notes that need the calculation
     itself are not here.
 
     birth_datetime is the naive local time, as entered.
 
-    The timezone must be the one derived for this location and date. A
+    The timezone must be the one worked out for this location and date. A
     mismatch raises StaleTimezoneError: forms call this without a Subject, so
     nothing else compares the two.
     """

@@ -28,7 +28,7 @@ from .namkha_calculator import (
     calculate_namkha,
 )
 
-# derive_timezone is deliberately not re-exported here: it lives in
+# resolve_timezone is deliberately not re-exported here: it lives in
 # namkha_calculator.zone_derivation, and importing it from there is what keeps
 # the calculation path clear of the derivation code.
 

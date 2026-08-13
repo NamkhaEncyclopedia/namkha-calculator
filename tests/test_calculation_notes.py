@@ -18,7 +18,7 @@ from namkha_calculator.zone_derivation.gregorian import (
     gregorian_adoption_date,
 )
 from namkha_calculator.namkha_calculator import NamkhaType, calculate_namkha
-from namkha_calculator.zone_derivation import derive_timezone
+from namkha_calculator.zone_derivation import resolve_timezone
 
 # Stuttgart; Losar times calculated from the calendar code (Europe/Berlin, CET):
 #   official      Losar (Tibetan year 2151) = 2024-02-10 07:07:39
@@ -40,7 +40,7 @@ def _subject(
         gender=Gender.MALE,
         birth_datetime=birth,
         birth_location=location,
-        resolved_timezone=derive_timezone(
+        resolved_timezone=resolve_timezone(
             location, birth, zone_key=zone_key, on_summer_time=on_summer_time
         ),
         name=None,
@@ -338,7 +338,7 @@ class TestInputNotesReachEveryNote(unittest.TestCase):
         A note no case reaches is a note nothing here tests."""
         seen = set()
         for location, birth, on_summer_time in self.CASES.values():
-            resolved = derive_timezone(location, birth, on_summer_time=on_summer_time)
+            resolved = resolve_timezone(location, birth, on_summer_time=on_summer_time)
             seen.update(item.note for item in input_notes(resolved, location, birth))
         self.assertEqual(
             seen,
@@ -368,22 +368,22 @@ class TestInputNotesRefusesAnotherPlace(unittest.TestCase):
     BIRTH = datetime(1985, 6, 15, 12, 0)
 
     def test_polar_timezone_with_a_temperate_location(self):
-        resolved = derive_timezone(self.SVALBARD, self.BIRTH)
+        resolved = resolve_timezone(self.SVALBARD, self.BIRTH)
         with self.assertRaises(StaleTimezoneError):
             input_notes(resolved, self.BERLIN, self.BIRTH)
 
     def test_temperate_timezone_with_a_polar_location(self):
-        resolved = derive_timezone(self.BERLIN, self.BIRTH)
+        resolved = resolve_timezone(self.BERLIN, self.BIRTH)
         with self.assertRaises(StaleTimezoneError):
             input_notes(resolved, self.SVALBARD, self.BIRTH)
 
     def test_another_date(self):
-        resolved = derive_timezone(self.BERLIN, self.BIRTH)
+        resolved = resolve_timezone(self.BERLIN, self.BIRTH)
         with self.assertRaises(StaleTimezoneError):
             input_notes(resolved, self.BERLIN, datetime(1985, 6, 16, 12, 0))
 
     def test_the_place_it_was_derived_for_is_accepted(self):
-        resolved = derive_timezone(self.SVALBARD, self.BIRTH)
+        resolved = resolve_timezone(self.SVALBARD, self.BIRTH)
         notes = input_notes(resolved, self.SVALBARD, self.BIRTH)
         self.assertIn(CalculationNote.HIGH_LATITUDE, {item.note for item in notes})
 

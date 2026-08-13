@@ -16,7 +16,7 @@ from functools import lru_cache
 from typing import Protocol
 
 from .astrology import Animal, Element
-from .localization import resolve_local_time, shift_past_clock_gap
+from .localization import localize_naive_time, shift_past_clock_gap
 from .tz import HIGH_LATITUDE_DAY_START_HOUR, LATITUDE_LIMIT, Location
 from .skyfield_calculations import (
     ephemeris_date_range,
@@ -238,13 +238,13 @@ def day_start(date: dt.date, tz: dt.tzinfo, location: Location) -> dt.datetime:
                 f"no dawn on {date}: timezone offset is too far behind the "
                 "location's mean solar time"
             )
-        local_tz = resolve_local_time(
+        local_tz = localize_naive_time(
             dt.datetime.combine(date, dt.time(0, 0, 0)), tz, location
         ).tzinfo
         return dawn.astimezone(local_tz)
 
     naive_dt = dt.datetime.combine(date, dt.time(HIGH_LATITUDE_DAY_START_HOUR, 0, 0))
-    return shift_past_clock_gap(resolve_local_time(naive_dt, tz, location))
+    return shift_past_clock_gap(localize_naive_time(naive_dt, tz, location))
 
 
 def tibetan_day_date(date_time: dt.datetime, location: Location) -> dt.date:
