@@ -11,6 +11,7 @@ from namkha_calculator.calculation_notes import (
     input_notes,
     period_boundary_note,
     pre_gregorian_note,
+    timezone_label,
 )
 from namkha_calculator.methods import CalculationMethod
 from namkha_calculator.zone_derivation.gregorian import (
@@ -386,6 +387,69 @@ class TestInputNotesRefusesAnotherPlace(unittest.TestCase):
         resolved = resolve_timezone(self.SVALBARD, self.BIRTH)
         notes = input_notes(resolved, self.SVALBARD, self.BIRTH)
         self.assertIn(CalculationNote.HIGH_LATITUDE, {item.note for item in notes})
+
+
+class TestTimezoneLabel(unittest.TestCase):
+    """What timezone_label returns for each shape a resolved timezone takes."""
+
+    # label, location, naive birth time, offset the user gave, expected name
+    _CASES = (
+        (
+            "named civil zone",
+            Location(latitude=52.52, longitude=13.40),
+            datetime(1985, 3, 15, 14, 30),
+            None,
+            "Europe/Berlin",
+        ),
+        (
+            "nautical zone in open water",
+            Location(latitude=0.0, longitude=-150.0),
+            datetime(1900, 1, 1, 12, 0),
+            None,
+            "mean solar time",
+        ),
+        (
+            "offset the user gave",
+            Location(latitude=27.7172, longitude=85.3240),
+            datetime(2000, 1, 1, 12, 0),
+            timedelta(hours=5, minutes=45),
+            None,
+        ),
+        (
+            "pre-standard-time era",
+            Location(latitude=64.5401, longitude=40.5433),
+            datetime(1849, 12, 15, 5, 0),
+            None,
+            "mean solar time",
+        ),
+    )
+
+    def test_each_shape_gets_its_name(self):
+        for label, location, birth, offset, expected in self._CASES:
+            with self.subTest(label):
+                resolved = resolve_timezone(location, birth, offset=offset)
+                self.assertEqual(timezone_label(resolved, birth), expected)
+
+    def test_the_label_agrees_with_the_note(self):
+        # Both read is_mean_solar_birth, so a birth named "mean solar time"
+        # carries the LOCAL_MEAN_TIME note, and no other birth does.
+        for label, location, birth, offset, _expected in self._CASES:
+            with self.subTest(label):
+                resolved = resolve_timezone(location, birth, offset=offset)
+                notes = {item.note for item in input_notes(resolved, location, birth)}
+                self.assertEqual(
+                    timezone_label(resolved, birth) == "mean solar time",
+                    CalculationNote.LOCAL_MEAN_TIME in notes,
+                )
+
+    def test_a_mean_solar_birth_is_not_named_after_its_key(self):
+        # The defect this closes: the birth line named Europe/Moscow next to the
+        # offset of Arkhangelsk mean solar time.
+        location = Location(latitude=64.5401, longitude=40.5433)
+        birth = datetime(1849, 12, 15, 5, 0)
+        resolved = resolve_timezone(location, birth)
+        self.assertEqual(resolved.key, "Europe/Moscow")
+        self.assertEqual(timezone_label(resolved, birth), "mean solar time")
 
 
 if __name__ == "__main__":

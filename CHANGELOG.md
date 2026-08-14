@@ -36,6 +36,13 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `CalculationNoteType` is re-exported at the package root. It was already the
   type of `CalculationNoteItem.note_type`, so reading a note's severity meant
   importing from `calculation_notes` directly.
+- `timezone_label(resolved_timezone, birth_datetime)` names the timezone a
+  calculation used, or returns `None` when the user gave a plain UTC offset and
+  the offset is the whole answer. It answers a question `str(tzinfo)` could not:
+  a birth before its zone's standard time began keeps that zone's key while the
+  calculation runs on the birth longitude's mean solar time, so the key names a
+  zone that did not produce the offset in use. The label shares its test for
+  that with the `LOCAL_MEAN_TIME` note, so the two never disagree.
 
 ### Changed
 

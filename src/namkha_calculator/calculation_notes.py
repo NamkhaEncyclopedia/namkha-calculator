@@ -1,5 +1,19 @@
 """
-Warnings and implications that may occur in the calculation.
+Implications and warnings that may occur in the calculation.
+
+Three parts:
+
+Vocabulary. CalculationNote names each condition, CalculationNoteType grades it
+as a notice or a caution, and CALCULATION_NOTES holds the text.
+
+Note builders. One function per condition, each returning a tuple so callers can
+join the results. input_notes gathers the conditions that follow from the birth
+details alone, so a form can show them before any calculation runs.
+period_boundary_note needs the result, so it stays outside input_notes.
+
+Timezone label. timezone_label names the timezone on a birth line. It recognizes
+mean solar time with the same check as the LOCAL_MEAN_TIME note, so the label
+and the note never disagree.
 """
 
 import datetime as dt
@@ -7,7 +21,13 @@ from dataclasses import dataclass
 from enum import Enum, auto, unique
 
 from .localization import is_ambiguous_local_time, uses_local_mean_time
-from .tz import LATITUDE_LIMIT, Location, ResolvedTimezone, TimezoneDerivation
+from .tz import (
+    LATITUDE_LIMIT,
+    _MEAN_SOLAR_TZNAME,
+    Location,
+    ResolvedTimezone,
+    TimezoneDerivation,
+)
 
 # Birth time closer than this to a period boundary triggers a PERIOD_BOUNDARY note.
 PERIOD_BOUNDARY_THRESHOLD = dt.timedelta(minutes=5)
@@ -136,15 +156,51 @@ def local_time_dst_note(
     return ()
 
 
+def is_mean_solar_birth(
+    birth_datetime: dt.datetime, tz: dt.tzinfo, longitude_based: bool
+) -> bool:
+    """Whether the birth offset comes from longitude alone, not from a civil clock.
+
+    Either the derived timezone is a nautical or mean solar one, which
+    longitude_based records, or the birth falls in the zone's pre-standard-time
+    era. Only the first is visible in a ResolvedTimezone, so the birth date is
+    needed as well.
+
+    local_mean_time_note and timezone_label both call this, so the note and the
+    label always agree.
+    """
+    return longitude_based or uses_local_mean_time(birth_datetime, tz)
+
+
 def local_mean_time_note(
-    birth_datetime: dt.datetime, tz: dt.tzinfo, longitude_based: bool = False
+    birth_datetime: dt.datetime, tz: dt.tzinfo, longitude_based: bool
 ) -> tuple[CalculationNoteItem, ...]:
-    """Notice when the birth offset is longitude-based rather than a civil
-    standard clock: the pre-standard-time (LMT) era, or a location-derived
-    nautical/mean-solar zone (longitude_based)."""
-    if longitude_based or uses_local_mean_time(birth_datetime, tz):
+    """Notice when the birth offset comes from longitude alone rather than from
+    a civil standard clock."""
+    if is_mean_solar_birth(birth_datetime, tz, longitude_based):
         return (CALCULATION_NOTES[CalculationNote.LOCAL_MEAN_TIME],)
     return ()
+
+
+def timezone_label(
+    resolved_timezone: ResolvedTimezone, birth_datetime: dt.datetime
+) -> str | None:
+    """Name for the timezone, or None when it has no name.
+
+    None means the user gave a plain UTC offset, so the offset is the whole
+    answer and a caller shows it alone.
+
+    Mean solar time is checked before the key, because the key can name a zone
+    that did not produce the offset in use: an 1849 Arkhangelsk birth resolves to
+    Europe/Moscow but runs on Arkhangelsk mean solar time.
+    """
+    if is_mean_solar_birth(
+        birth_datetime,
+        resolved_timezone.tzinfo,
+        resolved_timezone.is_longitude_based,
+    ):
+        return _MEAN_SOLAR_TZNAME
+    return resolved_timezone.key
 
 
 def pre_gregorian_note(
