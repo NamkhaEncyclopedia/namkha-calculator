@@ -37,8 +37,8 @@ pre-commit run --all-files
 
 **Types and data**
 - `Element` and `Animal` are `str` enums – values are English names consistent with Namkhai Norbu tradition.
-- `Subject.birth_datetime` must be naive; pass *Pytz* timezone separately as `birth_timezone`.
-- New public types go in `core/__init__.py`.
+- `Subject.birth_datetime` must be naive; the timezone goes in `resolved_timezone`, built by `zone_derivation.resolve_timezone`.
+- New public types go in `src/namkha_calculator/__init__.py`, which re-exports the public surface.
 
 ## AI usage
 

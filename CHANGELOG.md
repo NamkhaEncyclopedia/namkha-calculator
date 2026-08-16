@@ -25,12 +25,10 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   `TimezoneOffsetOutOfRangeError` and `TimezoneLocationMismatchError`. All are
   ValueErrors, so existing catchers keep working, but callers can now tell the
   failures apart without matching on message text.
-
 - `input_notes(resolved_timezone, location, birth_datetime)` returns the notes
-  that follow from the birth details alone, without running a calculation. A
-  form can show them while the user is still entering data instead of leaving
-  them for the finished sheet. Notes that need the calculation itself, such as
-  `PERIOD_BOUNDARY`, are not included. It takes the birth location and calls
+  that follow from the birth details alone, without running a calculation, so a
+  caller can show them as soon as the timezone is resolved. Notes that need the
+  calculation itself, such as `PERIOD_BOUNDARY`, are not included. It takes the birth location and calls
   `assert_binds`, so a timezone worked out for another place or date raises
   `StaleTimezoneError` instead of deciding the high-latitude note.
 - `CalculationNoteType` is re-exported at the package root. It was already the
@@ -72,6 +70,11 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   `zone_key`, `offset` and `on_summer_time` arguments. Code matching on the
   message text has to change; the note identities are the same.
 
+- `timezonefinder` is pinned to `>=8.2.4,<9.0.0`, from `>=6.5`. The polygon
+  lookup this package uses works on 6.x as well, but 8.2.4 is the only version
+  the tests run against, and its boundary data decides which zone a coordinate
+  gets. The upper bound keeps a major release from changing that answer without
+  anyone noticing.
 - `calculation_notes.pre_gregorian_note` takes the birth region's Gregorian
   adoption date, as `gregorian_adoption_date`, instead of a `Location`. It no
   longer looks the date up; the resolved timezone already carries it. The
