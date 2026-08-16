@@ -321,9 +321,9 @@ def validate_timezone_for_location(
         offset_h = standard_offset_hours(raw_local)
         if not UTC_OFFSET_MIN_HOURS <= offset_h <= UTC_OFFSET_MAX_HOURS:
             raise TimezoneOffsetOutOfRangeError(
-                f"birth_timezone UTC offset {offset_h:+.1f} h is outside the "
+                f"UTC offset {offset_h:+.1f} h is outside the "
                 f"real-timezone range [{UTC_OFFSET_MIN_HOURS:+d}, "
-                f"{UTC_OFFSET_MAX_HOURS:+d}] h; check the UTC offset"
+                f"{UTC_OFFSET_MAX_HOURS:+d}] h; check the offset"
             )
     if abs(location.latitude) >= LATITUDE_LIMIT:
         return
@@ -331,9 +331,9 @@ def validate_timezone_for_location(
     if not OFFSET_BEHIND_SOLAR_LIMIT_HOURS <= gap <= OFFSET_AHEAD_SOLAR_LIMIT_HOURS:
         direction = "behind" if gap < 0 else "ahead of"
         raise TimezoneLocationMismatchError(
-            "birth_timezone offset is inconsistent with birth_location longitude "
+            "the timezone does not fit the birth longitude "
             f"(clock {abs(gap):.1f} h {direction} local mean solar time; allowed "
             f"{OFFSET_BEHIND_SOLAR_LIMIT_HOURS:+.1f} to "
             f"{OFFSET_AHEAD_SOLAR_LIMIT_HOURS:+.1f} h); "
-            "check the location and UTC offset"
+            "check the birth place and the timezone"
         )

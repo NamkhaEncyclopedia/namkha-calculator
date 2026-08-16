@@ -8,7 +8,7 @@ as a notice or a caution, and CALCULATION_NOTES holds the text.
 
 Note builders. One function per condition, each returning a tuple so callers can
 join the results. input_notes gathers the conditions that follow from the birth
-details alone, so a form can show them before any calculation runs.
+details alone, so a caller can read them before any calculation runs.
 period_boundary_note needs the result, so it stays outside input_notes.
 
 Timezone label. timezone_label names the timezone on a birth line. It recognizes
@@ -227,15 +227,14 @@ def input_notes(
 ) -> tuple[CalculationNoteItem, ...]:
     """Notes that follow from the birth details alone.
 
-    These are known as soon as the timezone is resolved. A form can show them
-    while the user is still entering data. Notes that need the calculation
-    itself are not here.
+    These are known as soon as the timezone is resolved. Notes that need the
+    calculation itself are not here.
 
     birth_datetime is the naive local time, as entered.
 
     The timezone must be the one worked out for this location and date. A
-    mismatch raises StaleTimezoneError: forms call this without a Subject, so
-    nothing else compares the two.
+    mismatch raises StaleTimezoneError: this runs without a Subject, so nothing
+    else compares the two.
     """
     resolved_timezone.assert_binds(location, birth_datetime)
     notes: list[CalculationNoteItem] = []
