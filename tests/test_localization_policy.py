@@ -18,14 +18,15 @@ resolve_timezone is deliberately absent from the package's __init__."""
 
 import ast
 import unittest
-from collections import deque
 from pathlib import Path
+
+import grimp
 
 PACKAGE_DIR = Path(__file__).parent.parent / "src" / "namkha_calculator"
 PACKAGE_NAME = "namkha_calculator"
 
 # The subpackage that works out which timezone applied at a birth.
-DERIVATION_PACKAGE = "zone_derivation"
+DERIVATION_PACKAGE = f"{PACKAGE_NAME}.zone_derivation"
 
 # (file relative to package, enclosing function) allowed to attach a tzinfo
 # via datetime.replace(tzinfo=...). Every entry needs a justification here.
@@ -122,114 +123,49 @@ def _present_sites(is_match) -> set:
     return {(rel, func_name) for rel, func_name, _ in _found_sites(is_match)}
 
 
-def _module_name(path: Path) -> str:
-    """Dotted name of a source file below the package: "tz" for tz/__init__.py,
-    "aspects.year" for aspects/year.py, "" for the package's own __init__.py."""
-    parts = path.relative_to(PACKAGE_DIR).with_suffix("").parts
-    if parts[-1] == "__init__":
-        parts = parts[:-1]
-    return ".".join(parts)
+def _import_graph() -> grimp.ImportGraph:
+    """The package's import graph, built by grimp from the source on disk.
 
-
-def _containing_package(path: Path, module: str) -> str:
-    """The package a relative import in this file counts from. For __init__.py
-    that is the module itself; for any other file it is the directory above."""
-    if path.name == "__init__.py":
-        return module
-    return module.rpartition(".")[0]
-
-
-def _resolve_relative(package: str, level: int, module: str | None) -> str:
-    """Target of a `from ...x import y`, as a dotted name below the package.
-
-    level counts the leading dots: 1 means the containing package, each further
-    dot climbs one level. A target outside the package comes back as "".
+    cache_dir=None turns grimp's cache off: the policy must read the code as it
+    is now, and a cache directory in the repository would be one more thing to
+    ignore.
     """
-    parts = package.split(".") if package else []
-    climbed = parts[: len(parts) - (level - 1)] if level > 1 else parts
-    return ".".join([*climbed, *(module.split(".") if module else [])])
-
-
-def _imported_modules(tree: ast.Module, path: Path, module: str) -> set[str]:
-    """Every module below the package that this file imports."""
-    package = _containing_package(path, module)
-    targets = set()
-    for node in ast.walk(tree):
-        if isinstance(node, ast.ImportFrom):
-            if node.level:
-                target = _resolve_relative(package, node.level, node.module)
-                # `from . import x` names submodules, not attributes.
-                if node.module is None:
-                    targets.update(
-                        f"{target}.{alias.name}" if target else alias.name
-                        for alias in node.names
-                    )
-                    continue
-            elif node.module and node.module.split(".")[0] == PACKAGE_NAME:
-                target = node.module.partition(".")[2]
-            else:
-                continue
-            targets.add(target)
-        elif isinstance(node, ast.Import):
-            targets.update(
-                alias.name.partition(".")[2]
-                for alias in node.names
-                if alias.name.split(".")[0] == PACKAGE_NAME
-            )
-    return {target for target in targets if target}
-
-
-def _import_graph() -> dict[str, set[str]]:
-    """Which package modules each package module imports."""
-    graph = {}
-    for path in sorted(PACKAGE_DIR.rglob("*.py")):
-        module = _module_name(path)
-        tree = ast.parse(path.read_text(), filename=str(path))
-        graph[module] = _imported_modules(tree, path, module)
-    return graph
-
-
-def _is_derivation(module: str) -> bool:
-    return module == DERIVATION_PACKAGE or module.startswith(f"{DERIVATION_PACKAGE}.")
+    return grimp.build_graph(PACKAGE_NAME, cache_dir=None)
 
 
 def _display(module: str) -> str:
-    """Readable name for a failure message; the package root has no name of
-    its own below the package."""
-    return module or "__init__"
+    """Readable name for a failure message: the package prefix every module
+    shares is dropped, and the package's own __init__.py is named after it."""
+    return (
+        module.removeprefix(f"{PACKAGE_NAME}.")
+        if module != PACKAGE_NAME
+        else "__init__"
+    )
 
 
 def _paths_into_derivation() -> list[str]:
     """One import chain per module outside zone_derivation that can reach it.
 
-    Walks the graph backwards from the derivation modules, so a module is
-    reported with the shortest chain that gets there.
+    Each module is reported with the shortest chain that gets there, and the
+    shortest chains come first.
     """
     graph = _import_graph()
-    importers: dict[str, set[str]] = {module: set() for module in graph}
-    for module, targets in graph.items():
-        for target in targets:
-            # Importing a subpackage's module runs that subpackage's __init__
-            # too, so the parent counts as reached. The package root is not a
-            # parent in this sense: every module is already inside it.
-            parent = target.rpartition(".")[0]
-            for reached in (target, parent) if parent else (target,):
-                if reached in importers:
-                    importers[reached].add(module)
-
-    chains = {module: [module] for module in graph if _is_derivation(module)}
-    queue = deque(chains)
+    targets = sorted(
+        module
+        for module in graph.modules
+        if module == DERIVATION_PACKAGE or module.startswith(f"{DERIVATION_PACKAGE}.")
+    )
     found = []
-    while queue:
-        module = queue.popleft()
-        for importer in sorted(importers[module]):
-            if importer in chains:
-                continue
-            chains[importer] = [importer, *chains[module]]
-            queue.append(importer)
-            if not _is_derivation(importer):
-                found.append(" -> ".join(map(_display, chains[importer])))
-    return found
+    # as_package=True counts reaching any module inside zone_derivation, and
+    # leaves out zone_derivation's own modules, which may import each other.
+    for module in graph.find_downstream_modules(DERIVATION_PACKAGE, as_package=True):
+        chains = [
+            chain
+            for target in targets
+            if (chain := graph.find_shortest_chain(module, target)) is not None
+        ]
+        found.append(" -> ".join(map(_display, min(chains, key=len))))
+    return sorted(found, key=lambda chain: (chain.count("->"), chain))
 
 
 class TestLocalizationPolicy(unittest.TestCase):
@@ -267,14 +203,26 @@ class TestLocalizationPolicy(unittest.TestCase):
         """A guard for the rule above: an empty or shallow graph would pass it
         no matter what the code imports."""
         graph = _import_graph()
-        self.assertIn("tz", graph["astrology"], "`from .tz` not resolved")
+
+        def imports(module: str) -> set[str]:
+            return graph.find_modules_directly_imported_by(f"{PACKAGE_NAME}.{module}")
+
         self.assertIn(
-            "astrology", graph["aspects.year"], "`from ..astrology` not resolved"
+            f"{PACKAGE_NAME}.tz", imports("astrology"), "`from .tz` not resolved"
         )
-        self.assertIn("tz", graph["zone_derivation.lookup"], "`from ..tz` not resolved")
         self.assertIn(
-            "tz.errors",
-            graph["zone_derivation"],
+            f"{PACKAGE_NAME}.astrology",
+            imports("aspects.year"),
+            "`from ..astrology` not resolved",
+        )
+        self.assertIn(
+            f"{PACKAGE_NAME}.tz",
+            imports("zone_derivation.lookup"),
+            "`from ..tz` not resolved",
+        )
+        self.assertIn(
+            f"{PACKAGE_NAME}.tz.errors",
+            imports("zone_derivation"),
             "`from ..tz.errors` not resolved to the submodule",
         )
 

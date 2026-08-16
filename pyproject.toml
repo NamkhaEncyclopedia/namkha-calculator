@@ -39,7 +39,8 @@ include = [
 
 [dependency-groups]
 dev = [
-    "hypothesis (>=6.152.4,<7.0.0)"
+    "hypothesis (>=6.152.4,<7.0.0)",
+    "grimp (>=3.15,<4.0.0)"
 ]
 
 [build-system]
