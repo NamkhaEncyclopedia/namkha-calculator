@@ -25,6 +25,7 @@ LVIV = Location(latitude=49.8397, longitude=24.0297)
 AARHUS = Location(latitude=56.16, longitude=10.20)
 KATHMANDU = Location(latitude=27.7172, longitude=85.3240)
 PACIFIC = Location(latitude=0.0, longitude=-140.0)
+KANTON = Location(latitude=-2.8, longitude=-171.7)
 
 
 class TestDerivedFromLocation(unittest.TestCase):
@@ -188,8 +189,12 @@ class TestSuppliedTimezoneIsChecked(unittest.TestCase):
             )
 
     def test_a_derived_timezone_is_not_checked(self):
-        """It came from the place, so it agrees with it by construction."""
-        resolve_timezone(PACIFIC, dt.datetime(1900, 1, 1, 12, 0))
+        """One zone, one place, one date, two answers: refused when the caller
+        names it, kept when the library works it out."""
+        birth = dt.datetime(1930, 6, 15, 12, 0)
+        self.assertEqual(resolve_timezone(KANTON, birth).key, "Pacific/Kanton")
+        with self.assertRaises(TimezoneLocationMismatchError):
+            resolve_timezone(KANTON, birth, zone_key="Pacific/Kanton")
 
 
 class TestSolarGapBounds(unittest.TestCase):
