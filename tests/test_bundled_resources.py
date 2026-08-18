@@ -6,7 +6,7 @@ import unittest
 from unittest import mock
 from zoneinfo import ZoneInfoNotFoundError
 
-from namkha_calculator.tz import _zone_tab_rows, zone
+from namkha_calculator.tz import _zone_tab_rows, zone, zone_keys
 from namkha_calculator.zone_derivation.historical_borders import (
     _parse_snapshot,
     _snapshot_features,
@@ -81,6 +81,22 @@ class TestIntactBundledData(unittest.TestCase):
     def test_unknown_zone_key_raises_zone_not_found(self):
         with self.assertRaises(ZoneInfoNotFoundError):
             zone("No/Such/Zone")
+
+    def test_every_bundled_key_loads(self):
+        """zone() takes only letters, digits, underscore, plus, minus and "/".
+        A tzdb release that brings a key with any other character would make a
+        real zone unloadable, so every bundled key is loaded here."""
+        for key in zone_keys():
+            with self.subTest(key=key):
+                self.assertEqual(zone(key).key, key)
+
+    def test_zone_key_cannot_leave_the_bundled_tree(self):
+        """A key becomes a path under the bundled tzdata. Without the character
+        check, ".." segments would read any file the process can open."""
+        for key in ("../" * 14 + "etc/passwd", "Europe/../../secret", "./Europe"):
+            with self.subTest(key=key):
+                with self.assertRaises(ZoneInfoNotFoundError):
+                    zone(key)
 
     def test_unknown_snapshot_year_raises_value_error(self):
         with self.assertRaises(ValueError):

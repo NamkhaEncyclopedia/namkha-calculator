@@ -94,3 +94,12 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   `localization` or `zone_derivation`, and the names re-exported at the package
   root are unchanged. Only code reaching into the module paths directly is
   affected.
+
+### Security
+
+- `zone()` takes only keys made of letters, digits, underscore, plus, minus and
+  `/`, and raises `ZoneInfoNotFoundError` for anything else. The key becomes a
+  path under the bundled tzdata, so a key holding `..` opened a file outside
+  that tree. Nothing was read back to the caller, but the error told apart a
+  path that exists from one that does not. Callers passing real IANA keys see
+  no change.

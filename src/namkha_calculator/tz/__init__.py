@@ -71,6 +71,9 @@ class _KeyedZoneInfo(ZoneInfo):
         return zone, (self.key,)
 
 
+_ZONE_KEY_RE = re.compile(r"[A-Za-z0-9_+/-]+")
+
+
 @lru_cache(maxsize=None)
 def zone(key: str) -> ZoneInfo:
     """IANA timezone loaded from the bundled zoneinfo tree.
@@ -80,7 +83,14 @@ def zone(key: str) -> ZoneInfo:
     bundled tree (built by tools/build_tzdata.py) includes backzone data,
     so zones merged by the default tzdb build keep their own real pre-1970
     histories (e.g. Europe/Amsterdam, Europe/Stockholm).
+
+    A key may hold only letters, digits, underscore, plus, minus and "/",
+    because it becomes a path under the bundled tree. Any other character
+    raises ZoneInfoNotFoundError, the same as a well-formed key no bundled
+    zone answers to.
     """
+    if not _ZONE_KEY_RE.fullmatch(key):
+        raise ZoneInfoNotFoundError(f"no IANA timezone found for key {key!r}")
     resource = importlib.resources.files(DATA_PACKAGE).joinpath(
         "tzdata", *key.split("/")
     )
