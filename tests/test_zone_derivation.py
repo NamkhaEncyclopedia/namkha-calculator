@@ -13,12 +13,16 @@ from namkha_calculator.tz.errors import (
 from namkha_calculator.zone_derivation import (
     OFFSET_AHEAD_SOLAR_LIMIT_HOURS,
     OFFSET_BEHIND_SOLAR_LIMIT_HOURS,
+    _reference_coordinates,
+    _zone_key_within_birth_country,
     resolve_timezone,
     offset_solar_gap_hours,
 )
+from namkha_calculator.zone_derivation.historical_borders import polity_index
 
 BERLIN = Location(latitude=52.52, longitude=13.405)
 LVIV = Location(latitude=49.8397, longitude=24.0297)
+AARHUS = Location(latitude=56.16, longitude=10.20)
 KATHMANDU = Location(latitude=27.7172, longitude=85.3240)
 PACIFIC = Location(latitude=0.0, longitude=-140.0)
 
@@ -90,6 +94,22 @@ class TestHistoricalBorders(unittest.TestCase):
             Location(latitude=52.37, longitude=4.90), dt.datetime(1935, 6, 15, 12, 0)
         )
         self.assertEqual(resolved.key, "Europe/Amsterdam")
+
+    def test_mainland_denmark_keeps_danish_time(self):
+        resolved = resolve_timezone(AARHUS, dt.datetime(1938, 6, 15, 12, 0))
+        self.assertEqual(resolved.key, "Europe/Copenhagen")
+
+    def test_a_reference_city_the_map_cannot_place_is_kept(self):
+        """Copenhagen's zone.tab coordinates lie on a coast, and the 1938
+        snapshot places them in no country. A city the map cannot place has not
+        been placed abroad, so it does not rule out the modern zone."""
+        copenhagen = _reference_coordinates()["Europe/Copenhagen"]
+        self.assertIsNone(polity_index(*copenhagen, 1938))
+        self.assertIsNotNone(polity_index(AARHUS.latitude, AARHUS.longitude, 1938))
+        self.assertEqual(
+            _zone_key_within_birth_country(AARHUS, "Europe/Copenhagen", 1938),
+            "Europe/Copenhagen",
+        )
 
 
 class TestNamedByTheUser(unittest.TestCase):

@@ -145,13 +145,20 @@ def _zone_key_within_birth_country(
     another country's time history. Without a usable country match (open
     sea, unmapped area, a country holding no reference city) the modern
     polygon zone is kept.
+
+    A reference city the map places in no country is kept as well. Many of
+    them sit on a coast, where the zone.tab coordinate falls just outside the
+    coarse snapshot polygons. The map saying nothing about a city is not the
+    map saying the city lay abroad, so it cannot rule the modern zone out.
     """
     birth_country = polity_index(location.latitude, location.longitude, snapshot)
     if birth_country is None:
         return modern_key
     reference = _reference_coordinates().get(modern_key)
-    if reference is not None and polity_index(*reference, snapshot) == birth_country:
-        return modern_key
+    if reference is not None:
+        reference_country = polity_index(*reference, snapshot)
+        if reference_country is None or reference_country == birth_country:
+            return modern_key
     candidates = [
         city
         for city in _reference_cities()

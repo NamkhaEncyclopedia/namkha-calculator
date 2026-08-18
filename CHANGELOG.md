@@ -95,6 +95,26 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   root are unchanged. Only code reaching into the module paths directly is
   affected.
 
+### Fixed
+
+- A pre-1970 birth no longer loses its own zone because the border map cannot
+  place that zone's reference city. Many reference cities sit on a coast, where
+  the `zone.tab` coordinate falls just outside the coarse snapshot polygons, and
+  the map returning nothing for one counted as the city lying abroad. The zone
+  was then dropped and the nearest reference city in the birth country won
+  instead. Mainland Denmark from 1935 to 1952 is the plainest case: Aarhus,
+  Aalborg and Esbjerg derived `America/Scoresbysund` at UTC-2, a Greenland
+  clock, rather than `Europe/Copenhagen` at UTC+1. Greenland is Danish, so its
+  zones were candidates once the Danish one was gone.
+
+  The change reaches further than Denmark. Measured over a land grid, it moves
+  1648 place-and-snapshot combinations across 73 zone pairs, and every one of
+  them returns the birth to the zone its own coordinates fall in:
+  `Africa/El_Aaiun` back to `Africa/Algiers`, `Asia/Pontianak` back to
+  `Asia/Jakarta`, `America/Kentucky/Monticello` back to `America/New_York`. A
+  zone whose reference city the map *does* place in another country is still
+  swapped as before, so an interwar Lviv birth keeps `Europe/Warsaw`.
+
 ### Security
 
 - `zone()` takes only keys made of letters, digits, underscore, plus, minus and
