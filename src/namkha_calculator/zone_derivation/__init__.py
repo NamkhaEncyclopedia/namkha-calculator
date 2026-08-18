@@ -274,7 +274,7 @@ def resolve_timezone(
         provenance=provenance,
         derivation=derivation,
         # A nautical or mean-solar zone counts as longitude-based only when we
-        # chose it; the same offset typed by hand is a deliberate clock time.
+        # chose it; the same offset the caller gave is a deliberate clock time.
         is_longitude_based=(
             provenance is TimezoneProvenance.LOCATION_DERIVED
             and is_longitude_based_timezone(tz)

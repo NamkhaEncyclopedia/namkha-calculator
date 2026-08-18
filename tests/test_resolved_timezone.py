@@ -135,7 +135,7 @@ class TestBinding(unittest.TestCase):
             _resolved().assert_binds(shifted, dt.datetime(1985, 6, 15, 12, 0))
 
     def test_ignores_the_place_name(self):
-        """The name is a label the user typed; only the coordinates decide
+        """The name is a label the caller gave; only the coordinates decide
         which timezone applied."""
         renamed = Location(
             latitude=BERLIN.latitude, longitude=BERLIN.longitude, name="Berlin"
