@@ -101,6 +101,15 @@ All fields are keyword-only.
 
 `Subject` doesn't work a timezone out for itself. Call `resolve_timezone` first and pass what it returns, as the example above does.
 
+Four read-only properties read the resolved timezone back:
+
+| Property                      | Type                 | Notes                                                        |
+|-------------------------------|----------------------|--------------------------------------------------------------|
+| `effective_timezone`          | `tzinfo`             | the timezone the calculation runs on                         |
+| `local_birth_datetime`        | `datetime`           | `birth_datetime` with that timezone attached                 |
+| `timezone_derivation`         | `TimezoneDerivation` | how sure that timezone is                                    |
+| `timezone_is_longitude_based` | `bool`               | the offset comes from the longitude, not from timezone rules |
+
 **`ResolvedTimezone`** – the timezone a calculation runs on, frozen with the birth details it was worked out for.
 
 | Field                     | Type                  | Notes                                                                 |
@@ -151,6 +160,8 @@ Every timezone failure is a `TimezoneError`, which subclasses `ValueError`, so c
 
 A derived timezone matches its location by construction, so neither check runs for one.
 
+`Location` checks its coordinates at construction: latitude must lie in [-90, 90] and longitude in [-180, 180].
+
 `Subject` validates its input at construction and raises instead of computing from inconsistent data:
 
 - `birth_datetime` must be naive – `TypeError` otherwise (the timezone belongs in `resolved_timezone`).
@@ -172,11 +183,21 @@ A derived timezone matches its location by construction, so neither check runs f
 #### Result
 **`NamkhaCalculationResult`**
 
-| Field                | Type                              | Description                      |
-|----------------------|-----------------------------------|----------------------------------|
-| `harmonized_aspects` | `tuple[HarmonizedAspect, ...]`    | eight aspects in order           |
-| `mewa_numbers`       | `dict[Aspect, int]`               | mewa number for each mewa aspect |
-| `calculation_notes`  | `tuple[CalculationNoteItem, ...]` | notices or cautions              |
+| Field                | Type                              | Description                               |
+|----------------------|-----------------------------------|-------------------------------------------|
+| `subject`            | `Subject`                         | the input this result was calculated from |
+| `calculation_method` | `CalculationMethod`               | the method used                           |
+| `namkha_type`        | `NamkhaType`                      | the type calculated                       |
+| `birth_element`      | `Element`                         | element of the birth year                 |
+| `birth_animal`       | `Animal`                          | animal of the birth year                  |
+| `birth_mewa`         | `int`                             | mewa number of the birth year             |
+| `harmonized_aspects` | `tuple[HarmonizedAspect, ...]`    | eight aspects in order                    |
+| `mewa_numbers`       | `dict[Aspect, int]`               | mewa number per mewa aspect; see below    |
+| `calculation_notes`  | `tuple[CalculationNoteItem, ...]` | notices or cautions                       |
+
+Every field is filled on every result.
+
+`mewa_numbers` holds four keys: `MEWA_LIFE`, `MEWA_BODY`, `MEWA_CAPACITY` and `MEWA_FORTUNE`. Each value is an `int` that also carries `.element`, the `Element` that mewa number stands for.
 
 **`HarmonizedAspect`**
 
@@ -186,6 +207,17 @@ A derived timezone matches its location by construction, so neither check runs f
 | `center`            | `Element`             | center element                                                |
 | `harmonization_seq` | `tuple[Element, ...]` | harmonization sequence: remaining thread colors outward       |
 | `is_conflicted`     | `bool or None`        | `None` for `LIFE`; `True` when conflict harmonization applied |
+
+**`CalculationNoteItem`**
+
+| Field       | Type                  | Description                                              |
+|-------------|-----------------------|----------------------------------------------------------|
+| `note`      | `CalculationNote`     | which note this is, e.g. `HIGH_LATITUDE`                 |
+| `note_type` | `CalculationNoteType` | `NOTICE` or `CAUTION`                                    |
+| `message`   | `str`                 | one line describing the note                             |
+| `doc`       | `str`                 | room for a longer text; empty on every note the library produces |
+
+`note` is the one to branch on. `message` is written for a developer reading a log; an application showing notes to a reader is expected to supply its own wording per `note`.
 
 ### Calculation notes
 

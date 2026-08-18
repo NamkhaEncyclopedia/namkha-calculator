@@ -168,8 +168,7 @@ class TestSuppliedTimezoneIsChecked(unittest.TestCase):
             )
 
     def test_a_derived_timezone_is_not_checked(self):
-        """It came from the place, so it agrees with it by construction - and
-        a nautical zone would fail the solar check that a typed one gets."""
+        """It came from the place, so it agrees with it by construction."""
         resolve_timezone(PACIFIC, dt.datetime(1900, 1, 1, 12, 0))
 
 
