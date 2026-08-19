@@ -35,12 +35,20 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   type of `CalculationNoteItem.note_type`, so reading a note's severity meant
   importing from `calculation_notes` directly.
 - `timezone_label(resolved_timezone, birth_datetime)` names the timezone a
-  calculation used, or returns `None` when the user gave a plain UTC offset and
-  the offset is the whole answer. It answers a question `str(tzinfo)` could not:
-  a birth before its zone's standard time began keeps that zone's key while the
-  calculation runs on the birth longitude's mean solar time, so the key names a
-  zone that did not produce the offset in use. The label shares its test for
-  that with the `LOCAL_MEAN_TIME` note, so the two never disagree.
+  calculation used. It returns `None` when the user gave a plain UTC offset, so
+  the offset is the whole answer.
+
+  The name is not always the resolved zone key. The key says which zone covers
+  the birth place, and that stays true. The offset is a different matter: before
+  the place kept standard time, the calculation does not use the zone's clock at
+  all. It uses the mean solar time of the birth longitude, because every town
+  then ran on its own sun. An 1849 Arkhangelsk birth resolves to `Europe/Moscow`
+  and runs on Arkhangelsk sun time, twelve minutes ahead of Moscow's. Showing
+  the key there would name a zone that did not produce the offset in use, so the
+  label reports mean solar time instead.
+
+  The label decides this with the same test as the `LOCAL_MEAN_TIME` note, so
+  the two never disagree.
 
 ### Changed
 
@@ -51,13 +59,6 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   `Subject`. Omitting the timezone no longer derives it: `Subject` never
   derives anything now, so a caller who leaves it out gets a `TypeError` for
   the missing argument rather than a silent coordinate lookup mid-calculation.
-
-  There is no compatibility shim, and one is not possible. A `ResolvedTimezone`
-  carries facts only the derivation knows – the birthplace's Gregorian adoption
-  date among them – so a shim accepting `birth_timezone=` could fill them in
-  only by importing the derivation code into the calculation path, which is the
-  separation this release exists to make. Substituting defaults instead would
-  quietly change which births get a `PRE_GREGORIAN_DATE` caution.
 
   `Subject.effective_timezone`, `timezone_derivation` and
   `timezone_is_longitude_based` still read the same; they now come straight
