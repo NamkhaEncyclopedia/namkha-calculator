@@ -95,6 +95,11 @@ class TibetanHourAttributes(_CalendarEntityAttributes):
     end: dt.datetime
 
 
+def amod(x: int, n: int) -> int:
+    """Same as %, but the result runs 1..n instead of 0..n-1."""
+    return x % n or n
+
+
 def mean_date(day: int, month_count: int) -> float:
     return month_count * M1 + day * M2 + M0
 
@@ -166,7 +171,7 @@ def from_month_count(month_count: int) -> tuple[int, int, bool]:
     Returns: (year, month, is_leap_month)
     """
     x = math.ceil(12 * S1 * month_count + ALPHA)
-    month_number = (x - 1) % 12 + 1
+    month_number = amod(x, 12)
     year_number = (x - month_number) // 12 + Y0 + TIB_WESTERN_OFFSET
     is_leap_month = math.ceil(12 * S1 * (month_count + 1) + ALPHA) == x
     return year_number, month_number, is_leap_month
@@ -365,7 +370,7 @@ def nearest_previous_year_with_animal(year_number: int, animal: Animal) -> int:
 
 
 def year_mewa(western_year: int) -> int:
-    return 9 - (western_year - 1865) % 9
+    return amod(1865 - western_year, 9)
 
 
 def _year_attributes(
