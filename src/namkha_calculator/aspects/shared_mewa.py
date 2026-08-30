@@ -43,3 +43,23 @@ class MewaResult(NamedTuple):
     body: MewaAspect
     capacity: MewaAspect
     fortune: MewaAspect
+
+
+def mewa_result_classic(body_mewa: int, fortune: MewaAspect) -> MewaResult:
+    """Mewa aspects of a birth period for the Classic method.
+
+    BODY_MEWA_TO_LIFE_CAPACITY_MEWA gives life and capacity in that order,
+    which is the order Classic uses. The CNNR method reads the same pair the
+    other way round, so it does not use this.
+
+    Fortune is the fortune mewa of the birth year for every Namkha type. The
+    caller passes it in, because aspects.year works it out and imports this
+    module.
+    """
+    life_mewa, capacity_mewa = BODY_MEWA_TO_LIFE_CAPACITY_MEWA[body_mewa]
+    return MewaResult(
+        life=MewaAspect(life_mewa),
+        body=MewaAspect(body_mewa),
+        capacity=MewaAspect(capacity_mewa),
+        fortune=fortune,
+    )

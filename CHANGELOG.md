@@ -5,6 +5,54 @@ All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- Month Namkha, through `calculate_namkha(NamkhaType.MONTH, subject)`. Only the
+  Classic method is supported, as for every type other than the year. The
+  Tibetan month of birth is resolved from the birth instant the same way the
+  year is: a Tibetan month begins at the dawn that begins its first day, so a
+  birth before that dawn belongs to the month before, and a birth in a leap
+  month gets the number, element, animal and mewa of the regular month it
+  precedes.
+- The month element and animal follow Janson's Phugpa formulas and are checked
+  against every month header in Henning's output over 1800-2598. The month mewa
+  steps back by one each month and is pinned by a single anchor,
+  `MONTH_MEWA_ANCHOR`: the Tiger month opening a Tiger astrological year has
+  mewa 2. No Phugpa source prints a month mewa, so the numbers are a
+  reconstruction from Janson's Tsurphu formula, the reverse order, and the
+  triples the Vaidurya dkar po gives per month animal. Keeping the anchor in one
+  constant means a future source can be followed with a one-line change.
+- `TibetanMonthAttributes` gained `is_leap_month`, so a caller can tell a leap
+  month from the regular month that shares its number.
+
+### Fixed
+
+- Both Losar functions calculated the first day of a month by adding a day to day
+  30 of the month before. That is the shorter rule Janson gives, and it disagrees
+  with Henning's output in four months over 1800-2598, in every case where the
+  boundary falls on an omitted or doubled day. They now start from day 0 of the
+  month itself, the value a Tibetan almanac prints at the head of each month,
+  which matches Henning everywhere. Astrological Losar is unchanged over the
+  whole supported range. Official Losar moves one day, from 8 to 9 March, for
+  Tibetan year 2659 (Western 2532), the only year affected; because the official
+  year runs from that date, the CNNR year Namkha changes as well for a birth in
+  that one-day window.
+
+### Removed
+
+- `calendar.tibetan_to_julian`, which nothing called. It computed a month's
+  first day a third way, carrying the same off-by-one that the Losar fix
+  removed.
+
+### Changed
+
+- `calendar.from_month_count` and `calendar.to_month_count` are now
+  `from_true_month_count` and `to_true_month_count`, after the "true month
+  count" Janson and Henning both use for this number. The `month_count`
+  arguments of the astronomical functions are renamed to match.
+
 ## [0.1.0a5] - 2026-08-19
 
 ### Added

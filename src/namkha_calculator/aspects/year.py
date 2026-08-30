@@ -6,7 +6,12 @@ from ..calendar import (
     year_with_animal_and_element_in_metreng,
     year_mewa,
 )
-from .shared_mewa import MewaAspect, MewaResult, BODY_MEWA_TO_LIFE_CAPACITY_MEWA
+from .shared_mewa import (
+    MewaAspect,
+    MewaResult,
+    BODY_MEWA_TO_LIFE_CAPACITY_MEWA,
+    mewa_result_classic,
+)
 
 CNNR_POINT_OF_FORTUNE = {
     Animal.TIGER: Animal.MONKEY,
@@ -70,10 +75,4 @@ def calculate_mewas_cnnr(year_attrs: TibetanYearAttributes) -> MewaResult:
 
 
 def calculate_mewas_classic(year_attrs: TibetanYearAttributes) -> MewaResult:
-    life_mewa, capacity_mewa = BODY_MEWA_TO_LIFE_CAPACITY_MEWA[year_attrs.mewa_number]
-    return MewaResult(
-        life=MewaAspect(life_mewa),
-        body=MewaAspect(year_attrs.mewa_number),
-        capacity=MewaAspect(capacity_mewa),
-        fortune=fortune_mewa_classic(year_attrs),
-    )
+    return mewa_result_classic(year_attrs.mewa_number, fortune_mewa_classic(year_attrs))

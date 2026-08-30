@@ -20,6 +20,7 @@ from .methods import CalculationMethod
 from .astrology import Animal, Element, Subject
 from .aspects.shared_birth import BODY_ELEMENT, FORTUNE_ELEMENT, LIFE_ELEMENT
 from .aspects.shared_mewa import MewaResult
+from .aspects.month import calculate_mewas_classic as calculate_month_mewas_classic
 from .aspects.year import calculate_mewas_cnnr, calculate_mewas_classic
 from .calculation_notes import (
     CalculationNoteItem,
@@ -28,7 +29,8 @@ from .calculation_notes import (
 )
 from .localization import is_nonexistent_local_time, uses_local_mean_time
 from .calendar import (
-    TibetanYearAttributes,
+    CalendarEntityAttributes,
+    classic_month_attributes,
     classic_year_attributes,
     day_start,
     official_year_attributes,
@@ -139,33 +141,35 @@ def _calc_year_cnnr(subject: Subject) -> _CalcResult:
     year_attrs = official_year_attributes(
         subject.local_birth_datetime, subject.birth_location
     )
-    return _build_year_result(subject, year_attrs, calculate_mewas_cnnr(year_attrs))
+    return _build_result(subject, year_attrs, calculate_mewas_cnnr(year_attrs))
 
 
 def _calc_year_classic(subject: Subject) -> _CalcResult:
     year_attrs = classic_year_attributes(
         subject.local_birth_datetime, subject.birth_location
     )
-    return _build_year_result(subject, year_attrs, calculate_mewas_classic(year_attrs))
+    return _build_result(subject, year_attrs, calculate_mewas_classic(year_attrs))
 
 
-def _build_year_result(
-    subject: Subject, year_attrs: TibetanYearAttributes, mewas: MewaResult
+def _build_result(
+    subject: Subject,
+    attrs: CalendarEntityAttributes,
+    mewas: MewaResult,
 ) -> _CalcResult:
     harmonized = harmonize_aspects(
-        life=LIFE_ELEMENT[year_attrs.animal],
-        body=BODY_ELEMENT[(year_attrs.animal, year_attrs.element)],
-        capacity=year_attrs.element,
-        fortune=FORTUNE_ELEMENT[year_attrs.animal],
+        life=LIFE_ELEMENT[attrs.animal],
+        body=BODY_ELEMENT[(attrs.animal, attrs.element)],
+        capacity=attrs.element,
+        fortune=FORTUNE_ELEMENT[attrs.animal],
         mewa_life=mewas.life.element,
         mewa_body=mewas.body.element,
         mewa_capacity=mewas.capacity.element,
         mewa_fortune=mewas.fortune.element,
     )
     return _CalcResult(
-        birth_element=year_attrs.element,
-        birth_animal=year_attrs.animal,
-        birth_mewa=year_attrs.mewa_number,
+        birth_element=attrs.element,
+        birth_animal=attrs.animal,
+        birth_mewa=attrs.mewa_number,
         harmonized_aspects=harmonized,
         mewa_numbers={
             Aspect.MEWA_LIFE: mewas.life,
@@ -173,12 +177,22 @@ def _build_year_result(
             Aspect.MEWA_CAPACITY: mewas.capacity,
             Aspect.MEWA_FORTUNE: mewas.fortune,
         },
-        notes=period_boundary_note(subject.local_birth_datetime, year_attrs.boundaries),
+        notes=period_boundary_note(subject.local_birth_datetime, attrs.boundaries),
     )
 
 
 def _calc_month(subject: Subject) -> _CalcResult:
-    raise NotImplementedError("MONTH Namkha calculation is not implemented yet")
+    month_attrs = classic_month_attributes(
+        subject.local_birth_datetime, subject.birth_location
+    )
+    year_attrs = classic_year_attributes(
+        subject.local_birth_datetime, subject.birth_location
+    )
+    return _build_result(
+        subject,
+        month_attrs,
+        calculate_month_mewas_classic(month_attrs, year_attrs),
+    )
 
 
 def _calc_day(subject: Subject) -> _CalcResult:
