@@ -1,6 +1,8 @@
 import re
 import unittest
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, tzinfo
+from functools import lru_cache
+from typing import NamedTuple
 
 from hypothesis import given, settings
 from hypothesis import strategies as st
@@ -14,7 +16,9 @@ from namkha_calculator.tz import (
 from namkha_calculator import calendar
 from namkha_calculator.astrology import Animal, Element
 from namkha_calculator.skyfield_calculations import (
+    date_to_jd,
     ephemeris_date_range,
+    jd_to_datetime,
     morning_civil_twilight,
 )
 
@@ -59,6 +63,63 @@ def _parse_henning_header(western_year: int) -> tuple[Element, Animal]:
     )
 
 
+# Months 1 to 12. A leap month repeats a number, so no year has a month 13.
+MONTH_NUMBERS = range(1, 13)
+
+_RE_HENNING_MONTH = re.compile(
+    r"^Tibetan Lunar Month: (\d+)(?: \((Intercalary|Delayed)\))? - "
+    r"([A-Z][a-z]*)-[a-z]*-([A-Z][a-z]*)$",
+    re.MULTILINE,
+)
+# A day line starts with the lunar day number and a colon. An omitted day is
+# written with a period instead and carries no Western date.
+_RE_HENNING_DAY = re.compile(r"^\d+: .+; (\d+ \w+ \d{4})$", re.MULTILINE)
+
+
+def _month_attributes_at_noon(
+    day: date, tz: tzinfo, location: Location
+) -> calendar.TibetanMonthAttributes:
+    return calendar.classic_month_attributes(
+        datetime(day.year, day.month, day.day, 12, 0, tzinfo=tz), location
+    )
+
+
+class HenningMonth(NamedTuple):
+    number: int
+    is_leap: bool
+    element: Element
+    animal: Animal
+    first_date: date
+    last_date: date
+
+
+@lru_cache(maxsize=None)
+def _parse_henning_months(western_year: int) -> list[HenningMonth]:
+    """All month sections of one Henning output file, in the order they were printed.
+
+    A leap month comes first and is marked (Intercalary); the regular month of
+    the same number follows and is marked (Delayed).
+    """
+    with open(f"tests/data/Henning/pl_{western_year}.txt") as f:
+        content = f.read()
+    headers = list(_RE_HENNING_MONTH.finditer(content))
+    months = []
+    for i, header in enumerate(headers):
+        end = headers[i + 1].start() if i + 1 < len(headers) else len(content)
+        days = _RE_HENNING_DAY.findall(content[header.end() : end])
+        months.append(
+            HenningMonth(
+                number=int(header.group(1)),
+                is_leap=header.group(2) == "Intercalary",
+                element=Element(_ELEMENT_NAMES_MAP[header.group(3)]),
+                animal=Animal(_ANIMAL_NAMES_MAP[header.group(4)]),
+                first_date=datetime.strptime(days[0], "%d %b %Y").date(),
+                last_date=datetime.strptime(days[-1], "%d %b %Y").date(),
+            )
+        )
+    return months
+
+
 class TestPhugpaCalendarBasic(unittest.TestCase):
     def test_year_attributes(self):
         test_year = calendar.TibetanYearAttributes(
@@ -96,26 +157,15 @@ class TestPhugpaCalendarBasic(unittest.TestCase):
         for western_year in range(1800, 2599):
             with self.subTest(western_year=western_year):
                 tibetan_year = western_year + 127
-
-                with open(f"tests/data/Henning/pl_{western_year}.txt") as f:
-                    content = f.read()
-
-                m11 = re.search(r"Tibetan Lunar Month: 11\b", content)
-                after = content[m11.end() :]
-                next_month = re.search(r"Tibetan Lunar Month:", after)
-                month11_section = after[: next_month.start()] if next_month else after
-                if re.search(r"^1\. Omitted:", month11_section, re.MULTILINE):
-                    day_match = re.search(
-                        r"^2: .+; (\d+ \w+ \d{4})", month11_section, re.MULTILINE
-                    )
-                else:
-                    day_match = re.search(
-                        r"^1: .+; (\d+ \w+ \d{4})", month11_section, re.MULTILINE
-                    )
-                henning_date = datetime.strptime(day_match.group(1), "%d %b %Y").date()
-
+                # The first month 11 printed, which is the leap one when the
+                # year has it - the same month astrological_losar starts from.
+                month11 = next(
+                    month
+                    for month in _parse_henning_months(western_year)
+                    if month.number == 11
+                )
                 result = calendar.astrological_losar(tibetan_year + 1, tz, location)
-                self.assertEqual(result.date(), henning_date)
+                self.assertEqual(result.date(), month11.first_date)
 
     def test_year_element_animal_against_henning(self):
         for test_western_year in range(1800, 2599):
@@ -439,6 +489,10 @@ class TestNaiveDatetimeRejected(unittest.TestCase):
         with self.assertRaises(TypeError):
             calendar.classic_year_attributes(self.NAIVE, self.LOC)
 
+    def test_classic_month_attributes_rejects_naive(self):
+        with self.assertRaises(TypeError):
+            calendar.classic_month_attributes(self.NAIVE, self.LOC)
+
 
 class TestEphemerisEdgeStability(unittest.TestCase):
     """Across the whole supported range the dawn lookup must never raise for any
@@ -468,3 +522,256 @@ class TestEphemerisEdgeStability(unittest.TestCase):
             with self.subTest(date=d):
                 with self.assertRaises(ValueError):
                     morning_civil_twilight(d, tz, self.LOC)
+
+
+class TestJulianDayDateRoundTrip(unittest.TestCase):
+    """date_to_jd is the inverse of jd_to_datetime for whole Julian days."""
+
+    @given(
+        st.integers(
+            min_value=date_to_jd(date(1800, 1, 1)),
+            max_value=date_to_jd(date(2599, 1, 1)),
+        )
+    )
+    @settings(max_examples=200)
+    def test_round_trip(self, jd):
+        self.assertEqual(date_to_jd(jd_to_datetime(jd).date()), jd)
+
+
+class TestMonthAgainstHenning(unittest.TestCase):
+    """Every month of every Henning output file. The files are read once; the checks
+    themselves are Julian day arithmetic, so the whole range stays fast."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.months = [
+            (western_year + 127, month)
+            for western_year in range(1800, 2599)
+            for month in _parse_henning_months(western_year)
+        ]
+
+    def _month_subtest(self, tibetan_year, month):
+        return self.subTest(
+            tibetan_year=tibetan_year, month=month.number, leap=month.is_leap
+        )
+
+    def _count(self, tibetan_year, month):
+        return calendar.to_true_month_count(tibetan_year, month.number, month.is_leap)
+
+    def test_element(self):
+        for tibetan_year, month in self.months:
+            with self._month_subtest(tibetan_year, month):
+                self.assertEqual(
+                    calendar.month_element(tibetan_year, month.number), month.element
+                )
+
+    def test_animal(self):
+        for tibetan_year, month in self.months:
+            with self._month_subtest(tibetan_year, month):
+                self.assertEqual(calendar.month_animal(month.number), month.animal)
+
+    def test_leap_month_flag(self):
+        for tibetan_year, month in self.months:
+            with self._month_subtest(tibetan_year, month):
+                self.assertEqual(
+                    calendar.from_true_month_count(self._count(tibetan_year, month)),
+                    (tibetan_year, month.number, month.is_leap),
+                )
+
+    def test_first_day(self):
+        for tibetan_year, month in self.months:
+            with self._month_subtest(tibetan_year, month):
+                self.assertEqual(
+                    calendar.month_first_julian_day(self._count(tibetan_year, month)),
+                    date_to_jd(month.first_date),
+                )
+
+    def test_first_and_last_day_belong_to_the_month(self):
+        for tibetan_year, month in self.months:
+            count = self._count(tibetan_year, month)
+            for day in (month.first_date, month.last_date):
+                with self._month_subtest(tibetan_year, month):
+                    self.assertEqual(
+                        calendar.true_month_count_from_julian_day(date_to_jd(day)),
+                        count,
+                    )
+
+
+class TestOfficialLosarAgainstHenning(unittest.TestCase):
+    """Official Losar starts the first month of the year, so it falls on the
+    first day of the first month section - leap month 1 when the year has one."""
+
+    def test_official_losar_dates(self):
+        tz = zone("Etc/GMT+0")
+        location = TEST_PLACES["Bamako"]
+        for western_year in range(1800, 2599):
+            with self.subTest(western_year=western_year):
+                first_month = _parse_henning_months(western_year)[0]
+                losar = calendar.official_losar(western_year + 127, tz, location)
+                self.assertEqual(losar.date(), first_month.first_date)
+
+
+class TestMonthElement(unittest.TestCase):
+    """Months 11 and 12 have their own formula, so a year can end with several
+    months on one element. Tibetan 2387 (Western 2260) has Water from month 9
+    to month 12, which every header in pl_2260.txt confirms."""
+
+    def test_month_8_still_ends_the_metal_pair(self):
+        self.assertEqual(calendar.month_element(2387, 8), Element.METAL)
+
+    def test_year_ends_on_four_water_months(self):
+        for month_number in (9, 10, 11, 12):
+            with self.subTest(month=month_number):
+                self.assertEqual(
+                    calendar.month_element(2387, month_number), Element.WATER
+                )
+
+
+class TestMonthMewaAnchor(unittest.TestCase):
+    """No Phugpa source prints a month mewa, so one anchor carries the whole
+    sequence: the Tiger month opening a Tiger astrological year has mewa 2.
+    Tibetan year 2149 is the Water Tiger year (Western 2022), and in Phugpa
+    numbering its Tiger month is month 11 of 2148. These three are the only absolute
+    values; every other mewa test is relative to them."""
+
+    def test_tiger_month(self):
+        self.assertEqual(calendar.month_mewa(2148, 11), 2)
+
+    def test_hare_month(self):
+        self.assertEqual(calendar.month_mewa(2148, 12), 1)
+
+    def test_dragon_month(self):
+        self.assertEqual(calendar.month_mewa(2149, 1), 9)
+
+
+class TestMonthMewaSequence(unittest.TestCase):
+    """Shape of the sequence, independent of where it is anchored."""
+
+    YEARS = range(2100, 2160)
+
+    def test_steps_back_by_one_inside_a_year(self):
+        # Each month is compared with the next one, so the last pair is 11 and 12.
+        for month_number in list(MONTH_NUMBERS)[:-1]:
+            with self.subTest(month=month_number):
+                self.assertEqual(
+                    calendar.month_mewa(2149, month_number + 1),
+                    calendar.amod(calendar.month_mewa(2149, month_number) - 1, 9),
+                )
+
+    def test_steps_back_by_one_across_the_year_boundary(self):
+        for tibetan_year in self.YEARS:
+            with self.subTest(tibetan_year=tibetan_year):
+                self.assertEqual(
+                    calendar.month_mewa(tibetan_year + 1, 1),
+                    calendar.amod(calendar.month_mewa(tibetan_year, 12) - 1, 9),
+                )
+
+    def test_repeats_every_three_years(self):
+        for tibetan_year in self.YEARS:
+            for month_number in MONTH_NUMBERS:
+                with self.subTest(tibetan_year=tibetan_year, month=month_number):
+                    self.assertEqual(
+                        calendar.month_mewa(tibetan_year + 3, month_number),
+                        calendar.month_mewa(tibetan_year, month_number),
+                    )
+
+    def test_mewa_stays_in_the_triple_of_the_month_animal(self):
+        # Vaidurya dkar po allows three mewas per month animal.
+        triples = {
+            Animal.TIGER: {2, 5, 8},
+            Animal.SNAKE: {2, 5, 8},
+            Animal.MONKEY: {2, 5, 8},
+            Animal.BOAR: {2, 5, 8},
+            Animal.HARE: {1, 4, 7},
+            Animal.HORSE: {1, 4, 7},
+            Animal.BIRD: {1, 4, 7},
+            Animal.MOUSE: {1, 4, 7},
+            Animal.DRAGON: {3, 6, 9},
+            Animal.SHEEP: {3, 6, 9},
+            Animal.DOG: {3, 6, 9},
+            Animal.OX: {3, 6, 9},
+        }
+        for tibetan_year in range(1927, 2726):
+            for month_number in MONTH_NUMBERS:
+                with self.subTest(tibetan_year=tibetan_year, month=month_number):
+                    self.assertIn(
+                        calendar.month_mewa(tibetan_year, month_number),
+                        triples[calendar.month_animal(month_number)],
+                    )
+
+
+class TestClassicMonthAttributes(unittest.TestCase):
+    """Resolving the Tibetan month of a birth instant. These call the dawn
+    lookup, so they use fixed cases instead of a sweep."""
+
+    LOC = TEST_PLACES["Bamako"]
+    TZ = zone("Etc/GMT+0")
+    # Month 11 of Tibetan year 2100 begins on 25 Dec 1973 (pl_1973.txt).
+    MONTH_11_FIRST_DATE = date(1973, 12, 25)
+
+    def test_boundaries_contain_the_birth_instant(self):
+        birth = datetime(1973, 12, 30, 12, 0, tzinfo=self.TZ)
+        start, end = calendar.classic_month_attributes(birth, self.LOC).boundaries
+        self.assertLessEqual(start, birth)
+        self.assertLess(birth, end)
+
+    def _month_start_dawn(self) -> datetime:
+        return calendar.day_start(self.MONTH_11_FIRST_DATE, self.TZ, self.LOC)
+
+    def test_month_one_minute_before_month_start_dawn(self):
+        # Already the month's first Western date, but the month has not begun.
+        birth = self._month_start_dawn() - timedelta(minutes=1)
+        attributes = calendar.classic_month_attributes(birth, self.LOC)
+        self.assertEqual(attributes.tibetan_month_number, 10)
+
+    def test_month_one_minute_after_month_start_dawn(self):
+        birth = self._month_start_dawn() + timedelta(minutes=1)
+        attributes = calendar.classic_month_attributes(birth, self.LOC)
+        self.assertEqual(attributes.tibetan_month_number, 11)
+
+    def test_boundaries_start_at_month_start_dawn(self):
+        birth = self._month_start_dawn() + timedelta(minutes=1)
+        attributes = calendar.classic_month_attributes(birth, self.LOC)
+        self.assertEqual(attributes.boundaries[0], self._month_start_dawn())
+
+    def test_consecutive_months_are_contiguous(self):
+        first = _month_attributes_at_noon(date(1973, 12, 30), self.TZ, self.LOC)
+        second = calendar.classic_month_attributes(
+            first.boundaries[1] + timedelta(minutes=1), self.LOC
+        )
+        self.assertEqual(first.boundaries[1], second.boundaries[0])
+
+    def test_supported_range_extremes_calculate(self):
+        year_min, year_max = calendar.supported_year_range()
+        for year in (year_min, year_max):
+            with self.subTest(year=year):
+                # Must not raise.
+                _month_attributes_at_noon(date(year, 6, 15), self.TZ, self.LOC)
+
+
+class TestLeapMonthAttributes(unittest.TestCase):
+    """A leap month keeps the number, element, animal and mewa of the regular
+    month it precedes, so only is_leap_month separates them. Tibetan year 2051
+    has a leap month 3 starting 5 Apr 1924, followed by the regular month 3 on
+    4 May 1924 (pl_1924.txt)."""
+
+    LOC = TEST_PLACES["Bamako"]
+    TZ = zone("Etc/GMT+0")
+    SHARED_ATTRIBUTES = ("tibetan_month_number", "element", "animal", "mewa_number")
+
+    def setUp(self):
+        self.leap = _month_attributes_at_noon(date(1924, 4, 10), self.TZ, self.LOC)
+        self.regular = _month_attributes_at_noon(date(1924, 5, 10), self.TZ, self.LOC)
+
+    def test_leap_month_is_flagged(self):
+        self.assertTrue(self.leap.is_leap_month)
+
+    def test_regular_month_is_not_flagged(self):
+        self.assertFalse(self.regular.is_leap_month)
+
+    def test_leap_month_matches_the_regular_month(self):
+        for attribute in self.SHARED_ATTRIBUTES:
+            with self.subTest(attribute=attribute):
+                self.assertEqual(
+                    getattr(self.leap, attribute), getattr(self.regular, attribute)
+                )

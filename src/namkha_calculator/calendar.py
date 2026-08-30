@@ -19,6 +19,7 @@ from .astrology import Animal, Element
 from .localization import localize_naive_time, shift_past_clock_gap
 from .tz import HIGH_LATITUDE_DAY_START_HOUR, LATITUDE_LIMIT, Location
 from .skyfield_calculations import (
+    date_to_jd,
     ephemeris_date_range,
     jd_to_datetime,
     morning_civil_twilight,
@@ -67,7 +68,7 @@ FIRST_METRENG_START_WESTERN = (
 
 
 @dataclass(kw_only=True)
-class _CalendarEntityAttributes:
+class CalendarEntityAttributes:
     element: Element
     animal: Animal
     mewa_number: int
@@ -75,22 +76,23 @@ class _CalendarEntityAttributes:
 
 
 @dataclass(kw_only=True)
-class TibetanYearAttributes(_CalendarEntityAttributes):
+class TibetanYearAttributes(CalendarEntityAttributes):
     tibetan_year_number: int
 
 
 @dataclass(kw_only=True)
-class TibetanMonthAttributes(_CalendarEntityAttributes):
+class TibetanMonthAttributes(CalendarEntityAttributes):
     tibetan_month_number: int
+    is_leap_month: bool
 
 
 @dataclass(kw_only=True)
-class LunarDayAttributes(_CalendarEntityAttributes):
+class LunarDayAttributes(CalendarEntityAttributes):
     lunar_day_number: int
 
 
 @dataclass(kw_only=True)
-class TibetanHourAttributes(_CalendarEntityAttributes):
+class TibetanHourAttributes(CalendarEntityAttributes):
     start: dt.datetime
     end: dt.datetime
 
@@ -100,8 +102,8 @@ def amod(x: int, n: int) -> int:
     return x % n or n
 
 
-def mean_date(day: int, month_count: int) -> float:
-    return month_count * M1 + day * M2 + M0
+def mean_date(day: int, true_month_count: int) -> float:
+    return true_month_count * M1 + day * M2 + M0
 
 
 def moon_tab_int(i: int) -> int:
@@ -121,12 +123,12 @@ def moon_tab(i: float) -> float:
     return d + (i - math.floor(i)) * (u - d)
 
 
-def moon_anomaly(day: int, month_count: int) -> float:
-    return month_count * A1 + day * A2 + A0
+def moon_anomaly(day: int, true_month_count: int) -> float:
+    return true_month_count * A1 + day * A2 + A0
 
 
-def moon_equation(day: int, month_count: int) -> float:
-    return moon_tab(28 * moon_anomaly(day, month_count))
+def moon_equation(day: int, true_month_count: int) -> float:
+    return moon_tab(28 * moon_anomaly(day, true_month_count))
 
 
 def sun_tab_int(i: int) -> int:
@@ -147,40 +149,42 @@ def sun_tab(i: float) -> float:
     return d + (i - math.floor(i)) * (u - d)
 
 
-def mean_sun(day: int, month_count: int) -> float:
-    return month_count * S1 + day * S2 + S0
+def mean_sun(day: int, true_month_count: int) -> float:
+    return true_month_count * S1 + day * S2 + S0
 
 
-def sun_equation(day: int, month_count: int) -> float:
-    return sun_tab(12.0 * (mean_sun(day, month_count) - 1.0 / 4))
+def sun_equation(day: int, true_month_count: int) -> float:
+    return sun_tab(12.0 * (mean_sun(day, true_month_count) - 1.0 / 4))
 
 
-def true_date(day: int, month_count: int) -> float:
+def true_date(day: int, true_month_count: int) -> float:
     return (
-        mean_date(day, month_count)
-        + moon_equation(day, month_count) / 60
-        - sun_equation(day, month_count) / 60
+        mean_date(day, true_month_count)
+        + moon_equation(day, true_month_count) / 60
+        - sun_equation(day, true_month_count) / 60
     )
 
 
-def from_month_count(month_count: int) -> tuple[int, int, bool]:
+def from_true_month_count(true_month_count: int) -> tuple[int, int, bool]:
     """
     Figures out the Tibetan year number, month number within the year, and whether
-    this is a leap month, from a "month count" number.  See Svante Janson,
+    this is a leap month, from a "true month count" number.  See Svante Janson,
     "Tibetan Calendar Mathematics", p.8 ff.
     Returns: (year, month, is_leap_month)
     """
-    x = math.ceil(12 * S1 * month_count + ALPHA)
+    x = math.ceil(12 * S1 * true_month_count + ALPHA)
     month_number = amod(x, 12)
     year_number = (x - month_number) // 12 + Y0 + TIB_WESTERN_OFFSET
-    is_leap_month = math.ceil(12 * S1 * (month_count + 1) + ALPHA) == x
+    is_leap_month = math.ceil(12 * S1 * (true_month_count + 1) + ALPHA) == x
     return year_number, month_number, is_leap_month
 
 
-def to_month_count(year_number: int, month_number: int, is_leap_month: bool) -> int:
+def to_true_month_count(
+    year_number: int, month_number: int, is_leap_month: bool
+) -> int:
     """
-    This is the reverse of from_month_count(): from a Tibetan year, month number
-    and leap month indicator, calculates the "month count" based on the epoch.
+    This is the reverse of from_true_month_count(): from a Tibetan year, month number
+    and leap month indicator, calculates the "true month count" based on the epoch.
     """
     year_number -= TIB_WESTERN_OFFSET
     leap_factor = 1 if is_leap_month else 0
@@ -190,21 +194,36 @@ def to_month_count(year_number: int, month_number: int, is_leap_month: bool) -> 
     )
 
 
-def tibetan_to_julian(
-    year_number: int, month_number: int, is_leap_month: bool, tibetan_day: int
-) -> float:
-    """
-    Gives the Julian date for a Tibetan year, month number (leap or not) and
-    Tibetan day.
+def month_first_julian_day(true_month_count: int) -> int:
+    """Julian day the first day of a Tibetan month falls on.
 
-    Does not check that the Tibetan day actually exists:
-    - If given the date of a skipped day, will return the same Julian date as the
-    day before.
-    - If given the date of a duplicate day, returns the Julian date of the second
-    of the two.
+    Day 0 is not a calendar day. Lunar days carry the numbers 1 to 30, and day
+    0 names the start of the month itself. Janson, "Tibetan Calendar
+    Mathematics", section "Astronomical functions", describes it: a hand
+    calculation first works out the mean values for the start of the month,
+    which is day 0, then moves forward to the day it wants. Day 1 follows day
+    0, so the month starts one day after day 0. This holds when lunar day 1 is
+    omitted, and when day 30 of the month before is omitted.
     """
-    n = to_month_count(year_number, month_number, is_leap_month)
-    return math.floor(true_date(tibetan_day, n))
+    return 1 + math.floor(true_date(0, true_month_count))
+
+
+def true_month_count_from_julian_day(jd: int) -> int:
+    """True month count of the Tibetan month that contains a Julian day.
+
+    Janson, "Tibetan Calendar Mathematics", section "Further calculations",
+    gives the method: estimate the count, then check the neighboring months.
+    The estimate uses mean_date: true_month_count * M1 + day * M2 + M0. It
+    gives every month the same length, and true_date corrects it. At the start
+    of a month the day part is zero, so solving mean_date for the count gives
+    the estimate below.
+    """
+    true_month_count = round((jd - M0) / M1)
+    while month_first_julian_day(true_month_count) > jd:
+        true_month_count -= 1
+    while month_first_julian_day(true_month_count + 1) <= jd:
+        true_month_count += 1
+    return true_month_count
 
 
 class LosarFn(Protocol):
@@ -291,19 +310,17 @@ def official_losar(year_number: int, tz: dt.tzinfo, location: Location) -> dt.da
     Considers the start of civil twilight at the location to be the start of the day.
     Above LATITUDE_LIMIT uses a fixed start time instead.
     """
-    jd = 1 + tibetan_to_julian(
-        year_number=year_number - 1,
-        month_number=12,
-        is_leap_month=False,
-        tibetan_day=30,
+    # The month after month 12 is month 1, or leap month 1 when the year has one.
+    jd = month_first_julian_day(
+        to_true_month_count(year_number - 1, 12, is_leap_month=False) + 1
     )
     losar_date = jd_to_datetime(jd).date()
     return day_start(losar_date, tz, location)
 
 
 def has_leap_month(year_number: int, month_number: int) -> bool:
-    n = to_month_count(year_number, month_number, is_leap_month=True)
-    y, m, is_leap = from_month_count(n)
+    n = to_true_month_count(year_number, month_number, is_leap_month=True)
+    y, m, is_leap = from_true_month_count(n)
     return y == year_number and m == month_number and is_leap
 
 
@@ -319,17 +336,7 @@ def astrological_losar(
     """
     prev_year = year_number - 1
     is_leap = has_leap_month(prev_year, 11)
-    month_count = to_month_count(prev_year, 11, is_leap)
-    jd_last_prev = math.floor(true_date(30, month_count - 1))
-    jd1 = math.floor(true_date(1, month_count))
-
-    if jd1 == jd_last_prev:
-        jd = math.floor(true_date(2, month_count))
-    elif jd1 - jd_last_prev == 2:
-        jd = jd1 - 1
-    else:
-        jd = jd1
-
+    jd = month_first_julian_day(to_true_month_count(prev_year, 11, is_leap))
     losar_date = jd_to_datetime(jd).date()
     return day_start(losar_date, tz, location)
 
@@ -371,6 +378,51 @@ def nearest_previous_year_with_animal(year_number: int, animal: Animal) -> int:
 
 def year_mewa(western_year: int) -> int:
     return amod(1865 - western_year, 9)
+
+
+def month_animal(month_number: int) -> Animal:
+    """Animal of a Tibetan month. Month 1 is Dragon, month 11 Tiger, month 12 Hare."""
+    return ANIMAL_ORDER[(month_number + 3) % 12]
+
+
+def month_element(tibetan_year_number: int, month_number: int) -> Element:
+    """Element of a Tibetan month. See Janson, "Tibetan Calendar Mathematics", 5.1.
+
+    Months 11 and 12 use their own formula, so a year can end with several
+    months that share one element.
+    """
+    western_year = tibetan_year_number - TIB_WESTERN_OFFSET
+    if month_number <= 10:
+        # Janson: (ceil((Y-1)/2) + floor((M+1)/2)) amod 5.
+        index = western_year // 2 + (month_number + 1) // 2
+    else:
+        # Janson: ceil(Y/2) amod 5.
+        index = (western_year + 1) // 2
+    return ELEMENT_ORDER[amod(index, 5) - 1]
+
+
+# Where the month mewa numbers are pinned: mewa 2 belongs to the Tiger month
+# that opens a Tiger astrological year, which in Phugpa numbering is month 11
+# of the year before. Month 11 of Tibetan year 2148 opens Tiger year 2149, and
+# 4 is the value that puts mewa 2 there: amod(4 - 3 * 2148 - 11, 9) is 2.
+MONTH_MEWA_ANCHOR = 4
+
+
+def month_mewa(tibetan_year_number: int, month_number: int) -> int:
+    """Mewa number 1-9 of a Tibetan month.
+
+    Every month steps the mewa back by one, across the year boundary too. Only
+    the year and the month number enter the formula, so a leap month repeats
+    the number of the regular month that follows it.
+
+    Janson gives the Tsurphu month number as (3 - (12*Y + M)) amod 9, where Y
+    is the Western year. Tsurphu month M+2 carries the animal of Phugpa month
+    M, and the mewa belongs to the animal, so this is the same rule rewritten for
+    Phugpa month numbers. Phugpa almanacs print no month mewa; these numbers
+    always fall inside the triples the Vaidurya dkar po lists for each month
+    animal.
+    """
+    return amod(MONTH_MEWA_ANCHOR - 3 * tibetan_year_number - month_number, 9)
 
 
 def _year_attributes(
@@ -420,4 +472,36 @@ def classic_year_attributes(
     """Year attributes for Classic method. Astrological year starts earlier than official."""
     return _year_attributes(
         date_time, location, astrological_losar, date_time.year + TIB_WESTERN_OFFSET + 1
+    )
+
+
+def classic_month_attributes(
+    date_time: dt.datetime,
+    location: Location,
+) -> TibetanMonthAttributes:
+    """Resolve the Tibetan month of date_time, its bounding dawns and attributes.
+
+    A Tibetan month starts at the dawn that starts its first day, so a birth
+    before that dawn belongs to the month before.
+    """
+    tz = date_time.tzinfo
+    if tz is None:
+        raise TypeError("date_time must be timezone-aware")
+    count = true_month_count_from_julian_day(
+        date_to_jd(tibetan_day_date(date_time, location))
+    )
+    year_number, month_number, is_leap_month = from_true_month_count(count)
+    month_start = jd_to_datetime(month_first_julian_day(count)).date()
+    next_month_start = jd_to_datetime(month_first_julian_day(count + 1)).date()
+
+    return TibetanMonthAttributes(
+        tibetan_month_number=month_number,
+        is_leap_month=is_leap_month,
+        animal=month_animal(month_number),
+        element=month_element(year_number, month_number),
+        mewa_number=month_mewa(year_number, month_number),
+        boundaries=(
+            day_start(month_start, tz, location),
+            day_start(next_month_start, tz, location),
+        ),
     )

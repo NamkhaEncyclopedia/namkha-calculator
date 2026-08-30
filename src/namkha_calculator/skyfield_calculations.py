@@ -41,8 +41,23 @@ def _get_ephemeris():
     return _get_loader()(filename)
 
 
+# Difference between an integer Julian day and the same date's proleptic
+# Gregorian ordinal: JD 2451545 is 2000-01-01.
+_JD_DATE_ORDINAL_OFFSET = 1721425
+
+
 def jd_to_datetime(jd: float) -> dt.datetime:
     return _get_timescale().tt_jd(jd).utc_datetime()
+
+
+def date_to_jd(date: dt.date) -> int:
+    """Integer Julian day of a date. The inverse of jd_to_datetime(jd).date().
+
+    An integer Julian day is noon TT, in the middle of the date, and TT runs
+    only about 69 seconds ahead of UTC, so the conversion never crosses
+    midnight.
+    """
+    return date.toordinal() + _JD_DATE_ORDINAL_OFFSET
 
 
 @lru_cache(maxsize=None)
