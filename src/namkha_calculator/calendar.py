@@ -386,7 +386,10 @@ def month_animal(month_number: int) -> Animal:
 
 
 def month_element(tibetan_year_number: int, month_number: int) -> Element:
-    """Element of a Tibetan month. See Janson, "Tibetan Calendar Mathematics", 5.1.
+    """Element of a Tibetan month.
+
+    Janson, "Tibetan Calendar Mathematics", appendix "Further astrological
+    calculations", subsection "Attributes for months", gives the formulas.
 
     Months 11 and 12 use their own formula, so a year can end with several
     months that share one element.
