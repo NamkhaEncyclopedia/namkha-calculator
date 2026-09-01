@@ -21,6 +21,8 @@ Python library for calculating [Namkha thread-cross](https://en.wikipedia.org/wi
     - [Timezone handling](#timezone-handling)
     - [Input validation and errors](#input-validation-and-errors)
     - [Result](#result)
+  - [Namkha types](#namkha-types)
+    - [Month Namkha](#month-namkha)
   - [Calculation notes](#calculation-notes)
     - [Latitude "trimming"](#latitude-trimming)
 - [Contributing](#contributing)
@@ -37,7 +39,7 @@ Python library for calculating [Namkha thread-cross](https://en.wikipedia.org/wi
 - [x] Year Namkha calculation (CNNR and Classic)
 - [x] Birth-time edge-case warnings
 - [ ] [WIP] Automatic historical timezone detection from coordinates
-- [ ] Month Namkha calculation
+- [x] Month Namkha calculation
 - [ ] Day Namkha calculation
 - [ ] Hour Namkha calculation
 - [ ] More pre-calculated test cases
@@ -70,7 +72,7 @@ subject = nc.Subject(
 )
 
 result = nc.calculate_namkha(
-    namkha_type=nc.NamkhaType.YEAR,
+    namkha_type=nc.NamkhaType.YEAR,  # or NamkhaType.MONTH
     subject=subject,
     method=nc.CalculationMethod.CLASSIC,  # or CalculationMethod.CNNR
 )
@@ -174,9 +176,11 @@ A derived timezone matches its location by construction, so neither check runs f
 - the birth year falls outside the supported range, 1551–2598 (limited by the bundled ephemeris);
 - an extreme behind-the-sun fixed offset at 56–60° latitude lands on the rare date (~1 per year) whose dawn drifts across clock midnight onto a neighboring date – no real timezone can trigger this.
 
+One failure is not a `ValueError`: `DAY` and `HOUR` are accepted as types but not calculated yet, so `calculate_namkha` raises `NotImplementedError` for them. See [Namkha types](#namkha-types).
+
 **`Location`** – `latitude`, `longitude`, optional `name`.
 
-**`NamkhaType`** – `YEAR`, `MONTH`, `DAY`, `HOUR`.
+**`NamkhaType`** – `YEAR`, `MONTH`, `DAY`, `HOUR`. See [Namkha types](#namkha-types) for which of them the library calculates.
 
 **`CalculationMethod`** – `CNNR` (Chögyal Namkhai Norbu Rinpoche's tradition) or `CLASSIC` ("classical" Tibetan astrology tradition). Only `YEAR` accepts `CNNR`; all other types use `CLASSIC`.
 
@@ -188,14 +192,16 @@ A derived timezone matches its location by construction, so neither check runs f
 | `subject`            | `Subject`                         | the input this result was calculated from |
 | `calculation_method` | `CalculationMethod`               | the method used                           |
 | `namkha_type`        | `NamkhaType`                      | the type calculated                       |
-| `birth_element`      | `Element`                         | element of the birth year                 |
-| `birth_animal`       | `Animal`                          | animal of the birth year                  |
-| `birth_mewa`         | `int`                             | mewa number of the birth year             |
+| `birth_element`      | `Element`                         | element of the birth period               |
+| `birth_animal`       | `Animal`                          | animal of the birth period                |
+| `birth_mewa`         | `int`                             | mewa number of the birth period           |
 | `harmonized_aspects` | `tuple[HarmonizedAspect, ...]`    | eight aspects in order                    |
 | `mewa_numbers`       | `dict[Aspect, int]`               | mewa number per mewa aspect; see below    |
 | `calculation_notes`  | `tuple[CalculationNoteItem, ...]` | notices or cautions                       |
 
 Every field is filled on every result.
+
+The three `birth_*` fields describe the *birth period*, which is the period the requested `NamkhaType` names: the birth year for `YEAR`, the birth month for `MONTH`. The field names keep the `birth_` prefix for every type.
 
 `mewa_numbers` holds four keys: `MEWA_LIFE`, `MEWA_BODY`, `MEWA_CAPACITY` and `MEWA_FORTUNE`. Each value is an `int` that also carries `.element`, the `Element` that mewa number stands for.
 
@@ -219,11 +225,27 @@ Every field is filled on every result.
 
 `note` is the one to branch on. `message` is written for a developer reading a log; an application showing notes to a reader is expected to supply its own wording per `note`.
 
+### Namkha types
+
+The library calculates `YEAR` and `MONTH`. `DAY` and `HOUR` are already in `NamkhaType`, but `calculate_namkha` raises `NotImplementedError` for them.
+
+`YEAR` accepts both methods, `CNNR` and `CLASSIC`. Every other type accepts `CLASSIC` alone and raises `ValueError` for `CNNR`.
+
+#### Month Namkha
+
+The Tibetan month of birth is resolved from the birth instant, the same way the year is. A Tibetan month begins at the dawn that begins its first day, so a birth before that dawn belongs to the month before. A birth close to that dawn, or to the one that begins the next month, gets the `PERIOD_BOUNDARY` caution (see [Calculation notes](#calculation-notes)).
+
+A birth in a leap month gets the number, element, animal and mewa of the regular month it precedes.
+
+The month element and animal follow the Phugpa formulas Janson gives (see [^3], section E.2: Attributes for months, under "Animals" and "Elements"). The library checks them against every month header in Henning's output over the years 1800–2598.
+
+The month mewa steps back by one each month, across the year boundary too. It is pinned by a single anchor: the Tiger month opening a Tiger astrological year has mewa 2. No Phugpa source prints a month mewa, so **these numbers are a reconstruction** from Janson's Tsurphu formula (see [^3], section E.2: Attributes for months, under "Numbers"), the reverse order, and the triples the Vaidurya dkar po gives per month animal (see [^1], section 10: THE NAMKHA FOR HARMONIZING THE ELEMENTS OF THE MONTH OF BIRTH).
+
 ### Calculation notes
 
 `result.calculation_notes` carries every note. All but `PERIOD_BOUNDARY` follow from the birth details alone, and `input_notes(resolved_timezone, location, birth_datetime)` returns those without running a calculation. `PERIOD_BOUNDARY` needs the calculation itself, so only the result has it.
 
-`PERIOD_BOUNDARY` (caution) is attached when the birth time falls within 5 minutes of a calculation-period boundary (for `YEAR`, the Tibetan year start/end). That close to a boundary the result can flip to the neighboring period, so the birth time must be precise.
+`PERIOD_BOUNDARY` (caution) is attached when the birth time falls within 5 minutes of a calculation-period boundary: for `YEAR`, the Tibetan year start/end; for `MONTH`, the dawn that begins the month and the dawn that begins the next. That close to a boundary the result can flip to the neighboring period, so the birth time must be precise.
 
 `HIGH_LATITUDE` (notice) is attached when `abs(latitude) >= 60.0`. Above this limit the library falls back to a fixed 5:00 AM day-start instead of civil twilight, which affects birth period boundary detection.
 
@@ -278,3 +300,5 @@ Migmar Tsering, Maria Rita Leti, Adriano Clemente, Alexander Khosmo and Tatiana 
 [^1]: C.N. Norbu. Namkha: Harmonizing the Energy of the Elements. Shang Shung Publications, 2022.
 
 [^2]: C.N. Norbu. Key for Consulting the Tibetan Calendar. Shang Shung Publications, 2014; M. Tsering. Jung-We Kyil-Khor – Mandala of Astrological Elements. Dynamic Space of the Elements ETS, 2020.
+
+[^3]: S. Janson. Tibetan calendar mathematics. Department of Mathematics, Uppsala University, 2007; revised 2014 ([arXiv:1401.6285](https://arxiv.org/abs/1401.6285)). The output for checking our implementation of Janson's formulas comes from Henning's calendar program ([kalacakra.org](http://kalacakra.org/calendar/os_tib.htm)); Janson's paper is based on Henning's book: E. Henning. Kālacakra and the Tibetan Calendar. American Institute of Buddhist Studies, New York, 2007.
