@@ -12,14 +12,17 @@
 
 Python library for calculating [Namkha thread-cross](https://en.wikipedia.org/wiki/Namkha) color schemes in the tradition of [Chögyal Namkhai Norbu Rinpoche](https://en.wikipedia.org/wiki/Namkhai_Norbu), with all the methods covered in the source text.[^1] Classical Tibetan astrology calculations were added for cases where the source refers to them for complete instructions.[^2]
 
+This library is the engine behind the [Namkha Webapp](https://github.com/NamkhaEncyclopedia/namkha-webapp/), which provides a user-friendly interface and renders the results as a PDF.
+
 ## Table of contents
 
 - [Development status](#development-status)
 - [Usage](#usage)
-  - [Key types](#key-types)
-    - [User input](#user-input)
-    - [Timezone handling](#timezone-handling)
-    - [Input validation and errors](#input-validation-and-errors)
+  - [API reference](#api-reference)
+    - [Functions](#functions)
+    - [Input](#input)
+    - [Timezone resolution](#timezone-resolution)
+    - [Errors](#errors)
     - [Result](#result)
   - [Namkha types](#namkha-types)
     - [Month Namkha](#month-namkha)
@@ -44,6 +47,27 @@ Python library for calculating [Namkha thread-cross](https://en.wikipedia.org/wi
 - [ ] Hour Namkha calculation
 - [ ] More pre-calculated test cases
 - [ ] Further investigation into the high-latitude regions problem
+
+## Acknowledgments
+
+<img src="https://raw.githubusercontent.com/NamkhaEncyclopedia/namkha-calculator/main/WhiteAThigle.webp" alt="White A in a Thigle" width="150" height="150" />
+
+***Whatever wisdom this contains belongs to the Tibetan astrological traditions and their holders; whatever faults it contains are our own.***
+
+We thank everyone who supported the Namkha Calculator project financially, on GoFundMe and through direct donations. Your help means a great deal to us, and it carried us through many obstacles!
+
+We would also like to express our gratitude to:
+
+- Migmar Tsering
+- Maria Rita Leti
+- Adriano Clemente
+- Svante Janson
+- Edward Henning
+- Giovanni Totino, the director of Shang Shung Publications Italy
+- Alexander Khosmo and Tatiana Ulyanova, for their guidance on Tibetan astrology
+- the Gakyil of Merigar East – Oana Marcu and Krisztina Balla, for providing indispensable educational materials
+- Karma Teleg Dondrup (tibastro.be)
+- Sven Vandermeeren, Olli Hartikainen and everyone who supported us in the most challenging moments.
 
 ## Usage
 
@@ -86,10 +110,33 @@ for note in result.calculation_notes:
     print(f"[{note.note_type.name}] {note.message}")
 ```
 
-### Key types
+### API reference
 
-#### User input
-**`Subject`** – birth data for one person (or another entity with a known birth/creation time, e.g. a company).
+Everything here is available as `nc.<name>` after `import namkha_calculator as nc`. The one exception is `resolve_timezone`, which comes from `namkha_calculator.zone_derivation`.
+
+#### Functions
+
+| Call                                                                                | Returns                           | Purpose                                                                                                 |
+|-------------------------------------------------------------------------------------|-----------------------------------|---------------------------------------------------------------------------------------------------------|
+| `resolve_timezone(location, birth_datetime, *, zone_key=None, offset=None, on_summer_time=None)` | `ResolvedTimezone`                | Works out which timezone applied at the birth. Call it before you build a `Subject`.                    |
+| `calculate_namkha(namkha_type, subject, method=CalculationMethod.CLASSIC)`           | `NamkhaCalculationResult`         | Calculates the Namkha.                                                                                    |
+| `input_notes(resolved_timezone, location, birth_datetime)`                           | `tuple[CalculationNoteItem, ...]` | Notes that follow from the birth details alone, without running a calculation.                            |
+| `timezone_label(resolved_timezone, birth_datetime)`                                  | `str or None`                     | The timezone name to show a reader. See [Timezone resolution](#timezone-resolution).                      |
+| `zone_keys()`                                                                        | `tuple[str, ...]`                 | Every IANA zone key you may pass as `zone_key`.                                                           |
+| `zone(key)`                                                                          | `ZoneInfo`                        | A timezone from the bundled data.                                                                         |
+| `fixed_offset(offset)`                                                               | `datetime.timezone`               | A timezone with a constant UTC offset, built from a `timedelta`.                                          |
+
+#### Input
+
+**`Location`** – `latitude` and `longitude` in decimal degrees, plus an optional `name`.
+
+**`Gender`** – `MALE` or `FEMALE`.
+
+**`NamkhaType`** – `YEAR`, `MONTH`, `DAY` or `HOUR`. See [Namkha types](#namkha-types) for which of them the library calculates.
+
+**`CalculationMethod`** – `CNNR` (Chögyal Namkhai Norbu Rinpoche's terma) or `CLASSIC` (classical Tibetan astrology). Only `YEAR` accepts `CNNR`.
+
+**`Subject`** – birth data for one person, or for another entity with a known creation time, e.g. a company.
 
 All fields are keyword-only.
 
@@ -99,11 +146,11 @@ All fields are keyword-only.
 | `birth_datetime`    | `datetime`         | 'naive' (no tzinfo) local time, Gregorian calendar                            |
 | `birth_location`    | `Location`         | latitude/longitude in decimal degrees, optional place name                    |
 | `resolved_timezone` | `ResolvedTimezone` | the timezone worked out for this place and date; see below                    |
-| `name`              | `str` (optional)   | optional subject name                                                         |
+| `name`              | `str` (optional)   | subject name                                                                  |
 
-`Subject` doesn't work a timezone out for itself. Call `resolve_timezone` first and pass what it returns, as the example above does.
+`Subject` does not work a timezone out for itself. Call `resolve_timezone` first and pass what it returns, as the example above does.
 
-Four read-only properties read the resolved timezone back:
+`Subject` also has four read-only properties, all based on the resolved timezone:
 
 | Property                      | Type                 | Notes                                                        |
 |-------------------------------|----------------------|--------------------------------------------------------------|
@@ -124,65 +171,55 @@ Four read-only properties read the resolved timezone back:
 | `on_summer_time`          | `bool or None`        | which reading of an ambiguous fall-back hour applies                  |
 | `gregorian_adoption_date` | `date`                | when the birth region adopted the Gregorian calendar                  |
 
-Three more fields, `for_latitude`, `for_longitude` and `for_birth_date`, record the birth details this timezone belongs to; `assert_binds(location, birth_datetime)` compares them and raises `StaleTimezoneError` when they differ. `Subject` calls it, so a timezone worked out for another place or date can never reach a calculation. `modern_zone_key` holds the zone covering the coordinates today, which for a pre-1970 birth can differ from `key`.
+Three more fields record the birth details this timezone belongs to: `for_latitude`, `for_longitude` and `for_birth_date`. `assert_binds(location, birth_datetime)` compares them and raises `StaleTimezoneError` when they differ. `Subject` and `input_notes` both call it, so a timezone worked out for another place or date can never reach a calculation.
 
-`tzinfo` rebuilds the timezone itself from `key` or `offset_seconds`. The value is a plain dataclass otherwise, so it is hashable and picklable.
+`modern_zone_key` holds the zone covering the coordinates today. For a birth before 1970 that can differ from `key`. `tzinfo` rebuilds the timezone itself from `key` or `offset_seconds`. Every other field is a plain value, so the whole object stays hashable and picklable.
 
-#### Timezone handling
+#### Timezone resolution
 
-The timezone is worked out once, by `resolve_timezone`, before any calculation. It lives in `namkha_calculator.zone_derivation` and is deliberately not re-exported at the package root: the coordinate lookups and the historical maps below are expensive, and keeping the import explicit is what keeps them off the calculation path.
+Call `resolve_timezone` once, before any calculation, and pass its result to `Subject` and to `input_notes`. It is the only place the timezone is worked out, and the only place that reads the coordinates.
+
+It sits in its own module, apart from `nc`, because it does expensive map data calls, which the rest of the calculation never needs:
 
 ```python
 from namkha_calculator.zone_derivation import resolve_timezone
-
-resolve_timezone(location, birth_datetime, *, zone_key=None, offset=None, on_summer_time=None)
 ```
 
-Timezone data is bundled with the package: an IANA tzdb zoneinfo tree compiled with the *backzone* file, so results are identical on every operating system, and zones that tzdb merged away for post-1970 equivalence keep their own real pre-1970 histories (an Amsterdam birth in summer 1935 gets the true Dutch +1:19:32, not the +1:00 of the Brussels zone; wartime Stockholm keeps Sweden's DST-free clocks, not Berlin's ect.). The birth timezone is resolved as follows:
+Timezone data is bundled with the package, so results are the same on every operating system, and every zone keeps its own real history from before 1970.
 
-- **`zone_key` or `offset` given** – that timezone is used, and the result is `CERTAIN`. Pass at most one of the two. `zone_key` is an IANA key from the bundled data, and `nc.zone_keys()` lists every one of them; `offset` is a `timedelta`, for a birth time known only as a bare UTC offset. Either is checked against the birthplace first, because a wrongly given timezone can belong nowhere near it.
-- **Neither given, birth from 1970 on** – the IANA zone covering the coordinates. This is a certain derivation: tzdb guarantees zone histories from 1970, so even zones that changed later for political reasons resolve to the correct historical rules.
-- **Neither given, birth before 1970** – tzdb only guarantees each zone's history that far back for its *reference city*, and modern zone borders must not be projected into the past. The birthplace is looked up in bundled historical world maps (1880–1960, from [historical-basemaps](https://github.com/aourednik/historical-basemaps)): if the covering zone's reference city belonged to the same country as the birthplace in the birth year, that zone applies; otherwise the zone of the nearest reference city *within the birth-year country* applies. The `TIMEZONE_ESTIMATED` caution is attached, or `TIMEZONE_BORDERS_UNCERTAIN` when the maps around the birth year disagree (see [Calculation notes](#calculation-notes)). *This case is still work in progress.*
-- **Neither given, open water or outside every timezone** – on open water, the nautical `Etc/GMT±N` zone for the longitude; where the coordinates match no timezone at all, the longitude's mean solar time. Both get the `TIMEZONE_ESTIMATED` caution and the `LOCAL_MEAN_TIME` notice.
+How the birth timezone is worked out:
 
-Whichever zone applies – derived or given – a birth before standard time in that zone (the tzdb "LMT" era, roughly pre-1880s–1912 depending on country) uses the *mean solar time of the birth longitude itself*, which is more accurate than any zone's reference-city approximation. The `LOCAL_MEAN_TIME` notice is attached. In that case `key` still names the zone, so `nc.timezone_label(resolved_timezone, birth_datetime)` gives the name to show a reader: the zone key, `"mean solar time"` when the offset came from the longitude, or `None` when only a bare offset was given.
+- **You provide `zone_key` or `offset`** – that timezone applies, and `derivation` is `CERTAIN`. Pass only one of the two. `zone_key` is an IANA key from the bundled data, and `nc.zone_keys()` lists every one of them; `offset` is a `timedelta`, for a birth time known only as a UTC offset. The library checks either one against the birthplace first, because a wrong timezone can belong nowhere near it.
+- **You provide neither, birth from 1970 on** – the zone covering the coordinates, again `CERTAIN`. Zone histories are guaranteed that far back, so a zone that later split for political or other reasons still gives the right rules.
+- **You provide neither, birth between 1880 and 1970** – standard time was still being introduced then, and the borders of modern time zones must not be projected back into that period. The library looks the birthplace up in bundled historical world maps (1880–1960, from [historical-basemaps](https://github.com/aourednik/historical-basemaps)) and takes the zone that belonged to the same country in the birth year. The answer is an estimate and carries the `TIMEZONE_ESTIMATED` caution, or `TIMEZONE_BORDERS_UNCERTAIN` when the maps around the birth year disagree (see [Calculation notes](#calculation-notes)). If standard time had not reached that region yet, no caution follows: the clock then comes from the longitude, not from the zone. *This case is still work in progress.*
+- **You provide neither, birth before 1880** – the oldest map is drawn for 1880 and says nothing about earlier borders, so no country is looked up. The zone covering the coordinates today is kept. What the clock showed at the birth comes from that zone's own history, and for these dates that is the mean solar time of the birth longitude, with the `LOCAL_MEAN_TIME` notice. No caution follows, because the zone did not decide the clock.
+- **You provide neither, open water or a point in no timezone** – the nautical `Etc/GMT±N` zone for the longitude, or, where no timezone matches at all, the longitude's mean solar time. Both are estimates.
+
+Each country introduced standard time on its own date, up to 1912. Until that date, whatever zone applies, the birth runs on the *mean solar time of the birth longitude* and gets the `LOCAL_MEAN_TIME` notice. This overrides a `zone_key` you provide as well, because no zone was in use yet.
+
+The zone key is then not the name the clock carried, so ask `nc.timezone_label(resolved_timezone, birth_datetime)` for the name you show a reader. It returns `"mean solar time"` when the offset came from the longitude, `None` when you provided a bare offset, which is then the whole answer, and the zone key in every other case.
 
 `on_summer_time` says which reading of an ambiguous fall-back hour applies. It is kept only when the birth time really falls in a repeated hour; anywhere else it decided nothing and is dropped.
 
 Birth dates are proleptic Gregorian; a Julian-calendar source date must be converted first (see the `PRE_GREGORIAN_DATE` caution under [Calculation notes](#calculation-notes)).
 
-#### Input validation and errors
+#### Errors
 
-Every timezone failure is a `TimezoneError`, which subclasses `ValueError`, so callers can tell the failures apart without matching on message text.
+Bad input raises. Nothing is quietly replaced by a second-best answer.
 
-`resolve_timezone` checks a `zone_key` or an `offset` against the birth place coordinates before returning, and raises instead of resolving to something the place contradicts:
+| Error                           | Raised by             | When                                                                                                                                                                                     |
+|---------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ValueError`                    | `Location`            | Latitude is outside [-90, 90], or longitude outside [-180, 180].                                                                                                                           |
+| `ValueError`                    | `resolve_timezone`    | You provided both `zone_key` and `offset`. Pass one or neither.                                                                                                                            |
+| `ZoneInfoNotFoundError`         | `resolve_timezone`    | The `zone_key` you provided is not in the bundled data. `nc.zone_keys()` lists the keys.                                                                                                   |
+| `TimezoneOffsetOutOfRangeError` | `resolve_timezone`    | The `offset` you provided lies outside UTC−16 to UTC+16. Every clock ever kept fits in that range, so anything beyond it is a data-entry error. A `zone_key` is not checked this way.       |
+| `TimezoneLocationMismatchError` | `resolve_timezone`    | The timezone you provided is too far from the birth longitude's mean solar time: more than 2.5 h behind it, or 3.5 h ahead. Not checked from 60° latitude on (see [Latitude "trimming"](#latitude-trimming)). |
+| `TypeError`                     | `Subject`             | `birth_datetime` carries a timezone, or `resolved_timezone` is not a `ResolvedTimezone`.                                                                                                   |
+| `StaleTimezoneError`            | `Subject`, `input_notes` | The resolved timezone was worked out for another place or another date.                                                                                                                 |
+| `ValueError`                    | `calculate_namkha`    | The birth instant never existed in its timezone, or the birth year is outside 1551–2598, the range of the bundled ephemeris.                                                                |
+| `NotImplementedError`           | `calculate_namkha`    | `namkha_type` is `DAY` or `HOUR`. See [Namkha types](#namkha-types).                                                                                                                       |
 
-- A fixed offset must lie within the range real timezones have used, *UTC−16* to *UTC+16*, or `TimezoneOffsetOutOfRangeError` – an offset outside it is a data-entry error. The range is that wide because zones that counted dates across the Date Line carry solar offsets shifted by a whole day (pre-1845 Manila ran -15:56). Named zones are not checked: their offsets come from real tzdb data.
-- The timezone must be consistent with the location's longitude, or `TimezoneLocationMismatchError`: the (standard-time) clock may run at most *2.5 h behind* or *3.5 h ahead* of the longitude's mean solar time. Every historical timezone fits these bounds; the behind bound is tighter because a clock behind the sun pulls dawn towards clock midnight. This check is skipped at latitudes of 60° and above, where we consider the day start is a fixed local hour and solar time is irrelevant (see [Latitude "trimming"](#latitude-trimming)).
-
-A derived timezone matches its location by construction, so neither check runs for one.
-
-`Location` checks its coordinates at construction: latitude must lie in [-90, 90] and longitude in [-180, 180].
-
-`Subject` validates its input at construction and raises instead of computing from inconsistent data:
-
-- `birth_datetime` must be naive – `TypeError` otherwise (the timezone belongs in `resolved_timezone`).
-- `resolved_timezone` must be a `ResolvedTimezone`; a bare `tzinfo` is rejected with `TypeError`.
-- The resolved timezone must have been worked out for this birth place and date - `StaleTimezoneError` otherwise. Only the date is compared, not the time of day: the time of day cannot change which timezone applied.
-
-`calculate_namkha` raises `ValueError` – never degrades silently – when:
-
-- the birth instant never existed in its timezone (a time skipped by a spring-forward clock change, or a whole date removed by a dateline change, e.g. 2011-12-30 in Samoa);
-- the birth year falls outside the supported range, 1551–2598 (limited by the bundled ephemeris);
-- an extreme behind-the-sun fixed offset at 56–60° latitude lands on the rare date (~1 per year) whose dawn drifts across clock midnight onto a neighboring date – no real timezone can trigger this.
-
-One failure is not a `ValueError`: `DAY` and `HOUR` are accepted as types but not calculated yet, so `calculate_namkha` raises `NotImplementedError` for them. See [Namkha types](#namkha-types).
-
-**`Location`** – `latitude`, `longitude`, optional `name`.
-
-**`NamkhaType`** – `YEAR`, `MONTH`, `DAY`, `HOUR`. See [Namkha types](#namkha-types) for which of them the library calculates.
-
-**`CalculationMethod`** – `CNNR` (Chögyal Namkhai Norbu Rinpoche's tradition) or `CLASSIC` ("classical" Tibetan astrology tradition). Only `YEAR` accepts `CNNR`; all other types use `CLASSIC`.
+The three timezone errors share the base class `TimezoneError`, which is itself a `ValueError`. The two timezone checks run only on a timezone you provided. A timezone the library derives already matches the location.
 
 #### Result
 **`NamkhaCalculationResult`**
@@ -221,9 +258,11 @@ The three `birth_*` fields describe the *birth period*, which is the period the 
 | `note`      | `CalculationNote`     | which note this is, e.g. `HIGH_LATITUDE`                 |
 | `note_type` | `CalculationNoteType` | `NOTICE` or `CAUTION`                                    |
 | `message`   | `str`                 | one line describing the note                             |
-| `doc`       | `str`                 | room for a longer text; empty on every note the library produces |
+| `doc`       | `str`                 | longer text; empty on every library note                 |
 
 `note` is the one to branch on. `message` is written for a developer reading a log; an application showing notes to a reader is expected to supply its own wording per `note`.
+
+**`Element`** and **`Animal`** are `str` enums, so a value is its canonical name in English: `Wood`, `Fire`, `Earth`, `Metal`, `Water`, and `Mouse`, `Ox`, `Tiger`, `Hare`, `Dragon`, `Snake`, `Horse`, `Sheep`, `Monkey`, `Bird`, `Dog`, `Boar`.
 
 ### Namkha types
 
@@ -239,7 +278,9 @@ A birth in a leap month gets the number, element, animal and mewa of the regular
 
 The month element and animal follow the Phugpa formulas Janson gives (see [^3], section E.2: Attributes for months, under "Animals" and "Elements"). The library checks them against every month header in Henning's output over the years 1800–2598.
 
-The month mewa steps back by one each month, across the year boundary too. It is pinned by a single anchor: the Tiger month opening a Tiger astrological year has mewa 2. No Phugpa source prints a month mewa, so **these numbers are a reconstruction** from Janson's Tsurphu formula (see [^3], section E.2: Attributes for months, under "Numbers"), the reverse order, and the triples the Vaidurya dkar po gives per month animal (see [^1], section 10: THE NAMKHA FOR HARMONIZING THE ELEMENTS OF THE MONTH OF BIRTH).
+The month mewa steps back by one each month, across the year boundary too. It is pinned by a single anchor: the Tiger month opening a Tiger astrological year has mewa 2.
+
+No Phugpa source prints a month mewa, so **these numbers are a reconstruction**. They come from two sources: Janson's Tsurphu formula (see [^3], section E.2: Attributes for months, under "Numbers"), the reverse order, and the triples the Vaidurya dkar po gives per month animal (see [^1], section 10: THE NAMKHA FOR HARMONIZING THE ELEMENTS OF THE MONTH OF BIRTH).
 
 ### Calculation notes
 
@@ -249,11 +290,21 @@ The month mewa steps back by one each month, across the year boundary too. It is
 
 `HIGH_LATITUDE` (notice) is attached when `abs(latitude) >= 60.0`. Above this limit the library falls back to a fixed 5:00 AM day-start instead of civil twilight, which affects birth period boundary detection.
 
-`AMBIGUOUS_LOCAL_TIME` (caution) is attached when the naive birth time falls in a fall-back clock change and so occurs twice; the standard-time reading is used unless `resolve_timezone`'s `on_summer_time` argument says which reading is correct (then `AMBIGUOUS_LOCAL_TIME_RESOLVED`, a notice, is attached instead). A birth instant that never existed in the timezone – a time skipped by a spring-forward clock change, or a whole date removed by a dateline jump – is rejected with a `ValueError` rather than noted.
+`AMBIGUOUS_LOCAL_TIME` (caution) is attached when the clocks went back and the naive birth time therefore happened twice that day. The library reads it as standard (non-DST) time. Pass `on_summer_time` to `resolve_timezone` to choose the other reading; the note then becomes a notice: `AMBIGUOUS_LOCAL_TIME_RESOLVED`.
+
+The opposite case is an error: a time the clocks skipped going forward, or a whole date dropped by a dateline jump. A birth time that never happened at all is rejected with a `ValueError`.
 
 `TIMEZONE_ESTIMATED` (caution) is attached when no timezone was given and it could not be derived from the location and date with certainty (pre-1970 birth, or birth on open water); the best historically recorded regional time was used.
 
-`TIMEZONE_BORDERS_UNCERTAIN` (caution) replaces `TIMEZONE_ESTIMATED` – the two are mutually exclusive – when the historical map snapshots on either side of a pre-1970 birth year disagree about which country held the birthplace, so even the country whose time applied is uncertain. Short-lived changes between two maps (e.g. the 1939–1941 Soviet occupation of eastern Poland, which decreed Moscow time) are invisible to the maps and cannot be resolved automatically by any open dataset we know of. Right now the remedy is research: establish the birthplace's legal time from historical sources (the [World Historical Gazetteer](https://whgazetteer.org/) is a good starting point for a place's administrative history) and pass it to `resolve_timezone` as `zone_key`.
+There is one exception. For the dates where time standartization has not reached the birth region, the offset is read from the birth longitude instead of from the zone. The zone then has no effect on the result, so the caution is left out and the birth carries `LOCAL_MEAN_TIME` alone.
+
+`TIMEZONE_BORDERS_UNCERTAIN` (caution) is attached instead of `TIMEZONE_ESTIMATED`. A birth never gets both.
+
+The historical maps are snapshots at fixed years. When the snapshot before the birth year and the one after it put the birthplace in different countries, the library cannot tell which country held it at the moment of birth. Each country implies its own clocks, so an uncertain country means an uncertain zone.
+
+Borders that changed and changed back between two snapshots are invisible to the maps, and no open dataset we know of can fill that gap. The Soviet occupation of eastern Poland from 1939 to 1941, which imposed Moscow time, is one such case.
+
+To settle it, look up the birthplace's legal time in historical sources and pass it to `resolve_timezone` as `zone_key`. The [World Historical Gazetteer](https://whgazetteer.org/) is a good place to start: it tracks which state a place belonged to over time.
 
 `LOCAL_MEAN_TIME` (notice) is attached when the birth clock time was read from the longitude rather than from civil timezone rules: a birth before standard time in its region, on open water, or outside every timezone.
 
@@ -282,18 +333,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 - a filtered JPL DE440 ephemeris (public domain).
 
 Timezone boundary lookups use [timezonefinder](https://github.com/jannikmi/timezonefinder) (MIT), whose boundary data derives from [timezone-boundary-builder](https://github.com/evansiroky/timezone-boundary-builder) (ODbL).
-
-## Acknowledgments
-
-<img src="https://raw.githubusercontent.com/NamkhaEncyclopedia/namkha-calculator/main/WhiteAThigle.webp" alt="White A Thigle" width="150" height="150" />
-
-***Whatever wisdom this contains belongs to the Tibetan astrological traditions and their holders; whatever faults it contains are our own.***
-
-
-We thank everyone who supported the Namkha Calculator project financially – your help means a great deal to us, and it sustained us through a lot of obstacles.
-
-We would also like to express our gratitude to:
-Migmar Tsering, Maria Rita Leti, Adriano Clemente, Alexander Khosmo and Tatiana Ulyanova for their guidance on Tibetan astrology; and to the Gakyil of Merigar East – Oana Marcu and Krisztina Balla for their invaluable help in providing indispensable educational materials.
 
 ## References
 
