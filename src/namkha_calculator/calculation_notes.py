@@ -126,10 +126,17 @@ CALCULATION_NOTES = {
 
 
 def timezone_derivation_note(
-    derivation: TimezoneDerivation,
+    derivation: TimezoneDerivation, pre_standard_time_era: bool
 ) -> tuple[CalculationNoteItem, ...]:
     """Caution matching how sure the timezone derivation is; nothing when
-    certain."""
+    certain.
+
+    A birth before standard time gets nothing either. The library reads its
+    offset from the birth longitude and not from the zone, so the result is
+    the same whichever zone was derived.
+    """
+    if pre_standard_time_era:
+        return ()
     note = TIMEZONE_DERIVATION_NOTES.get(derivation)
     return () if note is None else (CALCULATION_NOTES[note],)
 
@@ -240,8 +247,13 @@ def input_notes(
     notes: list[CalculationNoteItem] = []
     if abs(location.latitude) >= LATITUDE_LIMIT:
         notes.append(CALCULATION_NOTES[CalculationNote.HIGH_LATITUDE])
-    notes.extend(timezone_derivation_note(resolved_timezone.derivation))
     tz = resolved_timezone.tzinfo
+    notes.extend(
+        timezone_derivation_note(
+            resolved_timezone.derivation,
+            uses_local_mean_time(birth_datetime, tz),
+        )
+    )
     notes.extend(
         local_time_dst_note(
             birth_datetime, tz, resolved_timezone.on_summer_time is not None

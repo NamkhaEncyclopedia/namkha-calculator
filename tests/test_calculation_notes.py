@@ -27,6 +27,13 @@ from namkha_calculator.zone_derivation import resolve_timezone
 _TZ = "Europe/Berlin"
 _LAT, _LON = 48.7758, 9.1829
 
+_BERLIN = Location(52.52, 13.405)
+_LVIV = Location(49.8397, 24.0297)
+_ARKHANGELSK = Location(64.5401, 40.5433)
+_ROME = Location(41.9028, 12.4964)
+_SVALBARD = Location(78.0, 15.0)
+_POZNAN = Location(52.41, 16.93)
+
 
 def _subject(
     birth: str | datetime = "15.06.1985 12:00",
@@ -136,13 +143,12 @@ class TestDstNoteInResult(unittest.TestCase):
 
 class TestPreGregorianNote(unittest.TestCase):
     # Rome, before/after the Gregorian reform of 15 October 1582.
-    _ROME = Location(41.9028, 12.4964)
 
     def test_pre_reform_birth_emits_note(self):
         subject = _subject(
             datetime(1580, 6, 15, 12, 0),
             zone_key="Europe/Rome",
-            location=self._ROME,
+            location=_ROME,
         )
         self.assertIn(
             CalculationNote.PRE_GREGORIAN_DATE,
@@ -153,7 +159,7 @@ class TestPreGregorianNote(unittest.TestCase):
         subject = _subject(
             datetime(1583, 6, 15, 12, 0),
             zone_key="Europe/Rome",
-            location=self._ROME,
+            location=_ROME,
         )
         self.assertNotIn(
             CalculationNote.PRE_GREGORIAN_DATE,
@@ -171,7 +177,6 @@ class TestRegionalGregorianAdoption(unittest.TestCase):
     _TOKYO = Location(35.6762, 139.6503)
     _ATHENS = Location(37.9838, 23.7275)
     _SITKA = Location(57.0531, -135.33)
-    _ROME = Location(41.9028, 12.4964)
     _FAROE = Location(62.01, -6.77)
     _ALAND = Location(60.10, 19.93)
     # Open South Pacific, far from any zone.tab country.
@@ -245,7 +250,7 @@ class TestLocalMeanTimeNoteInResult(unittest.TestCase):
         subject = _subject(
             datetime(1700, 6, 15, 12, 0),
             zone_key="Europe/Rome",
-            location=Location(41.9028, 12.4964),
+            location=_ROME,
         )
         notes = _notes(subject, CalculationMethod.CLASSIC)
         self.assertIn(CalculationNote.LOCAL_MEAN_TIME, notes)
@@ -269,11 +274,21 @@ class TestTimezoneDerivationNotes(unittest.TestCase):
         subject = _subject(
             datetime(1940, 6, 15, 12, 0),
             zone_key=None,
-            location=Location(49.8397, 24.0297),
+            location=_LVIV,
         )
         notes = _notes(subject, CalculationMethod.CLASSIC)
         self.assertIn(CalculationNote.TIMEZONE_BORDERS_UNCERTAIN, notes)
         self.assertNotIn(CalculationNote.TIMEZONE_ESTIMATED, notes)
+
+    def test_a_birth_before_standard_time_gets_no_caution(self):
+        # Poznan 1700: the offset comes from the birth longitude, so the
+        # derived zone changed nothing that a caution could warn about.
+        subject = _subject(
+            datetime(1700, 6, 15, 12, 0), zone_key=None, location=_POZNAN
+        )
+        notes = _notes(subject, CalculationMethod.CLASSIC)
+        self.assertNotIn(CalculationNote.TIMEZONE_ESTIMATED, notes)
+        self.assertIn(CalculationNote.LOCAL_MEAN_TIME, notes)
 
     def test_explicit_timezone_no_caution(self):
         notes = _notes(_subject("15.06.1985 12:00"), CalculationMethod.CLASSIC)
@@ -285,9 +300,7 @@ class TestHighLatitudeNoteInResult(unittest.TestCase):
     def test_high_latitude_emits_note(self):
         # Svalbard (78 N) is above the 60 deg limit, so the day start always
         # uses the fixed-hour fallback.
-        svalbard = _subject(
-            zone_key="Arctic/Longyearbyen", location=Location(78.0, 15.0)
-        )
+        svalbard = _subject(zone_key="Arctic/Longyearbyen", location=_SVALBARD)
         notes = _notes(svalbard, CalculationMethod.CLASSIC)
         self.assertIn(CalculationNote.HIGH_LATITUDE, notes)
 
@@ -303,17 +316,17 @@ class TestInputNotesReachEveryNote(unittest.TestCase):
 
     CASES = {
         "modern city, nothing to report": (
-            Location(52.52, 13.405),
+            _BERLIN,
             datetime(1985, 6, 15, 12, 0),
             None,
         ),
         "borders moved around the birth year": (
-            Location(49.8397, 24.0297),
+            _LVIV,
             datetime(1940, 6, 15, 12, 0),
             None,
         ),
         "far north, before the Gregorian calendar reached it": (
-            Location(64.5401, 40.5433),
+            _ARKHANGELSK,
             datetime(1849, 3, 15, 12, 0),
             None,
         ),
@@ -363,29 +376,26 @@ class TestInputNotesRefusesAnotherPlace(unittest.TestCase):
     that has moved on since the timezone was derived.
     """
 
-    BERLIN = Location(52.52, 13.405)
-    SVALBARD = Location(78.0, 15.0)
-
     BIRTH = datetime(1985, 6, 15, 12, 0)
 
     def test_polar_timezone_with_a_temperate_location(self):
-        resolved = resolve_timezone(self.SVALBARD, self.BIRTH)
+        resolved = resolve_timezone(_SVALBARD, self.BIRTH)
         with self.assertRaises(StaleTimezoneError):
-            input_notes(resolved, self.BERLIN, self.BIRTH)
+            input_notes(resolved, _BERLIN, self.BIRTH)
 
     def test_temperate_timezone_with_a_polar_location(self):
-        resolved = resolve_timezone(self.BERLIN, self.BIRTH)
+        resolved = resolve_timezone(_BERLIN, self.BIRTH)
         with self.assertRaises(StaleTimezoneError):
-            input_notes(resolved, self.SVALBARD, self.BIRTH)
+            input_notes(resolved, _SVALBARD, self.BIRTH)
 
     def test_another_date(self):
-        resolved = resolve_timezone(self.BERLIN, self.BIRTH)
+        resolved = resolve_timezone(_BERLIN, self.BIRTH)
         with self.assertRaises(StaleTimezoneError):
-            input_notes(resolved, self.BERLIN, datetime(1985, 6, 16, 12, 0))
+            input_notes(resolved, _BERLIN, datetime(1985, 6, 16, 12, 0))
 
     def test_the_place_it_was_derived_for_is_accepted(self):
-        resolved = resolve_timezone(self.SVALBARD, self.BIRTH)
-        notes = input_notes(resolved, self.SVALBARD, self.BIRTH)
+        resolved = resolve_timezone(_SVALBARD, self.BIRTH)
+        notes = input_notes(resolved, _SVALBARD, self.BIRTH)
         self.assertIn(CalculationNote.HIGH_LATITUDE, {item.note for item in notes})
 
 
@@ -396,7 +406,7 @@ class TestTimezoneLabel(unittest.TestCase):
     _CASES = (
         (
             "named civil zone",
-            Location(latitude=52.52, longitude=13.40),
+            _BERLIN,
             datetime(1985, 3, 15, 14, 30),
             None,
             "Europe/Berlin",
@@ -417,7 +427,7 @@ class TestTimezoneLabel(unittest.TestCase):
         ),
         (
             "pre-standard-time era",
-            Location(latitude=64.5401, longitude=40.5433),
+            _ARKHANGELSK,
             datetime(1849, 12, 15, 5, 0),
             None,
             "mean solar time",
@@ -445,7 +455,7 @@ class TestTimezoneLabel(unittest.TestCase):
     def test_a_mean_solar_birth_is_not_named_after_its_key(self):
         # The defect this closes: the birth line named Europe/Moscow next to the
         # offset of Arkhangelsk mean solar time.
-        location = Location(latitude=64.5401, longitude=40.5433)
+        location = _ARKHANGELSK
         birth = datetime(1849, 12, 15, 5, 0)
         resolved = resolve_timezone(location, birth)
         self.assertEqual(resolved.key, "Europe/Moscow")

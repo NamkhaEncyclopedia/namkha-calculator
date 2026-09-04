@@ -45,6 +45,14 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   before the first map any more; the zone covering the birthplace today is kept
   instead.
 
+- A birth before standard time carried the `TIMEZONE_ESTIMATED` or
+  `TIMEZONE_BORDERS_UNCERTAIN` caution, warning about a derived zone that never
+  reached the result: in that era the offset comes from the birth longitude
+  no matter which zone applies. Such a birth now gets the `LOCAL_MEAN_TIME` notice
+  alone. `timezone_derivation_note` takes a second argument for it. A nautical
+  zone on open water keeps its caution, because its whole-hour offset does
+  decide the clock.
+
 ### Removed
 
 - `calendar.tibetan_to_julian`, which nothing called. It computed a month's
