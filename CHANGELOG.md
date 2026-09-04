@@ -40,6 +40,11 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   year runs from that date, the CNNR year Namkha changes as well for a birth in
   that one-day window.
 
+- A birth before 1880 was attributed to the country that the oldest bundled
+  border map, drawn for 1880, shows at the birthplace. No country is looked up
+  before the first map any more; the zone covering the birthplace today is kept
+  instead.
+
 ### Removed
 
 - `calendar.tibetan_to_julian`, which nothing called. It computed a month's

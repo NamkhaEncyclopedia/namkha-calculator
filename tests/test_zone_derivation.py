@@ -113,6 +113,30 @@ class TestHistoricalBorders(unittest.TestCase):
         )
 
 
+class TestBirthsBeforeTheOldestMap(unittest.TestCase):
+    """The bundled maps start in 1880, so no country is looked up for an
+    earlier birth. Poznan is the example: Prussian in 1880, Polish in 1700."""
+
+    POZNAN = Location(latitude=52.41, longitude=16.93)
+
+    def test_the_zone_covering_the_place_today_is_kept(self):
+        resolved = resolve_timezone(self.POZNAN, dt.datetime(1700, 6, 15, 12, 0))
+        self.assertEqual(resolved.key, "Europe/Warsaw")
+        self.assertIs(resolved.derivation, TimezoneDerivation.ESTIMATED)
+
+    def test_the_oldest_map_puts_the_place_in_germany(self):
+        mapped_key = _zone_key_within_birth_country(self.POZNAN, "Europe/Warsaw", 1880)
+        self.assertEqual(mapped_key, "Europe/Berlin")
+
+    def test_the_first_mapped_year_still_uses_the_map(self):
+        resolved = resolve_timezone(self.POZNAN, dt.datetime(1880, 6, 15, 12, 0))
+        self.assertEqual(resolved.key, "Europe/Berlin")
+
+    def test_the_year_before_it_does_not(self):
+        resolved = resolve_timezone(self.POZNAN, dt.datetime(1879, 6, 15, 12, 0))
+        self.assertEqual(resolved.key, "Europe/Warsaw")
+
+
 class TestNamedByTheUser(unittest.TestCase):
     def test_a_chosen_zone_is_certain(self):
         resolved = resolve_timezone(

@@ -40,6 +40,7 @@ from ..tz import (
 from ..tz.errors import TimezoneLocationMismatchError, TimezoneOffsetOutOfRangeError
 from .gregorian import gregorian_adoption_date
 from .historical_borders import (
+    SNAPSHOT_YEARS,
     nearest_snapshot_year,
     polity_index,
     snapshots_around,
@@ -81,6 +82,10 @@ UTC_OFFSET_MAX_HOURS = 16
 # earlier data describes the zone's reference city, so a coordinate-derived
 # zone is an estimate for a pre-1970 birth.
 TZDB_CERTAIN_SINCE = dt.date(1970, 1, 1)
+
+# The bundled border maps start with this year. An earlier birth has no map of
+# its own, so no country is looked up for it.
+BORDER_SNAPSHOTS_SINCE = dt.date(SNAPSHOT_YEARS[0], 1, 1)
 
 
 class _ReferenceCity(NamedTuple):
@@ -198,17 +203,21 @@ def location_timezone(
     A geographic IANA zone covering the point derives the timezone with
     certainty for births from TZDB_CERTAIN_SINCE on: any later divergence
     forces a distinct tzdb zone, so the modern polygon is also the correct
-    historical one back to that epoch. An earlier birth is an estimate
-    chosen within the country that held the birthplace in the birth year
-    (see _historical_timezone). Open water gets the nautical Etc/GMT zone,
-    and a point with no zone match at all gets the longitude's mean solar time;
-    both are estimates.
+    historical one back to that epoch. Earlier the borders may have moved, and the
+    estimate follows the country that held the birthplace in the birth year
+    (see _historical_timezone). Before the oldest bundled map that country is
+    unknown, so the polygon zone is kept; the birth runs on the longitude's
+    mean solar time regardless of which zone was chosen. Open water gets the
+    nautical Etc/GMT zone, and a point with no zone match at all gets the
+    longitude's mean solar time; both are estimates.
     """
     key = location_zone_key(location)
     if key is None:
         return _mean_solar_timezone(location.longitude), TimezoneDerivation.ESTIMATED
     try:
         if key.startswith("Etc/"):
+            return zone(key), TimezoneDerivation.ESTIMATED
+        if birth_datetime.date() < BORDER_SNAPSHOTS_SINCE:
             return zone(key), TimezoneDerivation.ESTIMATED
         if birth_datetime.date() < TZDB_CERTAIN_SINCE:
             return _historical_timezone(location, key, birth_datetime.year)
