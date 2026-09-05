@@ -16,7 +16,7 @@ hour, so each is localized on its own.
 """
 
 import datetime as dt
-from zoneinfo import ZoneInfo
+from zoneinfo import ZoneInfo as PythonZoneInfo
 
 from .tz import _MEAN_SOLAR_TZNAME, Location, _mean_solar_timezone
 
@@ -48,9 +48,16 @@ def _choose_repeated_hour(
     return min((first, second), key=lambda d: d.utcoffset())  # type: ignore[arg-type, return-value]
 
 
-def uses_local_mean_time(naive_dt: dt.datetime, tz: dt.tzinfo) -> bool:
-    """Whether the instant falls in the timezone's pre-standard-time era."""
+def in_local_mean_time_era(naive_dt: dt.datetime, tz: dt.tzinfo) -> bool:
+    """Whether the instant falls in the zone's pre-standard-time era, when the
+    place kept its own sun time."""
     return _choose_repeated_hour(naive_dt, tz).tzname() == "LMT"
+
+
+def in_unknown_clock_era(naive_dt: dt.datetime, tz: dt.tzinfo) -> bool:
+    """Whether the instant falls in an era tzdb has no clock for, stored as
+    "-00" with a placeholder offset of 0."""
+    return _choose_repeated_hour(naive_dt, tz).tzname() == "-00"
 
 
 def is_longitude_based_timezone(tz: dt.tzinfo) -> bool:
@@ -58,7 +65,7 @@ def is_longitude_based_timezone(tz: dt.tzinfo) -> bool:
     zone or a derived mean-solar offset - rather than from civil timezone
     rules. A fixed offset the user passed deliberately is not longitude-based.
     """
-    if isinstance(tz, ZoneInfo):
+    if isinstance(tz, PythonZoneInfo):
         return (tz.key or "").startswith("Etc/")
     return isinstance(tz, dt.timezone) and tz.tzname(None) == _MEAN_SOLAR_TZNAME
 
@@ -71,7 +78,7 @@ def localize_naive_time(
     on_summer_time: bool | None = None,
 ) -> dt.datetime:
     """Attach the timezone to a naive local time: choose a reading for a repeated
-    fall-back hour, substitute mean solar time in a zone's pre-standard-time era.
+    fall-back hour, substitute mean solar time in an era with no civil clock.
 
     on_summer_time is consulted only when the time is genuinely ambiguous. A
     skipped time reads differently under the two folds as well, but it never
@@ -82,7 +89,9 @@ def localize_naive_time(
     """
     summer_time = on_summer_time if is_ambiguous_local_time(naive_dt, tz) else None
     localized = _choose_repeated_hour(naive_dt, tz, on_summer_time=summer_time)
-    if not isinstance(tz, ZoneInfo) or localized.tzname() != "LMT":
+    if not isinstance(tz, PythonZoneInfo) or not (
+        in_local_mean_time_era(naive_dt, tz) or in_unknown_clock_era(naive_dt, tz)
+    ):
         return localized
     return _birth_longitude_mean_time(naive_dt, localized, location)
 
@@ -90,14 +99,16 @@ def localize_naive_time(
 def _birth_longitude_mean_time(
     naive_dt: dt.datetime, zone_lmt: dt.datetime, location: Location
 ) -> dt.datetime:
-    """Attach the mean solar time of the birth longitude to a pre-standard-time
-    birth, instead of the timezone's "LMT" offset.
+    """Attach the mean solar time of the birth longitude to a birth in an era
+    with no civil clock, instead of the tzdb-provided offset that era carries.
 
     Before standard time every place kept its own sun time, so the birth
-    longitude is more accurate than the zone's reference city. Only the
-    time-of-day part of the offset is replaced; a whole-day part, present where
-    the zone counted dates across the Date Line (pre-1845 Manila, -15:56 =
-    +8:04 - 24 h), is kept so the birth stays on its historical calendar date.
+    longitude is more accurate than the zone's reference city. A "-00" era
+    carries no clock at all, only a placeholder 0, and the longitude is the
+    single thing known about the place. Only the time-of-day part of the offset
+    is replaced; a whole-day part, present where the zone counted dates across
+    the Date Line (pre-1845 Manila, -15:56 = +8:04 - 24 h), is kept so the birth
+    stays on its historical calendar date.
     """
     solar = _mean_solar_timezone(location.longitude)
     days_apart = round((zone_lmt.utcoffset() - solar.utcoffset(None)) / _DAY)  # type: ignore[operator]

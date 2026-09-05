@@ -20,7 +20,11 @@ import datetime as dt
 from dataclasses import dataclass
 from enum import Enum, auto, unique
 
-from .localization import is_ambiguous_local_time, uses_local_mean_time
+from .localization import (
+    in_local_mean_time_era,
+    in_unknown_clock_era,
+    is_ambiguous_local_time,
+)
 from .tz import (
     LATITUDE_LIMIT,
     _MEAN_SOLAR_TZNAME,
@@ -166,17 +170,17 @@ def local_time_dst_note(
 def is_mean_solar_birth(
     birth_datetime: dt.datetime, tz: dt.tzinfo, longitude_based: bool
 ) -> bool:
-    """Whether the birth offset comes from longitude alone, not from a civil clock.
+    """Whether the birth offset comes from longitude alone.
 
-    Either the derived timezone is a nautical or mean solar one, which
-    longitude_based records, or the birth falls in the zone's pre-standard-time
-    era. Only the first is visible in a ResolvedTimezone, so the birth date is
-    needed as well.
-
-    local_mean_time_note and timezone_label both call this, so the note and the
-    label always agree.
+    Two things make it so:
+    - longitude_based says the derived timezone is either a nautical or a mean solar one.
+    - an era with no civil clock, which only the birth date can tell.
     """
-    return longitude_based or uses_local_mean_time(birth_datetime, tz)
+    return (
+        longitude_based
+        or in_local_mean_time_era(birth_datetime, tz)
+        or in_unknown_clock_era(birth_datetime, tz)
+    )
 
 
 def local_mean_time_note(
@@ -251,7 +255,7 @@ def input_notes(
     notes.extend(
         timezone_derivation_note(
             resolved_timezone.derivation,
-            uses_local_mean_time(birth_datetime, tz),
+            in_local_mean_time_era(birth_datetime, tz),
         )
     )
     notes.extend(

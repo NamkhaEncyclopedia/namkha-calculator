@@ -11,11 +11,12 @@ from datetime import date, datetime, timedelta, tzinfo
 from namkha_calculator import calendar
 from namkha_calculator.astrology import Gender, Subject
 from namkha_calculator.localization import (
+    in_local_mean_time_era,
+    in_unknown_clock_era,
     is_ambiguous_local_time,
     is_longitude_based_timezone,
     is_nonexistent_local_time,
     localize_naive_time,
-    uses_local_mean_time,
 )
 from namkha_calculator.tz import (
     Location,
@@ -150,12 +151,12 @@ class TestBirthLongitudeMeanTime(unittest.TestCase):
 
     def test_lmt_era_detected(self):
         self.assertTrue(
-            uses_local_mean_time(datetime(1700, 6, 15, 12, 0), zone("Europe/Rome"))
+            in_local_mean_time_era(datetime(1700, 6, 15, 12, 0), zone("Europe/Rome"))
         )
 
     def test_standard_era_not_lmt(self):
         self.assertFalse(
-            uses_local_mean_time(datetime(1985, 6, 15, 12, 0), zone("Europe/Rome"))
+            in_local_mean_time_era(datetime(1985, 6, 15, 12, 0), zone("Europe/Rome"))
         )
 
     def test_juneau_1860_calculates(self):
@@ -164,6 +165,37 @@ class TestBirthLongitudeMeanTime(unittest.TestCase):
         subject = _subject(datetime(1860, 6, 15, 12, 0), juneau, "America/Juneau")
         result = calculate_namkha(NamkhaType.YEAR, subject, CalculationMethod.CLASSIC)
         self.assertTrue(result.harmonized_aspects)
+
+
+class TestEraWithNoKnownClock(unittest.TestCase):
+    """tzdb marks an era it has no clock for as "-00" and stores offset 0 for
+    it. That 0 is a placeholder, not a meaningful clock value, so such a birth takes
+    the birth longitude's mean solar time."""
+
+    KANTON = Location(-2.8, -171.7)
+    MACQUARIE = Location(-54.5, 158.94)
+    BIRTH = datetime(1930, 6, 15, 12, 0)
+
+    def test_kanton_before_settlement_uses_birth_longitude(self):
+        subject = _subject(self.BIRTH, self.KANTON)
+        self.assertEqual(
+            subject.local_birth_datetime.utcoffset(), _solar(self.KANTON.longitude)
+        )
+
+    def test_no_known_clock_era_is_told_apart_from_the_pre_standard_time_one(self):
+        """Both take mean solar time, but only "-00" means the clock is
+        unknown, which is why the two predicates stay separate."""
+        self.assertTrue(in_unknown_clock_era(self.BIRTH, zone("Pacific/Kanton")))
+        self.assertFalse(in_local_mean_time_era(self.BIRTH, zone("Pacific/Kanton")))
+
+    def test_macquarie_dawn_below_the_latitude_limit(self):
+        """Macquarie Island lies at 54.5 S, so its day still starts at real
+        dawn. The placeholder 0 there sits 10.6 h from the sun."""
+        subject = _subject(self.BIRTH, self.MACQUARIE)
+        self.assertEqual(
+            calendar.tibetan_day_date(subject.local_birth_datetime, self.MACQUARIE),
+            date(1930, 6, 15),
+        )
 
 
 class TestHistoricalSkippedDate(unittest.TestCase):

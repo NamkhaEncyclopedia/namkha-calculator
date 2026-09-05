@@ -33,6 +33,7 @@ _ARKHANGELSK = Location(64.5401, 40.5433)
 _ROME = Location(41.9028, 12.4964)
 _SVALBARD = Location(78.0, 15.0)
 _POZNAN = Location(52.41, 16.93)
+_KANTON = Location(-2.8, -171.7)
 
 
 def _subject(
@@ -288,6 +289,16 @@ class TestTimezoneDerivationNotes(unittest.TestCase):
         )
         notes = _notes(subject, CalculationMethod.CLASSIC)
         self.assertNotIn(CalculationNote.TIMEZONE_ESTIMATED, notes)
+        self.assertIn(CalculationNote.LOCAL_MEAN_TIME, notes)
+
+    def test_a_birth_with_no_known_clock_keeps_the_caution(self):
+        # tzdb has no clock for Kanton before 1937. The library derives this
+        # birth clock from the longitude, and the caution says that it is a guess.
+        subject = _subject(
+            datetime(1930, 6, 15, 12, 0), zone_key=None, location=_KANTON
+        )
+        notes = _notes(subject, CalculationMethod.CLASSIC)
+        self.assertIn(CalculationNote.TIMEZONE_ESTIMATED, notes)
         self.assertIn(CalculationNote.LOCAL_MEAN_TIME, notes)
 
     def test_explicit_timezone_no_caution(self):

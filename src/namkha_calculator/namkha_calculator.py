@@ -27,7 +27,7 @@ from .calculation_notes import (
     input_notes,
     period_boundary_note,
 )
-from .localization import is_nonexistent_local_time, uses_local_mean_time
+from .localization import in_local_mean_time_era, is_nonexistent_local_time
 from .calendar import (
     CalendarEntityAttributes,
     classic_month_attributes,
@@ -125,7 +125,7 @@ def _validate_subject(subject: Subject) -> None:
             f"[{year_min}, {year_max}] (limited by the bundled ephemeris)"
         )
 
-    if not uses_local_mean_time(
+    if not in_local_mean_time_era(
         subject.birth_datetime, tz
     ) and is_nonexistent_local_time(subject.birth_datetime, tz):
         raise ValueError(

@@ -12,52 +12,18 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Month Namkha, through `calculate_namkha(NamkhaType.MONTH, subject)`. Only the
   Classic method is supported, as for every type other than the year. The
   Tibetan month of birth is resolved from the birth instant the same way the
-  year is: a Tibetan month begins at the dawn that begins its first day, so a
-  birth before that dawn belongs to the month before, and a birth in a leap
-  month gets the number, element, animal and mewa of the regular month it
-  precedes.
+  year is: the month starts at the first dawn of its first day, so a birth
+  before that dawn belongs to the month before. A birth in a leap month gets
+  the number, element, animal and mewa of the regular month it precedes.
 - The month element and animal follow Janson's Phugpa formulas and are checked
-  against every month header in Henning's output over 1800-2598. The month mewa
-  steps back by one each month and is pinned by a single anchor,
+  against every month header in Henning's output over 1800-2598.
+- The month mewa steps back by one each month, pinned by a single anchor,
   `MONTH_MEWA_ANCHOR`: the Tiger month opening a Tiger astrological year has
   mewa 2. No Phugpa source prints a month mewa, so the numbers are a
-  reconstruction from Janson's Tsurphu formula, the reverse order, and the
-  triples the Vaidurya dkar po gives per month animal. Keeping the anchor in one
-  constant means a future source can be followed with a one-line change.
+  reconstruction. It is built from Janson's Tsurphu formula, the reverse order,
+  and the triplets given per month animal by the Vaidurya dkar po.
 - `TibetanMonthAttributes` gained `is_leap_month`, so a caller can tell a leap
   month from the regular month that shares its number.
-
-### Fixed
-
-- Both Losar functions calculated the first day of a month by adding a day to day
-  30 of the month before. That is the shorter rule Janson gives, and it disagrees
-  with Henning's output in four months over 1800-2598, in every case where the
-  boundary falls on an omitted or doubled day. They now start from day 0 of the
-  month itself, the value a Tibetan almanac prints at the head of each month,
-  which matches Henning everywhere. Astrological Losar is unchanged over the
-  whole supported range. Official Losar moves one day, from 8 to 9 March, for
-  Tibetan year 2659 (Western 2532), the only year affected; because the official
-  year runs from that date, the CNNR year Namkha changes as well for a birth in
-  that one-day window.
-
-- A birth before 1880 was attributed to the country that the oldest bundled
-  border map, drawn for 1880, shows at the birthplace. No country is looked up
-  before the first map any more; the zone covering the birthplace today is kept
-  instead.
-
-- A birth before standard time carried the `TIMEZONE_ESTIMATED` or
-  `TIMEZONE_BORDERS_UNCERTAIN` caution, warning about a derived zone that never
-  reached the result: in that era the offset comes from the birth longitude
-  no matter which zone applies. Such a birth now gets the `LOCAL_MEAN_TIME` notice
-  alone. `timezone_derivation_note` takes a second argument for it. A nautical
-  zone on open water keeps its caution, because its whole-hour offset does
-  decide the clock.
-
-### Removed
-
-- `calendar.tibetan_to_julian`, which nothing called. It computed a month's
-  first day a third way, carrying the same off-by-one that the Losar fix
-  removed.
 
 ### Changed
 
@@ -65,6 +31,38 @@ and the project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   `from_true_month_count` and `to_true_month_count`, after the "true month
   count" Janson and Henning both use for this number. The `month_count`
   arguments of the astronomical functions are renamed to match.
+- `calculation_notes.timezone_derivation_note` takes a second argument,
+  `pre_standard_time_era`. It suppresses the derivation caution for a birth
+  before standard time.
+
+### Removed
+
+- `calendar.tibetan_to_julian`: nothing calls it.
+
+### Fixed
+
+- Both Losar functions calculated the first day of a month by adding a day to
+  day 30 of the month before. That disagrees with full Henning's output in four
+  months over 1800-2598. They now start from day 0 of the month itself, which is
+  a safe abstraction described in Janson's paper.
+
+- A birth before 1880 was attributed to the country that the oldest bundled
+  border map, drawn for 1880, shows at the birthplace. No country is looked up
+  before the first map any more; the zone covering the birthplace today is kept
+  instead.
+
+- A birth before standard time carried the `TIMEZONE_ESTIMATED` or
+  `TIMEZONE_BORDERS_UNCERTAIN` caution, warning about a derived zone which never
+  reached the result: in that era the offset comes from the birth longitude
+  no matter which zone applies. Such a birth now gets the `LOCAL_MEAN_TIME` notice
+  alone.
+
+- tzdb has no clock data for some eras. It marks such an era with `-00` and stores an
+  offset of 0. That 0 is a placeholder, not a real clock, and the library read it
+  as one. 18 bundled zones have such an era, the last one ending in 2005. A birth
+  there takes the birth longitude's mean solar time, as a birth before
+  standard time does, and gets the `LOCAL_MEAN_TIME` notice. The
+  `TIMEZONE_ESTIMATED` caution stays because the library reconstructed this clock.
 
 ## [0.1.0a5] - 2026-08-19
 

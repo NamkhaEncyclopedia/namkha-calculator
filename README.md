@@ -306,7 +306,7 @@ Borders that changed and changed back between two snapshots are invisible to the
 
 To settle it, look up the birthplace's legal time in historical sources and pass it to `resolve_timezone` as `zone_key`. The [World Historical Gazetteer](https://whgazetteer.org/) is a good place to start: it tracks which state a place belonged to over time.
 
-`LOCAL_MEAN_TIME` (notice) is attached when the birth clock time was read from the longitude rather than from civil timezone rules: a birth before standard time in its region, on open water, or outside every timezone.
+`LOCAL_MEAN_TIME` (notice) is attached when the birth clock time was read from the longitude, not from civil timezone rules. That happens before standard time reached the region, on open water, and outside every timezone. It also happens where the timezone data holds no clock at all, as in the far north of Canada: the records for Iqaluit begin in 1942 and those for Inuvik in 1953. A birth before the records start keeps the `TIMEZONE_ESTIMATED` caution: the library guessed that clock.
 
 `PRE_GREGORIAN_DATE` (caution) is attached to births before the Gregorian calendar was adopted at the birth place (15 October 1582 at the earliest, as late as the 1920s in some regions), as a reminder that a Julian-calendar source date must be converted to Gregorian.
 
